@@ -32,7 +32,7 @@ jobs:
         run: |
           COUNTRY="${{ github.event.inputs.country || 'all' }}"
           echo "🚀 Generating feeds for: $COUNTRY"
-          node google-shopping-feed-v5.js $COUNTRY
+          node google-shopping-feed-v7.js $COUNTRY
           
       - name: Commit and push changes
         env:

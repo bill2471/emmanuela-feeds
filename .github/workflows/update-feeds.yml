@@ -45,6 +45,7 @@ jobs:
             echo "📭 No changes to commit"
           else
             git commit -m "🔄 Auto-update feeds $(date +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main
             git push
             echo "✅ Feeds updated and pushed!"
           fi

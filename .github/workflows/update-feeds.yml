@@ -1,0 +1,45 @@
+name: Update Google Shopping Feeds
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+    inputs:
+      country:
+        description: 'Country code (e.g., GR, DE, all)'
+        required: false
+        default: 'all'
+
+jobs:
+  update-feeds:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Run feed generator
+        env:
+          SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
+        run: |
+          COUNTRY="${{ github.event.inputs.country || 'all' }}"
+          echo "🚀 Generating feeds for: $COUNTRY"
+          node google-shopping-feed-v5.js $COUNTRY
+          
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add feeds/*.xml
+          if git diff --staged --quiet; then
+            echo "📭 No changes to commit"
+          else
+            git commit -m "🔄 Auto-update feeds $(date +'%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "✅ Feeds updated and pushed!"
+          fi

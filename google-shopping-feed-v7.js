@@ -1,6 +1,11 @@
 /**
- * Google Shopping Feed Generator v7.1 for EMMANUELA
+ * Google Shopping Feed Generator v7.2 for EMMANUELA
  * 
+ * NEW in v7.2:
+ *   - FIXED: Transit times now INSIDE <g:shipping> tag (Google requirement)
+ *   - handling_time and transit_time are now sub-attributes of shipping
+ *   - ships_from_country and return_policy_label remain item-level
+ *
  * NEW in v7.1:
  *   - Fixed 4 missing color mappings (επιχυσωμένο, πολύχρωμο σετ, black, mehrfarbig)
  *
@@ -397,7 +402,7 @@ async function fetchShippingRates() {
 }
 
 /**
- * v6: Format shipping tag for Google Shopping
+ * v7.2: Format shipping tag for Google Shopping with handling/transit times INSIDE
  * @param {string} countryCode - 2-letter country code
  * @param {object} shippingRates - Rates from fetchShippingRates()
  * @returns {string} XML shipping tag or empty string
@@ -410,28 +415,30 @@ function formatShippingTag(countryCode, shippingRates) {
   const rate = shippingRates[countryCode];
   const priceStr = rate.price === 0 ? `0.00 ${rate.currency}` : `${rate.price.toFixed(2)} ${rate.currency}`;
   
-  return `
-      <g:shipping>
-        <g:country>${countryCode}</g:country>
-        <g:price>${priceStr}</g:price>
-      </g:shipping>`;
-}
-
-/**
- * v7 NEW: Format shipping time attributes for Google Shopping
- * @param {string} countryCode - 2-letter country code
- * @returns {string} XML shipping time tags
- */
-function formatShippingTimeAttributes(countryCode) {
+  // Get transit times for this country
   const group = TRANSIT_GROUP[countryCode] || 'EU';
   const transit = TRANSIT_TIMES[group] || TRANSIT_TIMES.EU;
   
   return `
+      <g:shipping>
+        <g:country>${countryCode}</g:country>
+        <g:price>${priceStr}</g:price>
+        <g:min_handling_time>${HANDLING_TIME.min}</g:min_handling_time>
+        <g:max_handling_time>${HANDLING_TIME.max}</g:max_handling_time>
+        <g:min_transit_time>${transit.min}</g:min_transit_time>
+        <g:max_transit_time>${transit.max}</g:max_transit_time>
+      </g:shipping>`;
+}
+
+/**
+ * v7.2 UPDATED: Format item-level shipping attributes (NOT inside shipping tag)
+ * Handling/transit times are now inside <g:shipping> tag via formatShippingTag()
+ * @param {string} countryCode - 2-letter country code
+ * @returns {string} XML item-level shipping attributes
+ */
+function formatShippingTimeAttributes(countryCode) {
+  return `
       <g:ships_from_country>GR</g:ships_from_country>
-      <g:min_handling_time>${HANDLING_TIME.min}</g:min_handling_time>
-      <g:max_handling_time>${HANDLING_TIME.max}</g:max_handling_time>
-      <g:min_transit_time>${transit.min}</g:min_transit_time>
-      <g:max_transit_time>${transit.max}</g:max_transit_time>
       <g:return_policy_label>default</g:return_policy_label>`;
 }
 

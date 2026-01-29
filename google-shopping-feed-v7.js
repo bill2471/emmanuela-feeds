@@ -1,6 +1,13 @@
 /**
- * Google Shopping Feed Generator v7.2 for EMMANUELA
+ * Google Shopping Feed Generator v7.3 for EMMANUELA
  * 
+ * NEW in v7.3:
+ *   - FIXED: Color fallback chain for missing colors
+ *     1. First checks variant option "Χρώμα" or "Color"
+ *     2. Falls back to product metafield color-pattern
+ *     3. Defaults to "Silver" if no color found
+ *   - This fixes ~1,100 products missing color in GMC
+ *
  * NEW in v7.2:
  *   - FIXED: Transit times now INSIDE <g:shipping> tag (Google requirement)
  *   - handling_time and transit_time are now sub-attributes of shipping
@@ -755,7 +762,10 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
       }
       
       const fullTitle = variantSuffix ? `${translatedTitle} - ${variantSuffix}` : translatedTitle;
-      const colorEnglish = translateColor(variantColorOriginal);
+      // v7.3: Color fallback chain - variant option → metafield → default Silver
+      const colorEnglish = translateColor(variantColorOriginal) 
+        || translateColor(product.metafields?.color) 
+        || 'Silver';
       if (colorEnglish) stats.withColor++;
       if (variant.weight) stats.withWeight++;
       

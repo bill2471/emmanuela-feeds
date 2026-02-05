@@ -1,8 +1,8 @@
-name: Update Google Shopping Feeds
+name: Update Shopping Feeds (Google + Meta)
 
 on:
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: '0 */3 * * *'  # Every 3 hours
   workflow_dispatch:
     inputs:
       country:
@@ -16,31 +16,38 @@ permissions:
 jobs:
   update-feeds:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          
-      - name: Run feed generator
+
+      - name: Run Google Shopping feed generator
         env:
           SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
         run: |
           COUNTRY="${{ github.event.inputs.country || 'all' }}"
-          echo "🚀 Generating feeds for: $COUNTRY"
+          echo "🚀 Generating Google Shopping feeds for: $COUNTRY"
           node google-shopping-feed-v7.js $COUNTRY
-          
+
+      - name: Run Meta/Facebook feed generator
+        env:
+          SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
+        run: |
+          echo "🔵 Generating Meta Product Feed (Greece)..."
+          node meta-feed-gr.js
+
       - name: Run local inventory feed generator
         env:
           SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
         run: |
           echo "🏭 Generating Local Inventory Feed..."
           node local-inventory-feed.js
-          
+
       - name: Commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

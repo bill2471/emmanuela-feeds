@@ -1,4 +1,4 @@
-name: Update Shopping Feeds (Google + Meta + GLAMI)
+name: Update Shopping Feeds (Google + Meta + GLAMI + BestPrice)
 
 on:
   schedule:
@@ -47,6 +47,13 @@ jobs:
         run: |
           echo "🟣 Generating GLAMI Product Feed (Greece)..."
           node glami-feed-gr.js
+
+      - name: Run BestPrice.gr feed generator
+        env:
+          SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
+        run: |
+          echo "Generating BestPrice.gr Product Feed (Greece)..."
+          node bestprice-feed-gr.js
 
       - name: Run local inventory feed generator
         env:

@@ -86,24 +86,25 @@ function getGoogleCategory(productType) {
 }
 
 // ============================================
-// COLOR NORMALIZATION (Greek fallback - translations come from Shopify)
+// COLOR FALLBACK MAP (English - used when Shopify translation is missing)
+// Primary source is Shopify translations per locale; this is the safety net
 // ============================================
 
 const COLOR_MAP = {
-  'επιχρυσωμένο': 'Χρυσό', 'επιχρυσωμένα': 'Χρυσό', 'επιχρυσωμένος': 'Χρυσό', 'επιχρυσωμένη': 'Χρυσό',
-  'χρυσό': 'Χρυσό', 'χρυσός': 'Χρυσό', 'ασημένιο': 'Ασημένιο', 'ασημένια': 'Ασημένιο',
-  'ασημένιος': 'Ασημένιο', 'ασημί': 'Ασημένιο', 'silver': 'Ασημένιο', 'gold': 'Χρυσό',
-  'μαύρο': 'Μαύρο', 'μαύρα': 'Μαύρο', 'μαύρος': 'Μαύρο',
-  'οξειδωμένο': 'Ανθρακί', 'οξειδωμένα': 'Ανθρακί', 'ανθρακί': 'Ανθρακί',
-  'ροζ': 'Ροζ Χρυσό', 'ροζ επιχρυσωμένο': 'Ροζ Χρυσό', 'ροζ χρυσό': 'Ροζ Χρυσό',
-  'λευκό': 'Λευκό', 'λευκά': 'Λευκό', 'μπλε': 'Μπλε',
-  'πράσινο': 'Πράσινο', 'πράσινα': 'Πράσινο', 'κόκκινο': 'Κόκκινο', 'κόκκινα': 'Κόκκινο',
-  'μπορντό': 'Μπορντό', 'μωβ': 'Μωβ', 'τιρκουάζ': 'Τιρκουάζ', 'σομόν': 'Σομόν',
-  'ασημένιο με μπλε': 'Ασημένιο/Μπλε', 'ασημένιο με πράσινο': 'Ασημένιο/Πράσινο',
-  'επιχρυσωμένο με σομόν': 'Χρυσό/Σομόν', 'μαύρο ανθρακί': 'Μαύρο',
-  'επιχυσωμένο': 'Χρυσό',  // typo fix - missing ρ
-  'πολύχρωμο': 'Πολύχρωμο', 'πολύχρωμα': 'Πολύχρωμο', 'πολύχρωμο σετ': 'Πολύχρωμο',
-  'black': 'Μαύρο',
+  'επιχρυσωμένο': 'Gold', 'επιχρυσωμένα': 'Gold', 'επιχρυσωμένος': 'Gold', 'επιχρυσωμένη': 'Gold',
+  'χρυσό': 'Gold', 'χρυσός': 'Gold', 'ασημένιο': 'Silver', 'ασημένια': 'Silver',
+  'ασημένιος': 'Silver', 'ασημί': 'Silver', 'silver': 'Silver', 'gold': 'Gold',
+  'μαύρο': 'Black', 'μαύρα': 'Black', 'μαύρος': 'Black',
+  'οξειδωμένο': 'Gray', 'οξειδωμένα': 'Gray', 'ανθρακί': 'Gray',
+  'ροζ': 'Rose Gold', 'ροζ επιχρυσωμένο': 'Rose Gold', 'ροζ χρυσό': 'Rose Gold',
+  'λευκό': 'White', 'λευκά': 'White', 'μπλε': 'Blue',
+  'πράσινο': 'Green', 'πράσινα': 'Green', 'κόκκινο': 'Red', 'κόκκινα': 'Red',
+  'μπορντό': 'Burgundy', 'μωβ': 'Purple', 'τιρκουάζ': 'Turquoise', 'σομόν': 'Coral',
+  'ασημένιο με μπλε': 'Silver/Blue', 'ασημένιο με πράσινο': 'Silver/Green',
+  'επιχρυσωμένο με σομόν': 'Gold/Coral', 'μαύρο ανθρακί': 'Black',
+  'επιχυσωμένο': 'Gold',  // typo fix - missing ρ
+  'πολύχρωμο': 'Multicolor', 'πολύχρωμα': 'Multicolor', 'πολύχρωμο σετ': 'Multicolor',
+  'black': 'Black',
 };
 
 // ============================================
@@ -772,7 +773,7 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
       const colorNormalized = translatedColor
         || normalizeColor(variantColorOriginal)
         || normalizeColor(product.metafields?.color)
-        || 'Ασημένιο';
+        || 'Silver';
       if (colorNormalized) stats.withColor++;
       if (variant.weight) stats.withWeight++;
       

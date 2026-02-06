@@ -461,11 +461,10 @@ function generateBestPriceFeed(products) {
       // Brand
       item += `      <brand><![CDATA[${BRAND}]]></brand>\n`;
 
-      // MPN (SKU)
-      if (variant.sku) {
-        item += `      <MPN><![CDATA[${variant.sku}]]></MPN>\n`;
-        stats.withMPN++;
-      }
+      // MPN (SKU, fallback to variant ID if no SKU — MPN is required by BestPrice)
+      const mpnValue = variant.sku || `EMM-${variant.id}`;
+      item += `      <MPN><![CDATA[${mpnValue}]]></MPN>\n`;
+      if (variant.sku) stats.withMPN++;
 
       // Color
       if (color) {

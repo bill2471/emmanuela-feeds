@@ -274,7 +274,7 @@ function httpsRequest(options, postData = null) {
   });
 }
 
-async function graphqlRequest(query, retries = 3) {
+async function graphqlRequest(query, retries = 6) {
   const options = {
     hostname: SHOPIFY_STORE,
     path: `/admin/api/${API_VERSION}/graphql.json`,
@@ -288,14 +288,16 @@ async function graphqlRequest(query, retries = 3) {
     const result = await httpsRequest(options, JSON.stringify({ query }));
     const errors = result.data?.errors;
     if (errors && errors[0]?.extensions?.code === 'THROTTLED') {
-      const wait = attempt * 5000; // 5s, 10s, 15s
-      console.log(`   Throttled — waiting ${wait / 1000}s (attempt ${attempt}/${retries})...`);
+      const wait = Math.min(attempt * 5000, 30000); // 5s, 10s, 15s, 20s, 25s, 30s
+      console.log(`   ⏳ Throttled — waiting ${wait / 1000}s (attempt ${attempt}/${retries})...`);
       await new Promise(r => setTimeout(r, wait));
       continue;
     }
     return result;
   }
-  return httpsRequest(options, JSON.stringify({ query })); // final attempt
+  // Final attempt after all retries exhausted
+  console.log('   ⚠️ Final retry after all throttle waits...');
+  return httpsRequest(options, JSON.stringify({ query }));
 }
 
 // ============================================
@@ -303,11 +305,17 @@ async function graphqlRequest(query, retries = 3) {
 // ============================================
 
 async function fetchProducts() {
+  // Wait 30s before starting if running in CI (after other feeds consumed API budget)
+  if (process.env.CI || process.env.GITHUB_ACTIONS) {
+    console.log('⏳ Running in CI — waiting 30s for API rate limit recovery...\n');
+    await new Promise(r => setTimeout(r, 30000));
+  }
   console.log('Fetching ALL active products from Shopify...\n');
 
   const allProducts = [];
   let cursor = null;
   let page = 1;
+  let consecutiveErrors = 0;
 
   while (true) {
     const afterClause = cursor ? `, after: "${cursor}"` : '';
@@ -339,9 +347,18 @@ async function fetchProducts() {
     try {
       const { data } = await graphqlRequest(query);
       if (data.errors) {
-        console.error('GraphQL errors:', data.errors);
-        break;
+        consecutiveErrors++;
+        console.error(`GraphQL errors (attempt ${consecutiveErrors}/3):`, data.errors[0]?.message || data.errors);
+        if (consecutiveErrors >= 3) {
+          console.error('Too many consecutive errors — aborting.');
+          break;
+        }
+        // Wait extra before retrying this page
+        console.log(`   Waiting 30s before retrying page ${page}...`);
+        await new Promise(r => setTimeout(r, 30000));
+        continue; // retry same page
       }
+      consecutiveErrors = 0; // reset on success
 
       const products = data.data?.products?.edges || [];
       products.forEach(({ node }) => {

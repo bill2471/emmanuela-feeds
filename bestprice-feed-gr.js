@@ -159,6 +159,34 @@ function getGreekColor(variantColorRaw) {
 }
 
 // ============================================
+// VARIANT NAME TRANSLATION (German/English → Greek for titles)
+// ============================================
+
+const VARIANT_NAME_TRANSLATIONS = {
+  // German → Greek
+  'manschetten': 'μανσέτ', 'manschette': 'μανσέτ',
+  'mehrfarbige': 'πολύχρωμες', 'mehrfarbig': 'πολύχρωμο',
+  'schwarze': 'μαύρες', 'schwarz': 'μαύρο',
+  'silberne': 'ασημένιες', 'silber': 'ασημί',
+  'goldene': 'χρυσές', 'gold': 'χρυσό',
+  'vergoldet': 'επιχρυσωμένο', 'rosévergoldet': 'ροζ επιχρυσωμένο',
+  'oxidiert': 'οξειδωμένο',
+  // English → Greek
+  'silver': 'ασημί', 'black': 'μαύρο',
+};
+
+function translateVariantName(name) {
+  if (!name) return name;
+  let result = name;
+  // Replace German/English words with Greek equivalents
+  for (const [foreign, greek] of Object.entries(VARIANT_NAME_TRANSLATIONS)) {
+    const regex = new RegExp(`\\b${foreign}\\b`, 'gi');
+    result = result.replace(regex, greek);
+  }
+  return result;
+}
+
+// ============================================
 // HELPER FUNCTIONS
 // ============================================
 
@@ -246,7 +274,7 @@ function httpsRequest(options, postData = null) {
   });
 }
 
-async function graphqlRequest(query) {
+async function graphqlRequest(query, retries = 3) {
   const options = {
     hostname: SHOPIFY_STORE,
     path: `/admin/api/${API_VERSION}/graphql.json`,
@@ -256,7 +284,18 @@ async function graphqlRequest(query) {
       'Content-Type': 'application/json'
     }
   };
-  return httpsRequest(options, JSON.stringify({ query }));
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    const result = await httpsRequest(options, JSON.stringify({ query }));
+    const errors = result.data?.errors;
+    if (errors && errors[0]?.extensions?.code === 'THROTTLED') {
+      const wait = attempt * 5000; // 5s, 10s, 15s
+      console.log(`   Throttled — waiting ${wait / 1000}s (attempt ${attempt}/${retries})...`);
+      await new Promise(r => setTimeout(r, wait));
+      continue;
+    }
+    return result;
+  }
+  return httpsRequest(options, JSON.stringify({ query })); // final attempt
 }
 
 // ============================================
@@ -417,17 +456,39 @@ function generateBestPriceFeed(products) {
         return;
       }
 
-      // Color
+      // Color (fallback to "ασημί" since most jewelry is sterling silver)
       const rawColor = extractVariantColor(variant.selectedOptions);
-      const color = getGreekColor(rawColor) || getGreekColor(product.metafields.color);
+      const color = getGreekColor(rawColor) || getGreekColor(product.metafields.color) || 'ασημί';
+
+      // Size (for this variant specifically)
+      const variantSize = extractVariantSize(variant.selectedOptions);
 
       // Weight
       const weightGrams = getWeightGrams(variant);
 
-      // Build title: product title + color variant if multiple variants
+      // Build title: product title + all variant options for uniqueness
+      // Translate German variant names to Greek for BestPrice.gr
       let title = product.title;
-      if (variants.length > 1 && rawColor) {
-        title = `${product.title} - ${rawColor}`;
+      if (variants.length > 1 && variant.selectedOptions) {
+        // Collect ALL non-default option values for the title suffix
+        const extraParts = [];
+        for (const opt of variant.selectedOptions) {
+          const optName = (opt.name || '').toLowerCase().trim();
+          const optVal = (opt.value || '').trim();
+          // Skip "Default Title" placeholder
+          if (optVal.toLowerCase() === 'default title') continue;
+          // Translate German/English variant names
+          const translated = translateVariantName(optVal);
+          // Format size with "Νο" prefix
+          if (optName.includes('μέγεθος') || optName.includes('size') || optName.includes('νούμερο')) {
+            extraParts.push(`Νο ${translated}`);
+          } else {
+            extraParts.push(translated);
+          }
+        }
+        if (extraParts.length > 0) {
+          title = `${product.title} - ${extraParts.join(', ')}`;
+        }
       }
 
       // Build product XML
@@ -466,11 +527,9 @@ function generateBestPriceFeed(products) {
       item += `      <MPN><![CDATA[${mpnValue}]]></MPN>\n`;
       if (variant.sku) stats.withMPN++;
 
-      // Color
-      if (color) {
-        item += `      <color>${escapeXml(color)}</color>\n`;
-        stats.withColor++;
-      }
+      // Color (always present — fallback is "ασημί")
+      item += `      <color>${escapeXml(color)}</color>\n`;
+      if (color !== 'ασημί') stats.withColor++;
 
       // Size (for rings: all available sizes)
       if (availableSizes) {

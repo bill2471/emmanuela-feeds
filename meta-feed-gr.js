@@ -475,7 +475,7 @@ function generateMetaFeed(products) {
 
       if (variant.title && variant.title !== 'Default Title') {
         const options = (variant.selectedOptions || []).map(opt => {
-          if (opt.name === 'Χρώμα' || opt.name.toLowerCase() === 'color') {
+          if (opt.name === 'Χρώμα' || opt.name === 'Χρώμα μετάλλου' || opt.name.toLowerCase() === 'color') {
             variantColorOriginal = opt.value;
           }
           return opt.value;

@@ -455,67 +455,63 @@ function generateBestPriceFeed(products) {
     const isRingOrSized = typeLC.includes('δαχτυλίδ') || typeLC.includes('ring');
     const availableSizes = isRingOrSized ? collectAvailableSizes(variants) : null;
 
+    // Group in-stock variants by normalized color → 1 feed entry per color
+    const colorGroups = {};
+
     variants.forEach(variant => {
       stats.totalVariants++;
 
-      // Skip out of stock
       if (variant.inventory_quantity <= 0) {
         stats.outOfStock++;
         return;
       }
       stats.inStock++;
 
+      const rawColor = extractVariantColor(variant.selectedOptions);
+      const color = getGreekColor(rawColor) || getGreekColor(product.metafields.color) || 'ασημί';
+
+      if (!colorGroups[color]) {
+        colorGroups[color] = [];
+      }
+      colorGroups[color].push(variant);
+    });
+
+    // Create 1 entry per color group
+    for (const [color, groupVariants] of Object.entries(colorGroups)) {
+      // Use first variant as representative (for ID, SKU, image, weight)
+      const repVariant = groupVariants[0];
+
       // Images: variant-specific or product-level
-      const variantImage = variant.image_id
-        ? images.find(img => img.id === variant.image_id)?.src || mainImage
+      const variantImage = repVariant.image_id
+        ? images.find(img => img.id === repVariant.image_id)?.src || mainImage
         : mainImage;
 
       if (!variantImage) {
         stats.noImage++;
-        return;
+        continue;
       }
 
-      // Color (fallback to "ασημί" since most jewelry is sterling silver)
-      const rawColor = extractVariantColor(variant.selectedOptions);
-      const color = getGreekColor(rawColor) || getGreekColor(product.metafields.color) || 'ασημί';
+      // Lowest price among in-stock variants of this color
+      const lowestPrice = Math.min(...groupVariants.map(v => parseFloat(v.price)));
 
-      // Size (for this variant specifically)
-      const variantSize = extractVariantSize(variant.selectedOptions);
+      // Weight from representative variant
+      const weightGrams = getWeightGrams(repVariant);
 
-      // Weight
-      const weightGrams = getWeightGrams(variant);
-
-      // Build title: product title + all variant options for uniqueness
-      // Translate German variant names to Greek for BestPrice.gr
+      // Build title: product title + color (if multiple colors exist)
+      const colorForTitle = color !== 'ασημί' || Object.keys(colorGroups).length > 1
+        ? translateVariantName(extractVariantColor(repVariant.selectedOptions) || color)
+        : null;
       let title = product.title;
-      if (variants.length > 1 && variant.selectedOptions) {
-        // Collect ALL non-default option values for the title suffix
-        const extraParts = [];
-        for (const opt of variant.selectedOptions) {
-          const optName = (opt.name || '').toLowerCase().trim();
-          const optVal = (opt.value || '').trim();
-          // Skip "Default Title" placeholder
-          if (optVal.toLowerCase() === 'default title') continue;
-          // Translate German/English variant names
-          const translated = translateVariantName(optVal);
-          // Format size with "Νο" prefix
-          if (optName.includes('μέγεθος') || optName.includes('size') || optName.includes('νούμερο')) {
-            extraParts.push(`Νο ${translated}`);
-          } else {
-            extraParts.push(translated);
-          }
-        }
-        if (extraParts.length > 0) {
-          title = `${product.title} - ${extraParts.join(', ')}`;
-        }
+      if (colorForTitle) {
+        title = `${product.title} - ${colorForTitle}`;
       }
 
       // Build product XML
       let item = '';
       item += `    <product>\n`;
-      item += `      <productId>${variant.id}</productId>\n`;
+      item += `      <productId>${repVariant.id}</productId>\n`;
       item += `      <title><![CDATA[${title}]]></title>\n`;
-      item += `      <productURL>https://${DOMAIN}/products/${product.handle}?variant=${variant.id}</productURL>\n`;
+      item += `      <productURL>https://${DOMAIN}/products/${product.handle}?variant=${repVariant.id}</productURL>\n`;
 
       // Images: always include imageURL (required) + imagesURL for additional images
       const allImages = [variantImage, ...images.filter(img => img.src !== variantImage).map(img => img.src)].slice(0, 5);
@@ -528,8 +524,8 @@ function generateBestPriceFeed(products) {
         item += `      </imagesURL>\n`;
       }
 
-      // Price (decimal with dot, BestPrice accepts both formats)
-      item += `      <price>${parseFloat(variant.price).toFixed(2)}</price>\n`;
+      // Price (lowest in group)
+      item += `      <price>${lowestPrice.toFixed(2)}</price>\n`;
 
       // Category
       item += `      <category_path><![CDATA[${categoryPath}]]></category_path>\n`;
@@ -541,16 +537,16 @@ function generateBestPriceFeed(products) {
       // Brand
       item += `      <brand><![CDATA[${BRAND}]]></brand>\n`;
 
-      // MPN (SKU, fallback to variant ID if no SKU — MPN is required by BestPrice)
-      const mpnValue = variant.sku || `EMM-${variant.id}`;
+      // MPN (SKU from representative variant)
+      const mpnValue = repVariant.sku || `EMM-${repVariant.id}`;
       item += `      <MPN><![CDATA[${mpnValue}]]></MPN>\n`;
-      if (variant.sku) stats.withMPN++;
+      if (repVariant.sku) stats.withMPN++;
 
-      // Color (always present — fallback is "ασημί")
+      // Color (always present)
       item += `      <color>${escapeXml(color)}</color>\n`;
       if (color !== 'ασημί') stats.withColor++;
 
-      // Size (for rings: all available sizes)
+      // Size (for rings: all available sizes across ALL variants, not just this color)
       if (availableSizes) {
         item += `      <size>${escapeXml(availableSizes)}</size>\n`;
         stats.withSize++;
@@ -571,16 +567,17 @@ function generateBestPriceFeed(products) {
       // Collect samples
       if (stats.sampleItems.length < 3) {
         stats.sampleItems.push({
-          productId: variant.id,
+          productId: repVariant.id,
           title: title,
-          price: variant.price,
+          price: lowestPrice.toFixed(2),
           category: categoryPath,
-          color: color || '(none)',
-          sku: variant.sku || '(none)',
-          size: availableSizes || '(none)'
+          color: color,
+          sku: repVariant.sku || '(none)',
+          size: availableSizes || '(none)',
+          variantsInGroup: groupVariants.length
         });
       }
-    });
+    }
   });
 
   // Build full XML

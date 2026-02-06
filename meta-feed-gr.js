@@ -83,24 +83,24 @@ function getGoogleCategory(productType) {
 }
 
 // ============================================
-// COLOR TRANSLATIONS (Greek → English)
+// COLOR NORMALIZATION (Greek - for Greece market feed)
 // ============================================
 
-const COLOR_TRANSLATIONS = {
-  'επιχρυσωμένο': 'Gold', 'επιχρυσωμένα': 'Gold', 'επιχρυσωμένος': 'Gold', 'επιχρυσωμένη': 'Gold',
-  'χρυσό': 'Gold', 'χρυσός': 'Gold', 'ασημένιο': 'Silver', 'ασημένια': 'Silver',
-  'ασημένιος': 'Silver', 'ασημί': 'Silver', 'silver': 'Silver', 'gold': 'Gold',
-  'μαύρο': 'Black', 'μαύρα': 'Black', 'μαύρος': 'Black',
-  'οξειδωμένο': 'Gray', 'οξειδωμένα': 'Gray', 'ανθρακί': 'Gray',
-  'ροζ': 'Rose Gold', 'ροζ επιχρυσωμένο': 'Rose Gold', 'ροζ χρυσό': 'Rose Gold',
-  'λευκό': 'White', 'λευκά': 'White', 'μπλε': 'Blue',
-  'πράσινο': 'Green', 'πράσινα': 'Green', 'κόκκινο': 'Red', 'κόκκινα': 'Red',
-  'μπορντό': 'Burgundy', 'μωβ': 'Purple', 'τιρκουάζ': 'Turquoise', 'σομόν': 'Coral',
-  'ασημένιο με μπλε': 'Silver/Blue', 'ασημένιο με πράσινο': 'Silver/Green',
-  'επιχρυσωμένο με σομόν': 'Gold/Coral', 'μαύρο ανθρακί': 'Black',
-  'επιχυσωμένο': 'Gold',  // typo fix
-  'πολύχρωμο': 'Multicolor', 'πολύχρωμα': 'Multicolor', 'πολύχρωμο σετ': 'Multicolor',
-  'black': 'Black',
+const COLOR_MAP = {
+  'επιχρυσωμένο': 'Χρυσό', 'επιχρυσωμένα': 'Χρυσό', 'επιχρυσωμένος': 'Χρυσό', 'επιχρυσωμένη': 'Χρυσό',
+  'χρυσό': 'Χρυσό', 'χρυσός': 'Χρυσό', 'ασημένιο': 'Ασημένιο', 'ασημένια': 'Ασημένιο',
+  'ασημένιος': 'Ασημένιο', 'ασημί': 'Ασημένιο', 'silver': 'Ασημένιο', 'gold': 'Χρυσό',
+  'μαύρο': 'Μαύρο', 'μαύρα': 'Μαύρο', 'μαύρος': 'Μαύρο',
+  'οξειδωμένο': 'Ανθρακί', 'οξειδωμένα': 'Ανθρακί', 'ανθρακί': 'Ανθρακί',
+  'ροζ': 'Ροζ Χρυσό', 'ροζ επιχρυσωμένο': 'Ροζ Χρυσό', 'ροζ χρυσό': 'Ροζ Χρυσό',
+  'λευκό': 'Λευκό', 'λευκά': 'Λευκό', 'μπλε': 'Μπλε',
+  'πράσινο': 'Πράσινο', 'πράσινα': 'Πράσινο', 'κόκκινο': 'Κόκκινο', 'κόκκινα': 'Κόκκινο',
+  'μπορντό': 'Μπορντό', 'μωβ': 'Μωβ', 'τιρκουάζ': 'Τιρκουάζ', 'σομόν': 'Σομόν',
+  'ασημένιο με μπλε': 'Ασημένιο/Μπλε', 'ασημένιο με πράσινο': 'Ασημένιο/Πράσινο',
+  'επιχρυσωμένο με σομόν': 'Χρυσό/Σομόν', 'μαύρο ανθρακί': 'Μαύρο',
+  'επιχυσωμένο': 'Χρυσό',  // typo fix
+  'πολύχρωμο': 'Πολύχρωμο', 'πολύχρωμα': 'Πολύχρωμο', 'πολύχρωμο σετ': 'Πολύχρωμο',
+  'black': 'Μαύρο',
 };
 
 // ============================================
@@ -205,7 +205,7 @@ function getRingSize(selectedOptions) {
   return null;
 }
 
-function translateColor(greekColor) {
+function normalizeColor(greekColor) {
   if (!greekColor) return null;
   const normalized = greekColor.toLowerCase().trim();
   // Skip values containing digits (e.g. "3 mehrfarbige manschetten")
@@ -214,9 +214,9 @@ function translateColor(greekColor) {
   if (normalized.length > 25) return null;
   // Skip values with encoding corruption (replacement characters)
   if (/\uFFFD/.test(normalized)) return null;
-  if (COLOR_TRANSLATIONS[normalized]) return COLOR_TRANSLATIONS[normalized];
-  for (const [greek, english] of Object.entries(COLOR_TRANSLATIONS)) {
-    if (normalized.includes(greek)) return english;
+  if (COLOR_MAP[normalized]) return COLOR_MAP[normalized];
+  for (const [key, val] of Object.entries(COLOR_MAP)) {
+    if (normalized.includes(key)) return val;
   }
   return greekColor.charAt(0).toUpperCase() + greekColor.slice(1);
 }
@@ -492,8 +492,8 @@ function generateMetaFeed(products) {
       const fullTitle = variantSuffix ? `${product.title} - ${variantSuffix}` : product.title;
 
       // Color translation
-      const colorEnglish = translateColor(variantColorOriginal);
-      if (colorEnglish) stats.withColor++;
+      const colorNormalized = normalizeColor(variantColorOriginal);
+      if (colorNormalized) stats.withColor++;
       if (variant.weight) stats.withWeight++;
 
       // Get variant image or fallback to main
@@ -584,8 +584,8 @@ function generateMetaFeed(products) {
         item += `\n      <g:material><![CDATA[${material}]]></g:material>`;
       }
 
-      if (colorEnglish) {
-        item += `\n      <g:color><![CDATA[${colorEnglish}]]></g:color>`;
+      if (colorNormalized) {
+        item += `\n      <g:color><![CDATA[${colorNormalized}]]></g:color>`;
       }
 
       if (ringSize) {

@@ -208,6 +208,12 @@ function getRingSize(selectedOptions) {
 function translateColor(greekColor) {
   if (!greekColor) return null;
   const normalized = greekColor.toLowerCase().trim();
+  // Skip values containing digits (e.g. "3 mehrfarbige manschetten")
+  if (/\d/.test(normalized)) return null;
+  // Skip overly long values (variant descriptions, not colors)
+  if (normalized.length > 25) return null;
+  // Skip values with encoding corruption (replacement characters)
+  if (/\uFFFD/.test(normalized)) return null;
   if (COLOR_TRANSLATIONS[normalized]) return COLOR_TRANSLATIONS[normalized];
   for (const [greek, english] of Object.entries(COLOR_TRANSLATIONS)) {
     if (normalized.includes(greek)) return english;
@@ -258,7 +264,7 @@ function httpsRequest(options, postData = null) {
   });
 }
 
-async function graphqlRequest(query) {
+async function graphqlRequest(query, retries = 5) {
   const options = {
     hostname: SHOPIFY_STORE,
     path: `/admin/api/${API_VERSION}/graphql.json`,
@@ -268,7 +274,17 @@ async function graphqlRequest(query) {
       'Content-Type': 'application/json'
     }
   };
-  return httpsRequest(options, JSON.stringify({ query }));
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    const result = await httpsRequest(options, JSON.stringify({ query }));
+    const isThrottled = result.data?.errors?.some(e => e.extensions?.code === 'THROTTLED');
+    if (isThrottled && attempt < retries) {
+      const wait = attempt * 4;
+      console.log(`   ⏳ Throttled, waiting ${wait}s (attempt ${attempt}/${retries})...`);
+      await new Promise(r => setTimeout(r, wait * 1000));
+      continue;
+    }
+    return result;
+  }
 }
 
 // ============================================

@@ -86,26 +86,24 @@ function getGoogleCategory(productType) {
 }
 
 // ============================================
-// COLOR TRANSLATIONS
+// COLOR NORMALIZATION (Greek fallback - translations come from Shopify)
 // ============================================
 
-const COLOR_TRANSLATIONS = {
-  'επιχρυσωμένο': 'Gold', 'επιχρυσωμένα': 'Gold', 'επιχρυσωμένος': 'Gold', 'επιχρυσωμένη': 'Gold',
-  'χρυσό': 'Gold', 'χρυσός': 'Gold', 'ασημένιο': 'Silver', 'ασημένια': 'Silver',
-  'ασημένιος': 'Silver', 'ασημί': 'Silver', 'silver': 'Silver', 'gold': 'Gold',
-  'μαύρο': 'Black', 'μαύρα': 'Black', 'μαύρος': 'Black',
-  'οξειδωμένο': 'Gray', 'οξειδωμένα': 'Gray', 'ανθρακί': 'Gray',
-  'ροζ': 'Rose Gold', 'ροζ επιχρυσωμένο': 'Rose Gold', 'ροζ χρυσό': 'Rose Gold',
-  'λευκό': 'White', 'λευκά': 'White', 'μπλε': 'Blue',
-  'πράσινο': 'Green', 'πράσινα': 'Green', 'κόκκινο': 'Red', 'κόκκινα': 'Red',
-  'μπορντό': 'Burgundy', 'μωβ': 'Purple', 'τιρκουάζ': 'Turquoise', 'σομόν': 'Coral',
-  'ασημένιο με μπλε': 'Silver/Blue', 'ασημένιο με πράσινο': 'Silver/Green',
-  'επιχρυσωμένο με σομόν': 'Gold/Coral', 'μαύρο ανθρακί': 'Black',
-  // v7.1: Missing mappings (4 fixes)
-  'επιχυσωμένο': 'Gold',  // typo fix - missing ρ
-  'πολύχρωμο': 'Multicolor', 'πολύχρωμα': 'Multicolor', 'πολύχρωμο σετ': 'Multicolor',
-  'black': 'Black',  // English lowercase
-  'mehrfarbig': 'Multicolor', '3 mehrfarbige manschetten': 'Multicolor',  // German
+const COLOR_MAP = {
+  'επιχρυσωμένο': 'Χρυσό', 'επιχρυσωμένα': 'Χρυσό', 'επιχρυσωμένος': 'Χρυσό', 'επιχρυσωμένη': 'Χρυσό',
+  'χρυσό': 'Χρυσό', 'χρυσός': 'Χρυσό', 'ασημένιο': 'Ασημένιο', 'ασημένια': 'Ασημένιο',
+  'ασημένιος': 'Ασημένιο', 'ασημί': 'Ασημένιο', 'silver': 'Ασημένιο', 'gold': 'Χρυσό',
+  'μαύρο': 'Μαύρο', 'μαύρα': 'Μαύρο', 'μαύρος': 'Μαύρο',
+  'οξειδωμένο': 'Ανθρακί', 'οξειδωμένα': 'Ανθρακί', 'ανθρακί': 'Ανθρακί',
+  'ροζ': 'Ροζ Χρυσό', 'ροζ επιχρυσωμένο': 'Ροζ Χρυσό', 'ροζ χρυσό': 'Ροζ Χρυσό',
+  'λευκό': 'Λευκό', 'λευκά': 'Λευκό', 'μπλε': 'Μπλε',
+  'πράσινο': 'Πράσινο', 'πράσινα': 'Πράσινο', 'κόκκινο': 'Κόκκινο', 'κόκκινα': 'Κόκκινο',
+  'μπορντό': 'Μπορντό', 'μωβ': 'Μωβ', 'τιρκουάζ': 'Τιρκουάζ', 'σομόν': 'Σομόν',
+  'ασημένιο με μπλε': 'Ασημένιο/Μπλε', 'ασημένιο με πράσινο': 'Ασημένιο/Πράσινο',
+  'επιχρυσωμένο με σομόν': 'Χρυσό/Σομόν', 'μαύρο ανθρακί': 'Μαύρο',
+  'επιχυσωμένο': 'Χρυσό',  // typo fix - missing ρ
+  'πολύχρωμο': 'Πολύχρωμο', 'πολύχρωμα': 'Πολύχρωμο', 'πολύχρωμο σετ': 'Πολύχρωμο',
+  'black': 'Μαύρο',
 };
 
 // ============================================
@@ -454,12 +452,18 @@ function formatShippingTimeAttributes(countryCode) {
 // COLOR & MATERIAL EXTRACTION
 // ============================================
 
-function translateColor(greekColor) {
+function normalizeColor(greekColor) {
   if (!greekColor) return null;
   const normalized = greekColor.toLowerCase().trim();
-  if (COLOR_TRANSLATIONS[normalized]) return COLOR_TRANSLATIONS[normalized];
-  for (const [greek, english] of Object.entries(COLOR_TRANSLATIONS)) {
-    if (normalized.includes(greek)) return english;
+  // Skip values containing digits (e.g. "3 mehrfarbige manschetten")
+  if (/\d/.test(normalized)) return null;
+  // Skip overly long values (variant descriptions, not colors)
+  if (normalized.length > 25) return null;
+  // Skip values with encoding corruption (replacement characters)
+  if (/\uFFFD/.test(normalized)) return null;
+  if (COLOR_MAP[normalized]) return COLOR_MAP[normalized];
+  for (const [key, val] of Object.entries(COLOR_MAP)) {
+    if (normalized.includes(key)) return val;
   }
   return greekColor.charAt(0).toUpperCase() + greekColor.slice(1);
 }
@@ -762,11 +766,14 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
       }
       
       const fullTitle = variantSuffix ? `${translatedTitle} - ${variantSuffix}` : translatedTitle;
-      // v7.3: Color fallback chain - variant option → metafield → default Silver
-      const colorEnglish = translateColor(variantColorOriginal) 
-        || translateColor(product.metafields?.color) 
-        || 'Silver';
-      if (colorEnglish) stats.withColor++;
+      // Color: use translated value if available, otherwise normalize Greek original
+      // Fallback chain: translated option → normalized variant → normalized metafield → default
+      const translatedColor = translations.optionValues[variantColorOriginal] || null;
+      const colorNormalized = translatedColor
+        || normalizeColor(variantColorOriginal)
+        || normalizeColor(product.metafields?.color)
+        || 'Ασημένιο';
+      if (colorNormalized) stats.withColor++;
       if (variant.weight) stats.withWeight++;
       
       const variantImage = variant.image_id 
@@ -799,7 +806,7 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
       item += `\n      <g:age_group>adult</g:age_group>`;
       item += `\n      <g:gender>${gender}</g:gender>`;
       
-      if (colorEnglish) item += `\n      <g:color><![CDATA[${colorEnglish}]]></g:color>`;
+      if (colorNormalized) item += `\n      <g:color><![CDATA[${colorNormalized}]]></g:color>`;
       if (material) item += `\n      <g:material><![CDATA[${material}]]></g:material>`;
       
       const weightFormatted = formatWeight(variant.weight);

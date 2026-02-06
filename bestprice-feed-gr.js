@@ -437,11 +437,10 @@ function generateBestPriceFeed(products) {
       item += `      <title><![CDATA[${title}]]></title>\n`;
       item += `      <productURL>https://${DOMAIN}/products/${product.handle}?variant=${variant.id}</productURL>\n`;
 
-      // Images (up to 5 using imagesURL format)
+      // Images: always include imageURL (required) + imagesURL for additional images
       const allImages = [variantImage, ...images.filter(img => img.src !== variantImage).map(img => img.src)].slice(0, 5);
-      if (allImages.length === 1) {
-        item += `      <imageURL>${escapeXml(allImages[0])}</imageURL>\n`;
-      } else {
+      item += `      <imageURL>${escapeXml(allImages[0])}</imageURL>\n`;
+      if (allImages.length > 1) {
         item += `      <imagesURL>\n`;
         allImages.forEach((img, i) => {
           item += `        <img${i + 1}>${escapeXml(img)}</img${i + 1}>\n`;

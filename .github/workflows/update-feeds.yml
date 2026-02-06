@@ -1,8 +1,8 @@
-name: Update Shopping Feeds (Google + Meta)
+name: Update Shopping Feeds (Google + Meta + GLAMI)
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # Every 3 hours
+    - cron: '0 */1 * * *'  # Every 1 hour (GLAMI recommends hourly updates)
   workflow_dispatch:
     inputs:
       country:
@@ -40,6 +40,13 @@ jobs:
         run: |
           echo "🔵 Generating Meta Product Feed (Greece)..."
           node meta-feed-gr.js
+
+      - name: Run GLAMI feed generator
+        env:
+          SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
+        run: |
+          echo "🟣 Generating GLAMI Product Feed (Greece)..."
+          node glami-feed-gr.js
 
       - name: Run local inventory feed generator
         env:

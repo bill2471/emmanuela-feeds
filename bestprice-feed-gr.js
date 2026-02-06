@@ -258,10 +258,12 @@ function getWeightGrams(variant) {
 function httpsRequest(options, postData = null) {
   return new Promise((resolve, reject) => {
     const req = https.request(options, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
+      const chunks = [];
+      res.on('data', chunk => chunks.push(chunk));
       res.on('end', () => {
         try {
+          // Concatenate as Buffer first, then decode as UTF-8 to avoid stream boundary corruption
+          const data = Buffer.concat(chunks).toString('utf8');
           resolve({ data: JSON.parse(data), statusCode: res.statusCode, headers: res.headers });
         } catch (e) {
           reject(new Error(`Parse error: ${e.message}`));
@@ -616,7 +618,14 @@ async function generateFeed(options = {}) {
   }
 
   // Generate feed
-  const { xml, stats } = generateBestPriceFeed(products);
+  let { xml, stats } = generateBestPriceFeed(products);
+
+  // Sanitize: remove any U+FFFD replacement characters (Node.js/API encoding glitch)
+  const fffdCount = (xml.match(/\uFFFD/g) || []).length;
+  if (fffdCount > 0) {
+    console.log(`⚠️ Removing ${fffdCount} corrupted characters (U+FFFD)...`);
+    xml = xml.replace(/\uFFFD+/g, '');
+  }
 
   // Create output directory
   if (!fs.existsSync(OUTPUT_DIR)) {

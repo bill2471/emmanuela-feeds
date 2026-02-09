@@ -73,7 +73,13 @@ jobs:
             echo "📭 No changes to commit"
           else
             git commit -m "🔄 Auto-update feeds $(date +'%Y-%m-%d %H:%M UTC')"
-            git pull --rebase origin main
+            # Pull remote changes; on conflict, keep our freshly-generated feeds
+            git pull --rebase origin main || {
+              echo "⚠️ Rebase conflict — resolving by keeping our generated feeds..."
+              git checkout --theirs feeds/*.xml 2>/dev/null || true
+              git add feeds/*.xml
+              git rebase --continue --no-edit || git rebase --skip
+            }
             git push
             echo "✅ Feeds updated and pushed!"
           fi

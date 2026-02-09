@@ -1,5 +1,5 @@
 /**
- * Skroutz.gr Product Feed Generator v1.1 for EMMANUELA
+ * Skroutz.gr Product Feed Generator v1.2 for EMMANUELA
  *
  * Generates a valid XML product feed per Skroutz.gr specifications.
  * Reference: https://developer.skroutz.gr/el/feedspec/
@@ -17,6 +17,7 @@
  *   - Up to 15 additional images per product
  *   - CDATA wrappers for text fields
  *   - Material phrase in titles (v1.1): "από Ασήμι 925", "από Επιχρυσωμένο Ασήμι 925"
+ *   - "Χρώμα μετάλλου" option name support (v1.2)
  *
  * Usage:
  *   node skroutz-feed-gr.js                    # Generate feed
@@ -25,6 +26,7 @@
  * Output: feeds/skroutz-gr.xml
  *
  * Created: 2026-02-09
+ * Updated: 2026-02-09 — "Χρώμα μετάλλου" option name support (v1.2)
  */
 
 const https = require('https');
@@ -231,7 +233,8 @@ function extractVariantColor(selectedOptions) {
   if (!selectedOptions) return null;
   for (const opt of selectedOptions) {
     const name = (opt.name || '').toLowerCase();
-    if (name.includes('χρώμα') || name.includes('color') || name.includes('colour')) {
+    if (name.includes('χρώμα') || name.includes('color') || name.includes('colour')
+        || name === 'χρώμα μετάλλου') {
       return opt.value;
     }
   }
@@ -712,7 +715,7 @@ function generateSkroutzFeed(products) {
 
 async function generateFeed(options = {}) {
   console.log('='.repeat(60));
-  console.log('Skroutz.gr Feed Generator v1.1 for EMMANUELA');
+  console.log('Skroutz.gr Feed Generator v1.2 for EMMANUELA');
   console.log('='.repeat(60));
   console.log(`Store: ${SHOPIFY_STORE}`);
   console.log(`Domain: ${DOMAIN}`);

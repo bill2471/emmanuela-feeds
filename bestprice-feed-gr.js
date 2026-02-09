@@ -1,5 +1,5 @@
 /**
- * BestPrice.gr Product Feed Generator v1.0 for EMMANUELA
+ * BestPrice.gr Product Feed Generator v1.1 for EMMANUELA
  *
  * Generates a valid XML product feed per BestPrice.gr specifications (v2.0.12).
  *
@@ -19,6 +19,7 @@
  * Output: feeds/bestprice-gr.xml
  *
  * Created: 2026-02-06
+ * Updated: 2026-02-09 — "Χρώμα μετάλλου" option name support (v1.1)
  */
 
 const https = require('https');
@@ -204,7 +205,8 @@ function extractVariantColor(selectedOptions) {
   if (!selectedOptions) return null;
   for (const opt of selectedOptions) {
     const name = (opt.name || '').toLowerCase();
-    if (name.includes('χρώμα') || name.includes('color') || name.includes('colour')) {
+    if (name.includes('χρώμα') || name.includes('color') || name.includes('colour')
+        || name === 'χρώμα μετάλλου') {
       return opt.value;
     }
   }
@@ -601,7 +603,7 @@ function generateBestPriceFeed(products) {
 
 async function generateFeed(options = {}) {
   console.log('='.repeat(60));
-  console.log('BestPrice.gr Feed Generator v1.0 for EMMANUELA');
+  console.log('BestPrice.gr Feed Generator v1.1 for EMMANUELA');
   console.log('='.repeat(60));
   console.log(`Store: ${SHOPIFY_STORE}`);
   console.log(`Domain: ${DOMAIN}`);

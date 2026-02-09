@@ -1,16 +1,28 @@
 /**
- * GLAMI Product Feed Generator v1.0 for EMMANUELA
+ * GLAMI Product Feed Generator v2.0 for EMMANUELA
  *
  * Generates a valid XML product feed per GLAMI.gr specifications.
  *
  * Key features:
  *   - ALL active products (same as Google Shopping feed)
- *   - Creates separate SHOPITEM per variant (color+size combo)
+ *   - COLOR-GROUPED: 1 SHOPITEM per color per product (not per variant)
+ *   - Every entry has a color PARAM (mandatory for variant grouping)
+ *   - Size variants handled via URL_SIZE per entry
  *   - Skips out-of-stock variants
  *   - GLAMI CATEGORYTEXT mapping from Shopify product types
  *   - UPPERCASE XML tags as required by GLAMI
- *   - ITEM_ID = Shopify Variant ID (must match GLAMI piXel)
- *   - ITEMGROUP_ID = Shopify Product ID
+ *   - ITEM_ID = representative Shopify Variant ID (must match GLAMI piXel)
+ *   - ITEMGROUP_ID = Shopify Product ID (groups color variants together)
+ *   - Buffer.concat UTF-8 fix for Greek characters
+ *   - CI cooldown + retry for API throttle handling
+ *
+ * v2.0 changes (2026-02-09):
+ *   - Color-grouped entries (1 per color, not 1 per variant) — fixes 1,298 blocked duplicates
+ *   - Every entry now has color PARAM (default: "ασημί" for unmapped)
+ *   - "Χρώμα μετάλλου" option name support
+ *   - Buffer.concat UTF-8 fix (same as BestPrice/Skroutz)
+ *   - API retry with exponential backoff (5 retries)
+ *   - CI cooldown (30s) for GitHub Actions
  *
  * Usage:
  *   node glami-feed-gr.js                    # Generate feed
@@ -19,6 +31,7 @@
  * Output: feeds/glami-gr.xml
  *
  * Created: 2026-02-06
+ * Updated: 2026-02-09
  */
 
 const https = require('https');
@@ -274,13 +287,17 @@ function getGender(productType, title) {
 // HTTPS REQUEST HELPERS
 // ============================================
 
+// Detect CI environment for cooldown
+const IS_CI = !!(process.env.CI || process.env.GITHUB_ACTIONS);
+
 function httpsRequest(options, postData = null) {
   return new Promise((resolve, reject) => {
     const req = https.request(options, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
+      const chunks = [];
+      res.on('data', chunk => chunks.push(chunk));
       res.on('end', () => {
         try {
+          const data = Buffer.concat(chunks).toString('utf8');
           resolve({ data: JSON.parse(data), statusCode: res.statusCode, headers: res.headers });
         } catch (e) {
           reject(new Error(`Parse error: ${e.message}`));
@@ -293,7 +310,7 @@ function httpsRequest(options, postData = null) {
   });
 }
 
-async function graphqlRequest(query) {
+async function graphqlRequest(query, retries = 5) {
   const options = {
     hostname: SHOPIFY_STORE,
     path: `/admin/api/${API_VERSION}/graphql.json`,
@@ -303,7 +320,29 @@ async function graphqlRequest(query) {
       'Content-Type': 'application/json'
     }
   };
-  return httpsRequest(options, JSON.stringify({ query }));
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const result = await httpsRequest(options, JSON.stringify({ query }));
+      // Handle throttle (429 or cost exceeded)
+      if (result.statusCode === 429 || (result.data && result.data.errors &&
+          JSON.stringify(result.data.errors).includes('Throttled'))) {
+        const wait = (attempt + 1) * 4000;
+        console.log(`   Throttled, waiting ${wait / 1000}s (attempt ${attempt + 1}/${retries})...`);
+        await new Promise(r => setTimeout(r, wait));
+        continue;
+      }
+      return result;
+    } catch (e) {
+      if (attempt < retries) {
+        const wait = (attempt + 1) * 4000;
+        console.log(`   Request error: ${e.message}, retrying in ${wait / 1000}s...`);
+        await new Promise(r => setTimeout(r, wait));
+      } else {
+        throw e;
+      }
+    }
+  }
+  throw new Error('Max retries exceeded for GraphQL request');
 }
 
 // ============================================
@@ -400,7 +439,8 @@ async function fetchProducts() {
       if (!pageInfo?.hasNextPage) break;
       cursor = pageInfo.endCursor;
       page++;
-      await new Promise(r => setTimeout(r, 300));
+      // CI needs longer cooldown to avoid throttle across multiple feed scripts
+      await new Promise(r => setTimeout(r, IS_CI ? 1500 : 300));
     } catch (error) {
       console.error(`Error: ${error.message}`);
       break;
@@ -419,7 +459,8 @@ function extractVariantColor(selectedOptions) {
   if (!selectedOptions) return null;
   for (const opt of selectedOptions) {
     const name = (opt.name || '').toLowerCase();
-    if (name.includes('χρώμα') || name.includes('color') || name.includes('colour')) {
+    if (name.includes('χρώμα') || name.includes('color') || name.includes('colour')
+        || name === 'χρώμα μετάλλου') {
       return opt.value;
     }
   }
@@ -447,26 +488,29 @@ function extractVariantSize(selectedOptions) {
 }
 
 // ============================================
-// XML FEED GENERATION FOR GLAMI
+// XML FEED GENERATION FOR GLAMI (v2.0 — color-grouped)
 // ============================================
 
 function generateGlamiFeed(products) {
-  console.log('Generating GLAMI XML feed for Greece...\n');
+  console.log('Generating GLAMI XML feed for Greece (color-grouped v2.0)...\n');
 
   const items = [];
   const stats = {
+    totalProducts: 0,
     inStock: 0,
     outOfStock: 0,
     noImage: 0,
-    totalVariants: 0,
+    feedEntries: 0,
     withColor: 0,
     withMaterial: 0,
     withSize: 0,
     withDescription: 0,
     withSalePrice: 0,
     withBarcode: 0,
+    withSizeVariations: 0,
     categoryBreakdown: {},
     unmappedTypes: {},
+    colorBreakdown: {},
     sampleItems: []
   };
 
@@ -474,6 +518,7 @@ function generateGlamiFeed(products) {
     // Skip gift cards - not relevant for GLAMI
     if ((product.product_type || '').toLowerCase().includes('gift card')) return;
 
+    stats.totalProducts++;
     const variants = product.variants || [];
     const images = product.images || [];
     const mainImage = images[0]?.src || '';
@@ -498,51 +543,106 @@ function generateGlamiFeed(products) {
     }
 
     // Alternative images (skip first = main image)
-    const altImages = images.slice(1, 10).map(img => img.src);
+    const altImages = images.slice(1, 14).map(img => img.src);
+
+    // ═══════════════════════════════════════════════════════════
+    // GROUP VARIANTS BY COLOR
+    // ═══════════════════════════════════════════════════════════
+    const colorGroups = {};
 
     variants.forEach(variant => {
-      // Skip out of stock
       if (variant.inventory_quantity <= 0) {
         stats.outOfStock++;
         return;
       }
-
       stats.inStock++;
-      stats.totalVariants++;
 
-      // Extract color & size from variant options
       const variantColorRaw = extractVariantColor(variant.selectedOptions);
       const variantSize = extractVariantSize(variant.selectedOptions);
       const greekColor = getGreekColor(variantColorRaw);
 
-      if (greekColor) stats.withColor++;
-      if (variantSize) stats.withSize++;
+      // Color key for grouping:
+      // - Use the GREEK color as key (ασημί, χρυσό, μαύρο, etc.) — this merges
+      //   variants like "Ασημένιο" and "Ασημί" into one group
+      // - Variants that don't map to any color go to _default_ (1 entry per product)
+      const colorKey = greekColor || '_default_';
+
+      if (!colorGroups[colorKey]) {
+        colorGroups[colorKey] = {
+          greekColor: greekColor || 'ασημί',  // Default color for unmapped variants
+          rawColor: variantColorRaw || null,
+          representativeVariant: variant,  // first in-stock variant = representative
+          variants: [],
+          sizes: [],
+          lowestPrice: parseFloat(variant.price),
+          highestCompareAt: variant.compare_at_price ? parseFloat(variant.compare_at_price) : null,
+        };
+      }
+
+      const group = colorGroups[colorKey];
+      group.variants.push(variant);
+
+      // Track sizes for this color group
+      if (variantSize && !group.sizes.includes(variantSize)) {
+        group.sizes.push(variantSize);
+      }
+
+      // Track lowest price among in-stock variants of same color
+      const price = parseFloat(variant.price);
+      if (price < group.lowestPrice) {
+        group.lowestPrice = price;
+        group.representativeVariant = variant;
+      }
+
+      // Track highest compare_at_price
+      if (variant.compare_at_price) {
+        const cap = parseFloat(variant.compare_at_price);
+        if (!group.highestCompareAt || cap > group.highestCompareAt) {
+          group.highestCompareAt = cap;
+        }
+      }
+    });
+
+    // ═══════════════════════════════════════════════════════════
+    // BUILD 1 SHOPITEM PER COLOR GROUP
+    // ═══════════════════════════════════════════════════════════
+    const colorKeys = Object.keys(colorGroups);
+    const hasMultipleColors = colorKeys.length > 1;
+
+    colorKeys.forEach(colorKey => {
+      const group = colorGroups[colorKey];
+      const repVariant = group.representativeVariant;
+      stats.feedEntries++;
+
+      // Stats
+      stats.withColor++;
+      if (group.sizes.length > 0) stats.withSize++;
       if (description) stats.withDescription++;
-      if (variant.barcode) stats.withBarcode++;
+      if (repVariant.barcode) stats.withBarcode++;
+
+      // Track color breakdown
+      stats.colorBreakdown[group.greekColor] = (stats.colorBreakdown[group.greekColor] || 0) + 1;
 
       // Get variant-specific image or fallback to main
-      const variantImage = variant.image_id
-        ? images.find(img => img.id === variant.image_id)?.src || mainImage
+      const variantImage = repVariant.image_id
+        ? images.find(img => img.id === repVariant.image_id)?.src || mainImage
         : mainImage;
 
-      // Build URLs
+      // URLs
       const productUrl = buildProductUrlBase(product.handle);
-      const variantUrl = buildProductUrl(product.handle, variant.id);
+      const variantUrl = buildProductUrl(product.handle, repVariant.id);
 
-      // Price - GLAMI wants number without currency
-      const price = parseFloat(variant.price);
-      const compareAtPrice = variant.compare_at_price ? parseFloat(variant.compare_at_price) : null;
-      const hasSalePrice = compareAtPrice && compareAtPrice > price;
+      // Price
+      const price = group.lowestPrice;
+      const hasSalePrice = group.highestCompareAt && group.highestCompareAt > price;
       if (hasSalePrice) stats.withSalePrice++;
 
-      // PRODUCTNAME: should NOT include size (GLAMI rule)
-      // Include color variant info only if it mapped to a valid Greek color
+      // PRODUCTNAME: include color only if multiple colors exist, never include size
       let productName = product.title;
-      if (greekColor && variantColorRaw && variant.title !== 'Default Title') {
-        // Only add color to name, not size
-        const colorPart = variantColorRaw;
-        if (!productName.toLowerCase().includes(colorPart.toLowerCase())) {
-          productName = `${productName} - ${colorPart}`;
+      if (hasMultipleColors && group.rawColor) {
+        const colorSuffix = group.rawColor;
+        if (!productName.toLowerCase().includes(colorSuffix.toLowerCase())) {
+          productName = `${productName} - ${colorSuffix}`;
         }
       }
       productName = productName.substring(0, 200);
@@ -550,9 +650,12 @@ function generateGlamiFeed(products) {
       // Collect sample items for validation
       if (stats.sampleItems.length < 10) {
         stats.sampleItems.push({
-          itemId: variant.id,
+          itemId: repVariant.id,
           groupId: product.id,
           name: productName.substring(0, 60),
+          color: group.greekColor,
+          sizes: group.sizes.length,
+          variants: group.variants.length,
           category: glamiCategory,
           price: price
         });
@@ -565,19 +668,11 @@ function generateGlamiFeed(products) {
       let item = `  <SHOPITEM>`;
 
       // MANDATORY fields
-      item += `\n    <ITEM_ID>${escapeXml(variant.id)}</ITEM_ID>`;
+      item += `\n    <ITEM_ID>${escapeXml(repVariant.id)}</ITEM_ID>`;
       item += `\n    <PRODUCTNAME><![CDATA[${productName}]]></PRODUCTNAME>`;
       item += `\n    <URL>${escapeXml(productUrl)}</URL>`;
       item += `\n    <IMGURL>${escapeXml(variantImage)}</IMGURL>`;
-
-      // PRICE_VAT - the actual selling price with VAT
-      if (hasSalePrice) {
-        // When on sale, PRICE_VAT should be the sale price
-        item += `\n    <PRICE_VAT>${price}</PRICE_VAT>`;
-      } else {
-        item += `\n    <PRICE_VAT>${price}</PRICE_VAT>`;
-      }
-
+      item += `\n    <PRICE_VAT>${price}</PRICE_VAT>`;
       item += `\n    <MANUFACTURER><![CDATA[${BRAND}]]></MANUFACTURER>`;
       item += `\n    <CATEGORYTEXT><![CDATA[${glamiCategory}]]></CATEGORYTEXT>`;
 
@@ -586,31 +681,32 @@ function generateGlamiFeed(products) {
         item += `\n    <DESCRIPTION><![CDATA[${description.substring(0, 65535)}]]></DESCRIPTION>`;
       }
 
-      item += `\n    <ITEMGROUP_ID>${escapeXml(product.id)}</ITEMGROUP_ID>`;
+      // ITEMGROUP_ID — groups color variants of the same product
+      // Only emit when there are multiple colors (GLAMI needs this for variant grouping)
+      if (hasMultipleColors) {
+        item += `\n    <ITEMGROUP_ID>${escapeXml(product.id)}</ITEMGROUP_ID>`;
+      }
 
       // Alternative images
       altImages.forEach(img => {
         item += `\n    <IMGURL_ALTERNATIVE>${escapeXml(img)}</IMGURL_ALTERNATIVE>`;
       });
 
-      // URL_SIZE (variant-specific URL with size preselected)
-      if (variantSize) {
-        item += `\n    <URL_SIZE>${escapeXml(variantUrl)}</URL_SIZE>`;
-      }
+      // URL_SIZE (variant-specific URL)
+      item += `\n    <URL_SIZE>${escapeXml(variantUrl)}</URL_SIZE>`;
 
-      // PARAM: color
-      if (greekColor) {
-        item += `\n    <PARAM>`;
-        item += `\n      <PARAM_NAME>χρώμα</PARAM_NAME>`;
-        item += `\n      <VAL>${escapeXml(greekColor)}</VAL>`;
-        item += `\n    </PARAM>`;
-      }
+      // PARAM: color — ALWAYS present (mandatory for GLAMI variant grouping)
+      item += `\n    <PARAM>`;
+      item += `\n      <PARAM_NAME>χρώμα</PARAM_NAME>`;
+      item += `\n      <VAL>${escapeXml(group.greekColor)}</VAL>`;
+      item += `\n    </PARAM>`;
 
-      // PARAM: size (for rings, chokers, bracelets with size)
-      if (variantSize) {
+      // PARAM: size — comma-separated sizes if multiple, single if one
+      if (group.sizes.length > 0) {
+        stats.withSizeVariations++;
         item += `\n    <PARAM>`;
         item += `\n      <PARAM_NAME>μέγεθος</PARAM_NAME>`;
-        item += `\n      <VAL>${escapeXml(variantSize)}</VAL>`;
+        item += `\n      <VAL>${escapeXml(group.sizes.join(', '))}</VAL>`;
         item += `\n    </PARAM>`;
       }
 
@@ -633,8 +729,8 @@ function generateGlamiFeed(products) {
       item += `\n    <DELIVERY_DATE>0</DELIVERY_DATE>`;
 
       // GTIN (EAN barcode) if available
-      if (variant.barcode && /^\d{8,18}$/.test(variant.barcode)) {
-        item += `\n    <GTIN>${variant.barcode}</GTIN>`;
+      if (repVariant.barcode && /^\d{8,18}$/.test(repVariant.barcode)) {
+        item += `\n    <GTIN>${repVariant.barcode}</GTIN>`;
       }
 
       item += `\n  </SHOPITEM>`;
@@ -644,16 +740,27 @@ function generateGlamiFeed(products) {
 
   // Print stats
   console.log('   Feed Statistics:');
-  console.log(`      In-stock items: ${stats.inStock}`);
-  console.log(`      Out-of-stock (skipped): ${stats.outOfStock}`);
+  console.log(`      Total products: ${stats.totalProducts}`);
+  console.log(`      In-stock variants: ${stats.inStock}`);
+  console.log(`      Out-of-stock variants (skipped): ${stats.outOfStock}`);
   console.log(`      Products without image (skipped): ${stats.noImage}`);
-  console.log(`      With color: ${stats.withColor}`);
+  console.log(`      Feed entries (color-grouped): ${stats.feedEntries}`);
+  console.log(`      With color: ${stats.withColor} (100%)`);
   console.log(`      With material: ${stats.withMaterial}`);
   console.log(`      With size: ${stats.withSize}`);
+  console.log(`      With size variations: ${stats.withSizeVariations}`);
   console.log(`      With description: ${stats.withDescription}`);
   console.log(`      With sale price: ${stats.withSalePrice}`);
   console.log(`      With barcode (GTIN): ${stats.withBarcode}`);
   console.log('');
+
+  if (Object.keys(stats.colorBreakdown).length > 0) {
+    console.log('   Color Breakdown:');
+    Object.entries(stats.colorBreakdown).sort((a, b) => b[1] - a[1]).forEach(([color, count]) => {
+      console.log(`      ${color}: ${count} entries`);
+    });
+    console.log('');
+  }
 
   if (Object.keys(stats.categoryBreakdown).length > 0) {
     console.log('   Category Breakdown:');
@@ -687,19 +794,21 @@ function printValidationInfo(stats) {
   console.log('VALIDATION INFO - Compare with GLAMI piXel');
   console.log(`${'='.repeat(60)}\n`);
 
-  console.log('Sample ITEM_IDs - These MUST match GLAMI piXel item_ids:\n');
+  console.log('Sample entries (color-grouped) - ITEM_IDs must match GLAMI piXel:\n');
   stats.sampleItems.forEach((sample, i) => {
     console.log(`   ${i + 1}. ITEM_ID: ${sample.itemId}`);
     console.log(`      ITEMGROUP_ID: ${sample.groupId}`);
     console.log(`      Name: ${sample.name}...`);
+    console.log(`      Color: ${sample.color}`);
+    console.log(`      Sizes: ${sample.sizes || 0} | Variants in group: ${sample.variants}`);
     console.log(`      Category: ${sample.category.split(' | ').pop()}`);
     console.log(`      Price: ${sample.price} EUR`);
     console.log('');
   });
 
   console.log('GLAMI piXel Integration:');
-  console.log('   The ITEM_ID in the feed must match the "item_id" parameter');
-  console.log('   in your GLAMI piXel tracking code on the product pages.');
+  console.log('   The ITEM_ID in the feed = representative Shopify Variant ID');
+  console.log('   The piXel sends the current variant ID — GLAMI matches via ITEMGROUP_ID');
   console.log('   ITEM_ID format: Shopify Variant ID (numeric)');
   console.log('');
 }
@@ -710,7 +819,7 @@ function printValidationInfo(stats) {
 
 async function generateFeed(options = {}) {
   console.log(`\n${'='.repeat(60)}`);
-  console.log('GLAMI PRODUCT FEED GENERATOR v1.0');
+  console.log('GLAMI PRODUCT FEED GENERATOR v2.0 (color-grouped)');
   console.log(`${'='.repeat(60)}`);
   console.log(`   Target: Greece (${DOMAIN})`);
   console.log(`   Currency: EUR`);

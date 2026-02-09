@@ -1,5 +1,5 @@
 /**
- * Skroutz.gr Product Feed Generator v1.0 for EMMANUELA
+ * Skroutz.gr Product Feed Generator v1.1 for EMMANUELA
  *
  * Generates a valid XML product feed per Skroutz.gr specifications.
  * Reference: https://developer.skroutz.gr/el/feedspec/
@@ -16,6 +16,7 @@
  *   - Weight in grams
  *   - Up to 15 additional images per product
  *   - CDATA wrappers for text fields
+ *   - Material phrase in titles (v1.1): "από Ασήμι 925", "από Επιχρυσωμένο Ασήμι 925"
  *
  * Usage:
  *   node skroutz-feed-gr.js                    # Generate feed
@@ -165,6 +166,37 @@ function getGreekColor(variantColorRaw) {
   }
   // Return capitalized original if unmapped
   return variantColorRaw.trim().charAt(0).toUpperCase() + variantColorRaw.trim().slice(1);
+}
+
+// ============================================
+// MATERIAL PHRASE MAPPING (color family → Greek material phrase for Skroutz titles)
+// ============================================
+// Skroutz requires material info in titles for jewelry. We derive it from the
+// color/finish of the variant, since nearly all products are sterling silver 925.
+
+function getMaterialPhrase(variantColorRaw) {
+  if (!variantColorRaw) return 'από Ασήμι 925';
+  const c = variantColorRaw.toLowerCase().trim();
+
+  // Gold-plated family
+  if (c.startsWith('ροζ επιχρ') || c.startsWith('ροζ χρυσ') || c === 'ροζ επιχευσωμένα') {
+    return 'από Ροζ Επιχρυσωμένο Ασήμι 925';
+  }
+  if (c.startsWith('επιχρυσ') || c.startsWith('επιχυσ') || c === 'gold' || c.startsWith('χρυσό') || c.startsWith('χρυσα') || c.startsWith('χρυσός')) {
+    return 'από Επιχρυσωμένο Ασήμι 925';
+  }
+
+  // Oxidized / anthracite family
+  if (c.startsWith('οξειδ') || c.startsWith('μαύρο ανθρ') || c.startsWith('μαύρα ανθρ') || c.startsWith('μάυρο') || c === 'black') {
+    return 'από Οξειδωμένο Ασήμι 925';
+  }
+  if (c.startsWith('μαύρο') || c.startsWith('μαύρα')) {
+    return 'από Οξειδωμένο Ασήμι 925';
+  }
+
+  // Silver family (default)
+  // Covers: ασημένιο, ασημένια, ασημί, silver, and all composites starting with these
+  return 'από Ασήμι 925';
 }
 
 // ============================================
@@ -324,6 +356,7 @@ async function fetchProducts() {
               }
             }
             colorPattern: metafield(namespace: "shopify", key: "color-pattern") { value }
+            material: metafield(namespace: "shopify", key: "jewelry-material") { value }
           }
         }
       }
@@ -356,6 +389,7 @@ async function fetchProducts() {
           tags: node.tags || [],
           metafields: {
             color: node.colorPattern?.value || null,
+            material: node.material?.value || null,
           },
           images: (node.images?.edges || []).map(e => ({
             id: e.node.id.replace('gid://shopify/ProductImage/', ''),
@@ -415,6 +449,7 @@ function generateSkroutzFeed(products) {
     withEAN: 0,
     withDescription: 0,
     withVariations: 0,
+    withMaterial: 0,
     categoryBreakdown: {},
     unmappedTypes: {},
     sampleItems: []
@@ -488,14 +523,24 @@ function generateSkroutzFeed(products) {
       // Weight from representative variant
       const weightGrams = getWeightGrams(repVariant);
 
-      // Build name: product title + color (Skroutz wants manufacturer + model + distinguishing attributes)
+      // Build name: product title + material phrase + color
+      // Skroutz requires material in title for jewelry (e.g., "από Ασήμι 925")
+      const rawColorForMaterial = extractVariantColor(repVariant.selectedOptions);
+      const materialPhrase = getMaterialPhrase(rawColorForMaterial);
       const colorForTitle = Object.keys(colorGroups).length > 1 ? color : null;
       let name = product.title;
+      // Add material phrase (always for jewelry)
+      if (materialPhrase) {
+        name = `${name} ${materialPhrase}`;
+      }
+      // Add color suffix for multi-color products
       if (colorForTitle) {
-        name = `${product.title} ${colorForTitle}`;
+        name = `${name} ${colorForTitle}`;
       }
       // Ensure name is max 300 chars (Skroutz limit)
       if (name.length > 300) name = name.substring(0, 297) + '...';
+
+      if (materialPhrase) stats.withMaterial++;
 
       // MPN
       const mpn = repVariant.sku || `EMM-${repVariant.id}`;
@@ -667,7 +712,7 @@ function generateSkroutzFeed(products) {
 
 async function generateFeed(options = {}) {
   console.log('='.repeat(60));
-  console.log('Skroutz.gr Feed Generator v1.0 for EMMANUELA');
+  console.log('Skroutz.gr Feed Generator v1.1 for EMMANUELA');
   console.log('='.repeat(60));
   console.log(`Store: ${SHOPIFY_STORE}`);
   console.log(`Domain: ${DOMAIN}`);
@@ -722,6 +767,7 @@ async function generateFeed(options = {}) {
   console.log(`  No image (skip):       ${stats.noImage}`);
   console.log(`  Gift cards (skip):     ${stats.skippedGiftCards}`);
   console.log(`  Feed entries:          ${stats.feedEntries}`);
+  console.log(`  With material phrase:   ${stats.withMaterial}`);
   console.log(`  With color:            ${stats.withColor}`);
   console.log(`  With MPN/SKU:          ${stats.withMPN}`);
   console.log(`  With EAN/barcode:      ${stats.withEAN}`);

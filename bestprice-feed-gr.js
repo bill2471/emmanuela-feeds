@@ -510,7 +510,7 @@ function generateBestPriceFeed(products) {
       let item = '';
       item += `    <product>\n`;
       item += `      <productId>${repVariant.id}</productId>\n`;
-      item += `      <title><![CDATA[${title}]]></title>\n`;
+      item += `      <title>${escapeXml(title)}</title>\n`;
       item += `      <productURL>https://${DOMAIN}/products/${product.handle}?variant=${repVariant.id}</productURL>\n`;
 
       // Images: always include imageURL (required) + imagesURL for additional images
@@ -528,18 +528,18 @@ function generateBestPriceFeed(products) {
       item += `      <price>${lowestPrice.toFixed(2)}</price>\n`;
 
       // Category
-      item += `      <category_path><![CDATA[${categoryPath}]]></category_path>\n`;
+      item += `      <category_path>${escapeXml(categoryPath)}</category_path>\n`;
 
       // Availability & stock
       item += `      <availability>Παράδοση σε 1-3 ημέρες</availability>\n`;
       item += `      <stock>Y</stock>\n`;
 
       // Brand
-      item += `      <brand><![CDATA[${BRAND}]]></brand>\n`;
+      item += `      <brand>${escapeXml(BRAND)}</brand>\n`;
 
       // MPN (SKU from representative variant)
       const mpnValue = repVariant.sku || `EMM-${repVariant.id}`;
-      item += `      <MPN><![CDATA[${mpnValue}]]></MPN>\n`;
+      item += `      <MPN>${escapeXml(mpnValue)}</MPN>\n`;
       if (repVariant.sku) stats.withMPN++;
 
       // Color (always present)

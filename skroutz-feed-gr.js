@@ -120,17 +120,27 @@ const SKROUTZ_CATEGORY_KEYWORDS = [
 
 const DEFAULT_SKROUTZ_CATEGORY = 'Κοσμήματα';
 
-function getSkroutzCategory(productType) {
-  if (!productType) return DEFAULT_SKROUTZ_CATEGORY;
-  const type = productType.toLowerCase().trim();
+function getSkroutzCategory(productType, productTitle) {
+  const type = (productType || '').toLowerCase().trim();
 
   // Exact match first
-  if (SKROUTZ_CATEGORY_MAP[type]) return SKROUTZ_CATEGORY_MAP[type];
+  if (type && SKROUTZ_CATEGORY_MAP[type]) return SKROUTZ_CATEGORY_MAP[type];
 
-  // Keyword-based match
-  for (const entry of SKROUTZ_CATEGORY_KEYWORDS) {
-    const allMatch = entry.keywords.every(kw => type.includes(kw));
-    if (allMatch) return entry.category;
+  // Keyword-based match on productType
+  if (type) {
+    for (const entry of SKROUTZ_CATEGORY_KEYWORDS) {
+      const allMatch = entry.keywords.every(kw => type.includes(kw));
+      if (allMatch) return entry.category;
+    }
+  }
+
+  // Fallback: keyword match on product TITLE (catches products with missing/generic productType)
+  const title = (productTitle || '').toLowerCase().trim();
+  if (title) {
+    for (const entry of SKROUTZ_CATEGORY_KEYWORDS) {
+      const allMatch = entry.keywords.every(kw => title.includes(kw));
+      if (allMatch) return entry.category;
+    }
   }
 
   return DEFAULT_SKROUTZ_CATEGORY;
@@ -471,7 +481,7 @@ function generateSkroutzFeed(products) {
     const variants = product.variants || [];
     const images = product.images || [];
     const mainImage = images[0]?.src || '';
-    const categoryPath = getSkroutzCategory(product.product_type);
+    const categoryPath = getSkroutzCategory(product.product_type, product.title);
 
     // Track category
     stats.categoryBreakdown[categoryPath] = (stats.categoryBreakdown[categoryPath] || 0) + 1;
@@ -530,23 +540,26 @@ function generateSkroutzFeed(products) {
       // Skroutz requires material in title for jewelry (e.g., "από Ασήμι 925")
       const rawColorForMaterial = extractVariantColor(repVariant.selectedOptions);
       const materialPhrase = getMaterialPhrase(rawColorForMaterial);
-      const colorForTitle = Object.keys(colorGroups).length > 1 ? color : null;
+      // Always add color suffix to ensure unique names across products (Skroutz validator warning)
       let name = product.title;
       // Add material phrase (always for jewelry)
       if (materialPhrase) {
         name = `${name} ${materialPhrase}`;
       }
-      // Add color suffix for multi-color products
-      if (colorForTitle) {
-        name = `${name} ${colorForTitle}`;
+      // Add color suffix ALWAYS (even single-color products can have duplicate titles)
+      if (color) {
+        name = `${name} ${color}`;
       }
       // Ensure name is max 300 chars (Skroutz limit)
       if (name.length > 300) name = name.substring(0, 297) + '...';
 
       if (materialPhrase) stats.withMaterial++;
 
-      // MPN
-      const mpn = repVariant.sku || `EMM-${repVariant.id}`;
+      // MPN — must be unique per feed entry; append color suffix to avoid duplicates
+      // when the same SKU is shared across color variants
+      const baseMpn = repVariant.sku || `EMM-${repVariant.id}`;
+      const mpn = Object.keys(colorGroups).length > 1 && color
+        ? `${baseMpn}-${color}` : baseMpn;
 
       // EAN/Barcode
       const ean = repVariant.barcode && /^\d{8,13}$/.test(repVariant.barcode.trim())

@@ -1,5 +1,5 @@
 /**
- * Skroutz.gr Product Feed Generator v1.2 for EMMANUELA
+ * Skroutz.gr Product Feed Generator v1.4 for EMMANUELA
  *
  * Generates a valid XML product feed per Skroutz.gr specifications.
  * Reference: https://developer.skroutz.gr/el/feedspec/
@@ -18,6 +18,8 @@
  *   - CDATA wrappers for text fields
  *   - Material phrase in titles (v1.1): "από Ασήμι 925", "από Επιχρυσωμένο Ασήμι 925"
  *   - "Χρώμα μετάλλου" option name support (v1.2)
+ *   - Validator warning fixes: unique names, category fallback, MPN dedup (v1.3)
+ *   - Size field fix: comma-separated sizes at product level + "One Size" fallback (v1.4)
  *
  * Usage:
  *   node skroutz-feed-gr.js                    # Generate feed
@@ -26,7 +28,7 @@
  * Output: feeds/skroutz-gr.xml
  *
  * Created: 2026-02-09
- * Updated: 2026-02-09 — "Χρώμα μετάλλου" option name support (v1.2)
+ * Updated: 2026-02-13 — Size field fix per Skroutz quality review (v1.4)
  */
 
 const https = require('https');
@@ -618,54 +620,63 @@ function generateSkroutzFeed(products) {
       item += `        <color>${escapeXml(color)}</color>\n`;
       stats.withColor++;
 
-      // Size — either flat field or variations block
-      if (hasSizeOption && groupVariants.length > 1) {
-        // Use variations block for sized products with multiple variants in this color
-        const sizes = [];
-        item += `        <variations>\n`;
-
-        for (const v of groupVariants) {
-          const size = extractVariantSize(v.selectedOptions);
-          if (!size) continue;
-          sizes.push(size);
-
-          const vPrice = parseFloat(v.price);
-          const vQty = Math.max(0, v.inventory_quantity);
-          const vEan = v.barcode && /^\d{8,13}$/.test(v.barcode.trim()) ? v.barcode.trim() : null;
-
-          item += `          <variation>\n`;
-          item += `            <variationid>${v.id}</variationid>\n`;
-          item += `            <availability>Παράδοση 1 έως 3 ημέρες</availability>\n`;
-          item += `            <size>${escapeXml(size)}</size>\n`;
-          item += `            <quantity>${vQty}</quantity>\n`;
-          // Include price only if different from parent
-          if (Math.abs(vPrice - lowestPrice) > 0.01) {
-            item += `            <price_with_vat>${vPrice.toFixed(2)}</price_with_vat>\n`;
-          }
-          // MPN per variation
-          if (v.sku) {
-            item += `            <manufacturersku><![CDATA[${v.sku}]]></manufacturersku>\n`;
-          }
-          // EAN per variation
-          if (vEan) {
-            item += `            <ean>${vEan}</ean>\n`;
-          }
-          item += `          </variation>\n`;
-        }
-
-        item += `        </variations>\n`;
-
-        if (sizes.length > 0) stats.withSize++;
-        stats.withVariations++;
-      } else if (hasSizeOption) {
-        // Single variant with size — flat <size> field
+      // Size — ALWAYS required at product level (Skroutz quality review requirement)
+      // Products with sizes: comma-separated list (e.g., "36,37,38,39.5")
+      // Products without sizes: "One Size"
+      if (hasSizeOption) {
+        // Collect all available sizes from this color group
         const allSizes = groupVariants
           .map(v => extractVariantSize(v.selectedOptions))
           .filter(Boolean);
+
+        // Product-level <size> with ALL sizes comma-separated (ALWAYS required)
         if (allSizes.length > 0) {
           item += `        <size>${escapeXml(allSizes.join(','))}</size>\n`;
           stats.withSize++;
+        } else {
+          item += `        <size>One Size</size>\n`;
+          stats.withSize++;
         }
+
+        // Size Variations block (for products with multiple size variants in this color)
+        if (groupVariants.length > 1 && allSizes.length > 1) {
+          item += `        <variations>\n`;
+
+          for (const v of groupVariants) {
+            const size = extractVariantSize(v.selectedOptions);
+            if (!size) continue;
+
+            const vPrice = parseFloat(v.price);
+            const vQty = Math.max(0, v.inventory_quantity);
+            const vEan = v.barcode && /^\d{8,13}$/.test(v.barcode.trim()) ? v.barcode.trim() : null;
+
+            item += `          <variation>\n`;
+            item += `            <variationid>${v.id}</variationid>\n`;
+            item += `            <availability>Παράδοση 1 έως 3 ημέρες</availability>\n`;
+            item += `            <size>${escapeXml(size)}</size>\n`;
+            item += `            <quantity>${vQty}</quantity>\n`;
+            // Include price only if different from parent
+            if (Math.abs(vPrice - lowestPrice) > 0.01) {
+              item += `            <price_with_vat>${vPrice.toFixed(2)}</price_with_vat>\n`;
+            }
+            // MPN per variation
+            if (v.sku) {
+              item += `            <manufacturersku><![CDATA[${v.sku}]]></manufacturersku>\n`;
+            }
+            // EAN per variation
+            if (vEan) {
+              item += `            <ean>${vEan}</ean>\n`;
+            }
+            item += `          </variation>\n`;
+          }
+
+          item += `        </variations>\n`;
+          stats.withVariations++;
+        }
+      } else {
+        // No size option → "One Size" (Skroutz requires size field for all fashion products)
+        item += `        <size>One Size</size>\n`;
+        stats.withSize++;
       }
 
       // Weight (grams)
@@ -728,7 +739,7 @@ function generateSkroutzFeed(products) {
 
 async function generateFeed(options = {}) {
   console.log('='.repeat(60));
-  console.log('Skroutz.gr Feed Generator v1.2 for EMMANUELA');
+  console.log('Skroutz.gr Feed Generator v1.4 for EMMANUELA');
   console.log('='.repeat(60));
   console.log(`Store: ${SHOPIFY_STORE}`);
   console.log(`Domain: ${DOMAIN}`);

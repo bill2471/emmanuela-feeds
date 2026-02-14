@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-02-14 20:35</created_at>
+  <created_at>2026-02-14 21:35</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -15861,7 +15861,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1320M-1]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>19</quantity>
+        <quantity>18</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>1</weight>

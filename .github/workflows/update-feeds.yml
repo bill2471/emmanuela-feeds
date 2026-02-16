@@ -62,12 +62,12 @@ jobs:
           echo "🟠 Generating Skroutz.gr Product Feed (Greece)..."
           node skroutz-feed-gr.js
 
-      - name: Run local inventory feed generator
+      - name: Run local inventory feed generator (Greece)
         env:
           SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
         run: |
-          echo "🏭 Generating Local Inventory Feed..."
-          node local-inventory-feed.js
+          echo "🏭 Generating Local Inventory Feed (Greece)..."
+          node local-inventory-feed-gr.js
 
       - name: Commit and push changes
         env:

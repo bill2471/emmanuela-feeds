@@ -1,5 +1,5 @@
 /**
- * Skroutz.gr Product Feed Generator v1.4 for EMMANUELA
+ * Skroutz.gr Product Feed Generator v1.5 for EMMANUELA
  *
  * Generates a valid XML product feed per Skroutz.gr specifications.
  * Reference: https://developer.skroutz.gr/el/feedspec/
@@ -20,6 +20,7 @@
  *   - "Χρώμα μετάλλου" option name support (v1.2)
  *   - Validator warning fixes: unique names, category fallback, MPN dedup (v1.3)
  *   - Size field fix: comma-separated sizes at product level + "One Size" fallback (v1.4)
+ *   - Size spec compliance: remove "One Size", dedup sizes, omit tag for non-sized products (v1.5)
  *
  * Usage:
  *   node skroutz-feed-gr.js                    # Generate feed
@@ -28,7 +29,7 @@
  * Output: feeds/skroutz-gr.xml
  *
  * Created: 2026-02-09
- * Updated: 2026-02-13 — Size field fix per Skroutz quality review (v1.4)
+ * Updated: 2026-02-18 — Size spec compliance: omit <size> for non-sized, dedup sizes (v1.5)
  */
 
 const https = require('https');
@@ -620,26 +621,29 @@ function generateSkroutzFeed(products) {
       item += `        <color>${escapeXml(color)}</color>\n`;
       stats.withColor++;
 
-      // Size — ALWAYS required at product level (Skroutz quality review requirement)
-      // Products with sizes: comma-separated list (e.g., "36,37,38,39.5")
-      // Products without sizes: "One Size"
+      // Size — per Skroutz spec: only include <size> when product actually has sizes.
+      // Products without size options: OMIT the <size> tag entirely (spec says no "One Size").
+      // Products with sizes: comma-separated UNIQUE list (e.g., "XS,S,M,L")
+      // Ref: https://developer.skroutz.gr/feedspec/#size
       if (hasSizeOption) {
-        // Collect all available sizes from this color group
-        const allSizes = groupVariants
-          .map(v => extractVariantSize(v.selectedOptions))
-          .filter(Boolean);
+        // Collect all available sizes from this color group, DEDUPLICATED
+        const allSizes = [...new Set(
+          groupVariants
+            .map(v => extractVariantSize(v.selectedOptions))
+            .filter(Boolean)
+        )];
 
-        // Product-level <size> with ALL sizes comma-separated (ALWAYS required)
+        // Product-level <size> with ALL unique sizes comma-separated
         if (allSizes.length > 0) {
           item += `        <size>${escapeXml(allSizes.join(','))}</size>\n`;
           stats.withSize++;
-        } else {
-          item += `        <size>One Size</size>\n`;
-          stats.withSize++;
         }
+        // If hasSizeOption but no sizes extracted → omit <size> tag
 
         // Size Variations block (for products with multiple size variants in this color)
-        if (groupVariants.length > 1 && allSizes.length > 1) {
+        // Ref: https://developer.skroutz.gr/feedspec/#xml-with-size-variations
+        const uniqueSizes = allSizes.length;
+        if (groupVariants.length > 1 && uniqueSizes > 1) {
           item += `        <variations>\n`;
 
           for (const v of groupVariants) {
@@ -673,11 +677,8 @@ function generateSkroutzFeed(products) {
           item += `        </variations>\n`;
           stats.withVariations++;
         }
-      } else {
-        // No size option → "One Size" (Skroutz requires size field for all fashion products)
-        item += `        <size>One Size</size>\n`;
-        stats.withSize++;
       }
+      // No size option → OMIT <size> tag entirely (Skroutz spec: no "One Size")
 
       // Weight (grams)
       if (weightGrams) {
@@ -739,7 +740,7 @@ function generateSkroutzFeed(products) {
 
 async function generateFeed(options = {}) {
   console.log('='.repeat(60));
-  console.log('Skroutz.gr Feed Generator v1.4 for EMMANUELA');
+  console.log('Skroutz.gr Feed Generator v1.5 for EMMANUELA');
   console.log('='.repeat(60));
   console.log(`Store: ${SHOPIFY_STORE}`);
   console.log(`Domain: ${DOMAIN}`);
@@ -798,7 +799,7 @@ async function generateFeed(options = {}) {
   console.log(`  With color:            ${stats.withColor}`);
   console.log(`  With MPN/SKU:          ${stats.withMPN}`);
   console.log(`  With EAN/barcode:      ${stats.withEAN}`);
-  console.log(`  With size:             ${stats.withSize}`);
+  console.log(`  With size (real):      ${stats.withSize}`);
   console.log(`  With weight:           ${stats.withWeight}`);
   console.log(`  With description:      ${stats.withDescription}`);
   console.log(`  With size variations:  ${stats.withVariations}`);

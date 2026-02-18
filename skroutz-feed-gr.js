@@ -1,5 +1,5 @@
 /**
- * Skroutz.gr Product Feed Generator v1.5 for EMMANUELA
+ * Skroutz.gr Product Feed Generator v1.6 for EMMANUELA
  *
  * Generates a valid XML product feed per Skroutz.gr specifications.
  * Reference: https://developer.skroutz.gr/el/feedspec/
@@ -20,7 +20,8 @@
  *   - "Χρώμα μετάλλου" option name support (v1.2)
  *   - Validator warning fixes: unique names, category fallback, MPN dedup (v1.3)
  *   - Size field fix: comma-separated sizes at product level + "One Size" fallback (v1.4)
- *   - Size spec compliance: remove "One Size", dedup sizes, omit tag for non-sized products (v1.5)
+ *   - Size dedup fix: deduplicate sizes (XS,XS,XS → XS) (v1.5)
+ *   - Size "One Size" restored per Skroutz quality reviewer explicit instruction (v1.6)
  *
  * Usage:
  *   node skroutz-feed-gr.js                    # Generate feed
@@ -621,9 +622,9 @@ function generateSkroutzFeed(products) {
       item += `        <color>${escapeXml(color)}</color>\n`;
       stats.withColor++;
 
-      // Size — per Skroutz spec: only include <size> when product actually has sizes.
-      // Products without size options: OMIT the <size> tag entirely (spec says no "One Size").
-      // Products with sizes: comma-separated UNIQUE list (e.g., "XS,S,M,L")
+      // Size — per Skroutz quality reviewer (Γιάννης, 18/02/2026):
+      // - Products with sizes: comma-separated UNIQUE list (e.g., "XS,S,M,L")
+      // - Products WITHOUT sizes: <size>One Size</size> (explicit reviewer instruction)
       // Ref: https://developer.skroutz.gr/feedspec/#size
       if (hasSizeOption) {
         // Collect all available sizes from this color group, DEDUPLICATED
@@ -637,8 +638,11 @@ function generateSkroutzFeed(products) {
         if (allSizes.length > 0) {
           item += `        <size>${escapeXml(allSizes.join(','))}</size>\n`;
           stats.withSize++;
+        } else {
+          // hasSizeOption but no sizes extracted → One Size
+          item += `        <size>One Size</size>\n`;
+          stats.withSize++;
         }
-        // If hasSizeOption but no sizes extracted → omit <size> tag
 
         // Size Variations block (for products with multiple size variants in this color)
         // Ref: https://developer.skroutz.gr/feedspec/#xml-with-size-variations
@@ -677,8 +681,11 @@ function generateSkroutzFeed(products) {
           item += `        </variations>\n`;
           stats.withVariations++;
         }
+      } else {
+        // No size option → "One Size" per Skroutz reviewer explicit instruction
+        item += `        <size>One Size</size>\n`;
+        stats.withSize++;
       }
-      // No size option → OMIT <size> tag entirely (Skroutz spec: no "One Size")
 
       // Weight (grams)
       if (weightGrams) {
@@ -740,7 +747,7 @@ function generateSkroutzFeed(products) {
 
 async function generateFeed(options = {}) {
   console.log('='.repeat(60));
-  console.log('Skroutz.gr Feed Generator v1.5 for EMMANUELA');
+  console.log('Skroutz.gr Feed Generator v1.6 for EMMANUELA');
   console.log('='.repeat(60));
   console.log(`Store: ${SHOPIFY_STORE}`);
   console.log(`Domain: ${DOMAIN}`);
@@ -799,7 +806,7 @@ async function generateFeed(options = {}) {
   console.log(`  With color:            ${stats.withColor}`);
   console.log(`  With MPN/SKU:          ${stats.withMPN}`);
   console.log(`  With EAN/barcode:      ${stats.withEAN}`);
-  console.log(`  With size (real):      ${stats.withSize}`);
+  console.log(`  With size:             ${stats.withSize}`);
   console.log(`  With weight:           ${stats.withWeight}`);
   console.log(`  With description:      ${stats.withDescription}`);
   console.log(`  With size variations:  ${stats.withVariations}`);

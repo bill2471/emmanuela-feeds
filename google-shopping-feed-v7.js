@@ -244,7 +244,7 @@ function escapeXml(str) {
 }
 
 function buildProductUrl(handle, variantId, market) {
-  return `https://${market.domain}${market.path}/products/${handle}?variant=${variantId}`;
+  return `https://${market.domain}${market.path}/products/${handle}?country=${market.country}&variant=${variantId}`;
 }
 
 function formatPrice(amount, currency) {

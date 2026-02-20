@@ -266,7 +266,7 @@ const MARKETS = {
   CY: { country: 'CY', language: 'el', currency: 'EUR', locale: 'el', domain: 'emmanuela.jewelry', path: '/el', priority: 2, name: 'Cyprus' },
   // PRIORITY 3
   JP: { country: 'JP', language: 'ja', currency: 'JPY', locale: 'ja', domain: 'emmanuela.jewelry', path: '/ja', priority: 3, name: 'Japan' },
-  KR: { country: 'KR', language: 'en', currency: 'KRW', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'South Korea' },
+  // KR: REMOVED — South Korea requires local business registration (사업자등록번호)
   SG: { country: 'SG', language: 'en', currency: 'SGD', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Singapore' },
   AE: { country: 'AE', language: 'en', currency: 'AED', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'UAE' },
   IL: { country: 'IL', language: 'he', currency: 'ILS', locale: 'he', domain: 'emmanuela.jewelry', path: '/he', priority: 3, name: 'Israel' },

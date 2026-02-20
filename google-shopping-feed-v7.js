@@ -171,6 +171,9 @@ const MARKETS = {
   TW: { country: 'TW', language: 'zh', currency: 'TWD', locale: 'zh-TW', domain: 'emmanuela.jewelry', path: '/zh-TW', priority: 3, name: 'Taiwan' },
   IS: { country: 'IS', language: 'en', currency: 'ISK', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Iceland' },
   SA: { country: 'SA', language: 'en', currency: 'SAR', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Saudi Arabia' },
+  NZ: { country: 'NZ', language: 'en', currency: 'NZD', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'New Zealand' },
+  HK: { country: 'HK', language: 'en', currency: 'HKD', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Hong Kong' },
+  TH: { country: 'TH', language: 'en', currency: 'THB', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Thailand' },
   // MICRO STATES
   MC: { country: 'MC', language: 'fr', currency: 'EUR', locale: 'fr', domain: 'emmanuela.jewelry', path: '/fr', priority: 4, name: 'Monaco' },
   AD: { country: 'AD', language: 'es', currency: 'EUR', locale: 'es', domain: 'emmanuela.jewelry', path: '/es', priority: 4, name: 'Andorra' },
@@ -206,15 +209,14 @@ const TRANSIT_TIMES = {
   IL: { min: 2, max: 4 },      // Israel
   SA: { min: 2, max: 4 },      // Saudi Arabia
   ASIA: { min: 2, max: 4 },    // Japan, Korea, Singapore, etc.
-  CN: { min: 3, max: 5 },      // China
 };
 
 // Map country codes to transit time groups
 const TRANSIT_GROUP = {
   // Specific countries with their own times
   GR: 'GR', DE: 'DE', GB: 'GB', CH: 'CH', NO: 'NO', IS: 'IS', LI: 'LI',
-  US: 'US', CA: 'CA', AU: 'AU', NZ: 'NZ', MX: 'MX', AE: 'AE', IL: 'IL', 
-  SA: 'SA', CN: 'CN',
+  US: 'US', CA: 'CA', AU: 'AU', NZ: 'NZ', MX: 'MX', AE: 'AE', IL: 'IL',
+  SA: 'SA',
   // EU countries → EU group
   AT: 'EU', BE: 'EU', BG: 'EU', HR: 'EU', CY: 'EU', CZ: 'EU', DK: 'EU',
   EE: 'EU', FI: 'EU', FR: 'EU', HU: 'EU', IE: 'EU', IT: 'EU', LV: 'EU',

@@ -266,7 +266,7 @@ const MARKETS = {
   CY: { country: 'CY', language: 'el', currency: 'EUR', locale: 'el', domain: 'emmanuela.jewelry', path: '/el', priority: 2, name: 'Cyprus' },
   // PRIORITY 3
   JP: { country: 'JP', language: 'ja', currency: 'JPY', locale: 'ja', domain: 'emmanuela.jewelry', path: '/ja', priority: 3, name: 'Japan' },
-  KR: { country: 'KR', language: 'ko', currency: 'KRW', locale: 'ko', domain: 'emmanuela.jewelry', path: '/ko', priority: 3, name: 'South Korea' },
+  KR: { country: 'KR', language: 'en', currency: 'KRW', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'South Korea' },
   SG: { country: 'SG', language: 'en', currency: 'SGD', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Singapore' },
   AE: { country: 'AE', language: 'en', currency: 'AED', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'UAE' },
   IL: { country: 'IL', language: 'he', currency: 'ILS', locale: 'he', domain: 'emmanuela.jewelry', path: '/he', priority: 3, name: 'Israel' },
@@ -282,7 +282,7 @@ const MARKETS = {
   HR: { country: 'HR', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Croatia' },
   MY: { country: 'MY', language: 'ms', currency: 'MYR', locale: 'ms', domain: 'emmanuela.jewelry', path: '/ms', priority: 3, name: 'Malaysia' },
   ID: { country: 'ID', language: 'id', currency: 'IDR', locale: 'id', domain: 'emmanuela.jewelry', path: '/id', priority: 3, name: 'Indonesia' },
-  TW: { country: 'TW', language: 'zh', currency: 'TWD', locale: 'zh-TW', domain: 'emmanuela.jewelry', path: '/zh-TW', priority: 3, name: 'Taiwan' },
+  TW: { country: 'TW', language: 'en', currency: 'TWD', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Taiwan' },
   IS: { country: 'IS', language: 'en', currency: 'ISK', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Iceland' },
   SA: { country: 'SA', language: 'en', currency: 'SAR', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Saudi Arabia' },
   NZ: { country: 'NZ', language: 'en', currency: 'NZD', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'New Zealand' },

@@ -119,6 +119,120 @@ const MATERIAL_TRANSLATIONS = {
 
 
 // ============================================
+// PRODUCT TYPE TRANSLATIONS (Shopify product_type is NOT translatable via API)
+// ============================================
+
+const PRODUCT_TYPE_TRANSLATIONS = {
+  en: {
+    'Ανδρικά σκουλαρίκια ear cuff': "Men's Ear Cuff Earrings",
+    'Ανδρικά καρφωτά σκουλαρίκια': "Men's Stud Earrings",
+    'Γυναικεία καρφωτά σκουλαρίκια': "Women's Stud Earrings",
+    'Γυναικεία κρεμαστά σκουλαρίκια': "Women's Dangle Earrings",
+    'Γυναικεία σκουλαρίκια κρίκοι': "Women's Hoop Earrings",
+    'Γυναικεία σκουλαρίκια ear cuff': "Women's Ear Cuff Earrings",
+    'Γυναικεία σκουλαρίκια ear climber': "Women's Ear Climber Earrings",
+    'Γυναικεία δαχτυλίδια': "Women's Rings",
+    'Γυναικεία βραχιόλια': "Women's Bracelets",
+    'Γυναικεία μενταγιόν': "Women's Pendants",
+    'Γυναικεία κολιέ': "Women's Necklaces",
+    'Γυναικεία καρφίτσες': "Women's Brooches",
+    'Γυναικεία σετ κοσμημάτων': "Women's Jewelry Sets",
+    'Στέφανα γάμου': 'Wedding Crowns',
+    'Δωροκάρτα': 'Gift Card',
+    'Ανδρικά δαχτυλίδια': "Men's Rings",
+    'Ανδρικά βραχιόλια': "Men's Bracelets",
+    'Ανδρικά κολιέ': "Men's Necklaces",
+    'Μινιατούρες': 'Miniatures',
+  },
+  de: {
+    'Ανδρικά σκουλαρίκια ear cuff': 'Herren Ear Cuff Ohrringe',
+    'Ανδρικά καρφωτά σκουλαρίκια': 'Herren Ohrstecker',
+    'Γυναικεία καρφωτά σκουλαρίκια': 'Damen Ohrstecker',
+    'Γυναικεία κρεμαστά σκουλαρίκια': 'Damen Hängeohrringe',
+    'Γυναικεία σκουλαρίκια κρίκοι': 'Damen Creolen',
+    'Γυναικεία σκουλαρίκια ear cuff': 'Damen Ear Cuff Ohrringe',
+    'Γυναικεία σκουλαρίκια ear climber': 'Damen Ear Climber Ohrringe',
+    'Γυναικεία δαχτυλίδια': 'Damen Ringe',
+    'Γυναικεία βραχιόλια': 'Damen Armbänder',
+    'Γυναικεία μενταγιόν': 'Damen Anhänger',
+    'Γυναικεία κολιέ': 'Damen Halsketten',
+    'Γυναικεία καρφίτσες': 'Damen Broschen',
+    'Γυναικεία σετ κοσμημάτων': 'Damen Schmucksets',
+    'Στέφανα γάμου': 'Hochzeitskronen',
+    'Δωροκάρτα': 'Geschenkkarte',
+    'Ανδρικά δαχτυλίδια': 'Herren Ringe',
+    'Ανδρικά βραχιόλια': 'Herren Armbänder',
+    'Ανδρικά κολιέ': 'Herren Halsketten',
+    'Μινιατούρες': 'Miniaturen',
+  },
+  fr: {
+    'Ανδρικά σκουλαρίκια ear cuff': "Boucles d'oreilles Ear Cuff Homme",
+    'Ανδρικά καρφωτά σκουλαρίκια': "Boucles d'oreilles Puces Homme",
+    'Γυναικεία καρφωτά σκουλαρίκια': "Boucles d'oreilles Puces Femme",
+    'Γυναικεία κρεμαστά σκουλαρίκια': "Boucles d'oreilles Pendantes Femme",
+    'Γυναικεία σκουλαρίκια κρίκοι': "Boucles d'oreilles Créoles Femme",
+    'Γυναικεία σκουλαρίκια ear cuff': "Boucles d'oreilles Ear Cuff Femme",
+    'Γυναικεία σκουλαρίκια ear climber': "Boucles d'oreilles Ear Climber Femme",
+    'Γυναικεία δαχτυλίδια': 'Bagues Femme',
+    'Γυναικεία βραχιόλια': 'Bracelets Femme',
+    'Γυναικεία μενταγιόν': 'Pendentifs Femme',
+    'Γυναικεία κολιέ': 'Colliers Femme',
+    'Γυναικεία καρφίτσες': 'Broches Femme',
+    'Γυναικεία σετ κοσμημάτων': 'Parures Femme',
+    'Στέφανα γάμου': 'Couronnes de Mariage',
+    'Δωροκάρτα': 'Carte Cadeau',
+    'Ανδρικά δαχτυλίδια': 'Bagues Homme',
+    'Ανδρικά βραχιόλια': 'Bracelets Homme',
+    'Ανδρικά κολιέ': 'Colliers Homme',
+    'Μινιατούρες': 'Miniatures',
+  },
+  it: {
+    'Ανδρικά σκουλαρίκια ear cuff': 'Orecchini Ear Cuff Uomo',
+    'Ανδρικά καρφωτά σκουλαρίκια': 'Orecchini a Bottone Uomo',
+    'Γυναικεία καρφωτά σκουλαρίκια': 'Orecchini a Bottone Donna',
+    'Γυναικεία κρεμαστά σκουλαρίκια': 'Orecchini Pendenti Donna',
+    'Γυναικεία σκουλαρίκια κρίκοι': 'Orecchini a Cerchio Donna',
+    'Γυναικεία σκουλαρίκια ear cuff': 'Orecchini Ear Cuff Donna',
+    'Γυναικεία σκουλαρίκια ear climber': 'Orecchini Ear Climber Donna',
+    'Γυναικεία δαχτυλίδια': 'Anelli Donna',
+    'Γυναικεία βραχιόλια': 'Bracciali Donna',
+    'Γυναικεία μενταγιόν': 'Ciondoli Donna',
+    'Γυναικεία κολιέ': 'Collane Donna',
+    'Στέφανα γάμου': 'Corone Nuziali',
+    'Δωροκάρτα': 'Carta Regalo',
+    'Μινιατούρες': 'Miniature',
+  },
+  es: {
+    'Ανδρικά σκουλαρίκια ear cuff': 'Pendientes Ear Cuff Hombre',
+    'Ανδρικά καρφωτά σκουλαρίκια': 'Pendientes de Botón Hombre',
+    'Γυναικεία καρφωτά σκουλαρίκια': 'Pendientes de Botón Mujer',
+    'Γυναικεία κρεμαστά σκουλαρίκια': 'Pendientes Colgantes Mujer',
+    'Γυναικεία σκουλαρίκια κρίκοι': 'Pendientes de Aro Mujer',
+    'Γυναικεία σκουλαρίκια ear cuff': 'Pendientes Ear Cuff Mujer',
+    'Γυναικεία σκουλαρίκια ear climber': 'Pendientes Ear Climber Mujer',
+    'Γυναικεία δαχτυλίδια': 'Anillos Mujer',
+    'Γυναικεία βραχιόλια': 'Pulseras Mujer',
+    'Γυναικεία μενταγιόν': 'Colgantes Mujer',
+    'Γυναικεία κολιέ': 'Collares Mujer',
+    'Στέφανα γάμου': 'Coronas de Boda',
+    'Δωροκάρτα': 'Tarjeta Regalo',
+    'Μινιατούρες': 'Miniaturas',
+  },
+};
+
+/**
+ * Translate product type from Greek to target language
+ * Falls back to English, then to original Greek
+ */
+function translateProductType(greekType, language) {
+  if (!greekType) return 'Jewelry';
+  if (language === 'el') return greekType;
+  const langMap = PRODUCT_TYPE_TRANSLATIONS[language] || PRODUCT_TYPE_TRANSLATIONS['en'];
+  return langMap[greekType] || PRODUCT_TYPE_TRANSLATIONS['en']?.[greekType] || greekType;
+}
+
+
+// ============================================
 // MARKET DEFINITIONS (49 markets)
 // ============================================
 
@@ -236,13 +350,29 @@ function stripHtml(html) {
   if (!html) return '';
   return html.replace(/<[^>]*>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'").replace(/\s+/g, ' ').trim().substring(0, 5000);
+    .replace(/&#39;/g, "'")
+    .replace(/[\u{1F300}-\u{1F9FF}\u{2600}-\u{2B55}\u{200D}\u{FE0F}\u{20E3}\u{E0020}-\u{E007F}]/gu, '')
+    .replace(/\s+/g, ' ').trim().substring(0, 5000);
 }
 
 function escapeXml(str) {
   if (!str) return '';
   return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+}
+
+/**
+ * Smart truncate: cuts at word boundary, never mid-word/mid-letter
+ * Google allows 150 chars for title — we truncate cleanly
+ */
+function smartTruncate(str, maxLen = 150) {
+  if (!str || str.length <= maxLen) return str;
+  const truncated = str.substring(0, maxLen);
+  const lastSpace = truncated.lastIndexOf(' ');
+  const lastSlash = truncated.lastIndexOf(' / ');
+  // Prefer cutting at " / " separator (option boundary) over mid-option
+  const cutPoint = lastSlash > maxLen * 0.6 ? lastSlash : (lastSpace > 0 ? lastSpace : maxLen);
+  return truncated.substring(0, cutPoint);
 }
 
 function buildProductUrl(handle, variantId, market) {
@@ -293,14 +423,26 @@ function httpsRequest(options, postData = null) {
   });
 }
 
-async function graphqlRequest(query) {
+async function graphqlRequest(query, maxRetries = 4) {
   const options = {
     hostname: SHOPIFY_STORE,
     path: `/admin/api/${API_VERSION}/graphql.json`,
     method: 'POST',
     headers: { 'X-Shopify-Access-Token': ACCESS_TOKEN, 'Content-Type': 'application/json' }
   };
-  return httpsRequest(options, JSON.stringify({ query }));
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    const result = await httpsRequest(options, JSON.stringify({ query }));
+    // Check for Shopify throttling (THROTTLED error or 429 status)
+    const isThrottled = result.statusCode === 429 ||
+      (result.data?.errors && result.data.errors[0]?.extensions?.code === 'THROTTLED');
+    if (isThrottled && attempt < maxRetries) {
+      const wait = Math.min(2000 * Math.pow(2, attempt), 15000); // 2s, 4s, 8s, 15s
+      process.stdout.write(` [throttled, retry in ${wait/1000}s]`);
+      await new Promise(r => setTimeout(r, wait));
+      continue;
+    }
+    return result;
+  }
 }
 
 
@@ -636,7 +778,7 @@ async function fetchProductTranslations(products, locale) {
         });
       }
       process.stdout.write(`\r   Products: ${Math.min(i + batchSize, products.length)}/${products.length}`);
-      await new Promise(r => setTimeout(r, 200));
+      await new Promise(r => setTimeout(r, 400));
     } catch (error) { console.error(`\n   ⚠️ Error: ${error.message}`); }
   }
   console.log(`\n   ✅ Product translations: ${Object.keys(translations).length}\n`);
@@ -681,7 +823,7 @@ async function fetchOptionValueTranslations(products, locale) {
         });
       }
       process.stdout.write(`\r   Option values: ${Math.min(i + batchSize, optionValues.length)}/${optionValues.length}`);
-      await new Promise(r => setTimeout(r, 200));
+      await new Promise(r => setTimeout(r, 400));
     } catch (error) { console.error(`\n   ⚠️ Error: ${error.message}`); }
   }
   console.log(`\n   ✅ Option value translations: ${Object.keys(translations).length}\n`);
@@ -790,7 +932,7 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
       let item = `    <item>
       <g:id>${variant.id}</g:id>
       <g:item_group_id>${product.id}</g:item_group_id>
-      <g:title><![CDATA[${fullTitle.substring(0, 150)}]]></g:title>
+      <g:title><![CDATA[${smartTruncate(fullTitle)}]]></g:title>
       <g:description><![CDATA[${translatedDesc.substring(0, 5000)}]]></g:description>
       <g:link>${escapeXml(productUrl)}</g:link>
       <g:image_link>${variantImage}</g:image_link>`;
@@ -801,21 +943,28 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
       <g:price>${price}</g:price>
       <g:availability>in_stock</g:availability>
       <g:brand><![CDATA[${BRAND}]]></g:brand>
-      <g:condition>new</g:condition>
-      <g:identifier_exists>false</g:identifier_exists>`;
+      <g:condition>new</g:condition>`;
+
+      // MPN / identifier_exists logic:
+      // If SKU exists → send as MPN, identifier_exists defaults to true (omit tag)
+      // If no SKU → identifier_exists=false (handmade, no standard identifier)
+      if (variant.sku) {
+        item += `\n      <g:mpn><![CDATA[${variant.sku}]]></g:mpn>`;
+      } else {
+        item += `\n      <g:identifier_exists>false</g:identifier_exists>`;
+      }
 
       item += `\n      <g:google_product_category>${googleCategory}</g:google_product_category>`;
-      item += `\n      <g:product_type><![CDATA[${product.product_type || 'Jewelry'}]]></g:product_type>`;
+      item += `\n      <g:product_type><![CDATA[${translateProductType(product.product_type, market.language)}]]></g:product_type>`;
       item += `\n      <g:age_group>adult</g:age_group>`;
       item += `\n      <g:gender>${gender}</g:gender>`;
-      
+
       if (colorNormalized) item += `\n      <g:color><![CDATA[${colorNormalized}]]></g:color>`;
       if (material) item += `\n      <g:material><![CDATA[${material}]]></g:material>`;
-      
+
       const weightFormatted = formatWeight(variant.weight);
       if (weightFormatted) item += `\n      <g:shipping_weight>${weightFormatted}</g:shipping_weight>`;
       if (ringSize) item += `\n      <g:size><![CDATA[${ringSize}]]></g:size>`;
-      if (variant.sku) item += `\n      <g:mpn><![CDATA[${variant.sku}]]></g:mpn>`;
 
       // Sale price handling
       if (variant.compare_at_price && parseFloat(variant.compare_at_price) > parseFloat(variant.price)) {

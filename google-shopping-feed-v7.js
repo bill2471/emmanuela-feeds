@@ -1,6 +1,14 @@
 /**
- * Google Shopping Feed Generator v7.3 for EMMANUELA
- * 
+ * Google Shopping Feed Generator v7.5 for EMMANUELA
+ *
+ * NEW in v7.5:
+ *   - VIDEO SUPPORT: Fetches product videos from Shopify media API
+ *   - Outputs <g:video_link> tag for products with hosted videos
+ *   - Uses media(first: 20) GraphQL query instead of images(first: 10)
+ *   - Supports Shopify-hosted videos (CDN URLs, .mp4)
+ *   - YouTube URLs NOT supported by Google Merchant Center feed spec
+ *   - Stats tracking: withVideo counter
+ *
  * NEW in v7.3:
  *   - FIXED: Color fallback chain for missing colors
  *     1. First checks variant option "Χρώμα" or "Color"
@@ -21,21 +29,21 @@
  *   - ships_from_country attribute (GR)
  *   - return_policy_label attribute
  *   - Regional transit times for 46+ countries
- * 
+ *
  * Previous features (v6):
  *   - Dynamic Shipping Rates from Shopify API
  *   - Automatic <g:shipping> tags for each country
- * 
+ *
  * Previous features (v5):
  *   - Dynamic Google Product Categories
  *   - Shipping weight from variant.weight
  *   - Size attribute for rings
- * 
- * Usage: 
+ *
+ * Usage:
  *   node google-shopping-feed-v7.js GR          # Single market
  *   node google-shopping-feed-v7.js all         # All markets
  *   node google-shopping-feed-v7.js list        # List available markets
- * 
+ *
  * Created: 2026-01-28
  */
 
@@ -639,7 +647,7 @@ function translateMaterial(materialStr) {
 // ============================================
 
 async function fetchProductsWithOptions() {
-  console.log('📦 Fetching products with options + metafields + weight...\n');
+  console.log('📦 Fetching products with options + metafields + weight + video...\n');
   
   const allProducts = [];
   let cursor = null;
@@ -654,7 +662,21 @@ async function fetchProductsWithOptions() {
         edges {
           node {
             id title handle descriptionHtml productType vendor
-            images(first: 10) { edges { node { id url } } }
+            media(first: 20) {
+              edges {
+                node {
+                  mediaContentType
+                  ... on MediaImage {
+                    id
+                    image { url }
+                  }
+                  ... on Video {
+                    id
+                    sources { url mimeType }
+                  }
+                }
+              }
+            }
             options { id name optionValues { id name } }
             variants(first: 100) {
               edges {
@@ -682,6 +704,31 @@ async function fetchProductsWithOptions() {
       
       const products = data.data?.products?.edges || [];
       products.forEach(({ node }) => {
+        // v7.5: Separate media into images and videos
+        const mediaEdges = node.media?.edges || [];
+        const images = [];
+        const videos = [];
+        for (const edge of mediaEdges) {
+          const m = edge.node;
+          if (m.mediaContentType === 'IMAGE' && m.image?.url) {
+            images.push({
+              id: m.id.replace('gid://shopify/MediaImage/', ''),
+              src: m.image.url
+            });
+          } else if (m.mediaContentType === 'VIDEO' && m.sources?.length > 0) {
+            // Prefer mp4 source, fallback to first available
+            const mp4Source = m.sources.find(s => s.mimeType === 'video/mp4');
+            const bestSource = mp4Source || m.sources[0];
+            if (bestSource?.url) {
+              videos.push({
+                id: m.id.replace('gid://shopify/Video/', ''),
+                src: bestSource.url,
+                mimeType: bestSource.mimeType
+              });
+            }
+          }
+        }
+
         const product = {
           id: node.id.replace('gid://shopify/Product/', ''),
           gid: node.id,
@@ -696,10 +743,8 @@ async function fetchProductsWithOptions() {
             color: node.colorPattern?.value || null,
             material: node.material?.value || null,
           },
-          images: (node.images?.edges || []).map(e => ({
-            id: e.node.id.replace('gid://shopify/ProductImage/', ''),
-            src: e.node.url
-          })),
+          images: images,
+          videos: videos,
           options: (node.options || []).map(o => ({
             id: o.id.replace('gid://shopify/ProductOption/', ''),
             gid: o.id, name: o.name,
@@ -848,10 +893,11 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
   console.log(`🔧 Generating XML feed for ${market.name} (${market.country})...\n`);
   
   let items = [];
-  let stats = { 
-    inStock: 0, outOfStock: 0, noImage: 0, translatedVariants: 0, 
+  let stats = {
+    inStock: 0, outOfStock: 0, noImage: 0, translatedVariants: 0,
     totalVariants: 0, withGender: 0, withColor: 0, withMaterial: 0,
-    withWeight: 0, withSize: 0, withShipping: 0, categoryBreakdown: {}
+    withWeight: 0, withSize: 0, withShipping: 0, withVideo: 0,
+    productsWithVideo: 0, categoryBreakdown: {}
   };
 
   // v6: Check if we have shipping for this country
@@ -882,6 +928,7 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
     
     if (gender !== 'unisex') stats.withGender++;
     if (product.metafields?.material) stats.withMaterial++;
+    if (product.videos && product.videos.length > 0) stats.productsWithVideo++;
     
     variants.forEach(variant => {
       if (variant.inventory_quantity <= 0) { stats.outOfStock++; return; }
@@ -938,7 +985,15 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
       <g:image_link>${variantImage}</g:image_link>`;
       
       additionalImages.forEach(img => { item += `\n      <g:additional_image_link>${img}</g:additional_image_link>`; });
-      
+
+      // v7.5: Add video links (up to 10, direct-hosted only — no YouTube)
+      if (product.videos && product.videos.length > 0) {
+        product.videos.slice(0, 10).forEach(video => {
+          item += `\n      <g:video_link>${escapeXml(video.src)}</g:video_link>`;
+        });
+        stats.withVideo++;
+      }
+
       item += `
       <g:price>${price}</g:price>
       <g:availability>in_stock</g:availability>
@@ -989,7 +1044,8 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
   // Print stats
   console.log(`\n   📊 Stats for ${market.country}:`);
   console.log(`      In-stock items: ${stats.inStock}`);
-  console.log(`      With shipping: ${stats.withShipping} items`);  // v6 new
+  console.log(`      With shipping: ${stats.withShipping} items`);
+  console.log(`      With video: ${stats.withVideo} items (${stats.productsWithVideo} products)`);
   console.log(`      With weight: ${stats.withWeight} variants`);
   console.log(`      With size: ${stats.withSize} variants`);
   console.log(`      Translated variants: ${stats.translatedVariants}/${stats.totalVariants}`);

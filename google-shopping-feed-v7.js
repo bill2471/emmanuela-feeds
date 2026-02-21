@@ -280,7 +280,7 @@ const MARKETS = {
   LT: { country: 'LT', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Lithuania' },
   BG: { country: 'BG', language: 'en', currency: 'BGN', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Bulgaria' },
   HR: { country: 'HR', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Croatia' },
-  MY: { country: 'MY', language: 'ms', currency: 'MYR', locale: 'ms', domain: 'emmanuela.jewelry', path: '/ms', priority: 3, name: 'Malaysia' },
+  MY: { country: 'MY', language: 'en', currency: 'MYR', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Malaysia' },
   ID: { country: 'ID', language: 'id', currency: 'IDR', locale: 'id', domain: 'emmanuela.jewelry', path: '/id', priority: 3, name: 'Indonesia' },
   TW: { country: 'TW', language: 'en', currency: 'TWD', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Taiwan' },
   IS: { country: 'IS', language: 'en', currency: 'ISK', locale: 'en', domain: 'emmanuela.jewelry', path: '/en', priority: 3, name: 'Iceland' },

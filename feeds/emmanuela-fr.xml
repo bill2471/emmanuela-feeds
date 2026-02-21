@@ -1885,7 +1885,7 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[9019Mix]]></g:mpn>
       <g:google_product_category>110</g:google_product_category>
-      <g:product_type><![CDATA[Στέφανα γάμο��]]></g:product_type>
+      <g:product_type><![CDATA[Couronnes de Mariage]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>unisex</g:gender>
       <g:color><![CDATA[Silver]]></g:color>
@@ -1921,7 +1921,7 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[9019Mix]]></g:mpn>
       <g:google_product_category>110</g:google_product_category>
-      <g:product_type><![CDATA[Στέφανα γάμο��]]></g:product_type>
+      <g:product_type><![CDATA[Couronnes de Mariage]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>unisex</g:gender>
       <g:color><![CDATA[Silver]]></g:color>
@@ -1957,7 +1957,7 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[9019Mix]]></g:mpn>
       <g:google_product_category>110</g:google_product_category>
-      <g:product_type><![CDATA[Στέφανα γάμο��]]></g:product_type>
+      <g:product_type><![CDATA[Couronnes de Mariage]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>unisex</g:gender>
       <g:color><![CDATA[Silver]]></g:color>
@@ -1993,7 +1993,7 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[9019Mix]]></g:mpn>
       <g:google_product_category>110</g:google_product_category>
-      <g:product_type><![CDATA[Στέφανα γάμο��]]></g:product_type>
+      <g:product_type><![CDATA[Couronnes de Mariage]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>unisex</g:gender>
       <g:color><![CDATA[Silver]]></g:color>
@@ -5532,13 +5532,14 @@
       <g:brand><![CDATA[Emmanuela - handcrafted for you]]></g:brand>
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2115]]></g:mpn>
-      <g:google_product_category>188</g:google_product_category>
-      <g:product_type><![CDATA[Γυναικεία ��αχτυλίδια]]></g:product_type>
+      <g:google_product_category>200</g:google_product_category>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
       <g:color><![CDATA[Doré rose]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>4 g</g:shipping_weight>
+      <g:size><![CDATA[XS]]></g:size>
       <g:shipping>
         <g:country>FR</g:country>
         <g:price>0.00 EUR</g:price>
@@ -5570,13 +5571,14 @@
       <g:brand><![CDATA[Emmanuela - handcrafted for you]]></g:brand>
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2115]]></g:mpn>
-      <g:google_product_category>188</g:google_product_category>
-      <g:product_type><![CDATA[Γυναικεία ��αχτυλίδια]]></g:product_type>
+      <g:google_product_category>200</g:google_product_category>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
       <g:color><![CDATA[Doré rose]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>4 g</g:shipping_weight>
+      <g:size><![CDATA[S]]></g:size>
       <g:shipping>
         <g:country>FR</g:country>
         <g:price>0.00 EUR</g:price>
@@ -5608,13 +5610,14 @@
       <g:brand><![CDATA[Emmanuela - handcrafted for you]]></g:brand>
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2115]]></g:mpn>
-      <g:google_product_category>188</g:google_product_category>
-      <g:product_type><![CDATA[Γυναικεία ��αχτυλίδια]]></g:product_type>
+      <g:google_product_category>200</g:google_product_category>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
       <g:color><![CDATA[Doré rose]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>4 g</g:shipping_weight>
+      <g:size><![CDATA[M]]></g:size>
       <g:shipping>
         <g:country>FR</g:country>
         <g:price>0.00 EUR</g:price>
@@ -5646,13 +5649,14 @@
       <g:brand><![CDATA[Emmanuela - handcrafted for you]]></g:brand>
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2115]]></g:mpn>
-      <g:google_product_category>188</g:google_product_category>
-      <g:product_type><![CDATA[Γυναικεία ��αχτυλίδια]]></g:product_type>
+      <g:google_product_category>200</g:google_product_category>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
       <g:color><![CDATA[Doré rose]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>4 g</g:shipping_weight>
+      <g:size><![CDATA[L]]></g:size>
       <g:shipping>
         <g:country>FR</g:country>
         <g:price>0.00 EUR</g:price>
@@ -5684,13 +5688,14 @@
       <g:brand><![CDATA[Emmanuela - handcrafted for you]]></g:brand>
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2115]]></g:mpn>
-      <g:google_product_category>188</g:google_product_category>
-      <g:product_type><![CDATA[Γυναικεία ��αχτυλίδια]]></g:product_type>
+      <g:google_product_category>200</g:google_product_category>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
       <g:color><![CDATA[Argenté]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>4 g</g:shipping_weight>
+      <g:size><![CDATA[XS]]></g:size>
       <g:shipping>
         <g:country>FR</g:country>
         <g:price>0.00 EUR</g:price>
@@ -5722,13 +5727,14 @@
       <g:brand><![CDATA[Emmanuela - handcrafted for you]]></g:brand>
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2115]]></g:mpn>
-      <g:google_product_category>188</g:google_product_category>
-      <g:product_type><![CDATA[Γυναικεία ��αχτυλίδια]]></g:product_type>
+      <g:google_product_category>200</g:google_product_category>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
       <g:color><![CDATA[Argenté]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>4 g</g:shipping_weight>
+      <g:size><![CDATA[S]]></g:size>
       <g:shipping>
         <g:country>FR</g:country>
         <g:price>0.00 EUR</g:price>
@@ -5760,13 +5766,14 @@
       <g:brand><![CDATA[Emmanuela - handcrafted for you]]></g:brand>
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2115]]></g:mpn>
-      <g:google_product_category>188</g:google_product_category>
-      <g:product_type><![CDATA[Γυναικεία ��αχτυλίδια]]></g:product_type>
+      <g:google_product_category>200</g:google_product_category>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
       <g:color><![CDATA[Argenté]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>4 g</g:shipping_weight>
+      <g:size><![CDATA[M]]></g:size>
       <g:shipping>
         <g:country>FR</g:country>
         <g:price>0.00 EUR</g:price>
@@ -5798,13 +5805,14 @@
       <g:brand><![CDATA[Emmanuela - handcrafted for you]]></g:brand>
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2115]]></g:mpn>
-      <g:google_product_category>188</g:google_product_category>
-      <g:product_type><![CDATA[Γυναικεία ��αχτυλίδια]]></g:product_type>
+      <g:google_product_category>200</g:google_product_category>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
       <g:color><![CDATA[Argenté]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>4 g</g:shipping_weight>
+      <g:size><![CDATA[L]]></g:size>
       <g:shipping>
         <g:country>FR</g:country>
         <g:price>0.00 EUR</g:price>
@@ -5836,13 +5844,14 @@
       <g:brand><![CDATA[Emmanuela - handcrafted for you]]></g:brand>
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2115]]></g:mpn>
-      <g:google_product_category>188</g:google_product_category>
-      <g:product_type><![CDATA[Γυναικεία ��αχτυλίδια]]></g:product_type>
+      <g:google_product_category>200</g:google_product_category>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
       <g:color><![CDATA[Doré]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>4 g</g:shipping_weight>
+      <g:size><![CDATA[XS]]></g:size>
       <g:shipping>
         <g:country>FR</g:country>
         <g:price>0.00 EUR</g:price>
@@ -5874,13 +5883,14 @@
       <g:brand><![CDATA[Emmanuela - handcrafted for you]]></g:brand>
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2115]]></g:mpn>
-      <g:google_product_category>188</g:google_product_category>
-      <g:product_type><![CDATA[Γυναικεία ��αχτυλίδια]]></g:product_type>
+      <g:google_product_category>200</g:google_product_category>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
       <g:color><![CDATA[Doré]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>4 g</g:shipping_weight>
+      <g:size><![CDATA[S]]></g:size>
       <g:shipping>
         <g:country>FR</g:country>
         <g:price>0.00 EUR</g:price>
@@ -5912,13 +5922,14 @@
       <g:brand><![CDATA[Emmanuela - handcrafted for you]]></g:brand>
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2115]]></g:mpn>
-      <g:google_product_category>188</g:google_product_category>
-      <g:product_type><![CDATA[Γυναικεία ��αχτυλίδια]]></g:product_type>
+      <g:google_product_category>200</g:google_product_category>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
       <g:color><![CDATA[Doré]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>4 g</g:shipping_weight>
+      <g:size><![CDATA[M]]></g:size>
       <g:shipping>
         <g:country>FR</g:country>
         <g:price>0.00 EUR</g:price>
@@ -5950,13 +5961,14 @@
       <g:brand><![CDATA[Emmanuela - handcrafted for you]]></g:brand>
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2115]]></g:mpn>
-      <g:google_product_category>188</g:google_product_category>
-      <g:product_type><![CDATA[Γυναικεία ��αχτυλίδια]]></g:product_type>
+      <g:google_product_category>200</g:google_product_category>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
       <g:color><![CDATA[Doré]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>4 g</g:shipping_weight>
+      <g:size><![CDATA[L]]></g:size>
       <g:shipping>
         <g:country>FR</g:country>
         <g:price>0.00 EUR</g:price>
@@ -14697,9 +14709,9 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2101]]></g:mpn>
       <g:google_product_category>200</g:google_product_category>
-      <g:product_type><![CDATA[��υναικεία δαχτυλίδια]]></g:product_type>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
+      <g:gender>female</g:gender>
       <g:color><![CDATA[Argenté]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>7 g</g:shipping_weight>
@@ -14737,9 +14749,9 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2101]]></g:mpn>
       <g:google_product_category>200</g:google_product_category>
-      <g:product_type><![CDATA[��υναικεία δαχτυλίδια]]></g:product_type>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
+      <g:gender>female</g:gender>
       <g:color><![CDATA[Argenté]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>7 g</g:shipping_weight>
@@ -14777,9 +14789,9 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2101]]></g:mpn>
       <g:google_product_category>200</g:google_product_category>
-      <g:product_type><![CDATA[��υναικεία δαχτυλίδια]]></g:product_type>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
+      <g:gender>female</g:gender>
       <g:color><![CDATA[Argenté]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>7 g</g:shipping_weight>
@@ -14817,9 +14829,9 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2101]]></g:mpn>
       <g:google_product_category>200</g:google_product_category>
-      <g:product_type><![CDATA[��υναικεία δαχτυλίδια]]></g:product_type>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
+      <g:gender>female</g:gender>
       <g:color><![CDATA[Argenté]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>7 g</g:shipping_weight>
@@ -14857,9 +14869,9 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2101]]></g:mpn>
       <g:google_product_category>200</g:google_product_category>
-      <g:product_type><![CDATA[��υναικεία δαχτυλίδια]]></g:product_type>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
+      <g:gender>female</g:gender>
       <g:color><![CDATA[Doré]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>7 g</g:shipping_weight>
@@ -14897,9 +14909,9 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2101]]></g:mpn>
       <g:google_product_category>200</g:google_product_category>
-      <g:product_type><![CDATA[��υναικεία δαχτυλίδια]]></g:product_type>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
+      <g:gender>female</g:gender>
       <g:color><![CDATA[Doré]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>7 g</g:shipping_weight>
@@ -14937,9 +14949,9 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2101]]></g:mpn>
       <g:google_product_category>200</g:google_product_category>
-      <g:product_type><![CDATA[��υναικεία δαχτυλίδια]]></g:product_type>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
+      <g:gender>female</g:gender>
       <g:color><![CDATA[Doré]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>7 g</g:shipping_weight>
@@ -14977,9 +14989,9 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2101]]></g:mpn>
       <g:google_product_category>200</g:google_product_category>
-      <g:product_type><![CDATA[��υναικεία δαχτυλίδια]]></g:product_type>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
+      <g:gender>female</g:gender>
       <g:color><![CDATA[Doré]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>7 g</g:shipping_weight>
@@ -15017,9 +15029,9 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2101]]></g:mpn>
       <g:google_product_category>200</g:google_product_category>
-      <g:product_type><![CDATA[��υναικεία δαχτυλίδια]]></g:product_type>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
+      <g:gender>female</g:gender>
       <g:color><![CDATA[Doré rose]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>7 g</g:shipping_weight>
@@ -15057,9 +15069,9 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2101]]></g:mpn>
       <g:google_product_category>200</g:google_product_category>
-      <g:product_type><![CDATA[��υναικεία δαχτυλίδια]]></g:product_type>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
+      <g:gender>female</g:gender>
       <g:color><![CDATA[Doré rose]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>7 g</g:shipping_weight>
@@ -15097,9 +15109,9 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2101]]></g:mpn>
       <g:google_product_category>200</g:google_product_category>
-      <g:product_type><![CDATA[��υναικεία δαχτυλίδια]]></g:product_type>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
+      <g:gender>female</g:gender>
       <g:color><![CDATA[Doré rose]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>7 g</g:shipping_weight>
@@ -15137,9 +15149,9 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[2101]]></g:mpn>
       <g:google_product_category>200</g:google_product_category>
-      <g:product_type><![CDATA[��υναικεία δαχτυλίδια]]></g:product_type>
+      <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
-      <g:gender>unisex</g:gender>
+      <g:gender>female</g:gender>
       <g:color><![CDATA[Doré rose]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>7 g</g:shipping_weight>
@@ -22706,7 +22718,7 @@
       <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
-      <g:color><![CDATA[Silver]]></g:color>
+      <g:color><![CDATA[Argenté]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>4 g</g:shipping_weight>
       <g:size><![CDATA[55]]></g:size>
@@ -28444,7 +28456,7 @@
     <item>
       <g:id>31373260029987</g:id>
       <g:item_group_id>4376317689891</g:item_group_id>
-      <g:title><![CDATA[Pendentif "rose" - Οξειδω��ένο / 40cm]]></g:title>
+      <g:title><![CDATA[Pendentif "rose" - Oxydé / 40cm]]></g:title>
       <g:description><![CDATA[Pendentif "fleur de rose" fabriqué en argent 925. Un bijou unique fait main qui se porte autour du cou avec une chaîne en argent, dont la longueur peut être choisie. Disponible en plusieurs couleurs : argent, or ou or rose Poids du pendentif : 1,6 g Largeur du pendentif : 15 mm Hauteur du pendentif : 37 mm Chaque bijou est livré séparément dans un écrin élégant. Dans l’emballage, vous trouverez également un sac en papier pour chaque paquet. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Elle s’adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se distinguer ou même de provoquer par leur tenue, sans pour autant perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos modèles s’inspirent des métiers, des voyages, de l’histoire, de la religion, de la nature et de la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toutes occasions. Ils peuvent même être portés à la plage, car ces bijoux s’accordent parfaitement avec l’été, tout en étant conçus de manière si résistante qu’ils ne sont pas affectés par l’eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/pendentif-rose?country=FR&amp;variant=31373260029987</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-kremasto-mentagion-triantafyllo-apo-ashmi-925-kosmhmata-emmanuela-252707.jpg?v=1767373572</g:image_link>
@@ -28462,7 +28474,7 @@
       <g:product_type><![CDATA[Pendentifs Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
-      <g:color><![CDATA[Silver]]></g:color>
+      <g:color><![CDATA[Oxydé]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>2 g</g:shipping_weight>
       <g:shipping>
@@ -33386,7 +33398,7 @@
       <g:id>31373353189411</g:id>
       <g:item_group_id>4376329977891</g:item_group_id>
       <g:title><![CDATA[Boucles d'oreilles épingles avec agates]]></g:title>
-      <g:description><![CDATA[Boucles d'oreilles artisanales ear pins en argent 925 avec pierres noires d'agate. Ces bijoux féminins enlacent littéralement et ornent les oreilles ! Ils sont faciles à porter et stables même sans fermoir, tout en offrant une sensation particulière car ils épousent les lobes. Les lignes simples et le design minimaliste, combinés à la manière unique de les porter, font de ce bijou un choix idéal pour les femmes qui souhaitent impressionner avec leurs boucles d'oreilles. Ornés de pierres noires d'agate, ils seront assurément une touche joyeuse à chacune de vos sorties. Essayez-les et ils deviendront sûrement votre compagnon inséparable ! 🆒 Les boucles d'oreilles ear pins pour femmes sont l'accessoire le plus à la mode et inégalé en bijouterie en ce moment ! Uniques et originales, elles enlacent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous donnant l'allure féminine que vous souhaitez avec vos bijoux. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Pour les porter, il suffit de les passer à vos oreilles comme des boucles pendantes, de les relever pour qu'elles se nichent dans votre pavillon, puis de presser légèrement la plaque derrière l'oreille pour les fixer en place. Disponibles en plusieurs couleurs Le prix est pour une paire de boucles d'oreilles Ces boucles d'oreilles sont hypoallergéniques et ne noircissent pas, car elles sont fabriquées en argent 925 rhodié Chaque bijou est livré séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique fabriqué avec soin dans les moindres détails et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur donne une finition remarquable. Cela les rend également insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans pour autant perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos dessins sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent merveilleusement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
+      <g:description><![CDATA[Boucles d'oreilles artisanales ear pins en argent 925 avec pierres noires d'agate. Ces bijoux féminins enlacent littéralement et ornent les oreilles ! Ils sont faciles à porter et stables même sans fermoir, tout en offrant une sensation particulière car ils épousent les lobes. Les lignes simples et le design minimaliste, combinés à la manière unique de les porter, font de ce bijou un choix idéal pour les femmes qui souhaitent impressionner avec leurs boucles d'oreilles. Ornés de pierres noires d'agate, ils seront assurément une touche joyeuse à chacune de vos sorties. Essayez-les et ils deviendront sûrement votre compagnon inséparable ! 🆒 Les boucles d'oreilles ear pins pour femmes sont l'accessoire le plus à la mode et inégalé en bijouterie en ce moment ! Uniques et originales, elles enlacent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous donnant l'allure féminine que vous souhaitez avec vos bijoux. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Pour les porter, il suffit de les passer à vos oreilles comme des boucles pendantes, de les relever pour qu'elles se nichent dans votre pavillon, puis de presser légèrement la plaque derrière l'oreille pour les fixer en place. Disponibles en plusieurs couleurs Le prix est pour une paire de boucles d'oreilles Ces boucles d'oreilles sont hypoallergéniques et ne noircissent pas, car elles sont fabriquées en argent 925 rhodié Chaque bijou est livré séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique fabriqué avec soin dans les moindres détails et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur donne une finition remarquable. Cela les rend également insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. ���� Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans pour autant perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos dessins sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent merveilleusement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/ear-pin-agates?country=FR&amp;variant=31373353189411</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/skoylarikia-pins-me-axates-apo-ashmi-925-kosmhmata-emmanuela-607788.jpg?v=1767372654</g:image_link>
       <g:additional_image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/skoylarikia-pins-me-axates-apo-ashmi-925-kosmhmata-emmanuela-815345.jpg?v=1730713419</g:additional_image_link>
@@ -33999,7 +34011,7 @@
       <g:id>31373370949667</g:id>
       <g:item_group_id>4376331255843</g:item_group_id>
       <g:title><![CDATA[Boucle d'oreille manchette avec rainures grande - Argenté / Simple]]></g:title>
-      <g:description><![CDATA[Boucle d'oreille unique faite à la main, ear cuff, fabriquée en argent 925 avec des stries. Les boucles d'oreilles ear cuffs pour femmes sont l'accessoire le plus en vogue et inégalé en ce moment ! Uniques et originales, elles épousent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous offrant l'allure féminine que vous souhaitez avec vos bijoux. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Le prix est pour une seule boucle d'oreille. Choisissez d'acheter une paire avec une remise Aucun perçage de l'oreille n'est nécessaire Disponible en plusieurs couleurs Poids : 2 g Chaque bijou est livré séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique, fabriqué avec soin du détail, et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. En même temps, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans jamais perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos modèles sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent merveilleusement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
+      <g:description><![CDATA[Boucle d'oreille unique faite à la main, ear cuff, fabriquée en argent 925 avec des stries. Les boucles d'oreilles ear cuffs pour femmes sont l'accessoire le plus en vogue et inégalé en ce moment ! Uniques et originales, elles épousent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous offrant l'allure féminine que vous souhaitez avec vos bijoux. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Le prix est pour une seule boucle d'oreille. Choisissez d'acheter une paire avec une remise Aucun perçage de l'oreille n'est nécessaire ��� Disponible en plusieurs couleurs Poids : 2 g Chaque bijou est livré séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique, fabriqué avec soin du détail, et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. En même temps, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans jamais perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos modèles sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent merveilleusement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/ear-cuff-ruffled-grand?country=FR&amp;variant=31373370949667</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-me-rabdwseis-megalo-apo-ashmi-925-kosmhmata-emmanuela-333371.jpg?v=1767372529</g:image_link>
       <g:additional_image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-me-rabdwseis-megalo-apo-ashmi-925-kosmhmata-emmanuela-575386.jpg?v=1767372534</g:additional_image_link>
@@ -34038,7 +34050,7 @@
       <g:id>31373370982435</g:id>
       <g:item_group_id>4376331255843</g:item_group_id>
       <g:title><![CDATA[Boucle d'oreille manchette avec rainures grande - Doré / Simple]]></g:title>
-      <g:description><![CDATA[Boucle d'oreille unique faite à la main, ear cuff, fabriquée en argent 925 avec des stries. Les boucles d'oreilles ear cuffs pour femmes sont l'accessoire le plus en vogue et inégalé en ce moment ! Uniques et originales, elles épousent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous offrant l'allure féminine que vous souhaitez avec vos bijoux. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Le prix est pour une seule boucle d'oreille. Choisissez d'acheter une paire avec une remise Aucun perçage de l'oreille n'est nécessaire Disponible en plusieurs couleurs Poids : 2 g Chaque bijou est livré séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique, fabriqué avec soin du détail, et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. En même temps, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans jamais perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos modèles sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent merveilleusement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
+      <g:description><![CDATA[Boucle d'oreille unique faite à la main, ear cuff, fabriquée en argent 925 avec des stries. Les boucles d'oreilles ear cuffs pour femmes sont l'accessoire le plus en vogue et inégalé en ce moment ! Uniques et originales, elles épousent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous offrant l'allure féminine que vous souhaitez avec vos bijoux. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Le prix est pour une seule boucle d'oreille. Choisissez d'acheter une paire avec une remise Aucun perçage de l'oreille n'est nécessaire ��� Disponible en plusieurs couleurs Poids : 2 g Chaque bijou est livré séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique, fabriqué avec soin du détail, et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. En même temps, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans jamais perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos modèles sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent merveilleusement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/ear-cuff-ruffled-grand?country=FR&amp;variant=31373370982435</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-me-rabdwseis-megalo-apo-ashmi-925-kosmhmata-emmanuela-333371.jpg?v=1767372529</g:image_link>
       <g:additional_image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-me-rabdwseis-megalo-apo-ashmi-925-kosmhmata-emmanuela-575386.jpg?v=1767372534</g:additional_image_link>
@@ -34077,7 +34089,7 @@
       <g:id>31373371047971</g:id>
       <g:item_group_id>4376331255843</g:item_group_id>
       <g:title><![CDATA[Boucle d'oreille manchette avec rainures grande - Doré rose / Simple]]></g:title>
-      <g:description><![CDATA[Boucle d'oreille unique faite à la main, ear cuff, fabriquée en argent 925 avec des stries. Les boucles d'oreilles ear cuffs pour femmes sont l'accessoire le plus en vogue et inégalé en ce moment ! Uniques et originales, elles épousent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous offrant l'allure féminine que vous souhaitez avec vos bijoux. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Le prix est pour une seule boucle d'oreille. Choisissez d'acheter une paire avec une remise Aucun perçage de l'oreille n'est nécessaire Disponible en plusieurs couleurs Poids : 2 g Chaque bijou est livré séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique, fabriqué avec soin du détail, et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. En même temps, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans jamais perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos modèles sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent merveilleusement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
+      <g:description><![CDATA[Boucle d'oreille unique faite à la main, ear cuff, fabriquée en argent 925 avec des stries. Les boucles d'oreilles ear cuffs pour femmes sont l'accessoire le plus en vogue et inégalé en ce moment ! Uniques et originales, elles épousent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous offrant l'allure féminine que vous souhaitez avec vos bijoux. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Le prix est pour une seule boucle d'oreille. Choisissez d'acheter une paire avec une remise Aucun perçage de l'oreille n'est nécessaire ��� Disponible en plusieurs couleurs Poids : 2 g Chaque bijou est livré séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique, fabriqué avec soin du détail, et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. En même temps, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans jamais perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos modèles sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent merveilleusement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/ear-cuff-ruffled-grand?country=FR&amp;variant=31373371047971</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-me-rabdwseis-megalo-apo-ashmi-925-kosmhmata-emmanuela-333371.jpg?v=1767372529</g:image_link>
       <g:additional_image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-me-rabdwseis-megalo-apo-ashmi-925-kosmhmata-emmanuela-575386.jpg?v=1767372534</g:additional_image_link>
@@ -34116,7 +34128,7 @@
       <g:id>31649851146275</g:id>
       <g:item_group_id>4376331255843</g:item_group_id>
       <g:title><![CDATA[Boucle d'oreille manchette avec rainures grande - Argenté / Paire]]></g:title>
-      <g:description><![CDATA[Boucle d'oreille unique faite à la main, ear cuff, fabriquée en argent 925 avec des stries. Les boucles d'oreilles ear cuffs pour femmes sont l'accessoire le plus en vogue et inégalé en ce moment ! Uniques et originales, elles épousent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous offrant l'allure féminine que vous souhaitez avec vos bijoux. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Le prix est pour une seule boucle d'oreille. Choisissez d'acheter une paire avec une remise Aucun perçage de l'oreille n'est nécessaire Disponible en plusieurs couleurs Poids : 2 g Chaque bijou est livré séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique, fabriqué avec soin du détail, et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. En même temps, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans jamais perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos modèles sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent merveilleusement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
+      <g:description><![CDATA[Boucle d'oreille unique faite à la main, ear cuff, fabriquée en argent 925 avec des stries. Les boucles d'oreilles ear cuffs pour femmes sont l'accessoire le plus en vogue et inégalé en ce moment ! Uniques et originales, elles épousent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous offrant l'allure féminine que vous souhaitez avec vos bijoux. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Le prix est pour une seule boucle d'oreille. Choisissez d'acheter une paire avec une remise Aucun perçage de l'oreille n'est nécessaire ��� Disponible en plusieurs couleurs Poids : 2 g Chaque bijou est livré séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique, fabriqué avec soin du détail, et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. En même temps, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans jamais perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos modèles sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent merveilleusement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/ear-cuff-ruffled-grand?country=FR&amp;variant=31649851146275</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-me-rabdwseis-megalo-apo-ashmi-925-kosmhmata-emmanuela-333371.jpg?v=1767372529</g:image_link>
       <g:additional_image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-me-rabdwseis-megalo-apo-ashmi-925-kosmhmata-emmanuela-575386.jpg?v=1767372534</g:additional_image_link>
@@ -34155,7 +34167,7 @@
       <g:id>31649853571107</g:id>
       <g:item_group_id>4376331255843</g:item_group_id>
       <g:title><![CDATA[Boucle d'oreille manchette avec rainures grande - Doré / Paire]]></g:title>
-      <g:description><![CDATA[Boucle d'oreille unique faite à la main, ear cuff, fabriquée en argent 925 avec des stries. Les boucles d'oreilles ear cuffs pour femmes sont l'accessoire le plus en vogue et inégalé en ce moment ! Uniques et originales, elles épousent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous offrant l'allure féminine que vous souhaitez avec vos bijoux. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Le prix est pour une seule boucle d'oreille. Choisissez d'acheter une paire avec une remise Aucun perçage de l'oreille n'est nécessaire Disponible en plusieurs couleurs Poids : 2 g Chaque bijou est livré séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique, fabriqué avec soin du détail, et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. En même temps, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans jamais perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos modèles sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent merveilleusement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
+      <g:description><![CDATA[Boucle d'oreille unique faite à la main, ear cuff, fabriquée en argent 925 avec des stries. Les boucles d'oreilles ear cuffs pour femmes sont l'accessoire le plus en vogue et inégalé en ce moment ! Uniques et originales, elles épousent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous offrant l'allure féminine que vous souhaitez avec vos bijoux. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Le prix est pour une seule boucle d'oreille. Choisissez d'acheter une paire avec une remise Aucun perçage de l'oreille n'est nécessaire ��� Disponible en plusieurs couleurs Poids : 2 g Chaque bijou est livré séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique, fabriqué avec soin du détail, et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. En même temps, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans jamais perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos modèles sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent merveilleusement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/ear-cuff-ruffled-grand?country=FR&amp;variant=31649853571107</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-me-rabdwseis-megalo-apo-ashmi-925-kosmhmata-emmanuela-333371.jpg?v=1767372529</g:image_link>
       <g:additional_image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-me-rabdwseis-megalo-apo-ashmi-925-kosmhmata-emmanuela-575386.jpg?v=1767372534</g:additional_image_link>
@@ -34194,7 +34206,7 @@
       <g:id>31649854816291</g:id>
       <g:item_group_id>4376331255843</g:item_group_id>
       <g:title><![CDATA[Boucle d'oreille manchette avec rainures grande - Doré rose / Paire]]></g:title>
-      <g:description><![CDATA[Boucle d'oreille unique faite à la main, ear cuff, fabriquée en argent 925 avec des stries. Les boucles d'oreilles ear cuffs pour femmes sont l'accessoire le plus en vogue et inégalé en ce moment ! Uniques et originales, elles épousent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous offrant l'allure féminine que vous souhaitez avec vos bijoux. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Le prix est pour une seule boucle d'oreille. Choisissez d'acheter une paire avec une remise Aucun perçage de l'oreille n'est nécessaire Disponible en plusieurs couleurs Poids : 2 g Chaque bijou est livré séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique, fabriqué avec soin du détail, et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. En même temps, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans jamais perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos modèles sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent merveilleusement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
+      <g:description><![CDATA[Boucle d'oreille unique faite à la main, ear cuff, fabriquée en argent 925 avec des stries. Les boucles d'oreilles ear cuffs pour femmes sont l'accessoire le plus en vogue et inégalé en ce moment ! Uniques et originales, elles épousent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous offrant l'allure féminine que vous souhaitez avec vos bijoux. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Le prix est pour une seule boucle d'oreille. Choisissez d'acheter une paire avec une remise Aucun perçage de l'oreille n'est nécessaire ��� Disponible en plusieurs couleurs Poids : 2 g Chaque bijou est livré séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique, fabriqué avec soin du détail, et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. En même temps, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans jamais perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos modèles sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent merveilleusement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/ear-cuff-ruffled-grand?country=FR&amp;variant=31649854816291</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-me-rabdwseis-megalo-apo-ashmi-925-kosmhmata-emmanuela-333371.jpg?v=1767372529</g:image_link>
       <g:additional_image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-me-rabdwseis-megalo-apo-ashmi-925-kosmhmata-emmanuela-575386.jpg?v=1767372534</g:additional_image_link>
@@ -37319,7 +37331,7 @@
     <item>
       <g:id>54857044787534</g:id>
       <g:item_group_id>4376336334883</g:item_group_id>
-      <g:title><![CDATA[Boucle d'oreille manchette avec perle - Doré / ��ευγάρι]]></g:title>
+      <g:title><![CDATA[Boucle d'oreille manchette avec perle - Doré / Paire]]></g:title>
       <g:description><![CDATA[Boucle d'oreille unique faite à la main, ear cuff, fabriquée en argent 925, avec une perle blanche. Les boucles d'oreilles ear cuffs pour femmes sont l'accessoire le plus en vogue et inégalé en ce moment ! Uniques et originales, elles épousent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous offrant l'allure féminine que vous souhaitez avec les bijoux que vous portez. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Le prix est pour une seule boucle d'oreille. Aucun perçage de l'oreille n'est nécessaire Poids : 1,1 g Disponible en plusieurs couleurs Ces boucles d'oreilles sont hypoallergéniques et ne noircissent pas, car elles sont fabriquées en argent 925 rhodié Chaque bijou est livré séparément dans une boîte cadeau élégante. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou unique fait main, réalisé avec soin du détail, et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. En même temps, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, conformes aux tendances les plus récentes et audacieuses de la mode contemporaine. Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans jamais perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos modèles s'inspirent des métiers, des voyages, de l'histoire, de la religion, de la nature et de la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent merveilleusement avec l'été, tout en étant fabriqués de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/boucle-oreille-ear-cuff-perle?country=FR&amp;variant=54857044787534</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-359744.jpg?v=1767371855</g:image_link>
@@ -67049,7 +67061,7 @@
     <item>
       <g:id>31374193033251</g:id>
       <g:item_group_id>4376418517027</g:item_group_id>
-      <g:title><![CDATA[Bracelet manchette masculin fait main - 20cm / Doré]]></g:title>
+      <g:title><![CDATA[Bracelet manchette masculin fait main - 20cm / Επιχρυσωμέ��ο]]></g:title>
       <g:description><![CDATA[Bracelet manchette masculin fait main avec des billes aux extrémités, fabriqué en argent 925. Un bijou unique de style « menotte » qui apportera dynamisme et virilité à chaque homme choisissant de le porter à son poignet. Un cadeau particulier que tout homme appréciera. Il est ouvert et ajustable, adapté à toutes les tailles de poignet. Disponible en plusieurs couleurs Poids : 9,5 g Chaque bijou est livré séparément dans un écrin élégant. Dans l’emballage, vous trouverez également un sac en papier pour chaque paquet. La collection de bijoux masculins à laquelle appartient cet article comprend des accessoires remarquables pour hommes, aux dessins originaux et ingénieux, conformes aux tendances les plus récentes et audacieuses de la mode contemporaine. Elle s’adresse aux hommes dynamiques, à la mode et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans pour autant perdre leur véritable identité. Porter ces créations garantit de ne pas passer inaperçu. Nos modèles sont inspirés par les métiers, les voyages, l’histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux « Emmanuela - faits main pour vous » sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s’accordent parfaitement avec les tatouages, tout en étant conçus de manière si résistante qu’ils ne sont pas affectés par l’eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/bracelet-homme-jonc-billes?country=FR&amp;variant=31374193033251</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-cuff-apo-ashmi-925-kosmhmata-emmanuela-276572.jpg?v=1767366789</g:image_link>
@@ -67068,7 +67080,7 @@
       <g:product_type><![CDATA[Bracelets Homme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>male</g:gender>
-      <g:color><![CDATA[Doré]]></g:color>
+      <g:color><![CDATA[Silver]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>9 g</g:shipping_weight>
       <g:shipping>
@@ -79482,7 +79494,7 @@
     <item>
       <g:id>39560050540579</g:id>
       <g:item_group_id>4444733374499</g:item_group_id>
-      <g:title><![CDATA[Boucles d'oreilles à clips "fleurs" avec perles de culture - Ασημ��νια / Turquoise]]></g:title>
+      <g:title><![CDATA[Boucles d'oreilles à clips "fleurs" avec perles de culture - Argenté / Turquoise]]></g:title>
       <g:description><![CDATA[Boucles d'oreilles artisanales "fleurs" ear jackets, fabriquées en argent 925 & perles, avec des options de couleurs en combinaisons. Bijou idéal pour un look floral, romantique ou décontracté. Préparez-vous à être surpris par ces boucles d'oreilles féminines modernes qui peuvent se porter de plusieurs façons ! La boucle d'oreille ear jacket est un ornement qui se fixe à l'arrière du clou et pend sous le lobe. Vous pouvez la combiner avec la boucle principale ou avec toute autre boucle d'oreille clou que vous avez et que vous trouvez assortie. Ou vous pouvez porter uniquement la boucle clou avant quand vous le souhaitez. Avec tant d'options, ces pièces de haute couture deviendront sûrement vos accessoires préférés ! Le prix est pour une paire de boucles d'oreilles Ces boucles d'oreilles sont hypoallergéniques et ne noircissent pas, car elles sont fabriquées en argent 925 rhodié Disponibles en plusieurs couleurs Poids : 3,8 g Largeur : 2,5 cm Hauteur : 1,8 cm Chaque bijou est livré placé séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique fabriqué avec soin du détail et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de métallisation qui leur donne une finition remarquable. En même temps, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, conformes aux tendances les plus récentes et audacieuses de la mode contemporaine. Elle vise les femmes dynamiques, bien habillées et modernes, qui choisissent de se distinguer ou même de provoquer par leur tenue, sans pour autant perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos dessins sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent parfaitement avec l'été, tout en étant fabriqués de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/ear-jacket-perles?country=FR&amp;variant=39560050540579</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-jackets-loyloydia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-915488.jpg?v=1767363719</g:image_link>
@@ -79504,7 +79516,7 @@
       <g:product_type><![CDATA[Γυναικεία σκουλαρίκια ear jacket]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
-      <g:color><![CDATA[Silver]]></g:color>
+      <g:color><![CDATA[Argenté]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping_weight>2 g</g:shipping_weight>
       <g:shipping>
@@ -101799,7 +101811,7 @@
       <g:id>49357100351822</g:id>
       <g:item_group_id>9757940973902</g:item_group_id>
       <g:title><![CDATA[Boucles d'oreilles anneaux torsadés triples - Doré]]></g:title>
-      <g:description><![CDATA[Boucles d'oreilles artisanales en argent 925 torsadé, conçues pour les femmes qui aiment un caractère moderne et affirmé dans leurs bijoux. Élégantes, particulières et intemporelles. Le prix correspond à une paire de boucles d'oreilles Disponibles en plusieurs couleurs Poids : 9,4 g Diamètre : 16 mm Ces boucles d'oreilles peuvent être assorties avec la boucle d'oreille triple torsadée cuff, l'ensemble des 2 bracelets torsadés et le collier ras-du-cou torsadé. Chaque bijou est livré séparément dans un écrin cadeau élégant. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique fabriqué avec soin du détail et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. Parallèlement, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Portez-les avec des cheveux élégamment attachés ou un chignon lisse pour mettre en valeur leur design affirmé. Ils se marient à merveille avec des robes en maille, des vestes et des détails dorés pour un look raffiné et dynamique. Nos créations s'inspirent des métiers, des voyages, de l'histoire, de la religion, de la nature et de la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent parfaitement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
+      <g:description><![CDATA[Boucles d'oreilles artisanales en argent 925 torsadé, conçues pour les femmes qui aiment un caractère moderne et affirmé dans leurs bijoux. Élégantes, particulières et intemporelles. Le prix correspond à une paire de boucles d'oreilles Disponibles en plusieurs couleurs Poids : 9,4 g Diamètre : 16 mm Ces boucles d'oreilles peuvent être assorties avec la boucle d'oreille triple torsadée cuff, l'ensemble des 2 bracelets torsadés et le collier ras-du-cou torsadé. Chaque bijou est livré séparément dans un écrin cadeau élégant. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique fabriqué avec soin du détail et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. Parallèlement, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Portez-les avec des cheveux él��gamment attachés ou un chignon lisse pour mettre en valeur leur design affirmé. Ils se marient à merveille avec des robes en maille, des vestes et des détails dorés pour un look raffiné et dynamique. Nos créations s'inspirent des métiers, des voyages, de l'histoire, de la religion, de la nature et de la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent parfaitement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/boucles-oreilles-anneaux-torsades-triples?country=FR&amp;variant=49357100351822</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-skoylarikia-striftoi-krikoi-triploi-apo-ashmi-925-kosmhmata-emmanuela-564119.jpg?v=1767361251</g:image_link>
       <g:additional_image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-striftoi-krikoi-triploi-apo-ashmi-925-kosmhmata-emmanuela-773136.jpg?v=1767361256</g:additional_image_link>
@@ -101837,7 +101849,7 @@
       <g:id>49357100384590</g:id>
       <g:item_group_id>9757940973902</g:item_group_id>
       <g:title><![CDATA[Boucles d'oreilles anneaux torsadés triples - Argenté]]></g:title>
-      <g:description><![CDATA[Boucles d'oreilles artisanales en argent 925 torsadé, conçues pour les femmes qui aiment un caractère moderne et affirmé dans leurs bijoux. Élégantes, particulières et intemporelles. Le prix correspond à une paire de boucles d'oreilles Disponibles en plusieurs couleurs Poids : 9,4 g Diamètre : 16 mm Ces boucles d'oreilles peuvent être assorties avec la boucle d'oreille triple torsadée cuff, l'ensemble des 2 bracelets torsadés et le collier ras-du-cou torsadé. Chaque bijou est livré séparément dans un écrin cadeau élégant. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique fabriqué avec soin du détail et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. Parallèlement, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Portez-les avec des cheveux élégamment attachés ou un chignon lisse pour mettre en valeur leur design affirmé. Ils se marient à merveille avec des robes en maille, des vestes et des détails dorés pour un look raffiné et dynamique. Nos créations s'inspirent des métiers, des voyages, de l'histoire, de la religion, de la nature et de la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent parfaitement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
+      <g:description><![CDATA[Boucles d'oreilles artisanales en argent 925 torsadé, conçues pour les femmes qui aiment un caractère moderne et affirmé dans leurs bijoux. Élégantes, particulières et intemporelles. Le prix correspond à une paire de boucles d'oreilles Disponibles en plusieurs couleurs Poids : 9,4 g Diamètre : 16 mm Ces boucles d'oreilles peuvent être assorties avec la boucle d'oreille triple torsadée cuff, l'ensemble des 2 bracelets torsadés et le collier ras-du-cou torsadé. Chaque bijou est livré séparément dans un écrin cadeau élégant. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique fabriqué avec soin du détail et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. Parallèlement, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Portez-les avec des cheveux él��gamment attachés ou un chignon lisse pour mettre en valeur leur design affirmé. Ils se marient à merveille avec des robes en maille, des vestes et des détails dorés pour un look raffiné et dynamique. Nos créations s'inspirent des métiers, des voyages, de l'histoire, de la religion, de la nature et de la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent parfaitement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/boucles-oreilles-anneaux-torsades-triples?country=FR&amp;variant=49357100384590</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-skoylarikia-striftoi-krikoi-triploi-apo-ashmi-925-kosmhmata-emmanuela-564119.jpg?v=1767361251</g:image_link>
       <g:additional_image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-striftoi-krikoi-triploi-apo-ashmi-925-kosmhmata-emmanuela-773136.jpg?v=1767361256</g:additional_image_link>
@@ -101875,7 +101887,7 @@
       <g:id>49357100417358</g:id>
       <g:item_group_id>9757940973902</g:item_group_id>
       <g:title><![CDATA[Boucles d'oreilles anneaux torsadés triples - Noir anthracite]]></g:title>
-      <g:description><![CDATA[Boucles d'oreilles artisanales en argent 925 torsadé, conçues pour les femmes qui aiment un caractère moderne et affirmé dans leurs bijoux. Élégantes, particulières et intemporelles. Le prix correspond à une paire de boucles d'oreilles Disponibles en plusieurs couleurs Poids : 9,4 g Diamètre : 16 mm Ces boucles d'oreilles peuvent être assorties avec la boucle d'oreille triple torsadée cuff, l'ensemble des 2 bracelets torsadés et le collier ras-du-cou torsadé. Chaque bijou est livré séparément dans un écrin cadeau élégant. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique fabriqué avec soin du détail et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. Parallèlement, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Portez-les avec des cheveux élégamment attachés ou un chignon lisse pour mettre en valeur leur design affirmé. Ils se marient à merveille avec des robes en maille, des vestes et des détails dorés pour un look raffiné et dynamique. Nos créations s'inspirent des métiers, des voyages, de l'histoire, de la religion, de la nature et de la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent parfaitement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
+      <g:description><![CDATA[Boucles d'oreilles artisanales en argent 925 torsadé, conçues pour les femmes qui aiment un caractère moderne et affirmé dans leurs bijoux. Élégantes, particulières et intemporelles. Le prix correspond à une paire de boucles d'oreilles Disponibles en plusieurs couleurs Poids : 9,4 g Diamètre : 16 mm Ces boucles d'oreilles peuvent être assorties avec la boucle d'oreille triple torsadée cuff, l'ensemble des 2 bracelets torsadés et le collier ras-du-cou torsadé. Chaque bijou est livré séparément dans un écrin cadeau élégant. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou artisanal unique fabriqué avec soin du détail et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur confère une finition remarquable. Parallèlement, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Portez-les avec des cheveux él��gamment attachés ou un chignon lisse pour mettre en valeur leur design affirmé. Ils se marient à merveille avec des robes en maille, des vestes et des détails dorés pour un look raffiné et dynamique. Nos créations s'inspirent des métiers, des voyages, de l'histoire, de la religion, de la nature et de la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent parfaitement avec l'été, tout en étant conçus de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/boucles-oreilles-anneaux-torsades-triples?country=FR&amp;variant=49357100417358</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-skoylarikia-striftoi-krikoi-triploi-apo-ashmi-925-kosmhmata-emmanuela-564119.jpg?v=1767361251</g:image_link>
       <g:additional_image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-striftoi-krikoi-triploi-apo-ashmi-925-kosmhmata-emmanuela-773136.jpg?v=1767361256</g:additional_image_link>
@@ -104235,7 +104247,7 @@
     <item>
       <g:id>49383179223374</g:id>
       <g:item_group_id>9763728392526</g:item_group_id>
-      <g:title><![CDATA[Boucle d'oreille manchette "losange" - ��σημένιο / Simple]]></g:title>
+      <g:title><![CDATA[Boucle d'oreille manchette "losange" - Argenté / Simple]]></g:title>
       <g:description><![CDATA[Boucle d'oreille unique faite main ear cuff "losange", fabriquée en argent 925. Les boucles d'oreilles ear cuffs pour femmes sont l'accessoire le plus à la mode et inégalé en ce moment ! Uniques et originales, elles épousent vos oreilles en les mettant en valeur, ce qui les rend encore plus élégantes, vous donnant l'allure féminine que vous souhaitez avec les bijoux que vous portez. Cette boucle d'oreille ne nécessite pas de piercing, mais en s'accrochant à votre oreille, elle crée l'illusion que vous avez plusieurs trous ! Cette ear cuff peut être assortie à la bague correspondante "losange", au pendentif "losanges" avec Larimar, ou aux anneaux "losanges". Disponible en plusieurs couleurs Aucun besoin d'avoir l'oreille percée Le prix est pour une seule boucle d'oreille. Poids : 2 gr Hauteur : 21 mm Largeur : 15 mm Ces boucles d'oreilles sont hypoallergéniques et ne noircissent pas, car elles sont fabriquées en argent 925 rhodié Chaque bijou est livré séparément dans un élégant coffret cadeau. Dans l'emballage, vous trouverez également un sac en papier pour chaque paquet. Un bijou unique fait main, réalisé avec soin du détail et une idée parfaite pour un cadeau. Ils sont particulièrement résistants et fiables, car ils subissent un traitement spécial de placage qui leur donne une finition remarquable. En même temps, cela les rend insensibles aux facteurs pouvant affecter l'argent. La collection à laquelle appartient cet article comprend des accessoires remarquables pour femmes, aux dessins originaux et ingénieux, en accord avec les tendances les plus récentes et audacieuses de la mode contemporaine. Elle s'adresse aux femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer par leur tenue, sans pour autant perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos dessins sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est portée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent parfaitement avec l'été, tout en étant fabriqués de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/ear-cuff-losange?country=FR&amp;variant=49383179223374</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-rombos-apo-ashmi-925-kosmhmata-emmanuela-947619.jpg?v=1767360458</g:image_link>
@@ -104256,7 +104268,7 @@
       <g:product_type><![CDATA[Boucles d'oreilles Ear Cuff Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
-      <g:color><![CDATA[Silver]]></g:color>
+      <g:color><![CDATA[Argenté]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:shipping>
         <g:country>FR</g:country>
@@ -115566,7 +115578,7 @@
     <item>
       <g:id>54996325990734</g:id>
       <g:item_group_id>9783495950670</g:item_group_id>
-      <g:title><![CDATA[Bague "losange" - Noir anthracite / 53]]></g:title>
+      <g:title><![CDATA[Bague "losange" - Μαύρο ανθρακ�� / 53]]></g:title>
       <g:description><![CDATA[Bague "losange" faite main en argent 925. Un petit chef-d'œuvre entièrement fait à la main. Mettez-la à votre doigt et attirez tous les regards sur vous ! Associez-le avec le pendentif ou les boucles d'oreilles losange correspondantes pour compléter l'ensemble ! Choisissez votre couleur et votre taille dans la liste correspondante. Poids : 2,7 g Hauteur : 20 mm Largeur : 20 mm Disponible en 4 tailles différentes Tous les bijoux sont livrés dans une élégante boîte cadeau. Dans l'emballage, vous trouverez également un sac en papier. La collection de bijoux à laquelle appartient cet article se compose d'accessoires remarquables pour femmes, avec des designs originaux et ingénieux, conformes aux tendances les plus récentes et extrêmes de la mode contemporaine. Il vise les femmes dynamiques, bien habillées et modernes, qui choisissent de se démarquer ou même de provoquer à travers leur tenue, sans pour autant perdre leur véritable identité. En portant ces créations, elles ne passeront certainement pas inaperçues. Nos designs sont inspirés par les métiers, les voyages, l'histoire, la religion, la nature et la quête intérieure. Une attention particulière est accordée à la musique et aux arts. Les bijoux "Emmanuela - handcrafted for you" sont si tendance et uniques que vous pouvez les porter en toute occasion. Ils peuvent même être portés à la plage, car ces bijoux s'accordent incroyablement bien avec l'été, tout en étant fabriqués de manière si résistante qu'ils ne sont pas affectés par l'eau de mer ou le soleil !]]></g:description>
       <g:link>https://emmanuela.jewelry/fr/products/bague-losange?country=FR&amp;variant=54996325990734</g:link>
       <g:image_link>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-868446.jpg?v=1767358678</g:image_link>
@@ -115583,7 +115595,7 @@
       <g:product_type><![CDATA[Bagues Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
-      <g:color><![CDATA[Noir anthracite]]></g:color>
+      <g:color><![CDATA[Silver]]></g:color>
       <g:material><![CDATA[Sterling Silver]]></g:material>
       <g:size><![CDATA[53]]></g:size>
       <g:shipping>
@@ -118258,7 +118270,7 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[1374S]]></g:mpn>
       <g:google_product_category>194</g:google_product_category>
-      <g:product_type><![CDATA[Γυναικεία σκουλαρίκια κρίκο��]]></g:product_type>
+      <g:product_type><![CDATA[Boucles d'oreilles Créoles Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
       <g:color><![CDATA[Argenté]]></g:color>
@@ -118290,7 +118302,7 @@
       <g:condition>new</g:condition>
       <g:mpn><![CDATA[1374G]]></g:mpn>
       <g:google_product_category>194</g:google_product_category>
-      <g:product_type><![CDATA[Γυναικεία σκουλαρίκια κρίκο��]]></g:product_type>
+      <g:product_type><![CDATA[Boucles d'oreilles Créoles Femme]]></g:product_type>
       <g:age_group>adult</g:age_group>
       <g:gender>female</g:gender>
       <g:color><![CDATA[Doré]]></g:color>

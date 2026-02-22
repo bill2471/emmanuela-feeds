@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-02-22 13:05</created_at>
+  <created_at>2026-02-22 14:04</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -5582,7 +5582,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1032Gold-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>8</quantity>
+        <quantity>7</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>5</weight>
@@ -6870,7 +6870,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[2042-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>1453</quantity>
+        <quantity>1452</quantity>
         <color>Χρυσό</color>
         <size>Ανοιχτή γάμπα,48,49,50,51,52,53,54,55,56,57,58,59,60,61</size>
         <variations>
@@ -6878,7 +6878,7 @@
             <variationid>31637438824483</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>Ανοιχτή γάμπα</size>
-            <quantity>97</quantity>
+            <quantity>96</quantity>
             <manufacturersku><![CDATA[2042]]></manufacturersku>
           </variation>
           <variation>
@@ -13816,7 +13816,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[8046-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>41</quantity>
+        <quantity>40</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>1</weight>
@@ -23454,7 +23454,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[8014set-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>2</weight>

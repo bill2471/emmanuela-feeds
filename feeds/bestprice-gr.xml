@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-02-24 10:12</date>
+  <date>2026-02-24 11:07</date>
   <products>
     <product>
       <productId>31372692389923</productId>
@@ -11968,29 +11968,6 @@
       <MPN>LU383ri</MPN>
       <color>ασημί</color>
       <size>57,58,59,60,61,62,63,64,65,66</size>
-      <weight>3</weight>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>47665707712846</productId>
-      <title>Ανδρικό δαχτυλιδι με σταυρούς της Μάλτας</title>
-      <productURL>https://emmanuela.gr/products/andriko-daxtylidi-stayroi?variant=47665707712846</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/56-andriko-daxtylidi-me-stayroys-ths-maltas-apo-ashmi-925-kosmhmata-emmanuela-813860.jpg?v=1767365024</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/56-andriko-daxtylidi-me-stayroys-ths-maltas-apo-ashmi-925-kosmhmata-emmanuela-813860.jpg?v=1767365024</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/56-andriko-daxtylidi-me-stayroys-ths-maltas-apo-ashmi-925-kosmhmata-emmanuela-121084.jpg?v=1767365028</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/56-andriko-daxtylidi-me-stayroys-ths-maltas-apo-ashmi-925-kosmhmata-emmanuela-408257.jpg?v=1767365036</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/56-andriko-daxtylidi-me-stayroys-ths-maltas-apo-ashmi-925-kosmhmata-emmanuela-805010.jpg?v=1767365040</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/56-andriko-daxtylidi-me-stayroys-ths-maltas-apo-ashmi-925-kosmhmata-emmanuela-217977.jpg?v=1767365045</img5>
-      </imagesURL>
-      <price>72.00</price>
-      <category_path>Κοσμήματα-&gt;Δαχτυλίδια-&gt;Ανδρικά δαχτυλίδια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>LU078ri</MPN>
-      <color>ασημί</color>
-      <size>56,57,59,60,61,62,63,64,65</size>
       <weight>3</weight>
       <shipping>0</shipping>
     </product>

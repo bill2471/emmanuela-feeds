@@ -1,5 +1,10 @@
 /**
- * Google Shopping Feed Generator v7.5 for EMMANUELA
+ * Google Shopping Feed Generator v7.6 for EMMANUELA
+ *
+ * NEW in v7.6:
+ *   - GREECE EXCLUSION: Adds <g:shopping_ads_excluded_country>GR</g:shopping_ads_excluded_country>
+ *     to all non-GR feeds. Prevents Google MCA inheritance auto-expansion that adds Greece
+ *     as target country to UK/International sub-accounts (root cause of Misrepresentation issue).
  *
  * NEW in v7.5:
  *   - VIDEO SUPPORT: Fetches product videos from Shopify media API
@@ -1035,6 +1040,11 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
 
       // v7 NEW: Add shipping time attributes
       item += formatShippingTimeAttributes(market.country);
+
+      // v7.6 NEW: Exclude Greece from non-GR feeds (prevent MCA inheritance auto-expansion)
+      if (market.country !== 'GR') {
+        item += `\n      <g:shopping_ads_excluded_country>GR</g:shopping_ads_excluded_country>`;
+      }
 
       item += `\n    </item>`;
       items.push(item);

@@ -392,6 +392,10 @@ function buildProductUrl(handle, variantId, market) {
   return `https://${market.domain}${market.path}/products/${handle}?country=${market.country}&variant=${variantId}`;
 }
 
+function buildCheckoutUrl(variantId, market) {
+  return `https://${market.domain}${market.path}/cart/${variantId}:1`;
+}
+
 function formatPrice(amount, currency) {
   const num = parseFloat(amount);
   return isNaN(num) ? `0.00 ${currency}` : `${num.toFixed(2)} ${currency}`;
@@ -987,6 +991,7 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
       <g:title><![CDATA[${smartTruncate(fullTitle)}]]></g:title>
       <g:description><![CDATA[${translatedDesc.substring(0, 5000)}]]></g:description>
       <g:link>${escapeXml(productUrl)}</g:link>
+      <g:checkout_link_template>${escapeXml(buildCheckoutUrl(variant.id, market))}</g:checkout_link_template>
       <g:image_link>${variantImage}</g:image_link>`;
       
       additionalImages.forEach(img => { item += `\n      <g:additional_image_link>${img}</g:additional_image_link>`; });

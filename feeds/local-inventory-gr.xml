@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:g="http://base.google.com/ns/1.0">
   <title>EMMANUELA Local Inventory Feed — Greece</title>
   <link href="https://emmanuela.gr"/>
-  <updated>2026-02-26T07:24:06.383Z</updated>
+  <updated>2026-02-26T09:06:43.768Z</updated>
     <entry>
       <g:id>31372692389923</g:id>
       <g:store_code>emmanuela</g:store_code>
@@ -1196,7 +1196,7 @@
     <entry>
       <g:id>31372894076963</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>19</g:quantity>
+      <g:quantity>18</g:quantity>
       <g:price>39.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
@@ -17114,14 +17114,14 @@
     <entry>
       <g:id>31720457044003</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>24</g:quantity>
+      <g:quantity>23</g:quantity>
       <g:price>39.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31720457076771</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>24</g:quantity>
+      <g:quantity>23</g:quantity>
       <g:price>39.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
@@ -22322,7 +22322,7 @@
     <entry>
       <g:id>51054146912590</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>5</g:quantity>
+      <g:quantity>4</g:quantity>
       <g:price>59.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>

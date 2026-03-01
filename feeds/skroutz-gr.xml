@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-03-01 13:05</created_at>
+  <created_at>2026-03-01 14:00</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -4642,7 +4642,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[2102-Ροζ]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>159</quantity>
+        <quantity>158</quantity>
         <color>Ροζ</color>
         <size>XS,S,M,L</size>
         <variations>
@@ -4664,7 +4664,7 @@
             <variationid>31373048938531</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>M</size>
-            <quantity>39</quantity>
+            <quantity>38</quantity>
             <manufacturersku><![CDATA[2102]]></manufacturersku>
           </variation>
           <variation>

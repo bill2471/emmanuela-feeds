@@ -6,6 +6,11 @@
  *     MT: en → mt (Maltese), path: '' → '/mt'
  *     MY: en → ms (Malay), path: '' → '/ms'
  *     Both languages have full product translations in Shopify via T-Lab
+ *   - FIX: English fallback for non-en/non-el locales
+ *     Previously: if target locale translation missing → fell back to GREEK (original)
+ *     Now: target locale → English → Greek
+ *     English translations fetched once and reused across all non-en locale groups
+ *     Affects: title, description, handle, option values, color
  *
  * NEW in v7.8:
  *   - FIX: Removed '/en' path prefix from 20 English-language markets on emmanuela.jewelry
@@ -943,8 +948,10 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
     
     const additionalImages = images.slice(1, 10).map(img => img.src);
     const prodTrans = translations.products[product.id] || {};
-    const translatedTitle = prodTrans.title || product.title;
-    const translatedDesc = stripHtml(prodTrans.body_html || product.body_html);
+    // v7.9: Fallback chain — target locale → English → Greek (original)
+    const enFallback = translations.englishFallback?.products[product.id] || {};
+    const translatedTitle = prodTrans.title || enFallback.title || product.title;
+    const translatedDesc = stripHtml(prodTrans.body_html || enFallback.body_html || product.body_html);
     const gender = getGender(product.product_type, product.title);
     const material = translateMaterial(product.metafields?.material);
     const googleCategory = getGoogleCategory(product.product_type);
@@ -970,7 +977,9 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
           if (opt.name === 'Χρώμα' || opt.name === 'Χρώμα μετάλλου' || opt.name.toLowerCase() === 'color') {
             variantColorOriginal = opt.value;
           }
-          return translations.optionValues[opt.value] || opt.value;
+          // v7.9: option value fallback — target locale → English → Greek original
+          const enOptFallback = translations.englishFallback?.optionValues || {};
+          return translations.optionValues[opt.value] || enOptFallback[opt.value] || opt.value;
         });
         variantSuffix = translatedOptions.join(' / ');
         if (translatedOptions.some((t, i) => t !== variant.selectedOptions[i]?.value)) {
@@ -985,7 +994,9 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
       const fullTitle = variantSuffix ? `${translatedTitle} - ${variantSuffix}` : translatedTitle;
       // Color: use translated value if available, otherwise normalize Greek original
       // Fallback chain: translated option → normalized variant → normalized metafield → default
-      const translatedColor = translations.optionValues[variantColorOriginal] || null;
+      // v7.9: color fallback — target locale → English → normalize Greek
+      const enOptFallbackForColor = translations.englishFallback?.optionValues || {};
+      const translatedColor = translations.optionValues[variantColorOriginal] || enOptFallbackForColor[variantColorOriginal] || null;
       const colorNormalized = translatedColor
         || normalizeColor(variantColorOriginal)
         || normalizeColor(product.metafields?.color)
@@ -996,7 +1007,7 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
       const variantImage = variant.image_id 
         ? images.find(img => img.id === variant.image_id)?.src || mainImage
         : mainImage;
-      const translatedHandle = prodTrans.handle || product.handle;
+      const translatedHandle = prodTrans.handle || enFallback.handle || product.handle;
       const productUrl = buildProductUrl(translatedHandle, variant.id, market);
       const price = formatPrice(variant.price, market.currency);
 
@@ -1177,6 +1188,9 @@ async function generateAllFeeds() {
   let marketCount = 0;
   const totalMarkets = Object.keys(MARKETS).length;
 
+  // v7.9: Pre-fetch English translations ONCE — used as fallback for all non-en/non-el locales
+  let englishTranslations = null;
+
   for (const [locale, markets] of Object.entries(marketsByLocale)) {
     console.log(`\n${'='.repeat(60)}`);
     console.log(`📦 Processing locale: ${locale} (${markets.length} markets)`);
@@ -1185,6 +1199,15 @@ async function generateAllFeeds() {
     let translations = { products: {}, optionValues: {} };
     if (locale !== 'el') {
       translations = await fetchAllTranslations(products, locale);
+    }
+
+    // v7.9: For non-English, non-Greek locales, ensure English fallback is available
+    if (locale !== 'el' && locale !== 'en') {
+      if (!englishTranslations) {
+        console.log(`\n🔄 Fetching English translations (fallback for non-en locales)...`);
+        englishTranslations = await fetchAllTranslations(products, 'en');
+      }
+      translations.englishFallback = englishTranslations;
     }
 
     for (const market of markets) {

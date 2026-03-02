@@ -1,5 +1,11 @@
 /**
- * Google Shopping Feed Generator v7.8 for EMMANUELA
+ * Google Shopping Feed Generator v7.9 for EMMANUELA
+ *
+ * NEW in v7.9:
+ *   - FIX: Malta (MT) and Malaysia (MY) now use native language translations
+ *     MT: en → mt (Maltese), path: '' → '/mt'
+ *     MY: en → ms (Malay), path: '' → '/ms'
+ *     Both languages have full product translations in Shopify via T-Lab
  *
  * NEW in v7.8:
  *   - FIX: Removed '/en' path prefix from 20 English-language markets on emmanuela.jewelry
@@ -294,7 +300,7 @@ const MARKETS = {
   AE: { country: 'AE', language: 'en', currency: 'AED', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'UAE' },
   IL: { country: 'IL', language: 'he', currency: 'ILS', locale: 'he', domain: 'emmanuela.jewelry', path: '/he', priority: 3, name: 'Israel' },
   MX: { country: 'MX', language: 'es', currency: 'MXN', locale: 'es', domain: 'emmanuela.jewelry', path: '/es', priority: 3, name: 'Mexico' },
-  MT: { country: 'MT', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Malta' },
+  MT: { country: 'MT', language: 'mt', currency: 'EUR', locale: 'mt', domain: 'emmanuela.jewelry', path: '/mt', priority: 3, name: 'Malta' },
   LU: { country: 'LU', language: 'fr', currency: 'EUR', locale: 'fr', domain: 'emmanuela.jewelry', path: '/fr', priority: 3, name: 'Luxembourg' },
   SK: { country: 'SK', language: 'cs', currency: 'EUR', locale: 'cs', domain: 'emmanuela.jewelry', path: '/cs', priority: 3, name: 'Slovakia' },
   SI: { country: 'SI', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Slovenia' },
@@ -303,7 +309,7 @@ const MARKETS = {
   LT: { country: 'LT', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Lithuania' },
   BG: { country: 'BG', language: 'en', currency: 'BGN', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Bulgaria' },
   HR: { country: 'HR', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Croatia' },
-  MY: { country: 'MY', language: 'en', currency: 'MYR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Malaysia' },
+  MY: { country: 'MY', language: 'ms', currency: 'MYR', locale: 'ms', domain: 'emmanuela.jewelry', path: '/ms', priority: 3, name: 'Malaysia' },
   ID: { country: 'ID', language: 'id', currency: 'IDR', locale: 'id', domain: 'emmanuela.jewelry', path: '/id', priority: 3, name: 'Indonesia' },
   TW: { country: 'TW', language: 'en', currency: 'TWD', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Taiwan' },
   IS: { country: 'IS', language: 'en', currency: 'ISK', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Iceland' },

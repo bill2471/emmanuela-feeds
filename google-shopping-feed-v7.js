@@ -1,5 +1,9 @@
 /**
- * Google Shopping Feed Generator v8.0 for EMMANUELA
+ * Google Shopping Feed Generator v8.1 for EMMANUELA
+ *
+ * v8.1:
+ *   - FIX: Exclude PR from non-PR feeds (shopping_ads_excluded_country=PR)
+ *     GMC auto-expanded Puerto Rico to all 47 feeds. Same pattern as GR exclusion (v7.6).
  *
  * NEW in v8.0 (Shipping + Returns + Checkout Overhaul):
  *   - REMOVED: <g:checkout_link_template> from ALL feeds
@@ -1156,9 +1160,12 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
       // v7 NEW: Add shipping time attributes
       item += formatShippingTimeAttributes(market.country);
 
-      // v7.6 NEW: Exclude Greece from non-GR feeds (prevent MCA inheritance auto-expansion)
+      // v7.6+v8.1: Exclude GR and PR from feeds that don't target them (prevent MCA auto-expansion)
       if (market.country !== 'GR') {
         item += `\n      <g:shopping_ads_excluded_country>GR</g:shopping_ads_excluded_country>`;
+      }
+      if (market.country !== 'PR') {
+        item += `\n      <g:shopping_ads_excluded_country>PR</g:shopping_ads_excluded_country>`;
       }
 
       item += `\n    </item>`;

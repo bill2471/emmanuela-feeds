@@ -1,5 +1,10 @@
 /**
- * Google Shopping Feed Generator v7.9 for EMMANUELA
+ * Google Shopping Feed Generator v7.10 for EMMANUELA
+ *
+ * NEW in v7.10:
+ *   - FIX: Norway path '/nb' → '/no' (Shopify uses /no for Norwegian, not /nb)
+ *     /nb/products/... returned 404, /no/products/... returns 200.
+ *     Impact: ~3,232 product URLs + checkout URLs were broken for Norway feed.
  *
  * NEW in v7.9:
  *   - FIX: Malta (MT) and Malaysia (MY) now use native language translations
@@ -290,7 +295,7 @@ const MARKETS = {
   IE: { country: 'IE', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 2, name: 'Ireland' },
   SE: { country: 'SE', language: 'sv', currency: 'SEK', locale: 'sv', domain: 'emmanuela.jewelry', path: '/sv', priority: 2, name: 'Sweden' },
   DK: { country: 'DK', language: 'da', currency: 'DKK', locale: 'da', domain: 'emmanuela.jewelry', path: '/da', priority: 2, name: 'Denmark' },
-  NO: { country: 'NO', language: 'no', currency: 'NOK', locale: 'nb', domain: 'emmanuela.jewelry', path: '/nb', priority: 2, name: 'Norway' },
+  NO: { country: 'NO', language: 'no', currency: 'NOK', locale: 'nb', domain: 'emmanuela.jewelry', path: '/no', priority: 2, name: 'Norway' },
   PL: { country: 'PL', language: 'pl', currency: 'PLN', locale: 'pl', domain: 'emmanuela.jewelry', path: '/pl', priority: 2, name: 'Poland' },
   PT: { country: 'PT', language: 'pt', currency: 'EUR', locale: 'pt-PT', domain: 'emmanuela.jewelry', path: '/pt', priority: 2, name: 'Portugal' },
   FI: { country: 'FI', language: 'fi', currency: 'EUR', locale: 'fi', domain: 'emmanuela.jewelry', path: '/fi', priority: 2, name: 'Finland' },

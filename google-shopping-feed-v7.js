@@ -1,31 +1,34 @@
 /**
- * Google Shopping Feed Generator v7.10 for EMMANUELA
+ * Google Shopping Feed Generator v8.0 for EMMANUELA
  *
- * NEW in v7.10:
- *   - FIX: Norway path '/nb' → '/no' (Shopify uses /no for Norwegian, not /nb)
- *     /nb/products/... returned 404, /no/products/... returns 200.
- *     Impact: ~3,232 product URLs + checkout URLs were broken for Norway feed.
+ * NEW in v8.0 (Shipping + Returns + Checkout Overhaul):
+ *   - REMOVED: <g:checkout_link_template> from ALL feeds
+ *     Google Bot cannot validate Shopify dynamic checkout URLs (session tokens).
+ *     Feature only works in US/CA/GB/IN/DE/JP — not for GR or .jewelry markets.
+ *     Cart permalink /cart/{variant}:1 caused persistent "checkout URL not approved" warnings.
+ *     Zero commercial impact — only removes "Buy Now" button, not ads/listings.
+ *   - NEW: <g:service> shipping service name in ALL feeds
+ *     Per-country carrier names: ACS Courier Express (GR), DHL Tracked Delivery (DE/BG/CZ),
+ *     DHL DDP Express (US/PR), DHL Express (MX/SA), UPS International Express (all others).
+ *   - NEW: Per-country <g:return_policy_label> (replaces hardcoded "default")
+ *     3 labels: "default" (EU free returns), "international_returns" (customer pays),
+ *     "us_no_returns" (no returns). Fixes UK Misrepresentation suspension root cause.
+ *   - NEW: Puerto Rico (PR) market — Spanish, USD, DHL DDP, us_no_returns
+ *   - FIX: Norway/Iceland/Liechtenstein reclassified as "international_returns"
+ *     (paid shipping = paid returns, NOT EU free returns)
+ *   - Total markets: 50 (was 49)
  *
- * NEW in v7.9:
- *   - FIX: Malta (MT) and Malaysia (MY) now use native language translations
- *     MT: en → mt (Maltese), path: '' → '/mt'
- *     MY: en → ms (Malay), path: '' → '/ms'
- *     Both languages have full product translations in Shopify via T-Lab
- *   - FIX: English fallback for non-en/non-el locales
- *     Previously: if target locale translation missing → fell back to GREEK (original)
- *     Now: target locale → English → Greek
- *     English translations fetched once and reused across all non-en locale groups
- *     Affects: title, description, handle, option values, color
+ * v7.10:
+ *   - FIX: Norway path '/nb' → '/no'
  *
- * NEW in v7.8:
- *   - FIX: Removed '/en' path prefix from 20 English-language markets on emmanuela.jewelry
- *     Shopify serves default language (English) at root path WITHOUT prefix.
- *     /en/products/... returned 404, /products/... returns 200.
- *     Affected: US, CA, AU, IE, SG, AE, MT, SI, EE, LV, LT, BG, HR, MY, TW, IS, SA, NZ, HK, TH
- *     Impact: 64,640 product URLs + checkout URLs were broken (20 countries × 3,232 items)
+ * v7.9:
+ *   - FIX: Malta/Malaysia native languages + English fallback chain
  *
- * NEW in v7.7:
- *   - CHECKOUT LINK: Adds <g:checkout_link_template> to all feeds (Shopify cart permalink)
+ * v7.8:
+ *   - FIX: Removed '/en' path prefix from 20 English-language markets
+ *
+ * v7.7 (REMOVED in v8.0):
+ *   - CHECKOUT LINK: Was adding <g:checkout_link_template> — now removed
  *
  * NEW in v7.6:
  *   - GREECE EXCLUSION: Adds <g:shopping_ads_excluded_country>GR</g:shopping_ads_excluded_country>
@@ -51,6 +54,7 @@
  *   - FIXED: Transit times now INSIDE <g:shipping> tag (Google requirement)
  *   - handling_time and transit_time are now sub-attributes of shipping
  *   - ships_from_country and return_policy_label remain item-level
+ *   - (v8: return_policy_label now per-country, service name added)
  *
  * NEW in v7.1:
  *   - Fixed 4 missing color mappings (επιχυσωμένο, πολύχρωμο σετ, black, mehrfarbig)
@@ -272,7 +276,7 @@ function translateProductType(greekType, language) {
 
 
 // ============================================
-// MARKET DEFINITIONS (49 markets)
+// MARKET DEFINITIONS (50 markets)
 // ============================================
 
 const MARKETS = {
@@ -333,6 +337,8 @@ const MARKETS = {
   SM: { country: 'SM', language: 'it', currency: 'EUR', locale: 'it', domain: 'emmanuela.jewelry', path: '/it', priority: 4, name: 'San Marino' },
   VA: { country: 'VA', language: 'it', currency: 'EUR', locale: 'it', domain: 'emmanuela.jewelry', path: '/it', priority: 4, name: 'Vatican City' },
   LI: { country: 'LI', language: 'de', currency: 'CHF', locale: 'de', domain: 'emmanuela.jewelry', path: '/de', priority: 4, name: 'Liechtenstein' },
+  // v8 NEW: Puerto Rico (US territory, Spanish, USD)
+  PR: { country: 'PR', language: 'es', currency: 'USD', locale: 'es', domain: 'emmanuela.jewelry', path: '/es', priority: 3, name: 'Puerto Rico' },
 };
 
 
@@ -376,9 +382,71 @@ const TRANSIT_GROUP = {
   LT: 'EU', LU: 'EU', MT: 'EU', NL: 'EU', PL: 'EU', PT: 'EU', RO: 'EU',
   SK: 'EU', SI: 'EU', ES: 'EU', SE: 'EU', MC: 'EU', SM: 'EU', VA: 'EU', AD: 'EU',
   // Asia countries → ASIA group
-  JP: 'ASIA', KR: 'ASIA', SG: 'ASIA', TW: 'ASIA', TH: 'ASIA', 
+  JP: 'ASIA', KR: 'ASIA', SG: 'ASIA', TW: 'ASIA', TH: 'ASIA',
   MY: 'ASIA', HK: 'ASIA', ID: 'ASIA',
+  // Puerto Rico → US group
+  PR: 'US',
 };
+
+
+// ============================================
+// v8 NEW: RETURN POLICY LABELS
+// ============================================
+// Maps country codes to GMC return_policy_label values.
+// - "default" = EU free returns (seller pays) — used by EU countries + GR/DE/GB sub-account defaults
+// - "international_returns" = customer pays return shipping, 30 days
+// - "us_no_returns" = no returns accepted
+//
+// GR/DE/GB each have their own sub-account where "default" maps to
+// the correct policy for that country. Only the Jewelry sub-account
+// (47 countries) needs custom labels for non-EU countries.
+
+const RETURN_POLICY_LABELS = {
+  // US + Puerto Rico: no returns accepted
+  US: 'us_no_returns',
+  PR: 'us_no_returns',
+  // International: customer pays return shipping (18 countries)
+  CH: 'international_returns',
+  NO: 'international_returns',
+  IS: 'international_returns',
+  LI: 'international_returns',
+  GB: 'international_returns',   // UK sub-account: "default" is also correct, but explicit for clarity
+  AU: 'international_returns',
+  NZ: 'international_returns',
+  JP: 'international_returns',
+  SG: 'international_returns',
+  AE: 'international_returns',
+  IL: 'international_returns',
+  SA: 'international_returns',
+  MX: 'international_returns',
+  HK: 'international_returns',
+  TW: 'international_returns',
+  TH: 'international_returns',
+  MY: 'international_returns',
+  ID: 'international_returns',
+  // All others (EU + GR + DE + micro-states AD/MC/SM/VA): "default" (free returns, seller pays)
+};
+
+
+// ============================================
+// v8 NEW: SHIPPING SERVICE NAMES
+// ============================================
+// Maps country codes to shipping service names for <g:service>.
+// Google requires a descriptive name matching what the customer sees.
+
+const SHIPPING_SERVICE_MAP = {
+  GR: 'ACS Courier Express',
+  DE: 'DHL Tracked Delivery',
+  BG: 'DHL Tracked Delivery',
+  CZ: 'DHL Tracked Delivery',
+  US: 'DHL DDP Express',
+  PR: 'DHL DDP Express',
+  MX: 'DHL Express',
+  SA: 'DHL Express',
+  // All others default to UPS International Express
+};
+
+const DEFAULT_SHIPPING_SERVICE = 'UPS International Express';
 
 
 // ============================================
@@ -416,10 +484,6 @@ function smartTruncate(str, maxLen = 150) {
 
 function buildProductUrl(handle, variantId, market) {
   return `https://${market.domain}${market.path}/products/${handle}?country=${market.country}&variant=${variantId}`;
-}
-
-function buildCheckoutUrl(variantId, market) {
-  return `https://${market.domain}${market.path}/cart/${variantId}:1`;
 }
 
 function formatPrice(amount, currency) {
@@ -579,13 +643,20 @@ async function fetchShippingRates() {
       }
     }
     
+    // v8: Puerto Rico fallback — PR is a US territory, shares US shipping rate
+    // Shopify may not list PR as a separate country in shipping zones
+    if (!countryRates['PR'] && countryRates['US']) {
+      countryRates['PR'] = { ...countryRates['US'] };
+      console.log(`   📌 PR (Puerto Rico): inherited US shipping rate (${countryRates['US'].price} ${countryRates['US'].currency})`);
+    }
+
     // Log summary
     const freeCount = Object.values(countryRates).filter(r => r.price === 0).length;
     const paidCount = Object.values(countryRates).filter(r => r.price > 0).length;
     console.log(`   ✅ Found shipping rates for ${Object.keys(countryRates).length} countries`);
     console.log(`      FREE shipping: ${freeCount} countries`);
     console.log(`      Paid shipping: ${paidCount} countries\n`);
-    
+
     return countryRates;
     
   } catch (error) {
@@ -595,7 +666,7 @@ async function fetchShippingRates() {
 }
 
 /**
- * v7.2: Format shipping tag for Google Shopping with handling/transit times INSIDE
+ * v8.0: Format shipping tag for Google Shopping with service name + handling/transit times
  * @param {string} countryCode - 2-letter country code
  * @param {object} shippingRates - Rates from fetchShippingRates()
  * @returns {string} XML shipping tag or empty string
@@ -604,17 +675,21 @@ function formatShippingTag(countryCode, shippingRates) {
   if (!shippingRates || !shippingRates[countryCode]) {
     return '';  // No shipping data available
   }
-  
+
   const rate = shippingRates[countryCode];
   const priceStr = rate.price === 0 ? `0.00 ${rate.currency}` : `${rate.price.toFixed(2)} ${rate.currency}`;
-  
+
+  // v8: Get shipping service name for this country
+  const serviceName = SHIPPING_SERVICE_MAP[countryCode] || DEFAULT_SHIPPING_SERVICE;
+
   // Get transit times for this country
   const group = TRANSIT_GROUP[countryCode] || 'EU';
   const transit = TRANSIT_TIMES[group] || TRANSIT_TIMES.EU;
-  
+
   return `
       <g:shipping>
         <g:country>${countryCode}</g:country>
+        <g:service>${serviceName}</g:service>
         <g:price>${priceStr}</g:price>
         <g:min_handling_time>${HANDLING_TIME.min}</g:min_handling_time>
         <g:max_handling_time>${HANDLING_TIME.max}</g:max_handling_time>
@@ -624,15 +699,19 @@ function formatShippingTag(countryCode, shippingRates) {
 }
 
 /**
- * v7.2 UPDATED: Format item-level shipping attributes (NOT inside shipping tag)
- * Handling/transit times are now inside <g:shipping> tag via formatShippingTag()
+ * v8.0: Format item-level shipping attributes (NOT inside shipping tag)
+ * - ships_from_country: always GR
+ * - return_policy_label: per-country (default / international_returns / us_no_returns)
  * @param {string} countryCode - 2-letter country code
  * @returns {string} XML item-level shipping attributes
  */
 function formatShippingTimeAttributes(countryCode) {
+  // v8: Per-country return policy label
+  const returnLabel = RETURN_POLICY_LABELS[countryCode] || 'default';
+
   return `
       <g:ships_from_country>GR</g:ships_from_country>
-      <g:return_policy_label>default</g:return_policy_label>`;
+      <g:return_policy_label>${returnLabel}</g:return_policy_label>`;
 }
 
 
@@ -1023,7 +1102,6 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
       <g:title><![CDATA[${smartTruncate(fullTitle)}]]></g:title>
       <g:description><![CDATA[${translatedDesc.substring(0, 5000)}]]></g:description>
       <g:link>${escapeXml(productUrl)}</g:link>
-      <g:checkout_link_template>${escapeXml(buildCheckoutUrl(variant.id, market))}</g:checkout_link_template>
       <g:image_link>${variantImage}</g:image_link>`;
       
       additionalImages.forEach(img => { item += `\n      <g:additional_image_link>${img}</g:additional_image_link>`; });
@@ -1171,7 +1249,7 @@ async function generateFeed(marketCode) {
 }
 
 async function generateAllFeeds() {
-  console.log('\n🌍 GENERATING FEEDS FOR ALL 49 MARKETS (v7 with Shipping Times)\n');
+  console.log('\n🌍 GENERATING FEEDS FOR ALL 50 MARKETS (v8 with Service Names + Return Policies)\n');
   
   // v6: Fetch shipping rates ONCE for all markets
   const shippingRates = await fetchShippingRates();
@@ -1250,7 +1328,7 @@ async function generateAllFeeds() {
 }
 
 function listMarkets() {
-  console.log('\n📋 AVAILABLE MARKETS (49 total)\n');
+  console.log('\n📋 AVAILABLE MARKETS (50 total)\n');
   const byPriority = {};
   for (const [code, market] of Object.entries(MARKETS)) {
     if (!byPriority[market.priority]) byPriority[market.priority] = [];
@@ -1273,7 +1351,7 @@ function listMarkets() {
   
   console.log('\n💡 Usage:');
   console.log('   node google-shopping-feed-v7.js GR     # Single market');
-  console.log('   node google-shopping-feed-v7.js all    # All 49 markets');
+  console.log('   node google-shopping-feed-v7.js all    # All 50 markets');
   console.log('   node google-shopping-feed-v7.js list   # This list\n');
 }
 

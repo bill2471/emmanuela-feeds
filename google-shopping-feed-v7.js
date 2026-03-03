@@ -1,5 +1,16 @@
 /**
- * Google Shopping Feed Generator v8.2 for EMMANUELA
+ * Google Shopping Feed Generator v9.0 for EMMANUELA
+ *
+ * v9.0 (Hub-and-Spoke):
+ *   - 14 countries that can't be GMC target countries now served via hub feeds
+ *   - Hub IT (EUR): CY, BG, HR, SI, MT, VA, SM (7 spokes)
+ *   - Hub FR (EUR): LU, MC, AD (3 spokes)
+ *   - Hub FI (EUR): EE, LV, LT (3 spokes)
+ *   - Hub CH (CHF): LI (1 spoke)
+ *   - Hub feeds include multiple <g:shipping> blocks (hub + all spoke countries)
+ *   - Spoke countries no longer generate standalone XML files
+ *   - MARKETS entries retained for spoke countries (needed for shipping rates/transit times)
+ *   - Feed count: 36 (was 50). All hubs use emmanuela.jewelry domain.
  *
  * v8.2:
  *   - FIX: Size extraction for ALL products, not just rings
@@ -460,6 +471,27 @@ const DEFAULT_SHIPPING_SERVICE = 'UPS International Express';
 
 
 // ============================================
+// v9 NEW: HUB-AND-SPOKE CONFIGURATION
+// ============================================
+// 14 countries cannot be registered as GMC target countries (Google's backend
+// silently rejects them — "silent null" UI behavior). Their <g:shipping> entries
+// are added to a geographically-close "hub" feed that IS a valid GMC target.
+// All hubs use emmanuela.jewelry domain (NEVER GR/DE/GB — they have dedicated domains).
+// Currency matches in all hub-spoke pairs.
+
+const HUB_SPOKES = {
+  IT: ['CY', 'BG', 'HR', 'SI', 'MT', 'VA', 'SM'],  // EUR — South/Southeast Europe
+  FR: ['LU', 'MC', 'AD'],                             // EUR — Francophone + Iberian micro
+  FI: ['EE', 'LV', 'LT'],                             // EUR — Baltic states
+  CH: ['LI'],                                          // CHF — Alpine
+};
+
+// Pre-computed set of all spoke countries (for fast O(1) lookup)
+const SPOKE_COUNTRIES = new Set(Object.values(HUB_SPOKES).flat());
+// => Set(14) { 'CY', 'BG', 'HR', 'SI', 'MT', 'VA', 'SM', 'LU', 'MC', 'AD', 'EE', 'LV', 'LT', 'LI' }
+
+
+// ============================================
 // HELPER FUNCTIONS
 // ============================================
 
@@ -699,7 +731,10 @@ function formatShippingTag(countryCode, shippingRates) {
   }
 
   const rate = shippingRates[countryCode];
-  const priceStr = rate.price === 0 ? `0.00 ${rate.currency}` : `${rate.price.toFixed(2)} ${rate.currency}`;
+  // v9: Use MARKETS currency (authoritative) instead of Shopify API currency
+  // Fixes BG showing BGN instead of EUR (Shopify API hasn't updated post-Euro adoption)
+  const currency = (MARKETS[countryCode] && MARKETS[countryCode].currency) || rate.currency;
+  const priceStr = rate.price === 0 ? `0.00 ${currency}` : `${rate.price.toFixed(2)} ${currency}`;
 
   // v8: Get shipping service name for this country
   const serviceName = SHIPPING_SERVICE_MAP[countryCode] || DEFAULT_SHIPPING_SERVICE;
@@ -1175,6 +1210,14 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
         stats.withShipping++;
       }
 
+      // v9 NEW: Hub-and-spoke — add shipping blocks for spoke countries
+      const spokeCountries = HUB_SPOKES[market.country];
+      if (spokeCountries) {
+        for (const spokeCC of spokeCountries) {
+          item += formatShippingTag(spokeCC, shippingRates);
+        }
+      }
+
       // v7 NEW: Add shipping time attributes
       item += formatShippingTimeAttributes(market.country);
 
@@ -1228,6 +1271,13 @@ async function generateFeed(marketCode) {
     return;
   }
 
+  // v9: Warn if this is a spoke country
+  if (SPOKE_COUNTRIES.has(market.country)) {
+    const hubCode = Object.entries(HUB_SPOKES).find(([_, spokes]) => spokes.includes(market.country))?.[0];
+    console.log(`\n⚠️  ${market.name} (${market.country}) is a spoke country — shipping is included in ${hubCode} hub feed.`);
+    console.log(`   Generating standalone feed for debugging only (not used in production).\n`);
+  }
+
   console.log(`\n${'='.repeat(60)}`);
   console.log(`🌍 Generating feed for: ${market.name} (${market.country})`);
   console.log(`   Domain: ${market.domain}${market.path}`);
@@ -1274,7 +1324,8 @@ async function generateFeed(marketCode) {
 }
 
 async function generateAllFeeds() {
-  console.log('\n🌍 GENERATING FEEDS FOR ALL 50 MARKETS (v8 with Service Names + Return Policies)\n');
+  const feedCount = Object.keys(MARKETS).length - SPOKE_COUNTRIES.size;
+  console.log(`\n🌍 GENERATING FEEDS FOR ${feedCount} MARKETS (v9 hub-and-spoke: ${SPOKE_COUNTRIES.size} spoke countries via hub shipping)\n`);
   
   // v6: Fetch shipping rates ONCE for all markets
   const shippingRates = await fetchShippingRates();
@@ -1294,6 +1345,7 @@ async function generateAllFeeds() {
 
   const results = [];
   let marketCount = 0;
+  let skippedSpokes = 0;
   const totalMarkets = Object.keys(MARKETS).length;
 
   // v7.9: Pre-fetch English translations ONCE — used as fallback for all non-en/non-el locales
@@ -1320,15 +1372,28 @@ async function generateAllFeeds() {
 
     for (const market of markets) {
       marketCount++;
+
+      // v9: Skip spoke countries — their shipping is handled by hub feeds
+      if (SPOKE_COUNTRIES.has(market.country)) {
+        console.log(`\n[${marketCount}/${totalMarkets}] ⏭️  Skipping ${market.name} (${market.code}) — spoke of hub feed`);
+        skippedSpokes++;
+        continue;
+      }
+
       console.log(`\n[${marketCount}/${totalMarkets}] Generating ${market.name} (${market.code})...`);
-      
+
+      // v9: Log spoke countries for hub feeds
+      if (HUB_SPOKES[market.code]) {
+        console.log(`   🔗 Hub feed — includes shipping for: ${HUB_SPOKES[market.code].join(', ')}`);
+      }
+
       // v6: Pass shipping rates to generator
       const { xml, stats } = generateFeedForMarket(products, translations, market, shippingRates);
-      
+
       const filename = `emmanuela-${market.country.toLowerCase()}.xml`;
       const filepath = path.join(OUTPUT_DIR, filename);
       fs.writeFileSync(filepath, xml, 'utf8');
-      
+
       const hasShipping = shippingRates && shippingRates[market.country] ? '✓' : '✗';
       results.push({ market: market.code, items: stats.inStock, file: filename, shipping: hasShipping });
       console.log(`   ✅ Saved: ${filename} (${stats.inStock} items, shipping: ${hasShipping})`);
@@ -1341,42 +1406,59 @@ async function generateAllFeeds() {
   console.log(`\n${'='.repeat(60)}`);
   console.log('📊 GENERATION COMPLETE - SUMMARY');
   console.log(`${'='.repeat(60)}\n`);
-  
+
   const withShipping = results.filter(r => r.shipping === '✓').length;
+  console.log(`   Feeds generated: ${results.length} (${skippedSpokes} spoke countries via hub shipping)`);
   console.log(`   Markets with shipping: ${withShipping}/${results.length}\n`);
+
+  // v9: Show hub-spoke mapping
+  console.log('   Hub-spoke mapping:');
+  for (const [hub, spokes] of Object.entries(HUB_SPOKES)) {
+    console.log(`     ${hub} → ${spokes.join(', ')} (${spokes.length} spokes)`);
+  }
+  console.log('');
+
   results.forEach(r => {
-    console.log(`   ${r.market}: ${r.items} items [shipping: ${r.shipping}] → ${r.file}`);
+    const hubLabel = HUB_SPOKES[r.market] ? ` [+${HUB_SPOKES[r.market].length} spokes]` : '';
+    console.log(`   ${r.market}: ${r.items} items [shipping: ${r.shipping}] → ${r.file}${hubLabel}`);
   });
-  
-  console.log(`\n✅ Total: ${results.length} feeds generated`);
+
+  console.log(`\n✅ Total: ${results.length} feeds generated (${SPOKE_COUNTRIES.size} spoke countries handled via hub shipping)`);
   console.log(`📁 Location: ${OUTPUT_DIR}\n`);
 }
 
 function listMarkets() {
-  console.log('\n📋 AVAILABLE MARKETS (50 total)\n');
+  const feedCount = Object.keys(MARKETS).length - SPOKE_COUNTRIES.size;
+  console.log(`\n📋 AVAILABLE MARKETS (${Object.keys(MARKETS).length} total, ${feedCount} feeds + ${SPOKE_COUNTRIES.size} via hub shipping)\n`);
   const byPriority = {};
   for (const [code, market] of Object.entries(MARKETS)) {
     if (!byPriority[market.priority]) byPriority[market.priority] = [];
     byPriority[market.priority].push({ code, ...market });
   }
-  
+
   const priorityNames = {
     0: 'Dedicated Domains', 1: 'Priority 1 (Major Markets)',
     2: 'Priority 2 (EU Markets)', 3: 'Priority 3 (International)', 4: 'Priority 4 (Micro States)'
   };
-  
+
   for (const priority of [0, 1, 2, 3, 4]) {
     if (byPriority[priority]) {
       console.log(`\n${priorityNames[priority]}:`);
       byPriority[priority].forEach(m => {
-        console.log(`   ${m.code.padEnd(4)} ${m.name.padEnd(20)} ${m.domain}${m.path}`);
+        const spokeLabel = SPOKE_COUNTRIES.has(m.country)
+          ? ` [spoke → ${Object.entries(HUB_SPOKES).find(([_, s]) => s.includes(m.country))?.[0]}]`
+          : '';
+        const hubLabel = HUB_SPOKES[m.code]
+          ? ` [hub for ${HUB_SPOKES[m.code].join(',')}]`
+          : '';
+        console.log(`   ${m.code.padEnd(4)} ${m.name.padEnd(20)} ${m.domain}${m.path}${spokeLabel}${hubLabel}`);
       });
     }
   }
-  
+
   console.log('\n💡 Usage:');
-  console.log('   node google-shopping-feed-v7.js GR     # Single market');
-  console.log('   node google-shopping-feed-v7.js all    # All 50 markets');
+  console.log(`   node google-shopping-feed-v7.js GR     # Single market`);
+  console.log(`   node google-shopping-feed-v7.js all    # All ${feedCount} feeds (${SPOKE_COUNTRIES.size} spokes via hubs)`);
   console.log('   node google-shopping-feed-v7.js list   # This list\n');
 }
 

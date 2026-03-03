@@ -1,5 +1,11 @@
 /**
- * Google Shopping Feed Generator v8.1 for EMMANUELA
+ * Google Shopping Feed Generator v8.2 for EMMANUELA
+ *
+ * v8.2:
+ *   - FIX: Size extraction for ALL products, not just rings
+ *     Chokers, bracelets, and other products with S/M/L sizing now get <g:size>
+ *     Added "νούμερα" to option name detection (was missing 78 products)
+ *     Renamed getRingSize → getSize, removed isRing gate
  *
  * v8.1:
  *   - FIX: Exclude PR from non-PR feeds (shopping_ads_excluded_country=PR)
@@ -325,7 +331,7 @@ const MARKETS = {
   EE: { country: 'EE', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Estonia' },
   LV: { country: 'LV', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Latvia' },
   LT: { country: 'LT', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Lithuania' },
-  BG: { country: 'BG', language: 'en', currency: 'BGN', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Bulgaria' },
+  BG: { country: 'BG', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Bulgaria' }, // v8.2: BGN→EUR (Bulgaria adopted Euro 01/01/2026)
   HR: { country: 'HR', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Croatia' },
   MY: { country: 'MY', language: 'ms', currency: 'MYR', locale: 'ms', domain: 'emmanuela.jewelry', path: '/ms', priority: 3, name: 'Malaysia' },
   ID: { country: 'ID', language: 'id', currency: 'IDR', locale: 'id', domain: 'emmanuela.jewelry', path: '/id', priority: 3, name: 'Indonesia' },
@@ -506,11 +512,23 @@ function isRing(productType) {
   return type.includes('ring') || type.includes('δαχτυλίδ');
 }
 
-function getRingSize(selectedOptions) {
+// v8.2: Detect ANY product with a size option (not just rings)
+function hasProductSize(selectedOptions) {
+  if (!selectedOptions) return false;
+  for (const opt of selectedOptions) {
+    const name = (opt.name || '').toLowerCase();
+    if (name.includes('size') || name.includes('μέγεθος') || name.includes('νούμερο') || name.includes('νούμερα')) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function getSize(selectedOptions) {
   if (!selectedOptions) return null;
   for (const opt of selectedOptions) {
     const name = (opt.name || '').toLowerCase();
-    if (name.includes('size') || name.includes('μέγεθος') || name.includes('νούμερο')) {
+    if (name.includes('size') || name.includes('μέγεθος') || name.includes('νούμερο') || name.includes('νούμερα')) {
       return opt.value;
     }
   }
@@ -1045,6 +1063,7 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
     const googleCategory = getGoogleCategory(product.product_type);
     stats.categoryBreakdown[googleCategory] = (stats.categoryBreakdown[googleCategory] || 0) + 1;
     const productIsRing = isRing(product.product_type);
+    const productHasSize = true; // v8.2: size extraction for ALL products, not just rings
     
     if (gender !== 'unisex') stats.withGender++;
     if (product.metafields?.material) stats.withMaterial++;
@@ -1073,10 +1092,9 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
         if (translatedOptions.some((t, i) => t !== variant.selectedOptions[i]?.value)) {
           stats.translatedVariants++;
         }
-        if (productIsRing) {
-          ringSize = getRingSize(variant.selectedOptions);
-          if (ringSize) stats.withSize++;
-        }
+        // v8.2: Extract size for ALL products with size options (not just rings)
+        ringSize = getSize(variant.selectedOptions);
+        if (ringSize) stats.withSize++;
       }
       
       const fullTitle = variantSuffix ? `${translatedTitle} - ${variantSuffix}` : translatedTitle;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-03-04 09:02</created_at>
+  <created_at>2026-03-04 10:04</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -6029,6 +6029,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>48</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6036,6 +6037,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>49</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6043,6 +6045,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>50</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6050,6 +6053,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>51</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6057,6 +6061,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>52</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6064,6 +6069,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>53</size>
             <quantity>44</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6071,6 +6077,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>54</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6078,6 +6085,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>55</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6085,6 +6093,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>56</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6092,6 +6101,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>57</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6106,6 +6116,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>59</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6113,6 +6124,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>60</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6120,6 +6132,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>61</size>
             <quantity>44</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6127,6 +6140,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>Ανοιχτή γάμπα</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
         </variations>
@@ -6163,6 +6177,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>48</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6170,6 +6185,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>49</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6177,6 +6193,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>50</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6184,6 +6201,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>51</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6191,6 +6209,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>52</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6198,6 +6217,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>53</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6205,6 +6225,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>54</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6212,6 +6233,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>55</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6219,6 +6241,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>56</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6226,6 +6249,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>57</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6240,6 +6264,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>59</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6247,6 +6272,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>60</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6254,6 +6280,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>61</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -6261,6 +6288,7 @@
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>Ανοιχτή γάμπα</size>
             <quantity>45</quantity>
+            <price_with_vat>74.00</price_with_vat>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
         </variations>

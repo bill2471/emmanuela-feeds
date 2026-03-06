@@ -1,5 +1,19 @@
 /**
- * Google Shopping Feed Generator v9.0 for EMMANUELA
+ * Google Shopping Feed Generator v10.0 for EMMANUELA
+ *
+ * v10.0 (Market-Adjusted Pricing):
+ *   - CRITICAL FIX: Feed prices now match landing page prices for ALL markets
+ *   - Problem: variant.price from Admin API includes Greek 24% VAT (taxesIncluded=true)
+ *     but Shopify Markets auto-recalculates VAT per country on landing pages.
+ *     Example: DE product 49.00 EUR (feed) vs 47.03 EUR (page) = 4% mismatch
+ *   - Fix: Uses Shopify contextualPricing API to determine exact price adjustment
+ *     factor per market (VAT adjustment + currency conversion) in ONE API call
+ *   - GR feed: unchanged (same 24% VAT, factor ≈ 1.0)
+ *   - EUR markets: VAT-adjusted (e.g., DE 19% → factor ≈ 0.9598)
+ *   - Non-EUR markets: VAT-adjusted + currency-converted (e.g., GB → GBP)
+ *   - Sale prices (compare_at_price) also adjusted with same factor
+ *   - Hub feeds use hub country pricing (matching hub landing page URLs)
+ *   - Graceful fallback to catalog prices if contextualPricing API fails
  *
  * v9.0 (Hub-and-Spoke):
  *   - 14 countries that can't be GMC target countries now served via hub feeds
@@ -1057,11 +1071,150 @@ async function fetchAllTranslations(products, locale) {
 
 
 // ============================================
+// v10.0: CONTEXTUAL PRICING (Market-Adjusted Prices)
+// ============================================
+
+/**
+ * Fetches contextual pricing for a reference variant across ALL markets in ONE API call.
+ *
+ * Why: The store has taxesIncluded=true, so catalog prices include Greek 24% VAT.
+ * Shopify Markets auto-recalculates VAT per destination country on landing pages.
+ * The Admin API variant.price always returns the catalog price (Greek VAT included),
+ * causing a systematic price mismatch in feeds for all non-GR countries.
+ *
+ * How: contextualPricing returns the exact price a customer sees on the landing page
+ * for a given country. Since there are no price lists (priceList=null), the adjustment
+ * is a constant multiplicative factor for all products in a market:
+ *   factor = contextualPrice / catalogPrice
+ * This factor captures both VAT adjustment and currency conversion.
+ *
+ * @param {Array} products - Products from fetchProductsWithOptions()
+ * @returns {Object|null} { 'DE': { factor, currency }, 'GB': { factor, currency }, ... }
+ */
+async function fetchPriceAdjustments(products) {
+  console.log('💰 Fetching contextual pricing for market-adjusted prices (v10)...\n');
+
+  // Find a reference variant: first in-stock variant with price > 0
+  let refVariant = null;
+  let refProduct = null;
+  for (const p of products) {
+    for (const v of p.variants) {
+      if (v.inventory_quantity > 0 && parseFloat(v.price) > 0) {
+        refVariant = v;
+        refProduct = p;
+        break;
+      }
+    }
+    if (refVariant) break;
+  }
+
+  if (!refVariant) {
+    console.error('❌ No in-stock variant found for price adjustment reference');
+    return null;
+  }
+
+  const refPrice = parseFloat(refVariant.price);
+  console.log(`   📌 Reference variant: ${refVariant.id} ("${refProduct.title}")`);
+  console.log(`   📌 Catalog price: ${refPrice.toFixed(2)} EUR (includes Greek 24% VAT)\n`);
+
+  // Build GraphQL query with aliases for all market countries (one API call)
+  // Note: PR (Puerto Rico) is a US territory, not a valid CountryCode enum in Shopify GraphQL.
+  // We exclude it from the query and copy US pricing after.
+  const PRICING_EXCLUDED = new Set(['PR']);
+  const countries = Object.keys(MARKETS);
+  const queryCountries = countries.filter(cc => !PRICING_EXCLUDED.has(cc));
+  const aliases = queryCountries.map(cc =>
+    `price${cc}: contextualPricing(context: { country: ${cc} }) {\n` +
+    `        price { amount currencyCode }\n` +
+    `        compareAtPrice { amount currencyCode }\n` +
+    `      }`
+  ).join('\n      ');
+
+  const query = `{
+    node(id: "gid://shopify/ProductVariant/${refVariant.id}") {
+      ... on ProductVariant {
+        ${aliases}
+      }
+    }
+  }`;
+
+  try {
+    const { data } = await graphqlRequest(query);
+
+    if (data.errors) {
+      console.error('⚠️ Contextual pricing API errors:', JSON.stringify(data.errors, null, 2));
+      return null;
+    }
+
+    const variantData = data.data?.node;
+    if (!variantData) {
+      console.error('❌ No variant data returned from contextual pricing query');
+      return null;
+    }
+
+    const adjustments = {};
+    let adjustedCount = 0;
+    let unchangedCount = 0;
+
+    for (const cc of queryCountries) {
+      const ctxPricing = variantData[`price${cc}`];
+
+      if (ctxPricing?.price) {
+        const ctxPrice = parseFloat(ctxPricing.price.amount);
+        const currency = ctxPricing.price.currencyCode;
+        const factor = ctxPrice / refPrice;
+
+        adjustments[cc] = { factor, currency };
+
+        if (Math.abs(factor - 1.0) > 0.001 || currency !== 'EUR') {
+          console.log(`   ${cc}: ${refPrice.toFixed(2)} EUR → ${ctxPrice.toFixed(2)} ${currency} (×${factor.toFixed(6)})`);
+          adjustedCount++;
+        } else {
+          unchangedCount++;
+        }
+      } else {
+        // Fallback: no contextual pricing — use catalog price as-is
+        adjustments[cc] = { factor: 1.0, currency: MARKETS[cc].currency };
+        console.log(`   ⚠️ ${cc}: No contextual pricing returned — using catalog price`);
+      }
+    }
+
+    // Copy pricing for excluded territories from their parent countries
+    if (adjustments.US) {
+      adjustments.PR = { ...adjustments.US };
+      console.log(`   PR: inherited US pricing (×${adjustments.US.factor.toFixed(6)} ${adjustments.US.currency})`);
+    }
+
+    console.log(`\n   ✅ Price adjustments: ${adjustedCount} adjusted, ${unchangedCount} unchanged`);
+    if (adjustments.GR) {
+      console.log(`   ✅ GR factor: ${adjustments.GR.factor.toFixed(6)} (expected ≈1.000000)`);
+    }
+    console.log('');
+
+    return adjustments;
+
+  } catch (error) {
+    console.error(`⚠️ Error fetching contextual pricing: ${error.message}`);
+    console.error('   ⚠️ Falling back to catalog prices (PRICES MAY NOT MATCH LANDING PAGES)\n');
+    return null;
+  }
+}
+
+
+// ============================================
 // XML FEED GENERATION (v6 with dynamic shipping)
 // ============================================
 
-function generateFeedForMarket(products, translations, market, shippingRates) {
-  console.log(`🔧 Generating XML feed for ${market.name} (${market.country})...\n`);
+function generateFeedForMarket(products, translations, market, shippingRates, priceAdj) {
+  // v10: Price adjustment factor and currency from contextualPricing
+  const priceFactor = priceAdj ? priceAdj.factor : 1.0;
+  const priceCurrency = priceAdj ? priceAdj.currency : market.currency;
+
+  console.log(`🔧 Generating XML feed for ${market.name} (${market.country})...`);
+  if (Math.abs(priceFactor - 1.0) > 0.001 || priceCurrency !== 'EUR') {
+    console.log(`   💰 Price: ×${priceFactor.toFixed(6)} → ${priceCurrency}`);
+  }
+  console.log('');
   
   let items = [];
   let stats = {
@@ -1150,7 +1303,9 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
         : mainImage;
       const translatedHandle = prodTrans.handle || enFallback.handle || product.handle;
       const productUrl = buildProductUrl(translatedHandle, variant.id, market);
-      const price = formatPrice(variant.price, market.currency);
+      // v10: Apply market-specific price adjustment (VAT + currency conversion)
+      const adjustedVariantPrice = Math.round(parseFloat(variant.price) * priceFactor * 100) / 100;
+      const price = formatPrice(adjustedVariantPrice, priceCurrency);
 
       // Build XML item
       let item = `    <item>
@@ -1198,10 +1353,11 @@ function generateFeedForMarket(products, translations, market, shippingRates) {
       if (weightFormatted) item += `\n      <g:shipping_weight>${weightFormatted}</g:shipping_weight>`;
       if (ringSize) item += `\n      <g:size><![CDATA[${ringSize}]]></g:size>`;
 
-      // Sale price handling
+      // Sale price handling (v10: both prices adjusted with same market factor)
       if (variant.compare_at_price && parseFloat(variant.compare_at_price) > parseFloat(variant.price)) {
         item += `\n      <g:sale_price>${price}</g:sale_price>`;
-        item += `\n      <g:price>${formatPrice(variant.compare_at_price, market.currency)}</g:price>`;
+        const adjustedCompareAt = Math.round(parseFloat(variant.compare_at_price) * priceFactor * 100) / 100;
+        item += `\n      <g:price>${formatPrice(adjustedCompareAt, priceCurrency)}</g:price>`;
       }
 
       // v6 NEW: Add shipping tag
@@ -1291,6 +1447,10 @@ async function generateFeed(marketCode) {
   const products = await fetchProductsWithOptions();
   if (products.length === 0) { console.error('❌ No products found'); return; }
 
+  // v10: Fetch contextual pricing for market-adjusted prices
+  const priceAdjustments = await fetchPriceAdjustments(products);
+  const priceAdj = priceAdjustments ? priceAdjustments[marketCode.toUpperCase()] : null;
+
   // Fetch translations
   let translations = { products: {}, optionValues: {} };
   if (market.locale !== 'el') {
@@ -1299,8 +1459,8 @@ async function generateFeed(marketCode) {
     console.log('ℹ️ Greek locale - skipping translations\n');
   }
 
-  // v6: Generate XML with shipping
-  const { xml, stats } = generateFeedForMarket(products, translations, market, shippingRates);
+  // v6+v10: Generate XML with shipping and market-adjusted prices
+  const { xml, stats } = generateFeedForMarket(products, translations, market, shippingRates, priceAdj);
 
   // Ensure output directory exists
   if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
@@ -1333,6 +1493,9 @@ async function generateAllFeeds() {
   // Fetch products once
   const products = await fetchProductsWithOptions();
   if (products.length === 0) { console.error('❌ No products found'); return; }
+
+  // v10: Fetch contextual pricing for market-adjusted prices (ONE API call for all markets)
+  const priceAdjustments = await fetchPriceAdjustments(products);
 
   // Group markets by locale
   const marketsByLocale = {};
@@ -1387,8 +1550,9 @@ async function generateAllFeeds() {
         console.log(`   🔗 Hub feed — includes shipping for: ${HUB_SPOKES[market.code].join(', ')}`);
       }
 
-      // v6: Pass shipping rates to generator
-      const { xml, stats } = generateFeedForMarket(products, translations, market, shippingRates);
+      // v6+v10: Pass shipping rates and price adjustments to generator
+      const priceAdj = priceAdjustments ? priceAdjustments[market.code] : null;
+      const { xml, stats } = generateFeedForMarket(products, translations, market, shippingRates, priceAdj);
 
       const filename = `emmanuela-${market.country.toLowerCase()}.xml`;
       const filepath = path.join(OUTPUT_DIR, filename);

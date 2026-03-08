@@ -75,7 +75,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add feeds/*.xml
+          git add feeds/*.xml || true  # ignore warning for .gitignore'd dated snapshots
           if git diff --staged --quiet; then
             echo "📭 No changes to commit"
           else
@@ -84,7 +84,7 @@ jobs:
             git pull --rebase origin main || {
               echo "⚠️ Rebase conflict — resolving by keeping our generated feeds..."
               git checkout --theirs feeds/*.xml 2>/dev/null || true
-              git add feeds/*.xml
+              git add feeds/*.xml || true
               git rebase --continue --no-edit || git rebase --skip
             }
             git push

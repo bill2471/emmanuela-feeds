@@ -1,0 +1,13 @@
+# Environment
+.env
+node_modules/
+
+# Local test outputs (dated snapshots)
+feeds/*-20*.xml
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

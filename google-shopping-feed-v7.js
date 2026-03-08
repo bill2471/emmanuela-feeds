@@ -1,5 +1,10 @@
 /**
- * Google Shopping Feed Generator v10.0 for EMMANUELA
+ * Google Shopping Feed Generator v10.1 for EMMANUELA
+ *
+ * v10.1 (Localized Material Attribute):
+ *   - Material names now translated per market language (DE, FR, IT, ES, EL)
+ *   - DE: "Sterling Silver" → "925er Silber", "Silver" → "Silber", "Pearl" → "Perle"
+ *   - Falls back to English for unsupported languages
  *
  * v10.0 (Market-Adjusted Pricing):
  *   - CRITICAL FIX: Feed prices now match landing page prices for ALL markets
@@ -190,9 +195,36 @@ const COLOR_MAP = {
 // ============================================
 
 const MATERIAL_TRANSLATIONS = {
-  'sterling-silver': 'Sterling Silver', 'silver': 'Silver', 'silver-1': 'Silver',
-  'gold-1': 'Gold', 'gold': 'Gold', 'synthetic': 'Synthetic', 'pearl': 'Pearl',
-  'zircon': 'Zircon', 'ασήμι': 'Sterling Silver', 'ασήμι 925': 'Sterling Silver',
+  en: {
+    'sterling-silver': 'Sterling Silver', 'silver': 'Silver', 'silver-1': 'Silver',
+    'gold-1': 'Gold', 'gold': 'Gold', 'synthetic': 'Synthetic', 'pearl': 'Pearl',
+    'zircon': 'Zircon', 'ασήμι': 'Sterling Silver', 'ασήμι 925': 'Sterling Silver',
+  },
+  de: {
+    'sterling-silver': '925er Silber', 'silver': 'Silber', 'silver-1': 'Silber',
+    'gold-1': 'Gold', 'gold': 'Gold', 'synthetic': 'Synthetik', 'pearl': 'Perle',
+    'zircon': 'Zirkon', 'ασήμι': '925er Silber', 'ασήμι 925': '925er Silber',
+  },
+  fr: {
+    'sterling-silver': 'Argent Sterling', 'silver': 'Argent', 'silver-1': 'Argent',
+    'gold-1': 'Or', 'gold': 'Or', 'synthetic': 'Synthétique', 'pearl': 'Perle',
+    'zircon': 'Zircon', 'ασήμι': 'Argent Sterling', 'ασήμι 925': 'Argent Sterling',
+  },
+  it: {
+    'sterling-silver': 'Argento 925', 'silver': 'Argento', 'silver-1': 'Argento',
+    'gold-1': 'Oro', 'gold': 'Oro', 'synthetic': 'Sintetico', 'pearl': 'Perla',
+    'zircon': 'Zircone', 'ασήμι': 'Argento 925', 'ασήμι 925': 'Argento 925',
+  },
+  es: {
+    'sterling-silver': 'Plata de Ley', 'silver': 'Plata', 'silver-1': 'Plata',
+    'gold-1': 'Oro', 'gold': 'Oro', 'synthetic': 'Sintético', 'pearl': 'Perla',
+    'zircon': 'Circón', 'ασήμι': 'Plata de Ley', 'ασήμι 925': 'Plata de Ley',
+  },
+  el: {
+    'sterling-silver': 'Ασήμι 925', 'silver': 'Ασήμι', 'silver-1': 'Ασήμι',
+    'gold-1': 'Χρυσός', 'gold': 'Χρυσός', 'synthetic': 'Συνθετικό', 'pearl': 'Μαργαριτάρι',
+    'zircon': 'Ζιρκόν', 'ασήμι': 'Ασήμι 925', 'ασήμι 925': 'Ασήμι 925',
+  },
 };
 
 
@@ -814,16 +846,18 @@ function getGender(productType, title) {
   return 'unisex';
 }
 
-function translateMaterial(materialStr) {
-  if (!materialStr) return 'Sterling Silver';
+function translateMaterial(materialStr, language) {
+  const langMap = MATERIAL_TRANSLATIONS[language] || MATERIAL_TRANSLATIONS['en'];
+  const defaultMat = langMap['sterling-silver'] || 'Sterling Silver';
+  if (!materialStr) return defaultMat;
   const materials = materialStr.split(';').map(m => m.trim().toLowerCase());
   const translated = [];
   for (const mat of materials) {
-    if (MATERIAL_TRANSLATIONS[mat] && !translated.includes(MATERIAL_TRANSLATIONS[mat])) {
-      translated.push(MATERIAL_TRANSLATIONS[mat]);
+    if (langMap[mat] && !translated.includes(langMap[mat])) {
+      translated.push(langMap[mat]);
     }
   }
-  return translated.length > 0 ? translated.join('/') : 'Sterling Silver';
+  return translated.length > 0 ? translated.join('/') : defaultMat;
 }
 
 
@@ -1247,7 +1281,7 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
     const translatedTitle = prodTrans.title || enFallback.title || product.title;
     const translatedDesc = stripHtml(prodTrans.body_html || enFallback.body_html || product.body_html);
     const gender = getGender(product.product_type, product.title);
-    const material = translateMaterial(product.metafields?.material);
+    const material = translateMaterial(product.metafields?.material, market.language);
     const googleCategory = getGoogleCategory(product.product_type);
     stats.categoryBreakdown[googleCategory] = (stats.categoryBreakdown[googleCategory] || 0) + 1;
     const productIsRing = isRing(product.product_type);

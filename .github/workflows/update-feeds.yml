@@ -2,7 +2,7 @@ name: Update Shopping Feeds (Google + Meta + GLAMI + BestPrice + Skroutz)
 
 on:
   schedule:
-    - cron: '0 */1 * * *'  # Every 1 hour (GLAMI recommends hourly updates)
+    - cron: '0 */6 * * *'  # Every 6 hours (Google fetches once/day at noon; hourly was wasteful)
   workflow_dispatch:
     inputs:
       country:

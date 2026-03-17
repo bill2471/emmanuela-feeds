@@ -1,5 +1,28 @@
 /**
- * Google Shopping Feed Generator v10.1 for EMMANUELA
+ * Google Shopping Feed Generator v11.1 for EMMANUELA
+ *
+ * v11.1 (IS removal + PR→US Spanish):
+ *   - REMOVED Iceland (IS) — microstate, not supported by GMC
+ *   - PR (Puerto Rico): now uses US market with Spanish (/es-us) instead of
+ *     separate PR market. feedSuffix='pr' keeps filename emmanuela-pr.xml.
+ *     country='US' for GMC target, language='es' for Spanish content.
+ *
+ * v11.0 (Country-Specific Subfolder Migration):
+ *   - BREAKING: Updated all .jewelry market paths from language-only (/fr/)
+ *     to country-specific subfolders (/fr-fr/) matching Shopify Markets migration
+ *   - Markets with dedicated country subfolders (verified from Shopify API):
+ *     AU=/en-au, BE=/nl-be, CA=/en-ca, CH=/de-ch, DK=/da-dk, ES=/es-es,
+ *     FI=/fi-fi, FR=/fr-fr, HU=/hu-hu, IT=/it-it, MX=/es-mx, NL=/nl-nl,
+ *     NO=/no-no, NZ=/en-nz, PT=/pt-pt, SA=/en-sa, SG=/en-sg, US=/en-us
+ *   - Markets still in International catch-all (keep old language-only paths
+ *     until their dedicated markets are created): AT, IE, SE, CZ, RO, JP, AE,
+ *     IL, SK, SI, EE, LV, LT, BG, HR, MY, ID, TW, TH, HK, PL
+ *   - 4 NEW feeds for multi-language countries:
+ *     CH-FR (/fr-ch), CH-IT (/it-ch), BE-FR (/fr-be), CA-FR (/fr-ca)
+ *   - REMOVED 9 microstate entries: CY, MT, LU, MC, LI, AD, SM, VA, IS
+ *     (Google does not support microstates as GMC target countries)
+ *   - Hub-and-spoke updated: IT hub keeps BG/HR/SI, FI hub keeps EE/LV/LT
+ *   - CI schedule changed from hourly to every 6 hours
  *
  * v10.1 (Localized Material Attribute):
  *   - Material names now translated per market language (DE, FR, IT, ES, EL)
@@ -343,69 +366,78 @@ function translateProductType(greekType, language) {
 
 
 // ============================================
-// MARKET DEFINITIONS (50 markets)
+// MARKET DEFINITIONS
+// v11.0: Country-specific subfolders (verified from Shopify Markets API 2026-03-17)
+// Markets with dedicated Shopify markets use new /lang-country/ paths
+// Markets still in International catch-all use old /lang/ paths (will be updated when their markets are created)
+// REMOVED: CY, MT, LU, MC, LI, AD, SM, VA (microstates — Google does not support as GMC target countries)
+// NEW: CH_FR, CH_IT, BE_FR, CA_FR (multi-language country feeds)
 // ============================================
 
 const MARKETS = {
-  // DEDICATED DOMAINS
+  // DEDICATED DOMAINS (no change)
   GR: { country: 'GR', language: 'el', currency: 'EUR', locale: 'el', domain: 'emmanuela.gr', path: '', priority: 0, name: 'Greece' },
   DE: { country: 'DE', language: 'de', currency: 'EUR', locale: 'de', domain: 'emmanuela-schmuck.de', path: '', priority: 0, name: 'Germany' },
   GB: { country: 'GB', language: 'en', currency: 'GBP', locale: 'en', domain: 'emmanuela.co.uk', path: '', priority: 0, name: 'United Kingdom' },
-  // PRIORITY 1
-  FR: { country: 'FR', language: 'fr', currency: 'EUR', locale: 'fr', domain: 'emmanuela.jewelry', path: '/fr', priority: 1, name: 'France' },
-  IT: { country: 'IT', language: 'it', currency: 'EUR', locale: 'it', domain: 'emmanuela.jewelry', path: '/it', priority: 1, name: 'Italy' },
-  ES: { country: 'ES', language: 'es', currency: 'EUR', locale: 'es', domain: 'emmanuela.jewelry', path: '/es', priority: 1, name: 'Spain' },
-  US: { country: 'US', language: 'en', currency: 'USD', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 1, name: 'USA' },
-  CA: { country: 'CA', language: 'en', currency: 'CAD', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 1, name: 'Canada' },
-  AU: { country: 'AU', language: 'en', currency: 'AUD', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 1, name: 'Australia' },
-  NL: { country: 'NL', language: 'nl', currency: 'EUR', locale: 'nl', domain: 'emmanuela.jewelry', path: '/nl', priority: 1, name: 'Netherlands' },
-  // PRIORITY 2
-  BE: { country: 'BE', language: 'nl', currency: 'EUR', locale: 'nl', domain: 'emmanuela.jewelry', path: '/nl', priority: 2, name: 'Belgium' },
-  AT: { country: 'AT', language: 'de', currency: 'EUR', locale: 'de', domain: 'emmanuela.jewelry', path: '/de', priority: 2, name: 'Austria' },
-  CH: { country: 'CH', language: 'de', currency: 'CHF', locale: 'de', domain: 'emmanuela.jewelry', path: '/de', priority: 2, name: 'Switzerland' },
-  IE: { country: 'IE', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 2, name: 'Ireland' },
-  SE: { country: 'SE', language: 'sv', currency: 'SEK', locale: 'sv', domain: 'emmanuela.jewelry', path: '/sv', priority: 2, name: 'Sweden' },
-  DK: { country: 'DK', language: 'da', currency: 'DKK', locale: 'da', domain: 'emmanuela.jewelry', path: '/da', priority: 2, name: 'Denmark' },
-  NO: { country: 'NO', language: 'no', currency: 'NOK', locale: 'nb', domain: 'emmanuela.jewelry', path: '/no', priority: 2, name: 'Norway' },
-  PL: { country: 'PL', language: 'pl', currency: 'PLN', locale: 'pl', domain: 'emmanuela.jewelry', path: '/pl', priority: 2, name: 'Poland' },
-  PT: { country: 'PT', language: 'pt', currency: 'EUR', locale: 'pt-PT', domain: 'emmanuela.jewelry', path: '/pt', priority: 2, name: 'Portugal' },
-  FI: { country: 'FI', language: 'fi', currency: 'EUR', locale: 'fi', domain: 'emmanuela.jewelry', path: '/fi', priority: 2, name: 'Finland' },
-  CZ: { country: 'CZ', language: 'cs', currency: 'CZK', locale: 'cs', domain: 'emmanuela.jewelry', path: '/cs', priority: 2, name: 'Czech Republic' },
-  RO: { country: 'RO', language: 'ro', currency: 'RON', locale: 'ro', domain: 'emmanuela.jewelry', path: '/ro', priority: 2, name: 'Romania' },
-  HU: { country: 'HU', language: 'hu', currency: 'HUF', locale: 'hu', domain: 'emmanuela.jewelry', path: '/hu', priority: 2, name: 'Hungary' },
-  CY: { country: 'CY', language: 'el', currency: 'EUR', locale: 'el', domain: 'emmanuela.jewelry', path: '/el', priority: 2, name: 'Cyprus' },
-  // PRIORITY 3
-  JP: { country: 'JP', language: 'ja', currency: 'JPY', locale: 'ja', domain: 'emmanuela.jewelry', path: '/ja', priority: 3, name: 'Japan' },
+
+  // PRIORITY 1 — Major Markets (all have dedicated Shopify markets)
+  FR: { country: 'FR', language: 'fr', currency: 'EUR', locale: 'fr', domain: 'emmanuela.jewelry', path: '/fr-fr', priority: 1, name: 'France' },
+  IT: { country: 'IT', language: 'it', currency: 'EUR', locale: 'it', domain: 'emmanuela.jewelry', path: '/it-it', priority: 1, name: 'Italy' },
+  ES: { country: 'ES', language: 'es', currency: 'EUR', locale: 'es', domain: 'emmanuela.jewelry', path: '/es-es', priority: 1, name: 'Spain' },
+  US: { country: 'US', language: 'en', currency: 'USD', locale: 'en', domain: 'emmanuela.jewelry', path: '/en-us', priority: 1, name: 'USA' },
+  CA: { country: 'CA', language: 'en', currency: 'CAD', locale: 'en', domain: 'emmanuela.jewelry', path: '/en-ca', priority: 1, name: 'Canada' },
+  AU: { country: 'AU', language: 'en', currency: 'AUD', locale: 'en', domain: 'emmanuela.jewelry', path: '/en-au', priority: 1, name: 'Australia' },
+  NL: { country: 'NL', language: 'nl', currency: 'EUR', locale: 'nl', domain: 'emmanuela.jewelry', path: '/nl-nl', priority: 1, name: 'Netherlands' },
+
+  // PRIORITY 2 — EU Markets
+  BE: { country: 'BE', language: 'nl', currency: 'EUR', locale: 'nl', domain: 'emmanuela.jewelry', path: '/nl-be', priority: 2, name: 'Belgium' },
+  AT: { country: 'AT', language: 'de', currency: 'EUR', locale: 'de', domain: 'emmanuela.jewelry', path: '/de-at', priority: 2, name: 'Austria' },
+  CH: { country: 'CH', language: 'de', currency: 'CHF', locale: 'de', domain: 'emmanuela.jewelry', path: '/de-ch', priority: 2, name: 'Switzerland' },
+  IE: { country: 'IE', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '/en-ie', priority: 2, name: 'Ireland' },
+  SE: { country: 'SE', language: 'sv', currency: 'SEK', locale: 'sv', domain: 'emmanuela.jewelry', path: '/sv-se', priority: 2, name: 'Sweden' },
+  DK: { country: 'DK', language: 'da', currency: 'DKK', locale: 'da', domain: 'emmanuela.jewelry', path: '/da-dk', priority: 2, name: 'Denmark' },
+  NO: { country: 'NO', language: 'no', currency: 'NOK', locale: 'nb', domain: 'emmanuela.jewelry', path: '/no-no', priority: 2, name: 'Norway' },
+  PL: { country: 'PL', language: 'pl', currency: 'PLN', locale: 'pl', domain: 'emmanuela.jewelry', path: '/pl-pl', priority: 2, name: 'Poland' },
+  PT: { country: 'PT', language: 'pt', currency: 'EUR', locale: 'pt-PT', domain: 'emmanuela.jewelry', path: '/pt-pt', priority: 2, name: 'Portugal' },
+  FI: { country: 'FI', language: 'fi', currency: 'EUR', locale: 'fi', domain: 'emmanuela.jewelry', path: '/fi-fi', priority: 2, name: 'Finland' },
+  CZ: { country: 'CZ', language: 'cs', currency: 'CZK', locale: 'cs', domain: 'emmanuela.jewelry', path: '/cs-cz', priority: 2, name: 'Czech Republic' },
+  RO: { country: 'RO', language: 'ro', currency: 'RON', locale: 'ro', domain: 'emmanuela.jewelry', path: '/ro-ro', priority: 2, name: 'Romania' },
+  HU: { country: 'HU', language: 'hu', currency: 'HUF', locale: 'hu', domain: 'emmanuela.jewelry', path: '/hu-hu', priority: 2, name: 'Hungary' },
+
+  // PRIORITY 3 — International
+  JP: { country: 'JP', language: 'ja', currency: 'JPY', locale: 'ja', domain: 'emmanuela.jewelry', path: '/ja-jp', priority: 3, name: 'Japan' },
   // KR: REMOVED — South Korea requires local business registration (사업자등록번호)
-  SG: { country: 'SG', language: 'en', currency: 'SGD', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Singapore' },
-  AE: { country: 'AE', language: 'en', currency: 'AED', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'UAE' },
-  IL: { country: 'IL', language: 'he', currency: 'ILS', locale: 'he', domain: 'emmanuela.jewelry', path: '/he', priority: 3, name: 'Israel' },
-  MX: { country: 'MX', language: 'es', currency: 'MXN', locale: 'es', domain: 'emmanuela.jewelry', path: '/es', priority: 3, name: 'Mexico' },
-  MT: { country: 'MT', language: 'mt', currency: 'EUR', locale: 'mt', domain: 'emmanuela.jewelry', path: '/mt', priority: 3, name: 'Malta' },
-  LU: { country: 'LU', language: 'fr', currency: 'EUR', locale: 'fr', domain: 'emmanuela.jewelry', path: '/fr', priority: 3, name: 'Luxembourg' },
-  SK: { country: 'SK', language: 'cs', currency: 'EUR', locale: 'cs', domain: 'emmanuela.jewelry', path: '/cs', priority: 3, name: 'Slovakia' },
-  SI: { country: 'SI', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Slovenia' },
-  EE: { country: 'EE', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Estonia' },
-  LV: { country: 'LV', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Latvia' },
-  LT: { country: 'LT', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Lithuania' },
-  BG: { country: 'BG', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Bulgaria' }, // v8.2: BGN→EUR (Bulgaria adopted Euro 01/01/2026)
-  HR: { country: 'HR', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Croatia' },
-  MY: { country: 'MY', language: 'ms', currency: 'MYR', locale: 'ms', domain: 'emmanuela.jewelry', path: '/ms', priority: 3, name: 'Malaysia' },
-  ID: { country: 'ID', language: 'id', currency: 'IDR', locale: 'id', domain: 'emmanuela.jewelry', path: '/id', priority: 3, name: 'Indonesia' },
-  TW: { country: 'TW', language: 'en', currency: 'TWD', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Taiwan' },
-  IS: { country: 'IS', language: 'en', currency: 'ISK', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Iceland' },
-  SA: { country: 'SA', language: 'en', currency: 'SAR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Saudi Arabia' },
-  NZ: { country: 'NZ', language: 'en', currency: 'NZD', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'New Zealand' },
-  HK: { country: 'HK', language: 'en', currency: 'HKD', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Hong Kong' },
-  TH: { country: 'TH', language: 'en', currency: 'THB', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Thailand' },
-  // MICRO STATES
-  MC: { country: 'MC', language: 'fr', currency: 'EUR', locale: 'fr', domain: 'emmanuela.jewelry', path: '/fr', priority: 4, name: 'Monaco' },
-  AD: { country: 'AD', language: 'es', currency: 'EUR', locale: 'es', domain: 'emmanuela.jewelry', path: '/es', priority: 4, name: 'Andorra' },
-  SM: { country: 'SM', language: 'it', currency: 'EUR', locale: 'it', domain: 'emmanuela.jewelry', path: '/it', priority: 4, name: 'San Marino' },
-  VA: { country: 'VA', language: 'it', currency: 'EUR', locale: 'it', domain: 'emmanuela.jewelry', path: '/it', priority: 4, name: 'Vatican City' },
-  LI: { country: 'LI', language: 'de', currency: 'CHF', locale: 'de', domain: 'emmanuela.jewelry', path: '/de', priority: 4, name: 'Liechtenstein' },
-  // v8 NEW: Puerto Rico (US territory, Spanish, USD)
-  PR: { country: 'PR', language: 'es', currency: 'USD', locale: 'es', domain: 'emmanuela.jewelry', path: '/es', priority: 3, name: 'Puerto Rico' },
+  SG: { country: 'SG', language: 'en', currency: 'SGD', locale: 'en', domain: 'emmanuela.jewelry', path: '/en-sg', priority: 3, name: 'Singapore' },
+  AE: { country: 'AE', language: 'en', currency: 'AED', locale: 'en', domain: 'emmanuela.jewelry', path: '/en-ae', priority: 3, name: 'UAE' },
+  IL: { country: 'IL', language: 'he', currency: 'ILS', locale: 'he', domain: 'emmanuela.jewelry', path: '/he-il', priority: 3, name: 'Israel' },
+  MX: { country: 'MX', language: 'es', currency: 'MXN', locale: 'es', domain: 'emmanuela.jewelry', path: '/es-mx', priority: 3, name: 'Mexico' },
+  SK: { country: 'SK', language: 'cs', currency: 'EUR', locale: 'cs', domain: 'emmanuela.jewelry', path: '/cs-sk', priority: 3, name: 'Slovakia' },
+  SI: { country: 'SI', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Slovenia' },              // TODO: update when SI market created → /en-si
+  EE: { country: 'EE', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Estonia' },               // TODO: update when EE market created → /en-ee
+  LV: { country: 'LV', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Latvia' },                // TODO: update when LV market created → /en-lv
+  LT: { country: 'LT', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Lithuania' },             // TODO: update when LT market created → /en-lt
+  // BG (Bulgaria) REMOVED in v11.1 — GMC does not support as target country
+  HR: { country: 'HR', language: 'en', currency: 'EUR', locale: 'en', domain: 'emmanuela.jewelry', path: '', priority: 3, name: 'Croatia' },               // TODO: update when HR market created → /en-hr
+  MY: { country: 'MY', language: 'ms', currency: 'MYR', locale: 'ms', domain: 'emmanuela.jewelry', path: '/ms-my', priority: 3, name: 'Malaysia' },
+  ID: { country: 'ID', language: 'id', currency: 'IDR', locale: 'id', domain: 'emmanuela.jewelry', path: '/id-id', priority: 3, name: 'Indonesia' },
+  TW: { country: 'TW', language: 'en', currency: 'TWD', locale: 'en', domain: 'emmanuela.jewelry', path: '/en-tw', priority: 3, name: 'Taiwan' },
+  // IS (Iceland) REMOVED in v11.1 — microstate, Google does not support as GMC target country
+  SA: { country: 'SA', language: 'en', currency: 'SAR', locale: 'en', domain: 'emmanuela.jewelry', path: '/en-sa', priority: 3, name: 'Saudi Arabia' },
+  NZ: { country: 'NZ', language: 'en', currency: 'NZD', locale: 'en', domain: 'emmanuela.jewelry', path: '/en-nz', priority: 3, name: 'New Zealand' },
+  HK: { country: 'HK', language: 'en', currency: 'HKD', locale: 'en', domain: 'emmanuela.jewelry', path: '/en-hk', priority: 3, name: 'Hong Kong' },
+  TH: { country: 'TH', language: 'en', currency: 'THB', locale: 'en', domain: 'emmanuela.jewelry', path: '/en-th', priority: 3, name: 'Thailand' },
+  // v11.1: Puerto Rico → US market with Spanish (no separate PR market in Shopify)
+  PR: { country: 'US', language: 'es', currency: 'USD', locale: 'es', domain: 'emmanuela.jewelry', path: '/es-us', priority: 3, name: 'Puerto Rico', feedSuffix: 'pr' },
+
+  // v11 NEW: Multi-language country feeds (same country, different language)
+  CH_FR: { country: 'CH', language: 'fr', currency: 'CHF', locale: 'fr', domain: 'emmanuela.jewelry', path: '/fr-ch', priority: 2, name: 'Switzerland (French)', feedSuffix: 'ch-fr' },
+  CH_IT: { country: 'CH', language: 'it', currency: 'CHF', locale: 'it', domain: 'emmanuela.jewelry', path: '/it-ch', priority: 2, name: 'Switzerland (Italian)', feedSuffix: 'ch-it' },
+  BE_FR: { country: 'BE', language: 'fr', currency: 'EUR', locale: 'fr', domain: 'emmanuela.jewelry', path: '/fr-be', priority: 2, name: 'Belgium (French)', feedSuffix: 'be-fr' },
+  CA_FR: { country: 'CA', language: 'fr', currency: 'CAD', locale: 'fr', domain: 'emmanuela.jewelry', path: '/fr-ca', priority: 1, name: 'Canada (French)', feedSuffix: 'ca-fr' },
+
+  // REMOVED in v11.0 (microstates — Google does not support as GMC target countries):
+  // CY (Cyprus), MT (Malta), LU (Luxembourg), MC (Monaco), LI (Liechtenstein),
+  // AD (Andorra), SM (San Marino), VA (Vatican City)
 };
 
 
@@ -424,8 +456,7 @@ const TRANSIT_TIMES = {
   GB: { min: 2, max: 4 },      // UK (post-Brexit)
   CH: { min: 2, max: 3 },      // Switzerland
   NO: { min: 2, max: 3 },      // Norway
-  IS: { min: 2, max: 3 },      // Iceland
-  LI: { min: 2, max: 3 },      // Liechtenstein
+  // IS removed (microstate)
   US: { min: 2, max: 5 },      // USA
   CA: { min: 2, max: 3 },      // Canada
   AU: { min: 3, max: 6 },      // Australia
@@ -438,16 +469,17 @@ const TRANSIT_TIMES = {
 };
 
 // Map country codes to transit time groups
+// v11.0: Removed microstates (CY, MT, LU, MC, LI, AD, SM, VA)
 const TRANSIT_GROUP = {
   // Specific countries with their own times
-  GR: 'GR', DE: 'DE', GB: 'GB', CH: 'CH', NO: 'NO', IS: 'IS', LI: 'LI',
+  GR: 'GR', DE: 'DE', GB: 'GB', CH: 'CH', NO: 'NO',
   US: 'US', CA: 'CA', AU: 'AU', NZ: 'NZ', MX: 'MX', AE: 'AE', IL: 'IL',
   SA: 'SA',
   // EU countries → EU group
-  AT: 'EU', BE: 'EU', BG: 'EU', HR: 'EU', CY: 'EU', CZ: 'EU', DK: 'EU',
+  AT: 'EU', BE: 'EU', HR: 'EU', CZ: 'EU', DK: 'EU',
   EE: 'EU', FI: 'EU', FR: 'EU', HU: 'EU', IE: 'EU', IT: 'EU', LV: 'EU',
-  LT: 'EU', LU: 'EU', MT: 'EU', NL: 'EU', PL: 'EU', PT: 'EU', RO: 'EU',
-  SK: 'EU', SI: 'EU', ES: 'EU', SE: 'EU', MC: 'EU', SM: 'EU', VA: 'EU', AD: 'EU',
+  LT: 'EU', NL: 'EU', PL: 'EU', PT: 'EU', RO: 'EU',
+  SK: 'EU', SI: 'EU', ES: 'EU', SE: 'EU',
   // Asia countries → ASIA group
   JP: 'ASIA', KR: 'ASIA', SG: 'ASIA', TW: 'ASIA', TH: 'ASIA',
   MY: 'ASIA', HK: 'ASIA', ID: 'ASIA',
@@ -472,11 +504,11 @@ const RETURN_POLICY_LABELS = {
   // US + Puerto Rico: no returns accepted
   US: 'us_no_returns',
   PR: 'us_no_returns',
-  // International: customer pays return shipping (18 countries)
+  // International: customer pays return shipping
+  // v11.0: Removed LI (microstate removed from MARKETS)
   CH: 'international_returns',
   NO: 'international_returns',
-  IS: 'international_returns',
-  LI: 'international_returns',
+  // IS removed (microstate)
   GB: 'international_returns',   // UK sub-account: "default" is also correct, but explicit for clarity
   AU: 'international_returns',
   NZ: 'international_returns',
@@ -491,7 +523,7 @@ const RETURN_POLICY_LABELS = {
   TH: 'international_returns',
   MY: 'international_returns',
   ID: 'international_returns',
-  // All others (EU + GR + DE + micro-states AD/MC/SM/VA): "default" (free returns, seller pays)
+  // All others (EU + GR + DE): "default" (free returns, seller pays)
 };
 
 
@@ -504,7 +536,7 @@ const RETURN_POLICY_LABELS = {
 const SHIPPING_SERVICE_MAP = {
   GR: 'ACS Courier Express',
   DE: 'DHL Tracked Delivery',
-  BG: 'DHL Tracked Delivery',
+  // BG removed (GMC unsupported)
   CZ: 'DHL Tracked Delivery',
   US: 'DHL DDP Express',
   PR: 'DHL DDP Express',
@@ -517,24 +549,23 @@ const DEFAULT_SHIPPING_SERVICE = 'UPS International Express';
 
 
 // ============================================
-// v9 NEW: HUB-AND-SPOKE CONFIGURATION
+// v9/v11 HUB-AND-SPOKE CONFIGURATION
 // ============================================
-// 14 countries cannot be registered as GMC target countries (Google's backend
-// silently rejects them — "silent null" UI behavior). Their <g:shipping> entries
-// are added to a geographically-close "hub" feed that IS a valid GMC target.
-// All hubs use emmanuela.jewelry domain (NEVER GR/DE/GB — they have dedicated domains).
-// Currency matches in all hub-spoke pairs.
+// Countries that cannot be registered as GMC target countries have their
+// <g:shipping> entries added to a geographically-close "hub" feed.
+// All hubs use emmanuela.jewelry domain (NEVER GR/DE/GB).
+// v11.0: Removed microstate spokes (CY, MT, VA, SM, LU, MC, AD, LI).
+// Remaining spokes: HR, SI (IT hub), EE, LV, LT (FI hub).
+// BG removed in v11.1 — GMC does not support as target country
 
 const HUB_SPOKES = {
-  IT: ['CY', 'BG', 'HR', 'SI', 'MT', 'VA', 'SM'],  // EUR — South/Southeast Europe
-  FR: ['LU', 'MC', 'AD'],                             // EUR — Francophone + Iberian micro
-  FI: ['EE', 'LV', 'LT'],                             // EUR — Baltic states
-  CH: ['LI'],                                          // CHF — Alpine
+  IT: ['HR', 'SI'],          // EUR — South/Southeast Europe
+  FI: ['EE', 'LV', 'LT'],  // EUR — Baltic states
 };
 
 // Pre-computed set of all spoke countries (for fast O(1) lookup)
 const SPOKE_COUNTRIES = new Set(Object.values(HUB_SPOKES).flat());
-// => Set(14) { 'CY', 'BG', 'HR', 'SI', 'MT', 'VA', 'SM', 'LU', 'MC', 'AD', 'EE', 'LV', 'LT', 'LI' }
+// => Set(5) { 'HR', 'SI', 'EE', 'LV', 'LT' }
 
 
 // ============================================
@@ -616,10 +647,11 @@ function getSize(selectedOptions) {
 function httpsRequest(options, postData = null) {
   return new Promise((resolve, reject) => {
     const req = https.request(options, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
+      const chunks = [];
+      res.on('data', chunk => chunks.push(chunk));
       res.on('end', () => {
         try {
+          const data = Buffer.concat(chunks).toString('utf8');
           resolve({ data: JSON.parse(data), statusCode: res.statusCode, headers: res.headers });
         } catch (e) { reject(new Error(`Parse error: ${e.message}`)); }
       });
@@ -1152,9 +1184,9 @@ async function fetchPriceAdjustments(products) {
   console.log(`   📌 Catalog price: ${refPrice.toFixed(2)} EUR (includes Greek 24% VAT)\n`);
 
   // Build GraphQL query with aliases for all market countries (one API call)
-  // Note: PR (Puerto Rico) is a US territory, not a valid CountryCode enum in Shopify GraphQL.
-  // We exclude it from the query and copy US pricing after.
-  const PRICING_EXCLUDED = new Set(['PR']);
+  // Note: PR is a US territory, not a valid CountryCode in Shopify GraphQL.
+  // Multi-language market keys (CH_FR, CH_IT, BE_FR, CA_FR) share pricing with their country.
+  const PRICING_EXCLUDED = new Set(['PR', 'CH_FR', 'CH_IT', 'BE_FR', 'CA_FR']);
   const countries = Object.keys(MARKETS);
   const queryCountries = countries.filter(cc => !PRICING_EXCLUDED.has(cc));
   const aliases = queryCountries.map(cc =>
@@ -1213,10 +1245,24 @@ async function fetchPriceAdjustments(products) {
       }
     }
 
-    // Copy pricing for excluded territories from their parent countries
+    // Copy pricing for excluded territories/multi-language variants from their parent countries
     if (adjustments.US) {
       adjustments.PR = { ...adjustments.US };
       console.log(`   PR: inherited US pricing (×${adjustments.US.factor.toFixed(6)} ${adjustments.US.currency})`);
+    }
+    // v11: Multi-language country feeds inherit pricing from primary country feed
+    if (adjustments.CH) {
+      adjustments.CH_FR = { ...adjustments.CH };
+      adjustments.CH_IT = { ...adjustments.CH };
+      console.log(`   CH_FR/CH_IT: inherited CH pricing (×${adjustments.CH.factor.toFixed(6)} ${adjustments.CH.currency})`);
+    }
+    if (adjustments.BE) {
+      adjustments.BE_FR = { ...adjustments.BE };
+      console.log(`   BE_FR: inherited BE pricing (×${adjustments.BE.factor.toFixed(6)} ${adjustments.BE.currency})`);
+    }
+    if (adjustments.CA) {
+      adjustments.CA_FR = { ...adjustments.CA };
+      console.log(`   CA_FR: inherited CA pricing (×${adjustments.CA.factor.toFixed(6)} ${adjustments.CA.currency})`);
     }
 
     console.log(`\n   ✅ Price adjustments: ${adjustedCount} adjusted, ${unchangedCount} unchanged`);
@@ -1500,12 +1546,14 @@ async function generateFeed(marketCode) {
   if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
   // Write files
-  const filename = `emmanuela-${market.country.toLowerCase()}.xml`;
+  // v11: Use feedSuffix for multi-language country feeds (e.g., ch-fr, be-fr)
+  const feedKey = market.feedSuffix || market.country.toLowerCase();
+  const filename = `emmanuela-${feedKey}.xml`;
   const filepath = path.join(OUTPUT_DIR, filename);
   fs.writeFileSync(filepath, xml, 'utf8');
 
   const date = new Date().toISOString().split('T')[0];
-  const datedFilename = `emmanuela-${market.country.toLowerCase()}-${date}.xml`;
+  const datedFilename = `emmanuela-${feedKey}-${date}.xml`;
   const datedFilepath = path.join(OUTPUT_DIR, datedFilename);
   fs.writeFileSync(datedFilepath, xml, 'utf8');
 
@@ -1588,7 +1636,9 @@ async function generateAllFeeds() {
       const priceAdj = priceAdjustments ? priceAdjustments[market.code] : null;
       const { xml, stats } = generateFeedForMarket(products, translations, market, shippingRates, priceAdj);
 
-      const filename = `emmanuela-${market.country.toLowerCase()}.xml`;
+      // v11: Use feedSuffix for multi-language country feeds (e.g., ch-fr, be-fr)
+      const feedKey = market.feedSuffix || market.country.toLowerCase();
+      const filename = `emmanuela-${feedKey}.xml`;
       const filepath = path.join(OUTPUT_DIR, filename);
       fs.writeFileSync(filepath, xml, 'utf8');
 

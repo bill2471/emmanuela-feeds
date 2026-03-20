@@ -1,5 +1,5 @@
 /**
- * Skroutz.gr Product Feed Generator v1.6 for EMMANUELA
+ * Skroutz.gr Product Feed Generator v2.0 for EMMANUELA
  *
  * Generates a valid XML product feed per Skroutz.gr specifications.
  * Reference: https://developer.skroutz.gr/el/feedspec/
@@ -22,6 +22,10 @@
  *   - Size field fix: comma-separated sizes at product level + "One Size" fallback (v1.4)
  *   - Size dedup fix: deduplicate sizes (XS,XS,XS → XS) (v1.5)
  *   - Size "One Size" restored per Skroutz quality reviewer explicit instruction (v1.6)
+ *   - v2.0 MAJOR FIXES:
+ *     - Μονό/Ζευγάρι split: separate entries per color × second option (not just color)
+ *     - Color-correct images: only variant-specific images per entry (no cross-color contamination)
+ *     - Smart title: remove redundant color suffix when material phrase implies it
  *
  * Usage:
  *   node skroutz-feed-gr.js                    # Generate feed
@@ -30,7 +34,7 @@
  * Output: feeds/skroutz-gr.xml
  *
  * Created: 2026-02-09
- * Updated: 2026-02-18 — Size spec compliance: omit <size> for non-sized, dedup sizes (v1.5)
+ * Updated: 2026-03-20 — v2.0: Μονό/Ζευγάρι split, color-correct images, smart titles
  */
 
 const https = require('https');
@@ -271,6 +275,47 @@ function extractVariantSize(selectedOptions) {
   return null;
 }
 
+// Extract product-splitting option value — ONLY known patterns like Μονό/Ζευγάρι, Αριστερό/Δεξί
+// These represent fundamentally different products (single vs pair earrings) and must be separate entries.
+// Other options (Μήκος, Title, etc.) are NOT product-splitting and should be ignored.
+const SPLITTING_VALUES = [
+  'μονό', 'ζευγάρι', 'ζεύγος',
+  'αριστερό', 'δεξί', 'αριστερά', 'δεξιά',
+  'pair', 'single', 'left', 'right',
+];
+
+function extractSecondOption(selectedOptions) {
+  if (!selectedOptions) return null;
+  for (const opt of selectedOptions) {
+    const name = (opt.name || '').toLowerCase();
+    // Skip color and size options (handled separately)
+    if (name.includes('χρώμα') || name.includes('color') || name.includes('colour')
+        || name === 'χρώμα μετάλλου') continue;
+    if (name.includes('μέγεθος') || name.includes('size') || name.includes('νούμερο')) continue;
+    // Only match known product-splitting values
+    const val = (opt.value || '').toLowerCase().trim();
+    if (SPLITTING_VALUES.includes(val)) {
+      return opt.value;
+    }
+  }
+  return null;
+}
+
+// Check if color suffix is redundant with the material phrase
+// e.g., "από Επιχρυσωμένο Ασήμι 925" already implies Χρυσό → no need to append "Χρυσό"
+const MATERIAL_IMPLIED_COLORS = {
+  'από Ασήμι 925': ['Ασημί'],
+  'από Επιχρυσωμένο Ασήμι 925': ['Χρυσό'],
+  'από Ροζ Επιχρυσωμένο Ασήμι 925': ['Ροζ'],
+  // Οξειδωμένο intentionally excluded: both Μαύρο and Γκρι map to it,
+  // so suppressing both would create duplicate names within the same product
+};
+
+function isColorRedundant(materialPhrase, color) {
+  const implied = MATERIAL_IMPLIED_COLORS[materialPhrase];
+  return implied ? implied.includes(color) : false;
+}
+
 // Get variant weight in grams
 function getWeightGrams(variant) {
   const w = variant.weight;
@@ -496,8 +541,12 @@ function generateSkroutzFeed(products) {
     // Determine if product has size options (rings, etc.)
     const hasSizeOption = variants.some(v => extractVariantSize(v.selectedOptions) !== null);
 
-    // Group in-stock variants by normalized color → 1 feed entry per color
-    const colorGroups = {};
+    // Detect second option axis (not color, not size) — e.g., Μονό/Ζευγάρι
+    const hasSecondOption = variants.some(v => extractSecondOption(v.selectedOptions) !== null);
+
+    // Group in-stock variants by color × secondOption → 1 feed entry per unique combo
+    // This ensures Μονό and Ζευγάρι become separate entries with correct prices
+    const entryGroups = {};
 
     variants.forEach(variant => {
       stats.totalVariants++;
@@ -510,48 +559,112 @@ function generateSkroutzFeed(products) {
 
       const rawColor = extractVariantColor(variant.selectedOptions);
       const color = getGreekColor(rawColor) || getGreekColor(product.metafields.color) || 'Ασημί';
+      const secondOpt = hasSecondOption ? (extractSecondOption(variant.selectedOptions) || null) : null;
+      const groupKey = secondOpt ? `${color}|||${secondOpt}` : color;
 
-      if (!colorGroups[color]) {
-        colorGroups[color] = [];
+      if (!entryGroups[groupKey]) {
+        entryGroups[groupKey] = { color, secondOption: secondOpt, variants: [] };
       }
-      colorGroups[color].push(variant);
+      entryGroups[groupKey].variants.push(variant);
     });
 
-    // Create 1 entry per color group
-    for (const [color, groupVariants] of Object.entries(colorGroups)) {
+    // Pre-compute image ranges per color group.
+    // In Shopify, images are typically ordered by color (e.g., silver shots, then gold shots).
+    // Variant-assigned images serve as boundaries — we include adjacent images between boundaries.
+    // This captures same-color lifestyle/detail shots without cross-color contamination.
+    const allVariantImageIds = new Set();
+    for (const group of Object.values(entryGroups)) {
+      for (const v of group.variants) {
+        if (v.image_id) allVariantImageIds.add(v.image_id);
+      }
+    }
+
+    // Build sorted list of variant image positions (boundaries)
+    const variantImageIndices = [];
+    images.forEach((img, idx) => {
+      if (allVariantImageIds.has(img.id)) {
+        variantImageIndices.push({ id: img.id, idx });
+      }
+    });
+    variantImageIndices.sort((a, b) => a.idx - b.idx);
+
+    // Map each variant image → range of images (from this boundary to the next)
+    const imageRangeByVariantImageId = {};
+    for (let i = 0; i < variantImageIndices.length; i++) {
+      const start = variantImageIndices[i].idx;
+      const end = i + 1 < variantImageIndices.length
+        ? variantImageIndices[i + 1].idx
+        : images.length;
+      imageRangeByVariantImageId[variantImageIndices[i].id] = images.slice(start, end);
+    }
+
+    // Create 1 entry per group (color × second option)
+    for (const [groupKey, group] of Object.entries(entryGroups)) {
+      const { color, secondOption: secondOpt, variants: groupVariants } = group;
       const repVariant = groupVariants[0];
 
-      // Image: variant-specific or product-level
-      const variantImage = repVariant.image_id
-        ? images.find(img => img.id === repVariant.image_id)?.src || mainImage
-        : mainImage;
+      // Images: use variant image boundaries to select same-color images
+      const groupImageIds = new Set(
+        groupVariants.map(v => v.image_id).filter(Boolean)
+      );
+
+      let variantImage;
+      let additionalImages;
+
+      if (groupImageIds.size > 0) {
+        // Collect images from ranges of all variant-assigned images in this group
+        const colorImages = [];
+        const seen = new Set();
+        for (const imgId of groupImageIds) {
+          const range = imageRangeByVariantImageId[imgId] || [];
+          for (const img of range) {
+            if (!seen.has(img.id)) {
+              seen.add(img.id);
+              colorImages.push(img);
+            }
+          }
+        }
+        variantImage = colorImages[0]?.src || mainImage;
+        additionalImages = colorImages
+          .map(img => img.src)
+          .filter(src => src !== variantImage)
+          .slice(0, 14);
+      } else {
+        // No variant-specific images → use only main product image
+        variantImage = mainImage;
+        additionalImages = [];
+      }
 
       if (!variantImage) {
         stats.noImage++;
         continue;
       }
 
-      // Price: lowest in-stock price for this color group
+      // Price: lowest in-stock price for this group
       const lowestPrice = Math.min(...groupVariants.map(v => parseFloat(v.price)));
 
-      // Total quantity for this color group
+      // Total quantity for this group
       const totalQuantity = groupVariants.reduce((sum, v) => sum + Math.max(0, v.inventory_quantity), 0);
 
       // Weight from representative variant
       const weightGrams = getWeightGrams(repVariant);
 
-      // Build name: product title + material phrase + color
-      // Skroutz requires material in title for jewelry (e.g., "από Ασήμι 925")
+      // Build name: product title + material phrase [+ secondOption] [+ color if not redundant]
+      // Material phrase already implies color in most cases (Επιχρυσωμένο→Χρυσό, Οξειδωμένο→Μαύρο)
       const rawColorForMaterial = extractVariantColor(repVariant.selectedOptions);
       const materialPhrase = getMaterialPhrase(rawColorForMaterial);
-      // Always add color suffix to ensure unique names across products (Skroutz validator warning)
       let name = product.title;
-      // Add material phrase (always for jewelry)
+      // Add material phrase (always for jewelry — Skroutz requirement)
       if (materialPhrase) {
         name = `${name} ${materialPhrase}`;
       }
-      // Add color suffix ALWAYS (even single-color products can have duplicate titles)
-      if (color) {
+      // Add second option label (Μονό/Ζευγάρι/Αριστερό/Δεξί) when present
+      if (secondOpt) {
+        name = `${name} ${secondOpt}`;
+      }
+      // Add color suffix ONLY when not already implied by the material phrase
+      // e.g., skip "Χρυσό" after "Επιχρυσωμένο Ασήμι 925" but keep "Μπλε" after "Ασήμι 925"
+      if (color && !isColorRedundant(materialPhrase, color)) {
         name = `${name} ${color}`;
       }
       // Ensure name is max 300 chars (Skroutz limit)
@@ -559,11 +672,14 @@ function generateSkroutzFeed(products) {
 
       if (materialPhrase) stats.withMaterial++;
 
-      // MPN — must be unique per feed entry; append color suffix to avoid duplicates
-      // when the same SKU is shared across color variants
+      // MPN — must be unique per feed entry
       const baseMpn = repVariant.sku || `EMM-${repVariant.id}`;
-      const mpn = Object.keys(colorGroups).length > 1 && color
-        ? `${baseMpn}-${color}` : baseMpn;
+      const entryCount = Object.keys(entryGroups).length;
+      let mpn = baseMpn;
+      if (entryCount > 1) {
+        mpn = `${baseMpn}-${color}`;
+        if (secondOpt) mpn = `${mpn}-${secondOpt}`;
+      }
 
       // EAN/Barcode
       const ean = repVariant.barcode && /^\d{8,13}$/.test(repVariant.barcode.trim())
@@ -572,12 +688,6 @@ function generateSkroutzFeed(products) {
       // Description: max 10000 chars, no HTML
       let description = product.description || '';
       if (description.length > 10000) description = description.substring(0, 9997) + '...';
-
-      // Additional images (up to 15, excluding main image)
-      const additionalImages = images
-        .map(img => img.src)
-        .filter(src => src !== variantImage)
-        .slice(0, 14); // 14 additional + 1 main = 15 total max
 
       // Build product XML entry
       let item = '';
@@ -747,7 +857,7 @@ function generateSkroutzFeed(products) {
 
 async function generateFeed(options = {}) {
   console.log('='.repeat(60));
-  console.log('Skroutz.gr Feed Generator v1.6 for EMMANUELA');
+  console.log('Skroutz.gr Feed Generator v2.0 for EMMANUELA');
   console.log('='.repeat(60));
   console.log(`Store: ${SHOPIFY_STORE}`);
   console.log(`Domain: ${DOMAIN}`);

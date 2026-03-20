@@ -1,16 +1,20 @@
 /**
- * BestPrice.gr Product Feed Generator v1.1 for EMMANUELA
+ * BestPrice.gr Product Feed Generator v2.0 for EMMANUELA
  *
  * Generates a valid XML product feed per BestPrice.gr specifications (v2.0.12).
  *
  * Key features:
  *   - ALL active products via Shopify GraphQL API
- *   - Creates separate <product> per variant (color) — as required by BestPrice
+ *   - Creates separate <product> per color × secondOption — as required by BestPrice
  *   - Skips out-of-stock variants
  *   - Full Greek category paths (Κοσμήματα->Δαχτυλίδια->...)
  *   - Greek color mapping from variant options
  *   - Size aggregation for rings
  *   - productId = Shopify Variant ID (stable identifier)
+ *
+ * v2.0 changes (2026-03-20):
+ *   - Μονό/Ζευγάρι split: separate entries per color × second option (correct prices)
+ *   - Color-correct images: variant boundary heuristic (no cross-color contamination)
  *
  * Usage:
  *   node bestprice-feed-gr.js                    # Generate feed
@@ -19,7 +23,7 @@
  * Output: feeds/bestprice-gr.xml
  *
  * Created: 2026-02-06
- * Updated: 2026-02-09 — "Χρώμα μετάλλου" option name support (v1.1)
+ * Updated: 2026-03-20 — v2.0: Μονό/Ζευγάρι split, color-correct images
  */
 
 const https = require('https');
@@ -222,6 +226,28 @@ function extractVariantSize(selectedOptions) {
   for (const opt of selectedOptions) {
     const name = (opt.name || '').toLowerCase();
     if (name.includes('μέγεθος') || name.includes('size') || name.includes('νούμερο')) {
+      return opt.value;
+    }
+  }
+  return null;
+}
+
+// Extract product-splitting option value — ONLY known patterns like Μονό/Ζευγάρι
+const SPLITTING_VALUES = [
+  'μονό', 'ζευγάρι', 'ζεύγος',
+  'αριστερό', 'δεξί', 'αριστερά', 'δεξιά',
+  'pair', 'single', 'left', 'right',
+];
+
+function extractSecondOption(selectedOptions) {
+  if (!selectedOptions) return null;
+  for (const opt of selectedOptions) {
+    const name = (opt.name || '').toLowerCase();
+    if (name.includes('χρώμα') || name.includes('color') || name.includes('colour')
+        || name === 'χρώμα μετάλλου') continue;
+    if (name.includes('μέγεθος') || name.includes('size') || name.includes('νούμερο')) continue;
+    const val = (opt.value || '').toLowerCase().trim();
+    if (SPLITTING_VALUES.includes(val)) {
       return opt.value;
     }
   }
@@ -457,8 +483,9 @@ function generateBestPriceFeed(products) {
     const isRingOrSized = typeLC.includes('δαχτυλίδ') || typeLC.includes('ring');
     const availableSizes = isRingOrSized ? collectAvailableSizes(variants) : null;
 
-    // Group in-stock variants by normalized color → 1 feed entry per color
-    const colorGroups = {};
+    // Group in-stock variants by color × secondOption → 1 feed entry per group (v2.0)
+    const hasSecondOption = variants.some(v => extractSecondOption(v.selectedOptions) !== null);
+    const entryGroups = {};
 
     variants.forEach(variant => {
       stats.totalVariants++;
@@ -471,41 +498,91 @@ function generateBestPriceFeed(products) {
 
       const rawColor = extractVariantColor(variant.selectedOptions);
       const color = getGreekColor(rawColor) || getGreekColor(product.metafields.color) || 'ασημί';
+      const secondOpt = hasSecondOption ? (extractSecondOption(variant.selectedOptions) || null) : null;
+      const groupKey = secondOpt ? `${color}|||${secondOpt}` : color;
 
-      if (!colorGroups[color]) {
-        colorGroups[color] = [];
+      if (!entryGroups[groupKey]) {
+        entryGroups[groupKey] = { color, secondOption: secondOpt, variants: [] };
       }
-      colorGroups[color].push(variant);
+      entryGroups[groupKey].variants.push(variant);
     });
 
-    // Create 1 entry per color group
-    for (const [color, groupVariants] of Object.entries(colorGroups)) {
-      // Use first variant as representative (for ID, SKU, image, weight)
+    // Pre-compute image ranges per color group (v2.0 — color-correct images)
+    const allVariantImageIds = new Set();
+    for (const group of Object.values(entryGroups)) {
+      for (const v of group.variants) {
+        if (v.image_id) allVariantImageIds.add(v.image_id);
+      }
+    }
+    const variantImageIndices = [];
+    images.forEach((img, idx) => {
+      if (allVariantImageIds.has(img.id)) {
+        variantImageIndices.push({ id: img.id, idx });
+      }
+    });
+    variantImageIndices.sort((a, b) => a.idx - b.idx);
+    const imageRangeByVariantImageId = {};
+    for (let i = 0; i < variantImageIndices.length; i++) {
+      const start = variantImageIndices[i].idx;
+      const end = i + 1 < variantImageIndices.length
+        ? variantImageIndices[i + 1].idx
+        : images.length;
+      imageRangeByVariantImageId[variantImageIndices[i].id] = images.slice(start, end);
+    }
+
+    // Create 1 entry per group
+    for (const [groupKey, group] of Object.entries(entryGroups)) {
+      const { color, secondOption: secondOpt, variants: groupVariants } = group;
       const repVariant = groupVariants[0];
 
-      // Images: variant-specific or product-level
-      const variantImage = repVariant.image_id
-        ? images.find(img => img.id === repVariant.image_id)?.src || mainImage
-        : mainImage;
+      // Color-correct images (v2.0): use variant boundary heuristic
+      const groupImageIds = new Set(
+        groupVariants.map(v => v.image_id).filter(Boolean)
+      );
+
+      let variantImage;
+      let colorImages;
+
+      if (groupImageIds.size > 0) {
+        const collected = [];
+        const seen = new Set();
+        for (const imgId of groupImageIds) {
+          const range = imageRangeByVariantImageId[imgId] || [];
+          for (const img of range) {
+            if (!seen.has(img.id)) {
+              seen.add(img.id);
+              collected.push(img);
+            }
+          }
+        }
+        variantImage = collected[0]?.src || mainImage;
+        colorImages = collected.map(img => img.src).slice(0, 5);
+      } else {
+        variantImage = mainImage;
+        colorImages = [mainImage];
+      }
 
       if (!variantImage) {
         stats.noImage++;
         continue;
       }
 
-      // Lowest price among in-stock variants of this color
+      // Lowest price among in-stock variants of this group
       const lowestPrice = Math.min(...groupVariants.map(v => parseFloat(v.price)));
 
       // Weight from representative variant
       const weightGrams = getWeightGrams(repVariant);
 
-      // Build title: product title + color (if multiple colors exist)
-      const colorForTitle = color !== 'ασημί' || Object.keys(colorGroups).length > 1
+      // Build title: product title + color (if multiple entries) + second option
+      const colorForTitle = color !== 'ασημί' || Object.keys(entryGroups).length > 1
         ? translateVariantName(extractVariantColor(repVariant.selectedOptions) || color)
         : null;
       let title = product.title;
       if (colorForTitle) {
         title = `${product.title} - ${colorForTitle}`;
+      }
+      if (secondOpt) {
+        title = `${title} ${secondOpt}`;
       }
 
       // Build product XML
@@ -515,12 +592,11 @@ function generateBestPriceFeed(products) {
       item += `      <title>${escapeXml(title)}</title>\n`;
       item += `      <productURL>https://${DOMAIN}/products/${product.handle}?variant=${repVariant.id}</productURL>\n`;
 
-      // Images: always include imageURL (required) + imagesURL for additional images
-      const allImages = [variantImage, ...images.filter(img => img.src !== variantImage).map(img => img.src)].slice(0, 5);
-      item += `      <imageURL>${escapeXml(allImages[0])}</imageURL>\n`;
-      if (allImages.length > 1) {
+      // Images: color-correct only (v2.0)
+      item += `      <imageURL>${escapeXml(colorImages[0])}</imageURL>\n`;
+      if (colorImages.length > 1) {
         item += `      <imagesURL>\n`;
-        allImages.forEach((img, i) => {
+        colorImages.forEach((img, i) => {
           item += `        <img${i + 1}>${escapeXml(img)}</img${i + 1}>\n`;
         });
         item += `      </imagesURL>\n`;
@@ -603,7 +679,7 @@ function generateBestPriceFeed(products) {
 
 async function generateFeed(options = {}) {
   console.log('='.repeat(60));
-  console.log('BestPrice.gr Feed Generator v1.1 for EMMANUELA');
+  console.log('BestPrice.gr Feed Generator v2.0 for EMMANUELA');
   console.log('='.repeat(60));
   console.log(`Store: ${SHOPIFY_STORE}`);
   console.log(`Domain: ${DOMAIN}`);

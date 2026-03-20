@@ -1,5 +1,5 @@
 /**
- * Meta/Facebook Product Feed Generator v1.0 for EMMANUELA
+ * Meta/Facebook Product Feed Generator v1.1 for EMMANUELA
  *
  * CRITICAL DIFFERENCES FROM GOOGLE SHOPPING FEED:
  *   - g:id = Shopify Variant ID (numeric only) - MUST match Pixel content_id
@@ -20,6 +20,7 @@
  * Output: feeds/meta-gr.xml
  *
  * Created: 2026-02-05
+ * Updated: 2026-03-20 — v1.1: Color-correct additional images (variant boundary heuristic)
  */
 
 const https = require('https');
@@ -444,8 +445,25 @@ function generateMetaFeed(products) {
       return;
     }
 
-    // Additional images (up to 10 for Meta)
-    const additionalImages = images.slice(1, 11).map(img => img.src);
+    // v1.1: Pre-compute image ranges per variant for color-correct additional images
+    const allVariantImageIds = new Set(
+      variants.map(v => v.image_id).filter(Boolean)
+    );
+    const variantImageIndices = [];
+    images.forEach((img, idx) => {
+      if (allVariantImageIds.has(img.id)) {
+        variantImageIndices.push({ id: img.id, idx });
+      }
+    });
+    variantImageIndices.sort((a, b) => a.idx - b.idx);
+    const imageRangeByVariantImageId = {};
+    for (let i = 0; i < variantImageIndices.length; i++) {
+      const start = variantImageIndices[i].idx;
+      const end = i + 1 < variantImageIndices.length
+        ? variantImageIndices[i + 1].idx
+        : images.length;
+      imageRangeByVariantImageId[variantImageIndices[i].id] = images.slice(start, end);
+    }
 
     // Product-level data
     const description = stripHtml(product.body_html);
@@ -496,10 +514,23 @@ function generateMetaFeed(products) {
       if (colorNormalized) stats.withColor++;
       if (variant.weight) stats.withWeight++;
 
-      // Get variant image or fallback to main
-      const variantImage = variant.image_id
-        ? images.find(img => img.id === variant.image_id)?.src || mainImage
-        : mainImage;
+      // v1.1: Color-correct images — use variant boundary heuristic
+      let variantImage;
+      let variantAdditionalImages;
+
+      if (variant.image_id && imageRangeByVariantImageId[variant.image_id]) {
+        const range = imageRangeByVariantImageId[variant.image_id];
+        variantImage = range[0]?.src || mainImage;
+        variantAdditionalImages = range
+          .map(img => img.src)
+          .filter(src => src !== variantImage)
+          .slice(0, 10);
+      } else {
+        variantImage = variant.image_id
+          ? images.find(img => img.id === variant.image_id)?.src || mainImage
+          : mainImage;
+        variantAdditionalImages = [];
+      }
 
       // Build URL
       const productUrl = buildProductUrl(product.handle, variant.id);
@@ -534,8 +565,8 @@ function generateMetaFeed(products) {
       <!-- IMAGES -->
       <g:image_link>${variantImage}</g:image_link>`;
 
-      // Additional images
-      additionalImages.forEach(img => {
+      // Additional images (v1.1: color-correct only)
+      variantAdditionalImages.forEach(img => {
         item += `\n      <g:additional_image_link>${img}</g:additional_image_link>`;
       });
 
@@ -684,7 +715,7 @@ function printValidationInfo(stats) {
 
 async function generateFeed(options = {}) {
   console.log(`\n${'='.repeat(60)}`);
-  console.log('🔵 META PRODUCT FEED GENERATOR v1.0');
+  console.log('🔵 META PRODUCT FEED GENERATOR v1.1');
   console.log(`${'='.repeat(60)}`);
   console.log(`   Target: Greece (emmanuela.gr)`);
   console.log(`   Catalog ID: ${META_CATALOG_ID}`);

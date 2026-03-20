@@ -1319,8 +1319,27 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
     const mainImage = images[0]?.src || '';
     
     if (!mainImage) { stats.noImage++; return; }
-    
-    const additionalImages = images.slice(1, 10).map(img => img.src);
+
+    // v11.2: Pre-compute image ranges per variant for color-correct additional images
+    const allVariantImageIds = new Set(
+      variants.map(v => v.image_id).filter(Boolean)
+    );
+    const variantImageIndices = [];
+    images.forEach((img, idx) => {
+      if (allVariantImageIds.has(img.id)) {
+        variantImageIndices.push({ id: img.id, idx });
+      }
+    });
+    variantImageIndices.sort((a, b) => a.idx - b.idx);
+    const imageRangeByVariantImageId = {};
+    for (let i = 0; i < variantImageIndices.length; i++) {
+      const start = variantImageIndices[i].idx;
+      const end = i + 1 < variantImageIndices.length
+        ? variantImageIndices[i + 1].idx
+        : images.length;
+      imageRangeByVariantImageId[variantImageIndices[i].id] = images.slice(start, end);
+    }
+
     const prodTrans = translations.products[product.id] || {};
     // v7.9: Fallback chain — target locale → English → Greek (original)
     const enFallback = translations.englishFallback?.products[product.id] || {};
@@ -1378,9 +1397,22 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
       if (colorNormalized) stats.withColor++;
       if (variant.weight) stats.withWeight++;
       
-      const variantImage = variant.image_id 
-        ? images.find(img => img.id === variant.image_id)?.src || mainImage
-        : mainImage;
+      // v11.2: Color-correct images — use variant boundary heuristic
+      let variantImage;
+      let variantAdditionalImages;
+
+      if (variant.image_id && imageRangeByVariantImageId[variant.image_id]) {
+        const range = imageRangeByVariantImageId[variant.image_id];
+        variantImage = range[0]?.src || mainImage;
+        variantAdditionalImages = range
+          .map(img => img.src)
+          .filter(src => src !== variantImage)
+          .slice(0, 9);
+      } else {
+        variantImage = mainImage;
+        variantAdditionalImages = [];
+      }
+
       const translatedHandle = prodTrans.handle || enFallback.handle || product.handle;
       const productUrl = buildProductUrl(translatedHandle, variant.id, market);
       // v10: Apply market-specific price adjustment (VAT + currency conversion)
@@ -1395,8 +1427,8 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
       <g:description><![CDATA[${translatedDesc.substring(0, 5000)}]]></g:description>
       <g:link>${escapeXml(productUrl)}</g:link>
       <g:image_link>${variantImage}</g:image_link>`;
-      
-      additionalImages.forEach(img => { item += `\n      <g:additional_image_link>${img}</g:additional_image_link>`; });
+
+      variantAdditionalImages.forEach(img => { item += `\n      <g:additional_image_link>${img}</g:additional_image_link>`; });
 
       // v7.5: Add video links (up to 10, direct-hosted only — no YouTube)
       if (product.videos && product.videos.length > 0) {

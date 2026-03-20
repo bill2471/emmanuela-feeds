@@ -1,11 +1,11 @@
 /**
- * GLAMI Product Feed Generator v2.0 for EMMANUELA
+ * GLAMI Product Feed Generator v3.0 for EMMANUELA
  *
  * Generates a valid XML product feed per GLAMI.gr specifications.
  *
  * Key features:
  *   - ALL active products (same as Google Shopping feed)
- *   - COLOR-GROUPED: 1 SHOPITEM per color per product (not per variant)
+ *   - COLOR-GROUPED: 1 SHOPITEM per color × secondOption per product
  *   - Every entry has a color PARAM (mandatory for variant grouping)
  *   - Size variants handled via URL_SIZE per entry
  *   - Skips out-of-stock variants
@@ -15,6 +15,11 @@
  *   - ITEMGROUP_ID = Shopify Product ID (groups color variants together)
  *   - Buffer.concat UTF-8 fix for Greek characters
  *   - CI cooldown + retry for API throttle handling
+ *
+ * v3.0 changes (2026-03-20):
+ *   - Μονό/Ζευγάρι split: separate entries per color × second option (correct prices)
+ *   - Color-correct images: variant boundary heuristic (no cross-color contamination)
+ *   - Smart title: skip redundant color suffix when material phrase implies it
  *
  * v2.0 changes (2026-02-09):
  *   - Color-grouped entries (1 per color, not 1 per variant) — fixes 1,298 blocked duplicates
@@ -31,7 +36,7 @@
  * Output: feeds/glami-gr.xml
  *
  * Created: 2026-02-06
- * Updated: 2026-02-09
+ * Updated: 2026-03-20 — v3.0: Μονό/Ζευγάρι split, color-correct images, smart titles
  */
 
 const https = require('https');
@@ -488,11 +493,36 @@ function extractVariantSize(selectedOptions) {
 }
 
 // ============================================
-// XML FEED GENERATION FOR GLAMI (v2.0 — color-grouped)
+// EXTRACT SECOND OPTION (Μονό/Ζευγάρι split)
+// ============================================
+
+const SPLITTING_VALUES = [
+  'μονό', 'ζευγάρι', 'ζεύγος',
+  'αριστερό', 'δεξί', 'αριστερά', 'δεξιά',
+  'pair', 'single', 'left', 'right',
+];
+
+function extractSecondOption(selectedOptions) {
+  if (!selectedOptions) return null;
+  for (const opt of selectedOptions) {
+    const name = (opt.name || '').toLowerCase();
+    if (name.includes('χρώμα') || name.includes('color') || name.includes('colour')
+        || name === 'χρώμα μετάλλου') continue;
+    if (name.includes('μέγεθος') || name.includes('size') || name.includes('νούμερο')) continue;
+    const val = (opt.value || '').toLowerCase().trim();
+    if (SPLITTING_VALUES.includes(val)) {
+      return opt.value;
+    }
+  }
+  return null;
+}
+
+// ============================================
+// XML FEED GENERATION FOR GLAMI (v3.0 — color × secondOption grouped)
 // ============================================
 
 function generateGlamiFeed(products) {
-  console.log('Generating GLAMI XML feed for Greece (color-grouped v2.0)...\n');
+  console.log('Generating GLAMI XML feed for Greece (v3.0 — color × secondOption)...\n');
 
   const items = [];
   const stats = {
@@ -546,9 +576,10 @@ function generateGlamiFeed(products) {
     const altImages = images.slice(1, 14).map(img => img.src);
 
     // ═══════════════════════════════════════════════════════════
-    // GROUP VARIANTS BY COLOR
+    // GROUP VARIANTS BY COLOR × SECOND OPTION (v3.0)
     // ═══════════════════════════════════════════════════════════
-    const colorGroups = {};
+    const hasSecondOption = variants.some(v => extractSecondOption(v.selectedOptions) !== null);
+    const entryGroups = {};
 
     variants.forEach(variant => {
       if (variant.inventory_quantity <= 0) {
@@ -561,17 +592,16 @@ function generateGlamiFeed(products) {
       const variantSize = extractVariantSize(variant.selectedOptions);
       const greekColor = getGreekColor(variantColorRaw);
 
-      // Color key for grouping:
-      // - Use the GREEK color as key (ασημί, χρυσό, μαύρο, etc.) — this merges
-      //   variants like "Ασημένιο" and "Ασημί" into one group
-      // - Variants that don't map to any color go to _default_ (1 entry per product)
       const colorKey = greekColor || '_default_';
+      const secondOpt = hasSecondOption ? (extractSecondOption(variant.selectedOptions) || null) : null;
+      const groupKey = secondOpt ? `${colorKey}|||${secondOpt}` : colorKey;
 
-      if (!colorGroups[colorKey]) {
-        colorGroups[colorKey] = {
-          greekColor: greekColor || 'ασημί',  // Default color for unmapped variants
+      if (!entryGroups[groupKey]) {
+        entryGroups[groupKey] = {
+          greekColor: greekColor || 'ασημί',
           rawColor: variantColorRaw || null,
-          representativeVariant: variant,  // first in-stock variant = representative
+          secondOption: secondOpt,
+          representativeVariant: variant,
           variants: [],
           sizes: [],
           lowestPrice: parseFloat(variant.price),
@@ -579,22 +609,19 @@ function generateGlamiFeed(products) {
         };
       }
 
-      const group = colorGroups[colorKey];
+      const group = entryGroups[groupKey];
       group.variants.push(variant);
 
-      // Track sizes for this color group
       if (variantSize && !group.sizes.includes(variantSize)) {
         group.sizes.push(variantSize);
       }
 
-      // Track lowest price among in-stock variants of same color
       const price = parseFloat(variant.price);
       if (price < group.lowestPrice) {
         group.lowestPrice = price;
         group.representativeVariant = variant;
       }
 
-      // Track highest compare_at_price
       if (variant.compare_at_price) {
         const cap = parseFloat(variant.compare_at_price);
         if (!group.highestCompareAt || cap > group.highestCompareAt) {
@@ -603,14 +630,37 @@ function generateGlamiFeed(products) {
       }
     });
 
-    // ═══════════════════════════════════════════════════════════
-    // BUILD 1 SHOPITEM PER COLOR GROUP
-    // ═══════════════════════════════════════════════════════════
-    const colorKeys = Object.keys(colorGroups);
-    const hasMultipleColors = colorKeys.length > 1;
+    // Pre-compute image ranges per color group (v3.0 — color-correct images)
+    const allVariantImageIds = new Set();
+    for (const group of Object.values(entryGroups)) {
+      for (const v of group.variants) {
+        if (v.image_id) allVariantImageIds.add(v.image_id);
+      }
+    }
+    const variantImageIndices = [];
+    images.forEach((img, idx) => {
+      if (allVariantImageIds.has(img.id)) {
+        variantImageIndices.push({ id: img.id, idx });
+      }
+    });
+    variantImageIndices.sort((a, b) => a.idx - b.idx);
+    const imageRangeByVariantImageId = {};
+    for (let i = 0; i < variantImageIndices.length; i++) {
+      const start = variantImageIndices[i].idx;
+      const end = i + 1 < variantImageIndices.length
+        ? variantImageIndices[i + 1].idx
+        : images.length;
+      imageRangeByVariantImageId[variantImageIndices[i].id] = images.slice(start, end);
+    }
 
-    colorKeys.forEach(colorKey => {
-      const group = colorGroups[colorKey];
+    // ═══════════════════════════════════════════════════════════
+    // BUILD 1 SHOPITEM PER ENTRY GROUP (color × secondOption)
+    // ═══════════════════════════════════════════════════════════
+    const groupKeys = Object.keys(entryGroups);
+    const hasMultipleEntries = groupKeys.length > 1;
+
+    groupKeys.forEach(groupKey => {
+      const group = entryGroups[groupKey];
       const repVariant = group.representativeVariant;
       stats.feedEntries++;
 
@@ -623,10 +673,35 @@ function generateGlamiFeed(products) {
       // Track color breakdown
       stats.colorBreakdown[group.greekColor] = (stats.colorBreakdown[group.greekColor] || 0) + 1;
 
-      // Get variant-specific image or fallback to main
-      const variantImage = repVariant.image_id
-        ? images.find(img => img.id === repVariant.image_id)?.src || mainImage
-        : mainImage;
+      // Color-correct images (v3.0): use variant boundary heuristic
+      const groupImageIds = new Set(
+        group.variants.map(v => v.image_id).filter(Boolean)
+      );
+
+      let variantImage;
+      let altImages;
+
+      if (groupImageIds.size > 0) {
+        const colorImages = [];
+        const seen = new Set();
+        for (const imgId of groupImageIds) {
+          const range = imageRangeByVariantImageId[imgId] || [];
+          for (const img of range) {
+            if (!seen.has(img.id)) {
+              seen.add(img.id);
+              colorImages.push(img);
+            }
+          }
+        }
+        variantImage = colorImages[0]?.src || mainImage;
+        altImages = colorImages
+          .map(img => img.src)
+          .filter(src => src !== variantImage)
+          .slice(0, 14);
+      } else {
+        variantImage = mainImage;
+        altImages = [];
+      }
 
       // URLs
       const productUrl = buildProductUrlBase(product.handle);
@@ -637,13 +712,16 @@ function generateGlamiFeed(products) {
       const hasSalePrice = group.highestCompareAt && group.highestCompareAt > price;
       if (hasSalePrice) stats.withSalePrice++;
 
-      // PRODUCTNAME: include color only if multiple colors exist, never include size
+      // PRODUCTNAME: include color if multiple entries, add second option label
       let productName = product.title;
-      if (hasMultipleColors && group.rawColor) {
+      if (hasMultipleEntries && group.rawColor) {
         const colorSuffix = group.rawColor;
         if (!productName.toLowerCase().includes(colorSuffix.toLowerCase())) {
           productName = `${productName} - ${colorSuffix}`;
         }
+      }
+      if (group.secondOption) {
+        productName = `${productName} ${group.secondOption}`;
       }
       productName = productName.substring(0, 200);
 
@@ -683,11 +761,11 @@ function generateGlamiFeed(products) {
 
       // ITEMGROUP_ID — groups color variants of the same product
       // Only emit when there are multiple colors (GLAMI needs this for variant grouping)
-      if (hasMultipleColors) {
+      if (hasMultipleEntries) {
         item += `\n    <ITEMGROUP_ID>${escapeXml(product.id)}</ITEMGROUP_ID>`;
       }
 
-      // Alternative images
+      // Alternative images (v3.0: color-correct only)
       altImages.forEach(img => {
         item += `\n    <IMGURL_ALTERNATIVE>${escapeXml(img)}</IMGURL_ALTERNATIVE>`;
       });
@@ -819,7 +897,7 @@ function printValidationInfo(stats) {
 
 async function generateFeed(options = {}) {
   console.log(`\n${'='.repeat(60)}`);
-  console.log('GLAMI PRODUCT FEED GENERATOR v2.0 (color-grouped)');
+  console.log('GLAMI PRODUCT FEED GENERATOR v3.0 (color × secondOption)');
   console.log(`${'='.repeat(60)}`);
   console.log(`   Target: Greece (${DOMAIN})`);
   console.log(`   Currency: EUR`);

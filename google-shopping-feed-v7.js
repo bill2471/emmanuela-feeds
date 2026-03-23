@@ -1,5 +1,15 @@
 /**
- * Google Shopping Feed Generator v11.1 for EMMANUELA
+ * Google Shopping Feed Generator v11.2 for EMMANUELA
+ *
+ * v11.2 (Shipping consistency fixes):
+ *   - FIX: max_handling_time 2→1 (always 1 business day)
+ *   - FIX: Transit times aligned with shipping pages (handling 1 + transit = page total)
+ *     GR/DE: 1-3, EU/CH/NO/CA: 2-4, GB: 2-5, US: 2-6, AU/NZ/MX/AE/IL/SA/ASIA: 2-7
+ *   - FIX: Courier names unified — ACS Courier (GR), DHL Express (all others)
+ *     Removed UPS International Express, DHL Tracked Delivery variants
+ *   - NEW: shipping_handling_business_days = Mon-Fri (explicit, matches default)
+ *   - NEW: shipping_transit_business_days = Mon-Fri (overrides default Mon-Sat)
+ *     Business days = Monday-Friday ONLY, no Saturday deliveries
  *
  * v11.1 (IS removal + PR→US Spanish):
  *   - REMOVED Iceland (IS) — microstate, not supported by GMC
@@ -445,27 +455,34 @@ const MARKETS = {
 // v7 NEW: SHIPPING TIME CONFIGURATION
 // ============================================
 
-// Handling time (same for all countries) - days to prepare order
-const HANDLING_TIME = { min: 1, max: 2 };
+// Handling time (same for all countries) - 1 business day always
+const HANDLING_TIME = { min: 1, max: 1 };
 
 // Transit times by region (in business days)
+// Source: shipping pages (total delivery = handling 1 day + transit)
+// GR page: 2-4 days total → transit 1-3
+// DE page: 2-4 days total → transit 1-3
+// EU page: 3-5 days total → transit 2-4
+// GB page: 3-6 days total → transit 2-5
+// US page: 3-7 days total → transit 2-6
+// Other page: 3-8 days total → transit 2-7
 const TRANSIT_TIMES = {
-  GR: { min: 1, max: 2 },      // Greece - domestic
-  DE: { min: 1, max: 2 },      // Germany - fast EU
-  EU: { min: 2, max: 3 },      // Rest of EU
-  GB: { min: 2, max: 4 },      // UK (post-Brexit)
-  CH: { min: 2, max: 3 },      // Switzerland
-  NO: { min: 2, max: 3 },      // Norway
+  GR: { min: 1, max: 3 },      // Greece - domestic (page: 2-4 total)
+  DE: { min: 1, max: 3 },      // Germany - fast EU (page: 2-4 total)
+  EU: { min: 2, max: 4 },      // Rest of EU (page: 3-5 total)
+  GB: { min: 2, max: 5 },      // UK (page: 3-6 total)
+  CH: { min: 2, max: 4 },      // Switzerland (EU-like)
+  NO: { min: 2, max: 4 },      // Norway (EU-like)
   // IS removed (microstate)
-  US: { min: 2, max: 5 },      // USA
-  CA: { min: 2, max: 3 },      // Canada
-  AU: { min: 3, max: 6 },      // Australia
-  NZ: { min: 3, max: 5 },      // New Zealand
-  MX: { min: 2, max: 4 },      // Mexico
-  AE: { min: 2, max: 3 },      // UAE
-  IL: { min: 2, max: 4 },      // Israel
-  SA: { min: 2, max: 4 },      // Saudi Arabia
-  ASIA: { min: 2, max: 4 },    // Japan, Korea, Singapore, etc.
+  US: { min: 2, max: 6 },      // USA (page: 3-7 total)
+  CA: { min: 2, max: 4 },      // Canada (EU-like)
+  AU: { min: 2, max: 7 },      // Australia (page: 3-8 "other")
+  NZ: { min: 2, max: 7 },      // New Zealand (page: 3-8 "other")
+  MX: { min: 2, max: 7 },      // Mexico (page: 3-8 "other")
+  AE: { min: 2, max: 7 },      // UAE (page: 3-8 "other")
+  IL: { min: 2, max: 7 },      // Israel (page: 3-8 "other")
+  SA: { min: 2, max: 7 },      // Saudi Arabia (page: 3-8 "other")
+  ASIA: { min: 2, max: 7 },    // Japan, Korea, Singapore, etc. (page: 3-8 "other")
 };
 
 // Map country codes to transit time groups
@@ -534,18 +551,13 @@ const RETURN_POLICY_LABELS = {
 // Google requires a descriptive name matching what the customer sees.
 
 const SHIPPING_SERVICE_MAP = {
-  GR: 'ACS Courier Express',
-  DE: 'DHL Tracked Delivery',
-  // BG removed (GMC unsupported)
-  CZ: 'DHL Tracked Delivery',
+  GR: 'ACS Courier',
   US: 'DHL DDP Express',
   PR: 'DHL DDP Express',
-  MX: 'DHL Express',
-  SA: 'DHL Express',
-  // All others default to UPS International Express
+  // All others default to DHL Express
 };
 
-const DEFAULT_SHIPPING_SERVICE = 'UPS International Express';
+const DEFAULT_SHIPPING_SERVICE = 'DHL Express';
 
 
 // ============================================
@@ -846,7 +858,9 @@ function formatShippingTimeAttributes(countryCode) {
 
   return `
       <g:ships_from_country>GR</g:ships_from_country>
-      <g:return_policy_label>${returnLabel}</g:return_policy_label>`;
+      <g:return_policy_label>${returnLabel}</g:return_policy_label>
+      <g:shipping_handling_business_days>Mon,Tue,Wed,Thu,Fri</g:shipping_handling_business_days>
+      <g:shipping_transit_business_days>Mon,Tue,Wed,Thu,Fri</g:shipping_transit_business_days>`;
 }
 
 

@@ -1,5 +1,5 @@
 /**
- * Skroutz.gr Product Feed Generator v2.0 for EMMANUELA
+ * Skroutz.gr Product Feed Generator v2.1 for EMMANUELA
  *
  * Generates a valid XML product feed per Skroutz.gr specifications.
  * Reference: https://developer.skroutz.gr/el/feedspec/
@@ -22,10 +22,10 @@
  *   - Size field fix: comma-separated sizes at product level + "One Size" fallback (v1.4)
  *   - Size dedup fix: deduplicate sizes (XS,XS,XS → XS) (v1.5)
  *   - Size "One Size" restored per Skroutz quality reviewer explicit instruction (v1.6)
- *   - v2.0 MAJOR FIXES:
- *     - Μονό/Ζευγάρι split: separate entries per color × second option (not just color)
- *     - Color-correct images: only variant-specific images per entry (no cross-color contamination)
- *     - Smart title: remove redundant color suffix when material phrase implies it
+ *   - v2.0: Color-correct images, smart titles
+ *   - v2.1: REVERTED Μονό/Ζευγάρι split — Skroutz flagged as duplicates.
+ *     Μονό/Ζευγάρι/Αριστερό/Δεξί are Shopify variant options, not separate products.
+ *     Grouping is now color-only (Shopify parent/child logic). Price = lowest in color group.
  *
  * Usage:
  *   node skroutz-feed-gr.js                    # Generate feed
@@ -34,7 +34,7 @@
  * Output: feeds/skroutz-gr.xml
  *
  * Created: 2026-02-09
- * Updated: 2026-03-20 — v2.0: Μονό/Ζευγάρι split, color-correct images, smart titles
+ * Updated: 2026-03-24 — v2.1: Revert Μονό/Ζευγάρι split (Skroutz duplicate rejection)
  */
 
 const https = require('https');
@@ -269,32 +269,6 @@ function extractVariantSize(selectedOptions) {
   for (const opt of selectedOptions) {
     const name = (opt.name || '').toLowerCase();
     if (name.includes('μέγεθος') || name.includes('size') || name.includes('νούμερο')) {
-      return opt.value;
-    }
-  }
-  return null;
-}
-
-// Extract product-splitting option value — ONLY known patterns like Μονό/Ζευγάρι, Αριστερό/Δεξί
-// These represent fundamentally different products (single vs pair earrings) and must be separate entries.
-// Other options (Μήκος, Title, etc.) are NOT product-splitting and should be ignored.
-const SPLITTING_VALUES = [
-  'μονό', 'ζευγάρι', 'ζεύγος',
-  'αριστερό', 'δεξί', 'αριστερά', 'δεξιά',
-  'pair', 'single', 'left', 'right',
-];
-
-function extractSecondOption(selectedOptions) {
-  if (!selectedOptions) return null;
-  for (const opt of selectedOptions) {
-    const name = (opt.name || '').toLowerCase();
-    // Skip color and size options (handled separately)
-    if (name.includes('χρώμα') || name.includes('color') || name.includes('colour')
-        || name === 'χρώμα μετάλλου') continue;
-    if (name.includes('μέγεθος') || name.includes('size') || name.includes('νούμερο')) continue;
-    // Only match known product-splitting values
-    const val = (opt.value || '').toLowerCase().trim();
-    if (SPLITTING_VALUES.includes(val)) {
       return opt.value;
     }
   }
@@ -541,11 +515,24 @@ function generateSkroutzFeed(products) {
     // Determine if product has size options (rings, etc.)
     const hasSizeOption = variants.some(v => extractVariantSize(v.selectedOptions) !== null);
 
-    // Detect second option axis (not color, not size) — e.g., Μονό/Ζευγάρι
-    const hasSecondOption = variants.some(v => extractSecondOption(v.selectedOptions) !== null);
+    // Group in-stock variants by color → 1 feed entry per color
+    // Μονό/Ζευγάρι: if product has BOTH, only include Μονό (base unit).
+    // If product only has Ζευγάρι (no Μονό option), keep it as-is.
+    // Αριστερό/Δεξί: merged into same color group (same product, same price).
+    const PAIR_VALUES = ['ζευγάρι', 'ζεύγος', 'pair'];
+    const SINGLE_VALUES = ['μονό', 'single'];
 
-    // Group in-stock variants by color × secondOption → 1 feed entry per unique combo
-    // This ensures Μονό and Ζευγάρι become separate entries with correct prices
+    // Detect if product has both Μονό and Ζευγάρι options
+    const hasSingleOption = variants.some(v => {
+      if (!v.selectedOptions) return false;
+      return v.selectedOptions.some(opt => SINGLE_VALUES.includes((opt.value || '').toLowerCase().trim()));
+    });
+    const hasPairOption = variants.some(v => {
+      if (!v.selectedOptions) return false;
+      return v.selectedOptions.some(opt => PAIR_VALUES.includes((opt.value || '').toLowerCase().trim()));
+    });
+    const excludePairs = hasSingleOption && hasPairOption;
+
     const entryGroups = {};
 
     variants.forEach(variant => {
@@ -555,15 +542,26 @@ function generateSkroutzFeed(products) {
         stats.outOfStock++;
         return;
       }
+
+      // If product has both Μονό and Ζευγάρι, exclude Ζευγάρι variants
+      if (excludePairs && variant.selectedOptions) {
+        const isPair = variant.selectedOptions.some(opt =>
+          PAIR_VALUES.includes((opt.value || '').toLowerCase().trim())
+        );
+        if (isPair) {
+          stats.outOfStock++; // count as excluded
+          return;
+        }
+      }
+
       stats.inStock++;
 
       const rawColor = extractVariantColor(variant.selectedOptions);
       const color = getGreekColor(rawColor) || getGreekColor(product.metafields.color) || 'Ασημί';
-      const secondOpt = hasSecondOption ? (extractSecondOption(variant.selectedOptions) || null) : null;
-      const groupKey = secondOpt ? `${color}|||${secondOpt}` : color;
+      const groupKey = color;
 
       if (!entryGroups[groupKey]) {
-        entryGroups[groupKey] = { color, secondOption: secondOpt, variants: [] };
+        entryGroups[groupKey] = { color, variants: [] };
       }
       entryGroups[groupKey].variants.push(variant);
     });
@@ -600,7 +598,7 @@ function generateSkroutzFeed(products) {
 
     // Create 1 entry per group (color × second option)
     for (const [groupKey, group] of Object.entries(entryGroups)) {
-      const { color, secondOption: secondOpt, variants: groupVariants } = group;
+      const { color, variants: groupVariants } = group;
       const repVariant = groupVariants[0];
 
       // Images: use variant image boundaries to select same-color images
@@ -649,7 +647,7 @@ function generateSkroutzFeed(products) {
       // Weight from representative variant
       const weightGrams = getWeightGrams(repVariant);
 
-      // Build name: product title + material phrase [+ secondOption] [+ color if not redundant]
+      // Build name: product title + material phrase [+ color if not redundant]
       // Material phrase already implies color in most cases (Επιχρυσωμένο→Χρυσό, Οξειδωμένο→Μαύρο)
       const rawColorForMaterial = extractVariantColor(repVariant.selectedOptions);
       const materialPhrase = getMaterialPhrase(rawColorForMaterial);
@@ -657,10 +655,6 @@ function generateSkroutzFeed(products) {
       // Add material phrase (always for jewelry — Skroutz requirement)
       if (materialPhrase) {
         name = `${name} ${materialPhrase}`;
-      }
-      // Add second option label (Μονό/Ζευγάρι/Αριστερό/Δεξί) when present
-      if (secondOpt) {
-        name = `${name} ${secondOpt}`;
       }
       // Add color suffix ONLY when not already implied by the material phrase
       // e.g., skip "Χρυσό" after "Επιχρυσωμένο Ασήμι 925" but keep "Μπλε" after "Ασήμι 925"
@@ -678,7 +672,6 @@ function generateSkroutzFeed(products) {
       let mpn = baseMpn;
       if (entryCount > 1) {
         mpn = `${baseMpn}-${color}`;
-        if (secondOpt) mpn = `${mpn}-${secondOpt}`;
       }
 
       // EAN/Barcode

@@ -666,7 +666,7 @@ function generateBestPriceFeed(products) {
       let item = '';
       item += `    <product>\n`;
       item += `      <productId>${repVariant.id}</productId>\n`;
-      item += `      <title>${escapeXml(title)}</title>\n`;
+      item += `      <title><![CDATA[${title}]]></title>\n`;
       item += `      <productURL>https://${DOMAIN}/products/${product.handle}?variant=${repVariant.id}</productURL>\n`;
 
       // Images: color-correct only

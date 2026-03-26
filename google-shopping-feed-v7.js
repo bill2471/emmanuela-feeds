@@ -511,16 +511,16 @@ const TRANSIT_GROUP = {
 // Maps country codes to GMC return_policy_label values.
 // - "default" = EU free returns (seller pays) — used by EU countries + GR/DE/GB sub-account defaults
 // - "international_returns" = customer pays return shipping, 30 days
-// - "us_no_returns" = no returns accepted
+// (Previously: "us_no_returns" = no returns. Changed Session 7: US now accepts returns like other non-EU.)
 //
 // GR/DE/GB each have their own sub-account where "default" maps to
 // the correct policy for that country. Only the Jewelry sub-account
 // (47 countries) needs custom labels for non-EU countries.
 
 const RETURN_POLICY_LABELS = {
-  // US + Puerto Rico: no returns accepted
-  US: 'us_no_returns',
-  PR: 'us_no_returns',
+  // US + Puerto Rico: customer pays return shipping, 30 days (same as other non-EU)
+  US: 'international_returns',
+  PR: 'international_returns',
   // International: customer pays return shipping
   // v11.0: Removed LI (microstate removed from MARKETS)
   CH: 'international_returns',

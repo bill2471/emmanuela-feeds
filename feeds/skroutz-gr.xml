@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-03-27 13:28</created_at>
+  <created_at>2026-03-27 19:18</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -282,7 +282,10 @@
         <id>31372730794019</id>
         <name><![CDATA[Πλατιά σκουλαρίκια κρίκοι από Ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/platia-skoularikia-krikoi?variant=31372730794019]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-1.jpg?v=1774616918]]></image>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-2.jpg?v=1774616918]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-platia-skoylarikia-krikoi-apo-ashmi-925-kosmhmata-emmanuela-458222.jpg?v=1774616918]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-platia-skoylarikia-krikoi-apo-ashmi-925-kosmhmata-emmanuela-317842.jpg?v=1774616918]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>109.00</price_with_vat>
         <vat>24.00</vat>
@@ -301,13 +304,16 @@
         <name><![CDATA[Πλατιά σκουλαρίκια κρίκοι από Επιχρυσωμένο Ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/platia-skoularikia-krikoi?variant=31372730826787]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-1.jpg?v=1774616918]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-4.jpg?v=1774616918]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-platia-skoylarikia-krikoi-apo-ashmi-925-kosmhmata-emmanuela-949413.jpg?v=1774616918]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-3.jpg?v=1774616918]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>109.00</price_with_vat>
         <vat>24.00</vat>
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1062-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>5</quantity>
+        <quantity>4</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>3</weight>

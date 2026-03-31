@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-03-30 19:22</created_at>
+  <created_at>2026-03-31 02:34</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -7986,7 +7986,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[4060-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>9</quantity>
+        <quantity>8</quantity>
         <color>Χρυσό</color>
         <size>S / 28-33 cm Περίμετρος λαιμού,M / 33-38 cm Περίμετρος λαιμού,L / 39-43 cm Περίμετρος λαιμού</size>
         <variations>
@@ -7994,7 +7994,7 @@
             <variationid>33034738696227</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>S / 28-33 cm Περίμετρος λαιμού</size>
-            <quantity>3</quantity>
+            <quantity>2</quantity>
             <manufacturersku><![CDATA[4060]]></manufacturersku>
           </variation>
           <variation>

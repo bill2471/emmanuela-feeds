@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-04-01 13:42</created_at>
+  <created_at>2026-04-01 19:23</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -25832,7 +25832,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[3049GRS-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>29</quantity>
+        <quantity>28</quantity>
         <color>Χρυσό</color>
         <size>Small 19-20cm/7.5 &amp;quot;,Medium 21-22cm/8.3 &amp;quot;,Large 23-24cm/9.2 &amp;quot;</size>
         <variations>
@@ -25840,7 +25840,7 @@
             <variationid>49707851284814</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>Small 19-20cm/7.5 &amp;quot;</size>
-            <quantity>10</quantity>
+            <quantity>9</quantity>
             <manufacturersku><![CDATA[3049GRS]]></manufacturersku>
           </variation>
           <variation>

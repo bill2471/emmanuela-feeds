@@ -69,6 +69,14 @@ jobs:
           echo "🏭 Generating Local Inventory Feed (Greece)..."
           node local-inventory-feed-gr.js
 
+      - name: Run Google Shopping feed generator (Shoes)
+        env:
+          SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_SHOES_ACCESS_TOKEN }}
+        run: |
+          COUNTRY="${{ github.event.inputs.country || 'all' }}"
+          echo "👟 Generating Shoes Google Shopping feeds for: $COUNTRY"
+          node google-shopping-feed-shoes-v1.js $COUNTRY
+
       - name: Commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

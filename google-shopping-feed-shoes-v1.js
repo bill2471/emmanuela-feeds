@@ -189,6 +189,82 @@ function getMaterial(language) {
 
 
 // ============================================
+// PRODUCT HIGHLIGHTS (per language — max 6 bullet points)
+// ============================================
+
+const PRODUCT_HIGHLIGHTS = {
+  en: [
+    'Handcrafted in Greece by skilled artisans',
+    'Made from 100% genuine leather',
+    'Anti-slip EVA rubber outsole',
+    'Leather insole that molds to your feet',
+    'Free shipping to most countries',
+    'Easy 14-day returns',
+  ],
+  de: [
+    'Handgefertigt in Griechenland von erfahrenen Kunsthandwerkern',
+    'Aus 100% echtem Leder gefertigt',
+    'Rutschfeste EVA-Gummisohle',
+    'Lederinnensohle, die sich dem Fuß anpasst',
+    'Kostenloser Versand in die meisten Länder',
+    'Einfache Rückgabe innerhalb von 14 Tagen',
+  ],
+  fr: [
+    'Fabriqué à la main en Grèce par des artisans qualifiés',
+    'Fabriqué en cuir véritable 100%',
+    'Semelle extérieure antidérapante en caoutchouc EVA',
+    'Semelle intérieure en cuir qui épouse la forme du pied',
+    'Livraison gratuite dans la plupart des pays',
+    'Retours faciles sous 14 jours',
+  ],
+  it: [
+    'Realizzato a mano in Grecia da artigiani esperti',
+    'Realizzato in 100% vera pelle',
+    'Suola esterna antiscivolo in gomma EVA',
+    'Soletta in pelle che si adatta al piede',
+    'Spedizione gratuita nella maggior parte dei paesi',
+    'Reso facile entro 14 giorni',
+  ],
+  es: [
+    'Hecho a mano en Grecia por artesanos cualificados',
+    'Fabricado con 100% cuero genuino',
+    'Suela exterior antideslizante de goma EVA',
+    'Plantilla de cuero que se amolda al pie',
+    'Envío gratuito a la mayoría de los países',
+    'Devoluciones fáciles en 14 días',
+  ],
+  el: [
+    'Χειροποίητο στην Ελλάδα από εξειδικευμένους τεχνίτες',
+    'Κατασκευασμένο από 100% γνήσιο δέρμα',
+    'Αντιολισθητική σόλα από καουτσούκ EVA',
+    'Δερμάτινος πάτος που προσαρμόζεται στο πόδι',
+    'Δωρεάν αποστολή στις περισσότερες χώρες',
+    'Εύκολες επιστροφές εντός 14 ημερών',
+  ],
+  nl: [
+    'Handgemaakt in Griekenland door ervaren ambachtslieden',
+    'Gemaakt van 100% echt leer',
+    'Antislip EVA-rubberen buitenzool',
+    'Leren binnenzool die zich vormt naar uw voet',
+    'Gratis verzending naar de meeste landen',
+    'Eenvoudig retourneren binnen 14 dagen',
+  ],
+  ja: [
+    'ギリシャの熟練職人による手作り',
+    '100%本革製',
+    '滑り止めEVAラバーアウトソール',
+    '足に馴染むレザーインソール',
+    'ほとんどの国への送料無料',
+    '14日間の簡単返品',
+  ],
+};
+
+function getProductHighlights(language) {
+  return PRODUCT_HIGHLIGHTS[language] || PRODUCT_HIGHLIGHTS['en'];
+}
+
+
+// ============================================
 // PRODUCT TYPE TRANSLATIONS
 // ============================================
 
@@ -1145,6 +1221,12 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
 
       variantAdditionalImages.forEach(img => { item += `\n      <g:additional_image_link>${img}</g:additional_image_link>`; });
 
+      // Lifestyle image (always 2nd image in Shopify)
+      const lifestyleImage = images[1]?.src;
+      if (lifestyleImage && lifestyleImage !== variantImage) {
+        item += `\n      <g:lifestyle_image_link>${lifestyleImage}</g:lifestyle_image_link>`;
+      }
+
       // Video links
       if (product.videos && product.videos.length > 0) {
         product.videos.slice(0, 10).forEach(video => {
@@ -1180,7 +1262,58 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
 
       const weightFormatted = formatWeight(variant.weight);
       if (weightFormatted) item += `\n      <g:shipping_weight>${weightFormatted}</g:shipping_weight>`;
-      if (shoeSize) item += `\n      <g:size><![CDATA[${shoeSize}]]></g:size>`;
+      if (shoeSize) {
+        item += `\n      <g:size><![CDATA[${shoeSize}]]></g:size>`;
+        item += `\n      <g:size_type>regular</g:size_type>`;
+        item += `\n      <g:size_system>EU</g:size_system>`;
+      }
+
+      // Pattern (shoes are solid leather unless title indicates otherwise)
+      item += `\n      <g:pattern>Solid</g:pattern>`;
+
+      // Product highlights (localized bullet points)
+      const highlights = getProductHighlights(market.language);
+      highlights.forEach(h => {
+        item += `\n      <g:product_highlight><![CDATA[${h}]]></g:product_highlight>`;
+      });
+
+      // Product detail (structured specs)
+      item += `\n      <g:product_detail>`;
+      item += `\n        <g:section_name>General</g:section_name>`;
+      item += `\n        <g:attribute_name>Country of Origin</g:attribute_name>`;
+      item += `\n        <g:attribute_value>Greece</g:attribute_value>`;
+      item += `\n      </g:product_detail>`;
+      item += `\n      <g:product_detail>`;
+      item += `\n        <g:section_name>General</g:section_name>`;
+      item += `\n        <g:attribute_name>Craftsmanship</g:attribute_name>`;
+      item += `\n        <g:attribute_value>Handmade</g:attribute_value>`;
+      item += `\n      </g:product_detail>`;
+      item += `\n      <g:product_detail>`;
+      item += `\n        <g:section_name>Sole</g:section_name>`;
+      item += `\n        <g:attribute_name>Outsole Material</g:attribute_name>`;
+      item += `\n        <g:attribute_value>EVA Rubber</g:attribute_value>`;
+      item += `\n      </g:product_detail>`;
+      item += `\n      <g:product_detail>`;
+      item += `\n        <g:section_name>Sole</g:section_name>`;
+      item += `\n        <g:attribute_name>Insole</g:attribute_name>`;
+      item += `\n        <g:attribute_value>Leather</g:attribute_value>`;
+      item += `\n      </g:product_detail>`;
+
+      // Custom labels for campaign segmentation
+      // label_0: product type (sandals, mules, espadrilles)
+      const typeEN = translateProductType(product.product_type, 'en').toLowerCase();
+      item += `\n      <g:custom_label_0><![CDATA[${typeEN}]]></g:custom_label_0>`;
+      // label_1: price range
+      const priceNum = adjustedVariantPrice;
+      const priceRange = priceNum < 50 ? 'under-50' : priceNum < 80 ? '50-80' : priceNum < 120 ? '80-120' : 'over-120';
+      item += `\n      <g:custom_label_1>${priceRange}</g:custom_label_1>`;
+      // label_2: gender
+      item += `\n      <g:custom_label_2>${gender}</g:custom_label_2>`;
+      // label_3: has video
+      item += `\n      <g:custom_label_3>${product.videos?.length > 0 ? 'has-video' : 'no-video'}</g:custom_label_3>`;
+      // label_4: has sale
+      const hasSale = variant.compare_at_price && parseFloat(variant.compare_at_price) > parseFloat(variant.price);
+      item += `\n      <g:custom_label_4>${hasSale ? 'on-sale' : 'regular-price'}</g:custom_label_4>`;
 
       // Sale price handling
       if (variant.compare_at_price && parseFloat(variant.compare_at_price) > parseFloat(variant.price)) {

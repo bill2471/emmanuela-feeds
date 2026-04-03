@@ -908,6 +908,82 @@ function translateMaterial(materialStr, language) {
 
 
 // ============================================
+// PRODUCT HIGHLIGHTS (per language — max 6 bullet points)
+// ============================================
+
+const PRODUCT_HIGHLIGHTS = {
+  en: [
+    'Handcrafted in Greece by skilled artisans',
+    'Made with premium quality materials',
+    'Unique artisan design — no two pieces are identical',
+    'Comes in a beautiful gift-ready box',
+    'Free shipping to most countries',
+    'Easy 14-day returns',
+  ],
+  de: [
+    'Handgefertigt in Griechenland von erfahrenen Kunsthandwerkern',
+    'Hergestellt aus hochwertigen Materialien',
+    'Einzigartiges Kunsthandwerk — kein Stück gleicht dem anderen',
+    'Wird in einer schönen Geschenkbox geliefert',
+    'Kostenloser Versand in die meisten Länder',
+    'Einfache Rückgabe innerhalb von 14 Tagen',
+  ],
+  fr: [
+    'Fabriqué à la main en Grèce par des artisans qualifiés',
+    'Fabriqué avec des matériaux de qualité supérieure',
+    'Design artisanal unique — aucune pièce n\'est identique',
+    'Livré dans un bel écrin cadeau',
+    'Livraison gratuite dans la plupart des pays',
+    'Retours faciles sous 14 jours',
+  ],
+  it: [
+    'Realizzato a mano in Grecia da artigiani esperti',
+    'Realizzato con materiali di prima qualità',
+    'Design artigianale unico — nessun pezzo è identico',
+    'Consegnato in un\'elegante confezione regalo',
+    'Spedizione gratuita nella maggior parte dei paesi',
+    'Reso facile entro 14 giorni',
+  ],
+  es: [
+    'Hecho a mano en Grecia por artesanos cualificados',
+    'Fabricado con materiales de primera calidad',
+    'Diseño artesanal único — no hay dos piezas iguales',
+    'Se entrega en una hermosa caja de regalo',
+    'Envío gratuito a la mayoría de los países',
+    'Devoluciones fáciles en 14 días',
+  ],
+  el: [
+    'Χειροποίητο στην Ελλάδα από εξειδικευμένους τεχνίτες',
+    'Κατασκευασμένο από υλικά υψηλής ποιότητας',
+    'Μοναδικός σχεδιασμός — κανένα κομμάτι δεν είναι ίδιο',
+    'Παραδίδεται σε όμορφη συσκευασία δώρου',
+    'Δωρεάν αποστολή στις περισσότερες χώρες',
+    'Εύκολες επιστροφές εντός 14 ημερών',
+  ],
+  nl: [
+    'Handgemaakt in Griekenland door ervaren ambachtslieden',
+    'Gemaakt van hoogwaardige materialen',
+    'Uniek ambachtelijk ontwerp — geen twee stuks zijn identiek',
+    'Wordt geleverd in een prachtige geschenkdoos',
+    'Gratis verzending naar de meeste landen',
+    'Eenvoudig retourneren binnen 14 dagen',
+  ],
+  ja: [
+    'ギリシャの熟練職人による手作り',
+    '高品質な素材を使用',
+    'ユニークな職人デザイン — 同じものは二つとない',
+    '美しいギフトボックス入り',
+    'ほとんどの国への送料無料',
+    '14日間の簡単返品',
+  ],
+};
+
+function getProductHighlights(language) {
+  return PRODUCT_HIGHLIGHTS[language] || PRODUCT_HIGHLIGHTS['en'];
+}
+
+
+// ============================================
 // FETCH PRODUCTS (GraphQL with weight)
 // ============================================
 
@@ -1450,6 +1526,12 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
 
       variantAdditionalImages.forEach(img => { item += `\n      <g:additional_image_link>${img}</g:additional_image_link>`; });
 
+      // Lifestyle image (always 2nd image in Shopify)
+      const lifestyleImage = images[1]?.src;
+      if (lifestyleImage && lifestyleImage !== variantImage) {
+        item += `\n      <g:lifestyle_image_link>${lifestyleImage}</g:lifestyle_image_link>`;
+      }
+
       // v7.5: Add video links (up to 10, direct-hosted only — no YouTube)
       if (product.videos && product.videos.length > 0) {
         product.videos.slice(0, 10).forEach(video => {
@@ -1483,7 +1565,51 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
 
       const weightFormatted = formatWeight(variant.weight);
       if (weightFormatted) item += `\n      <g:shipping_weight>${weightFormatted}</g:shipping_weight>`;
-      if (ringSize) item += `\n      <g:size><![CDATA[${ringSize}]]></g:size>`;
+      if (ringSize) {
+        item += `\n      <g:size><![CDATA[${ringSize}]]></g:size>`;
+        item += `\n      <g:size_system>EU</g:size_system>`;
+      }
+
+      // Product highlights (localized bullet points)
+      const highlights = getProductHighlights(market.language);
+      highlights.forEach(h => {
+        item += `\n      <g:product_highlight><![CDATA[${h}]]></g:product_highlight>`;
+      });
+
+      // Product detail (structured specs)
+      item += `\n      <g:product_detail>`;
+      item += `\n        <g:section_name>General</g:section_name>`;
+      item += `\n        <g:attribute_name>Country of Origin</g:attribute_name>`;
+      item += `\n        <g:attribute_value>Greece</g:attribute_value>`;
+      item += `\n      </g:product_detail>`;
+      item += `\n      <g:product_detail>`;
+      item += `\n        <g:section_name>General</g:section_name>`;
+      item += `\n        <g:attribute_name>Craftsmanship</g:attribute_name>`;
+      item += `\n        <g:attribute_value>Handmade</g:attribute_value>`;
+      item += `\n      </g:product_detail>`;
+      if (material) {
+        item += `\n      <g:product_detail>`;
+        item += `\n        <g:section_name>Materials</g:section_name>`;
+        item += `\n        <g:attribute_name>Primary Material</g:attribute_name>`;
+        item += `\n        <g:attribute_value><![CDATA[${material}]]></g:attribute_value>`;
+        item += `\n      </g:product_detail>`;
+      }
+
+      // Custom labels for campaign segmentation
+      // label_0: product type (rings, necklaces, earrings, etc.)
+      const typeEN = translateProductType(product.product_type, 'en').toLowerCase();
+      item += `\n      <g:custom_label_0><![CDATA[${typeEN}]]></g:custom_label_0>`;
+      // label_1: price range
+      const priceNum = adjustedVariantPrice;
+      const priceRange = priceNum < 30 ? 'under-30' : priceNum < 60 ? '30-60' : priceNum < 100 ? '60-100' : 'over-100';
+      item += `\n      <g:custom_label_1>${priceRange}</g:custom_label_1>`;
+      // label_2: gender
+      item += `\n      <g:custom_label_2>${gender}</g:custom_label_2>`;
+      // label_3: has video
+      item += `\n      <g:custom_label_3>${product.videos?.length > 0 ? 'has-video' : 'no-video'}</g:custom_label_3>`;
+      // label_4: has sale
+      const hasSale = variant.compare_at_price && parseFloat(variant.compare_at_price) > parseFloat(variant.price);
+      item += `\n      <g:custom_label_4>${hasSale ? 'on-sale' : 'regular-price'}</g:custom_label_4>`;
 
       // Sale price handling (v10: both prices adjusted with same market factor)
       if (variant.compare_at_price && parseFloat(variant.compare_at_price) > parseFloat(variant.price)) {

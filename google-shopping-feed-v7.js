@@ -933,7 +933,7 @@ async function fetchProductsWithOptions() {
                   mediaContentType
                   ... on MediaImage {
                     id
-                    image { url }
+                    image { id url }
                   }
                   ... on Video {
                     id
@@ -978,6 +978,7 @@ async function fetchProductsWithOptions() {
           if (m.mediaContentType === 'IMAGE' && m.image?.url) {
             images.push({
               id: m.id.replace('gid://shopify/MediaImage/', ''),
+              productImageId: m.image.id ? m.image.id.replace('gid://shopify/ProductImage/', '') : null,
               src: m.image.url
             });
           } else if (m.mediaContentType === 'VIDEO' && m.sources?.length > 0) {
@@ -1335,13 +1336,14 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
     if (!mainImage) { stats.noImage++; return; }
 
     // v11.2: Pre-compute image ranges per variant for color-correct additional images
+    // Fix: match via productImageId (ProductImage GID) not MediaImage GID
     const allVariantImageIds = new Set(
       variants.map(v => v.image_id).filter(Boolean)
     );
     const variantImageIndices = [];
     images.forEach((img, idx) => {
-      if (allVariantImageIds.has(img.id)) {
-        variantImageIndices.push({ id: img.id, idx });
+      if (img.productImageId && allVariantImageIds.has(img.productImageId)) {
+        variantImageIndices.push({ id: img.productImageId, idx });
       }
     });
     variantImageIndices.sort((a, b) => a.idx - b.idx);
@@ -1423,8 +1425,12 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
           .filter(src => src !== variantImage)
           .slice(0, 9);
       } else {
+        // Fallback: use all product images (no color-correct grouping)
         variantImage = mainImage;
-        variantAdditionalImages = [];
+        variantAdditionalImages = images
+          .map(img => img.src)
+          .filter(src => src !== mainImage)
+          .slice(0, 9);
       }
 
       const translatedHandle = prodTrans.handle || enFallback.handle || product.handle;

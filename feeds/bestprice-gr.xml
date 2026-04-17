@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-04-17 13:41</date>
+  <date>2026-04-17 19:25</date>
   <products>
     <product>
       <productId>31372692389923</productId>
@@ -8291,6 +8291,22 @@
       <shipping>0</shipping>
     </product>
     <product>
+      <productId>31373669826595</productId>
+      <title><![CDATA[Δαχτυλίδι "πλοκάμια"]]></title>
+      <productURL>https://emmanuela.gr/products/daxtylidi-plokamia?variant=31373669826595</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/53-daxtylidi-plokamia-apo-ashmi-925-kosmhmata-emmanuela-806663.jpg?v=1767369975</imageURL>
+      <price>62.00</price>
+      <category_path>Κοσμήματα-&gt;Δαχτυλίδια-&gt;Γυναικεία δαχτυλίδια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>LU446riWo</MPN>
+      <color>ασημί</color>
+      <size>53,54,55,56,57,58,59,60,61,62,63,64</size>
+      <weight>5</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
       <productId>31373675790371</productId>
       <title><![CDATA[Κρεμαστός σταυρός]]></title>
       <productURL>https://emmanuela.gr/products/kremasto-mentagion-stayros?variant=31373675790371</productURL>
@@ -13450,7 +13466,7 @@
       <title><![CDATA[Δαχτυλίδι με μαργαριτάρια & swarovski - Ασημένιο]]></title>
       <productURL>https://emmanuela.gr/products/daxtylidi-margaritaria-swarovski?variant=31791964356643</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/48-daxtylidi-me-margaritaria-swarovski-apo-ashmi-925-kosmhmata-emmanuela-456235.jpg?v=1776421490</imageURL>
-      <price>54.00</price>
+      <price>64.00</price>
       <category_path>Κοσμήματα-&gt;Δαχτυλίδια-&gt;Γυναικεία δαχτυλίδια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>
@@ -13466,7 +13482,7 @@
       <title><![CDATA[Δαχτυλίδι με μαργαριτάρια & swarovski - Επιχρυσωμένο]]></title>
       <productURL>https://emmanuela.gr/products/daxtylidi-margaritaria-swarovski?variant=31791964389411</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/48-daxtylidi-me-margaritaria-swarovski-apo-ashmi-925-kosmhmata-emmanuela-456235.jpg?v=1776421490</imageURL>
-      <price>54.00</price>
+      <price>64.00</price>
       <category_path>Κοσμήματα-&gt;Δαχτυλίδια-&gt;Γυναικεία δαχτυλίδια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>

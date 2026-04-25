@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-04-25 07:39</date>
+  <date>2026-04-25 13:27</date>
   <products>
     <product>
       <productId>31372692389923</productId>
@@ -6171,27 +6171,8 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>39605538160675</productId>
-      <title><![CDATA[Κρεμαστά σκουλαρίκια jackets με πέτρες - Χρυσό]]></title>
-      <productURL>https://emmanuela.gr/products/kremasta-skoularikia-petres?variant=39605538160675</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/xryso-kremasta-skoylarikia-jackets-me-petres-apo-ashmi-925-kosmhmata-emmanuela-848344.jpg?v=1767371781</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/xryso-kremasta-skoylarikia-jackets-me-petres-apo-ashmi-925-kosmhmata-emmanuela-848344.jpg?v=1767371781</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/xryso-kremasta-skoylarikia-jackets-me-petres-apo-ashmi-925-kosmhmata-emmanuela-254227.jpg?v=1767371786</img2>
-      </imagesURL>
-      <price>72.00</price>
-      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1269G</MPN>
-      <color>χρυσό</color>
-      <weight>6</weight>
-      <shipping>0</shipping>
-    </product>
-    <product>
       <productId>39605538193443</productId>
-      <title><![CDATA[Κρεμαστά σκουλαρίκια jackets με πέτρες - Ασημένιο]]></title>
+      <title><![CDATA[Κρεμαστά σκουλαρίκια jackets με πέτρες]]></title>
       <productURL>https://emmanuela.gr/products/kremasta-skoularikia-petres?variant=39605538193443</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-kremasta-skoylarikia-jackets-me-petres-apo-ashmi-925-kosmhmata-emmanuela-223019.jpg?v=1767371790</imageURL>
       <imagesURL>

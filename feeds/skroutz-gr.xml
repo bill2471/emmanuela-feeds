@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-04-25 07:39</created_at>
+  <created_at>2026-04-25 13:27</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -2656,7 +2656,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1273G-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>10</quantity>
+        <quantity>9</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>5</weight>
@@ -10089,25 +10089,6 @@
         <shipping>0</shipping>
       </product>
       <product>
-        <id>39605538160675</id>
-        <name><![CDATA[Κρεμαστά σκουλαρίκια jackets με πέτρες από Επιχρυσωμένο Ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/kremasta-skoularikia-petres?variant=39605538160675]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/xryso-kremasta-skoylarikia-jackets-me-petres-apo-ashmi-925-kosmhmata-emmanuela-848344.jpg?v=1767371781]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/xryso-kremasta-skoylarikia-jackets-me-petres-apo-ashmi-925-kosmhmata-emmanuela-254227.jpg?v=1767371786]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
-        <price_with_vat>72.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1269G-Χρυσό]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>1</quantity>
-        <color>Χρυσό</color>
-        <size>One Size</size>
-        <weight>6</weight>
-        <description><![CDATA[Ασημένια χειροποίητα ear jackets με ροζάριο-αλυσίδα και διάφορες πέτρες που μαγνητίζουν τα βλέμματα. Boho chic αισθητική που συνδυάζει την ελευθερία του στυλ με την κομψότητα του ασημιού 925. Χαρακτηριστικά & Υλικά Υλικό: Επιροδιωμένο ασήμι 925 Τύπος: Κρεμαστά σκουλαρίκια ear jackets Φύλο: Γυναικείο Βάρος: 5,8g Πωλείται: Ζευγάρι — η τιμή αφορά δύο τεμάχια Διαθέσιμα φινιρίσματα: Χρυσό, Ασημένιο Ιδιότητες: Υποαλλεργικό, δε μαυρίζει Χρειάζεται piercing: Ναι Χειροποίητο κόσμημα από την Ελλάδα Η Ιστορία του Κοσμήματος Τα ear jackets είναι η σύγχρονη απάντηση στην ελευθερία έκφρασης μέσα από το κόσμημα. Ο συνδυασμός ροζαριού-αλυσίδας με διάφορες πέτρες δημιουργεί μια boho αισθητική που θυμίζει ταξίδια, περιπέτεια και φυσική ομορφιά. Κάθε πέτρα φέρει τη δική της ενέργεια, ενώ το ασήμι 925 προσφέρει διαχρονική αξία και αντοχή. Πώς να τα φορέσεις Αυτά τα ear jackets προσφέρουν απεριόριστες δυνατότητες στυλ! Το κομμάτι jacket συνδέεται στο πίσω μέρος του καρφιού και κρέμεται κάτω από τον λοβό, δημιουργώντας εντυπωσιακό εφέ μπροστά και πίσω. Μπορείς να τα φορέσεις με το κυρίως καρφωτό σκουλαρίκι που περιλαμβάνεται, ή να τα συνδυάσεις με οποιοδήποτε άλλο καρφωτό σκουλαρίκι θεωρείς ότι ταιριάζει. Για πιο minimal look, φόρεσε μόνο το μπροστινό καρφωτό κομμάτι. Ιδανικά για boho εμφανίσεις, καθημερινό ή βραδινό styling, και ως μοναδικό δώρο για γυναίκες που αγαπούν τα ιδιαίτερα κοσμήματα. Παραδίδεται σε κομψό κουτί δώρου, έτοιμο να το χαρίσεις ή να το κρατήσεις για σένα.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>39605538193443</id>
         <name><![CDATA[Κρεμαστά σκουλαρίκια jackets με πέτρες από Ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/kremasta-skoularikia-petres?variant=39605538193443]]></link>
@@ -10122,7 +10103,7 @@
         <price_with_vat>72.00</price_with_vat>
         <vat>24.00</vat>
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1269-Ασημί]]></mpn>
+        <mpn><![CDATA[1269]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
         <quantity>6</quantity>
         <color>Ασημί</color>

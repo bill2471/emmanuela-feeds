@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-05-03 03:11</created_at>
+  <created_at>2026-05-03 08:26</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -25942,7 +25942,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[4070GS-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>14</quantity>
+        <quantity>13</quantity>
         <color>Χρυσό</color>
         <size>S  11&quot;-13&quot; (28-33cm) Περίμετρος λαιμού,M  13&quot;-15&quot; (33-38cm) Περίμετρος λαιμού,L  15&quot;-17&quot; (38-43cm) Περίμετρος λαιμού</size>
         <variations>
@@ -25964,7 +25964,7 @@
             <variationid>49707987173710</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>L  15&quot;-17&quot; (38-43cm) Περίμετρος λαιμού</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[4070GL]]></manufacturersku>
           </variation>
         </variations>

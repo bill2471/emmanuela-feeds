@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-05-04 08:54</created_at>
+  <created_at>2026-05-04 14:22</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -16136,7 +16136,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU076ri]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>84</quantity>
+        <quantity>83</quantity>
         <color>Ασημί</color>
         <size>57,58,59,60,61,62,63,64,65,66,67,68,69,70</size>
         <variations>
@@ -16158,7 +16158,7 @@
             <variationid>31374494400547</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>59</size>
-            <quantity>6</quantity>
+            <quantity>5</quantity>
             <manufacturersku><![CDATA[LU076ri]]></manufacturersku>
           </variation>
           <variation>
@@ -20208,7 +20208,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1265S-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>10</quantity>
+        <quantity>9</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>1</weight>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-05-06 14:32</created_at>
+  <created_at>2026-05-06 20:10</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -884,9 +884,9 @@
         <shipping>0</shipping>
       </product>
       <product>
-        <id>31372807471139</id>
+        <id>31372807503907</id>
         <name><![CDATA[Σφυρήλατα στέφανα γάμου από Ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/stefana-gamou-sfyrilata?variant=31372807471139]]></link>
+        <link><![CDATA[https://emmanuela.gr/products/stefana-gamou-sfyrilata?variant=31372807503907]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/leykh-saten-sfyrhlata-stefana-gamoy-apo-ashmi-925-kosmhmata-emmanuela-901752.jpg?v=1730713457]]></image>
         <category><![CDATA[Κοσμήματα > Στέφανα Γάμου]]></category>
         <price_with_vat>279.00</price_with_vat>
@@ -894,7 +894,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[9010]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>41</weight>

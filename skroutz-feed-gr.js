@@ -1,31 +1,40 @@
 /**
- * Skroutz.gr Product Feed Generator v2.1 for EMMANUELA
+ * Skroutz.gr Product Feed Generator v3.0 for EMMANUELA
  *
  * Generates a valid XML product feed per Skroutz.gr specifications.
  * Reference: https://developer.skroutz.gr/el/feedspec/
+ * Jewelry-specific: https://partnersupport.skroutz.gr/hc/en-us/articles/15680091365265-Jewelry
  *
- * Key features:
- *   - ALL active products via Shopify GraphQL API
- *   - Skroutz-compliant XML with <mywebstore> root
- *   - Per-color product entries with size variations nested
- *   - Fashion-compliant: mandatory color, additionalimage, size
- *   - Greek availability strings (Skroutz accepted values)
- *   - Greek category paths (Κοσμήματα > Δαχτυλίδια > ...)
- *   - VAT-inclusive pricing (24% standard rate)
- *   - Quantity tracking per variant
- *   - Weight in grams
- *   - Up to 15 additional images per product
- *   - CDATA wrappers for text fields
- *   - Material phrase in titles (v1.1): "από Ασήμι 925", "από Επιχρυσωμένο Ασήμι 925"
- *   - "Χρώμα μετάλλου" option name support (v1.2)
- *   - Validator warning fixes: unique names, category fallback, MPN dedup (v1.3)
- *   - Size field fix: comma-separated sizes at product level + "One Size" fallback (v1.4)
- *   - Size dedup fix: deduplicate sizes (XS,XS,XS → XS) (v1.5)
- *   - Size "One Size" restored per Skroutz quality reviewer explicit instruction (v1.6)
- *   - v2.0: Color-correct images, smart titles
- *   - v2.1: REVERTED Μονό/Ζευγάρι split — Skroutz flagged as duplicates.
- *     Μονό/Ζευγάρι/Αριστερό/Δεξί are Shopify variant options, not separate products.
- *     Grouping is now color-only (Shopify parent/child logic). Price = lowest in color group.
+ * v3.0 (2026-05-11) — Major spec-compliance rewrite:
+ *   - PER-LENGTH SPLITTING: bracelets, chains, necklaces with Μήκος αλυσίδας /
+ *     Περίμετρος καρπού / Διάλεξε είδος και μήκος / Τύπος κορδονιού now generate
+ *     separate <product> entries per (color × length) instead of one merged entry.
+ *     Per Skroutz Jewelry spec: "In earrings, bracelets, and chains, the sizes
+ *     of a product should be sent in separate entries."
+ *   - FILENAME-BASED IMAGE GROUPING: when Shopify variants lack assigned images
+ *     (~44% of catalog), images are filtered per color group based on filename
+ *     keywords (ashmenio-, epixryswmeno-, roz-, mayro-, oxeidwmeno-). This fixes
+ *     the "all colors show same image" bug.
+ *   - CROSS-COLOR IMAGE FILTERING: skips images whose filename indicates a
+ *     different color than the current entry (Skroutz: "additional images must
+ *     not show color variations of the product").
+ *   - TITLE ENRICHMENT FOR CHAINS: products with length axis get length/type in
+ *     title per Skroutz spec ("the title should include the thickness of the
+ *     chain in mm, as well as the length of the chain in cm").
+ *   - MONO DISCLOSURE: products with Μονό/Ζευγάρι where Μονό is kept get
+ *     "Μονό" appended to title so customer knows they're buying a single piece.
+ *
+ * v2.0–v2.1 history retained:
+ *   - v2.0: Color-correct images via variant.image_id boundary heuristic, smart titles
+ *   - v2.1: Reverted Μονό/Ζευγάρι split (Skroutz flagged as duplicates)
+ *
+ * v1.0–v1.6 history retained:
+ *   - v1.1: Material phrase in titles ("από Ασήμι 925")
+ *   - v1.2: "Χρώμα μετάλλου" option name support
+ *   - v1.3: Validator fixes — unique names, category fallback, MPN dedup
+ *   - v1.4: Size field fix — comma-separated + One Size fallback
+ *   - v1.5: Size dedup
+ *   - v1.6: "One Size" restored per Skroutz reviewer
  *
  * Usage:
  *   node skroutz-feed-gr.js                    # Generate feed
@@ -34,7 +43,7 @@
  * Output: feeds/skroutz-gr.xml
  *
  * Created: 2026-02-09
- * Updated: 2026-03-24 — v2.1: Revert Μονό/Ζευγάρι split (Skroutz duplicate rejection)
+ * Updated: 2026-05-11 — v3.0: per-length splitting + filename images + title enrichment
  */
 
 const https = require('https');
@@ -273,6 +282,123 @@ function extractVariantSize(selectedOptions) {
     }
   }
   return null;
+}
+
+// ============================================
+// v3.0: LENGTH-AXIS RECOGNITION
+// ============================================
+// Skroutz spec: bracelets, chains, necklaces must be sent as SEPARATE ENTRIES per
+// size/length. Detect option names that represent a length/circumference axis
+// (which must NOT be merged into a single entry with size variations).
+
+const LENGTH_AXIS_KEYWORDS = [
+  'μήκος',          // Μήκος αλυσίδας → 45cm/60cm/...
+  'περίμετρος',     // Περίμετρος καρπού, Περίμετρος λαιμού → 17cm/19cm/...
+  'διάλεξε είδος',  // Διάλεξε είδος και μήκος → "Τεχνόδερμα 50cm" combined
+  'τύπος κορδονιού',
+  'τύπος αλυσίδας',
+];
+
+function isLengthAxisName(optionName) {
+  if (!optionName) return false;
+  const n = optionName.toLowerCase();
+  return LENGTH_AXIS_KEYWORDS.some(kw => n.includes(kw));
+}
+
+function extractVariantLength(selectedOptions) {
+  if (!selectedOptions) return null;
+  for (const opt of selectedOptions) {
+    if (isLengthAxisName(opt.name)) {
+      return { name: opt.name, value: opt.value };
+    }
+  }
+  return null;
+}
+
+// Parse a length value into normalized cm/chain-type tokens.
+// "45cm" → { length: '45cm', type: null }
+// "Τεχνόδερμα 50cm" → { length: '50cm', type: 'Τεχνόδερμα' }
+// "Αλυσίδα rolo 60cm" → { length: '60cm', type: 'Αλυσίδα rolo' }
+function parseLengthValue(rawValue) {
+  if (!rawValue) return { length: null, type: null };
+  const v = rawValue.trim();
+  const cmMatch = v.match(/(\d{1,3}(?:\.\d+)?)\s*cm/i);
+  const length = cmMatch ? `${cmMatch[1]}cm` : null;
+  let type = null;
+  if (length) {
+    // Remove length token and any trailing/leading whitespace+commas to get chain type
+    type = v.replace(cmMatch[0], '').trim().replace(/^[,\s-]+|[,\s-]+$/g, '');
+    if (!type) type = null;
+  } else {
+    // No "cm" found — entire value might be a bare label like "Ανοιχτή γάμπα"
+    type = v;
+  }
+  return { length, type };
+}
+
+// Μονό/Ζευγάρι detection (extracted from inline code in v2.1)
+const PAIR_VALUES = ['ζευγάρι', 'ζεύγος', 'pair'];
+const SINGLE_VALUES = ['μονό', 'single'];
+
+function isPairVariant(variant) {
+  if (!variant.selectedOptions) return false;
+  return variant.selectedOptions.some(opt =>
+    PAIR_VALUES.includes((opt.value || '').toLowerCase().trim())
+  );
+}
+
+function isSingleVariant(variant) {
+  if (!variant.selectedOptions) return false;
+  return variant.selectedOptions.some(opt =>
+    SINGLE_VALUES.includes((opt.value || '').toLowerCase().trim())
+  );
+}
+
+// ============================================
+// v3.0: FILENAME → COLOR MAPPING
+// ============================================
+// When Shopify variants lack assigned image_id (~44% of catalog), we cannot use
+// the v2.0 boundary heuristic. Fall back to filename keyword matching — Shopify
+// CDN filenames in EMMANUELA's catalog are remarkably systematic.
+
+const FILENAME_COLOR_PATTERNS = [
+  // Ροζ MUST be checked before Χρυσό (roz-epixryswmeno-...)
+  { pattern: /(^|[\/_-])roz[-_]/i, color: 'Ροζ' },
+  // Gold-plated family
+  { pattern: /(^|[\/_-])(epixryswmen|epixrysomen|epixysomen|xryso|xrysa|gold)[-_a]/i, color: 'Χρυσό' },
+  // Oxidized → Γκρι (per COLOR_MAP_GREEK)
+  { pattern: /(^|[\/_-])(oxeidwmen|oxidomen|anthrak)[-_o]/i, color: 'Γκρι' },
+  // Black
+  { pattern: /(^|[\/_-])(mayro|mavro|black)[-_a]/i, color: 'Μαύρο' },
+  // Silver / default
+  { pattern: /(^|[\/_-])(ashmenio|ashmenia|ashmi|silver)[-_a]/i, color: 'Ασημί' },
+];
+
+function getColorFromFilename(imageUrl) {
+  if (!imageUrl) return null;
+  // Extract filename only (path-agnostic)
+  const filename = imageUrl.split('/').pop() || '';
+  for (const { pattern, color } of FILENAME_COLOR_PATTERNS) {
+    if (pattern.test(filename)) return color;
+  }
+  return null;
+}
+
+// Image is "color-neutral" if its filename doesn't suggest any specific color
+// (packaging shots, lifestyle, etc.). These are safe to include in any color group.
+function isColorNeutralFilename(imageUrl) {
+  return getColorFromFilename(imageUrl) === null;
+}
+
+// Filter images for a specific color group when variant.image_id is unavailable.
+// Returns images whose filename matches the target color, plus color-neutral images
+// (packaging shots, generic details).
+function filterImagesByColorFromFilename(images, targetColor) {
+  if (!images || images.length === 0) return [];
+  return images.filter(img => {
+    const c = getColorFromFilename(img.src);
+    return c === targetColor || c === null;
+  });
 }
 
 // Check if color suffix is redundant with the material phrase
@@ -515,22 +641,17 @@ function generateSkroutzFeed(products) {
     // Determine if product has size options (rings, etc.)
     const hasSizeOption = variants.some(v => extractVariantSize(v.selectedOptions) !== null);
 
-    // Group in-stock variants by color → 1 feed entry per color
+    // v3.0: Detect if product has a length-axis option (Μήκος αλυσίδας,
+    // Περίμετρος καρπού, Διάλεξε είδος και μήκος, Τύπος κορδονιού/αλυσίδας).
+    // Per Skroutz spec, bracelets/chains/necklaces with different sizes must be
+    // sent as SEPARATE ENTRIES. We split per (color × length) instead of merging.
+    const hasLengthAxis = variants.some(v => extractVariantLength(v.selectedOptions) !== null);
+
     // Μονό/Ζευγάρι: if product has BOTH, only include Μονό (base unit).
     // If product only has Ζευγάρι (no Μονό option), keep it as-is.
     // Αριστερό/Δεξί: merged into same color group (same product, same price).
-    const PAIR_VALUES = ['ζευγάρι', 'ζεύγος', 'pair'];
-    const SINGLE_VALUES = ['μονό', 'single'];
-
-    // Detect if product has both Μονό and Ζευγάρι options
-    const hasSingleOption = variants.some(v => {
-      if (!v.selectedOptions) return false;
-      return v.selectedOptions.some(opt => SINGLE_VALUES.includes((opt.value || '').toLowerCase().trim()));
-    });
-    const hasPairOption = variants.some(v => {
-      if (!v.selectedOptions) return false;
-      return v.selectedOptions.some(opt => PAIR_VALUES.includes((opt.value || '').toLowerCase().trim()));
-    });
+    const hasSingleOption = variants.some(isSingleVariant);
+    const hasPairOption = variants.some(isPairVariant);
     const excludePairs = hasSingleOption && hasPairOption;
 
     const entryGroups = {};
@@ -544,24 +665,38 @@ function generateSkroutzFeed(products) {
       }
 
       // If product has both Μονό and Ζευγάρι, exclude Ζευγάρι variants
-      if (excludePairs && variant.selectedOptions) {
-        const isPair = variant.selectedOptions.some(opt =>
-          PAIR_VALUES.includes((opt.value || '').toLowerCase().trim())
-        );
-        if (isPair) {
-          stats.outOfStock++; // count as excluded
-          return;
-        }
+      if (excludePairs && isPairVariant(variant)) {
+        stats.outOfStock++; // count as excluded
+        return;
       }
 
       stats.inStock++;
 
       const rawColor = extractVariantColor(variant.selectedOptions);
       const color = getGreekColor(rawColor) || getGreekColor(product.metafields.color) || 'Ασημί';
-      const groupKey = color;
+
+      // v3.0: When the product has a length axis, include length in the group
+      // key so each (color × length) becomes its own feed entry. Otherwise
+      // group by color only (existing v2.1 behavior — sizes go in variations).
+      let groupKey = color;
+      let groupLengthRaw = null;
+      let groupLengthParsed = { length: null, type: null };
+      if (hasLengthAxis) {
+        const lengthOpt = extractVariantLength(variant.selectedOptions);
+        if (lengthOpt) {
+          groupLengthRaw = lengthOpt.value;
+          groupLengthParsed = parseLengthValue(lengthOpt.value);
+          groupKey = `${color}|${lengthOpt.value}`;
+        }
+      }
 
       if (!entryGroups[groupKey]) {
-        entryGroups[groupKey] = { color, variants: [] };
+        entryGroups[groupKey] = {
+          color,
+          variants: [],
+          lengthRaw: groupLengthRaw,
+          lengthParsed: groupLengthParsed,
+        };
       }
       entryGroups[groupKey].variants.push(variant);
     });
@@ -598,7 +733,7 @@ function generateSkroutzFeed(products) {
 
     // Create 1 entry per group (color × second option)
     for (const [groupKey, group] of Object.entries(entryGroups)) {
-      const { color, variants: groupVariants } = group;
+      const { color, variants: groupVariants, lengthRaw, lengthParsed } = group;
       const repVariant = groupVariants[0];
 
       // Images: use variant image boundaries to select same-color images
@@ -610,7 +745,10 @@ function generateSkroutzFeed(products) {
       let additionalImages;
 
       if (groupImageIds.size > 0) {
-        // Collect images from ranges of all variant-assigned images in this group
+        // Path A: variant.image_id available — use boundary heuristic (v2.0).
+        // Collect images from ranges of all variant-assigned images in this group,
+        // then filter out any image whose filename indicates a different color
+        // (Skroutz spec: "additional images must not show color variations").
         const colorImages = [];
         const seen = new Set();
         for (const imgId of groupImageIds) {
@@ -622,15 +760,37 @@ function generateSkroutzFeed(products) {
             }
           }
         }
-        variantImage = colorImages[0]?.src || mainImage;
-        additionalImages = colorImages
+        // Cross-color filter: drop images whose filename color != entry's color
+        // (color-neutral images like packaging shots are kept).
+        const filteredColorImages = colorImages.filter(img => {
+          const fc = getColorFromFilename(img.src);
+          return fc === null || fc === color;
+        });
+        const finalImages = filteredColorImages.length > 0 ? filteredColorImages : colorImages;
+        variantImage = finalImages[0]?.src || mainImage;
+        additionalImages = finalImages
           .map(img => img.src)
           .filter(src => src !== variantImage)
           .slice(0, 14);
       } else {
-        // No variant-specific images → use only main product image
-        variantImage = mainImage;
-        additionalImages = [];
+        // Path B (v3.0): no variant images — use filename-based color matching.
+        // EMMANUELA's CDN filenames consistently start with the Greek-transliterated
+        // color (ashmenio-, epixryswmeno-, roz-, mayro-, oxeidwmeno-) so we can
+        // reliably pick the right photos for each color entry.
+        const matchedImages = filterImagesByColorFromFilename(images, color);
+        if (matchedImages.length > 0) {
+          // Prefer a color-specific image as main (not a color-neutral one)
+          const colorSpecific = matchedImages.find(img => getColorFromFilename(img.src) === color);
+          variantImage = (colorSpecific || matchedImages[0]).src;
+          additionalImages = matchedImages
+            .map(img => img.src)
+            .filter(src => src !== variantImage)
+            .slice(0, 14);
+        } else {
+          // No filename match either — fall back to main product image
+          variantImage = mainImage;
+          additionalImages = [];
+        }
       }
 
       if (!variantImage) {
@@ -638,40 +798,81 @@ function generateSkroutzFeed(products) {
         continue;
       }
 
-      // Price: lowest in-stock price for this group
+      // Price: lowest in-stock price for this group.
+      // v3.0 note: when this group represents a single (color × length) bucket,
+      // the variants in the group typically share a price, so "min" equals the
+      // actual price. Only multi-variant groups (e.g., rings) actually need min.
       const lowestPrice = Math.min(...groupVariants.map(v => parseFloat(v.price)));
 
-      // Total quantity for this group
+      // Total quantity for this group (sum of all variants in the bucket).
+      // For length-axis entries this is now per-length, not inflated across lengths.
       const totalQuantity = groupVariants.reduce((sum, v) => sum + Math.max(0, v.inventory_quantity), 0);
 
       // Weight from representative variant
       const weightGrams = getWeightGrams(repVariant);
 
-      // Build name: product title + material phrase [+ color if not redundant]
-      // Material phrase already implies color in most cases (Επιχρυσωμένο→Χρυσό, Οξειδωμένο→Μαύρο)
+      // Build name per Skroutz jewelry spec:
+      //   {product.title} [chain_type] [length_cm] [Μονό] {materialPhrase} [color]
+      // Skroutz requires: material in title; for chains include length cm; for
+      // single-earring/charm cases include disclosure ("Μονό", "η αλυσίδα δεν περιλαμβάνεται").
       const rawColorForMaterial = extractVariantColor(repVariant.selectedOptions);
       const materialPhrase = getMaterialPhrase(rawColorForMaterial);
+
       let name = product.title;
-      // Add material phrase (always for jewelry — Skroutz requirement)
+      const titleExtras = [];
+
+      // v3.0: Append chain type and/or length for length-axis entries.
+      // "Τεχνόδερμα 50cm" → "Τεχνόδερμα 50cm"; "45cm" → "45cm"; "Ανοιχτή γάμπα" → "Ανοιχτή γάμπα"
+      if (lengthParsed && (lengthParsed.length || lengthParsed.type)) {
+        if (lengthParsed.type && lengthParsed.length) {
+          titleExtras.push(`${lengthParsed.type} ${lengthParsed.length}`);
+        } else if (lengthParsed.length) {
+          titleExtras.push(lengthParsed.length);
+        } else if (lengthParsed.type) {
+          titleExtras.push(lengthParsed.type);
+        }
+      }
+
+      // v3.0: "Μονό" disclosure when product has both Μονό and Ζευγάρι.
+      // We keep only the Μονό variant (v2.1 behavior) but now mark the title so
+      // customers don't assume they're buying a pair.
+      if (excludePairs) {
+        titleExtras.push('Μονό');
+      }
+
+      if (titleExtras.length > 0) {
+        name = `${name} ${titleExtras.join(' ')}`;
+      }
+
+      // Material phrase (always for jewelry — Skroutz requirement)
       if (materialPhrase) {
         name = `${name} ${materialPhrase}`;
       }
-      // Add color suffix ONLY when not already implied by the material phrase
-      // e.g., skip "Χρυσό" after "Επιχρυσωμένο Ασήμι 925" but keep "Μπλε" after "Ασήμι 925"
+
+      // Color suffix ONLY when not already implied by material phrase
       if (color && !isColorRedundant(materialPhrase, color)) {
         name = `${name} ${color}`;
       }
-      // Ensure name is max 300 chars (Skroutz limit)
+
+      // Skroutz limit: max 300 chars
       if (name.length > 300) name = name.substring(0, 297) + '...';
 
       if (materialPhrase) stats.withMaterial++;
 
-      // MPN — must be unique per feed entry
+      // MPN — must be unique per feed entry.
+      // v3.0: append the full length-axis value (sanitized) to MPN so that
+      // composite axes like "Τεχνόδερμα 50cm" vs "Αλυσίδα rolo 50cm" don't
+      // collapse to the same MPN.
       const baseMpn = repVariant.sku || `EMM-${repVariant.id}`;
       const entryCount = Object.keys(entryGroups).length;
       let mpn = baseMpn;
       if (entryCount > 1) {
         mpn = `${baseMpn}-${color}`;
+        if (lengthRaw) {
+          // Sanitize: replace whitespace with dashes for stable MPN tokens
+          const lengthToken = lengthRaw.trim().replace(/\s+/g, '-');
+          if (lengthToken) mpn = `${mpn}-${lengthToken}`;
+        }
       }
 
       // EAN/Barcode
@@ -729,7 +930,15 @@ function generateSkroutzFeed(products) {
       // - Products with sizes: comma-separated UNIQUE list (e.g., "XS,S,M,L")
       // - Products WITHOUT sizes: <size>One Size</size> (explicit reviewer instruction)
       // Ref: https://developer.skroutz.gr/feedspec/#size
-      if (hasSizeOption) {
+      //
+      // v3.0: For length-axis entries (this group represents ONE specific length),
+      // emit the length as the size value — no <variations> block needed because
+      // each length is already its own <product> entry per Skroutz spec.
+      if (hasLengthAxis && lengthParsed && (lengthParsed.length || lengthParsed.type)) {
+        const sizeValue = lengthParsed.length || lengthParsed.type;
+        item += `        <size>${escapeXml(sizeValue)}</size>\n`;
+        stats.withSize++;
+      } else if (hasSizeOption) {
         // Collect all available sizes from this color group, DEDUPLICATED
         const allSizes = [...new Set(
           groupVariants

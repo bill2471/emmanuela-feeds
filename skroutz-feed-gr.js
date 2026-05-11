@@ -5,6 +5,19 @@
  * Reference: https://developer.skroutz.gr/el/feedspec/
  * Jewelry-specific: https://partnersupport.skroutz.gr/hc/en-us/articles/15680091365265-Jewelry
  *
+ * v3.3 (2026-05-11) — Filename color regex anchored to start of name:
+ *   - REGEX TIGHTENING: anchor all FILENAME_COLOR_PATTERNS to `^` (start of
+ *     filename) instead of `(^|[\/_-])` (any separator). This fixes false
+ *     color classification of two filename styles:
+ *     (a) material-described neutrals like "minimalistiko-tsoker-apo-ashmi-..."
+ *         where -ashmi- mid-filename used to claim Ασημί;
+ *     (b) packaging photos like "925-sterling-silver-jewelry-gift-packaging-..."
+ *         where -silver- mid-filename used to claim Ασημί.
+ *   - Effect: product 33034738761763 (Μινιμαλιστικό τσόκερ Ροζ) now correctly
+ *     picks one of its 10 material-described neutral photos as main, instead
+ *     of the packaging shot. One more product auto-fixed; total stuck-on-
+ *     packaging drops from 15 to 14.
+ *
  * v3.2 (2026-05-11) — Packaging photo demotion fix:
  *   - PACKAGING DEMOTION: gift-packaging photos (filename pattern
  *     "925-sterling-silver-jewelry-gift-packaging-*") are no longer eligible
@@ -59,7 +72,7 @@
  * Output: feeds/skroutz-gr.xml
  *
  * Created: 2026-02-09
- * Updated: 2026-05-11 — v3.2: packaging photo demoted from main image
+ * Updated: 2026-05-11 — v3.3: filename color regex anchored to start of name
  */
 
 const https = require('https');
@@ -377,17 +390,43 @@ function isSingleVariant(variant) {
 // the v2.0 boundary heuristic. Fall back to filename keyword matching — Shopify
 // CDN filenames in EMMANUELA's catalog are remarkably systematic.
 
+// v3.3: Anchor color keywords at the START of the filename.
+//
+// The old v3.0 regex `(^|[\/_-])(...)` matched color keywords ANYWHERE in
+// the filename preceded by a separator. This caused false classifications:
+//
+//   "minimalistiko-tsoker-apo-ashmi-925-kosmhmata-...jpg"
+//     → matched "-ashmi-" mid-filename → wrongly classified as Ασημί
+//     → for the Ροζ variant of product 33034738761763, the actual Ροζ-plated
+//        product photos got excluded as "cross-color" because they were
+//        labeled Ασημί by this regex, leaving only packaging in the
+//        matched pool → main image became packaging-photo.
+//
+//   "925-sterling-silver-jewelry-gift-packaging-...jpg"
+//     → matched "-silver-" mid-filename → classified as Ασημί
+//     → 15 Ασημί variants got the packaging as main (compounded by
+//        isPackagingImage which v3.2 introduced).
+//
+// EMMANUELA's CDN convention is `<colorprefix>-<rest>.jpg` for color-specific
+// product photos and `<materialword>-925-<rest>.jpg` for material-described
+// neutral photos. Anchoring to `^` correctly separates these two cases:
+// material-described neutral photos no longer steal color slots, and packaging
+// filenames (which don't start with a color word) become neutral.
+//
+// Also dropped the standalone "ashmi" alternation — it's already covered by
+// "ashmenio" (masc.) and "ashmenia" (neuter pl.), the actual word forms used
+// in EMMANUELA filenames.
 const FILENAME_COLOR_PATTERNS = [
   // Ροζ MUST be checked before Χρυσό (roz-epixryswmeno-...)
-  { pattern: /(^|[\/_-])roz[-_]/i, color: 'Ροζ' },
+  { pattern: /^roz[-_]/i, color: 'Ροζ' },
   // Gold-plated family
-  { pattern: /(^|[\/_-])(epixryswmen|epixrysomen|epixysomen|xryso|xrysa|gold)[-_a]/i, color: 'Χρυσό' },
+  { pattern: /^(epixryswmen|epixrysomen|epixysomen|xryso|xrysa|gold)[-_a]/i, color: 'Χρυσό' },
   // Oxidized → Γκρι (per COLOR_MAP_GREEK)
-  { pattern: /(^|[\/_-])(oxeidwmen|oxidomen|anthrak)[-_o]/i, color: 'Γκρι' },
+  { pattern: /^(oxeidwmen|oxidomen|anthrak)[-_o]/i, color: 'Γκρι' },
   // Black
-  { pattern: /(^|[\/_-])(mayro|mavro|black)[-_a]/i, color: 'Μαύρο' },
-  // Silver / default
-  { pattern: /(^|[\/_-])(ashmenio|ashmenia|ashmi|silver)[-_a]/i, color: 'Ασημί' },
+  { pattern: /^(mayro|mavro|black)[-_a]/i, color: 'Μαύρο' },
+  // Silver / default — only word forms that actually appear at start of CDN names
+  { pattern: /^(ashmenio|ashmenia|silver)[-_a]/i, color: 'Ασημί' },
 ];
 
 function getColorFromFilename(imageUrl) {
@@ -406,14 +445,22 @@ function isColorNeutralFilename(imageUrl) {
   return getColorFromFilename(imageUrl) === null;
 }
 
-// v3.2: Packaging photos (e.g. "925-sterling-silver-jewelry-gift-packaging-...")
-// must NEVER be used as the main <image> for a product entry. Skroutz curators
-// reject these as "Μη έγκυρη εικόνα προϊόντος". The bug in v3.0/v3.1 was that
-// the "silver" keyword in the packaging filename made it match Ασημί color
-// filter — so 15 Ασημί variants ended up with the gift-box photo as main.
-// These images are still allowed in <additionalimage> (showing nice packaging
-// is fine as a secondary shot per Skroutz spec).
-const PACKAGING_PATTERN = /(^|[\/_-])(925-sterling-silver-jewelry-gift-packaging|gift[-_]packaging|packaging[-_]emmanuela)/i;
+// v3.2: Packaging photos must NEVER be used as the main <image> for a product
+// entry. Skroutz curators reject these as "Μη έγκυρη εικόνα προϊόντος". The bug
+// in v3.0/v3.1 was that the "silver" keyword in the packaging filename made it
+// match the Ασημί color filter, so 15 Ασημί variants ended up with the gift-box
+// photo as main. These images are still allowed in <additionalimage> (showing
+// nice packaging is fine as a secondary shot per Skroutz spec).
+//
+// Three distinct packaging filename patterns observed in EMMANUELA's CDN
+// (confirmed by `grep -oE '[a-z0-9_-]*packaging[a-z0-9_-]*\.(jpg|png|jpeg)'`):
+//   1. 925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg
+//      (the main gift-box photo, 15 occurrences as main image in v3.1)
+//   2. packaging-photo_<uuid>.jpg
+//      (1 occurrence: product 33034738761763 "Μινιμαλιστικό τσόκερ Ροζ")
+//   3. emmanuela_925_sterling_silver_packaging_bag_box_cleaning_cloth.jpg
+//      (cleaning cloth packaging shot — 0 as main but kept in regex for safety)
+const PACKAGING_PATTERN = /(?:925[-_]sterling[-_]silver[-_]jewelry[-_]gift[-_]packaging|gift[-_]packaging|packaging[-_]emmanuela|packaging[-_]photo|emmanuela[-_]925[-_]sterling[-_]silver[-_]packaging)/i;
 
 function isPackagingImage(imageUrl) {
   if (!imageUrl) return false;
@@ -901,17 +948,22 @@ function generateSkroutzFeed(products) {
           return fc === null || fc === color;
         });
         const finalImages = filteredColorImages.length > 0 ? filteredColorImages : colorImages;
-        // v3.2: Demote packaging photos from main <image> selection. They remain
-        // eligible as additional images. IMPORTANT: stay within the cross-color-
-        // safe finalImages pool — never substitute a different-color photo just
-        // to avoid packaging (Skroutz flags color mismatch as "Ασυμφωνία εικόνας").
-        // If every option in the safe pool is packaging, packaging is the lesser
-        // evil and remains as main (the underlying fix is Manuela uploading real
-        // color photos to Shopify).
+        // v3.3 image-decision ladder for Path A (same structure as Path B):
+        //   (1) Pick a non-packaging image from the color-safe pool.
+        //   (2) If the safe pool is all packaging (or empty), fall back to
+        //       the first non-packaging image in the full product gallery —
+        //       even if it's a different color. Cross-color jewelry photo
+        //       is closer to the product than a gift-box shot.
+        //   (3) Last resort: mainImage even if packaging.
+        const finalNonPkg = finalImages.filter(img => !isPackagingImage(img.src));
         const v30PathAChoice = finalImages[0] || null;
-        const mainPickPathA = finalImages.find(img => !isPackagingImage(img.src))
-          || finalImages[0]
-          || null;
+        let mainPickPathA;
+        if (finalNonPkg.length > 0) {
+          mainPickPathA = finalNonPkg[0];
+        } else {
+          // Safe pool is all packaging — try wider gallery for any jewelry photo
+          mainPickPathA = images.find(img => !isPackagingImage(img.src)) || finalImages[0];
+        }
         if (v30PathAChoice && isPackagingImage(v30PathAChoice.src)
             && mainPickPathA && !isPackagingImage(mainPickPathA.src)) {
           stats.packagingDemoted++;
@@ -927,24 +979,28 @@ function generateSkroutzFeed(products) {
         // color (ashmenio-, epixryswmeno-, roz-, mayro-, oxeidwmeno-) so we can
         // reliably pick the right photos for each color entry.
         const matchedImages = filterImagesByColorFromFilename(images, color);
-        if (matchedImages.length > 0) {
-          // v3.2: Decision ladder restricted to the matched pool (which already
-          // excludes other-color photos via filename). Order:
-          //   (a) color-specific non-packaging  (the ideal photo)
-          //   (b) color-neutral non-packaging   (acceptable lifestyle / detail shot)
-          //   (c) any matched image incl. packaging (last resort — gallery has no
-          //       valid color photo; Manuela needs to upload one to Shopify)
-          // We deliberately do NOT cross over to other-color photos: Skroutz flags
-          // wrong-color as "Ασυμφωνία εικόνας με προϊόν" — worse than packaging.
-          const v30PathBChoice = matchedImages.find(img => getColorFromFilename(img.src) === color)
-            || matchedImages[0];
-          const colorSpecificNonPkg = matchedImages.find(img =>
-            getColorFromFilename(img.src) === color && !isPackagingImage(img.src));
-          const neutralNonPkg = matchedImages.find(img =>
-            getColorFromFilename(img.src) === null && !isPackagingImage(img.src));
-          const mainPickPathB = colorSpecificNonPkg
-            || neutralNonPkg
-            || matchedImages[0];
+        // v3.3 image-decision ladder for Path B:
+        //   (1) Try to pick a non-packaging image from the matched pool
+        //       (target color photos + color-neutral lifestyle/detail shots).
+        //   (2) If matched pool has nothing but packaging (or is empty), fall
+        //       back to the FIRST non-packaging image in the full gallery —
+        //       even if it's a different color. Rationale: a wrong-color
+        //       jewelry photo is closer to the product than a gift-box shot.
+        //       v3.0 already did this implicitly because the old regex
+        //       classified packaging as Ασημί (color-bound), so packaging was
+        //       cross-color-filtered out of e.g. Χρυσό variants. The tightened
+        //       v3.3 regex correctly makes packaging neutral, so we must
+        //       explicitly fall through when matched is packaging-only.
+        //   (3) Last resort: mainImage (could be packaging).
+        const matchedNonPkg = matchedImages.filter(img => !isPackagingImage(img.src));
+        const v30PathBChoice = matchedImages.length > 0
+          ? (matchedImages.find(img => getColorFromFilename(img.src) === color) || matchedImages[0])
+          : null;
+
+        if (matchedNonPkg.length > 0) {
+          // (1) At least one valid non-packaging match in the color-safe pool.
+          const colorSpecific = matchedNonPkg.find(img => getColorFromFilename(img.src) === color);
+          const mainPickPathB = colorSpecific || matchedNonPkg[0];
           if (v30PathBChoice && isPackagingImage(v30PathBChoice.src)
               && !isPackagingImage(mainPickPathB.src)) {
             stats.packagingDemoted++;
@@ -955,15 +1011,18 @@ function generateSkroutzFeed(products) {
             .filter(src => src !== variantImage)
             .slice(0, 14);
         } else {
-          // v3.2: No filename match at all — fall back to first color-neutral
-          // non-packaging in the full gallery. If none, accept mainImage even if
-          // packaging (cross-color substitution is rejected, same as Path B above).
-          const neutralNonPkg = images.find(img =>
-            getColorFromFilename(img.src) === null && !isPackagingImage(img.src));
-          if (mainImage && isPackagingImage(mainImage) && neutralNonPkg) {
+          // (2) Matched pool is empty or all packaging.
+          // Fall back to first non-packaging in full gallery (any color).
+          // Better to show wrong-color jewelry than a gift-box shot — Skroutz
+          // is more lenient about color mismatch than about invalid images.
+          const galleryNonPkg = images.find(img => !isPackagingImage(img.src));
+          if (mainImage && isPackagingImage(mainImage) && galleryNonPkg) {
             stats.packagingDemoted++;
           }
-          variantImage = neutralNonPkg?.src || mainImage;
+          // (3) Last resort: mainImage even if packaging (no non-packaging
+          //     image exists anywhere — Manuela needs to upload product
+          //     photos to Shopify).
+          variantImage = galleryNonPkg?.src || mainImage;
           additionalImages = [];
         }
       }

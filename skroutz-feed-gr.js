@@ -430,6 +430,55 @@ function getWeightGrams(variant) {
   return Math.round(val); // assume grams
 }
 
+/**
+ * Longest common prefix of an array of strings.
+ * Used to derive a stable PRODUCT-LEVEL MPN root when variant SKUs share a prefix
+ * (e.g. ["4070SS", "4070GS", "4070XS"] → "4070"). Skroutz pattern-matches variant
+ * families by MPN root; without a stable root, sibling variants are not linked.
+ */
+function longestCommonPrefix(strs) {
+  if (!strs || strs.length === 0) return '';
+  if (strs.length === 1) return strs[0];
+  let prefix = strs[0];
+  for (let i = 1; i < strs.length; i++) {
+    while (strs[i].indexOf(prefix) !== 0) {
+      prefix = prefix.substring(0, prefix.length - 1);
+      if (prefix === '') return '';
+    }
+  }
+  return prefix;
+}
+
+/**
+ * Compute a stable, product-level base MPN that is identical for ALL feed entries
+ * derived from the same Shopify product (regardless of color/length grouping).
+ *
+ * Strategy:
+ *  1. If ALL variants share a long-enough alphanumeric SKU prefix (≥3 chars after
+ *     trimming trailing separators), use that prefix. Example: 4070SS/4070GS/4070XS → "4070".
+ *  2. If a stable prefix can't be derived (mixed SKUs, missing SKUs, very short
+ *     common prefix), fall back to `EMM-{productId}` — the Shopify PRODUCT id
+ *     (NOT the variant id), so all sibling entries still share the same root.
+ *
+ * This is what enables Skroutz catalog UI cross-link grouping (color swatches /
+ * spec variations) for our variant families. Without it, sibling color entries
+ * get unrelated MPN roots and Skroutz treats them as independent products.
+ */
+function computeProductMpnBase(product, variants) {
+  const skus = variants.map(v => v.sku).filter(s => s && s.trim().length > 0);
+  if (skus.length >= 2) {
+    const rawPrefix = longestCommonPrefix(skus).replace(/[-_\s]+$/, '');
+    if (rawPrefix.length >= 3 && /^[A-Za-z0-9]+$/.test(rawPrefix)) {
+      return rawPrefix;
+    }
+  } else if (skus.length === 1) {
+    // Single-variant product: use the SKU as-is (still product-level since there's one variant)
+    return skus[0];
+  }
+  // No usable SKU prefix — fall back to product-level Shopify ID.
+  return `EMM-${product.id}`;
+}
+
 // ============================================
 // HTTPS REQUEST HELPERS
 // ============================================
@@ -617,6 +666,45 @@ function generateSkroutzFeed(products) {
     sampleItems: []
   };
 
+  // v3.1 PRE-PASS: compute candidate MPN base per product and detect collisions.
+  // If two DIFFERENT Shopify products would yield the same SKU-derived MPN root
+  // (e.g. multiple products with variants sharing SKU prefix "1265"), we cannot
+  // safely use that root — Skroutz would see them as a single family and our
+  // entries would collide. For colliding roots, fall back to `EMM-{product.id}`
+  // (still product-level, but globally unique).
+  const baseByProduct = new Map();   // product.id → final MPN base
+  const baseCounts = new Map();      // candidate base → Set of product.ids using it
+  for (const product of products) {
+    const typeLC = (product.product_type || '').toLowerCase();
+    if (typeLC.includes('gift card') || typeLC.includes('δωροκάρτα')) continue;
+    const candidate = computeProductMpnBase(product, product.variants || []);
+    if (!baseCounts.has(candidate)) baseCounts.set(candidate, new Set());
+    baseCounts.get(candidate).add(product.id);
+  }
+  for (const product of products) {
+    const typeLC = (product.product_type || '').toLowerCase();
+    if (typeLC.includes('gift card') || typeLC.includes('δωροκάρτα')) continue;
+    const candidate = computeProductMpnBase(product, product.variants || []);
+    const usersOfCandidate = baseCounts.get(candidate);
+    if (usersOfCandidate && usersOfCandidate.size > 1) {
+      // Collision — multiple Shopify products share this root. Use product.id.
+      baseByProduct.set(product.id, `EMM-${product.id}`);
+    } else {
+      baseByProduct.set(product.id, candidate);
+    }
+  }
+  const collisionCount = [...baseCounts.values()].filter(s => s.size > 1).length;
+  if (collisionCount > 0) {
+    console.log(`  MPN base collisions detected & resolved: ${collisionCount} root(s) → fell back to EMM-{productId}\n`);
+  }
+
+  // Track every MPN we emit so we can disambiguate intra-product collisions
+  // (rare case: two Shopify variants of the same product share identical
+  // color+length selectedOptions — e.g. Shopify data inconsistency). In that
+  // case we append a variant.id suffix to keep MPNs globally unique.
+  const seenMpns = new Set();
+  let intraProductDupCount = 0;
+
   products.forEach(product => {
     stats.totalProducts++;
 
@@ -653,6 +741,20 @@ function generateSkroutzFeed(products) {
     const hasSingleOption = variants.some(isSingleVariant);
     const hasPairOption = variants.some(isPairVariant);
     const excludePairs = hasSingleOption && hasPairOption;
+
+    // v3.1: Look up the STABLE product-level base MPN computed in the pre-pass.
+    // Previously (v3.0) we used `repVariant.sku || EMM-{variant.id}` inside the
+    // group loop, which produced a DIFFERENT MPN root per color group when:
+    //   (a) the Shopify owner assigned different SKUs per variant
+    //       (e.g. 4070SS / 4070GS / 4070XS for one product), OR
+    //   (b) variants had no SKU at all (fallback used variant.id, which is
+    //       unique per variant — so each color group got a unique root).
+    // This broke Skroutz's catalog variant grouping (color swatches, spec
+    // variations UI). Now every entry of the same Shopify product shares the
+    // same MPN root, with the color/length suffix discriminating siblings.
+    // The pre-pass also resolves collisions where different Shopify products
+    // would yield the same SKU-derived root (falls back to EMM-{product.id}).
+    const productMpnBase = baseByProduct.get(product.id) || `EMM-${product.id}`;
 
     const entryGroups = {};
 
@@ -859,21 +961,32 @@ function generateSkroutzFeed(products) {
 
       if (materialPhrase) stats.withMaterial++;
 
-      // MPN — must be unique per feed entry.
-      // v3.0: append the full length-axis value (sanitized) to MPN so that
-      // composite axes like "Τεχνόδερμα 50cm" vs "Αλυσίδα rolo 50cm" don't
-      // collapse to the same MPN.
-      const baseMpn = repVariant.sku || `EMM-${repVariant.id}`;
+      // MPN — must be unique per feed entry while sharing a STABLE root per
+      // Shopify product (so Skroutz can pattern-match siblings as variants of
+      // the same family — color swatches, spec variations UI).
+      // v3.1: baseMpn comes from `productMpnBase` (computed once above), NOT
+      // from repVariant.sku/id. The color and length suffixes (added below)
+      // are what discriminate siblings.
       const entryCount = Object.keys(entryGroups).length;
-      let mpn = baseMpn;
+      let mpn = productMpnBase;
       if (entryCount > 1) {
-        mpn = `${baseMpn}-${color}`;
+        mpn = `${productMpnBase}-${color}`;
         if (lengthRaw) {
           // Sanitize: replace whitespace with dashes for stable MPN tokens
           const lengthToken = lengthRaw.trim().replace(/\s+/g, '-');
           if (lengthToken) mpn = `${mpn}-${lengthToken}`;
         }
       }
+
+      // Intra-product disambiguation: if we've already emitted this exact MPN,
+      // append the variant.id to guarantee global uniqueness. This preserves
+      // the family root (same productMpnBase) so Skroutz can still pattern-match,
+      // while keeping each entry's MPN unique as required by the feed spec.
+      if (seenMpns.has(mpn)) {
+        mpn = `${mpn}-${repVariant.id}`;
+        intraProductDupCount++;
+      }
+      seenMpns.add(mpn);
 
       // EAN/Barcode
       const ean = repVariant.barcode && /^\d{8,13}$/.test(repVariant.barcode.trim())

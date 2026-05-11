@@ -5,6 +5,22 @@
  * Reference: https://developer.skroutz.gr/el/feedspec/
  * Jewelry-specific: https://partnersupport.skroutz.gr/hc/en-us/articles/15680091365265-Jewelry
  *
+ * v3.2 (2026-05-11) — Packaging photo demotion fix:
+ *   - PACKAGING DEMOTION: gift-packaging photos (filename pattern
+ *     "925-sterling-silver-jewelry-gift-packaging-*") are no longer eligible
+ *     as the main <image> for any entry. Skroutz rejected 15 Ασημί variants
+ *     as "Μη έγκυρη εικόνα προϊόντος" because the v3.0 filename color filter
+ *     classified packaging shots as Ασημί (the regex `silver` matched
+ *     "sterling-silver"). Packaging remains allowed as <additionalimage>.
+ *
+ * v3.1 (2026-05-11) — MPN root stabilization (variant grouping):
+ *   - STABLE MPN PER PRODUCT: when variants of one Shopify product had
+ *     different SKUs per color (e.g. 4070SS/GS/XS) or no SKU at all, v3.0
+ *     emitted a different MPN root per color group, breaking Skroutz catalog
+ *     pattern matching. v3.1 derives a single product-level MPN root from
+ *     the longest common SKU prefix, with `EMM-{product.id}` as fallback.
+ *     Cross-product collisions are auto-resolved by demoting both to EMM-.
+ *
  * v3.0 (2026-05-11) — Major spec-compliance rewrite:
  *   - PER-LENGTH SPLITTING: bracelets, chains, necklaces with Μήκος αλυσίδας /
  *     Περίμετρος καρπού / Διάλεξε είδος και μήκος / Τύπος κορδονιού now generate
@@ -43,7 +59,7 @@
  * Output: feeds/skroutz-gr.xml
  *
  * Created: 2026-02-09
- * Updated: 2026-05-11 — v3.0: per-length splitting + filename images + title enrichment
+ * Updated: 2026-05-11 — v3.2: packaging photo demoted from main image
  */
 
 const https = require('https');
@@ -390,6 +406,21 @@ function isColorNeutralFilename(imageUrl) {
   return getColorFromFilename(imageUrl) === null;
 }
 
+// v3.2: Packaging photos (e.g. "925-sterling-silver-jewelry-gift-packaging-...")
+// must NEVER be used as the main <image> for a product entry. Skroutz curators
+// reject these as "Μη έγκυρη εικόνα προϊόντος". The bug in v3.0/v3.1 was that
+// the "silver" keyword in the packaging filename made it match Ασημί color
+// filter — so 15 Ασημί variants ended up with the gift-box photo as main.
+// These images are still allowed in <additionalimage> (showing nice packaging
+// is fine as a secondary shot per Skroutz spec).
+const PACKAGING_PATTERN = /(^|[\/_-])(925-sterling-silver-jewelry-gift-packaging|gift[-_]packaging|packaging[-_]emmanuela)/i;
+
+function isPackagingImage(imageUrl) {
+  if (!imageUrl) return false;
+  const filename = imageUrl.split('/').pop() || '';
+  return PACKAGING_PATTERN.test(filename);
+}
+
 // Filter images for a specific color group when variant.image_id is unavailable.
 // Returns images whose filename matches the target color, plus color-neutral images
 // (packaging shots, generic details).
@@ -661,6 +692,7 @@ function generateSkroutzFeed(products) {
     withDescription: 0,
     withVariations: 0,
     withMaterial: 0,
+    packagingDemoted: 0,  // v3.2: count of entries where packaging photo was demoted from main
     categoryBreakdown: {},
     unmappedTypes: {},
     sampleItems: []
@@ -869,7 +901,22 @@ function generateSkroutzFeed(products) {
           return fc === null || fc === color;
         });
         const finalImages = filteredColorImages.length > 0 ? filteredColorImages : colorImages;
-        variantImage = finalImages[0]?.src || mainImage;
+        // v3.2: Demote packaging photos from main <image> selection. They remain
+        // eligible as additional images. IMPORTANT: stay within the cross-color-
+        // safe finalImages pool — never substitute a different-color photo just
+        // to avoid packaging (Skroutz flags color mismatch as "Ασυμφωνία εικόνας").
+        // If every option in the safe pool is packaging, packaging is the lesser
+        // evil and remains as main (the underlying fix is Manuela uploading real
+        // color photos to Shopify).
+        const v30PathAChoice = finalImages[0] || null;
+        const mainPickPathA = finalImages.find(img => !isPackagingImage(img.src))
+          || finalImages[0]
+          || null;
+        if (v30PathAChoice && isPackagingImage(v30PathAChoice.src)
+            && mainPickPathA && !isPackagingImage(mainPickPathA.src)) {
+          stats.packagingDemoted++;
+        }
+        variantImage = mainPickPathA?.src || mainImage;
         additionalImages = finalImages
           .map(img => img.src)
           .filter(src => src !== variantImage)
@@ -881,16 +928,42 @@ function generateSkroutzFeed(products) {
         // reliably pick the right photos for each color entry.
         const matchedImages = filterImagesByColorFromFilename(images, color);
         if (matchedImages.length > 0) {
-          // Prefer a color-specific image as main (not a color-neutral one)
-          const colorSpecific = matchedImages.find(img => getColorFromFilename(img.src) === color);
-          variantImage = (colorSpecific || matchedImages[0]).src;
+          // v3.2: Decision ladder restricted to the matched pool (which already
+          // excludes other-color photos via filename). Order:
+          //   (a) color-specific non-packaging  (the ideal photo)
+          //   (b) color-neutral non-packaging   (acceptable lifestyle / detail shot)
+          //   (c) any matched image incl. packaging (last resort — gallery has no
+          //       valid color photo; Manuela needs to upload one to Shopify)
+          // We deliberately do NOT cross over to other-color photos: Skroutz flags
+          // wrong-color as "Ασυμφωνία εικόνας με προϊόν" — worse than packaging.
+          const v30PathBChoice = matchedImages.find(img => getColorFromFilename(img.src) === color)
+            || matchedImages[0];
+          const colorSpecificNonPkg = matchedImages.find(img =>
+            getColorFromFilename(img.src) === color && !isPackagingImage(img.src));
+          const neutralNonPkg = matchedImages.find(img =>
+            getColorFromFilename(img.src) === null && !isPackagingImage(img.src));
+          const mainPickPathB = colorSpecificNonPkg
+            || neutralNonPkg
+            || matchedImages[0];
+          if (v30PathBChoice && isPackagingImage(v30PathBChoice.src)
+              && !isPackagingImage(mainPickPathB.src)) {
+            stats.packagingDemoted++;
+          }
+          variantImage = mainPickPathB.src;
           additionalImages = matchedImages
             .map(img => img.src)
             .filter(src => src !== variantImage)
             .slice(0, 14);
         } else {
-          // No filename match either — fall back to main product image
-          variantImage = mainImage;
+          // v3.2: No filename match at all — fall back to first color-neutral
+          // non-packaging in the full gallery. If none, accept mainImage even if
+          // packaging (cross-color substitution is rejected, same as Path B above).
+          const neutralNonPkg = images.find(img =>
+            getColorFromFilename(img.src) === null && !isPackagingImage(img.src));
+          if (mainImage && isPackagingImage(mainImage) && neutralNonPkg) {
+            stats.packagingDemoted++;
+          }
+          variantImage = neutralNonPkg?.src || mainImage;
           additionalImages = [];
         }
       }
@@ -1228,6 +1301,7 @@ async function generateFeed(options = {}) {
   console.log(`  Gift cards (skip):     ${stats.skippedGiftCards}`);
   console.log(`  Feed entries:          ${stats.feedEntries}`);
   console.log(`  With material phrase:   ${stats.withMaterial}`);
+  console.log(`  Packaging demoted:     ${stats.packagingDemoted}  (v3.2: packaging photos not used as main)`);
   console.log(`  With color:            ${stats.withColor}`);
   console.log(`  With MPN/SKU:          ${stats.withMPN}`);
   console.log(`  With EAN/barcode:      ${stats.withEAN}`);

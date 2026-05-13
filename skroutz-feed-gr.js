@@ -5,6 +5,27 @@
  * Reference: https://developer.skroutz.gr/el/feedspec/
  * Jewelry-specific: https://partnersupport.skroutz.gr/hc/en-us/articles/15680091365265-Jewelry
  *
+ * v3.4 (2026-05-12) — Size field cleanup for length-axis entries:
+ *   - SIZE FIELD CORRECTNESS: per Skroutz feedspec, the <size> field is
+ *     exclusively for clothing/footwear sizes and ring numbers (48-63 etc.).
+ *     It is NOT for jewelry length values (16cm, 50cm, etc.). v3.0 was
+ *     emitting "16cm" / "50cm" / "Τεχνόδερμα 50cm" as <size> values for
+ *     bracelets/chains/necklaces with length axis. v3.4 emits <size>One
+ *     Size</size> for these entries instead.
+ *   - LENGTH PRESERVATION: per-length splitting is preserved (each length
+ *     remains its own <product> entry per Skroutz Jewelry spec), and the
+ *     length is still part of the <name>/title and description. We just
+ *     stop misusing the <size> field.
+ *   - CHOKER SIZE LABEL CLEANUP: chokers (4063/4064/4065 family) used
+ *     non-standard labels like "S / 28-33cm Περίμετρος λαιμού" via the
+ *     Shopify "Μέγεθος" option. New cleanSizeLabel() strips everything
+ *     after the first " / " or multi-space separator so we emit clean
+ *     "S"/"M"/"L". Plain ring numbers (e.g. "53") and standard letters
+ *     pass through unchanged.
+ *   - RINGS UNCHANGED: products with size option (Μέγεθος/νούμερο) still
+ *     emit ring sizes 48-63 in <size> (this is valid per feedspec).
+ *   - Voluntary disclosure to Skroutz support 2026-05-12 ticket.
+ *
  * v3.3 (2026-05-11) — Filename color regex anchored to start of name:
  *   - REGEX TIGHTENING: anchor all FILENAME_COLOR_PATTERNS to `^` (start of
  *     filename) instead of `(^|[\/_-])` (any separator). This fixes false
@@ -72,7 +93,7 @@
  * Output: feeds/skroutz-gr.xml
  *
  * Created: 2026-02-09
- * Updated: 2026-05-11 — v3.3: filename color regex anchored to start of name
+ * Updated: 2026-05-12 — v3.4: size field cleanup for length-axis entries
  */
 
 const https = require('https');
@@ -302,12 +323,33 @@ function extractVariantColor(selectedOptions) {
   return null;
 }
 
+// v3.4 (2026-05-12): clean cm descriptors from non-ring size labels.
+// EMMANUELA choker variants are labelled "S / 28-33cm Περίμετρος λαιμού" etc.
+// The Skroutz <size> field is for clothing/footwear sizes and ring numbers —
+// not for centimeter measurements. Strip everything after the first " / " or
+// "  " (multi-space) separator so we emit clean "S"/"M"/"L". Plain ring
+// numbers like "53" and standard letters like "M" pass through unchanged.
+function cleanSizeLabel(rawValue) {
+  if (!rawValue) return rawValue;
+  const slashIdx = rawValue.indexOf(' / ');
+  if (slashIdx > 0) {
+    return rawValue.substring(0, slashIdx).trim();
+  }
+  // Multi-space separator: "S  11"-13" (28-33cm) ..."
+  const multiSpaceIdx = rawValue.indexOf('  ');
+  if (multiSpaceIdx > 0) {
+    const head = rawValue.substring(0, multiSpaceIdx).trim();
+    if (head.length <= 5 && /^[A-Za-zΑ-Ωα-ω0-9.\/-]+$/.test(head)) return head;
+  }
+  return rawValue;
+}
+
 function extractVariantSize(selectedOptions) {
   if (!selectedOptions) return null;
   for (const opt of selectedOptions) {
     const name = (opt.name || '').toLowerCase();
     if (name.includes('μέγεθος') || name.includes('size') || name.includes('νούμερο')) {
-      return opt.value;
+      return cleanSizeLabel(opt.value);
     }
   }
   return null;
@@ -1176,12 +1218,16 @@ function generateSkroutzFeed(products) {
       // - Products WITHOUT sizes: <size>One Size</size> (explicit reviewer instruction)
       // Ref: https://developer.skroutz.gr/feedspec/#size
       //
-      // v3.0: For length-axis entries (this group represents ONE specific length),
-      // emit the length as the size value — no <variations> block needed because
-      // each length is already its own <product> entry per Skroutz spec.
+      // v3.4 (2026-05-12): For length-axis entries (bracelets/chains/necklaces
+      // with Μήκος/Περίμετρος/Τύπος κορδονιού), emit <size>One Size</size>.
+      // The <size> field is exclusively for clothing/footwear sizes and ring
+      // numbers per Skroutz feedspec — NOT for jewelry length values like
+      // "16cm" or "Τεχνόδερμα 50cm". The length information remains in the
+      // <name>/title and description, and per-length splitting (one <product>
+      // entry per length) is preserved per the Skroutz Jewelry spec.
+      // Voluntary disclosure to Skroutz support 2026-05-12.
       if (hasLengthAxis && lengthParsed && (lengthParsed.length || lengthParsed.type)) {
-        const sizeValue = lengthParsed.length || lengthParsed.type;
-        item += `        <size>${escapeXml(sizeValue)}</size>\n`;
+        item += `        <size>One Size</size>\n`;
         stats.withSize++;
       } else if (hasSizeOption) {
         // Collect all available sizes from this color group, DEDUPLICATED

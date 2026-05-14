@@ -100,6 +100,21 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
+// v3.5 (2026-05-14): Total title-builder redesign per authoritative spec v2
+// (XML-FEED-TITLE-STRUCTURE-SPEC.md). All title construction is now delegated
+// to `skroutz-title-builder-v35.js`, which implements:
+//  - Canonical 12-position title order per spec §2
+//  - 5-finish system S/G/R/O/X (X = Μαύρο/Black Rhodium ≠ Οξειδωμένο/Γκρι)
+//  - Greek grammatical agreement (χειροποίητο/η/α, μαύρο/α/η)
+//  - Singular vs plural from VARIANT OPTIONS (not Shopify title)
+//  - Verbatim motif preservation from Shopify title
+//  - "από ασήμι 925" ALWAYS mandatory
+//  - Ring size, bracelet length, chain type+length at end as appropriate
+//  - Monogram letter injection for letter-bearing pendants
+//  - cuff → ear cuff normalization
+// See: skroutz-feed/emmanuela-gr/HANDOFF-SESSION-2026-05-14-V35-REDESIGN.md
+const { buildSkroutzTitle } = require('./skroutz-title-builder-v35');
+
 // ============================================
 // CONFIGURATION
 // ============================================
@@ -1074,6 +1089,19 @@ function generateSkroutzFeed(products) {
         continue;
       }
 
+      // v3.5.1 SAFETY GATE: when variant has color variation but the selected main image
+      // suggests a DIFFERENT color (filename color word doesn't match group's color), skip
+      // this entry entirely. Per Bill 2026-05-14: "better to not list than to mislead the
+      // customer with a wrong-color photo." Color-neutral images (lifestyle/generic shots
+      // with no color word in filename) pass the check.
+      const _hasColorOption = (repVariant.selectedOptions || []).some(o =>
+        (o.name || '').toLowerCase().includes('χρώμα'));
+      const _picturedColor = getColorFromFilename(variantImage);
+      if (_hasColorOption && _picturedColor && _picturedColor !== color) {
+        stats.skippedColorMismatch = (stats.skippedColorMismatch || 0) + 1;
+        continue;
+      }
+
       // Price: lowest in-stock price for this group.
       // v3.0 note: when this group represents a single (color × length) bucket,
       // the variants in the group typically share a price, so "min" equals the
@@ -1087,53 +1115,20 @@ function generateSkroutzFeed(products) {
       // Weight from representative variant
       const weightGrams = getWeightGrams(repVariant);
 
-      // Build name per Skroutz jewelry spec:
-      //   {product.title} [chain_type] [length_cm] [Μονό] {materialPhrase} [color]
-      // Skroutz requires: material in title; for chains include length cm; for
-      // single-earring/charm cases include disclosure ("Μονό", "η αλυσίδα δεν περιλαμβάνεται").
-      const rawColorForMaterial = extractVariantColor(repVariant.selectedOptions);
-      const materialPhrase = getMaterialPhrase(rawColorForMaterial);
+      // v3.5 (2026-05-14): Title construction delegated to skroutz-title-builder-v35.js
+      // which implements the authoritative spec v2. The builder handles type detection,
+      // gender, motif extraction, color/finish, ring/chain/bracelet sizing, grammar,
+      // and all the cleanup rules. See top of file for spec link.
+      const skroutzCategory = categoryPath; // already computed above (Greek path)
+      const name = buildSkroutzTitle({
+        product,
+        variant: repVariant,
+        skroutzCategory,
+      });
 
-      let name = product.title;
-      const titleExtras = [];
-
-      // v3.0: Append chain type and/or length for length-axis entries.
-      // "Τεχνόδερμα 50cm" → "Τεχνόδερμα 50cm"; "45cm" → "45cm"; "Ανοιχτή γάμπα" → "Ανοιχτή γάμπα"
-      if (lengthParsed && (lengthParsed.length || lengthParsed.type)) {
-        if (lengthParsed.type && lengthParsed.length) {
-          titleExtras.push(`${lengthParsed.type} ${lengthParsed.length}`);
-        } else if (lengthParsed.length) {
-          titleExtras.push(lengthParsed.length);
-        } else if (lengthParsed.type) {
-          titleExtras.push(lengthParsed.type);
-        }
-      }
-
-      // v3.0: "Μονό" disclosure when product has both Μονό and Ζευγάρι.
-      // We keep only the Μονό variant (v2.1 behavior) but now mark the title so
-      // customers don't assume they're buying a pair.
-      if (excludePairs) {
-        titleExtras.push('Μονό');
-      }
-
-      if (titleExtras.length > 0) {
-        name = `${name} ${titleExtras.join(' ')}`;
-      }
-
-      // Material phrase (always for jewelry — Skroutz requirement)
-      if (materialPhrase) {
-        name = `${name} ${materialPhrase}`;
-      }
-
-      // Color suffix ONLY when not already implied by material phrase
-      if (color && !isColorRedundant(materialPhrase, color)) {
-        name = `${name} ${color}`;
-      }
-
-      // Skroutz limit: max 300 chars
-      if (name.length > 300) name = name.substring(0, 297) + '...';
-
-      if (materialPhrase) stats.withMaterial++;
+      // Track stat for "has material" — v3.5 always emits "από ασήμι 925" so always true
+      const materialPhrase = 'από ασήμι 925'; // sentinel for downstream code that may check
+      stats.withMaterial++;
 
       // MPN — must be unique per feed entry while sharing a STABLE root per
       // Shopify product (so Skroutz can pattern-match siblings as variants of

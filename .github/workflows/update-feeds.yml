@@ -59,7 +59,7 @@ jobs:
         env:
           SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
         run: |
-          echo "🟠 Generating Skroutz.gr Product Feed (Greece)..."
+          echo "🟠 Generating Skroutz.gr Product Feed (Greece) — v3.5.1..."
           node skroutz-feed-gr.js
 
       - name: Run local inventory feed generator (Greece)

@@ -1,7 +1,14 @@
 /**
- * Skroutz XML Feed Title Builder v3.5.2 (2026-05-14)
+ * Skroutz XML Feed Title Builder v3.5.3 (2026-05-14)
  *
  * Authoritative spec: C:\Users\bill\Ανεβασμα listing Jewelry\XML-FEED-TITLE-STRUCTURE-SPEC.md (v2)
+ *
+ * v3.5.3 patches (2) — discovered during BestPrice v3.0 ultra-review:
+ *   1. Removed hardcoded "Box" body strip — was leaving orphan prepositions ("γάντι του"
+ *      with object stripped). "Box" can legitimately be part of a motif name; trust the
+ *      Shopify source title.
+ *   2. stripWords now accent-insensitive — also strips un-toned variants (e.g. catalog
+ *      typo "Δαχτυλιδι" without τόνος) to prevent type-word body leak duplication.
  *
  * v3.5.2 cosmetic patches (3):
  *   1. CORD_TYPE_PATTERNS: τεχνόδερμα/δερμάτινο/δέρμα/κορδόνι get "κορδόνι" prefix
@@ -56,9 +63,22 @@ function wordRegex(word, flags = 'giu') {
 
 /**
  * Strip multiple words from a string with Unicode-aware boundaries.
+ * v3.5.3: accent-insensitive — strips both toned and un-toned variants of each word
+ * (handles Shopify catalog typos like "Δαχτυλιδι" without τόνος).
  */
+function stripGreekAccents(s) {
+  return s ? s.normalize('NFD').replace(/\p{M}/gu, '') : s;
+}
+
 function stripWords(text, words) {
-  for (const w of words) text = text.replace(wordRegex(w), '');
+  for (const w of words) {
+    text = text.replace(wordRegex(w), '');
+    // Also strip the unaccented variant if it differs (Shopify typo guard)
+    const wPlain = stripGreekAccents(w);
+    if (wPlain && wPlain !== w) {
+      text = text.replace(wordRegex(wPlain), '');
+    }
+  }
   return text;
 }
 
@@ -436,12 +456,12 @@ function cleanBody(body, typeWord) {
   body = body.replace(wordPatternRegex('οξειδωμέν[οαηςώάέή]+'), '');
   body = body.replace(wordPatternRegex('επιχρυσωμέν[οαηςώάέή]+'), '');
   body = body.replace(wordPatternRegex('ασημέν[ιοαη]+[οαη]+ς?'), '');
-  // Strip "&", "Box", "D.J.", "Minimal Bold"
+  // Strip "&", "Minimal Bold" marketing fluff
   body = body.replace(/\s*&\s*/g, ' ');
-  body = body.replace(wordRegex('Box'), '');
-  // D.J. with literal dots — wordRegex's escapeRegex handles them; but Latin "D.J." has special pattern
-  // We DON'T strip "D.J." per agent finding (PY keeps it)
-  // body = body.replace(wordRegex('D.J.'), '');
+  // v3.5.3 fix: removed "Box" strip — "Box" can be PART of a motif name (e.g. "γάντι του Box")
+  // Stripping it leaves orphan prepositions ("γάντι του" without object). Keep verbatim from
+  // Shopify product title — if it's marketing fluff, fix the Shopify source instead.
+  // D.J. similarly retained verbatim (per PY prototype decision).
   body = body.replace(/(?<![\p{L}\p{N}])[Mm]inimal\s*&?\s*[Bb]old(?![\p{L}\p{N}])/giu, '');
   body = body.replace(wordRegex('Minimal'), '');
   body = body.replace(wordRegex('Bold'), '');

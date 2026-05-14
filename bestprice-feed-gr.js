@@ -1,5 +1,5 @@
 /**
- * BestPrice.gr Product Feed Generator v2.0 for EMMANUELA
+ * BestPrice.gr Product Feed Generator v3.0 for EMMANUELA
  *
  * Generates a valid XML product feed per BestPrice.gr specifications (v2.0.12).
  *
@@ -12,7 +12,16 @@
  *   - Size aggregation for rings
  *   - productId = Shopify Variant ID (stable identifier)
  *
- * v2.0 changes (2026-03-20):
+ * v3.0 changes (2026-05-14): Title generation rebuilt on Skroutz spec v2
+ *   - Reuses skroutz-title-builder-v35 (v3.5.2) for canonical title generation
+ *   - Adds "από ασήμι 925" + "χειροποίητο/η/α" hard rules (per Skroutz spec §2.8, §2.11)
+ *   - Greek finish prefixes (επιχρυσωμένο/ροζ επιχρυσωμένο/οξειδωμένο/μαύρο)
+ *   - σταυρός→Μενταγιόν routing, Σετ κοσμημάτων multi-type detection
+ *   - Body cleanup, monogram Greek glyph, no em-dashes, cord vs chain detection
+ *   - Strips variant-specific suffixes (chain length, ring size, bracelet length)
+ *     because BestPrice entry represents a color-group, not a single variant
+ *
+ * v2.0 (2026-03-20):
  *   - Μονό/Ζευγάρι split: separate entries per color × second option (correct prices)
  *   - Color-correct images: variant boundary heuristic (no cross-color contamination)
  *
@@ -23,12 +32,99 @@
  * Output: feeds/bestprice-gr.xml
  *
  * Created: 2026-02-06
- * Updated: 2026-03-20 — v2.0: Μονό/Ζευγάρι split, color-correct images
+ * Updated: 2026-05-14 — v3.0: Skroutz title-builder integration
  */
 
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
+const { buildSkroutzTitle } = require('./skroutz-title-builder-v35');
+
+// ============================================
+// BESTPRICE TITLE BUILDER (v3.0)
+// ============================================
+//
+// Reuses Skroutz title-builder for canonical title generation, then strips
+// variant-specific suffixes that don't apply to BestPrice color-grouped entries:
+//   - chain info (αλυσίδα/κορδόνι <type> <N>cm) — BestPrice entry covers all chain options
+//   - ring size (μέγεθος N) — BestPrice <size> field aggregates all sizes
+//   - bracelet length (Ncm at end) — BestPrice <size> field handles this
+// KEEPS:
+//   - Single/pair (Σκουλαρίκι vs Σκουλαρίκια) — affects type word
+//   - Side (αριστερό αυτί / δεξί αυτί) — BestPrice splits left/right as separate entries
+//   - Finish prefix (επιχρυσωμένο/ροζ επιχρυσωμένο/οξειδωμένο/μαύρο)
+//
+// Detect Shopify products that are physically multi-piece sets ("Σετ από N <item>").
+// Skroutz title-builder strips this prefix (Skroutz marketplace removes quantity disclosures
+// anyway). BestPrice is price-comparison — quantity info MUST be preserved or customers
+// see a single-item title but receive a multi-piece set (price/expectation mismatch).
+function detectSetQuantity(product) {
+  const t = (product.title || '').trim();
+  const h = (product.handle || '').toLowerCase();
+  // Pattern 1: title starts with "Σετ από N" where N = digit or Greek number word
+  let m = t.match(/^Σετ\s+από\s+(\d+|δύο|τρία|τέσσερα|πέντε|έξι)\b/i);
+  if (m) return m[1];
+  // Pattern 2: title starts with "Δύο/Τρία/Τέσσερα..." as standalone quantity prefix
+  // (lowercase the Greek number word for mid-sentence use)
+  m = t.match(/^(Δύο|Τρία|Τέσσερα|Πέντε|Έξι)\s/i);
+  if (m) return m[1].toLowerCase();
+  // Pattern 3: handle starts with "N-" (e.g. "3-andrika-skoularikia-krikoi")
+  m = h.match(/^(\d+)-/);
+  if (m) return m[1];
+  return null;
+}
+
+function buildBestPriceTitle({ product, variant, categoryPath }) {
+  let title = buildSkroutzTitle({ product, variant, skroutzCategory: categoryPath });
+  if (!title) return title;
+  // Strip trailing variant-specific suffixes that come AFTER "ασήμι 925" disclosure.
+  // JS \b is not Unicode-aware for Greek, so we use Unicode lookahead.
+  // Apply repeatedly until stable in case of nested patterns.
+  let prev;
+  do {
+    prev = title;
+    // Chain/cord info added by Skroutz builder ALWAYS comes after "ασήμι 925":
+    // "...ασήμι 925 αλυσίδα ρολό 50cm" | "...ασήμι 925 κορδόνι τεχνόδερμα 40cm" | "...ασήμι 925 αλυσίδα"
+    title = title.replace(/(ασήμι\s+925)\s+(?:αλυσίδα|κορδόνι)(?![\p{L}\p{N}])(?:\s+[\p{L}\p{N}]+)*\s*$/iu, '$1');
+    // Ring size: "...ασήμι 925 μέγεθος N"
+    title = title.replace(/(ασήμι\s+925)\s+μέγεθος\s+\S+(?:\s+\S+)?\s*$/iu, '$1');
+    // Bracelet length: "...ασήμι 925 17cm" or "...ασήμι 925 16-18cm"
+    title = title.replace(/(ασήμι\s+925)\s+\d+(?:[-–]\d+)?cm\s*$/iu, '$1');
+  } while (title !== prev);
+  // v3.0 fix #1: re-add "Σετ από N" prefix for multi-piece sets (Skroutz strips this).
+  // Also inflect the leading type word + adjectives from singular to plural for grammatical
+  // agreement with "Σετ από N <plural>".
+  const setN = detectSetQuantity(product);
+  if (setN) {
+    title = applySetInflection(title, setN);
+  }
+  return title.replace(/\s+/g, ' ').trim();
+}
+
+// Inflect a singular-jewelry title to plural form when prepending "Σετ από N".
+// Maps leading type substantive + agreement-bearing adjectives (χειροποίητο, ανδρικό, μαύρο).
+// Keeps invariant types unchanged (Μενταγιόν, Κολιέ, Τσόκερ are indeclinable in MG plural).
+const SET_INFLECTION_TYPES = {
+  'δαχτυλίδι': { plural: 'δαχτυλίδια', adj: { 'χειροποίητο': 'χειροποίητα', 'ανδρικό': 'ανδρικά', 'γυναικείο': 'γυναικεία', 'μαύρο': 'μαύρα' }},
+  'βραχιόλι':  { plural: 'βραχιόλια',  adj: { 'χειροποίητο': 'χειροποίητα', 'ανδρικό': 'ανδρικά', 'μαύρο': 'μαύρα' }},
+  'σκουλαρίκι':{ plural: 'σκουλαρίκια',adj: { 'χειροποίητο': 'χειροποίητα', 'ανδρικό': 'ανδρικά', 'μαύρο': 'μαύρα' }},
+  'καρφίτσα':  { plural: 'καρφίτσες',  adj: { 'χειροποίητη': 'χειροποίητες', 'μαύρη': 'μαύρες' }},
+};
+
+function applySetInflection(title, setN) {
+  let lower = title.charAt(0).toLowerCase() + title.slice(1);
+  for (const [sg, { plural, adj }] of Object.entries(SET_INFLECTION_TYPES)) {
+    if (lower.startsWith(sg + ' ')) {
+      let result = plural + lower.slice(sg.length);
+      for (const [from, to] of Object.entries(adj)) {
+        result = result.replace(new RegExp(`(?<![\\p{L}\\p{N}])${from}(?![\\p{L}\\p{N}])`, 'gu'), to);
+      }
+      return `Σετ από ${setN} ${result}`;
+    }
+  }
+  // Indeclinable or unmatched type — just prepend without inflection
+  return `Σετ από ${setN} ${lower}`;
+}
 
 // ============================================
 // CONFIGURATION
@@ -573,16 +669,18 @@ function generateBestPriceFeed(products) {
       // Weight from representative variant
       const weightGrams = getWeightGrams(repVariant);
 
-      // Build title: product title + color (if multiple entries) + second option
-      const colorForTitle = color !== 'ασημί' || Object.keys(entryGroups).length > 1
-        ? translateVariantName(extractVariantColor(repVariant.selectedOptions) || color)
-        : null;
-      let title = product.title;
-      if (colorForTitle) {
-        title = `${product.title} - ${colorForTitle}`;
-      }
-      if (secondOpt) {
-        title = `${title} ${secondOpt}`;
+      // Build title via Skroutz title-builder v3.5.2 (v3.0 rebuild)
+      // Result is canonical Skroutz-style title MINUS variant-specific suffixes
+      // (chain length, ring size, bracelet length) which don't apply to color-grouped entries.
+      let title = buildBestPriceTitle({ product, variant: repVariant, categoryPath });
+      // Fallback if title-builder returns empty (defensive)
+      if (!title) {
+        title = product.title;
+        const colorForTitle = color !== 'ασημί' || Object.keys(entryGroups).length > 1
+          ? translateVariantName(extractVariantColor(repVariant.selectedOptions) || color)
+          : null;
+        if (colorForTitle) title = `${product.title} - ${colorForTitle}`;
+        if (secondOpt) title = `${title} ${secondOpt}`;
       }
 
       // Build product XML

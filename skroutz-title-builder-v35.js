@@ -1,7 +1,23 @@
 /**
- * Skroutz XML Feed Title Builder v3.5.3 (2026-05-14)
+ * Skroutz XML Feed Title Builder v3.5.4 (2026-05-14 evening)
  *
  * Authoritative spec: C:\Users\bill\Ανεβασμα listing Jewelry\XML-FEED-TITLE-STRUCTURE-SPEC.md (v2)
+ *
+ * v3.5.4 patches (4) — found by post-deploy parallel grammar + cosmetic audit:
+ *   1. inflectBodyAdjectives() — body style/shape adjectives now agree in number/gender
+ *      with the resolved typeWord. Fixes "Σκουλαρίκι ανόμοια" → "Σκουλαρίκι ανόμοιο",
+ *      "Σκουλαρίκια ear cuff τοξωτό" → "...τοξωτά", "Σκουλαρίκι ανδρικό τρίγωνα" → "...τρίγωνο".
+ *      Gem-phrase guard: skips adjective IMMEDIATELY before an inner gem/material noun
+ *      ("σφυρήλατη αλυσίδα", "κρεμαστό ζιρκόν") so those stay correct.
+ *   2. "&" in composite gem-color subaxis values (Μωβ & Ρουμπινί) now normalized to "και"
+ *      BEFORE GEM_COLOR_MAP lookup — was leaking literal "&" into 5+5 gem phrases.
+ *   3. extractBraceletLength now recognizes "Μήκος αλυσίδας" axis name — fixes 55
+ *      bracelet entries that previously collided (11 groups of 2-7 duplicate titles)
+ *      because length info never reached the title.
+ *   4. Generic mid-sentence Title-Case → lowercase pass in cleanBody — catches Shopify
+ *      capitalized motifs not in LOWERCASE_FIRST set (Άγγελος, Στριφτές, Φίδι, Ρόμβους,
+ *      Λάπις, Mother, Pearl). Preserves single-letter monograms (Α/Β/Γ) and ALL-CAPS
+ *      tokens (XS, S, M, L). Brand allowlist via PRESERVE_CAPS (currently: Box).
  *
  * v3.5.3 patches (2) — discovered during BestPrice v3.0 ultra-review:
  *   1. Removed hardcoded "Box" body strip — was leaving orphan prepositions ("γάντι του"
@@ -193,7 +209,10 @@ function getFinishForVariant(product, variant) {
   const chosen = colorMetal || colorRaw;
   let { finish, gem } = resolveFinish(chosen);
   if (!gem && subAxisColor) {
-    const [val, subName] = subAxisColor;
+    const [valRaw, subName] = subAxisColor;
+    // v3.5.4: normalize "&" to "και" for composite gem-color values (e.g. "Μωβ & Ρουμπινί")
+    // so the resulting gem phrase reads "μωβ και ρουμπινί ζιρκόν" instead of "μωβ & ρουμπινί ζιρκόν".
+    const val = valRaw.replace(/\s*&\s*/g, ' και ');
     const valL = val.toLowerCase().trim();
     const gemWord = GEM_COLOR_MAP[valL];
     const material = SUB_AXIS_MATERIAL[subName];
@@ -252,6 +271,125 @@ function genderForm(typeWord) {
   if (gender === 'f' && number === 'sg') return 'ανδρική';
   if (number === 'pl') return 'ανδρικά';
   return 'ανδρικό';
+}
+
+// ============================================
+// BODY ADJECTIVE INFLECTION (v3.5.4)
+// ============================================
+// Style/shape adjectives must agree with the resolved typeWord in number/gender.
+// Shopify product titles are usually authored in one fixed form (singular or plural
+// neuter), but per-variant the type word can resolve to a different number/gender
+// (e.g. Σκουλαρίκι vs Σκουλαρίκια; Καρφίτσα = feminine sg). Without inflection, the
+// body adjective passes through and grates: "Σκουλαρίκι ανόμοια", "Σκουλαρίκια τοξωτό".
+
+// Lookup table: lowercase form → { n_sg, n_pl, f_sg, f_pl }
+const ADJ_INFLECTION = (() => {
+  // Each row: [n_sg, n_pl, f_sg, f_pl]
+  const groups = [
+    ['ανόμοιο',       'ανόμοια',       'ανόμοιη',       'ανόμοιες'],
+    ['όμοιο',         'όμοια',         'όμοια',         'όμοιες'],
+    ['ασύμμετρο',     'ασύμμετρα',     'ασύμμετρη',     'ασύμμετρες'],
+    ['σφυρήλατο',     'σφυρήλατα',     'σφυρήλατη',     'σφυρήλατες'],
+    ['σφυρηλατημένο', 'σφυρηλατημένα', 'σφυρηλατημένη', 'σφυρηλατημένες'],
+    ['πλεκτό',        'πλεκτά',        'πλεκτή',        'πλεκτές'],
+    ['τοξωτό',        'τοξωτά',        'τοξωτή',        'τοξωτές'],
+    ['στρόγγυλο',     'στρόγγυλα',     'στρόγγυλη',     'στρόγγυλες'],
+    ['τρίγωνο',       'τρίγωνα',       'τρίγωνη',       'τρίγωνες'],
+    ['τετράγωνο',     'τετράγωνα',     'τετράγωνη',     'τετράγωνες'],
+    ['τριγωνικό',     'τριγωνικά',     'τριγωνική',     'τριγωνικές'],
+    ['μικρό',         'μικρά',         'μικρή',         'μικρές'],
+    ['μεγάλο',        'μεγάλα',        'μεγάλη',        'μεγάλες'],
+    ['κρυφό',         'κρυφά',         'κρυφή',         'κρυφές'],
+    ['μινιμαλιστικό', 'μινιμαλιστικά', 'μινιμαλιστική', 'μινιμαλιστικές'],
+    ['κλασικό',       'κλασικά',       'κλασική',       'κλασικές'],
+    ['κλασσικό',      'κλασσικά',      'κλασσική',      'κλασσικές'],
+    ['μοντέρνο',      'μοντέρνα',      'μοντέρνη',      'μοντέρνες'],
+    ['βυζαντινό',     'βυζαντινά',     'βυζαντινή',     'βυζαντινές'],
+    ['γοτθικό',       'γοτθικά',       'γοτθική',       'γοτθικές'],
+    ['τυλιχτό',       'τυλιχτά',       'τυλιχτή',       'τυλιχτές'],
+    ['δίχρωμο',       'δίχρωμα',       'δίχρωμη',       'δίχρωμες'],
+    ['καρφωτό',       'καρφωτά',       'καρφωτή',       'καρφωτές'],
+    ['κρεμαστό',      'κρεμαστά',      'κρεμαστή',      'κρεμαστές'],
+    ['διπλό',         'διπλά',         'διπλή',         'διπλές'],
+    ['τριπλό',        'τριπλά',        'τριπλή',        'τριπλές'],
+    ['στριφτό',       'στριφτά',       'στριφτή',       'στριφτές'],
+  ];
+  const map = {};
+  for (const [n_sg, n_pl, f_sg, f_pl] of groups) {
+    const byKey = { n_sg, n_pl, f_sg, f_pl };
+    for (const form of [n_sg, n_pl, f_sg, f_pl]) {
+      map[form.toLowerCase()] = byKey;
+    }
+  }
+  return map;
+})();
+
+// Gem/material/structural/motif nouns. An adjective IMMEDIATELY before one of these
+// describes that noun, not the head — so we skip inflection (preserve agreement).
+const INNER_NOUN = new Set([
+  // Stones / gems
+  'πέτρα', 'πέτρες', 'πέτρας',
+  'ζιρκόν', 'ζιργκόν',
+  'μαργαριτάρι', 'μαργαριτάρια', 'μαργαριταριού',
+  'τοπάζι', 'τοπάζια',
+  'σμαράγδι', 'σμαράγδια',
+  'ρουμπίνι', 'ρουμπίνια',
+  'λάπις',
+  'σκαθάρι', 'σκαθάρια',
+  // Materials / structural
+  'αλυσίδα', 'αλυσίδες', 'αλυσίδας',
+  'κορδόνι', 'κορδόνια',
+  'σύρμα', 'σύρματα',
+  'σμάλτο',
+  'καρδιά', 'καρδιές',
+  'καμπύλη', 'καμπύλες',
+  'ραβδώσεις',
+  'φύλλα',
+  'κλαδιά',
+  'καρφιά',
+  'χάντρες',
+  'βέργες',
+  'γραμμές',
+  'σπείρες',
+  // Motif nouns (plural) — adjective immediately before them describes them
+  'λιβελούλες', 'μαργαρίτες', 'πεταλούδες', 'βιολέτες',
+  'άγκυρες', 'μπίλιες', 'γρανάζια', 'εξοχές',
+]);
+
+function inflectBodyAdjectives(body, typeWord) {
+  if (!body) return body;
+  const g = TYPE_GRAMMAR[typeWord] || ['n', 'sg'];
+  const [gender, number] = g;
+  const targetKey = `${gender}_${number}`;
+
+  const tokens = body.split(/\s+/);
+  if (tokens.length === 0) return body;
+
+  for (let i = 0; i < tokens.length; i++) {
+    const tok = tokens[i];
+    const tokL = tok.toLowerCase();
+
+    const lookup = ADJ_INFLECTION[tokL];
+    if (!lookup) continue;
+
+    const correct = lookup[targetKey];
+    if (!correct || correct === tokL) continue;
+
+    // Gem-phrase guard: if the NEXT token is an inner gem/material noun,
+    // the adjective describes that noun (e.g. "σφυρήλατη αλυσίδα", "κρεμαστό ζιρκόν",
+    // "μπλε πέτρα"), so leave it alone. This is the single most important guard —
+    // ~135 false positives in the audit fell into this category.
+    if (i + 1 < tokens.length) {
+      const next = tokens[i + 1].toLowerCase();
+      if (INNER_NOUN.has(next)) continue;
+    }
+
+    // Preserve original case (Title-Case input → Title-Case output)
+    const isCap = /^[\p{Lu}]/u.test(tok);
+    tokens[i] = isCap ? correct[0].toUpperCase() + correct.slice(1) : correct;
+  }
+
+  return tokens.join(' ');
 }
 
 // ============================================
@@ -479,6 +617,20 @@ function cleanBody(body, typeWord) {
       const cap = w[0].toUpperCase() + w.slice(1);
       body = body.replace(wordRegex(cap), w);
     }
+    // v3.5.4: generic mid-sentence Title-Case → lowercase pass. Catches Shopify-source
+    // capitalized motifs not in LOWERCASE_FIRST (Άγγελος, Στριφτές, Φίδι, Ρόμβους, Λάπις,
+    // Mother, Pearl, Λιβελούλα). Preserves single-letter monograms (Α/Β/Γ) and ALL-CAPS
+    // tokens (XS, S, M, L) via the strict /^[Lu][Ll]+$/u pattern. Brand allowlist below.
+    const PRESERVE_CAPS = new Set(['Box']);
+    const words2 = body.split(/\s+/);
+    for (let i = 0; i < words2.length; i++) {
+      const w = words2[i];
+      if (PRESERVE_CAPS.has(w)) continue;
+      if (/^[\p{Lu}][\p{Ll}]+$/u.test(w)) {
+        words2[i] = w[0].toLowerCase() + w.slice(1);
+      }
+    }
+    body = words2.join(' ');
   }
   return body;
 }
@@ -509,7 +661,11 @@ function extractBraceletLength(variant) {
   for (const opt of variant.selectedOptions || []) {
     const name = (opt.name || '').toLowerCase();
     const val = (opt.value || '').trim();
-    if ((name.includes('νούμερο') || name.includes('μέγεθος') || name.includes('περίμετρος')) && val.toLowerCase().includes('cm')) {
+    // v3.5.4: added 'μήκος' (covers "Μήκος" and "Μήκος αλυσίδας") — was the missing axis
+    // name for 55 bracelet variants (11 collision groups) where length never reached title.
+    if ((name.includes('νούμερο') || name.includes('μέγεθος') ||
+         name.includes('περίμετρος') || name.includes('μήκος'))
+        && val.toLowerCase().includes('cm')) {
       const m = val.match(/(\d+(?:[-–]\d+)?)\s*cm/i);
       if (m) return m[0].replace(/\s/g, '');
     }
@@ -622,6 +778,10 @@ function buildSkroutzTitle({ product, variant, skroutzCategory }) {
   body = body.replace(/["""«»]/g, '').replace(/''/g, '').replace(/'/g, '');
   body = body.replace(/\s+/g, ' ').trim();
   body = cleanBody(body, typeWord);
+  // v3.5.4: inflect body adjectives to agree with typeWord number/gender.
+  // Must come AFTER cleanBody (lowercased tokens) and BEFORE motif/monogram/gem injection
+  // so that downstream pieces see the already-agreeing forms.
+  body = inflectBodyAdjectives(body, typeWord);
 
   // Cross motif injection
   const ptitleL = (product.title || '').toLowerCase();

@@ -93,7 +93,9 @@ jobs:
               echo "⚠️ Rebase conflict — resolving by keeping our generated feeds..."
               git checkout --theirs feeds/*.xml 2>/dev/null || true
               git add feeds/*.xml || true
-              git rebase --continue --no-edit || git rebase --skip
+              # v3.5.1 fix: --no-edit is NOT valid for git rebase --continue (it dropped our commit on 2026-05-14).
+              # GIT_EDITOR=true makes the commit-message editor a no-op, preserving the rebased commit.
+              GIT_EDITOR=true git rebase --continue || git rebase --abort
             }
             git push
             echo "✅ Feeds updated and pushed!"

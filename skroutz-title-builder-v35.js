@@ -1,7 +1,14 @@
 /**
- * Skroutz XML Feed Title Builder v3.5 (2026-05-14)
+ * Skroutz XML Feed Title Builder v3.5.2 (2026-05-14)
  *
  * Authoritative spec: C:\Users\bill\Ανεβασμα listing Jewelry\XML-FEED-TITLE-STRUCTURE-SPEC.md (v2)
+ *
+ * v3.5.2 cosmetic patches (3):
+ *   1. CORD_TYPE_PATTERNS: τεχνόδερμα/δερμάτινο/δέρμα/κορδόνι get "κορδόνι" prefix
+ *      instead of "αλυσίδα" (154 entries) — spec §2.13 line 256 "δερμάτινο κορδόνι"
+ *   2. Gem-phrase injection BEFORE side when side present (8 ear-cuff entries) — spec §4.4
+ *   3. "και" connector instead of "με" when body already ends with "με <X>" (55 entries
+ *      — generalizes beyond πέτρα to ζιρκόν/μαργαριτάρι/σμάλτο)
  *
  * Implements:
  *  - Canonical title order per spec §2 (12 positions)
@@ -537,6 +544,21 @@ function normalizeChainType(ct) {
   return ct.replace(/\brolo\b/gi, 'ρολό').replace(/\brollo\b/gi, 'ρολό');
 }
 
+// v3.5.2: chain types that are CORDS (κορδόνι), not chains (αλυσίδα).
+// Spec §2.13 line 256 references "δερμάτινο κορδόνι" — leather/faux-leather strands are cords.
+// When the Shopify variant chain type matches one of these, prefix with "κορδόνι" instead of "αλυσίδα".
+const CORD_TYPE_PATTERNS = [
+  /τεχν[όο]δερμα/i,
+  /δερμ[άα]τιν[οαη]/i,
+  /^δ[έε]ρμα(?:\s|$)/i,
+  /^κορδ[όο]νι/i,
+];
+
+function isCordType(ctClean) {
+  if (!ctClean) return false;
+  return CORD_TYPE_PATTERNS.some((re) => re.test(ctClean));
+}
+
 function extractChainInfo(variant) {
   let chainType = null;
   let chainLength = null;
@@ -649,11 +671,29 @@ function buildSkroutzTitle({ product, variant, skroutzCategory }) {
   else if (finish === 'O') parts.push('από οξειδωμένο ασήμι 925');
   else parts.push('από ασήμι 925');
 
-  // Gem (inject before "χειροποίητο")
+  // Gem injection
+  // v3.5.2:
+  //   (a) inject BEFORE side when present (spec §4.4 example: gem-phrase before "αριστερό/δεξί αυτί")
+  //       Old logic injected before χειροποίητο unconditionally → wrong for 8 ear-cuff entries.
+  //   (b) when body already ends with "με <something>" phrase, connect gem with "και" instead of "με"
+  //       to avoid double "με X με Y πέτρα" awkward grammar (32 affected entries).
   if (gem) {
+    // Cover multi-word "με X" phrases at end of body (up to 5 trailing words — handles cases like "με mother of pearl")
+    const bodyEndsWithMe = /(?<![\p{L}\p{N}])με\s+\p{L}+(?:\s+\p{L}+){0,4}\s*$/iu.test(body);
+    const gemPhrase = bodyEndsWithMe ? `και ${gem}` : `με ${gem}`;
+    const handcraftedTok = handcraftedForm(typeWord);
     const newParts = [];
+    let injected = false;
     for (const p of parts) {
-      if (p === handcraftedForm(typeWord)) newParts.push(`με ${gem}`);
+      if (!injected) {
+        if (side && p === side) {
+          newParts.push(gemPhrase);
+          injected = true;
+        } else if (!side && p === handcraftedTok) {
+          newParts.push(gemPhrase);
+          injected = true;
+        }
+      }
       newParts.push(p);
     }
     parts.length = 0;
@@ -675,18 +715,23 @@ function buildSkroutzTitle({ product, variant, skroutzCategory }) {
   // Chain info for pendant family
   // v3.5.1: removed Βραχιόλι — bracelet length is already emitted via extractBraceletLength,
   // and adding "αλυσίδα <length>" produces double-cm duplication
+  // v3.5.2: cord-type detection — τεχνόδερμα/δερμάτινο/δέρμα/κορδόνι get "κορδόνι" prefix instead of "αλυσίδα"
   if (['Μενταγιόν', 'Κολιέ', 'Τσόκερ', 'Σετ κοσμημάτων'].includes(typeWord)) {
     const { chainType: ct, chainLength: cl } = extractChainInfo(v);
     let chainStr = null;
+    const prefixFor = (ctClean) => {
+      if (ctClean.startsWith('αλυσίδα') || ctClean.startsWith('κορδόνι')) return '';
+      return isCordType(ctClean) ? 'κορδόνι ' : 'αλυσίδα ';
+    };
     if (ct && cl) {
       const ctClean = ct.toLowerCase().trim();
-      chainStr = ctClean.startsWith('αλυσίδα') ? `${ctClean} ${cl}` : `αλυσίδα ${ctClean} ${cl}`;
+      chainStr = `${prefixFor(ctClean)}${ctClean} ${cl}`;
     } else if (cl) chainStr = `αλυσίδα ${cl}`;
     else if (ct) {
       const ctClean = ct.toLowerCase().trim();
-      chainStr = ctClean.startsWith('αλυσίδα') ? ctClean : `αλυσίδα ${ctClean}`;
+      chainStr = `${prefixFor(ctClean)}${ctClean}`;
     }
-    if (chainStr) parts.push(chainStr.replace(/\s+/g, ' '));
+    if (chainStr) parts.push(chainStr.replace(/\s+/g, ' ').trim());
   }
 
   let title = parts.filter(Boolean).join(' ');

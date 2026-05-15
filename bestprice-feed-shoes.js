@@ -719,11 +719,17 @@ function generateBestPriceFeed(products) {
       let item = '';
       item += `    <product>\n`;
       item += `      <productId>${repVariant.id}</productId>\n`;
-      // Title: NO CDATA wrapping — BestPrice public validator counts CDATA-wrapped
-      // titles as 0% coverage (326 errors → "feed rejected"). Removing CDATA
-      // changes to 5 soft suggestions. Quotes get XML-escaped via escapeXml.
-      // Discovered 2026-05-15 via merchants.bestprice.gr/xml-validator/.
-      item += `      <title>${escapeXml(title)}</title>\n`;
+      // Title: USE CDATA wrapping per official BestPrice XML spec v2.0.14
+      // "Υπόδειγμα XML" example: <title><![CDATA[Apple iPhone 7 32GB μαύρο]]></title>.
+      // This is the SAME pattern jewelry feed uses (production-accepted 10/02/2026).
+      // v1.2 had removed CDATA based on a misread of the public validator warning
+      // (the actual issue was that &quot; entities cause "0% Alphanumeric coverage"
+      // in the validator because it doesn't decode entities. CDATA + raw quotes
+      // → 100% coverage). Per spec Section 10, brand MUST be in the title, so
+      // we prepend "Emmanuela" to titles that don't already contain it.
+      const titleWithBrand = /emmanuela/i.test(title) ? title : `Emmanuela ${title}`;
+      const titleCdata = titleWithBrand.replace(/]]>/g, ']]]]><![CDATA[>');
+      item += `      <title><![CDATA[${titleCdata}]]></title>\n`;
       item += `      <productURL>https://${DOMAIN}/products/${product.handle}?variant=${repVariant.id}</productURL>\n`;
 
       // Images: color-correct only

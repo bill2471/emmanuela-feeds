@@ -1,7 +1,22 @@
 /**
- * Skroutz XML Feed Title Builder v3.5.5 (2026-05-15)
+ * Skroutz XML Feed Title Builder v3.5.6 (2026-05-15, afternoon)
  *
  * Authoritative spec: C:\Users\bill\Ανεβασμα listing Jewelry\XML-FEED-TITLE-STRUCTURE-SPEC.md (v2)
+ *
+ * v3.5.6 patches (2) — code review hardening before Skroutz ticket reply:
+ *   1. Unified "Επιμετάλλωση:" label for all finishes (was "Φινίρισμα:" for Sterling Silver).
+ *      If Skroutz catalog parser keys on the exact "Επιμετάλλωση:" label string, the SS
+ *      row was previously invisible to the parser. Now SS row reads:
+ *        "Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)"
+ *      which the parser will catch by label regardless of value.
+ *   2. Terminology alignment: SS row no longer says "Λευκό Ασήμι 925" — that contradicted
+ *      the <color>Ασήμι</color> XML tag we emit elsewhere.
+ *
+ *   NOT addressed in this patch (deferred pending Skroutz ticket reply):
+ *   - "Σετ από N" prefix in Skroutz title (B2 review item) — redundant with v3.5.5
+ *     structured block "Πλήθος Τεμαχίων: Σετ από N" if the cluster engine parses labels.
+ *     If the engine does NOT parse labels, adding Σετ από N to title won't help either
+ *     (Skroutz strips quantity from cluster titles by design per 2026-05-12 reply).
  *
  * v3.5.5 patch (1) — Skroutz cluster engine signal improvement per support reply 2026-05-15:
  *   1. NEW buildStructuredAttributes() helper exports a multi-line structured block
@@ -1021,11 +1036,16 @@ function buildStructuredAttributes({ product, variant, skroutzCategory }) {
   // 2. Υλικό (always Sterling Silver 925 for EMMANUELA)
   lines.push('Υλικό: Ασήμι 925 (Sterling Silver 925)');
 
-  // 3. Επιμετάλλωση (only when there IS plating — Sterling Silver alone gets a different label)
+  // 3. Επιμετάλλωση — ALWAYS use the same label so a label-keyed parser finds
+  // the row regardless of finish. For Sterling Silver (no plating), value is
+  // "Καμία" so the row exists but signals "no plating" semantically.
+  // v3.5.6 fix (B6+M5): was "Φινίρισμα: Λευκό Ασήμι 925 (χωρίς επιμετάλλωση)"
+  // — different label + different terminology from <color>Ασήμι</color>.
+  // Now: unified "Επιμετάλλωση:" label, value matches the <color> field.
   if (PLATING_LABELS[finish]) {
     lines.push(`Επιμετάλλωση: ${PLATING_LABELS[finish]}`);
   } else {
-    lines.push('Φινίρισμα: Λευκό Ασήμι 925 (χωρίς επιμετάλλωση)');
+    lines.push('Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)');
   }
 
   // 4. Πλήθος Τεμαχίων (KEY ATTRIBUTE — fixes "Μονό Σκουλαρίκι" cluster issue)

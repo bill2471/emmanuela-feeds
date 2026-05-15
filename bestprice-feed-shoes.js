@@ -251,12 +251,17 @@ function translateVariantName(name) {
 
 function escapeXml(str) {
   if (!str) return '';
+  // Note: do NOT emit &apos; — some XML parsers (incl. BestPrice public validator)
+  // don't recognize it and fail with generic "syntax error". Apostrophe is valid
+  // literal char in element content per XML spec — only needs escape inside
+  // attribute values delimited by '. Escape to &quot; for consistency since
+  // titles often have "Product Name" wrapping which uses same role visually.
   return str
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
-    .replace(/'/g, '&apos;');
+    .replace(/'/g, '&quot;');
 }
 
 function extractVariantColor(selectedOptions) {
@@ -702,7 +707,11 @@ function generateBestPriceFeed(products) {
       let item = '';
       item += `    <product>\n`;
       item += `      <productId>${repVariant.id}</productId>\n`;
-      item += `      <title><![CDATA[${title}]]></title>\n`;
+      // Title: NO CDATA wrapping — BestPrice public validator counts CDATA-wrapped
+      // titles as 0% coverage (326 errors → "feed rejected"). Removing CDATA
+      // changes to 5 soft suggestions. Quotes get XML-escaped via escapeXml.
+      // Discovered 2026-05-15 via merchants.bestprice.gr/xml-validator/.
+      item += `      <title>${escapeXml(title)}</title>\n`;
       item += `      <productURL>https://${DOMAIN}/products/${product.handle}?variant=${repVariant.id}</productURL>\n`;
 
       // Images: color-correct only

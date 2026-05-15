@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:g="http://base.google.com/ns/1.0">
   <title>EMMANUELA Local Inventory Feed — Greece</title>
   <link href="https://emmanuela.gr"/>
-  <updated>2026-05-15T09:13:57.588Z</updated>
+  <updated>2026-05-15T14:28:37.116Z</updated>
     <entry>
       <g:id>31372692389923</g:id>
       <g:store_code>emmanuela</g:store_code>
@@ -698,13 +698,6 @@
     </entry>
     <entry>
       <g:id>31372818579491</g:id>
-      <g:store_code>emmanuela</g:store_code>
-      <g:quantity>1</g:quantity>
-      <g:price>269.00 EUR</g:price>
-      <g:availability>in_stock</g:availability>
-    </entry>
-    <entry>
-      <g:id>31372818612259</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>1</g:quantity>
       <g:price>269.00 EUR</g:price>
@@ -13614,7 +13607,7 @@
     <entry>
       <g:id>31374407630883</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>36</g:quantity>
+      <g:quantity>35</g:quantity>
       <g:price>89.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
@@ -20712,7 +20705,7 @@
     <entry>
       <g:id>49401159319886</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>6</g:quantity>
+      <g:quantity>5</g:quantity>
       <g:price>44.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
@@ -20866,7 +20859,7 @@
     <entry>
       <g:id>49401167642958</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>9</g:quantity>
+      <g:quantity>8</g:quantity>
       <g:price>67.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
@@ -21559,7 +21552,7 @@
     <entry>
       <g:id>49467158233422</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>9</g:quantity>
+      <g:quantity>8</g:quantity>
       <g:price>54.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
@@ -21930,7 +21923,7 @@
     <entry>
       <g:id>49509677236558</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>4</g:quantity>
+      <g:quantity>3</g:quantity>
       <g:price>139.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>

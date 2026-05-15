@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-<<<<<<< HEAD
-  <date>2026-05-15 12:25</date>
-=======
-  <date>2026-05-15 09:49</date>
->>>>>>> 7cdb8f5 (🔄 Auto-update feeds 2026-05-15 09:50 UTC)
+  <date>2026-05-15 14:18</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -125,7 +121,7 @@
       <MPN>1KL225LBLBL7</MPN>
       <color>μαύρο</color>
       <size>40,41</size>
-      <EAN>05212033625050</EAN>
+      <EAN>5212033625050</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -162,7 +158,7 @@
       <MPN>1KL225LNABE13</MPN>
       <color>μπεζ</color>
       <size>46</size>
-      <EAN>05212033625937</EAN>
+      <EAN>5212033625937</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -185,7 +181,7 @@
       <MPN>1BR2012L2M9</MPN>
       <color>πολύχρωμο</color>
       <size>40</size>
-      <EAN>05212033635837</EAN>
+      <EAN>5212033635837</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -206,7 +202,7 @@
       <MPN>1KL213LNABE11</MPN>
       <color>μπεζ</color>
       <size>44</size>
-      <EAN>05212033624640</EAN>
+      <EAN>5212033624640</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -229,7 +225,7 @@
       <MPN>1KL213LBLBL12</MPN>
       <color>μαύρο</color>
       <size>45</size>
-      <EAN>05212033624787</EAN>
+      <EAN>5212033624787</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -252,7 +248,7 @@
       <MPN>1BR2001LR5</MPN>
       <color>κόκκινο</color>
       <size>36</size>
-      <EAN>05212033635875</EAN>
+      <EAN>5212033635875</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -275,7 +271,7 @@
       <MPN>1BR2001LBU10</MPN>
       <color>μπλε</color>
       <size>41</size>
-      <EAN>05212033635998</EAN>
+      <EAN>5212033635998</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -291,7 +287,7 @@
       <MPN>1BR3018FL2M7</MPN>
       <color>πολύχρωμο</color>
       <size>38,40,41</size>
-      <EAN>05212033648837</EAN>
+      <EAN>5212033648837</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -314,7 +310,7 @@
       <MPN>1BR30331FABL3M10</MPN>
       <color>πολύχρωμο</color>
       <size>41</size>
-      <EAN>05212033645737</EAN>
+      <EAN>5212033645737</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -335,7 +331,7 @@
       <MPN>1BR3011LTRLNA5</MPN>
       <color>μπεζ</color>
       <size>36</size>
-      <EAN>05212033636759</EAN>
+      <EAN>5212033636759</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -356,7 +352,7 @@
       <MPN>1BR3011FL3M5</MPN>
       <color>πολύχρωμο</color>
       <size>36,40</size>
-      <EAN>05212033649100</EAN>
+      <EAN>5212033649100</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -378,7 +374,7 @@
       <MPN>1BR3011LTRLY7</MPN>
       <color>κίτρινο</color>
       <size>38</size>
-      <EAN>05212033636704</EAN>
+      <EAN>5212033636704</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -398,7 +394,7 @@
       <MPN>1KL505LRBE6</MPN>
       <color>κόκκινο</color>
       <size>37,38,40,41</size>
-      <EAN>05212033613088</EAN>
+      <EAN>5212033613088</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -421,7 +417,7 @@
       <MPN>1KL505LWHBE7</MPN>
       <color>λευκό</color>
       <size>38,40</size>
-      <EAN>05212033612975</EAN>
+      <EAN>5212033612975</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -444,7 +440,7 @@
       <MPN>1FA3D24LRM9</MPN>
       <color>χρυσό</color>
       <size>40</size>
-      <EAN>05212033647755</EAN>
+      <EAN>5212033647755</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -465,7 +461,7 @@
       <MPN>1BR3020LTRLR5</MPN>
       <color>κόκκινο</color>
       <size>36,41</size>
-      <EAN>05212033637206</EAN>
+      <EAN>5212033637206</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -486,7 +482,7 @@
       <MPN>1KL838LNABE5</MPN>
       <color>μπεζ</color>
       <size>36,37,38,39,41,42</size>
-      <EAN>05212033623650</EAN>
+      <EAN>5212033623650</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -506,7 +502,7 @@
       <MPN>1KL838LWHBE5</MPN>
       <color>λευκό</color>
       <size>36,39,41</size>
-      <EAN>05212033623780</EAN>
+      <EAN>5212033623780</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -529,7 +525,7 @@
       <MPN>1KL838LMIBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,38,39,40,41</size>
-      <EAN>05212033624046</EAN>
+      <EAN>5212033624046</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -549,7 +545,7 @@
       <MPN>1LI57MANLBRBR9</MPN>
       <color>καφέ</color>
       <size>42</size>
-      <EAN>05212033635165</EAN>
+      <EAN>5212033635165</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -570,7 +566,7 @@
       <MPN>1LI57MANLNABE11</MPN>
       <color>μπεζ</color>
       <size>44,45,47</size>
-      <EAN>05212033635257</EAN>
+      <EAN>5212033635257</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -593,7 +589,7 @@
       <MPN>1LI57MANLBLBL13</MPN>
       <color>μαύρο</color>
       <size>46,47</size>
-      <EAN>05212033626910</EAN>
+      <EAN>5212033626910</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -659,7 +655,7 @@
     </product>
     <product>
       <productId>40479823560861</productId>
-      <title>Σανδάλια μονομάχου  &quot;Μέλαινα&quot; - Δέρμα φιδιού</title>
+      <title>Σανδάλια μονομάχου &quot;Μέλαινα&quot; - Δέρμα φιδιού</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-snake-melaina?variant=40479823560861</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-snake-skin-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-snake-skin-melaina-435870.jpg?v=1627375865</imageURL>
       <imagesURL>
@@ -677,12 +673,12 @@
       <MPN>1TS1065LMLBL5</MPN>
       <color>πολύχρωμο</color>
       <size>36,37,38,41</size>
-      <EAN>05212033643283</EAN>
+      <EAN>5212033643283</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>40479823724701</productId>
-      <title>Σανδάλια μονομάχου  &quot;Μέλαινα&quot; - Καφέ</title>
+      <title>Σανδάλια μονομάχου &quot;Μέλαινα&quot; - Καφέ</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-snake-melaina?variant=40479823724701</productURL>
       <imageURL></imageURL>
       <price>64.00</price>
@@ -693,12 +689,12 @@
       <MPN>1TS1065LHOBE5</MPN>
       <color>καφέ</color>
       <size>36,38</size>
-      <EAN>05212033643146</EAN>
+      <EAN>5212033643146</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>40479823757469</productId>
-      <title>Σανδάλια μονομάχου  &quot;Μέλαινα&quot; - Λευκό</title>
+      <title>Σανδάλια μονομάχου &quot;Μέλαινα&quot; - Λευκό</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-snake-melaina?variant=40479823757469</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-snake-skin-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-snake-skin-melaina-635303.jpg?v=1627294284</imageURL>
       <imagesURL>
@@ -713,12 +709,12 @@
       <MPN>1TS1065LWHBE5</MPN>
       <color>λευκό</color>
       <size>36,37,38,39,40,41</size>
-      <EAN>05212033643009</EAN>
+      <EAN>5212033643009</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>40479823855773</productId>
-      <title>Σανδάλια μονομάχου  &quot;Μέλαινα&quot; - Φυσικό</title>
+      <title>Σανδάλια μονομάχου &quot;Μέλαινα&quot; - Φυσικό</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-snake-melaina?variant=40479823855773</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-snake-skin-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-snake-skin-melaina-612025.jpg?v=1627294284</imageURL>
       <price>64.00</price>
@@ -729,7 +725,7 @@
       <MPN>1TS1065LNABE6</MPN>
       <color>μπεζ</color>
       <size>37,38,39,40</size>
-      <EAN>05212033643085</EAN>
+      <EAN>5212033643085</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -752,7 +748,7 @@
       <MPN>1TSERMLRMBE5</MPN>
       <color>χρυσό</color>
       <size>36</size>
-      <EAN>05212033643931</EAN>
+      <EAN>5212033643931</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -928,7 +924,7 @@
       <MPN>1FA117104LY5</MPN>
       <color>κίτρινο</color>
       <size>36,37,39</size>
-      <EAN>05212033611060</EAN>
+      <EAN>5212033611060</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -951,7 +947,7 @@
       <MPN>1FA117104LR5</MPN>
       <color>κόκκινο</color>
       <size>36,39,40</size>
-      <EAN>05212033610933</EAN>
+      <EAN>5212033610933</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -967,7 +963,7 @@
       <MPN>1KL345LNABE5</MPN>
       <color>μπεζ</color>
       <size>36</size>
-      <EAN>05212033622608</EAN>
+      <EAN>5212033622608</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -983,7 +979,7 @@
       <MPN>1KL345LWHBE5</MPN>
       <color>λευκό</color>
       <size>36,37,38,40,41</size>
-      <EAN>05212033623513</EAN>
+      <EAN>5212033623513</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1003,7 +999,7 @@
       <MPN>1KL345LRMBE5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,40,41</size>
-      <EAN>05212033622868</EAN>
+      <EAN>5212033622868</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1023,7 +1019,7 @@
       <MPN>1KL345LCOBE7</MPN>
       <color>κοραλί</color>
       <size>38,40,41</size>
-      <EAN>05212033623162</EAN>
+      <EAN>5212033623162</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1039,7 +1035,7 @@
       <MPN>1KL345LTUBE7</MPN>
       <color>τιρκουάζ</color>
       <size>38,39,40,41</size>
-      <EAN>05212033623292</EAN>
+      <EAN>5212033623292</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1055,7 +1051,7 @@
       <MPN>1KL345LRBE8</MPN>
       <color>κόκκινο</color>
       <size>39,40,41</size>
-      <EAN>05212033623445</EAN>
+      <EAN>5212033623445</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1071,7 +1067,7 @@
       <MPN>1TS52LSIBE5</MPN>
       <color>ασημί</color>
       <size>36,37,38,41</size>
-      <EAN>05212033642781</EAN>
+      <EAN>5212033642781</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1091,7 +1087,7 @@
       <MPN>1TS52LBCBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,38</size>
-      <EAN>05212033642439</EAN>
+      <EAN>5212033642439</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1112,7 +1108,7 @@
       <MPN>1TS52LHOBE5</MPN>
       <color>καφέ</color>
       <size>36,38,40</size>
-      <EAN>05212033642644</EAN>
+      <EAN>5212033642644</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1128,7 +1124,7 @@
       <MPN>1TS52LNABE5</MPN>
       <color>μπεζ</color>
       <size>36,37,38,39,40,41</size>
-      <EAN>05212033642576</EAN>
+      <EAN>5212033642576</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1150,7 +1146,7 @@
       <MPN>1TS52LRMBE5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,39,41</size>
-      <EAN>05212033642859</EAN>
+      <EAN>5212033642859</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1166,7 +1162,7 @@
       <MPN>1TS52LWHBE5</MPN>
       <color>λευκό</color>
       <size>36,37,38,39,41</size>
-      <EAN>05212033642507</EAN>
+      <EAN>5212033642507</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1182,7 +1178,7 @@
       <MPN>1TSHLBCBL5</MPN>
       <color>μαύρο</color>
       <size>36</size>
-      <EAN>05212033643436</EAN>
+      <EAN>5212033643436</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1198,7 +1194,7 @@
       <MPN>1TSHLRCBE5</MPN>
       <color>χρυσό</color>
       <size>36</size>
-      <EAN>05212033643368</EAN>
+      <EAN>5212033643368</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1214,7 +1210,7 @@
       <MPN>1TSHLSNBL7</MPN>
       <color>πολύχρωμο</color>
       <size>38,39</size>
-      <EAN>05212033643528</EAN>
+      <EAN>5212033643528</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1327,7 +1323,7 @@
       <MPN>1KL135LBLBE5</MPN>
       <color>μαύρο</color>
       <size>36,37,40,41</size>
-      <EAN>05212033622202</EAN>
+      <EAN>5212033622202</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1348,7 +1344,7 @@
       <MPN>1KL135LWHBE5</MPN>
       <color>λευκό</color>
       <size>36,37,38,39,40,41</size>
-      <EAN>05212033622462</EAN>
+      <EAN>5212033622462</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1368,7 +1364,7 @@
       <MPN>1KL135LRMBE5</MPN>
       <color>χρυσό</color>
       <size>36,37,39,41</size>
-      <EAN>05212033622332</EAN>
+      <EAN>5212033622332</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1389,7 +1385,7 @@
       <MPN>1KL135LNABE6</MPN>
       <color>μπεζ</color>
       <size>37,40</size>
-      <EAN>05212033622097</EAN>
+      <EAN>5212033622097</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1409,7 +1405,7 @@
       <MPN>1KL685LTUBE5</MPN>
       <color>τιρκουάζ</color>
       <size>36,38,41</size>
-      <EAN>05212033615716</EAN>
+      <EAN>5212033615716</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1429,7 +1425,7 @@
       <MPN>1KL685LNABE5</MPN>
       <color>μπεζ</color>
       <size>36,38,39</size>
-      <EAN>05212033615327</EAN>
+      <EAN>5212033615327</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1445,7 +1441,7 @@
       <MPN>1KL685LWHBE9</MPN>
       <color>λευκό</color>
       <size>40</size>
-      <EAN>05212033615532</EAN>
+      <EAN>5212033615532</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1468,7 +1464,7 @@
       <MPN>1KL685LCOBE10</MPN>
       <color>κοραλί</color>
       <size>41</size>
-      <EAN>05212033615945</EAN>
+      <EAN>5212033615945</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1861,7 +1857,7 @@
       <MPN>1KL310LMUBE5</MPN>
       <color>κίτρινο</color>
       <size>36,39,40,41</size>
-      <EAN>05212033621809</EAN>
+      <EAN>5212033621809</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1877,7 +1873,7 @@
       <MPN>1KL310LBLBE5</MPN>
       <color>μαύρο</color>
       <size>36,37,39</size>
-      <EAN>05212033621540</EAN>
+      <EAN>5212033621540</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1893,7 +1889,7 @@
       <MPN>1KL310LNABE7</MPN>
       <color>μπεζ</color>
       <size>38</size>
-      <EAN>05212033621977</EAN>
+      <EAN>5212033621977</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1909,7 +1905,7 @@
       <MPN>1KL310LTBE7</MPN>
       <color>καφέ</color>
       <size>38</size>
-      <EAN>05212033621328</EAN>
+      <EAN>5212033621328</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1932,7 +1928,7 @@
       <MPN>1KL310LRBE9</MPN>
       <color>κόκκινο</color>
       <size>40,41</size>
-      <EAN>05212033621755</EAN>
+      <EAN>5212033621755</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1953,7 +1949,7 @@
       <MPN>1KL310LCOBE9</MPN>
       <color>κοραλί</color>
       <size>40,41</size>
-      <EAN>05212033621236</EAN>
+      <EAN>5212033621236</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1976,7 +1972,7 @@
       <MPN>1FA137LWH6</MPN>
       <color>λευκό</color>
       <size>37,40,41</size>
-      <EAN>05212033611633</EAN>
+      <EAN>5212033611633</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1997,7 +1993,7 @@
       <MPN>1TS1050LBCBL5</MPN>
       <color>μαύρο</color>
       <size>36,38,41</size>
-      <EAN>05212033641203</EAN>
+      <EAN>5212033641203</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2020,7 +2016,7 @@
       <MPN>1TS1050LMNBR5</MPN>
       <color>πολύχρωμο</color>
       <size>36,37,38,39,40,41</size>
-      <EAN>05212033641067</EAN>
+      <EAN>5212033641067</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2043,7 +2039,7 @@
       <MPN>1TS1000LMMBL5</MPN>
       <color>πολύχρωμο</color>
       <size>36,37,40</size>
-      <EAN>05212033640329</EAN>
+      <EAN>5212033640329</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2064,7 +2060,7 @@
       <MPN>1TS1000LBCBL6</MPN>
       <color>μαύρο</color>
       <size>37</size>
-      <EAN>05212033640190</EAN>
+      <EAN>5212033640190</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2087,7 +2083,7 @@
       <MPN>1TS036LBUBE5</MPN>
       <color>μπλε</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033693431</EAN>
+      <EAN>5212033693431</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2103,7 +2099,7 @@
       <MPN>1TS036LHOBE5</MPN>
       <color>καφέ</color>
       <size>36,38</size>
-      <EAN>05212033638159</EAN>
+      <EAN>5212033638159</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2125,7 +2121,7 @@
       <MPN>1TS036LBLBL6</MPN>
       <color>μαύρο</color>
       <size>37,39,40</size>
-      <EAN>05212033638098</EAN>
+      <EAN>5212033638098</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2148,7 +2144,7 @@
       <MPN>1KL778LTUBE8</MPN>
       <color>τιρκουάζ</color>
       <size>39,42</size>
-      <EAN>05212033620802</EAN>
+      <EAN>5212033620802</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2187,7 +2183,7 @@
       <MPN>1KL830LTUBE5</MPN>
       <color>τιρκουάζ</color>
       <size>36,37,38,39,40,41</size>
-      <EAN>05212033616508</EAN>
+      <EAN>5212033616508</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2203,7 +2199,7 @@
       <MPN>1KL830LMBBE6</MPN>
       <color>λευκό</color>
       <size>37,38,39,40,41</size>
-      <EAN>05212033616003</EAN>
+      <EAN>5212033616003</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2226,7 +2222,7 @@
       <MPN>1KL830LMGBE6</MPN>
       <color>καφέ</color>
       <size>37,38,40,41</size>
-      <EAN>05212033616263</EAN>
+      <EAN>5212033616263</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2242,7 +2238,7 @@
       <MPN>1KL830LMUBR6</MPN>
       <color>κίτρινο</color>
       <size>37,38,40,41</size>
-      <EAN>05212033616393</EAN>
+      <EAN>5212033616393</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2258,7 +2254,7 @@
       <MPN>1KL830LBLBL6</MPN>
       <color>μαύρο</color>
       <size>37,41</size>
-      <EAN>05212033645508</EAN>
+      <EAN>5212033645508</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2281,7 +2277,7 @@
       <MPN>1KL772LMDBE5</MPN>
       <color>λευκό</color>
       <size>36,38,40,41</size>
-      <EAN>05212033617833</EAN>
+      <EAN>5212033617833</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2297,7 +2293,7 @@
       <MPN>1KL772LTUBE7</MPN>
       <color>τιρκουάζ</color>
       <size>38</size>
-      <EAN>05212033618137</EAN>
+      <EAN>5212033618137</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2313,7 +2309,7 @@
       <MPN>1KL772LCEBE7</MPN>
       <color>κόκκινο</color>
       <size>38</size>
-      <EAN>05212033632287</EAN>
+      <EAN>5212033632287</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2329,7 +2325,7 @@
       <MPN>1KL772LOGBE9</MPN>
       <color>πράσινο</color>
       <size>40</size>
-      <EAN>05212033632232</EAN>
+      <EAN>5212033632232</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2349,7 +2345,7 @@
       <MPN>1KL772LMABR10</MPN>
       <color>χρυσό</color>
       <size>41</size>
-      <EAN>05212033617802</EAN>
+      <EAN>5212033617802</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2372,7 +2368,7 @@
       <MPN>1FA301LBE8</MPN>
       <color>μπεζ</color>
       <size>39</size>
-      <EAN>05212033651295</EAN>
+      <EAN>5212033651295</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2395,7 +2391,7 @@
       <MPN>1TS1049LYBR5</MPN>
       <color>κίτρινο</color>
       <size>36,37,39</size>
-      <EAN>05212033640039</EAN>
+      <EAN>5212033640039</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2416,7 +2412,7 @@
       <MPN>1TS1049LOWBE6</MPN>
       <color>λευκό</color>
       <size>37,38,40</size>
-      <EAN>05212033639972</EAN>
+      <EAN>5212033639972</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2485,7 +2481,7 @@
       <MPN>1FA229WH9</MPN>
       <color>λευκό</color>
       <size>40</size>
-      <EAN>05212033606257</EAN>
+      <EAN>5212033606257</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2508,7 +2504,7 @@
       <MPN>1FA239LIC7</MPN>
       <color>λευκό</color>
       <size>38</size>
-      <EAN>05212033606486</EAN>
+      <EAN>5212033606486</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2531,7 +2527,7 @@
       <MPN>1FA302LNU9</MPN>
       <color>μπεζ</color>
       <size>40</size>
-      <EAN>05212033604758</EAN>
+      <EAN>5212033604758</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2554,7 +2550,7 @@
       <MPN>1FA11799LTU5</MPN>
       <color>τιρκουάζ</color>
       <size>36</size>
-      <EAN>05212033648479</EAN>
+      <EAN>5212033648479</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2577,7 +2573,7 @@
       <MPN>1KL652ALSABE5</MPN>
       <color>κόκκινο</color>
       <size>36</size>
-      <EAN>05212033646741</EAN>
+      <EAN>5212033646741</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2597,7 +2593,7 @@
       <MPN>1KL744LTUBE5</MPN>
       <color>τιρκουάζ</color>
       <size>36,37,39,40</size>
-      <EAN>05212033619684</EAN>
+      <EAN>5212033619684</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2618,7 +2614,7 @@
       <MPN>1KL744LMUBR6</MPN>
       <color>κίτρινο</color>
       <size>37,40,41</size>
-      <EAN>05212033619578</EAN>
+      <EAN>5212033619578</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2641,7 +2637,7 @@
       <MPN>1KL744LBLBL7</MPN>
       <color>μαύρο</color>
       <size>38</size>
-      <EAN>05212033619462</EAN>
+      <EAN>5212033619462</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2661,7 +2657,7 @@
       <MPN>1TSA907LNABE7</MPN>
       <color>μπεζ</color>
       <size>40,41,43,44,45</size>
-      <EAN>05212033644754</EAN>
+      <EAN>5212033644754</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2684,7 +2680,7 @@
       <MPN>1TSA907LBLBL8</MPN>
       <color>μαύρο</color>
       <size>41,42</size>
-      <EAN>05212033644907</EAN>
+      <EAN>5212033644907</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2705,7 +2701,7 @@
       <MPN>1TSA907LCIBE9</MPN>
       <color>καφέ</color>
       <size>42,43,44,46,47</size>
-      <EAN>05212033644846</EAN>
+      <EAN>5212033644846</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2728,7 +2724,7 @@
       <MPN>1LI46MANLBRBR7</MPN>
       <color>καφέ</color>
       <size>40,41</size>
-      <EAN>05212033634489</EAN>
+      <EAN>5212033634489</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2748,7 +2744,7 @@
       <MPN>1LI46MANLNABE7</MPN>
       <color>μπεζ</color>
       <size>40,41,42,43,44,46,47</size>
-      <EAN>05212033634557</EAN>
+      <EAN>5212033634557</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2769,7 +2765,7 @@
       <MPN>1LI46MANLBLBL7</MPN>
       <color>μαύρο</color>
       <size>40,42</size>
-      <EAN>05212033634410</EAN>
+      <EAN>5212033634410</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2785,7 +2781,7 @@
       <MPN>1TS1021LMMBL5</MPN>
       <color>πολύχρωμο</color>
       <size>36,37,38,39,40</size>
-      <EAN>05212033640541</EAN>
+      <EAN>5212033640541</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2808,7 +2804,7 @@
       <MPN>1TS1063LCEBE5</MPN>
       <color>καφέ</color>
       <size>36,37</size>
-      <EAN>05212033638517</EAN>
+      <EAN>5212033638517</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2824,7 +2820,7 @@
       <MPN>1TS1063LTBBE5</MPN>
       <color>μπλε</color>
       <size>36</size>
-      <EAN>05212033637930</EAN>
+      <EAN>5212033637930</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2846,7 +2842,7 @@
       <MPN>1TS1063LPUBE6</MPN>
       <color>μωβ</color>
       <size>37,39,41</size>
-      <EAN>05212033637879</EAN>
+      <EAN>5212033637879</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2883,7 +2879,7 @@
       <MPN>1KL701LRBE10</MPN>
       <color>κοραλί</color>
       <size>41</size>
-      <EAN>05212033647885</EAN>
+      <EAN>5212033647885</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2906,7 +2902,7 @@
       <MPN>1KL701LYBR11</MPN>
       <color>κίτρινο</color>
       <size>42</size>
-      <EAN>05212033648059</EAN>
+      <EAN>5212033648059</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2922,7 +2918,7 @@
       <MPN>1KL701LTBE11</MPN>
       <color>καφέ</color>
       <size>42</size>
-      <EAN>05212033645294</EAN>
+      <EAN>5212033645294</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2980,7 +2976,7 @@
       <MPN>1TS103LWHBE5</MPN>
       <color>λευκό</color>
       <size>36,37,38,39</size>
-      <EAN>05212033638371</EAN>
+      <EAN>5212033638371</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3001,7 +2997,7 @@
       <MPN>1TS103LNABE6</MPN>
       <color>μπεζ</color>
       <size>37,38,39,40,41,42</size>
-      <EAN>05212033638456</EAN>
+      <EAN>5212033638456</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3017,7 +3013,7 @@
       <MPN>1TS103LBLBL6</MPN>
       <color>μαύρο</color>
       <size>37,38,39,40,41,42</size>
-      <EAN>05212033638319</EAN>
+      <EAN>5212033638319</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3039,7 +3035,7 @@
       <MPN>1TSA908LNABE8</MPN>
       <color>μπεζ</color>
       <size>41,42</size>
-      <EAN>05212033644983</EAN>
+      <EAN>5212033644983</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3055,7 +3051,7 @@
       <MPN>1TSA908LBLBL8</MPN>
       <color>μαύρο</color>
       <size>41,42,43,46</size>
-      <EAN>05212033645126</EAN>
+      <EAN>5212033645126</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3078,7 +3074,7 @@
       <MPN>1TSA908LCIBE12</MPN>
       <color>καφέ</color>
       <size>45,46</size>
-      <EAN>05212033645447</EAN>
+      <EAN>5212033645447</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3099,7 +3095,7 @@
       <MPN>1TS15LMNBR6</MPN>
       <color>πολύχρωμο</color>
       <size>37,41</size>
-      <EAN>05212033641500</EAN>
+      <EAN>5212033641500</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3115,7 +3111,7 @@
       <MPN>1TS15LRMBL6</MPN>
       <color>χρυσό</color>
       <size>37,38,40,41</size>
-      <EAN>05212033641296</EAN>
+      <EAN>5212033641296</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3131,7 +3127,7 @@
       <MPN>1TS15LNABE7</MPN>
       <color>μπεζ</color>
       <size>38,42</size>
-      <EAN>05212033641449</EAN>
+      <EAN>5212033641449</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3151,7 +3147,7 @@
       <MPN>1TS15LWHBE7</MPN>
       <color>λευκό</color>
       <size>38</size>
-      <EAN>05212033641371</EAN>
+      <EAN>5212033641371</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3231,7 +3227,7 @@
       <MPN>1KL771CLTUBE7</MPN>
       <color>τιρκουάζ</color>
       <size>38,41</size>
-      <EAN>05212033647588</EAN>
+      <EAN>5212033647588</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3251,7 +3247,7 @@
       <MPN>1KL771CLNABE7</MPN>
       <color>μπεζ</color>
       <size>38</size>
-      <EAN>05212033647328</EAN>
+      <EAN>5212033647328</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3274,7 +3270,7 @@
       <MPN>1KL771CLWHBE10</MPN>
       <color>λευκό</color>
       <size>41</size>
-      <EAN>05212033647519</EAN>
+      <EAN>5212033647519</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3294,7 +3290,7 @@
       <MPN>1TS1001LOWBE5</MPN>
       <color>λευκό</color>
       <size>36,37,38,39,40</size>
-      <EAN>05212033639316</EAN>
+      <EAN>5212033639316</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3310,7 +3306,7 @@
       <MPN>1TS1001LLEBR5</MPN>
       <color>πολύχρωμο</color>
       <size>36,37,38,40</size>
-      <EAN>05212033639668</EAN>
+      <EAN>5212033639668</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3330,7 +3326,7 @@
       <MPN>1TS1001LBLBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,39,40</size>
-      <EAN>05212033639248</EAN>
+      <EAN>5212033639248</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3350,7 +3346,7 @@
       <MPN>1TS1001LNABE7</MPN>
       <color>μπεζ</color>
       <size>38,39</size>
-      <EAN>05212033639408</EAN>
+      <EAN>5212033639408</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3371,7 +3367,7 @@
       <MPN>1TS1001LYBR10</MPN>
       <color>κίτρινο</color>
       <size>41</size>
-      <EAN>05212033639644</EAN>
+      <EAN>5212033639644</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3393,7 +3389,7 @@
       <MPN>1KL658LNABE5</MPN>
       <color>μπεζ</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033649995</EAN>
+      <EAN>5212033649995</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3413,7 +3409,7 @@
       <MPN>1KL658LTBE5</MPN>
       <color>καφέ</color>
       <size>36,38,41,42</size>
-      <EAN>05212033649926</EAN>
+      <EAN>5212033649926</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3433,7 +3429,7 @@
       <MPN>1KL658LBLGOBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033693363</EAN>
+      <EAN>5212033693363</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3453,7 +3449,7 @@
       <MPN>1KL658LOGBE6</MPN>
       <color>πράσινο</color>
       <size>37,38,42</size>
-      <EAN>05212033649865</EAN>
+      <EAN>5212033649865</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3476,7 +3472,7 @@
       <MPN>1TSM19LGOBE5</MPN>
       <color>χρυσό</color>
       <size>36,37,38</size>
-      <EAN>05212033637565</EAN>
+      <EAN>5212033637565</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3508,7 +3504,7 @@
       <MPN>1TSM19LNABE5</MPN>
       <color>μπεζ</color>
       <size>36,37</size>
-      <EAN>05212033637428</EAN>
+      <EAN>5212033637428</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3529,7 +3525,7 @@
       <MPN>1TSM19LSIBE5</MPN>
       <color>ασημί</color>
       <size>36,37,38,39</size>
-      <EAN>05212033637497</EAN>
+      <EAN>5212033637497</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3552,7 +3548,7 @@
       <MPN>1TST37LNABE5</MPN>
       <color>μπεζ</color>
       <size>36,37,40,41</size>
-      <EAN>05212033637640</EAN>
+      <EAN>5212033637640</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3574,7 +3570,7 @@
       <MPN>1TST37LBLBL5</MPN>
       <color>μαύρο</color>
       <size>36,37</size>
-      <EAN>05212033637787</EAN>
+      <EAN>5212033637787</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3590,7 +3586,7 @@
       <MPN>1TST37LRMBL5</MPN>
       <color>χρυσό</color>
       <size>36,37</size>
-      <EAN>05212033637718</EAN>
+      <EAN>5212033637718</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3606,7 +3602,7 @@
       <MPN>1KL847LNABE5</MPN>
       <color>μπεζ</color>
       <size>36,38,39,42</size>
-      <EAN>05212033613200</EAN>
+      <EAN>5212033613200</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3622,7 +3618,7 @@
       <MPN>1KL847LBLBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,39,40,41</size>
-      <EAN>05212033613330</EAN>
+      <EAN>5212033613330</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3638,7 +3634,7 @@
       <MPN>1KL847LWHBE6</MPN>
       <color>λευκό</color>
       <size>37,39</size>
-      <EAN>05212033613484</EAN>
+      <EAN>5212033613484</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3659,7 +3655,7 @@
       <MPN>1KL845LBLBL5</MPN>
       <color>μαύρο</color>
       <size>36</size>
-      <EAN>05212033613866</EAN>
+      <EAN>5212033613866</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3682,7 +3678,7 @@
       <MPN>1KL845LMABL5</MPN>
       <color>πολύχρωμο</color>
       <size>36,37,38,41,42</size>
-      <EAN>05212033613606</EAN>
+      <EAN>5212033613606</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3702,7 +3698,7 @@
       <MPN>1KL845LNABE6</MPN>
       <color>μπεζ</color>
       <size>37,38</size>
-      <EAN>05212033613750</EAN>
+      <EAN>5212033613750</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3725,12 +3721,12 @@
       <MPN>1TSHNEWLMLBL5</MPN>
       <color>πολύχρωμο</color>
       <size>36,38,40</size>
-      <EAN>05212033644433</EAN>
+      <EAN>5212033644433</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>40480007028893</productId>
-      <title>Σανδάλια παντόφλες Ξ  &quot;Ζηνοβία&quot; - Λευκό με καφέ πάτο</title>
+      <title>Σανδάλια παντόφλες Ξ &quot;Ζηνοβία&quot; - Λευκό με καφέ πάτο</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-turquoise-xenobia?variant=40480007028893</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-x-zhnobia-emmanuela-handcrafted-for-you-sandalia-pantofles-x-zhnobia-505383.jpg?v=1627295894</imageURL>
       <price>64.00</price>
@@ -3741,12 +3737,12 @@
       <MPN>1KL848LWHBR5</MPN>
       <color>καφέ</color>
       <size>36,37,38,40,41</size>
-      <EAN>05212033617291</EAN>
+      <EAN>5212033617291</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>40480007159965</productId>
-      <title>Σανδάλια παντόφλες Ξ  &quot;Ζηνοβία&quot; - Τιρκουάζ</title>
+      <title>Σανδάλια παντόφλες Ξ &quot;Ζηνοβία&quot; - Τιρκουάζ</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-turquoise-xenobia?variant=40480007159965</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-x-zhnobia-emmanuela-handcrafted-for-you-sandalia-pantofles-x-zhnobia-545438.jpg?v=1627387061</imageURL>
       <imagesURL>
@@ -3763,12 +3759,12 @@
       <MPN>1KL848LTUBE6</MPN>
       <color>τιρκουάζ</color>
       <size>37,40</size>
-      <EAN>05212033617055</EAN>
+      <EAN>5212033617055</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>40480007323805</productId>
-      <title>Σανδάλια παντόφλες Ξ  &quot;Ζηνοβία&quot; - Μαύρο</title>
+      <title>Σανδάλια παντόφλες Ξ &quot;Ζηνοβία&quot; - Μαύρο</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-turquoise-xenobia?variant=40480007323805</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-x-zhnobia-emmanuela-handcrafted-for-you-sandalia-pantofles-x-zhnobia-932970.jpg?v=1627295894</imageURL>
       <imagesURL>
@@ -3784,12 +3780,12 @@
       <MPN>1KL848LBLBL6</MPN>
       <color>μαύρο</color>
       <size>37,40</size>
-      <EAN>05212033616928</EAN>
+      <EAN>5212033616928</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>40480007422109</productId>
-      <title>Σανδάλια παντόφλες Ξ  &quot;Ζηνοβία&quot; - Λευκό με μπέζ πάτο</title>
+      <title>Σανδάλια παντόφλες Ξ &quot;Ζηνοβία&quot; - Λευκό με μπέζ πάτο</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-turquoise-xenobia?variant=40480007422109</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-x-zhnobia-emmanuela-handcrafted-for-you-sandalia-pantofles-x-zhnobia-168150.jpg?v=1627295894</imageURL>
       <price>64.00</price>
@@ -3800,12 +3796,12 @@
       <MPN>1KL848LW1BE7</MPN>
       <color>λευκό</color>
       <size>38</size>
-      <EAN>05212033631969</EAN>
+      <EAN>5212033631969</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>40480007946397</productId>
-      <title>Σανδάλια παντόφλες Ξ  &quot;Ζηνοβία&quot; - Κοραλί</title>
+      <title>Σανδάλια παντόφλες Ξ &quot;Ζηνοβία&quot; - Κοραλί</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-turquoise-xenobia?variant=40480007946397</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-x-zhnobia-emmanuela-handcrafted-for-you-sandalia-pantofles-x-zhnobia-544364.jpg?v=1627295894</imageURL>
       <price>64.00</price>
@@ -3816,12 +3812,12 @@
       <MPN>1KL848LCOBE9</MPN>
       <color>κοραλί</color>
       <size>40</size>
-      <EAN>05212033617246</EAN>
+      <EAN>5212033617246</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>40480013287581</productId>
-      <title>Σανδάλια παντόφλες  &quot;Μήλος&quot; - Μαύρο κροκό</title>
+      <title>Σανδάλια παντόφλες &quot;Μήλος&quot; - Μαύρο κροκό</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-snake-milos?variant=40480013287581</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-mhlos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-mhlos-938603.jpg?v=1627295781</imageURL>
       <imagesURL>
@@ -3838,12 +3834,12 @@
       <MPN>1TS36LBCBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,39,40</size>
-      <EAN>05212033642064</EAN>
+      <EAN>5212033642064</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>40480013385885</productId>
-      <title>Σανδάλια παντόφλες  &quot;Μήλος&quot; - Μπεζ φυσικό</title>
+      <title>Σανδάλια παντόφλες &quot;Μήλος&quot; - Μπεζ φυσικό</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-snake-milos?variant=40480013385885</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-mhlos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-mhlos-509784.jpg?v=1627295782</imageURL>
       <price>54.00</price>
@@ -3854,12 +3850,12 @@
       <MPN>1TS36LNABE5</MPN>
       <color>μπεζ</color>
       <size>36,37</size>
-      <EAN>05212033641852</EAN>
+      <EAN>5212033641852</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>40480013451421</productId>
-      <title>Σανδάλια παντόφλες  &quot;Μήλος&quot; - Λέοπαρντ</title>
+      <title>Σανδάλια παντόφλες &quot;Μήλος&quot; - Λέοπαρντ</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-snake-milos?variant=40480013451421</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-mhlos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-mhlos-316223.jpg?v=1627295781</imageURL>
       <imagesURL>
@@ -3876,12 +3872,12 @@
       <MPN>1TS36LMNBR5</MPN>
       <color>πολύχρωμο</color>
       <size>36,39,40</size>
-      <EAN>05212033641920</EAN>
+      <EAN>5212033641920</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>40480013582493</productId>
-      <title>Σανδάλια παντόφλες  &quot;Μήλος&quot; - Λευκό</title>
+      <title>Σανδάλια παντόφλες &quot;Μήλος&quot; - Λευκό</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-snake-milos?variant=40480013582493</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-mhlos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-mhlos-684423.jpg?v=1627295781</imageURL>
       <price>54.00</price>
@@ -3892,7 +3888,7 @@
       <MPN>1TS36LWHBE5</MPN>
       <color>λευκό</color>
       <size>36,37,38,39,41</size>
-      <EAN>05212033641784</EAN>
+      <EAN>5212033641784</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3908,7 +3904,7 @@
       <MPN>1KL37LMUNA6</MPN>
       <color>κίτρινο</color>
       <size>37,39,41</size>
-      <EAN>05212033612685</EAN>
+      <EAN>5212033612685</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3924,7 +3920,7 @@
       <MPN>1KL37LCONA8</MPN>
       <color>κοραλί</color>
       <size>39,40,41</size>
-      <EAN>05212033611817</EAN>
+      <EAN>5212033611817</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3940,7 +3936,7 @@
       <MPN>1KL37LRNA8</MPN>
       <color>κόκκινο</color>
       <size>39,41</size>
-      <EAN>05212033612593</EAN>
+      <EAN>5212033612593</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3956,7 +3952,7 @@
       <MPN>1KL37LTUNA9</MPN>
       <color>τιρκουάζ</color>
       <size>40</size>
-      <EAN>05212033612487</EAN>
+      <EAN>5212033612487</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3979,7 +3975,7 @@
       <MPN>1LI111RLBE6</MPN>
       <color>καφέ</color>
       <size>37</size>
-      <EAN>05212033646543</EAN>
+      <EAN>5212033646543</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4030,7 +4026,7 @@
     </product>
     <product>
       <productId>40480033669277</productId>
-      <title>Σανδάλια παντόφλες  &quot;Νάξος&quot;</title>
+      <title>Σανδάλια παντόφλες &quot;Νάξος&quot;</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-leopard-naxos?variant=40480033669277</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-leoparnt-naxos-emmanuela-handcrafted-for-you-sandalia-pantofles-leoparnt-naxos-679433.jpg?v=1627386775</imageURL>
       <imagesURL>
@@ -4048,7 +4044,7 @@
       <MPN>1TSHNEWLMNBR5</MPN>
       <color>πολύχρωμο</color>
       <size>36,38,40</size>
-      <EAN>05212033644365</EAN>
+      <EAN>5212033644365</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4069,7 +4065,7 @@
       <MPN>1LI111KLMNBE5</MPN>
       <color>πράσινο</color>
       <size>36,37</size>
-      <EAN>05212033631334</EAN>
+      <EAN>5212033631334</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4089,7 +4085,7 @@
       <MPN>1LI111KLWHBE5</MPN>
       <color>λευκό</color>
       <size>36,41</size>
-      <EAN>05212033631402</EAN>
+      <EAN>5212033631402</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4110,7 +4106,7 @@
       <MPN>1LI111KLNABE5</MPN>
       <color>μπεζ</color>
       <size>36,37,38,42</size>
-      <EAN>05212033631266</EAN>
+      <EAN>5212033631266</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4130,7 +4126,7 @@
       <MPN>1LI111KLMABL7</MPN>
       <color>πολύχρωμο</color>
       <size>38,42</size>
-      <EAN>05212033631495</EAN>
+      <EAN>5212033631495</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4151,7 +4147,7 @@
       <MPN>1TS101LMLBL5</MPN>
       <color>πολύχρωμο</color>
       <size>36,37,38,39,40,41</size>
-      <EAN>05212033638739</EAN>
+      <EAN>5212033638739</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4171,7 +4167,7 @@
       <MPN>1TS101LBLBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033638876</EAN>
+      <EAN>5212033638876</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4193,7 +4189,7 @@
       <MPN>1TS101LRMBL5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,40</size>
-      <EAN>05212033638661</EAN>
+      <EAN>5212033638661</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4241,7 +4237,7 @@
       <MPN>1TS101LNABE5</MPN>
       <color>μπεζ</color>
       <size>36,37,38,40,41,42</size>
-      <EAN>05212033638807</EAN>
+      <EAN>5212033638807</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4264,7 +4260,7 @@
       <MPN>1KL732LMDBE5</MPN>
       <color>λευκό</color>
       <size>36,37,38,39,40,41</size>
-      <EAN>05212033614399</EAN>
+      <EAN>5212033614399</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4280,7 +4276,7 @@
       <MPN>1KL732LMABL5</MPN>
       <color>χρυσό</color>
       <size>36,40</size>
-      <EAN>05212033614009</EAN>
+      <EAN>5212033614009</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4301,7 +4297,7 @@
       <MPN>1TSA903LNABE7</MPN>
       <color>μπεζ</color>
       <size>40,41,42,44,45,46</size>
-      <EAN>05212033644532</EAN>
+      <EAN>5212033644532</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4324,7 +4320,7 @@
       <MPN>1TSA903LCIBE8</MPN>
       <color>καφέ</color>
       <size>41,42,45</size>
-      <EAN>05212033644617</EAN>
+      <EAN>5212033644617</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4344,7 +4340,7 @@
       <MPN>1TSA903LBLBL9</MPN>
       <color>μαύρο</color>
       <size>42,45,46</size>
-      <EAN>05212033644693</EAN>
+      <EAN>5212033644693</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4364,7 +4360,7 @@
       <MPN>1TS1067LBCBL5</MPN>
       <color>μαύρο</color>
       <size>36</size>
-      <EAN>05212033640985</EAN>
+      <EAN>5212033640985</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4387,7 +4383,7 @@
       <MPN>1TS1067LMNBR6</MPN>
       <color>πολύχρωμο</color>
       <size>37,38</size>
-      <EAN>05212033640855</EAN>
+      <EAN>5212033640855</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4410,7 +4406,7 @@
       <MPN>1SPSH24LLE5</MPN>
       <color>πολύχρωμο</color>
       <size>36,37</size>
-      <EAN>05212033625296</EAN>
+      <EAN>5212033625296</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4433,7 +4429,7 @@
       <MPN>1LI72MANLNABE13</MPN>
       <color>μπεζ</color>
       <size>46,47</size>
-      <EAN>05212033626170</EAN>
+      <EAN>5212033626170</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4518,7 +4514,7 @@
       <MPN>1TS46LBLBL10</MPN>
       <color>μαύρο</color>
       <size>41</size>
-      <EAN>05212033642330</EAN>
+      <EAN>5212033642330</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4541,7 +4537,7 @@
       <MPN>1TS46LHOBE10</MPN>
       <color>καφέ</color>
       <size>41</size>
-      <EAN>05212033642408</EAN>
+      <EAN>5212033642408</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4635,7 +4631,7 @@
       <MPN>1LI74MANLBRBR7</MPN>
       <color>καφέ</color>
       <size>40</size>
-      <EAN>05212033635363</EAN>
+      <EAN>5212033635363</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4655,7 +4651,7 @@
       <MPN>1LI74MANLNABE7</MPN>
       <color>μπεζ</color>
       <size>40,45</size>
-      <EAN>05212033635431</EAN>
+      <EAN>5212033635431</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4676,7 +4672,7 @@
       <MPN>1LI74MANLBLBL8</MPN>
       <color>μαύρο</color>
       <size>41,45</size>
-      <EAN>05212033635301</EAN>
+      <EAN>5212033635301</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4719,7 +4715,7 @@
       <MPN>1KL222LNABE8</MPN>
       <color>μπεζ</color>
       <size>41,42,44,45,46</size>
-      <EAN>05212033624213</EAN>
+      <EAN>5212033624213</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4740,7 +4736,7 @@
       <MPN>1KL222LBLBL8</MPN>
       <color>μαύρο</color>
       <size>41,43,45,46,47</size>
-      <EAN>05212033624336</EAN>
+      <EAN>5212033624336</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4760,7 +4756,7 @@
       <MPN>1KL345LGOBE5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,40,41</size>
-      <EAN>05212033622998</EAN>
+      <EAN>5212033622998</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4783,7 +4779,7 @@
       <MPN>1TS331LBCBL5</MPN>
       <color>μαύρο</color>
       <size>36</size>
-      <EAN>05212033640626</EAN>
+      <EAN>5212033640626</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4805,7 +4801,7 @@
       <MPN>1TS1001LBCBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,39,40</size>
-      <EAN>05212033639521</EAN>
+      <EAN>5212033639521</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4825,7 +4821,7 @@
       <MPN>1LI47MANLNABE7</MPN>
       <color>μπεζ</color>
       <size>40,45,46,47</size>
-      <EAN>05212033634779</EAN>
+      <EAN>5212033634779</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4846,7 +4842,7 @@
       <MPN>1LI47MANLBLBL10</MPN>
       <color>μαύρο</color>
       <size>43</size>
-      <EAN>05212033634663</EAN>
+      <EAN>5212033634663</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4869,7 +4865,7 @@
       <MPN>1LI47MANLBRBR13</MPN>
       <color>καφέ</color>
       <size>46</size>
-      <EAN>05212033626545</EAN>
+      <EAN>5212033626545</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4892,7 +4888,7 @@
       <MPN>1FA11580ALWH8</MPN>
       <color>λευκό</color>
       <size>39</size>
-      <EAN>05212033649643</EAN>
+      <EAN>5212033649643</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4908,12 +4904,12 @@
       <MPN>1KL732LMBBE5</MPN>
       <color>λευκό</color>
       <size>36,37,38,39,40,41</size>
-      <EAN>05212033614139</EAN>
+      <EAN>5212033614139</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>40480157859997</productId>
-      <title>Flat πέδιλα  &quot;Σελήνη&quot;</title>
+      <title>Flat πέδιλα &quot;Σελήνη&quot;</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-snake-sandals-selene?variant=40480157859997</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-me-snake-skin-selhnh-emmanuela-handcrafted-for-you-flat-pedila-me-snake-skin-selhnh-118288.jpg?v=1627374283</imageURL>
       <imagesURL>
@@ -4931,7 +4927,7 @@
       <MPN>1TS608LMLBL10</MPN>
       <color>πολύχρωμο</color>
       <size>41</size>
-      <EAN>05212033639217</EAN>
+      <EAN>5212033639217</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4947,7 +4943,7 @@
       <MPN>1KL839LMUBR5</MPN>
       <color>κίτρινο</color>
       <size>36,38,41,42</size>
-      <EAN>05212033620215</EAN>
+      <EAN>5212033620215</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4963,7 +4959,7 @@
       <MPN>1KL839LBLBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,39</size>
-      <EAN>05212033620086</EAN>
+      <EAN>5212033620086</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4979,7 +4975,7 @@
       <MPN>1KL839LTUBE5</MPN>
       <color>τιρκουάζ</color>
       <size>36,37,38,42</size>
-      <EAN>05212033620345</EAN>
+      <EAN>5212033620345</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5002,7 +4998,7 @@
       <MPN>1KL839LTBE6</MPN>
       <color>καφέ</color>
       <size>37,39,41</size>
-      <EAN>05212033619974</EAN>
+      <EAN>5212033619974</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5018,7 +5014,7 @@
       <MPN>1KL839LNABE6</MPN>
       <color>μπεζ</color>
       <size>37,38</size>
-      <EAN>05212033619844</EAN>
+      <EAN>5212033619844</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5034,7 +5030,7 @@
       <MPN>1KL659LRMBE5</MPN>
       <color>χρυσό</color>
       <size>36,41,42</size>
-      <EAN>05212033650076</EAN>
+      <EAN>5212033650076</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5057,7 +5053,7 @@
       <MPN>1KL659LNABE5</MPN>
       <color>μπεζ</color>
       <size>36,41,42</size>
-      <EAN>05212033650144</EAN>
+      <EAN>5212033650144</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5080,7 +5076,7 @@
       <MPN>1TS1048LOWBE5</MPN>
       <color>λευκό</color>
       <size>36,37,38,39</size>
-      <EAN>05212033639811</EAN>
+      <EAN>5212033639811</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5100,7 +5096,7 @@
       <MPN>1TS1048LRMBE5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,39</size>
-      <EAN>05212033639880</EAN>
+      <EAN>5212033639880</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5121,7 +5117,7 @@
       <MPN>1KL735LMABL5</MPN>
       <color>χρυσό</color>
       <size>36,40</size>
-      <EAN>05212033614795</EAN>
+      <EAN>5212033614795</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5144,7 +5140,7 @@
       <MPN>1KL735LMDBE5</MPN>
       <color>λευκό</color>
       <size>36,37,38,40,41</size>
-      <EAN>05212033614924</EAN>
+      <EAN>5212033614924</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5167,7 +5163,7 @@
       <MPN>1KL831LNABE6</MPN>
       <color>μπεζ</color>
       <size>37,40</size>
-      <EAN>05212033618915</EAN>
+      <EAN>5212033618915</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5183,7 +5179,7 @@
       <MPN>1KL831LMUBR6</MPN>
       <color>κίτρινο</color>
       <size>37,38,39,40,41</size>
-      <EAN>05212033619301</EAN>
+      <EAN>5212033619301</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5204,7 +5200,7 @@
       <MPN>1KL831LTUBE7</MPN>
       <color>τιρκουάζ</color>
       <size>38</size>
-      <EAN>05212033619196</EAN>
+      <EAN>5212033619196</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5220,7 +5216,7 @@
       <MPN>1KL831LWHBE8</MPN>
       <color>λευκό</color>
       <size>39,40</size>
-      <EAN>05212033619080</EAN>
+      <EAN>5212033619080</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5243,7 +5239,7 @@
       <MPN>1LI189LMKBL7</MPN>
       <color>ασημί</color>
       <size>38</size>
-      <EAN>05212033631792</EAN>
+      <EAN>5212033631792</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5264,7 +5260,7 @@
       <MPN>1LI189LMJBL9</MPN>
       <color>χρυσό</color>
       <size>40,41</size>
-      <EAN>05212033631747</EAN>
+      <EAN>5212033631747</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5285,7 +5281,7 @@
       <MPN>1TS101LMABL5</MPN>
       <color>πολύχρωμο</color>
       <size>36,37,38,39,40,41</size>
-      <EAN>05212033638944</EAN>
+      <EAN>5212033638944</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5308,7 +5304,7 @@
       <MPN>1TS101LGOBL5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,40</size>
-      <EAN>05212033638593</EAN>
+      <EAN>5212033638593</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5391,7 +5387,7 @@
       <MPN>1FA11583ALWH9</MPN>
       <color>λευκό</color>
       <size>40</size>
-      <EAN>05212033649391</EAN>
+      <EAN>5212033649391</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5414,7 +5410,7 @@
       <MPN>1LI98MANLBRBR13</MPN>
       <color>καφέ</color>
       <size>46</size>
-      <EAN>05212033626767</EAN>
+      <EAN>5212033626767</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5505,7 +5501,7 @@
     </product>
     <product>
       <productId>43291240628453</productId>
-      <title>Ανδρικά ανατομικά σανδάλια &quot;&quot;Φοίβος&quot;&quot;</title>
+      <title>Ανδρικά ανατομικά σανδάλια &quot;Φοίβος&quot;</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-brown-phoebus-men?variant=43291240628453</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/1KLA21ALBRBR7_1.jpg?v=1660117407</imageURL>
       <imagesURL>
@@ -5528,7 +5524,7 @@
     </product>
     <product>
       <productId>43373761986789</productId>
-      <title>Σανδάλια μονομάχου με κορδόνια &quot;Μέδουσα&quot;&quot;</title>
+      <title>Σανδάλια μονομάχου με κορδόνια &quot;Μέδουσα&quot;</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-knee-high-medussa?variant=43373761986789</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/11.jpg?v=1661945989</imageURL>
       <price>119.00</price>
@@ -5539,12 +5535,12 @@
       <MPN>1TSEMBLBL5</MPN>
       <color>καφέ</color>
       <size>36,37,38,39,40,41</size>
-      <EAN>05212033652773</EAN>
+      <EAN>5212033652773</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>43373856915685</productId>
-      <title>Σανδάλια μονομάχου με κορδόνια &quot;Μέδουσα&quot;&quot;</title>
+      <title>Σανδάλια μονομάχου με κορδόνια &quot;Μέδουσα&quot;</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-calf-high-medussa?variant=43373856915685</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/4.jpg?v=1661947229</imageURL>
       <price>109.00</price>
@@ -5555,7 +5551,7 @@
       <MPN>1TSEMALBL5</MPN>
       <color>καφέ</color>
       <size>36,37,38,39,40,41</size>
-      <EAN>05212033652711</EAN>
+      <EAN>5212033652711</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5575,7 +5571,7 @@
       <MPN>1LI270LBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,38,39,40,42</size>
-      <EAN>05212033695435</EAN>
+      <EAN>5212033695435</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5591,7 +5587,7 @@
       <MPN>1LI270LBRBE5</MPN>
       <color>καφέ</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033695367</EAN>
+      <EAN>5212033695367</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5614,7 +5610,7 @@
       <MPN>1LI270LGRBE5</MPN>
       <color>πράσινο</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033695503</EAN>
+      <EAN>5212033695503</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5637,7 +5633,7 @@
       <MPN>1LI247LNA5</MPN>
       <color>μπεζ</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033695794</EAN>
+      <EAN>5212033695794</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5657,7 +5653,7 @@
       <MPN>1LI247LBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033695657</EAN>
+      <EAN>5212033695657</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5677,7 +5673,7 @@
       <MPN>1LI247LWH5</MPN>
       <color>λευκό</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033695862</EAN>
+      <EAN>5212033695862</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5693,7 +5689,7 @@
       <MPN>1LI247LGO5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033695572</EAN>
+      <EAN>5212033695572</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5716,7 +5712,7 @@
       <MPN>1LI247LRM5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033695725</EAN>
+      <EAN>5212033695725</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5739,7 +5735,7 @@
       <MPN>1LI247LSA5</MPN>
       <color>μπεζ</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033695930</EAN>
+      <EAN>5212033695930</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5755,7 +5751,7 @@
       <MPN>1LI253LNA5</MPN>
       <color>μπεζ</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033696098</EAN>
+      <EAN>5212033696098</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5775,7 +5771,7 @@
       <MPN>1LI253LBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033696302</EAN>
+      <EAN>5212033696302</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5797,7 +5793,7 @@
       <MPN>1LI253LGO5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033696234</EAN>
+      <EAN>5212033696234</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5818,7 +5814,7 @@
       <MPN>1LI253LOG5</MPN>
       <color>πράσινο</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033696371</EAN>
+      <EAN>5212033696371</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5839,7 +5835,7 @@
       <MPN>1LI253LRM5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033696166</EAN>
+      <EAN>5212033696166</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5862,7 +5858,7 @@
       <MPN>1LI256LBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033696456</EAN>
+      <EAN>5212033696456</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5883,7 +5879,7 @@
       <MPN>1LI256LGO5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033696524</EAN>
+      <EAN>5212033696524</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5899,7 +5895,7 @@
       <MPN>1LI256LBRBE5</MPN>
       <color>καφέ</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033696661</EAN>
+      <EAN>5212033696661</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5915,7 +5911,7 @@
       <MPN>1LI256LOG5</MPN>
       <color>πράσινο</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033696739</EAN>
+      <EAN>5212033696739</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5938,12 +5934,12 @@
       <MPN>1LI256LRM5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033696593</EAN>
+      <EAN>5212033696593</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>46638088421711</productId>
-      <title>Σανδάλια μονομάχου με μαλακό πάτο &quot;&quot;Καλυψώ&quot; - Καφέ</title>
+      <title>Σανδάλια μονομάχου με μαλακό πάτο &quot;Καλυψώ&quot; - Καφέ</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-calypso?variant=46638088421711</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/264_1.jpg?v=1697534673</imageURL>
       <price>84.00</price>
@@ -5954,12 +5950,12 @@
       <MPN>1LI264LT5</MPN>
       <color>καφέ</color>
       <size>36</size>
-      <EAN>05212033696951</EAN>
+      <EAN>5212033696951</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>46638099398991</productId>
-      <title>Σανδάλια μονομάχου με μαλακό πάτο &quot;&quot;Καλυψώ&quot; - Χρυσό</title>
+      <title>Σανδάλια μονομάχου με μαλακό πάτο &quot;Καλυψώ&quot; - Χρυσό</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-calypso?variant=46638099398991</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/264_1.png?v=1697534673</imageURL>
       <imagesURL>
@@ -5976,12 +5972,12 @@
       <MPN>1LI264LGOBL5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033696883</EAN>
+      <EAN>5212033696883</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>46638088782159</productId>
-      <title>Σανδάλια μονομάχου με μαλακό πάτο &quot;&quot;Καλυψώ&quot; - Μαύρο</title>
+      <title>Σανδάλια μονομάχου με μαλακό πάτο &quot;Καλυψώ&quot; - Μαύρο</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-calypso?variant=46638088782159</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1LI264LBL_1.jpg?v=1697534673</imageURL>
       <imagesURL>
@@ -5998,12 +5994,12 @@
       <MPN>1LI264LBL9</MPN>
       <color>μαύρο</color>
       <size>40</size>
-      <EAN>05212033696852</EAN>
+      <EAN>5212033696852</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>46638282113359</productId>
-      <title>Σανδάλια παντόφλες με μαλακό πάτο &quot;&quot;Ίφις&quot;&quot; - Μαύρο</title>
+      <title>Σανδάλια παντόφλες με μαλακό πάτο &quot;Ίφις&quot; - Μαύρο</title>
       <productURL>https://emmanuela.shoes/products/greek-black-leather-flat-iphis?variant=46638282113359</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1LI226LBL_1.jpg?v=1694593157</imageURL>
       <price>79.00</price>
@@ -6014,12 +6010,12 @@
       <MPN>1LI226LBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033697033</EAN>
+      <EAN>5212033697033</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>46638282211663</productId>
-      <title>Σανδάλια παντόφλες με μαλακό πάτο &quot;&quot;Ίφις&quot;&quot; - Χρυσό</title>
+      <title>Σανδάλια παντόφλες με μαλακό πάτο &quot;Ίφις&quot; - Χρυσό</title>
       <productURL>https://emmanuela.shoes/products/greek-black-leather-flat-iphis?variant=46638282211663</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1LI226LGO_1.jpg?v=1697522646</imageURL>
       <imagesURL>
@@ -6034,12 +6030,12 @@
       <MPN>1LI226LGO5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033697101</EAN>
+      <EAN>5212033697101</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>46638282080591</productId>
-      <title>Σανδάλια παντόφλες με μαλακό πάτο &quot;&quot;Ίφις&quot;&quot; - Μπεζ</title>
+      <title>Σανδάλια παντόφλες με μαλακό πάτο &quot;Ίφις&quot; - Μπεζ</title>
       <productURL>https://emmanuela.shoes/products/greek-black-leather-flat-iphis?variant=46638282080591</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1LI226LNA_1.jpg?v=1697522646</imageURL>
       <imagesURL>
@@ -6057,7 +6053,7 @@
       <MPN>1LI226LNA5</MPN>
       <color>μπεζ</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033697170</EAN>
+      <EAN>5212033697170</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -6073,7 +6069,7 @@
       <MPN>1LI276LBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033693851</EAN>
+      <EAN>5212033693851</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -6096,7 +6092,7 @@
       <MPN>1LI276LT5</MPN>
       <color>καφέ</color>
       <size>36,37,38,40,41,42</size>
-      <EAN>05212033693783</EAN>
+      <EAN>5212033693783</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -6112,7 +6108,7 @@
       <MPN>1LI25LWH5</MPN>
       <color>λευκό</color>
       <size>36,37,38,39,40,41</size>
-      <EAN>05212033696012</EAN>
+      <EAN>5212033696012</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -6241,7 +6237,7 @@
     </product>
     <product>
       <productId>47082846847311</productId>
-      <title>Aνατομικά πέδιλα παντόφλες &quot;&quot;Δήλος&quot;&quot; - Καφέ</title>
+      <title>Aνατομικά πέδιλα παντόφλες &quot;Δήλος&quot; - Καφέ</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-brown-flat-delos?variant=47082846847311</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KLA3LBRBR_1.jpg?v=1693908094</imageURL>
       <imagesURL>
@@ -6259,12 +6255,12 @@
       <MPN>1KLA3LBR5</MPN>
       <color>καφέ</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033695114</EAN>
+      <EAN>5212033695114</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>47082852385103</productId>
-      <title>Aνατομικά πέδιλα παντόφλες &quot;&quot;Δήλος&quot;&quot; - Μαύρο</title>
+      <title>Aνατομικά πέδιλα παντόφλες &quot;Δήλος&quot; - Μαύρο</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-brown-flat-delos?variant=47082852385103</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KLA3LBLBL_1.jpg?v=1697607364</imageURL>
       <imagesURL>
@@ -6282,12 +6278,12 @@
       <MPN>1KLA3LBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033695046</EAN>
+      <EAN>5212033695046</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>47177335210319</productId>
-      <title>Aνατομικά πέδιλα παντόφλες &quot;&quot;Μεγίστη&quot;&quot; - Καφέ Σουέντ</title>
+      <title>Aνατομικά πέδιλα παντόφλες &quot;Μεγίστη&quot; - Καφέ Σουέντ</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-brown-flat-megisti?variant=47177335210319</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/A1_4.jpg?v=1693302748</imageURL>
       <price>84.00</price>
@@ -6298,12 +6294,12 @@
       <MPN>1KLA1LBRBR5</MPN>
       <color>καφέ</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033694841</EAN>
+      <EAN>5212033694841</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>47176980169039</productId>
-      <title>Aνατομικά πέδιλα παντόφλες &quot;&quot;Μεγίστη&quot;&quot; - Λαδί Σουέντ</title>
+      <title>Aνατομικά πέδιλα παντόφλες &quot;Μεγίστη&quot; - Λαδί Σουέντ</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-brown-flat-megisti?variant=47176980169039</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/A1_1.jpg?v=1697606327</imageURL>
       <imagesURL>
@@ -6318,12 +6314,12 @@
       <MPN>1KLA1LOGBR5</MPN>
       <color>πράσινο</color>
       <size>36,37,38,40,41,42</size>
-      <EAN>05212033694773</EAN>
+      <EAN>5212033694773</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>47176980201807</productId>
-      <title>Aνατομικά πέδιλα παντόφλες &quot;&quot;Μεγίστη&quot;&quot; - Λευκό</title>
+      <title>Aνατομικά πέδιλα παντόφλες &quot;Μεγίστη&quot; - Λευκό</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-brown-flat-megisti?variant=47176980201807</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/A1_3.jpg?v=1697606323</imageURL>
       <imagesURL>
@@ -6341,12 +6337,12 @@
       <MPN>1KLA1LWHBR5</MPN>
       <color>λευκό</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033694988</EAN>
+      <EAN>5212033694988</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>47177335243087</productId>
-      <title>Aνατομικά πέδιλα παντόφλες &quot;&quot;Μεγίστη&quot;&quot; - Γκρι Σουέντ</title>
+      <title>Aνατομικά πέδιλα παντόφλες &quot;Μεγίστη&quot; - Γκρι Σουέντ</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-brown-flat-megisti?variant=47177335243087</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/A1_2.jpg?v=1697606327</imageURL>
       <imagesURL>
@@ -6361,12 +6357,12 @@
       <MPN>1KLA1LGRBR5</MPN>
       <color>γκρι</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033694988</EAN>
+      <EAN>5212033694988</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>47199155192143</productId>
-      <title>Aνατομικά πέδιλα με μαλακό πάτο &quot;&quot;Σύμη&quot;&quot; - Καφέ</title>
+      <title>Aνατομικά πέδιλα με μαλακό πάτο &quot;Σύμη&quot; - Καφέ</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-brown-flat-symi?variant=47199155192143</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KLA4LBRBR_1.jpg?v=1693472274</imageURL>
       <price>84.00</price>
@@ -6377,12 +6373,12 @@
       <MPN>1KLA4LBRBR5</MPN>
       <color>καφέ</color>
       <size>36,37,38,39,40,41,42</size>
-      <EAN>05212033695251</EAN>
+      <EAN>5212033695251</EAN>
       <shipping>0</shipping>
     </product>
     <product>
       <productId>47199157453135</productId>
-      <title>Aνατομικά πέδιλα με μαλακό πάτο &quot;&quot;Σύμη&quot;&quot; - Γκρι</title>
+      <title>Aνατομικά πέδιλα με μαλακό πάτο &quot;Σύμη&quot; - Γκρι</title>
       <productURL>https://emmanuela.shoes/products/greek-leather-brown-flat-symi?variant=47199157453135</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KLA4LGRBR_1.jpg?v=1697606879</imageURL>
       <imagesURL>
@@ -6400,7 +6396,7 @@
       <MPN>1KLA4LGRBR6</MPN>
       <color>γκρι</color>
       <size>37,38,39,40,41,42</size>
-      <EAN>05212033695190</EAN>
+      <EAN>5212033695190</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -6416,7 +6412,7 @@
       <MPN>1KL620LBLBL5</MPN>
       <color>μαύρο</color>
       <size>36,37,38,39,40,41</size>
-      <EAN>05212033693578</EAN>
+      <EAN>5212033693578</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -6439,7 +6435,7 @@
       <MPN>1KL620LGOBE5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,39,40,42</size>
-      <EAN>05212033693509</EAN>
+      <EAN>5212033693509</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -6462,7 +6458,7 @@
       <MPN>1KL916LBL5</MPN>
       <color>μαύρο</color>
       <size>36,38,39,41,42</size>
-      <EAN>05212033694261</EAN>
+      <EAN>5212033694261</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -6483,7 +6479,7 @@
       <MPN>1KL916LBR5</MPN>
       <color>καφέ</color>
       <size>36,37,39,40,42</size>
-      <EAN>05212033694193</EAN>
+      <EAN>5212033694193</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -6499,7 +6495,7 @@
       <MPN>1KL916LNA9</MPN>
       <color>μπεζ</color>
       <size>40</size>
-      <EAN>05212033694377</EAN>
+      <EAN>5212033694377</EAN>
       <shipping>0</shipping>
     </product>
   </products>

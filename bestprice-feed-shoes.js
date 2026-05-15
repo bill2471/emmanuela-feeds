@@ -684,6 +684,18 @@ function generateBestPriceFeed(products) {
       if (secondOpt) {
         title = `${title} ${secondOpt}`;
       }
+      // v1.3 fix (2026-05-15): collapse repeated quote characters and normalize
+      // curly quotes. Shopify catalog has 17 product titles with literal ""Name""
+      // (double straight quotes) which escapeXml() then turns into
+      // &quot;&quot;Name&quot;&quot; in the feed. BestPrice flags these as
+      // malformed titles. Collapse to single quote pairs.
+      title = title
+        .replace(/[“”]+/g, '"')   // “” → "
+        .replace(/[‘’]+/g, "'")   // ‘’ → '
+        .replace(/"+/g, '"')                  // "" → "
+        .replace(/'+/g, "'")                  // '' → '
+        .replace(/\s+/g, ' ')                 // collapse multiple spaces
+        .trim();
 
       // CROSS-PRODUCT DEDUPE: skip if (MPN, color, sizes) already emitted
       // Shopify shoes catalog has multiple productIds for the same physical SKU.
@@ -758,10 +770,20 @@ function generateBestPriceFeed(products) {
         stats.withWeight++;
       }
 
-      // EAN/GTIN barcode
-      if (repVariant.barcode && /^\d{8,18}$/.test(repVariant.barcode)) {
-        item += `      <EAN>${repVariant.barcode}</EAN>\n`;
-        stats.withBarcode++;
+      // EAN/GTIN barcode — normalize to EAN-13 where possible
+      // (v1.3 fix 2026-05-15): Shopify catalog stores many barcodes as GTIN-14
+      // (14 digits with leading "0" indicator). BestPrice/GS1 expects EAN-13.
+      // Audit on 2026-05-15 found 248/326 entries (76%) were 14-digit. Strip
+      // leading "0" to convert GTIN-14 → EAN-13 when applicable.
+      if (repVariant.barcode) {
+        let ean = String(repVariant.barcode).trim();
+        if (ean.length === 14 && ean.startsWith('0')) {
+          ean = ean.substring(1);
+        }
+        if (/^\d{8}$|^\d{12}$|^\d{13}$/.test(ean)) {
+          item += `      <EAN>${ean}</EAN>\n`;
+          stats.withBarcode++;
+        }
       }
 
       // Shipping (free)

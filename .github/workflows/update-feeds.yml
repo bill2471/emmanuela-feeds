@@ -105,12 +105,26 @@ jobs:
             # Pull remote changes; on conflict, keep our freshly-generated feeds
             git pull --rebase origin main || {
               echo "⚠️ Rebase conflict — resolving by keeping our generated feeds..."
-              git checkout --theirs feeds/*.xml 2>/dev/null || true
-              git add feeds/*.xml || true
+              # v1.3 fix (2026-05-15): use feeds/ directory (not feeds/*.xml glob).
+              # The glob can fail to match conflicted files during rebase, causing
+              # silent fall-through where conflict markers stay in the working tree
+              # and get committed. The "--" separator prevents path ambiguity.
+              git checkout --theirs -- feeds/ || true
+              git add -- feeds/ || true
               # v3.5.1 fix: --no-edit is NOT valid for git rebase --continue (it dropped our commit on 2026-05-14).
               # GIT_EDITOR=true makes the commit-message editor a no-op, preserving the rebased commit.
               GIT_EDITOR=true git rebase --continue || git rebase --abort
             }
+            # v1.3 safety guard (2026-05-15): NEVER push feeds with unresolved merge
+            # conflict markers — they break every XML parser (BestPrice/Skroutz/GMC/Meta).
+            # On 2026-05-15 commit ee3e08be silently pushed shoes feed with markers
+            # because the prior glob-based --theirs checkout failed silently. Fail
+            # loudly here so a human can investigate instead of serving broken XML.
+            if grep -lE '^<<<<<<<|^>>>>>>>' feeds/*.xml 2>/dev/null; then
+              echo "❌ FATAL: merge conflict markers detected in feed files. Aborting push."
+              grep -nE '^<<<<<<<|^>>>>>>>' feeds/*.xml | head -30
+              exit 1
+            fi
             git push
             echo "✅ Feeds updated and pushed!"
           fi

@@ -80,6 +80,15 @@ const BESTPRICE_CATEGORY_MAP = {
   'sandals':                               'Μόδα->Γυναικεία Παπούτσια->Σανδάλια',
   'women sandals':                         'Μόδα->Γυναικεία Παπούτσια->Σανδάλια',
   'men sandals':                           'Μόδα->Ανδρικά Παπούτσια->Σανδάλια',
+  // English product types from Shopify catalog (exact match — priority over keyword fallback)
+  'gladiator sandals':                     'Μόδα->Γυναικεία Παπούτσια->Σανδάλια',
+  'slide sandals':                         'Μόδα->Γυναικεία Παπούτσια->Σανδάλια',
+  'strap sandals':                         'Μόδα->Γυναικεία Παπούτσια->Σανδάλια',
+  // "Men's Sandals" — exact match BEFORE keyword fallback (which incorrectly catches 'sandal' before 'men')
+  // Multiple apostrophe variants for safety (Shopify may store straight ' or curly ’)
+  "men's sandals":                         'Μόδα->Ανδρικά Παπούτσια->Σανδάλια',
+  "men’s sandals":                    'Μόδα->Ανδρικά Παπούτσια->Σανδάλια',
+  'mens sandals':                          'Μόδα->Ανδρικά Παπούτσια->Σανδάλια',
   'slides':                                'Μόδα->Γυναικεία Παπούτσια->Σανδάλια',
   'πέδιλα':                                'Μόδα->Γυναικεία Παπούτσια->Πέδιλα',
   'πλατφόρμες':                            'Μόδα->Γυναικεία Παπούτσια->Πλατφόρμες',
@@ -522,6 +531,13 @@ function generateBestPriceFeed(products) {
   console.log('Generating BestPrice XML feed...\n');
 
   const items = [];
+  // Cross-product dedupe: Shopify shoes catalog has massive replication where the
+  // SAME physical product (same MPN/SKU + same color + same size set) exists as
+  // multiple Shopify products with different productIds. Without deduplication
+  // BestPrice gets ~310 sets of identical entries (1322/1382 = 95.7% duplicates),
+  // which likely caused the rejection. Key = MPN | color | size-set.
+  // Discovered via _audit-shoes-2026-05-15.js on 2026-05-15.
+  const seenDedupeKeys = new Map(); // key → first productId emitted
   const stats = {
     inStock: 0,
     outOfStock: 0,
@@ -533,6 +549,8 @@ function generateBestPriceFeed(products) {
     withWeight: 0,
     withMPN: 0,
     withBarcode: 0,
+    dedupedSkipped: 0,
+    dedupeDetails: [],
     categoryBreakdown: {},
     unmappedTypes: {},
     sampleItems: []
@@ -661,6 +679,24 @@ function generateBestPriceFeed(products) {
       if (secondOpt) {
         title = `${title} ${secondOpt}`;
       }
+
+      // CROSS-PRODUCT DEDUPE: skip if (MPN, color, sizes) already emitted
+      // Shopify shoes catalog has multiple productIds for the same physical SKU.
+      const dedupeMpn = repVariant.sku || `EMM-${repVariant.id}`;
+      const dedupeKey = `${dedupeMpn}|${color}|${groupSizes || ''}`;
+      if (seenDedupeKeys.has(dedupeKey)) {
+        stats.dedupedSkipped++;
+        if (stats.dedupeDetails.length < 10) {
+          stats.dedupeDetails.push({
+            skippedId: repVariant.id,
+            keptId: seenDedupeKeys.get(dedupeKey),
+            key: dedupeKey,
+            title,
+          });
+        }
+        continue;
+      }
+      seenDedupeKeys.set(dedupeKey, repVariant.id);
 
       // Build product XML
       let item = '';
@@ -815,6 +851,13 @@ async function generateFeed(options = {}) {
   console.log(`  Out of stock (skip): ${stats.outOfStock}`);
   console.log(`  No image (skip):     ${stats.noImage}`);
   console.log(`  Gift cards (skip):   ${stats.skippedGiftCards}`);
+  console.log(`  Cross-product dupes: ${stats.dedupedSkipped}  (deduped on MPN|color|size)`);
+  if (stats.dedupeDetails.length > 0) {
+    console.log('  Sample dedupe skips (first 5):');
+    for (const d of stats.dedupeDetails.slice(0, 5)) {
+      console.log(`    skip ${d.skippedId} (kept ${d.keptId}) — ${d.title.substring(0, 60)}`);
+    }
+  }
   console.log(`  With color:          ${stats.withColor}`);
   console.log(`  With MPN/SKU:        ${stats.withMPN}`);
   console.log(`  With size:           ${stats.withSize}`);

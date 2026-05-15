@@ -77,6 +77,20 @@ jobs:
           echo "👟 Generating Shoes Google Shopping feeds for: $COUNTRY"
           node google-shopping-feed-shoes-v1.js $COUNTRY
 
+      - name: Run BestPrice.gr feed generator (Shoes)
+        env:
+          SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_SHOES_ACCESS_TOKEN }}
+        run: |
+          echo "👟 Generating BestPrice.gr Product Feed (Shoes)..."
+          node bestprice-feed-shoes.js
+
+      - name: Run GLAMI feed generator (Shoes)
+        env:
+          SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_SHOES_ACCESS_TOKEN }}
+        run: |
+          echo "👟 Generating GLAMI Product Feed (Shoes)..."
+          node glami-feed-shoes.js
+
       - name: Commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

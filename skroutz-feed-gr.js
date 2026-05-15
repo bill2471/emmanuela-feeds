@@ -113,7 +113,7 @@ const path = require('path');
 //  - Monogram letter injection for letter-bearing pendants
 //  - cuff → ear cuff normalization
 // See: skroutz-feed/emmanuela-gr/HANDOFF-SESSION-2026-05-14-V35-REDESIGN.md
-const { buildSkroutzTitle } = require('./skroutz-title-builder-v35');
+const { buildSkroutzTitle, buildStructuredAttributes } = require('./skroutz-title-builder-v35');
 
 // ============================================
 // CONFIGURATION
@@ -1291,11 +1291,18 @@ function generateSkroutzFeed(products) {
         stats.withWeight++;
       }
 
-      // Description
-      if (description) {
-        item += `        <description><![CDATA[${description}]]></description>\n`;
-        stats.withDescription++;
-      }
+      // Description — v3.5.5: prepend structured-attribute block per Skroutz
+      // catalog engine guidance (2026-05-15 support reply). Skroutz feedspec
+      // doesn't expose dedicated tags for jewelry attributes (material/plating/
+      // pieces/gender), so cluster engine parses these from description text.
+      const structuredBlock = buildStructuredAttributes({
+        product, variant: repVariant, skroutzCategory,
+      });
+      let fullDescription = description ? `${structuredBlock}\n\n${description}` : structuredBlock;
+      // Hard cap at 10,000 chars per feedspec (truncate the long-tail of the body, not the structured top)
+      if (fullDescription.length > 10000) fullDescription = fullDescription.substring(0, 9997) + '...';
+      item += `        <description><![CDATA[${fullDescription}]]></description>\n`;
+      stats.withDescription++;
 
       // Shipping (free shipping for emmanuela.gr)
       item += `        <shipping>0</shipping>\n`;

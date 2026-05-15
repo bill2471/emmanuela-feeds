@@ -1,7 +1,18 @@
 /**
- * Skroutz XML Feed Title Builder v3.5.4 (2026-05-14 evening)
+ * Skroutz XML Feed Title Builder v3.5.5 (2026-05-15)
  *
  * Authoritative spec: C:\Users\bill\Ανεβασμα listing Jewelry\XML-FEED-TITLE-STRUCTURE-SPEC.md (v2)
+ *
+ * v3.5.5 patch (1) — Skroutz cluster engine signal improvement per support reply 2026-05-15:
+ *   1. NEW buildStructuredAttributes() helper exports a multi-line structured block
+ *      with 5-6 labeled key:value pairs (Τύπος Προϊόντος, Υλικό, Επιμετάλλωση,
+ *      Πλήθος Τεμαχίων, Φύλο, Πλευρά) intended to be PREPENDED to each <description>.
+ *      Skroutz feedspec exposes no custom tags for jewelry attributes, so the cluster
+ *      engine parses these labels from description text. Fixes the "Μονό Σκουλαρίκι"
+ *      cluster auto-title issue by giving the engine an explicit "Πλήθος Τεμαχίων:
+ *      Ζευγάρι (2 τεμάχια)" / "Σετ από N" signal.
+ *      Also re-exports detectJewelryType, detectGender, extractSide, getFinishForVariant
+ *      for testing / future reuse by other feed builders (BestPrice etc.).
  *
  * v3.5.4 patches (4) — found by post-deploy parallel grammar + cosmetic audit:
  *   1. inflectBodyAdjectives() — body style/shape adjectives now agree in number/gender
@@ -919,4 +930,125 @@ function buildSkroutzTitle({ product, variant, skroutzCategory }) {
   return title;
 }
 
-module.exports = { buildSkroutzTitle };
+// ============================================
+// STRUCTURED ATTRIBUTES BLOCK (v3.5.5)
+// ============================================
+// Skroutz feedspec does NOT support custom tags for jewelry attributes
+// (material, plating, clasp type, pieces count). The catalog engine parses
+// these from the <description> free-form field by label.
+//
+// Per Skroutz support 2026-05-15: "Το cluster title δεν δημιουργείται
+// αποκλειστικά από το title string, αλλά κυρίως από τα structured attributes".
+//
+// We prepend a canonical block to each description with the 4-5 attributes
+// that the cluster engine looks for, so cluster matching produces correct
+// "Σκουλαρίκια / Ζευγάρι / Γυναικείο / Ροζ Επιχρύσωση" instead of
+// auto-generated "Μονό Σκουλαρίκι Καρφωτό από Ασήμι Επιχρυσωμένο με Πέτρες MPN".
+
+const PLATING_LABELS = {
+  S: null,                                  // No plating — Λευκό Ασήμι 925
+  G: 'Επιχρύσωση (Yellow Gold)',
+  R: 'Επιχρύσωση Ροζ (Rose Gold)',
+  O: 'Οξείδωση (Antiqued Silver)',
+  X: 'Επιροδίωση Μαύρη (Black Rhodium)',
+};
+
+const GENDER_LABELS = {
+  male: 'Ανδρικό',
+  female: 'Γυναικείο',
+  unisex: 'Unisex',
+};
+
+// Number-word → digit (for "Σετ από δύο/τρία/τέσσερα..." parsing)
+const GREEK_NUMBER_WORDS = {
+  'δύο': 2, 'δυο': 2, 'τρία': 3, 'τρια': 3, 'τέσσερα': 4, 'τεσσερα': 4,
+  'πέντε': 5, 'πεντε': 5, 'έξι': 6, 'εξι': 6, 'επτά': 7, 'επτα': 7,
+  'οκτώ': 8, 'οκτω': 8, 'εννέα': 9, 'εννεα': 9, 'δέκα': 10, 'δεκα': 10,
+};
+
+function detectPiecesCount({ product, typeWord }) {
+  const title = (product.title || '').toLowerCase();
+  // 1. Explicit "Σετ από N" prefix
+  const setDigit = title.match(/^σετ\s+από\s+(\d+)/i);
+  if (setDigit) return { count: parseInt(setDigit[1], 10), label: `Σετ από ${setDigit[1]}` };
+  const setWord = title.match(/^σετ\s+από\s+([\p{L}]+)/iu);
+  if (setWord && GREEK_NUMBER_WORDS[setWord[1].toLowerCase()]) {
+    const n = GREEK_NUMBER_WORDS[setWord[1].toLowerCase()];
+    return { count: n, label: `Σετ από ${n}` };
+  }
+  // 2. Leading quantity word "Δύο σκουλαρίκια..." / "Τρία δαχτυλίδια..."
+  const leadWord = title.match(/^([\p{L}]+)\s/u);
+  if (leadWord && GREEK_NUMBER_WORDS[leadWord[1].toLowerCase()]) {
+    const n = GREEK_NUMBER_WORDS[leadWord[1].toLowerCase()];
+    return { count: n, label: `Σετ από ${n}` };
+  }
+  // 3. Pair types
+  if (typeWord === 'Σκουλαρίκια' || typeWord === 'Στέφανα γάμου') {
+    return { count: 2, label: 'Ζευγάρι (2 τεμάχια)' };
+  }
+  // 4. Single earring (Μονό variant)
+  if (typeWord === 'Σκουλαρίκι') {
+    return { count: 1, label: 'Μονό (1 τεμάχιο)' };
+  }
+  // 5. Σετ κοσμημάτων: multi-piece set (2+) — keep undetermined
+  if (typeWord === 'Σετ κοσμημάτων') {
+    return { count: 2, label: 'Σετ Κοσμημάτων (2+ τεμάχια)' };
+  }
+  // 6. Everything else: single piece
+  return { count: 1, label: '1 τεμάχιο' };
+}
+
+/**
+ * Build structured-attribute block to prepend to <description>.
+ * Returns multi-line string with labeled key:value pairs that Skroutz
+ * catalog engine parses for cluster generation.
+ */
+function buildStructuredAttributes({ product, variant, skroutzCategory }) {
+  const v = { ...variant };
+  if (!v.selectedOptions && v.selected_options) v.selectedOptions = v.selected_options;
+
+  const typeWord = detectJewelryType(product, v, skroutzCategory);
+  const gender = detectGender(product, v, skroutzCategory);
+  const side = extractSide(v);
+  const { finish } = getFinishForVariant(product, v);
+  const pieces = detectPiecesCount({ product, typeWord });
+
+  const lines = ['Χαρακτηριστικά Προϊόντος'];
+
+  // 1. Τύπος Προϊόντος (helps cluster engine map to correct category attribute)
+  lines.push(`Τύπος Προϊόντος: ${typeWord}`);
+
+  // 2. Υλικό (always Sterling Silver 925 for EMMANUELA)
+  lines.push('Υλικό: Ασήμι 925 (Sterling Silver 925)');
+
+  // 3. Επιμετάλλωση (only when there IS plating — Sterling Silver alone gets a different label)
+  if (PLATING_LABELS[finish]) {
+    lines.push(`Επιμετάλλωση: ${PLATING_LABELS[finish]}`);
+  } else {
+    lines.push('Φινίρισμα: Λευκό Ασήμι 925 (χωρίς επιμετάλλωση)');
+  }
+
+  // 4. Πλήθος Τεμαχίων (KEY ATTRIBUTE — fixes "Μονό Σκουλαρίκι" cluster issue)
+  lines.push(`Πλήθος Τεμαχίων: ${pieces.label}`);
+
+  // 5. Φύλο
+  lines.push(`Φύλο: ${GENDER_LABELS[gender] || 'Unisex'}`);
+
+  // 6. Πλευρά (only for single earrings)
+  if (side) {
+    lines.push(`Πλευρά: ${side === 'αριστερό αυτί' ? 'Αριστερό αυτί' : 'Δεξί αυτί'}`);
+  }
+
+  return lines.join('\n');
+}
+
+module.exports = {
+  buildSkroutzTitle,
+  buildStructuredAttributes,
+  // Re-export internals for skroutz-feed-gr.js usage / testing
+  detectJewelryType,
+  detectGender,
+  extractSide,
+  getFinishForVariant,
+  detectPiecesCount,
+};

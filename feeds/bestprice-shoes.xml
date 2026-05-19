@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-05-19 03:59</date>
+  <date>2026-05-19 10:40</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -693,26 +693,26 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479823790237</productId>
-      <title><![CDATA[Emmanuela Σανδάλια μονομάχου "Μέλαινα" - Δέρμα φιδιού]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-snake-melaina?variant=40479823790237</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-snake-skin-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-snake-skin-melaina-435870.jpg?v=1627375865</imageURL>
+      <productId>40479823823005</productId>
+      <title><![CDATA[Emmanuela Σανδάλια μονομάχου "Μέλαινα" - Ζέβρα]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-snake-melaina?variant=40479823823005</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-snake-skin-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-snake-skin-melaina-599123.jpg?v=1627294283</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-snake-skin-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-snake-skin-melaina-435870.jpg?v=1627375865</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-snake-skin-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-snake-skin-melaina-258395.jpg?v=1627294283</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-snake-skin-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-snake-skin-melaina-379023.jpg?v=1627294283</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-snake-skin-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-snake-skin-melaina-599123.jpg?v=1627294283</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-snake-skin-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-snake-skin-melaina-869516.jpg?v=1627294283</img5>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-snake-skin-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-snake-skin-melaina-599123.jpg?v=1627294283</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-snake-skin-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-snake-skin-melaina-869516.jpg?v=1627294283</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-snake-skin-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-snake-skin-melaina-213178.jpg?v=1627294283</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-snake-skin-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-snake-skin-melaina-582378.jpg?v=1627294283</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-snake-skin-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-snake-skin-melaina-435870.jpg?v=1627375865</img5>
       </imagesURL>
       <price>64.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1TS1065LMLBL6</MPN>
+      <MPN>1TS1065LMMBL6</MPN>
       <color>πολύχρωμο</color>
       <size>37,38,41</size>
-      <EAN>5212033643290</EAN>
+      <EAN>5212033642941</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1389,22 +1389,6 @@
       <color>μπεζ</color>
       <size>37,40</size>
       <EAN>5212033622097</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40479877890205</productId>
-      <title><![CDATA[Emmanuela Σανδάλια μονομάχου "Μέλαινα" - Ζέβρα]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-leopard-melaina?variant=40479877890205</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-zebra-melaina-emmanuela-handcrafted-for-you-sandalia-monomaxoy-zebra-melaina-219819.jpg?v=1627375854</imageURL>
-      <price>64.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1TS1065LMMBL6</MPN>
-      <color>πολύχρωμο</color>
-      <size>37,38,41</size>
-      <EAN>5212033642941</EAN>
       <shipping>0</shipping>
     </product>
     <product>

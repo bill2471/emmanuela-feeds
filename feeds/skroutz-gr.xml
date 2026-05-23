@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-05-23 08:40</created_at>
+  <created_at>2026-05-23 13:45</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -6454,7 +6454,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[2050]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>45</quantity>
+        <quantity>44</quantity>
         <color>Ασημί</color>
         <size>48,49,50,51,52,53,54,55,56,57,58,59,60,61,Ανοιχτή γάμπα</size>
         <variations>
@@ -6560,7 +6560,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
             <variationid>31641451200547</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>Ανοιχτή γάμπα</size>
-            <quantity>3</quantity>
+            <quantity>2</quantity>
             <manufacturersku><![CDATA[2050]]></manufacturersku>
           </variation>
         </variations>

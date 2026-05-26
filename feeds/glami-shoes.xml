@@ -311,7 +311,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 41</VAL>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -325,6 +325,39 @@
     <GTIN>05212033625050</GTIN>
   </SHOPITEM>
   <SHOPITEM>
+    <ITEM_ID>40479787581597</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Καφέ]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-bacchus-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-921290.jpg?v=1693475296</IMGURL>
+    <PRICE_VAT>84</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856614576285</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-500912.jpg?v=1693475296</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225_-_SIZE_CHART.png?v=1779352705</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225LDBDB_1_65154b60-8f03-4fd6-bb54-6a9bf3740b90.jpg?v=1693475296</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-bacchus-men?variant=40479787581597</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>καφέ</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033625173</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
     <ITEM_ID>40479789121693</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Μπεζ φυσικό]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-bacchus-men</URL>
@@ -334,7 +367,6 @@
     <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
     <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
     <ITEMGROUP_ID>6856614576285</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225LDBDB_1_65154b60-8f03-4fd6-bb54-6a9bf3740b90.jpg?v=1693475296</IMGURL_ALTERNATIVE>
     <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-bacchus-men?variant=40479789121693</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
@@ -354,38 +386,6 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033625937</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>42269024977125</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Καφέ]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-bacchus-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-921290.jpg?v=1693475296</IMGURL>
-    <PRICE_VAT>84</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856614576285</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-500912.jpg?v=1693475296</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225_-_SIZE_CHART.png?v=1779352705</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-bacchus-men?variant=42269024977125</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>καφέ</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>47</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033651363</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40479789973661</ITEM_ID>
@@ -711,6 +711,42 @@
     <GTIN>05212033635837</GTIN>
   </SHOPITEM>
   <SHOPITEM>
+    <ITEM_ID>40479792169117</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος" - Μαύρο]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-176162.jpg?v=1627375012</IMGURL>
+    <PRICE_VAT>73</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 3cm 👌 Δερμάτιος ανατομικός πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας με κορδόνια 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856614740125</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-574668.jpg?v=1627293791</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-665447.jpg?v=1627293791</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-423770.jpg?v=1627293791</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-434916.jpg?v=1627293791</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-458605.jpg?v=1627293791</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/1kl213.jpg?v=1653979507</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men?variant=40479792169117</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>μαύρο</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>40, 41, 42, 43, 44, 45, 46</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033624688</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
     <ITEM_ID>40479793250461</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος" - Μπεζ φυσικό]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men</URL>
@@ -743,29 +779,25 @@
     <GTIN>05212033624640</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40479793381533</ITEM_ID>
+    <ITEM_ID>40479792529565</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος" - Μαύρο]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-176162.jpg?v=1627375012</IMGURL>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-menelaus-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-755579.jpg?v=1653979509</IMGURL>
     <PRICE_VAT>73</PRICE_VAT>
     <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
     <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
     <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 3cm 👌 Δερμάτιος ανατομικός πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας με κορδόνια 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856614740125</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-574668.jpg?v=1627293791</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-665447.jpg?v=1627293791</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-423770.jpg?v=1627293791</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-434916.jpg?v=1627293791</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-458605.jpg?v=1627293791</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/1kl213.jpg?v=1653979507</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men?variant=40479793381533</URL_SIZE>
+    <ITEMGROUP_ID>6856614772893</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-451268.jpg?v=1653979509</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-847489.jpg?v=1653979509</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-menelaus-men?variant=40479792529565</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>45</VAL>
+      <VAL>40, 41, 42, 43, 44, 45, 46</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -776,7 +808,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033624787</GTIN>
+    <GTIN>05212033624688</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40479793545373</ITEM_ID>
@@ -815,25 +847,24 @@
     <GTIN>05212033624640</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40479794102429</ITEM_ID>
+    <ITEM_ID>40479793840285</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος" - Μαύρο]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-menelaus-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-755579.jpg?v=1653979509</IMGURL>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-menelaus-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-477010.jpg?v=1653979516</IMGURL>
     <PRICE_VAT>73</PRICE_VAT>
     <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 3cm 👌 Δερμάτιος ανατομικός πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας με κορδόνια 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856614772893</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-451268.jpg?v=1653979509</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-847489.jpg?v=1653979509</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-menelaus-men?variant=40479794102429</URL_SIZE>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[Ο Μενέλαος, βασιλιάς της Σπάρτης και αρχηγός στρατιών, ήταν άνδρας που εκτιμούσε την ανθεκτικότητα και την αντοχή. Αυτά τα ανδρικά ανατομικά σανδάλια τιμούν εκείνη την κληρονομιά με ανυψωμένη σόλα 3 εκ. με ενσωματωμένη στήριξη της καμάρας — σοβαρή μηχανική άνεσης κρυμμένη μέσα σε ένα παραδοσιακό χειροποίητο ελληνικό σανδάλι. Κάθε ζευγάρι φτιάχνεται στο χέρι στην Ελλάδα από γνήσιο δέρμα, με κορδόνια που σας επιτρέπουν να ρυθμίσετε την εφαρμογή. Ο ανατομικός δερμάτινος πάτος αγκαλιάζει την καμάρα και κατανέμει την πίεση ομοιόμορφα, κάνοντας τα Μενέλαος ιδανικά για άνδρες που απαιτούν ταυτόχρονα άνεση και αντοχή. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: ανατομικός δερμάτινος με στήριξη της καμάρας Σόλα: αντιολισθητική EVA καουτσούκ, 3 cm Κούμπωμα: με κορδόνια Διαθέσιμο σε 3 χρώματα: καφέ, μπεζ φυσικό, μαύρο Μεγέθη: EU 40–46 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856614805661</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-126629.jpg?v=1653979516</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-menelaus-men?variant=40479793840285</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>45</VAL>
+      <VAL>40, 41, 42, 43, 44, 45, 46</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -844,7 +875,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033624787</GTIN>
+    <GTIN>05212033624688</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40479795019933</ITEM_ID>
@@ -875,37 +906,6 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033624640</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>40479795282077</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος" - Μαύρο]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-menelaus-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-477010.jpg?v=1653979516</IMGURL>
-    <PRICE_VAT>73</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[Ο Μενέλαος, βασιλιάς της Σπάρτης και αρχηγός στρατιών, ήταν άνδρας που εκτιμούσε την ανθεκτικότητα και την αντοχή. Αυτά τα ανδρικά ανατομικά σανδάλια τιμούν εκείνη την κληρονομιά με ανυψωμένη σόλα 3 εκ. με ενσωματωμένη στήριξη της καμάρας — σοβαρή μηχανική άνεσης κρυμμένη μέσα σε ένα παραδοσιακό χειροποίητο ελληνικό σανδάλι. Κάθε ζευγάρι φτιάχνεται στο χέρι στην Ελλάδα από γνήσιο δέρμα, με κορδόνια που σας επιτρέπουν να ρυθμίσετε την εφαρμογή. Ο ανατομικός δερμάτινος πάτος αγκαλιάζει την καμάρα και κατανέμει την πίεση ομοιόμορφα, κάνοντας τα Μενέλαος ιδανικά για άνδρες που απαιτούν ταυτόχρονα άνεση και αντοχή. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: ανατομικός δερμάτινος με στήριξη της καμάρας Σόλα: αντιολισθητική EVA καουτσούκ, 3 cm Κούμπωμα: με κορδόνια Διαθέσιμο σε 3 χρώματα: καφέ, μπεζ φυσικό, μαύρο Μεγέθη: EU 40–46 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856614805661</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-126629.jpg?v=1653979516</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-menelaus-men?variant=40479795282077</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>μαύρο</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>45</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033624787</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40479793709213</ITEM_ID>
@@ -1044,6 +1044,41 @@
     <GTIN>05212033635998</GTIN>
   </SHOPITEM>
   <SHOPITEM>
+    <ITEM_ID>40479795806365</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Καφέ]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-bacchus-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-176961.jpg?v=1627375101</IMGURL>
+    <PRICE_VAT>84</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856614936733</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-179808.jpg?v=1627293788</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-282636.jpg?v=1627293788</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-693793.jpg?v=1660111843</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-996920.jpg?v=1660111843</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225LDBDB_1_7d53a630-b20c-4070-8a44-7a27666fb221.jpg?v=1693829085</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-bacchus-men?variant=40479795806365</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>καφέ</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033625173</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
     <ITEM_ID>40479795937437</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Μαύρο]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-bacchus-men</URL>
@@ -1053,7 +1088,6 @@
     <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
     <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
     <ITEMGROUP_ID>6856614936733</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225LDBDB_1_7d53a630-b20c-4070-8a44-7a27666fb221.jpg?v=1693829085</IMGURL_ALTERNATIVE>
     <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-bacchus-men?variant=40479795937437</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
@@ -1061,7 +1095,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 41</VAL>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -1105,40 +1139,6 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033625937</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>42269026582757</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Καφέ]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-bacchus-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-176961.jpg?v=1627375101</IMGURL>
-    <PRICE_VAT>84</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856614936733</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-179808.jpg?v=1627293788</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-282636.jpg?v=1627293788</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-693793.jpg?v=1660111843</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-996920.jpg?v=1660111843</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-bacchus-men?variant=42269026582757</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>καφέ</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>47</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033651363</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40479797018781</ITEM_ID>
@@ -8458,7 +8458,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 38</VAL>
+      <VAL>36</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -8615,7 +8615,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 38</VAL>
+      <VAL>36</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -9050,7 +9050,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 38</VAL>
+      <VAL>36</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -17382,7 +17382,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36</VAL>
+      <VAL>36, 37, 38, 39, 40, 41</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -17416,7 +17416,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 37, 38, 41, 42</VAL>
+      <VAL>36, 37, 38, 39, 40, 41, 42</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -17447,7 +17447,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>37, 38</VAL>
+      <VAL>37, 38, 39, 40</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -17516,7 +17516,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36</VAL>
+      <VAL>36, 37, 38, 39, 40, 41</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -17550,7 +17550,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 37, 38, 41, 42</VAL>
+      <VAL>36, 37, 38, 39, 40, 41, 42</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -17582,7 +17582,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>37, 38</VAL>
+      <VAL>37, 38, 39, 40</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -21423,6 +21423,40 @@
     <GTIN>05212033641371</GTIN>
   </SHOPITEM>
   <SHOPITEM>
+    <ITEM_ID>40480057884829</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Ποσειδών" - Μαύρο]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-poseidon-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-335208.jpg?v=1627375359</IMGURL>
+    <PRICE_VAT>59</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856635908253</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-282435.jpg?v=1627293968</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-911241.jpg?v=1627293968</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-726381.jpg?v=1627293968</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-655391.jpg?v=1627293968</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-poseidon-men?variant=40480057884829</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>μαύρο</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033634199</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
     <ITEM_ID>40480058507421</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Ποσειδών" - Μπεζ φυσικό]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-poseidon-men</URL>
@@ -21455,40 +21489,6 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033626170</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>43873669939429</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Ποσειδών" - Μαύρο]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-poseidon-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-335208.jpg?v=1627375359</IMGURL>
-    <PRICE_VAT>59</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856635908253</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-282435.jpg?v=1627293968</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-911241.jpg?v=1627293968</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-726381.jpg?v=1627293968</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-655391.jpg?v=1627293968</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-poseidon-men?variant=43873669939429</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>μαύρο</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>47</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>5212033600118</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480059490461</ITEM_ID>
@@ -21843,7 +21843,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 41</VAL>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -21855,6 +21855,36 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033625050</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
+    <ITEM_ID>40480066863261</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Καφέ]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-bacchus-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225LDBDB_1_15c547d7-bb33-4997-9c0e-dc807c4c939f.jpg?v=1693475191</IMGURL>
+    <PRICE_VAT>84</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856636989597</ITEMGROUP_ID>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-bacchus-men?variant=40480066863261</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>καφέ</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033625173</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480067584157</ITEM_ID>
@@ -21874,7 +21904,6 @@
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-726397.jpg?v=1660111851</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225_-_SIZE_CHART.png?v=1779352705</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/new-banner-emmanuela-men-sandals_f5db3239-2265-4dd4-98d8-2b434d65a5b1.jpg?v=1685534790</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225LDBDB_1_15c547d7-bb33-4997-9c0e-dc807c4c939f.jpg?v=1693475191</IMGURL_ALTERNATIVE>
     <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-bacchus-men?variant=40480067584157</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
@@ -21894,36 +21923,6 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033625937</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>42269029171429</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Καφέ]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-bacchus-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-301105.jpg?v=1627375104</IMGURL>
-    <PRICE_VAT>84</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856636989597</ITEMGROUP_ID>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-bacchus-men?variant=42269029171429</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>καφέ</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>47</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033651363</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480068468893</ITEM_ID>
@@ -22173,7 +22172,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 37, 41, 42</VAL>
+      <VAL>36, 37, 42</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -22307,7 +22306,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 37, 41, 42</VAL>
+      <VAL>36, 37, 42</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -22427,7 +22426,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 37, 41, 42</VAL>
+      <VAL>36, 37, 42</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -22524,7 +22523,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 37, 41, 42</VAL>
+      <VAL>36, 37, 42</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -22651,7 +22650,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 37, 41, 42</VAL>
+      <VAL>36, 37, 42</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -23302,7 +23301,7 @@
     <GTIN>05212033635431</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40480091537565</ITEM_ID>
+    <ITEM_ID>40480091439261</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Μαύρο]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-dionysius-men</URL>
     <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-570478.jpg?v=1653979657</IMGURL>
@@ -23313,14 +23312,14 @@
     <ITEMGROUP_ID>6856639250589</ITEMGROUP_ID>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-465450.jpg?v=1653979657</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/emmanuela-handcrafted-for-you-gladiator-sandalen-fur-herren-dionysius-aus-schwarze-leder-emmanuela-handcrafted-for-you-488268.jpg?v=1653979657</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-dionysius-men?variant=40480091537565</URL_SIZE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-dionysius-men?variant=40480091439261</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 45</VAL>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -23331,7 +23330,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033635301</GTIN>
+    <GTIN>05212033635295</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480092291229</ITEM_ID>
@@ -24038,20 +24037,21 @@
     <GTIN>05212033642507</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>46729228222799</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Σκούρο Καφέ]]></PRODUCTNAME>
+    <ITEM_ID>40480107004061</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Μαύρο]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-leander-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222LDBDB_1.jpg?v=1693476562</IMGURL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-571696.jpg?v=1693476562</IMGURL>
     <PRICE_VAT>65</PRICE_VAT>
     <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
     <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
     <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.8cm 👌 Δερμάτινος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
     <ITEMGROUP_ID>6856640495773</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-974434.jpg?v=1693476562</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-leander-men?variant=46729228222799</URL_SIZE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222_-_SIZE_CHART.png?v=1779352235</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-613021.jpg?v=1693476562</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-leander-men?variant=40480107004061</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>καφέ</VAL>
+      <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
@@ -24066,7 +24066,38 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>5212033601818</GTIN>
+    <GTIN>05212033624312</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
+    <ITEM_ID>40480107036829</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Καφέ]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-leander-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-974434.jpg?v=1693476562</IMGURL>
+    <PRICE_VAT>65</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.8cm 👌 Δερμάτινος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856640495773</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222LDBDB_1.jpg?v=1693476562</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-leander-men?variant=40480107036829</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>καφέ</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033624435</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480107069597</ITEM_ID>
@@ -24101,38 +24132,6 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033624213</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>40480107102365</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Μαύρο]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-leander-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-571696.jpg?v=1693476562</IMGURL>
-    <PRICE_VAT>65</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.8cm 👌 Δερμάτινος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856640495773</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222_-_SIZE_CHART.png?v=1779352235</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-613021.jpg?v=1693476562</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-leander-men?variant=40480107102365</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>μαύρο</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 43, 45, 46, 47</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033624336</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480107298973</ITEM_ID>
@@ -27319,7 +27318,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 45, 46, 47</VAL>
+      <VAL>40, 42, 43, 44, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -27333,7 +27332,7 @@
     <GTIN>05212033634779</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40480142098589</ITEM_ID>
+    <ITEM_ID>40480141770909</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Θησέας" - Μαύρο]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-theseus-men</URL>
     <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-475492.jpg?v=1653979756</IMGURL>
@@ -27345,14 +27344,14 @@
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-231381.jpg?v=1653979756</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-850380.jpg?v=1653979756</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-335429.jpg?v=1653979756</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-theseus-men?variant=40480142098589</URL_SIZE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-theseus-men?variant=40480141770909</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>43</VAL>
+      <VAL>40, 41, 43, 44, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -27363,7 +27362,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033634663</GTIN>
+    <GTIN>05212033634632</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480142360733</ITEM_ID>
@@ -30157,7 +30156,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 37, 38, 41, 42</VAL>
+      <VAL>36, 37, 38, 39, 40, 41, 42</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -30191,7 +30190,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36</VAL>
+      <VAL>36, 37, 38, 39, 40, 41</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -30222,7 +30221,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>37, 38</VAL>
+      <VAL>37, 38, 39, 40</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -33807,7 +33806,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 45, 46, 47</VAL>
+      <VAL>40, 42, 43, 44, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -33821,7 +33820,7 @@
     <GTIN>05212033634779</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40480226869405</ITEM_ID>
+    <ITEM_ID>40480226410653</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Θησέας" - Μαύρο]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-theseus-men</URL>
     <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-251600.jpg?v=1653979763</IMGURL>
@@ -33833,14 +33832,14 @@
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1LI47_-_SIZE_CHART.png?v=1779368417</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-404409.jpg?v=1653979763</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-824017.jpg?v=1653979763</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-theseus-men?variant=40480226869405</URL_SIZE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-theseus-men?variant=40480226410653</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>43</VAL>
+      <VAL>40, 41, 43, 44, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -33851,7 +33850,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033634663</GTIN>
+    <GTIN>05212033634632</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480227229853</ITEM_ID>
@@ -34997,6 +34996,38 @@
     <GTIN>05212033635431</GTIN>
   </SHOPITEM>
   <SHOPITEM>
+    <ITEM_ID>40480242008221</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Μαύρο]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-dionysius-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-643312.jpg?v=1653979658</IMGURL>
+    <PRICE_VAT>69</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856651636893</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-893344.jpg?v=1653979658</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-739811.jpg?v=1653979658</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-dionysius-men?variant=40480242008221</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>μαύρο</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033635295</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
     <ITEM_ID>40480242040989</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Καφέ]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-dionysius-men</URL>
@@ -35028,25 +35059,27 @@
     <GTIN>05212033635363</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40480242106525</ITEM_ID>
+    <ITEM_ID>40480242696349</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Μαύρο]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-dionysius-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-643312.jpg?v=1653979658</IMGURL>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-dionysius-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-101480.jpg?v=1627375273</IMGURL>
     <PRICE_VAT>69</PRICE_VAT>
     <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856651636893</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-893344.jpg?v=1653979658</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-739811.jpg?v=1653979658</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-dionysius-men?variant=40480242106525</URL_SIZE>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[Ο Διόνυσος, θεός του κρασιού και του θεάτρου, έφερνε χαρά και κέφι όπου κι αν περνούσε. Αυτά τα ανδρικά σανδάλια μονομάχου κουβαλούν εκείνο το τολμηρό, κοινωνικό πνεύμα — ανοιχτές δερμάτινες λωρίδες σε αρχαίο πολεμικό σχέδιο που κάνει σίγουρη εντύπωση σε beach bar, δείπνο σε ταράτσα ή καλοκαιρινό γάμο. Φτιαγμένα στην Ελλάδα από γνήσιο δέρμα, τα Διόνυσος διαθέτουν σόλα 1,5 εκ. και δερμάτινο πάτο που μαλακώνει με τον χρόνο. Ο σχεδιασμός μονομάχου παραμένει πιστός στις αρχαίες ρίζες του, ενώ η σύγχρονη τεχνολογία σόλας εξασφαλίζει σταθερό πάτημα. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,5 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 3 χρώματα: μαύρο, μπεζ φυσικό, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856651735197</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-262758.jpg?v=1627293917</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-146475.jpg?v=1627293917</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-638408.jpg?v=1627293917</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-111435.jpg?v=1627293917</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-dionysius-men?variant=40480242696349</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 45</VAL>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -35057,7 +35090,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033635301</GTIN>
+    <GTIN>05212033635295</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480242729117</ITEM_ID>
@@ -35123,56 +35156,23 @@
     <GTIN>05212033635363</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40480242794653</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Μαύρο]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-dionysius-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-101480.jpg?v=1627375273</IMGURL>
-    <PRICE_VAT>69</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[Ο Διόνυσος, θεός του κρασιού και του θεάτρου, έφερνε χαρά και κέφι όπου κι αν περνούσε. Αυτά τα ανδρικά σανδάλια μονομάχου κουβαλούν εκείνο το τολμηρό, κοινωνικό πνεύμα — ανοιχτές δερμάτινες λωρίδες σε αρχαίο πολεμικό σχέδιο που κάνει σίγουρη εντύπωση σε beach bar, δείπνο σε ταράτσα ή καλοκαιρινό γάμο. Φτιαγμένα στην Ελλάδα από γνήσιο δέρμα, τα Διόνυσος διαθέτουν σόλα 1,5 εκ. και δερμάτινο πάτο που μαλακώνει με τον χρόνο. Ο σχεδιασμός μονομάχου παραμένει πιστός στις αρχαίες ρίζες του, ενώ η σύγχρονη τεχνολογία σόλας εξασφαλίζει σταθερό πάτημα. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,5 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 3 χρώματα: μαύρο, μπεζ φυσικό, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856651735197</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-262758.jpg?v=1627293917</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-146475.jpg?v=1627293917</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-638408.jpg?v=1627293917</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-111435.jpg?v=1627293917</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-dionysius-men?variant=40480242794653</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>μαύρο</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 45</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033635301</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>46729248571727</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Σκούρο Καφέ]]></PRODUCTNAME>
+    <ITEM_ID>40480243351709</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Μαύρο]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-leander-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222LDBDB_1_79b47add-d673-4e91-9555-d0f1a4b8058c.jpg?v=1693476635</IMGURL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-955700.jpg?v=1627375278</IMGURL>
     <PRICE_VAT>65</PRICE_VAT>
     <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
     <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
     <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.8cm 👌 Δερμάτινος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
     <ITEMGROUP_ID>6856651767965</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-469189.jpg?v=1693476635</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222_-_SIZE_CHART.png?v=1779352235</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-125112.jpg?v=1693476635</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-leander-men?variant=46729248571727</URL_SIZE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-357550.jpg?v=1627293918</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-771169.jpg?v=1627293918</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-854570.jpg?v=1627293918</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-119604.jpg?v=1627293918</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-leander-men?variant=40480243351709</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>καφέ</VAL>
+      <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
@@ -35187,30 +35187,29 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>5212033601818</GTIN>
+    <GTIN>05212033624312</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40480243482781</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Μαύρο]]></PRODUCTNAME>
+    <ITEM_ID>40480243450013</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Καφέ]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-leander-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-955700.jpg?v=1627375278</IMGURL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-469189.jpg?v=1693476635</IMGURL>
     <PRICE_VAT>65</PRICE_VAT>
     <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
     <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
     <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.8cm 👌 Δερμάτινος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
     <ITEMGROUP_ID>6856651767965</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-357550.jpg?v=1627293918</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-771169.jpg?v=1627293918</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-854570.jpg?v=1627293918</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-119604.jpg?v=1627293918</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-leander-men?variant=40480243482781</URL_SIZE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222_-_SIZE_CHART.png?v=1779352235</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-125112.jpg?v=1693476635</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222LDBDB_1_79b47add-d673-4e91-9555-d0f1a4b8058c.jpg?v=1693476635</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-leander-men?variant=40480243450013</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>μαύρο</VAL>
+      <VAL>καφέ</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 43, 45, 46, 47</VAL>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -35221,7 +35220,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033624336</GTIN>
+    <GTIN>05212033624435</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480243515549</ITEM_ID>
@@ -35254,24 +35253,56 @@
     <GTIN>05212033624213</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>46729257025871</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Σκούρο Καφέ]]></PRODUCTNAME>
+    <ITEM_ID>40480244170909</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Καφέ]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-leander-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222LDBDB_1_df3ca382-2022-4768-b30a-e6e88ca067e0.jpg?v=1693476663</IMGURL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-294918.jpg?v=1627375281</IMGURL>
     <PRICE_VAT>65</PRICE_VAT>
     <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
     <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
     <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.8cm 👌 Δερμάτινος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
     <ITEMGROUP_ID>6856651800733</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-294918.jpg?v=1627375281</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-171855.jpg?v=1627293917</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-873484.jpg?v=1627293918</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-391695.jpg?v=1627293918</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-791344.jpg?v=1627293918</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-leander-men?variant=46729257025871</URL_SIZE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222LDBDB_1_df3ca382-2022-4768-b30a-e6e88ca067e0.jpg?v=1693476663</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-leander-men?variant=40480244170909</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>καφέ</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033624435</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
+    <ITEM_ID>40480244236445</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Μαύρο]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-leander-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-734199.jpg?v=1693476663</IMGURL>
+    <PRICE_VAT>65</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.8cm 👌 Δερμάτινος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856651800733</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222_-_SIZE_CHART.png?v=1779352235</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-840819.jpg?v=1693476663</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-leander-men?variant=40480244236445</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
@@ -35286,7 +35317,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>5212033601818</GTIN>
+    <GTIN>05212033624312</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480244301981</ITEM_ID>
@@ -35317,38 +35348,6 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033624213</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>40480244334749</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Μαύρο]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-leander-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-734199.jpg?v=1693476663</IMGURL>
-    <PRICE_VAT>65</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.8cm 👌 Δερμάτινος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856651800733</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222_-_SIZE_CHART.png?v=1779352235</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-840819.jpg?v=1693476663</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-leander-men?variant=40480244334749</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>μαύρο</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 43, 45, 46, 47</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033624336</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480245252253</ITEM_ID>
@@ -35701,6 +35700,40 @@
     <GTIN>05212033637640</GTIN>
   </SHOPITEM>
   <SHOPITEM>
+    <ITEM_ID>40480250265757</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Ποσειδών" - Μαύρο]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-poseidon-men-1</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-605871.jpg?v=1627293968</IMGURL>
+    <PRICE_VAT>59</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856652980381</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/1LI72MAN_51acebc2-f8dd-40e4-8864-bef649c40f06.jpg?v=1653979437</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-409789.jpg?v=1653979437</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-726994.jpg?v=1653979437</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-406798.jpg?v=1653979437</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-poseidon-men-1?variant=40480250265757</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>μαύρο</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033634199</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
     <ITEM_ID>40480251314333</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Ποσειδών" - Μπεζ φυσικό]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-poseidon-men-1</URL>
@@ -35735,27 +35768,23 @@
     <GTIN>05212033626170</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>43873672036581</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Ποσειδών" - Μαύρο]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-poseidon-men-1</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-605871.jpg?v=1627293968</IMGURL>
+    <ITEM_ID>40480250232989</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής" - Μαύρο]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-hercules-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-451498.jpg?v=1627293917</IMGURL>
     <PRICE_VAT>59</PRICE_VAT>
     <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
     <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856652980381</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/1LI72MAN_51acebc2-f8dd-40e4-8864-bef649c40f06.jpg?v=1653979437</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-409789.jpg?v=1653979437</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-726994.jpg?v=1653979437</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-406798.jpg?v=1653979437</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-poseidon-men-1?variant=43873672036581</URL_SIZE>
+    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856653013149</ITEMGROUP_ID>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-hercules-men?variant=40480250232989</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>47</VAL>
+      <VAL>41, 42, 43</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -35766,7 +35795,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>5212033600118</GTIN>
+    <GTIN>05212033634861</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480251117725</ITEM_ID>
@@ -35782,7 +35811,6 @@
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-339664.jpg?v=1627293916</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-829417.jpg?v=1627293916</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-198672.jpg?v=1627293917</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-451498.jpg?v=1627293917</IMGURL_ALTERNATIVE>
     <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-hercules-men?variant=40480251117725</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
@@ -35837,6 +35865,37 @@
     <GTIN>5212033600156</GTIN>
   </SHOPITEM>
   <SHOPITEM>
+    <ITEM_ID>40480251478173</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Ποσειδών" - Μαύρο]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-brown-leather-sandals-poseidon-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-126281.jpg?v=1627293969</IMGURL>
+    <PRICE_VAT>59</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[Ο Ποσειδώνας κυβέρνησε τις θάλασσες με τρίαινα στο χέρι — κι αυτά τα ανδρικά δερμάτινα σανδάλια κουβαλούν εκείνη την ίδια άνετη κυριαρχία. Φαρδιά λωρίδα πάνω στο πόδι, γήινοι φυσικοί τόνοι και στιβαρή σόλα κάνουν τα Ποσειδών αξιόπιστο σύντροφο για παραθαλάσσια ζωή, island-hopping ή οπουδήποτε σας πάει το καλοκαίρι. Κάθε ζευγάρι φτιάχνεται στο χέρι στην Ελλάδα από πραγματικό δέρμα, με αντιολισθητική σόλα EVA 1,5 εκ. που χειρίζεται βρεγμένη πέτρα λιμανιού τόσο σίγουρα όσο και στεγνό αστικό πεζοδρόμιο. Ο δερμάτινος πάτος αποκτά σταδιακά προσωπική εφαρμογή. Λεπτομέρειες Επάνω μέρος: 100% πραγματικό δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,5 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 3 χρώματα: καφέ, μπεζ φυσικό, μαύρο Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856653045917</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/1LI72MAN.jpg?v=1653979439</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-brown-leather-sandals-poseidon-men?variant=40480251478173</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>μαύρο</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033634199</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
     <ITEM_ID>40480252690589</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Ποσειδών" - Μπεζ φυσικό]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-brown-leather-sandals-poseidon-men</URL>
@@ -35869,24 +35928,27 @@
     <GTIN>05212033626170</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>43873672823013</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Ποσειδών" - Μαύρο]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-brown-leather-sandals-poseidon-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-126281.jpg?v=1627293969</IMGURL>
+    <ITEM_ID>40480251838621</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής" - Μαύρο]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-hercules-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-702036.jpg?v=1627375298</IMGURL>
     <PRICE_VAT>59</PRICE_VAT>
     <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[Ο Ποσειδώνας κυβέρνησε τις θάλασσες με τρίαινα στο χέρι — κι αυτά τα ανδρικά δερμάτινα σανδάλια κουβαλούν εκείνη την ίδια άνετη κυριαρχία. Φαρδιά λωρίδα πάνω στο πόδι, γήινοι φυσικοί τόνοι και στιβαρή σόλα κάνουν τα Ποσειδών αξιόπιστο σύντροφο για παραθαλάσσια ζωή, island-hopping ή οπουδήποτε σας πάει το καλοκαίρι. Κάθε ζευγάρι φτιάχνεται στο χέρι στην Ελλάδα από πραγματικό δέρμα, με αντιολισθητική σόλα EVA 1,5 εκ. που χειρίζεται βρεγμένη πέτρα λιμανιού τόσο σίγουρα όσο και στεγνό αστικό πεζοδρόμιο. Ο δερμάτινος πάτος αποκτά σταδιακά προσωπική εφαρμογή. Λεπτομέρειες Επάνω μέρος: 100% πραγματικό δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,5 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 3 χρώματα: καφέ, μπεζ φυσικό, μαύρο Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856653045917</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/1LI72MAN.jpg?v=1653979439</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-brown-leather-sandals-poseidon-men?variant=43873672823013</URL_SIZE>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτινος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856653078685</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-438819.jpg?v=1627293915</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-136467.jpg?v=1627293915</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-170228.jpg?v=1627293915</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-920214.jpg?v=1627293915</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-hercules-men?variant=40480251838621</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>47</VAL>
+      <VAL>41, 42, 43</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -35897,7 +35959,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>5212033600118</GTIN>
+    <GTIN>05212033634861</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480253313181</ITEM_ID>
@@ -36412,6 +36474,40 @@
     <GTIN>05212033631747</GTIN>
   </SHOPITEM>
   <SHOPITEM>
+    <ITEM_ID>40480258195613</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Θησέας" - Μαύρο]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-theseus-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-887910.jpg?v=1627375357</IMGURL>
+    <PRICE_VAT>59</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[Ο Θησέας σκότωσε τον Μινώταυρο και βρήκε τον δρόμο του έξω από τον λαβύρινθο — κι το σανδάλι που φέρει το όνομά του είναι εξίσου ξεκάθαρο. Ένα καθαρό, μινιμαλιστικό ανδρικό slide με μονή σταυρωτή λωρίδα, τα Θησέας πάνε κατευθείαν σε αυτό που μετράει: ποιοτικό δέρμα, γερή σόλα και σχεδιασμός χωρίς περιττά. Χειροποίητα στην Ελλάδα από γνήσιο δέρμα, τα Θησέας διαθέτουν σόλα 1,5 εκ. και δερμάτινο πάτο που αποκτά σταδιακά τα ανάγλυφα του ποδιού σας. Μινιμαλιστικά στη φόρμα αλλά φτιαγμένα να αντέξουν — το slide που πιάνεις κάθε μέρα χωρίς δεύτερη σκέψη. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,5 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 3 χρώματα: μαύρο, μπεζ φυσικό, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856653766813</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-855289.jpg?v=1627293918</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-966288.jpg?v=1627293918</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-380044.jpg?v=1627293918</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-654790.jpg?v=1627293918</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-theseus-men?variant=40480258195613</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>μαύρο</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>40, 41, 43, 44, 45, 46, 47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033634632</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
     <ITEM_ID>40480258228381</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Θησέας" - Μπεζ φυσικό]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-theseus-men</URL>
@@ -36431,7 +36527,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 45, 46, 47</VAL>
+      <VAL>40, 42, 43, 44, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -36443,40 +36539,6 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033634779</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>40480258490525</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Θησέας" - Μαύρο]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-theseus-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-887910.jpg?v=1627375357</IMGURL>
-    <PRICE_VAT>59</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[Ο Θησέας σκότωσε τον Μινώταυρο και βρήκε τον δρόμο του έξω από τον λαβύρινθο — κι το σανδάλι που φέρει το όνομά του είναι εξίσου ξεκάθαρο. Ένα καθαρό, μινιμαλιστικό ανδρικό slide με μονή σταυρωτή λωρίδα, τα Θησέας πάνε κατευθείαν σε αυτό που μετράει: ποιοτικό δέρμα, γερή σόλα και σχεδιασμός χωρίς περιττά. Χειροποίητα στην Ελλάδα από γνήσιο δέρμα, τα Θησέας διαθέτουν σόλα 1,5 εκ. και δερμάτινο πάτο που αποκτά σταδιακά τα ανάγλυφα του ποδιού σας. Μινιμαλιστικά στη φόρμα αλλά φτιαγμένα να αντέξουν — το slide που πιάνεις κάθε μέρα χωρίς δεύτερη σκέψη. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,5 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 3 χρώματα: μαύρο, μπεζ φυσικό, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856653766813</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-855289.jpg?v=1627293918</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-966288.jpg?v=1627293918</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-380044.jpg?v=1627293918</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-654790.jpg?v=1627293918</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-theseus-men?variant=40480258490525</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>μαύρο</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>43</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033634663</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480258850973</ITEM_ID>
@@ -37058,6 +37120,39 @@
     <GTIN>05212033606486</GTIN>
   </SHOPITEM>
   <SHOPITEM>
+    <ITEM_ID>40480267763869</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής" - Μαύρο]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-hercules-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-338792.jpg?v=1627293916</IMGURL>
+    <PRICE_VAT>59</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[Ο μεγαλύτερος ήρωας της ελληνικής μυθολογίας δεν χρειάζεται συστάσεις — κι αυτά τα ανδρικά δερμάτινα σανδάλια ανταποκρίνονται στο όνομα. Τα Ηρακλής συνδυάζουν φαρδιά σταυρωτή λωρίδα με στιβαρή σόλα 1,5 εκ., δημιουργώντας ένα slide σανδάλι που είναι εξίσου αξιόπιστο όσο και εύκολο στο φόρεμα. Φτιαγμένα στο χέρι στην Ελλάδα από πραγματικό δέρμα, τα Ηρακλής διαθέτουν δερμάτινο πάτο που μαλακώνει με τη χρήση κι αντιολισθητική σόλα EVA για βρεγμένες και στεγνές επιφάνειες. Τρεις γήινοι τόνοι τα κρατούν ευέλικτα και διαχρονικά. Λεπτομέρειες Επάνω μέρος: 100% πραγματικό δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,5 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 3 χρώματα: μπεζ φυσικό, μαύρο, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856654815389</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-833294.jpg?v=1627293916</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-643794.jpg?v=1627293916</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-557091.jpg?v=1627293916</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-hercules-men?variant=40480267763869</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>μαύρο</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>41, 42, 43</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033634861</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
     <ITEM_ID>40480268288157</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής" - Καφέ]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-hercules-men</URL>
@@ -37067,10 +37162,6 @@
     <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
     <DESCRIPTION><![CDATA[Ο μεγαλύτερος ήρωας της ελληνικής μυθολογίας δεν χρειάζεται συστάσεις — κι αυτά τα ανδρικά δερμάτινα σανδάλια ανταποκρίνονται στο όνομα. Τα Ηρακλής συνδυάζουν φαρδιά σταυρωτή λωρίδα με στιβαρή σόλα 1,5 εκ., δημιουργώντας ένα slide σανδάλι που είναι εξίσου αξιόπιστο όσο και εύκολο στο φόρεμα. Φτιαγμένα στο χέρι στην Ελλάδα από πραγματικό δέρμα, τα Ηρακλής διαθέτουν δερμάτινο πάτο που μαλακώνει με τη χρήση κι αντιολισθητική σόλα EVA για βρεγμένες και στεγνές επιφάνειες. Τρεις γήινοι τόνοι τα κρατούν ευέλικτα και διαχρονικά. Λεπτομέρειες Επάνω μέρος: 100% πραγματικό δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,5 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 3 χρώματα: μπεζ φυσικό, μαύρο, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
     <ITEMGROUP_ID>6856654815389</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-338792.jpg?v=1627293916</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-833294.jpg?v=1627293916</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-643794.jpg?v=1627293916</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-557091.jpg?v=1627293916</IMGURL_ALTERNATIVE>
     <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-hercules-men?variant=40480268288157</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
@@ -37491,7 +37582,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 38</VAL>
+      <VAL>36</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -37677,7 +37768,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 38</VAL>
+      <VAL>36</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -42438,6 +42529,40 @@
     <GTIN>05212033645294</GTIN>
   </SHOPITEM>
   <SHOPITEM>
+    <ITEM_ID>46729203188047</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Σκούρο Καφέ]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-dark-brown-bacchus-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225LDBDB_1.jpg?v=1693475562</IMGURL>
+    <PRICE_VAT>84</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[Ο Βάκχος — θεός του κρασιού, της γιορτής και της καλοπέρασης — δίνει το όνομά του σε αυτά τα ανδρικά σανδάλια με κορδόνια, φτιαγμένα για όσους πιστεύουν ότι το καλοκαίρι αξίζει να απολαμβάνεται. Τα λεπτά δερμάτινα κορδόνια σας επιτρέπουν να ρυθμίσετε την εφαρμογή κατά βούληση, ενώ η μεσογειακή σιλουέτα γεφυρώνει το casual με το κομψό. Φτιαγμένα στην Ελλάδα από πραγματικό δέρμα, τα Βάκχος διαθέτουν σόλα 1,5 εκ. που πατά σταθερά σε βρεγμένα πλακάκια και στεγνή πέτρα. Ο δερμάτινος πάτος δένει μέσα στα πρώτα φορέματα, κι το φυσικό δέρμα σκουραίνει ωραία με τον χρόνο — κάνοντας κάθε ζευγάρι μοναδικά δικό σας. Λεπτομέρειες Επάνω μέρος: 100% πραγματικό δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,5 cm Κούμπωμα: με κορδόνια Διαθέσιμο σε 4 χρώματα: σκούρο καφέ, μαύρο, μπεζ φυσικό, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
+    <ITEMGROUP_ID>8525908967759</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225LDBDB_1_1.jpg?v=1693475562</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-351248_dd9560c5-4157-42d2-ab3f-861166d8449b.jpg?v=1693475562</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225LDBDB_1_2.jpg?v=1693475562</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-921290_6372e78d-9460-4f6b-8a3b-2914139a4c06.jpg?v=1693475562</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-dark-brown-bacchus-men?variant=46729203188047</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>καφέ</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>5212033601733</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
     <ITEM_ID>46729203089743</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Μαύρο]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-dark-brown-bacchus-men</URL>
@@ -42457,7 +42582,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 41</VAL>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -42501,36 +42626,6 @@
     <GTIN>05212033625937</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>46729204072783</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Καφέ]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-dark-brown-bacchus-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-921290_6372e78d-9460-4f6b-8a3b-2914139a4c06.jpg?v=1693475562</IMGURL>
-    <PRICE_VAT>84</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[Ο Βάκχος — θεός του κρασιού, της γιορτής και της καλοπέρασης — δίνει το όνομά του σε αυτά τα ανδρικά σανδάλια με κορδόνια, φτιαγμένα για όσους πιστεύουν ότι το καλοκαίρι αξίζει να απολαμβάνεται. Τα λεπτά δερμάτινα κορδόνια σας επιτρέπουν να ρυθμίσετε την εφαρμογή κατά βούληση, ενώ η μεσογειακή σιλουέτα γεφυρώνει το casual με το κομψό. Φτιαγμένα στην Ελλάδα από πραγματικό δέρμα, τα Βάκχος διαθέτουν σόλα 1,5 εκ. που πατά σταθερά σε βρεγμένα πλακάκια και στεγνή πέτρα. Ο δερμάτινος πάτος δένει μέσα στα πρώτα φορέματα, κι το φυσικό δέρμα σκουραίνει ωραία με τον χρόνο — κάνοντας κάθε ζευγάρι μοναδικά δικό σας. Λεπτομέρειες Επάνω μέρος: 100% πραγματικό δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,5 cm Κούμπωμα: με κορδόνια Διαθέσιμο σε 4 χρώματα: σκούρο καφέ, μαύρο, μπεζ φυσικό, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
-    <ITEMGROUP_ID>8525908967759</ITEMGROUP_ID>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-dark-brown-bacchus-men?variant=46729204072783</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>καφέ</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>47</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033651363</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
     <ITEM_ID>46729270034767</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Σκούρο Καφέ]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-dark-brown-leander-men</URL>
@@ -42548,7 +42643,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 41, 43, 44, 45, 46, 47</VAL>
+      <VAL>40, 41, 42, 43, 44, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -42560,6 +42655,37 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>5212033601818</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
+    <ITEM_ID>46729269969231</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Μαύρο]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-dark-brown-leander-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-571696_9de0b348-bb14-4068-b838-6a8a96912d45.jpg?v=1693476938</IMGURL>
+    <PRICE_VAT>65</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[Πήραν το όνομα του μυθικού κολυμβητή που διέσχιζε τον Ελλήσποντο κάθε νύχτα από έρωτα, κι αυτά τα ανδρικά δερμάτινα σανδάλια είναι φτιαγμένα για θερμοκαιρικές περιπέτειες. Ο ανοιχτός σχεδιασμός μονομάχου αφήνει τα πόδια να αναπνέουν, ενώ η γερή κατασκευή ανταπεξέρχεται σε παραλιακούς πεζόδρομους και δρόμους πόλης. Χειροποίητα στην Ελλάδα από γνήσιο δέρμα, κάθε ζευγάρι αποκτά πλούσια πατίνα με τη χρήση. Η σόλα EVA 1,8 εκ. πατά αξιόπιστα σε βρεγμένες επιφάνειες, κι ο δερμάτινος πάτος αποκτά σταδιακά τα ανάγλυφα του ποδιού σας. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,8 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 4 χρώματα: σκούρο καφέ, μπεζ φυσικό, μαύρο, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
+    <ITEMGROUP_ID>8525928759631</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-613021_4dd6c4b8-ee31-4391-8ca3-3db8a5d1dce6.jpg?v=1693476938</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-dark-brown-leander-men?variant=46729269969231</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>μαύρο</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>40, 41, 43, 44, 45, 46, 47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033624312</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>46729270067535</ITEM_ID>
@@ -42595,37 +42721,6 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033624213</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>46729270100303</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Μαύρο]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-dark-brown-leander-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-571696_9de0b348-bb14-4068-b838-6a8a96912d45.jpg?v=1693476938</IMGURL>
-    <PRICE_VAT>65</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[Πήραν το όνομα του μυθικού κολυμβητή που διέσχιζε τον Ελλήσποντο κάθε νύχτα από έρωτα, κι αυτά τα ανδρικά δερμάτινα σανδάλια είναι φτιαγμένα για θερμοκαιρικές περιπέτειες. Ο ανοιχτός σχεδιασμός μονομάχου αφήνει τα πόδια να αναπνέουν, ενώ η γερή κατασκευή ανταπεξέρχεται σε παραλιακούς πεζόδρομους και δρόμους πόλης. Χειροποίητα στην Ελλάδα από γνήσιο δέρμα, κάθε ζευγάρι αποκτά πλούσια πατίνα με τη χρήση. Η σόλα EVA 1,8 εκ. πατά αξιόπιστα σε βρεγμένες επιφάνειες, κι ο δερμάτινος πάτος αποκτά σταδιακά τα ανάγλυφα του ποδιού σας. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,8 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 4 χρώματα: σκούρο καφέ, μπεζ φυσικό, μαύρο, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
-    <ITEMGROUP_ID>8525928759631</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-613021_4dd6c4b8-ee31-4391-8ca3-3db8a5d1dce6.jpg?v=1693476938</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-dark-brown-leander-men?variant=46729270100303</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>μαύρο</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 43, 45, 46, 47</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033624336</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>46729376235855</ITEM_ID>

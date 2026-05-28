@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-05-28 03:57</date>
+  <date>2026-05-28 11:00</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -542,26 +542,6 @@
       <color>μαύρο</color>
       <size>36,37,38,39,40,41</size>
       <EAN>5212033624046</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40479818481821</productId>
-      <title><![CDATA[Emmanuela Ανδρικά σανδάλια με κούμπωμα "Μίδας" - Καφέ]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-midas-men?variant=40479818481821</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-koympwma-midas-emmanuela-handcrafted-for-you-andrika-sandalia-me-koympwma-midas-981296.jpg?v=1627293862</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-koympwma-midas-emmanuela-handcrafted-for-you-andrika-sandalia-me-koympwma-midas-981296.jpg?v=1627293862</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-koympwma-midas-emmanuela-handcrafted-for-you-andrika-sandalia-me-koympwma-midas-123064.jpg?v=1627293862</img2>
-      </imagesURL>
-      <price>59.00</price>
-      <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1LI57MANLBRBR9</MPN>
-      <color>καφέ</color>
-      <size>42</size>
-      <EAN>5212033635165</EAN>
       <shipping>0</shipping>
     </product>
     <product>

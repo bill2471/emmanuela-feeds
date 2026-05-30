@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-05-30 14:27</date>
+  <date>2026-05-30 20:13</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -979,9 +979,9 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479847907485</productId>
-      <title><![CDATA[Emmanuela Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Ροζ χρυσό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-briseis?variant=40479847907485</productURL>
+      <productId>40479847940253</productId>
+      <title><![CDATA[Emmanuela Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Χρυσό]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-briseis?variant=40479847940253</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-151048.jpg?v=1627294550</imageURL>
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-151048.jpg?v=1627294550</img1>
@@ -992,10 +992,10 @@
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1KL345LRMBE5</MPN>
+      <MPN>1KL345LGOBE5</MPN>
       <color>χρυσό</color>
       <size>36,37,38,40,41</size>
-      <EAN>5212033622868</EAN>
+      <EAN>5212033622998</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4733,26 +4733,6 @@
       <color>μαύρο</color>
       <size>41,43,45,46,47</size>
       <EAN>5212033624336</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40480119652509</productId>
-      <title><![CDATA[Emmanuela Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Χρυσό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-coral-briseis?variant=40480119652509</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-293824.jpg?v=1653980832</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-293824.jpg?v=1653980832</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-468810.jpg?v=1653980832</img2>
-      </imagesURL>
-      <price>109.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1KL345LGOBE5</MPN>
-      <color>χρυσό</color>
-      <size>36,37,38,40,41</size>
-      <EAN>5212033622998</EAN>
       <shipping>0</shipping>
     </product>
     <product>

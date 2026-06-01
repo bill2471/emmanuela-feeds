@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-06-01 12:31</date>
+  <date>2026-06-01 18:36</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -1902,6 +1902,22 @@
       <color>καφέ</color>
       <size>38</size>
       <EAN>5212033621328</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40479899910301</productId>
+      <title><![CDATA[Emmanuela Σανδάλια μονομάχου με φερμουάρ "Κίρκη" - Ροζ χρυσό]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-red-circe?variant=40479899910301</productURL>
+      <imageURL></imageURL>
+      <price>87.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1KL310LRMBE7</MPN>
+      <color>χρυσό</color>
+      <size>38,39,40</size>
+      <EAN>5212033621458</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4551,7 +4567,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1LI58MLBLBL5</MPN>
       <color>μαύρο</color>
-      <size>36</size>
+      <size>36,37,38,39,40,41,42</size>
       <EAN>5212033629300</EAN>
       <shipping>0</shipping>
     </product>
@@ -4721,7 +4737,7 @@
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-571696.jpg?v=1693476562</imageURL>
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-571696.jpg?v=1693476562</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222_-_SIZE_CHART.png?v=1779352235</img2>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222_-_SIZE_CHART_v2.png?v=1780317071</img2>
         <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-613021.jpg?v=1693476562</img3>
       </imagesURL>
       <price>65.00</price>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:g="http://base.google.com/ns/1.0">
   <title>EMMANUELA Local Inventory Feed — Greece</title>
   <link href="https://emmanuela.gr"/>
-  <updated>2026-06-05T20:18:30.350Z</updated>
+  <updated>2026-06-06T03:21:50.353Z</updated>
     <entry>
       <g:id>31372692389923</g:id>
       <g:store_code>emmanuela</g:store_code>
@@ -22056,7 +22056,7 @@
     <entry>
       <g:id>49707951653198</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>5</g:quantity>
+      <g:quantity>4</g:quantity>
       <g:price>64.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>

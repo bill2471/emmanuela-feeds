@@ -369,7 +369,7 @@ async function fetchProducts() {
         pageInfo { hasNextPage endCursor }
         edges {
           node {
-            id title handle descriptionHtml productType vendor tags
+            id title handle descriptionHtml productType vendor tags onlineStoreUrl
             images(first: 10) { edges { node { id url } } }
             options { id name optionValues { id name } }
             variants(first: 100) {
@@ -405,6 +405,7 @@ async function fetchProducts() {
           gid: node.id,
           title: node.title,
           handle: node.handle,
+          onlineStoreUrl: node.onlineStoreUrl,
           body_html: node.descriptionHtml,
           product_type: node.productType,
           vendor: node.vendor,
@@ -547,6 +548,10 @@ function generateGlamiFeed(products) {
   products.forEach(product => {
     // Skip gift cards - not relevant for GLAMI
     if ((product.product_type || '').toLowerCase().includes('gift card')) return;
+
+    // Skip products NOT published to the Online Store (status:active but unpublished
+    // → /products/{handle} 404s on the storefront). Prevents dead GLAMI URLs.
+    if (!product.onlineStoreUrl) { stats.skippedUnpublished = (stats.skippedUnpublished || 0) + 1; return; }
 
     stats.totalProducts++;
     const variants = product.variants || [];

@@ -369,7 +369,7 @@ async function fetchProducts() {
         pageInfo { hasNextPage endCursor }
         edges {
           node {
-            id title handle descriptionHtml productType vendor tags
+            id title handle descriptionHtml productType vendor tags onlineStoreUrl
             images(first: 10) { edges { node { id url } } }
             options { id name optionValues { id name } }
             variants(first: 100) {
@@ -405,6 +405,7 @@ async function fetchProducts() {
           gid: node.id,
           title: node.title,
           handle: node.handle,
+          onlineStoreUrl: node.onlineStoreUrl,
           body_html: node.descriptionHtml,
           product_type: node.productType,
           vendor: node.vendor,
@@ -550,9 +551,18 @@ function generateGlamiFeed(products) {
     sampleItems: []
   };
 
+  // Cross-product dedupe (shoes Shopify catalog is ~4x duplicated: same physical sandal
+  // = multiple products with mirrored inventory). Key = MPN | greekColor | size-set.
+  // Ported from bestprice-feed-shoes.js (2026-06-08) — without it GLAMI shows ~4x copies.
+  const seenDedupeKeys = new Map();
+
   products.forEach(product => {
     // Skip gift cards
     if ((product.product_type || '').toLowerCase().includes('gift card')) return;
+
+    // Skip products NOT published to the Online Store (status:active but unpublished
+    // → /products/{handle} 404s). URL audit 2026-06-08 found "Ιθάκη" dups leaking 36 404 URLs.
+    if (!product.onlineStoreUrl) { stats.skippedUnpublished = (stats.skippedUnpublished || 0) + 1; return; }
 
     stats.totalProducts++;
     const variants = product.variants || [];
@@ -665,6 +675,12 @@ function generateGlamiFeed(products) {
     groupKeys.forEach(groupKey => {
       const group = entryGroups[groupKey];
       const repVariant = group.representativeVariant;
+
+      // Cross-product dedupe: skip if this (MPN, color, size-set) already emitted (4x catalog dup).
+      const dedupeKey = `${repVariant.sku || 'EMM-' + repVariant.id}|${group.greekColor}|${group.sizes.slice().sort().join(',')}`;
+      if (seenDedupeKeys.has(dedupeKey)) { stats.dedupedSkipped = (stats.dedupedSkipped || 0) + 1; return; }
+      seenDedupeKeys.set(dedupeKey, repVariant.id);
+
       stats.feedEntries++;
 
       // Stats

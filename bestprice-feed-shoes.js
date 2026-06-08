@@ -447,7 +447,7 @@ async function fetchProducts() {
         pageInfo { hasNextPage endCursor }
         edges {
           node {
-            id title handle productType vendor tags
+            id title handle productType vendor tags onlineStoreUrl
             images(first: 10) { edges { node { id url } } }
             options { id name optionValues { id name } }
             variants(first: 100) {
@@ -487,6 +487,7 @@ async function fetchProducts() {
           id: node.id.replace('gid://shopify/Product/', ''),
           title: node.title,
           handle: node.handle,
+          onlineStoreUrl: node.onlineStoreUrl,
           product_type: node.productType,
           vendor: node.vendor,
           tags: node.tags || [],
@@ -566,6 +567,14 @@ function generateBestPriceFeed(products) {
     const typeLC = (product.product_type || '').toLowerCase();
     if (typeLC.includes('gift card') || typeLC.includes('δωροκάρτα')) {
       stats.skippedGiftCards++;
+      return;
+    }
+
+    // Skip products NOT published to the Online Store (status:active but unpublished
+    // → /products/{handle} 404s on the storefront). Prevents dead BestPrice URLs.
+    // (URL audit 2026-06-08 found "Ιθάκη" leaking 5 such 404 URLs into the shoes feed.)
+    if (!product.onlineStoreUrl) {
+      stats.skippedUnpublished = (stats.skippedUnpublished || 0) + 1;
       return;
     }
 
@@ -730,10 +739,10 @@ function generateBestPriceFeed(products) {
       const titleWithBrand = /emmanuela/i.test(title) ? title : `Emmanuela ${title}`;
       const titleCdata = titleWithBrand.replace(/]]>/g, ']]]]><![CDATA[>');
       item += `      <title><![CDATA[${titleCdata}]]></title>\n`;
-      item += `      <productURL>https://${DOMAIN}/products/${product.handle}?variant=${repVariant.id}</productURL>\n`;
+      item += `      <productURL>https://${DOMAIN}/products/${product.handle}</productURL>\n`;
 
       // Images: color-correct only
-      item += `      <imageURL>${escapeXml(colorImages[0])}</imageURL>\n`;
+      item += `      <imageURL>${escapeXml(colorImages[0] || variantImage || mainImage)}</imageURL>\n`;
       if (colorImages.length > 1) {
         item += `      <imagesURL>\n`;
         colorImages.forEach((img, i) => {

@@ -55,9 +55,10 @@ jobs:
           echo "Generating BestPrice.gr Product Feed (Greece)..."
           node bestprice-feed-gr.js
 
-      - name: Run Skroutz.gr feed generator
+      - name: Run Skroutz.gr feed generator (COMBINED jewelry + sandals)
         env:
           SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
+          SHOPIFY_SHOES_ACCESS_TOKEN: ${{ secrets.SHOPIFY_SHOES_ACCESS_TOKEN }}
         run: |
           echo "🟠 Generating Skroutz.gr Product Feed (Greece) — v3.5.1..."
           node skroutz-feed-gr.js

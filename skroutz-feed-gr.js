@@ -1376,6 +1376,35 @@ async function generateFeed(options = {}) {
     xml = xml.replace(/\uFFFD+/g, '');
   }
 
+  // ============================================================
+  // COMBINED FEED - merge SANDAL entries (store emmanuela-shoes) into the SAME
+  // <mywebstore><products> as the jewelry. Per George/Skroutz 08/06: one account
+  // (29632), one feed for jewelry + footwear. Sandal price/tier = FROZEN
+  // (skroutz-shoes-pricing.json), stock = LIVE. The builder is throttle-resilient
+  // and THROWS on a partial shoes pull - on ANY failure we keep the JEWELRY-only
+  // feed (a shoes-store hiccup must never break the jewelry feed, and we never
+  // ship a sandal-less feed that looks complete).
+  // ============================================================
+  let sandalMerged = 0;
+  try {
+    const { buildSandalItems } = require('./skroutz-shoes-builder');
+    const { items: sandalItems, stats: sStats } = await buildSandalItems();
+    if (sandalItems && sandalItems.length) {
+      const marker = '\n  </products>\n</mywebstore>';
+      if (xml.includes(marker)) {
+        xml = xml.replace(marker, '\n' + sandalItems.join('\n') + marker);
+        sandalMerged = sandalItems.length;
+        console.log(`\n  + Merged ${sandalMerged} SANDAL entries (SLASH ${sStats.slash} / KEEP ${sStats.keep}, ${sStats.variations} variations, ${sStats.units} units, unmatched ${sStats.unmatched}).`);
+      } else {
+        console.error('  WARNING: </products> marker not found - wrote JEWELRY-ONLY.');
+      }
+    } else {
+      console.error('  WARNING: sandal builder returned 0 items - wrote JEWELRY-ONLY.');
+    }
+  } catch (e) {
+    console.error(`  WARNING: SANDAL merge skipped - JEWELRY feed unaffected: ${e.message}`);
+  }
+
   // Create output directory
   if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR, { recursive: true });

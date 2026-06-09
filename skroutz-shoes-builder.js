@@ -106,7 +106,7 @@ async function fetchProducts(token) {
   while (true) {
     const after = cursor ? `, after: "${cursor}"` : '';
     const q = `{ products(first: 50, query: "status:active"${after}) { pageInfo { hasNextPage endCursor } edges { node {
-      id title handle productType onlineStoreUrl images(first: 10){ edges { node { id url } } }
+      id title handle productType onlineStoreUrl images(first: 30){ edges { node { id url } } }
       variants(first: 100){ edges { node { id sku price inventoryQuantity barcode image { id } selectedOptions { name value } } } } } } } }`;
     const r = await gql(q, token);
     if (r.errors) {
@@ -163,7 +163,7 @@ async function buildSandalItems() {
     throw new Error(`Only ${products.length} shoes products fetched (expected ~495) — partial/throttled pull; refusing to emit a sandal-less feed.`);
   }
 
-  const stats = { products: products.length, groups: 0, slash: 0, keep: 0, keepDefault: 0, variations: 0, units: 0, unmatched: 0, skippedUnpublished: 0, byType: {}, samples: [] };
+  const stats = { products: products.length, groups: 0, slash: 0, keep: 0, keepDefault: 0, variations: 0, units: 0, unmatched: 0, skippedUnpublished: 0, withAdditional: 0, additionalTotal: 0, multiColorMainOnly: 0, byType: {}, samples: [] };
   const items = [];
   const seenFp = new Set();
 
@@ -214,12 +214,29 @@ async function buildSandalItems() {
       }
       if (!(finalPrice > 0)) { stats.unmatched++; continue; }  // no usable price → skip
 
-      // image (color-correct: prefer a size variant's own image, else product main)
-      let mainImg = null;
-      const varImgId = sizes.map((s) => s.imageId).find(Boolean);
-      if (varImgId) { const im = p.images.find((i) => i.id === varImgId); mainImg = im ? im.src : null; }
-      if (!mainImg) mainImg = p.images[0] ? p.images[0].src : null;
-      if (!mainImg) continue;  // image mandatory
+      // images — color-correct gallery via the BOUNDARY HEURISTIC (Shopify orders a
+      // product's photos by color: each color's variant is pinned to its FIRST photo,
+      // and the unassigned photos that follow — up to the NEXT color's photo — belong
+      // to that color). Same approach the jewelry feed uses. Single-color → whole gallery.
+      const imgIndex = new Map(p.images.map((im, i) => [im.id, i]));
+      const productColors = new Set(p.variants.map((v) => greekColor(extractColor(v.opts))).filter(Boolean));
+      const singleColor = productColors.size <= 1;
+      const anchors = new Set();   // every image-index pinned to ANY color's variant
+      for (const v of p.variants) { if (v.imageId && imgIndex.has(v.imageId)) anchors.add(imgIndex.get(v.imageId)); }
+      const myAnchor = sizes.map((s) => s.imageId).filter((id) => id && imgIndex.has(id)).map((id) => imgIndex.get(id)).sort((a, b) => a - b)[0];
+      let gallery;
+      if (singleColor) {
+        gallery = p.images.map((i) => i.src);                       // whole gallery is this color
+      } else if (myAnchor != null) {
+        let nextAnchor = p.images.length;                           // this color's block = [myAnchor, nextAnchor)
+        for (const a of anchors) if (a > myAnchor && a < nextAnchor) nextAnchor = a;
+        gallery = p.images.slice(myAnchor, nextAnchor).map((i) => i.src);
+      } else {
+        gallery = p.images[0] ? [p.images[0].src] : [];             // multi-color, no per-variant image → main only
+      }
+      if (!gallery.length) continue;  // image mandatory
+      const mainImg = gallery[0];
+      const additionalImgs = gallery.slice(1, 10);  // up to 9 extra — color-correct (within this color's block)
 
       const sizesCsv = sizes.map((s) => s.size).join(',');
       const name = `${p.title} - ${color}`.replace(/\s+/g, ' ').trim();
@@ -233,6 +250,7 @@ async function buildSandalItems() {
       it += `        <name><![CDATA[${name}]]></name>\n`;
       it += `        <link><![CDATA[https://${DOMAIN}/products/${p.handle}?variant=${rep.variantId}]]></link>\n`;
       it += `        <image><![CDATA[${mainImg}]]></image>\n`;
+      for (const a of additionalImgs) it += `        <additionalimage><![CDATA[${a}]]></additionalimage>\n`;
       it += `        <category><![CDATA[${cat}]]></category>\n`;
       it += `        <price_with_vat>${finalPrice.toFixed(2)}</price_with_vat>\n`;
       it += `        <vat>${VAT_RATE}.00</vat>\n`;
@@ -263,7 +281,9 @@ async function buildSandalItems() {
 
       stats.groups++; stats[tier === 'SLASH' ? 'slash' : 'keep']++; stats.units += totalQty;
       stats.byType[type] = (stats.byType[type] || 0) + 1;
-      if (stats.samples.length < 5) stats.samples.push({ name, color, type, tier, price: finalPrice, normal: liveNormal, sizes: sizesCsv, qty: totalQty, key: key || '(unmatched)' });
+      if (additionalImgs.length) { stats.withAdditional++; stats.additionalTotal += additionalImgs.length; }
+      else if (!singleColor) stats.multiColorMainOnly++;   // a color whose Shopify block is a single photo
+      if (stats.samples.length < 6) stats.samples.push({ name, color, type, tier, price: finalPrice, normal: liveNormal, sizes: sizesCsv, qty: totalQty, key: key || '(unmatched)', addl: additionalImgs.length, mainImg, addlSample: additionalImgs[0] || '' });
     }
   }
   return { items, stats };
@@ -287,9 +307,10 @@ if (require.main === module) {
     L(`products fetched: ${stats.products}  ·  unpublished skipped: ${stats.skippedUnpublished}`);
     L(`entries: ${stats.groups}  (SLASH ${stats.slash} / KEEP ${stats.keep})  ·  variations: ${stats.variations}  ·  units: ${stats.units}`);
     L(`COGS-floored SLASH groups: ${stats.floored || 0}  (price raised to cost×grossUp)`);
+    L(`additionalimages: ${stats.withAdditional}/${stats.groups} groups have >=1 (total ${stats.additionalTotal}, avg ${(stats.additionalTotal / Math.max(stats.groups, 1)).toFixed(1)})  ·  main-only (multicolor, no per-variant img): ${stats.multiColorMainOnly}`);
     L(`unmatched (defaulted to KEEP@normal): ${stats.unmatched}  (of which kept: ${stats.keepDefault})`);
     L('by type: ' + Object.entries(stats.byType).sort((a, b) => b[1] - a[1]).map(([t, c]) => `${c} ${t}`).join(' | '));
-    L('samples:'); for (const s of stats.samples) L(`  [${s.tier}] ${s.name} | ${s.type} | νούμερα ${s.sizes} | qty ${s.qty} | €${s.normal}→€${s.price} | key ${s.key}`);
+    L('samples:'); for (const s of stats.samples) { L(`  [${s.tier}] ${s.name} | νούμερα ${s.sizes} | €${s.normal}→€${s.price} | +${s.addl} additional img | key ${s.key}`); if (s.addl) L(`        main: ...${s.mainImg.slice(-46)}\n        +1st: ...${s.addlSample.slice(-46)}`); }
     L(`Wrote ${OUT}`);
   })().catch((e) => { console.error('FATAL', e.message); process.exit(1); });
 }

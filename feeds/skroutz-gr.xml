@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-10 10:22</created_at>
+  <created_at>2026-06-10 15:56</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -51013,9 +51013,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI141LRMBE7]]></mpn>
         <ean>5212033628815</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Χρυσό</color>
-        <size>38,39,41</size>
+        <size>38,39</size>
         <variations>
           <variation>
             <variationid>40479884411037</variationid>
@@ -51033,16 +51033,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <manufacturersku><![CDATA[1LI141LRMBE8]]></manufacturersku>
             <ean>5212033628822</ean>
           </variation>
-          <variation>
-            <variationid>40479886278813</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI141LRMBE10]]></manufacturersku>
-            <ean>5212033628846</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Σανδάλια μπότες με κορδόνια "Αλήθεια". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 38,39,41.]]></description>
+        <description><![CDATA[Σανδάλια μπότες με κορδόνια "Αλήθεια". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 38,39.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

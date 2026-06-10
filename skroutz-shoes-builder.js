@@ -41,6 +41,15 @@ const BRAND = 'Emmanuela - handcrafted for you';
 const VAT_RATE = 24;
 const AVAIL = 'Παράδοση 1 έως 3 ημέρες';
 const PRICING_PATH = path.join(__dirname, 'skroutz-shoes-pricing.json');
+// imageId -> 'L' (lifestyle: model/scene, shared across the product's colors)
+//          | 'P' (white-bg product shot, color-specific)
+//          | 'C' (size-chart/infographic uploaded as product media — never emitted)
+//          | 'G' (generic asset reused across >3 distinct designs: charts, flex demos,
+//                 packaging, cross-product shots — never emitted; would show «άλλα σχέδια»)
+//          | 'F' (theme-file upload: size charts, brand assets — never emitted).
+// Built offline by skroutz-feed/emmanuela-shoes/_classify-lifestyle.py. Missing/empty file
+// -> builder behaves exactly like the pre-lifestyle version (pure boundary heuristic).
+const LIFESTYLE_PATH = path.join(__dirname, 'skroutz-shoes-lifestyle.json');
 const MIN_PRODUCTS = 100;   // full shoes catalog ~495; anything tiny = failed/partial fetch
 
 // ---- token resolution (CI env first, then local .env) ----
@@ -163,7 +172,28 @@ async function buildSandalItems() {
     throw new Error(`Only ${products.length} shoes products fetched (expected ~495) — partial/throttled pull; refusing to emit a sandal-less feed.`);
   }
 
-  const stats = { products: products.length, groups: 0, slash: 0, keep: 0, keepDefault: 0, variations: 0, units: 0, unmatched: 0, skippedUnpublished: 0, withAdditional: 0, additionalTotal: 0, multiColorMainOnly: 0, byType: {}, samples: [] };
+  // lifestyle map (optional — empty map = legacy pure-boundary behavior)
+  let LIFE = {};
+  try { LIFE = JSON.parse(fs.readFileSync(LIFESTYLE_PATH, 'utf8')); } catch { /* keep legacy */ }
+  const hasLife = Object.keys(LIFE).length > 0;
+  // No URL-shape fallback: newer product media ALSO lives under .../files/ (the φύλλα-ελιάς family
+  // galleries are entirely there, incl. their lifestyle). Unmapped image -> null = legacy behavior.
+  const cls = (im) => LIFE[im.id] || null;
+
+  // Lifestyle pool per PHYSICAL product (clones mirror the same variants — key = sorted sku set).
+  // The chosen clone may have no lifestyle uploads while a sibling clone does -> borrow the largest sibling pool.
+  const clonePools = new Map();
+  if (hasLife) {
+    for (const p of products) {
+      const key = [...new Set(p.variants.map((v) => v.sku).filter(Boolean))].sort().join('|');
+      if (!key) continue;
+      const pool = p.images.filter((im) => cls(im) === 'L').map((im) => im.src);
+      const cur = clonePools.get(key);
+      if (!cur || pool.length > cur.length) clonePools.set(key, pool);
+    }
+  }
+
+  const stats = { products: products.length, groups: 0, slash: 0, keep: 0, keepDefault: 0, variations: 0, units: 0, unmatched: 0, skippedUnpublished: 0, withAdditional: 0, additionalTotal: 0, multiColorMainOnly: 0, lifestylePooled: 0, byType: {}, samples: [] };
   const items = [];
   const seenFp = new Set();
 
@@ -217,26 +247,55 @@ async function buildSandalItems() {
       // images — color-correct gallery via the BOUNDARY HEURISTIC (Shopify orders a
       // product's photos by color: each color's variant is pinned to its FIRST photo,
       // and the unassigned photos that follow — up to the NEXT color's photo — belong
-      // to that color). Same approach the jewelry feed uses. Single-color → whole gallery.
+      // to that color), REFINED by the lifestyle map (Bill 2026-06-10):
+      //   • 'L' lifestyle (model/scene) photos are shot in ONE color by convention and are
+      //     SHARED across ALL colors of the product (industry standard — Skroutz-safe).
+      //   • 'P' white-bg shots stay color-specific; an 'L' or 'F' image ENDS a color's run
+      //     (the gallery tail mixes other colorways' shots, size charts, brand demos —
+      //     sharing those would trigger the «άλλες αποχρώσεις» panel flag).
+      //   • 'F' (theme /files/ uploads: size charts, brand assets) are never emitted.
+      // Empty/missing map -> exact legacy boundary behavior.
       const imgIndex = new Map(p.images.map((im, i) => [im.id, i]));
       const productColors = new Set(p.variants.map((v) => greekColor(extractColor(v.opts))).filter(Boolean));
       const singleColor = productColors.size <= 1;
       const anchors = new Set();   // every image-index pinned to ANY color's variant
       for (const v of p.variants) { if (v.imageId && imgIndex.has(v.imageId)) anchors.add(imgIndex.get(v.imageId)); }
       const myAnchor = sizes.map((s) => s.imageId).filter((id) => id && imgIndex.has(id)).map((id) => imgIndex.get(id)).sort((a, b) => a - b)[0];
-      let gallery;
+      let own;                       // this color's own product shots (gallery order)
       if (singleColor) {
-        gallery = p.images.map((i) => i.src);                       // whole gallery is this color
+        own = p.images.filter((im) => { const c = cls(im); return c !== 'F' && c !== 'L' && c !== 'C' && c !== 'G'; }).map((i) => i.src);
       } else if (myAnchor != null) {
-        let nextAnchor = p.images.length;                           // this color's block = [myAnchor, nextAnchor)
-        for (const a of anchors) if (a > myAnchor && a < nextAnchor) nextAnchor = a;
-        gallery = p.images.slice(myAnchor, nextAnchor).map((i) => i.src);
+        own = [p.images[myAnchor].src];
+        for (let i = myAnchor + 1; i < p.images.length; i++) {
+          if (anchors.has(i)) break;                                // next color's block
+          const c = cls(p.images[i]);
+          if (hasLife && (c === 'L' || c === 'F' || c === 'C' || c === 'G')) break; // lifestyle/files/chart/generic end the color run
+          own.push(p.images[i].src);
+        }
       } else {
-        gallery = p.images[0] ? [p.images[0].src] : [];             // multi-color, no per-variant image → main only
+        own = p.images[0] ? [p.images[0].src] : [];                 // multi-color, no per-variant image → main only
       }
-      if (!gallery.length) continue;  // image mandatory
-      const mainImg = gallery[0];
-      const additionalImgs = gallery.slice(1, 10);  // up to 9 extra — color-correct (within this color's block)
+      // shared lifestyle pool (this clone's, else the richest sibling clone's)
+      let pool = [];
+      if (hasLife) {
+        pool = p.images.filter((im) => cls(im) === 'L').map((im) => im.src);
+        if (!pool.length) {
+          const key = [...new Set(p.variants.map((v) => v.sku).filter(Boolean))].sort().join('|');
+          pool = clonePools.get(key) || [];
+        }
+        if (singleColor) pool = [];                                 // already in `own` for single-color
+      }
+      if (!own.length && pool.length) own = [pool.shift()];         // degenerate: no product shot at all
+      if (!own.length) continue;  // image mandatory
+      const mainImg = own[0];
+      const seenUrl = new Set([mainImg]);
+      const additionalImgs = [];
+      for (const u of [...own.slice(1), ...pool]) {                 // own angles first, lifestyle after
+        if (seenUrl.has(u)) continue; seenUrl.add(u);
+        additionalImgs.push(u);
+        if (additionalImgs.length >= 9) break;
+      }
+      if (pool.length && additionalImgs.some((u) => pool.includes(u))) stats.lifestylePooled++;
 
       const sizesCsv = sizes.map((s) => s.size).join(',');
       const name = `${p.title} - ${color}`.replace(/\s+/g, ' ').trim();
@@ -307,7 +366,7 @@ if (require.main === module) {
     L(`products fetched: ${stats.products}  ·  unpublished skipped: ${stats.skippedUnpublished}`);
     L(`entries: ${stats.groups}  (SLASH ${stats.slash} / KEEP ${stats.keep})  ·  variations: ${stats.variations}  ·  units: ${stats.units}`);
     L(`COGS-floored SLASH groups: ${stats.floored || 0}  (price raised to cost×grossUp)`);
-    L(`additionalimages: ${stats.withAdditional}/${stats.groups} groups have >=1 (total ${stats.additionalTotal}, avg ${(stats.additionalTotal / Math.max(stats.groups, 1)).toFixed(1)})  ·  main-only (multicolor, no per-variant img): ${stats.multiColorMainOnly}`);
+    L(`additionalimages: ${stats.withAdditional}/${stats.groups} groups have >=1 (total ${stats.additionalTotal}, avg ${(stats.additionalTotal / Math.max(stats.groups, 1)).toFixed(1)})  ·  main-only (multicolor, no per-variant img): ${stats.multiColorMainOnly}  ·  lifestyle-pooled: ${stats.lifestylePooled}`);
     L(`unmatched (defaulted to KEEP@normal): ${stats.unmatched}  (of which kept: ${stats.keepDefault})`);
     L('by type: ' + Object.entries(stats.byType).sort((a, b) => b[1] - a[1]).map(([t, c]) => `${c} ${t}`).join(' | '));
     L('samples:'); for (const s of stats.samples) { L(`  [${s.tier}] ${s.name} | νούμερα ${s.sizes} | €${s.normal}→€${s.price} | +${s.addl} additional img | key ${s.key}`); if (s.addl) L(`        main: ...${s.mainImg.slice(-46)}\n        +1st: ...${s.addlSample.slice(-46)}`); }

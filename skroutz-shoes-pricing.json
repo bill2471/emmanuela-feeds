@@ -24,7 +24,7 @@
   },
   "cogsFloor": {
     "_doc": "Net supplier purchase cost (EUR/pair) per design-root, from OCR'd 2022-2025 invoices (newest price per design) + hand-read BR/SP + flagged estimates. Build-time floor = (cost + packagingPerPair + inboundShipPerPair)*grossUp; feed price_with_vat is clamped to >= floor. grossUp covers VAT(1.24) and optionally Skroutz commission. Set grossUp=1.0 to floor at raw net cost.",
-    "grossUp": 1.46,
+    "grossUp": 1.55,
     "packagingPerPair": 1.5,
     "inboundShipPerPair": 2.0,
     "_logisticsDoc": "Per-pair logistics added to each design's net supplier cost BEFORE grossUp (Bill 2026-06-09): packaging ~€1.50 + inbound shipping from Crete ~€2.00. Labor NOT added (already in supplier price). Skroutz commission is inside grossUp.",

@@ -180,16 +180,20 @@ async function buildSandalItems() {
   // galleries are entirely there, incl. their lifestyle). Unmapped image -> null = legacy behavior.
   const cls = (im) => LIFE[im.id] || null;
 
-  // Lifestyle pool per PHYSICAL product (clones mirror the same variants — key = sorted sku set).
-  // The chosen clone may have no lifestyle uploads while a sibling clone does -> borrow the largest sibling pool.
+  // Lifestyle pool per PHYSICAL product. The 4-8× catalog clones MIRROR the same variants, but the
+  // lifestyle uploads are SPRINKLED unevenly across them (one clone holds 1, a sibling holds 2…), so
+  // we UNION every clone's lifestyle into one shared pool, keyed by the SIZELESS sku-root set (clones
+  // with partial size ranges still group). Without the union a clone holding a single lifestyle stays
+  // at +1 additional instead of inheriting its siblings' shots (Bill 2026-06-10).
+  const sizelessKey = (p) => [...new Set(p.variants.map((v) => (v.sku || '').replace(/\d+$/, '')).filter(Boolean))].sort().join('|');
   const clonePools = new Map();
   if (hasLife) {
     for (const p of products) {
-      const key = [...new Set(p.variants.map((v) => v.sku).filter(Boolean))].sort().join('|');
+      const key = sizelessKey(p);
       if (!key) continue;
-      const pool = p.images.filter((im) => cls(im) === 'L').map((im) => im.src);
-      const cur = clonePools.get(key);
-      if (!cur || pool.length > cur.length) clonePools.set(key, pool);
+      let acc = clonePools.get(key);
+      if (!acc) { acc = []; clonePools.set(key, acc); }
+      for (const im of p.images) if (cls(im) === 'L' && !acc.includes(im.src)) acc.push(im.src);
     }
   }
 
@@ -275,16 +279,11 @@ async function buildSandalItems() {
       } else {
         own = p.images[0] ? [p.images[0].src] : [];                 // multi-color, no per-variant image → main only
       }
-      // shared lifestyle pool (this clone's, else the richest sibling clone's)
-      let pool = [];
-      if (hasLife) {
-        pool = p.images.filter((im) => cls(im) === 'L').map((im) => im.src);
-        if (!pool.length) {
-          const key = [...new Set(p.variants.map((v) => v.sku).filter(Boolean))].sort().join('|');
-          pool = clonePools.get(key) || [];
-        }
-        if (singleColor) pool = [];                                 // already in `own` for single-color
-      }
+      // shared lifestyle pool = the UNION of this physical product's lifestyle across ALL its clones
+      // (this clone may hold only 1 of several — always take the full deduped pool). Applies to
+      // single-color too: its `own` is product shots only (L is filtered out), so the pool adds the
+      // lifestyle. .slice() because the degenerate shift() below must not mutate the shared array.
+      const pool = hasLife ? (clonePools.get(sizelessKey(p)) || []).slice() : [];
       if (!own.length && pool.length) own = [pool.shift()];         // degenerate: no product shot at all
       if (!own.length) continue;  // image mandatory
       const mainImg = own[0];

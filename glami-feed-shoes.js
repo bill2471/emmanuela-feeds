@@ -316,7 +316,7 @@ function httpsRequest(options, postData = null) {
   });
 }
 
-async function graphqlRequest(query, retries = 5) {
+async function graphqlRequest(query, retries = 6) {
   const options = {
     hostname: SHOPIFY_STORE,
     path: `/admin/api/${API_VERSION}/graphql.json`,
@@ -329,9 +329,11 @@ async function graphqlRequest(query, retries = 5) {
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
       const result = await httpsRequest(options, JSON.stringify({ query }));
-      if (result.statusCode === 429 || (result.data && result.data.errors &&
-          JSON.stringify(result.data.errors).includes('Throttled'))) {
-        const wait = (attempt + 1) * 4000;
+      const throttled = result.statusCode === 429 ||
+        (result.data && result.data.errors && (result.data.errors[0]?.extensions?.code === 'THROTTLED' ||
+          JSON.stringify(result.data.errors).includes('Throttled')));
+      if (throttled) {
+        const wait = Math.min((attempt + 1) * 5000, 30000);
         console.log(`   Throttled, waiting ${wait / 1000}s (attempt ${attempt + 1}/${retries})...`);
         await new Promise(r => setTimeout(r, wait));
         continue;
@@ -355,11 +357,20 @@ async function graphqlRequest(query, retries = 5) {
 // ============================================
 
 async function fetchProducts() {
+  // Wait 30s before starting if running in CI — BestPrice-shoes runs just before us on the
+  // same shoes-store token and drains the API cost budget. Without this, fetch throttles,
+  // returns empty, and the stale feed is silently kept (the 2026-06-08 dedup-revert bug).
+  // Mirrors bestprice-feed-shoes.js.
+  if (process.env.CI || process.env.GITHUB_ACTIONS) {
+    console.log('Running in CI — waiting 30s for API rate-limit recovery...\n');
+    await new Promise(r => setTimeout(r, 30000));
+  }
   console.log('Fetching ALL active products from Shopify...\n');
 
   const allProducts = [];
   let cursor = null;
   let page = 1;
+  let consecutiveErrors = 0;
 
   while (true) {
     const afterClause = cursor ? `, after: "${cursor}"` : '';
@@ -394,9 +405,14 @@ async function fetchProducts() {
     try {
       const { data } = await graphqlRequest(query);
       if (data.errors) {
-        console.error('GraphQL errors:', data.errors);
-        break;
+        consecutiveErrors++;
+        console.error(`GraphQL errors (attempt ${consecutiveErrors}/3):`, data.errors[0]?.message || data.errors);
+        if (consecutiveErrors >= 3) { console.error('Too many consecutive errors — aborting.'); break; }
+        console.log(`   Waiting 30s before retrying page ${page}...`);
+        await new Promise(r => setTimeout(r, 30000));
+        continue;
       }
+      consecutiveErrors = 0;
 
       const products = data.data?.products?.edges || [];
       products.forEach(({ node }) => {
@@ -932,9 +948,10 @@ async function generateFeed(options = {}) {
 
   // Fetch products
   const products = await fetchProducts();
-  if (products.length === 0) {
-    console.error('No active products found!');
-    return;
+  if (products.length < 100) {   // full shoes catalog is ~495; anything tiny = failed/partial fetch
+    console.error(`FATAL: only ${products.length} products fetched (expected ~495). ` +
+      `Aborting WITHOUT writing feed so CI keeps the last good feed instead of a broken/stale one.`);
+    process.exit(1);
   }
 
   // Generate feed
@@ -974,4 +991,4 @@ const options = {
   validate: args.includes('--validate') || args.includes('-v')
 };
 
-generateFeed(options).catch(console.error);
+generateFeed(options).catch(e => { console.error(e); process.exit(1); });

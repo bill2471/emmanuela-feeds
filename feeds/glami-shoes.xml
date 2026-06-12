@@ -2882,7 +2882,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 37, 38, 39, 40, 42</VAL>
+      <VAL>36, 37, 38, 39, 40</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -6519,7 +6519,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 37, 38, 42</VAL>
+      <VAL>36, 37, 42</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>

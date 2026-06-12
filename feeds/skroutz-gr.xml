@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-11 20:45</created_at>
+  <created_at>2026-06-12 04:10</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -60667,9 +60667,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI47MANLBRBR9]]></mpn>
         <ean>5212033634724</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>9</quantity>
+        <quantity>8</quantity>
         <color>Καφέ</color>
-        <size>42,43,44,45,46,47</size>
+        <size>42,43,44,46,47</size>
         <variations>
           <variation>
             <variationid>40480141901981</variationid>
@@ -60696,14 +60696,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033634748</ean>
           </variation>
           <variation>
-            <variationid>40480142262429</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>45</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI47MANLBRBR12]]></manufacturersku>
-            <ean>5212033634755</ean>
-          </variation>
-          <variation>
             <variationid>40480142360733</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>46</size>
@@ -60720,7 +60712,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033600040</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Θησέας". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 42,43,44,45,46,47.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Θησέας". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 42,43,44,46,47.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

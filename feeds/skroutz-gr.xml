@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-12 10:35</created_at>
+  <created_at>2026-06-12 15:21</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -59950,9 +59950,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI74MANLBRBR7]]></mpn>
         <ean>5212033635363</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>13</quantity>
+        <quantity>12</quantity>
         <color>Καφέ</color>
-        <size>40,41,42,43,44,45,46,47</size>
+        <size>40,41,42,43,44,45,47</size>
         <variations>
           <variation>
             <variationid>40480091373725</variationid>
@@ -60003,14 +60003,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033635417</ean>
           </variation>
           <variation>
-            <variationid>40480091963549</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>46</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI74MANLBRBR13]]></manufacturersku>
-            <ean>5212033627207</ean>
-          </variation>
-          <variation>
             <variationid>43873673085157</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>47</size>
@@ -60019,7 +60011,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033600170</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,41,42,43,44,45,46,47.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,41,42,43,44,45,47.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

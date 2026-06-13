@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-13 03:58</created_at>
+  <created_at>2026-06-13 09:22</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -48390,9 +48390,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL838LBLBL6]]></mpn>
         <ean>5212033623933</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>2</quantity>
         <color>Μαύρο</color>
-        <size>37,39,41</size>
+        <size>37,41</size>
         <variations>
           <variation>
             <variationid>40479817662621</variationid>
@@ -48403,14 +48403,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033623933</ean>
           </variation>
           <variation>
-            <variationid>40479817924765</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>39</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL838LBLBL8]]></manufacturersku>
-            <ean>5212033623971</ean>
-          </variation>
-          <variation>
             <variationid>40479818449053</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>41</size>
@@ -48419,7 +48411,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033624015</ean>
           </variation>
         </variations>
-        <description><![CDATA[Σανδάλια μονομάχου "Σαμοθράκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 37,39,41.]]></description>
+        <description><![CDATA[Σανδάλια μονομάχου "Σαμοθράκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 37,41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-06-14 14:59</date>
+  <date>2026-06-14 20:25</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -338,6 +338,8 @@
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-439523.jpg?v=1627374816</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-123868.jpg?v=1627293694</img2>
         <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-151574.jpg?v=1627293694</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-504566.jpg?v=1627293694</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-796045.jpg?v=1627293694</img5>
       </imagesURL>
       <price>94.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Εσπαντρίγιες</category_path>
@@ -369,28 +371,6 @@
       <color>πολύχρωμο</color>
       <size>36,40</size>
       <EAN>5212033649100</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40479805833373</productId>
-      <title><![CDATA[Emmanuela Flatform εσπαντρίγιες - Κίτρινο]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-nude-peeptoe-espadrilles</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-504566.jpg?v=1627293694</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-504566.jpg?v=1627293694</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-796045.jpg?v=1627293694</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-567505.jpg?v=1627293694</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-338705.jpg?v=1627293694</img4>
-      </imagesURL>
-      <price>94.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Εσπαντρίγιες</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1BR3011LTRLY7</MPN>
-      <color>κίτρινο</color>
-      <size>38</size>
-      <EAN>5212033636704</EAN>
       <shipping>0</shipping>
     </product>
     <product>

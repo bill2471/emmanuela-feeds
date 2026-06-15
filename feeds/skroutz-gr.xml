@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-15 12:35</created_at>
+  <created_at>2026-06-15 21:20</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -47613,9 +47613,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL213LBRBR7]]></mpn>
         <ean>5212033624800</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>10</quantity>
+        <quantity>9</quantity>
         <color>Καφέ</color>
-        <size>40,41,42,43,44,45</size>
+        <size>40,41,43,44,45</size>
         <variations>
           <variation>
             <variationid>40479792267421</variationid>
@@ -47632,14 +47632,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <quantity>2</quantity>
             <manufacturersku><![CDATA[1KL213LBRBR8]]></manufacturersku>
             <ean>5212033624824</ean>
-          </variation>
-          <variation>
-            <variationid>40479792758941</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>42</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL213LBRBR9]]></manufacturersku>
-            <ean>5212033624848</ean>
           </variation>
           <variation>
             <variationid>40479793053853</variationid>
@@ -47666,7 +47658,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033624909</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,41,42,43,44,45.]]></description>
+        <description><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,41,43,44,45.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -59882,7 +59874,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI74MANLBRBR7]]></mpn>
         <ean>5212033635363</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>12</quantity>
+        <quantity>11</quantity>
         <color>Καφέ</color>
         <size>40,41,42,43,44,45,47</size>
         <variations>
@@ -59914,7 +59906,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40480091668637</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>43</size>
-            <quantity>3</quantity>
+            <quantity>2</quantity>
             <manufacturersku><![CDATA[1LI74MANLBRBR10]]></manufacturersku>
             <ean>5212033635394</ean>
           </variation>
@@ -60089,9 +60081,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL222LDBDB7]]></mpn>
         <ean>5212033601818</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>25</quantity>
+        <quantity>23</quantity>
         <color>Καφέ</color>
-        <size>40,41,43,44,45,46,47</size>
+        <size>40,41,44,45,46,47</size>
         <variations>
           <variation>
             <variationid>46729228222799</variationid>
@@ -60108,14 +60100,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <quantity>4</quantity>
             <manufacturersku><![CDATA[1KL222LDBDB8]]></manufacturersku>
             <ean>5212033601825</ean>
-          </variation>
-          <variation>
-            <variationid>46729228321103</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>43</size>
-            <quantity>2</quantity>
-            <manufacturersku><![CDATA[1KL222LDBDB10]]></manufacturersku>
-            <ean>5212033601849</ean>
           </variation>
           <variation>
             <variationid>46729228353871</variationid>
@@ -60150,7 +60134,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033601887</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,41,43,44,45,46,47.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,41,44,45,46,47.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-16 17:14</created_at>
+  <created_at>2026-06-16 21:14</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -37503,7 +37503,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU167ea]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>9</quantity>
+        <quantity>8</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -61127,9 +61127,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS1048LRMBE5]]></mpn>
         <ean>5212033639880</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Χρυσό</color>
-        <size>36,37,38,39</size>
+        <size>36,38,39</size>
         <variations>
           <variation>
             <variationid>40480167067805</variationid>
@@ -61138,14 +61138,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <quantity>2</quantity>
             <manufacturersku><![CDATA[1TS1048LRMBE5]]></manufacturersku>
             <ean>5212033639880</ean>
-          </variation>
-          <variation>
-            <variationid>40480167264413</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>37</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1TS1048LRMBE6]]></manufacturersku>
-            <ean>5212033639897</ean>
           </variation>
           <variation>
             <variationid>40480167493789</variationid>
@@ -61164,7 +61156,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033639910</ean>
           </variation>
         </variations>
-        <description><![CDATA[Σανδάλια παντόφλες "Κως". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 36,37,38,39.]]></description>
+        <description><![CDATA[Σανδάλια παντόφλες "Κως". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 36,38,39.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

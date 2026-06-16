@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-15 21:20</created_at>
+  <created_at>2026-06-16 04:20</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -64646,9 +64646,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS37NEWLCIBR5]]></mpn>
         <ean>5212033601528</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>16</quantity>
+        <quantity>15</quantity>
         <color>Καφέ</color>
-        <size>36,37,38,39,40,41</size>
+        <size>36,37,38,39,40</size>
         <variations>
           <variation>
             <variationid>46684774924623</variationid>
@@ -64690,16 +64690,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <manufacturersku><![CDATA[1TS37NEWLCIBR9]]></manufacturersku>
             <ean>5212033601566</ean>
           </variation>
-          <variation>
-            <variationid>46684775088463</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1TS37NEWLCIBR10]]></manufacturersku>
-            <ean>5212033601573</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Σανδάλια παντόφλες "Κρέουσα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 36,37,38,39,40,41.]]></description>
+        <description><![CDATA[Σανδάλια παντόφλες "Κρέουσα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 36,37,38,39,40.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

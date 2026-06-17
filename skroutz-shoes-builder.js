@@ -326,7 +326,15 @@ async function buildSandalItems() {
         it += `            <availability>${AVAIL}</availability>\n`;
         it += `            <size>${escapeXml(s.size)}</size>\n`;
         it += `            <quantity>${s.qty}</quantity>\n`;
-        if (s.sku) it += `            <manufacturersku><![CDATA[${s.sku}]]></manufacturersku>\n`;
+        if (s.sku) {
+          it += `            <manufacturersku><![CDATA[${s.sku}]]></manufacturersku>\n`;
+          // ALSO emit per-variation <mpn> (the spec lists BOTH <manufacturersku> and <mpn> as the
+          // Variation MPN). Skroutz reads our per-variation <ean> but NOT <manufacturersku>, so the
+          // order's size.mpn came back null and the line fell back to the product-level <mpn> (a single
+          // representative size) -> the warehouse picked by that wrong SKU. <mpn> fills size.mpn with the
+          // SELECTED size's SKU. (Diagnosed 2026-06-17: «Σίφνος» size 38 shipped as 37.)
+          it += `            <mpn><![CDATA[${s.sku}]]></mpn>\n`;
+        }
         const vean = ean13(s.barcode); if (vean) it += `            <ean>${vean}</ean>\n`;
         it += '          </variation>\n';
         stats.variations++;

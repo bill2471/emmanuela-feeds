@@ -322,7 +322,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 41, 42, 44, 45, 46</VAL>
+      <VAL>40, 41, 42, 45, 46</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -6268,39 +6268,6 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033612487</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>40480018137245</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Σανδάλια με λουριά & Στρας "Λήμνος"]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-lemnos</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-stras-lhmnos-emmanuela-handcrafted-for-you-sandalia-me-loyria-stras-lhmnos-919295.jpg?v=1627294083</IMGURL>
-    <PRICE_VAT>76</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[Η Λήμνος, το νησί όπου ο Ήφαιστος — θεϊκός σιδηρουργός — προσγειώθηκε αφού τον εκσφενδόνισε ο Δίας από τον Όλυμπο, είναι τόπος φωτιάς και τεχνοτροπίας. Αυτά τα σανδάλια στολισμένα με κρυστάλλινα στρας αιχμαλωτίζουν εκείνη τη σπίθα — μικρά σημεία φωτός σκορπισμένα κατά μήκος των δερμάτινων λωρίδων, που πιάνουν τον ήλιο και λαμποκοπούν σε κάθε βήμα. Χειροποίητα στην Ελλάδα από γνήσιο δέρμα, τα Λήμνος διαθέτουν ασφαλές λουρί φτέρνας και επίπεδη σόλα 1 εκ. Τα στρας τοποθετούνται στο χέρι πάνω στο δέρμα, κάνοντας κάθε ζευγάρι ένα μικρό τεχνίτικο κόσμημα για τα πόδια — ιδανικά για καλοκαιρινά βράδια, γάμους ή κάθε στιγμή που αξίζει λίγη παραπάνω λάμψη. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα με κρυστάλλινα στρας Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1 cm Κούμπωμα: λουρί φτέρνας Μεγέθη: EU 36–42 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-stras-lhmnos-emmanuela-handcrafted-for-you-sandalia-me-loyria-stras-lhmnos-322087.jpg?v=1627294083</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-stras-lhmnos-emmanuela-handcrafted-for-you-sandalia-me-loyria-stras-lhmnos-962146.jpg?v=1627294083</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-stras-lhmnos-emmanuela-handcrafted-for-you-sandalia-me-loyria-stras-lhmnos-871785.jpg?v=1627294083</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-stras-lhmnos-emmanuela-handcrafted-for-you-sandalia-me-loyria-stras-lhmnos-206635.jpg?v=1627294083</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-lemnos?variant=40480018137245</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>καφέ</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>37</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033646543</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480031670429</ITEM_ID>

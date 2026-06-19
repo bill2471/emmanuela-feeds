@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-18 20:50</created_at>
+  <created_at>2026-06-19 04:31</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -52196,9 +52196,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI69TRLTBE5]]></mpn>
         <ean>5212033632713</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>14</quantity>
+        <quantity>13</quantity>
         <color>Καφέ</color>
-        <size>36,37,38,39,40</size>
+        <size>36,37,38,39</size>
         <variations>
           <variation>
             <variationid>40479891423389</variationid>
@@ -52236,17 +52236,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1LI69TRLTBE8]]></mpn>
             <ean>5212033632744</ean>
           </variation>
-          <variation>
-            <variationid>40479892078749</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI69TRLTBE9]]></manufacturersku>
-            <mpn><![CDATA[1LI69TRLTBE9]]></mpn>
-            <ean>5212033632751</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Αμάλθεια". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 36,37,38,39,40.]]></description>
+        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Αμάλθεια". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 36,37,38,39.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

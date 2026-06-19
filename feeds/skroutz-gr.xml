@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-19 04:31</created_at>
+  <created_at>2026-06-19 10:51</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -47416,9 +47416,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL225LBLBL7]]></mpn>
         <ean>5212033625050</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>9</quantity>
+        <quantity>8</quantity>
         <color>Μαύρο</color>
-        <size>40,42,43,44,45,46,47</size>
+        <size>40,42,43,45,46,47</size>
         <variations>
           <variation>
             <variationid>40479787417757</variationid>
@@ -47448,15 +47448,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033625111</ean>
           </variation>
           <variation>
-            <variationid>40479788466333</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>44</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL225LBLBL11]]></manufacturersku>
-            <mpn><![CDATA[1KL225LBLBL11]]></mpn>
-            <ean>5212033625135</ean>
-          </variation>
-          <variation>
             <variationid>40479788728477</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>45</size>
@@ -47484,7 +47475,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033651349</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 40,42,43,44,45,46,47.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 40,42,43,45,46,47.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -49857,7 +49848,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL345LRMBE7]]></mpn>
         <ean>5212033622905</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Χρυσό</color>
         <size>38,40,41</size>
         <variations>
@@ -49865,7 +49856,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40479848431773</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>38</size>
-            <quantity>3</quantity>
+            <quantity>2</quantity>
             <manufacturersku><![CDATA[1KL345LRMBE7]]></manufacturersku>
             <mpn><![CDATA[1KL345LRMBE7]]></mpn>
             <ean>5212033622905</ean>
@@ -58015,7 +58006,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS36LBCBL5]]></mpn>
         <ean>5212033642064</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>9</quantity>
+        <quantity>10</quantity>
         <color>Μαύρο</color>
         <size>36,37,39,40</size>
         <variations>
@@ -58023,7 +58014,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40480013287581</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>36</size>
-            <quantity>3</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[1TS36LBCBL5]]></manufacturersku>
             <mpn><![CDATA[1TS36LBCBL5]]></mpn>
             <ean>5212033642064</ean>
@@ -58890,7 +58881,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS101LBLBL5]]></mpn>
         <ean>5212033638876</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>115</quantity>
+        <quantity>114</quantity>
         <color>Μαύρο</color>
         <size>36,37,38,39,40,41,42</size>
         <variations>
@@ -58934,7 +58925,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40480042647709</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>40</size>
-            <quantity>9</quantity>
+            <quantity>8</quantity>
             <manufacturersku><![CDATA[1TS101LBLBL9]]></manufacturersku>
             <mpn><![CDATA[1TS101LBLBL9]]></mpn>
             <ean>5212033638913</ean>
@@ -61428,9 +61419,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI47MANLBRBR9]]></mpn>
         <ean>5212033634724</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>8</quantity>
+        <quantity>7</quantity>
         <color>Καφέ</color>
-        <size>42,43,44,46,47</size>
+        <size>42,43,46,47</size>
         <variations>
           <variation>
             <variationid>40480141901981</variationid>
@@ -61451,15 +61442,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033634731</ean>
           </variation>
           <variation>
-            <variationid>40480142131357</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>44</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI47MANLBRBR11]]></manufacturersku>
-            <mpn><![CDATA[1LI47MANLBRBR11]]></mpn>
-            <ean>5212033634748</ean>
-          </variation>
-          <variation>
             <variationid>40480142360733</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>46</size>
@@ -61478,7 +61460,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033600040</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Θησέας". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 42,43,44,46,47.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Θησέας". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 42,43,46,47.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

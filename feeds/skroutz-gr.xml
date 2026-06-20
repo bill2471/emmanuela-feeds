@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-20 09:19</created_at>
+  <created_at>2026-06-20 14:25</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -47766,9 +47766,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40479792267421</id>
+        <id>40479792464029</id>
         <name><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος" - Καφέ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men?variant=40479792267421]]></link>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men?variant=40479792464029]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-358863.jpg?v=1653979507]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-665447.jpg?v=1627293791]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-434916.jpg?v=1627293791]]></additionalimage>
@@ -47780,22 +47780,13 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <price_with_vat>73.00</price_with_vat>
         <vat>24.00</vat>
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL213LBRBR7]]></mpn>
-        <ean>5212033624800</ean>
+        <mpn><![CDATA[1KL213LBRBR8]]></mpn>
+        <ean>5212033624824</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>9</quantity>
+        <quantity>8</quantity>
         <color>Καφέ</color>
-        <size>40,41,43,44,45</size>
+        <size>41,43,44,45</size>
         <variations>
-          <variation>
-            <variationid>40479792267421</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL213LBRBR7]]></manufacturersku>
-            <mpn><![CDATA[1KL213LBRBR7]]></mpn>
-            <ean>5212033624800</ean>
-          </variation>
           <variation>
             <variationid>40479792464029</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
@@ -47833,7 +47824,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033624909</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,41,43,44,45.]]></description>
+        <description><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,43,44,45.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

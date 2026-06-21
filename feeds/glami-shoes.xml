@@ -300,7 +300,7 @@
     <GTIN>05212033635837</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40479792169117</ITEM_ID>
+    <ITEM_ID>40479792332957</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος" - Μαύρο]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men</URL>
     <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-176162.jpg?v=1627375012</IMGURL>
@@ -315,14 +315,14 @@
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-434916.jpg?v=1627293791</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-458605.jpg?v=1627293791</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/1kl213.jpg?v=1653979507</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men?variant=40479792169117</URL_SIZE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men?variant=40479792332957</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 41, 42, 45, 46</VAL>
+      <VAL>41, 42, 45, 46</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -333,7 +333,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033624688</GTIN>
+    <GTIN>05212033624701</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40479792464029</ITEM_ID>
@@ -7329,7 +7329,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 41, 42, 43, 44, 45, 47</VAL>
+      <VAL>40, 41, 43, 44, 45, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>

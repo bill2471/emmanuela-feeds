@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-06-22 04:27</date>
+  <date>2026-06-22 12:16</date>
   <products>
     <product>
       <productId>31372692389923</productId>
@@ -4823,6 +4823,12 @@
       <title><![CDATA[Σκουλαρίκι ear cuff με τέσσερις κρίκους χειροποίητο από επιχρυσωμένο ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/skoulariki-ear-cuff-4-krikoi</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-me-tesseris-krikoys-apo-ashmi-925-kosmhmata-emmanuela-645853.jpg?v=1767372457</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-me-tesseris-krikoys-apo-ashmi-925-kosmhmata-emmanuela-645853.jpg?v=1767372457</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-me-tesseris-krikoys-apo-ashmi-925-kosmhmata-emmanuela-744609.jpg?v=1767372463</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-me-tesseris-krikoys-apo-ashmi-925-kosmhmata-emmanuela-658250.jpg?v=1767372468</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-me-tesseris-krikoys-apo-ashmi-925-kosmhmata-emmanuela-166632.jpg?v=1767372472</img4>
+      </imagesURL>
       <price>42.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -4845,26 +4851,6 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>EMM-54842269466958</MPN>
       <color>χρυσό</color>
-      <weight>1</weight>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>31373381107747</productId>
-      <title><![CDATA[Σκουλαρίκι ear cuff με τέσσερις κρίκους χειροποίητο από ασήμι 925]]></title>
-      <productURL>https://emmanuela.gr/products/skoulariki-ear-cuff-4-krikoi</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-me-tesseris-krikoys-apo-ashmi-925-kosmhmata-emmanuela-744609.jpg?v=1767372463</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-me-tesseris-krikoys-apo-ashmi-925-kosmhmata-emmanuela-744609.jpg?v=1767372463</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-me-tesseris-krikoys-apo-ashmi-925-kosmhmata-emmanuela-658250.jpg?v=1767372468</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-me-tesseris-krikoys-apo-ashmi-925-kosmhmata-emmanuela-166632.jpg?v=1767372472</img3>
-      </imagesURL>
-      <price>42.00</price>
-      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>8024S</MPN>
-      <color>ασημί</color>
       <weight>1</weight>
       <shipping>0</shipping>
     </product>

@@ -709,7 +709,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 37, 38, 39, 41, 42</VAL>
+      <VAL>36, 37, 38, 41, 42</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -2191,7 +2191,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 37, 39, 41</VAL>
+      <VAL>36, 37, 41</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -4221,40 +4221,6 @@
     <GTIN>05212033644846</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40479959842973</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος" - Καφέ]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-icarus-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-224405.jpg?v=1627375193</IMGURL>
-    <PRICE_VAT>59</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856627585181</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-913484.jpg?v=1627293850</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-998334.jpg?v=1627293850</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-488931.jpg?v=1627293850</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-260852.jpg?v=1627293850</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-icarus-men?variant=40479959842973</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>καφέ</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 43, 44, 46</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033634489</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
     <ITEM_ID>40479959908509</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος" - Μπεζ φυσικό]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-icarus-men</URL>
@@ -4316,6 +4282,40 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033634410</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
+    <ITEM_ID>40479960334493</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος" - Καφέ]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-icarus-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-224405.jpg?v=1627375193</IMGURL>
+    <PRICE_VAT>59</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτιος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδσάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856627585181</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-913484.jpg?v=1627293850</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-998334.jpg?v=1627293850</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-488931.jpg?v=1627293850</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-260852.jpg?v=1627293850</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-icarus-men?variant=40479960334493</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>καφέ</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>43, 46</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033634519</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40479963807901</ITEM_ID>
@@ -7359,7 +7359,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 45</VAL>
+      <VAL>40</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -7373,7 +7373,7 @@
     <GTIN>05212033635431</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40480091439261</ITEM_ID>
+    <ITEM_ID>40480091537565</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Μαύρο]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-dionysius-men</URL>
     <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-570478.jpg?v=1653979657</IMGURL>
@@ -7385,14 +7385,14 @@
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1LI74_-_SIZE_CHART_v2.png?v=1779870771</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-465450.jpg?v=1653979657</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/emmanuela-handcrafted-for-you-gladiator-sandalen-fur-herren-dionysius-aus-schwarze-leder-emmanuela-handcrafted-for-you-368189.jpg?v=1653979657</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-dionysius-men?variant=40480091439261</URL_SIZE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-dionysius-men?variant=40480091537565</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 41, 42, 43, 44, 45, 46</VAL>
+      <VAL>41, 42, 43, 44, 45, 46</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -7403,7 +7403,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033635295</GTIN>
+    <GTIN>05212033635301</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>46729228222799</ITEM_ID>

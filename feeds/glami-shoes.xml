@@ -7949,7 +7949,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 41, 42</VAL>
+      <VAL>36, 42</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -7998,6 +7998,43 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033650144</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
+    <ITEM_ID>40480166183069</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Σανδάλια παντόφλες "Κίμωλος" - Ροζ χρυσό]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-kimolos</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-kimwlos-emmanuela-handcrafted-for-you-sandalia-pantofles-kimwlos-739845.jpg?v=1627295236</IMGURL>
+    <PRICE_VAT>54</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[Η Κίμωλος, το μικροσκοπικό κυκλαδίτικο νησί με τους κατάλευκους βράχους και τις ιαματικές πηγές, δανείζει τη γαλήνια αύρα της σε αυτά τα σανδάλια σχεδιασμένα για σιωπηλή κομψότητα. Τα Κίμωλος παραμένουν λιτά — μια δερμάτινη σταυρωτή λωρίδα, δύο προσεκτικά επιλεγμένα χρώματα, και τίποτα παραπάνω από όσο χρειάζεστε. Φτιαγμένα στην Ελλάδα από γνήσιο δέρμα, διαθέτουν επίπεδη σόλα 1 εκ. και δερμάτινο πάτο που μαλακώνει σε εξατομικευμένη εφαρμογή κάθε φορά που τα φοράτε. Είναι το σανδάλι που πιάνετε στο χέρι όταν θέλετε άνεση χωρίς σκέψη και στυλ χωρίς θόρυβο. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 2 χρώματα: μπεζ φυσικό, ροζ χρυσό Μεγέθη: EU 36–42 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856645083293</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-kimwlos-emmanuela-handcrafted-for-you-sandalia-pantofles-kimwlos-705512.jpg?v=1627295236</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/emmanuela-handcrafted-for-you-sandalen-mit-zehenring-kimolos-aus-rosegold-leder-emmanuela-handcrafted-for-you-170577.jpg?v=1627042815</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/emmanuela-handcrafted-for-you-sandalen-mit-zehenring-kimolos-aus-rosegold-leder-emmanuela-handcrafted-for-you-433259.jpg?v=1627042815</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/emmanuela-handcrafted-for-you-sandalen-mit-zehenring-kimolos-aus-rosegold-leder-emmanuela-handcrafted-for-you-498516.jpg?v=1627042815</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/emmanuela-handcrafted-for-you-sandalen-mit-zehenring-kimolos-aus-rosegold-leder-emmanuela-handcrafted-for-you-393181.jpg?v=1627042815</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/emmanuela-handcrafted-for-you-sandalen-mit-zehenring-kimolos-aus-rosegold-leder-emmanuela-handcrafted-for-you-612449.jpg?v=1627042815</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/emmanuela-handcrafted-for-you-sandalen-mit-zehenring-kimolos-aus-rosegold-leder-emmanuela-handcrafted-for-you-624382.jpg?v=1627042815</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-kimolos?variant=40480166183069</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>χρυσό</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>36, 41, 42</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033650076</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480167002269</ITEM_ID>

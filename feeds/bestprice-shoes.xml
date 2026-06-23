@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-06-23 15:46</date>
+  <date>2026-06-23 21:07</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -4908,7 +4908,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL659LRMBE5</MPN>
       <color>χρυσό</color>
-      <size>36,41,42</size>
+      <size>36,42</size>
       <EAN>5212033650076</EAN>
       <shipping>0</shipping>
     </product>
@@ -4933,6 +4933,29 @@
       <color>μπεζ</color>
       <size>36,41,42</size>
       <EAN>5212033650144</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40480166183069</productId>
+      <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Κίμωλος" - Ροζ χρυσό]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-kimolos</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-kimwlos-emmanuela-handcrafted-for-you-sandalia-pantofles-kimwlos-739845.jpg?v=1627295236</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-kimwlos-emmanuela-handcrafted-for-you-sandalia-pantofles-kimwlos-739845.jpg?v=1627295236</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-kimwlos-emmanuela-handcrafted-for-you-sandalia-pantofles-kimwlos-705512.jpg?v=1627295236</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/emmanuela-handcrafted-for-you-sandalen-mit-zehenring-kimolos-aus-rosegold-leder-emmanuela-handcrafted-for-you-170577.jpg?v=1627042815</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/emmanuela-handcrafted-for-you-sandalen-mit-zehenring-kimolos-aus-rosegold-leder-emmanuela-handcrafted-for-you-433259.jpg?v=1627042815</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/emmanuela-handcrafted-for-you-sandalen-mit-zehenring-kimolos-aus-rosegold-leder-emmanuela-handcrafted-for-you-498516.jpg?v=1627042815</img5>
+      </imagesURL>
+      <price>54.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1KL659LRMBE5</MPN>
+      <color>χρυσό</color>
+      <size>36,41,42</size>
+      <EAN>5212033650076</EAN>
       <shipping>0</shipping>
     </product>
     <product>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-23 20:28</created_at>
+  <created_at>2026-06-24 03:51</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -54974,7 +54974,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI46MANLNABE7]]></mpn>
         <ean>5212033634557</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>13</quantity>
+        <quantity>12</quantity>
         <color>Μπεζ</color>
         <size>40,41,42,43,44,46,47</size>
         <variations>
@@ -55000,7 +55000,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40479960236189</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>42</size>
-            <quantity>3</quantity>
+            <quantity>2</quantity>
             <manufacturersku><![CDATA[1LI46MANLNABE9]]></manufacturersku>
             <mpn><![CDATA[1LI46MANLNABE9]]></mpn>
             <ean>5212033634571</ean>
@@ -62277,9 +62277,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL659LRMBE5]]></mpn>
         <ean>5212033650076</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Χρυσό</color>
-        <size>36,41,42</size>
+        <size>36,42</size>
         <variations>
           <variation>
             <variationid>40480165658781</variationid>
@@ -62291,15 +62291,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033650076</ean>
           </variation>
           <variation>
-            <variationid>40480165986461</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL659LRMBE10]]></manufacturersku>
-            <mpn><![CDATA[1KL659LRMBE10]]></mpn>
-            <ean>5212033650120</ean>
-          </variation>
-          <variation>
             <variationid>40480166051997</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>42</size>
@@ -62309,7 +62300,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033650137</ean>
           </variation>
         </variations>
-        <description><![CDATA[Σανδάλια παντόφλες "Κίμωλος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 36,41,42.]]></description>
+        <description><![CDATA[Σανδάλια παντόφλες "Κίμωλος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 36,42.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -62361,6 +62352,57 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Σανδάλια παντόφλες "Κίμωλος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 36,41,42.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40480166183069</id>
+        <name><![CDATA[Σανδάλια παντόφλες "Κίμωλος" - Χρυσό]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-kimolos?variant=40480166183069]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-kimwlos-emmanuela-handcrafted-for-you-sandalia-pantofles-kimwlos-739845.jpg?v=1627295236]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-kimwlos-emmanuela-handcrafted-for-you-sandalia-pantofles-kimwlos-282096.jpg?v=1627295243]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-kimwlos-emmanuela-handcrafted-for-you-sandalia-pantofles-kimwlos-590241.jpg?v=1627295244]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-kimwlos-emmanuela-handcrafted-for-you-sandalia-pantofles-kimwlos-705512.jpg?v=1627295236]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/emmanuela-handcrafted-for-you-sandalen-mit-zehenring-kimolos-aus-rosegold-leder-emmanuela-handcrafted-for-you-433259.jpg?v=1627042815]]></additionalimage>
+        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>26.90</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1KL659LRMBE5]]></mpn>
+        <ean>5212033650076</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>4</quantity>
+        <color>Χρυσό</color>
+        <size>36,41,42</size>
+        <variations>
+          <variation>
+            <variationid>40480166183069</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>36</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1KL659LRMBE5]]></manufacturersku>
+            <mpn><![CDATA[1KL659LRMBE5]]></mpn>
+            <ean>5212033650076</ean>
+          </variation>
+          <variation>
+            <variationid>40480166510749</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>41</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL659LRMBE10]]></manufacturersku>
+            <mpn><![CDATA[1KL659LRMBE10]]></mpn>
+            <ean>5212033650120</ean>
+          </variation>
+          <variation>
+            <variationid>40480166576285</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>42</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL659LRMBE11]]></manufacturersku>
+            <mpn><![CDATA[1KL659LRMBE11]]></mpn>
+            <ean>5212033650137</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Σανδάλια παντόφλες "Κίμωλος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 36,41,42.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-25 09:25</created_at>
+  <created_at>2026-06-25 14:56</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -47887,44 +47887,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>46729148334415</id>
-        <name><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Καφέ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-bacchus-men?variant=46729148334415]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225LDBDB_1_65154b60-8f03-4fd6-bb54-6a9bf3740b90.jpg?v=1693475296]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-351248.jpg?v=1627293790]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/new-banner-emmanuela-men-sandals.jpg?v=1693475296]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-282636.jpg?v=1627293788]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/new-banner-emmanuela-men-sandals_ff395189-9afb-417e-9810-2f250ffb26f4.jpg?v=1693829085]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-882317.jpg?v=1627293788]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-148099.jpg?v=1660111851]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/new-banner-emmanuela-men-sandals_f5db3239-2265-4dd4-98d8-2b434d65a5b1.jpg?v=1685534790]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-351248_dd9560c5-4157-42d2-ab3f-861166d8449b.jpg?v=1693475562]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/new-banner-emmanuela-men-sandals_aa6aaf90-ea1b-488d-97a2-ff4d99c08b4b.jpg?v=1693475562]]></additionalimage>
-        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>84.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL225LDBDB12]]></mpn>
-        <ean>5212033601788</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>1</quantity>
-        <color>Καφέ</color>
-        <size>45</size>
-        <variations>
-          <variation>
-            <variationid>46729148334415</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>45</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL225LDBDB12]]></manufacturersku>
-            <mpn><![CDATA[1KL225LDBDB12]]></mpn>
-            <ean>5212033601788</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 45.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>40479789121693</id>
         <name><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Μπεζ]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-bacchus-men?variant=40479789121693]]></link>
@@ -61032,7 +60994,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL222LDBDB7]]></mpn>
         <ean>5212033601818</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>22</quantity>
+        <quantity>21</quantity>
         <color>Καφέ</color>
         <size>40,41,43,44,45,46,47</size>
         <variations>
@@ -61049,7 +61011,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>46729228255567</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>41</size>
-            <quantity>4</quantity>
+            <quantity>3</quantity>
             <manufacturersku><![CDATA[1KL222LDBDB8]]></manufacturersku>
             <mpn><![CDATA[1KL222LDBDB8]]></mpn>
             <ean>5212033601825</ean>

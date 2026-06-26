@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-26 09:48</created_at>
+  <created_at>2026-06-26 14:48</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -55131,7 +55131,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI46MANLNABE7]]></mpn>
         <ean>5212033634557</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>11</quantity>
+        <quantity>12</quantity>
         <color>Μπεζ</color>
         <size>40,41,42,43,44,46,47</size>
         <variations>
@@ -55157,7 +55157,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40479960236189</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>42</size>
-            <quantity>1</quantity>
+            <quantity>2</quantity>
             <manufacturersku><![CDATA[1LI46MANLNABE9]]></manufacturersku>
             <mpn><![CDATA[1LI46MANLNABE9]]></mpn>
             <ean>5212033634571</ean>
@@ -61500,7 +61500,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL222LDBDB7]]></mpn>
         <ean>5212033601818</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>20</quantity>
+        <quantity>19</quantity>
         <color>Καφέ</color>
         <size>40,41,44,45,46,47</size>
         <variations>
@@ -61517,7 +61517,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>46729228255567</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>41</size>
-            <quantity>3</quantity>
+            <quantity>2</quantity>
             <manufacturersku><![CDATA[1KL222LDBDB8]]></manufacturersku>
             <mpn><![CDATA[1KL222LDBDB8]]></mpn>
             <ean>5212033601825</ean>
@@ -63287,9 +63287,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI98MANLBRBR8]]></mpn>
         <ean>5212033634939</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Καφέ</color>
-        <size>41,44,45,46</size>
+        <size>41,44,46</size>
         <variations>
           <variation>
             <variationid>40480250101917</variationid>
@@ -63310,15 +63310,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033634960</ean>
           </variation>
           <variation>
-            <variationid>40480250855581</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>45</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI98MANLBRBR12]]></manufacturersku>
-            <mpn><![CDATA[1LI98MANLBRBR12]]></mpn>
-            <ean>5212033634977</ean>
-          </variation>
-          <variation>
             <variationid>40480251117725</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>46</size>
@@ -63328,7 +63319,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033626767</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,44,45,46.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,44,46.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -63420,6 +63411,71 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 47.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40480251969693</id>
+        <name><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής" - Καφέ]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-hercules-men?variant=40480251969693]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-684372.jpg?v=1627293915]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-868896.jpg?v=1627293915]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-902961.jpg?v=1627293915]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-115187.jpg?v=1627293915]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-736584.jpg?v=1627293916]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-339664.jpg?v=1627293916]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-198672.jpg?v=1627293917]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-136467.jpg?v=1627293915]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-920214.jpg?v=1627293915]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-595954.jpg?v=1627293915]]></additionalimage>
+        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>59.00</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1LI98MANLBRBR8]]></mpn>
+        <ean>5212033634939</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>4</quantity>
+        <color>Καφέ</color>
+        <size>41,44,45,46</size>
+        <variations>
+          <variation>
+            <variationid>40480251969693</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>41</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI98MANLBRBR8]]></manufacturersku>
+            <mpn><![CDATA[1LI98MANLBRBR8]]></mpn>
+            <ean>5212033634939</ean>
+          </variation>
+          <variation>
+            <variationid>40480252887197</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>44</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI98MANLBRBR11]]></manufacturersku>
+            <mpn><![CDATA[1LI98MANLBRBR11]]></mpn>
+            <ean>5212033634960</ean>
+          </variation>
+          <variation>
+            <variationid>40480253116573</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>45</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI98MANLBRBR12]]></manufacturersku>
+            <mpn><![CDATA[1LI98MANLBRBR12]]></mpn>
+            <ean>5212033634977</ean>
+          </variation>
+          <variation>
+            <variationid>40480253313181</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>46</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI98MANLBRBR13]]></manufacturersku>
+            <mpn><![CDATA[1LI98MANLBRBR13]]></mpn>
+            <ean>5212033626767</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,44,45,46.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

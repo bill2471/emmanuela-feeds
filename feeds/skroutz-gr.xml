@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-27 09:00</created_at>
+  <created_at>2026-06-27 13:55</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -52982,9 +52982,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI69TRLBLBL5]]></mpn>
         <ean>5212033632645</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>17</quantity>
+        <quantity>16</quantity>
         <color>Μαύρο</color>
-        <size>36,37,38,39,40,41,42</size>
+        <size>36,37,39,40,41,42</size>
         <variations>
           <variation>
             <variationid>40479891456157</variationid>
@@ -53003,15 +53003,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <manufacturersku><![CDATA[1LI69TRLBLBL6]]></manufacturersku>
             <mpn><![CDATA[1LI69TRLBLBL6]]></mpn>
             <ean>5212033632652</ean>
-          </variation>
-          <variation>
-            <variationid>40479891751069</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>38</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI69TRLBLBL7]]></manufacturersku>
-            <mpn><![CDATA[1LI69TRLBLBL7]]></mpn>
-            <ean>5212033632669</ean>
           </variation>
           <variation>
             <variationid>40479891947677</variationid>
@@ -53050,7 +53041,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033632706</ean>
           </variation>
         </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Αμάλθεια". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 36,37,38,39,40,41,42.]]></description>
+        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Αμάλθεια". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 36,37,39,40,41,42.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -55965,7 +55956,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS103LNABE6]]></mpn>
         <ean>5212033638456</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>79</quantity>
+        <quantity>78</quantity>
         <color>Μπεζ</color>
         <size>37,38,39,40,41,42</size>
         <variations>
@@ -55991,7 +55982,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40479972556957</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>39</size>
-            <quantity>20</quantity>
+            <quantity>19</quantity>
             <manufacturersku><![CDATA[1TS103LNABE8]]></manufacturersku>
             <mpn><![CDATA[1TS103LNABE8]]></mpn>
             <ean>5212033638470</ean>
@@ -63107,6 +63098,71 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Σανδάλια με λουριά "Τήνος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 40,41.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40480183222429</id>
+        <name><![CDATA[Σανδάλια με λεπτά λουριά "Λέσβος" - Δέρμα φιδιού]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-lesbos?variant=40480183222429]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-lepta-loyria-lesbos-emmanuela-handcrafted-for-you-sandalia-me-lepta-loyria-lesbos-169680.jpg?v=1685010025]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-snake-skin-lesbos-emmanuela-handcrafted-for-you-sandalia-me-snake-skin-lesbos-147215.jpg?v=1627294037]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-snake-skin-lesbos-emmanuela-handcrafted-for-you-sandalia-me-snake-skin-lesbos-719161.jpg?v=1627294037]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-snake-skin-lesbos-emmanuela-handcrafted-for-you-sandalia-me-snake-skin-lesbos-855694.jpg?v=1627294038]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-snake-skin-lesbos-emmanuela-handcrafted-for-you-sandalia-me-snake-skin-lesbos-385420.jpg?v=1627294038]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-lepta-loyria-lesbos-emmanuela-handcrafted-for-you-sandalia-me-lepta-loyria-lesbos-311149.jpg?v=1627294030]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-lepta-loyria-lesbos-emmanuela-handcrafted-for-you-sandalia-me-lepta-loyria-lesbos-168550.jpg?v=1627294030]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-lepta-loyria-lesbos-emmanuela-handcrafted-for-you-sandalia-me-lepta-loyria-lesbos-261291.jpg?v=1627294030]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-lepta-loyria-lesbos-emmanuela-handcrafted-for-you-sandalia-me-lepta-loyria-lesbos-382586.jpg?v=1627294043]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-lepta-loyria-lesbos-emmanuela-handcrafted-for-you-sandalia-me-lepta-loyria-lesbos-115230.jpg?v=1627294044]]></additionalimage>
+        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>50.90</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1TS101LMLBL5]]></mpn>
+        <ean>5212033638739</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>15</quantity>
+        <color>Δέρμα φιδιού</color>
+        <size>36,37,39,41</size>
+        <variations>
+          <variation>
+            <variationid>40480183222429</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>36</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1TS101LMLBL5]]></manufacturersku>
+            <mpn><![CDATA[1TS101LMLBL5]]></mpn>
+            <ean>5212033638739</ean>
+          </variation>
+          <variation>
+            <variationid>40480183615645</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>37</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1TS101LMLBL6]]></manufacturersku>
+            <mpn><![CDATA[1TS101LMLBL6]]></mpn>
+            <ean>5212033638746</ean>
+          </variation>
+          <variation>
+            <variationid>40480184762525</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>39</size>
+            <quantity>10</quantity>
+            <manufacturersku><![CDATA[1TS101LMLBL8]]></manufacturersku>
+            <mpn><![CDATA[1TS101LMLBL8]]></mpn>
+            <ean>5212033638760</ean>
+          </variation>
+          <variation>
+            <variationid>40480186433693</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>41</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1TS101LMLBL10]]></manufacturersku>
+            <mpn><![CDATA[1TS101LMLBL10]]></mpn>
+            <ean>5212033638784</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Σανδάλια με λεπτά λουριά "Λέσβος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Δέρμα φιδιού. Διαθέσιμα νούμερα: 36,37,39,41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

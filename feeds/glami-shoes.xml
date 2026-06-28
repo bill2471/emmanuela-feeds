@@ -6990,7 +6990,7 @@
     <GTIN>05212033634205</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40480058146973</ITEM_ID>
+    <ITEM_ID>40480058245277</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Ποσειδών" - Καφέ]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-poseidon-men</URL>
     <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-522482.jpg?v=1653979435</IMGURL>
@@ -7001,14 +7001,14 @@
     <ITEMGROUP_ID>6856635908253</ITEMGROUP_ID>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-479862.jpg?v=1653979435</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-315427.jpg?v=1653979435</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-poseidon-men?variant=40480058146973</URL_SIZE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-poseidon-men?variant=40480058245277</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>καφέ</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>42, 43, 44, 45, 46, 47</VAL>
+      <VAL>43, 44, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -7019,7 +7019,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033634281</GTIN>
+    <GTIN>05212033634298</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480058507421</ITEM_ID>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-28 04:01</created_at>
+  <created_at>2026-06-28 09:14</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -60477,9 +60477,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40480058146973</id>
+        <id>40480058245277</id>
         <name><![CDATA[Ανδρικά σανδάλια παντόφλες "Ποσειδών" - Καφέ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-poseidon-men?variant=40480058146973]]></link>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-poseidon-men?variant=40480058245277]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-522482.jpg?v=1653979435]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-479862.jpg?v=1653979435]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-315427.jpg?v=1653979435]]></additionalimage>
@@ -60494,22 +60494,13 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <price_with_vat>59.00</price_with_vat>
         <vat>24.00</vat>
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1LI72MANLBRBR9]]></mpn>
-        <ean>5212033634281</ean>
+        <mpn><![CDATA[1LI72MANLBRBR10]]></mpn>
+        <ean>5212033634298</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>8</quantity>
+        <quantity>7</quantity>
         <color>Καφέ</color>
-        <size>42,43,44,45,46,47</size>
+        <size>43,44,45,46,47</size>
         <variations>
-          <variation>
-            <variationid>40480058146973</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>42</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI72MANLBRBR9]]></manufacturersku>
-            <mpn><![CDATA[1LI72MANLBRBR9]]></mpn>
-            <ean>5212033634281</ean>
-          </variation>
           <variation>
             <variationid>40480058245277</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
@@ -60556,7 +60547,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033600101</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Ποσειδών". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 42,43,44,45,46,47.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Ποσειδών". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 43,44,45,46,47.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

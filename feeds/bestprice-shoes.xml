@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-06-29 12:00</date>
+  <date>2026-06-29 16:48</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -6196,6 +6196,22 @@
       <MPN>1KL658LNAGOBE5</MPN>
       <color>μπεζ</color>
       <size>36,37,38,39,40,41,42</size>
+      <EAN>5212033601894</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>46729385509199</productId>
+      <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Σίφνος" - Μπεζ-Χρυσό]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-black-gold-sandals-sifnos</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/dermatina-sandalia-pantofles-sifnos-emmanuela-handcrafted-for-you-sandalia-pantofles-sifnos-372092_0a794b98-07bf-422c-af73-c0f185dd0d5c.jpg?v=1693824981</imageURL>
+      <price>65.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1KL658LNAGOBE5</MPN>
+      <color>μπεζ</color>
+      <size>36,37,38,40,41,42</size>
       <EAN>5212033601894</EAN>
       <shipping>0</shipping>
     </product>

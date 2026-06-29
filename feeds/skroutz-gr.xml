@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-29 16:09</created_at>
+  <created_at>2026-06-29 20:21</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1388,7 +1388,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -63109,6 +63109,69 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Flat πέδιλα παντόφλες με μαλακό πάτο "Ελπίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 40.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40480242794653</id>
+        <name><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Μαύρο]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-dionysius-men?variant=40480242794653]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-101480.jpg?v=1627375273]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-262758.jpg?v=1627293917]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-125698.jpg?v=1627293850]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-324324.jpg?v=1627293850]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-329078.jpg?v=1627293917]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-936449.jpg?v=1627293917]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-146475.jpg?v=1627293917]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-111435.jpg?v=1627293917]]></additionalimage>
+        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>69.00</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1LI74MANLBLBL8]]></mpn>
+        <ean>5212033635301</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>5</quantity>
+        <color>Μαύρο</color>
+        <size>41,42,43,45</size>
+        <variations>
+          <variation>
+            <variationid>40480242794653</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>41</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI74MANLBLBL8]]></manufacturersku>
+            <mpn><![CDATA[1LI74MANLBLBL8]]></mpn>
+            <ean>5212033635301</ean>
+          </variation>
+          <variation>
+            <variationid>40480242892957</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>42</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI74MANLBLBL9]]></manufacturersku>
+            <mpn><![CDATA[1LI74MANLBLBL9]]></mpn>
+            <ean>5212033635318</ean>
+          </variation>
+          <variation>
+            <variationid>40480242991261</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>43</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1LI74MANLBLBL10]]></manufacturersku>
+            <mpn><![CDATA[1LI74MANLBLBL10]]></mpn>
+            <ean>5212033635325</ean>
+          </variation>
+          <variation>
+            <variationid>40480243187869</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>45</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI74MANLBLBL12]]></manufacturersku>
+            <mpn><![CDATA[1LI74MANLBLBL12]]></mpn>
+            <ean>5212033635349</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 41,42,43,45.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

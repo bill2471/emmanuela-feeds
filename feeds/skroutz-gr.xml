@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-06-29 20:21</created_at>
+  <created_at>2026-06-30 03:55</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -19564,7 +19564,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1322M-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -39793,7 +39793,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[8052-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>18</quantity>
+        <quantity>17</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <description><![CDATA[Χαρακτηριστικά Προϊόντος
@@ -56556,9 +56556,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS1001LOWBE5]]></mpn>
         <ean>5212033639316</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Πάγος</color>
-        <size>36,37,38,39,40</size>
+        <size>36,37,38,40</size>
         <variations>
           <variation>
             <variationid>40479989268637</variationid>
@@ -56588,15 +56588,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033639330</ean>
           </variation>
           <variation>
-            <variationid>40479989989533</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>39</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1TS1001LOWBE8]]></manufacturersku>
-            <mpn><![CDATA[1TS1001LOWBE8]]></mpn>
-            <ean>5212033639347</ean>
-          </variation>
-          <variation>
             <variationid>40479990186141</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>40</size>
@@ -56606,7 +56597,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033639354</ean>
           </variation>
         </variations>
-        <description><![CDATA[Σανδάλια παντόφλες με σταυρωτά λουριά "Σκόπελος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Πάγος. Διαθέσιμα νούμερα: 36,37,38,39,40.]]></description>
+        <description><![CDATA[Σανδάλια παντόφλες με σταυρωτά λουριά "Σκόπελος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Πάγος. Διαθέσιμα νούμερα: 36,37,38,40.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

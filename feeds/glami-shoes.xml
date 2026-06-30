@@ -7623,7 +7623,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 41, 43, 44, 45, 46, 47</VAL>
+      <VAL>40, 41, 43, 44, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -10470,5 +10470,36 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033694377</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
+    <ITEM_ID>47213227802959</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Γυναικεία σανδάλια με κορδόνια "Χάλκη" - Μαύρο]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-brown-chalki</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL916LBL_1_57500cb7-58f8-4f9d-92c0-ae8f34b25352.jpg?v=1697608045</IMGURL>
+    <PRICE_VAT>76</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[Πήραν το όνομά τους από το μικρό, γαλήνιο νησί της Χάλκης στα Δωδεκάνησα, κι αυτά τα σανδάλια με κορδόνια τυλίγουν το πόδι σε λεπτά δερμάτινα λουριά που σας επιτρέπουν να ρυθμίσετε την εφαρμογή κατά βούληση. Με διαχρονική επίπεδη σιλουέτα ριζωμένη στον αρχαιοελληνικό σχεδιασμό, τα Χάλκη γεφυρώνουν το casual με το κομψό — εξίσου σωστά με φόρεμα όσο και με ένα κομψό σορτς. Χειροποίητα στην Ελλάδα από γνήσιο δέρμα, κάθε ζευγάρι διαθέτει σόλα 1,5 εκ. με αντιολισθητικό EVA και δερμάτινο πάτο που γίνεται πιο μαλακός με τον χρόνο. Τα κορδόνια κρατούν τα σανδάλια σταθερά στους μεγάλους περιπάτους, ενώ το φυσικό δέρμα αποκτά ζεστή πατίνα με τη χρήση. Συμβουλή μεγέθους: αυτό το σχέδιο εφαρμόζει μικρότερα από το κανονικό — ρίξε μια ματιά στο size chart και διάλεξε συνήθως ένα νούμερο μεγαλύτερο από αυτό που φοράς. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,5 cm Κούμπωμα: με κορδόνια Διαθέσιμο σε 3 χρώματα: καφέ, μαύρο, μπεζ φυσικό Μεγέθη: EU 36–42 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
+    <ITEMGROUP_ID>8662281486671</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/916_1_1bb75749-2265-4fec-b0e7-0bb5a0e1eee3.jpg?v=1697608045</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-brown-chalki?variant=47213227802959</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>μαύρο</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>36, 38, 39, 42</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033694261</GTIN>
   </SHOPITEM>
 </SHOP>

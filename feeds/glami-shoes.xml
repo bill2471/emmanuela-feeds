@@ -7392,7 +7392,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 42, 43, 44, 45</VAL>
+      <VAL>41, 42, 43, 44</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -8594,6 +8594,40 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033649391</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
+    <ITEM_ID>40480242892957</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Μαύρο]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-dionysius-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-101480.jpg?v=1627375273</IMGURL>
+    <PRICE_VAT>69</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[Ο Διόνυσος, θεός του κρασιού και του θεάτρου, έφερνε χαρά και κέφι όπου κι αν περνούσε. Αυτά τα ανδρικά σανδάλια μονομάχου κουβαλούν εκείνο το τολμηρό, κοινωνικό πνεύμα — ανοιχτές δερμάτινες λωρίδες σε αρχαίο πολεμικό σχέδιο που κάνει σίγουρη εντύπωση σε beach bar, δείπνο σε ταράτσα ή καλοκαιρινό γάμο. Φτιαγμένα στην Ελλάδα από γνήσιο δέρμα, τα Διόνυσος διαθέτουν σόλα 1,5 εκ. και δερμάτινο πάτο που μαλακώνει με τον χρόνο. Ο σχεδιασμός μονομάχου παραμένει πιστός στις αρχαίες ρίζες του, ενώ η σύγχρονη τεχνολογία σόλας εξασφαλίζει σταθερό πάτημα. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,5 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 3 χρώματα: μαύρο, μπεζ φυσικό, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856651735197</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-262758.jpg?v=1627293917</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-146475.jpg?v=1627293917</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-638408.jpg?v=1627293917</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-111435.jpg?v=1627293917</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-dionysius-men?variant=40480242892957</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>μαύρο</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>42, 43, 44</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033635318</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480250101917</ITEM_ID>

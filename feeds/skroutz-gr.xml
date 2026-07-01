@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-01 14:58</created_at>
+  <created_at>2026-07-01 20:18</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1362,7 +1362,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Γκρι]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Γκρι</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -54845,7 +54845,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TSA907LCIBE9]]></mpn>
         <ean>5212033644846</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Καφέ</color>
         <size>42,43,46</size>
         <variations>
@@ -54871,7 +54871,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40479959515293</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>46</size>
-            <quantity>2</quantity>
+            <quantity>1</quantity>
             <manufacturersku><![CDATA[1TSA907LCIBE13]]></manufacturersku>
             <mpn><![CDATA[1TSA907LCIBE13]]></mpn>
             <ean>5212033645393</ean>
@@ -59624,7 +59624,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS101LNABE5]]></mpn>
         <ean>5212033638807</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>80</quantity>
+        <quantity>79</quantity>
         <color>Μπεζ</color>
         <size>36,37,38,40,41,42</size>
         <variations>
@@ -59668,7 +59668,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40480042942621</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>41</size>
-            <quantity>23</quantity>
+            <quantity>22</quantity>
             <manufacturersku><![CDATA[1TS101LNABE10]]></manufacturersku>
             <mpn><![CDATA[1TS101LNABE10]]></mpn>
             <ean>5212033638852</ean>
@@ -61161,9 +61161,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI74MANLBLBL8]]></mpn>
         <ean>5212033635301</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Μαύρο</color>
-        <size>41,42,43,44,45</size>
+        <size>41,42,43,44</size>
         <variations>
           <variation>
             <variationid>40480091537565</variationid>
@@ -61201,17 +61201,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1LI74MANLBLBL11]]></mpn>
             <ean>5212033635332</ean>
           </variation>
-          <variation>
-            <variationid>40480091930781</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>45</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI74MANLBLBL12]]></manufacturersku>
-            <mpn><![CDATA[1LI74MANLBLBL12]]></mpn>
-            <ean>5212033635349</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 41,42,43,44,45.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 41,42,43,44.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -63055,6 +63046,60 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Flat πέδιλα παντόφλες με μαλακό πάτο "Ελπίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 40.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40480242892957</id>
+        <name><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Μαύρο]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-dionysius-men?variant=40480242892957]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-101480.jpg?v=1627375273]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-262758.jpg?v=1627293917]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-125698.jpg?v=1627293850]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-324324.jpg?v=1627293850]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-329078.jpg?v=1627293917]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-936449.jpg?v=1627293917]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-146475.jpg?v=1627293917]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-111435.jpg?v=1627293917]]></additionalimage>
+        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>69.00</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1LI74MANLBLBL9]]></mpn>
+        <ean>5212033635318</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>4</quantity>
+        <color>Μαύρο</color>
+        <size>42,43,44</size>
+        <variations>
+          <variation>
+            <variationid>40480242892957</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>42</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI74MANLBLBL9]]></manufacturersku>
+            <mpn><![CDATA[1LI74MANLBLBL9]]></mpn>
+            <ean>5212033635318</ean>
+          </variation>
+          <variation>
+            <variationid>40480242991261</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>43</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1LI74MANLBLBL10]]></manufacturersku>
+            <mpn><![CDATA[1LI74MANLBLBL10]]></mpn>
+            <ean>5212033635325</ean>
+          </variation>
+          <variation>
+            <variationid>40480243089565</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>44</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI74MANLBLBL11]]></manufacturersku>
+            <mpn><![CDATA[1LI74MANLBLBL11]]></mpn>
+            <ean>5212033635332</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 42,43,44.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

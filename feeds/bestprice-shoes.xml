@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-02 09:59</date>
+  <date>2026-07-02 15:02</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -702,6 +702,29 @@
       <color>μπεζ</color>
       <size>37,38,39,40</size>
       <EAN>5212033643085</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40479826477213</productId>
+      <title><![CDATA[Emmanuela Σανδάλια μονομάχου "Σαμοθράκη" - Μαύρο - Ροζ χρυσό]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-anaxilea</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-943475.jpg?v=1627294275</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-943475.jpg?v=1627294275</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-248655.jpg?v=1627294275</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-738401.jpg?v=1627294275</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-653136.jpg?v=1627294276</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-939897.jpg?v=1627294275</img5>
+      </imagesURL>
+      <price>64.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1KL838LMIBL5</MPN>
+      <color>μαύρο</color>
+      <size>36,37,38,40,41</size>
+      <EAN>5212033624046</EAN>
       <shipping>0</shipping>
     </product>
     <product>

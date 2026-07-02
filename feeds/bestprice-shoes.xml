@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-02 15:02</date>
+  <date>2026-07-02 20:28</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -1181,7 +1181,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1TS52LWHBE5</MPN>
       <color>λευκό</color>
-      <size>36,37,38,39,41</size>
+      <size>36,37,38,39</size>
       <EAN>5212033642507</EAN>
       <shipping>0</shipping>
     </product>
@@ -2911,7 +2911,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1TS103LWHBE5</MPN>
       <color>λευκό</color>
-      <size>36,37,38,39</size>
+      <size>36,38,39</size>
       <EAN>5212033638371</EAN>
       <shipping>0</shipping>
     </product>
@@ -4426,6 +4426,22 @@
       <color>τιρκουάζ</color>
       <size>36,38,39</size>
       <EAN>5212033633727</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40480066961565</productId>
+      <title><![CDATA[Emmanuela Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Καφέ]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-bacchus-men</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-301105.jpg?v=1627375104</imageURL>
+      <price>84.00</price>
+      <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1KL225LBRBR8</MPN>
+      <color>καφέ</color>
+      <size>41,45,46</size>
+      <EAN>5212033625197</EAN>
       <shipping>0</shipping>
     </product>
     <product>

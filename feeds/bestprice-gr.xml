@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-02 19:47</date>
+  <date>2026-07-03 03:11</date>
   <products>
     <product>
       <productId>31372692389923</productId>
@@ -11225,6 +11225,28 @@
         <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mono-andriko-skoylariki-me-stayro-apo-karfia-apo-ashmi-925-kosmhmata-emmanuela-608390.jpg?v=1767365558</img5>
       </imagesURL>
       <price>53.00</price>
+      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1323M</MPN>
+      <color>ασημί</color>
+      <weight>2</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>31374369161251</productId>
+      <title><![CDATA[Σκουλαρίκια ανδρικά με σταυρό από καρφιά χειροποίητα από ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/andriko-skoulariki-stayro-karfia</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1323_3.jpg?v=1767365564</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1323_3.jpg?v=1767365564</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mono-andriko-skoylariki-me-stayro-apo-karfia-apo-ashmi-925-kosmhmata-emmanuela-632499.jpg?v=1767365571</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mono-andriko-skoylariki-me-stayro-apo-karfia-apo-ashmi-925-kosmhmata-emmanuela-728747.jpg?v=1767365577</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mono-andriko-skoylariki-me-stayro-apo-karfia-apo-ashmi-925-kosmhmata-emmanuela-679451.jpg?v=1767365582</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img5>
+      </imagesURL>
+      <price>78.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-05 13:54</created_at>
+  <created_at>2026-07-05 19:41</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -54027,9 +54027,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40479899910301</id>
+        <id>40479900139677</id>
         <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη" - Χρυσό]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-red-circe?variant=40479899910301]]></link>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-red-circe?variant=40479900139677]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-337598.jpg?v=1653981761]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-472736.jpg?v=1627294647]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-652623.jpg?v=1627294647]]></additionalimage>
@@ -54044,22 +54044,13 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <price_with_vat>87.00</price_with_vat>
         <vat>24.00</vat>
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL310LRMBE7]]></mpn>
-        <ean>5212033621458</ean>
+        <mpn><![CDATA[1KL310LRMBE8]]></mpn>
+        <ean>5212033621472</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>2</quantity>
         <color>Χρυσό</color>
-        <size>38,39,40</size>
+        <size>39,40</size>
         <variations>
-          <variation>
-            <variationid>40479899910301</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>38</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL310LRMBE7]]></manufacturersku>
-            <mpn><![CDATA[1KL310LRMBE7]]></mpn>
-            <ean>5212033621458</ean>
-          </variation>
           <variation>
             <variationid>40479900139677</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
@@ -54079,7 +54070,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033621496</ean>
           </variation>
         </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 38,39,40.]]></description>
+        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 39,40.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

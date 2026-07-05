@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-05 09:16</created_at>
+  <created_at>2026-07-05 13:54</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1388,7 +1388,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -10844,7 +10844,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[8016-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>24</quantity>
+        <quantity>23</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>4</weight>
@@ -10874,7 +10874,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[8016-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>23</quantity>
+        <quantity>22</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>4</weight>
@@ -23389,7 +23389,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1313M-Γκρι]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Γκρι</color>
         <size>One Size</size>
         <weight>1</weight>
@@ -39265,7 +39265,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1313-Μαύρο]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Μαύρο</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -58605,9 +58605,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL847LWHBE6]]></mpn>
         <ean>5212033613484</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Λευκό</color>
-        <size>37,39</size>
+        <size>37</size>
         <variations>
           <variation>
             <variationid>40480003260573</variationid>
@@ -58618,8 +58618,43 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1KL847LWHBE6]]></mpn>
             <ean>5212033613484</ean>
           </variation>
+        </variations>
+        <description><![CDATA[Σανδάλια με λουριά "Κέρκυρα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 37.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40480003555485</id>
+        <name><![CDATA[Σανδάλια με λουριά "Κέρκυρα" - Λευκό]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-white-corfu?variant=40480003555485]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-kerkyra-emmanuela-handcrafted-for-you-sandalia-me-loyria-kerkyra-453925.jpg?v=1627375546]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-kerkyra-emmanuela-handcrafted-for-you-sandalia-me-loyria-kerkyra-194819.jpg?v=1627294083]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-kerkyra-emmanuela-handcrafted-for-you-sandalia-me-loyria-kerkyra-780810.jpg?v=1627294084]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-kerkyra-emmanuela-handcrafted-for-you-sandalia-me-loyria-kerkyra-391464.jpg?v=1627294084]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-kerkyra-emmanuela-handcrafted-for-you-sandalia-me-loyria-kerkyra-825102.jpg?v=1627294085]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-kerkyra-emmanuela-handcrafted-for-you-sandalia-me-loyria-kerkyra-727290.jpg?v=1627294085]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-kerkyra-emmanuela-handcrafted-for-you-sandalia-me-loyria-kerkyra-266859.jpg?v=1627294085]]></additionalimage>
+        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>32.90</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1KL847LWHBE6]]></mpn>
+        <ean>5212033613484</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>4</quantity>
+        <color>Λευκό</color>
+        <size>37,39</size>
+        <variations>
           <variation>
-            <variationid>40480003817629</variationid>
+            <variationid>40480003555485</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>37</size>
+            <quantity>3</quantity>
+            <manufacturersku><![CDATA[1KL847LWHBE6]]></manufacturersku>
+            <mpn><![CDATA[1KL847LWHBE6]]></mpn>
+            <ean>5212033613484</ean>
+          </variation>
+          <variation>
+            <variationid>40480004145309</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>39</size>
             <quantity>1</quantity>
@@ -60436,7 +60471,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS101LNABE5]]></mpn>
         <ean>5212033638807</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>80</quantity>
+        <quantity>79</quantity>
         <color>Μπεζ</color>
         <size>36,37,38,40,41,42</size>
         <variations>
@@ -60462,7 +60497,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40480042352797</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>38</size>
-            <quantity>6</quantity>
+            <quantity>5</quantity>
             <manufacturersku><![CDATA[1TS101LNABE7]]></manufacturersku>
             <mpn><![CDATA[1TS101LNABE7]]></mpn>
             <ean>5212033638821</ean>

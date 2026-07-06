@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-05 19:41</created_at>
+  <created_at>2026-07-06 03:25</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1388,7 +1388,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>7</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -53818,6 +53818,89 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Αμάλθεια". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 36,37.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40479898206365</id>
+        <name><![CDATA[Σανδάλια μονομάχου με κορδόνια "Ιοκάστη" - Χρυσό]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-silver-jocasta?variant=40479898206365]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-746543.jpg?v=1627294414]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-778860.jpg?v=1627294355]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-448438.jpg?v=1627294355]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-232513.jpg?v=1627294356]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-517257.jpg?v=1627294356]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-385174.jpg?v=1627294414]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-738680.jpg?v=1627294414]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-554497.jpg?v=1627294414]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-935989.jpg?v=1627294414]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-299714.jpg?v=1627294410]]></additionalimage>
+        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>54.72</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1LI140LRMBE5]]></mpn>
+        <ean>5212033628433</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>9</quantity>
+        <color>Χρυσό</color>
+        <size>36,37,38,40,41,42</size>
+        <variations>
+          <variation>
+            <variationid>40479898206365</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>36</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1LI140LRMBE5]]></manufacturersku>
+            <mpn><![CDATA[1LI140LRMBE5]]></mpn>
+            <ean>5212033628433</ean>
+          </variation>
+          <variation>
+            <variationid>40479898370205</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>37</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1LI140LRMBE6]]></manufacturersku>
+            <mpn><![CDATA[1LI140LRMBE6]]></mpn>
+            <ean>5212033628440</ean>
+          </variation>
+          <variation>
+            <variationid>40479898534045</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>38</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1LI140LRMBE7]]></manufacturersku>
+            <mpn><![CDATA[1LI140LRMBE7]]></mpn>
+            <ean>5212033628457</ean>
+          </variation>
+          <variation>
+            <variationid>40479898894493</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>40</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI140LRMBE9]]></manufacturersku>
+            <mpn><![CDATA[1LI140LRMBE9]]></mpn>
+            <ean>5212033628471</ean>
+          </variation>
+          <variation>
+            <variationid>40479899058333</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>41</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI140LRMBE10]]></manufacturersku>
+            <mpn><![CDATA[1LI140LRMBE10]]></mpn>
+            <ean>5212033628488</ean>
+          </variation>
+          <variation>
+            <variationid>40479899222173</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>42</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI140LRMBE11]]></manufacturersku>
+            <mpn><![CDATA[1LI140LRMBE11]]></mpn>
+            <ean>5212033628495</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Σανδάλια μονομάχου με κορδόνια "Ιοκάστη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 36,37,38,40,41,42.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

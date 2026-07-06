@@ -3024,6 +3024,36 @@
     <GTIN>5212033651486</GTIN>
   </SHOPITEM>
   <SHOPITEM>
+    <ITEM_ID>40479898206365</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Σανδάλια μονομάχου με κορδόνια "Ιοκάστη" - Ροζ χρυσό]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-silver-jocasta</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-746543.jpg?v=1627294414</IMGURL>
+    <PRICE_VAT>119</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1cm 👌 Δερμάτινος πάτος ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα αρχαιοελληνικά σανδάλια μονομάχου υψηλής ποιότητας 👟 Εξαιρετικά εύκαμπτα, άνετα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα δερμάτινα σανδάλια gladiator, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856621621405</ITEMGROUP_ID>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-silver-jocasta?variant=40479898206365</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>χρυσό</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>36, 37, 38, 40, 41, 42</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>5212033628433</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
     <ITEM_ID>40479899254941</ITEM_ID>
     <PRODUCTNAME><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη" - Κόκκινο]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-red-circe</URL>
@@ -7423,7 +7453,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 41, 43, 44, 45</VAL>
+      <VAL>40, 41, 43, 45</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>

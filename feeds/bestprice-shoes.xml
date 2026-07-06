@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-06 04:05</date>
+  <date>2026-07-06 11:21</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -1787,7 +1787,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1LI69TRLTBE5</MPN>
       <color>καφέ</color>
-      <size>36,37,38,39</size>
+      <size>36,37,39</size>
       <EAN>5212033632713</EAN>
       <shipping>0</shipping>
     </product>
@@ -1862,22 +1862,6 @@
       <color>λευκό</color>
       <size>36,37</size>
       <EAN>5212033651486</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40479898206365</productId>
-      <title><![CDATA[Emmanuela Σανδάλια μονομάχου με κορδόνια "Ιοκάστη" - Ροζ χρυσό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-silver-jocasta</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-746543.jpg?v=1627294414</imageURL>
-      <price>119.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1LI140LRMBE5</MPN>
-      <color>χρυσό</color>
-      <size>36,37,38,40,41,42</size>
-      <EAN>5212033628433</EAN>
       <shipping>0</shipping>
     </product>
     <product>

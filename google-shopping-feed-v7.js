@@ -859,8 +859,8 @@ function formatShippingTimeAttributes(countryCode) {
   return `
       <g:ships_from_country>GR</g:ships_from_country>
       <g:return_policy_label>${returnLabel}</g:return_policy_label>
-      <g:shipping_handling_business_days>Mon,Tue,Wed,Thu,Fri</g:shipping_handling_business_days>
-      <g:shipping_transit_business_days>Mon,Tue,Wed,Thu,Fri</g:shipping_transit_business_days>`;
+      <g:shipping_handling_business_days>Mon-Fri</g:shipping_handling_business_days>
+      <g:shipping_transit_business_days>Mon-Fri</g:shipping_transit_business_days>`;
 }
 
 

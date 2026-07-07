@@ -7428,7 +7428,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 42, 43, 44</VAL>
+      <VAL>41, 43, 44</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -7507,7 +7507,7 @@
     <GTIN>05212033624213</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40480107102365</ITEM_ID>
+    <ITEM_ID>40480107430045</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Μαύρο]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-leander-men</URL>
     <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-571696.jpg?v=1693476562</IMGURL>
@@ -7518,14 +7518,14 @@
     <ITEMGROUP_ID>6856640495773</ITEMGROUP_ID>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222_-_SIZE_CHART_v2.png?v=1780317071</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-613021.jpg?v=1693476562</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-leander-men?variant=40480107102365</URL_SIZE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-leander-men?variant=40480107430045</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 43, 45, 46, 47</VAL>
+      <VAL>43, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -7536,7 +7536,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033624336</GTIN>
+    <GTIN>05212033624374</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480124731549</ITEM_ID>
@@ -8632,7 +8632,7 @@
     <GTIN>05212033649391</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40480242892957</ITEM_ID>
+    <ITEM_ID>40480242991261</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Μαύρο]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-dionysius-men</URL>
     <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-101480.jpg?v=1627375273</IMGURL>
@@ -8645,14 +8645,14 @@
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-146475.jpg?v=1627293917</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-638408.jpg?v=1627293917</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-111435.jpg?v=1627293917</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-dionysius-men?variant=40480242892957</URL_SIZE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-dionysius-men?variant=40480242991261</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>42, 43, 44</VAL>
+      <VAL>43, 44</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -8663,7 +8663,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033635318</GTIN>
+    <GTIN>05212033635325</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480250101917</ITEM_ID>

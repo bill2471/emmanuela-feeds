@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-07 03:20</created_at>
+  <created_at>2026-07-07 10:05</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -8950,7 +8950,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[5062-Ασημί-45cm]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>7</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>7</weight>
@@ -40543,7 +40543,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-9755993735502-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>23</quantity>
+        <quantity>22</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <description><![CDATA[Χαρακτηριστικά Προϊόντος
@@ -62133,9 +62133,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI74MANLBLBL8]]></mpn>
         <ean>5212033635301</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>5</quantity>
+        <quantity>4</quantity>
         <color>Μαύρο</color>
-        <size>41,42,43,44</size>
+        <size>41,43,44</size>
         <variations>
           <variation>
             <variationid>40480091537565</variationid>
@@ -62145,15 +62145,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <manufacturersku><![CDATA[1LI74MANLBLBL8]]></manufacturersku>
             <mpn><![CDATA[1LI74MANLBLBL8]]></mpn>
             <ean>5212033635301</ean>
-          </variation>
-          <variation>
-            <variationid>40480091635869</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>42</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI74MANLBLBL9]]></manufacturersku>
-            <mpn><![CDATA[1LI74MANLBLBL9]]></mpn>
-            <ean>5212033635318</ean>
           </variation>
           <variation>
             <variationid>40480091734173</variationid>
@@ -62174,7 +62165,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033635332</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 41,42,43,44.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 41,43,44.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -62350,7 +62341,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL222LBLBL8]]></mpn>
         <ean>5212033624336</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>20</quantity>
+        <quantity>19</quantity>
         <color>Μαύρο</color>
         <size>41,43,45,46,47</size>
         <variations>
@@ -62358,7 +62349,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40480107102365</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>41</size>
-            <quantity>2</quantity>
+            <quantity>1</quantity>
             <manufacturersku><![CDATA[1KL222LBLBL8]]></manufacturersku>
             <mpn><![CDATA[1KL222LBLBL8]]></mpn>
             <ean>5212033624336</ean>
@@ -64048,9 +64039,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40480242892957</id>
+        <id>40480242991261</id>
         <name><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Μαύρο]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-dionysius-men?variant=40480242892957]]></link>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-dionysius-men?variant=40480242991261]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-101480.jpg?v=1627375273]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-262758.jpg?v=1627293917]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-125698.jpg?v=1627293850]]></additionalimage>
@@ -64063,22 +64054,13 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <price_with_vat>69.00</price_with_vat>
         <vat>24.00</vat>
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1LI74MANLBLBL9]]></mpn>
-        <ean>5212033635318</ean>
+        <mpn><![CDATA[1LI74MANLBLBL10]]></mpn>
+        <ean>5212033635325</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Μαύρο</color>
-        <size>42,43,44</size>
+        <size>43,44</size>
         <variations>
-          <variation>
-            <variationid>40480242892957</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>42</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI74MANLBLBL9]]></manufacturersku>
-            <mpn><![CDATA[1LI74MANLBLBL9]]></mpn>
-            <ean>5212033635318</ean>
-          </variation>
           <variation>
             <variationid>40480242991261</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
@@ -64098,7 +64080,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033635332</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 42,43,44.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 43,44.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-06 20:19</date>
+  <date>2026-07-07 03:19</date>
   <products>
     <product>
       <productId>31372692389923</productId>
@@ -2478,6 +2478,21 @@
       <color>ροζ</color>
       <size>XS,S,M,L</size>
       <weight>7</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>31373088948259</productId>
+      <title><![CDATA[Σκουλαρίκια ανόμοια κρεμαστά νότα κλειδί του σολ χειροποίητα από ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/kremasta-skoularikia-nota-kleidi-sol</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-anomoia-kremasta-skoylarikia-nota-kleidi-toy-sol-apo-ashmi-925-kosmhmata-emmanuela-990244.jpg?v=1748430249</imageURL>
+      <price>47.00</price>
+      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1109</MPN>
+      <color>ασημί</color>
+      <weight>5</weight>
       <shipping>0</shipping>
     </product>
     <product>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-08 08:52</created_at>
+  <created_at>2026-07-08 14:27</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1388,7 +1388,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -30896,7 +30896,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU636br-Ασημί-20-cm]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>1</quantity>
+        <quantity>2</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>6</weight>
@@ -32854,7 +32854,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/braxioli-galliko-kleidi-apo-ashmi-925-kosmhmata-emmanuela-372515.jpg?v=1767365491]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Βραχιόλια > Ανδρικά Βραχιόλια]]></category>
-        <price_with_vat>99.00</price_with_vat>
+        <price_with_vat>109.00</price_with_vat>
         <vat>24.00</vat>
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU075br]]></mpn>
@@ -49164,69 +49164,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40479792332957</id>
-        <name><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος" - Μαύρο]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men?variant=40479792332957]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-176162.jpg?v=1627375012]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-574668.jpg?v=1627293791]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-665447.jpg?v=1627293791]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-434916.jpg?v=1627293791]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-633174.jpg?v=1627293790]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-213182.jpg?v=1627293790]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-926947.jpg?v=1627293789]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-180020.jpg?v=1627293789]]></additionalimage>
-        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>73.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL213LBLBL8]]></mpn>
-        <ean>5212033624701</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
-        <color>Μαύρο</color>
-        <size>41,42,45,46</size>
-        <variations>
-          <variation>
-            <variationid>40479792332957</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL213LBLBL8]]></manufacturersku>
-            <mpn><![CDATA[1KL213LBLBL8]]></mpn>
-            <ean>5212033624701</ean>
-          </variation>
-          <variation>
-            <variationid>40479792562333</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>42</size>
-            <quantity>2</quantity>
-            <manufacturersku><![CDATA[1KL213LBLBL9]]></manufacturersku>
-            <mpn><![CDATA[1KL213LBLBL9]]></mpn>
-            <ean>5212033624725</ean>
-          </variation>
-          <variation>
-            <variationid>40479793381533</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>45</size>
-            <quantity>3</quantity>
-            <manufacturersku><![CDATA[1KL213LBLBL12]]></manufacturersku>
-            <mpn><![CDATA[1KL213LBLBL12]]></mpn>
-            <ean>5212033624787</ean>
-          </variation>
-          <variation>
-            <variationid>40479793905821</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>46</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL213LBLBL13]]></manufacturersku>
-            <mpn><![CDATA[1KL213LBLBL13]]></mpn>
-            <ean>5212033625913</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 41,42,45,46.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>40479792464029</id>
         <name><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος" - Καφέ]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men?variant=40479792464029]]></link>
@@ -49277,6 +49214,60 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,43,44.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40479792562333</id>
+        <name><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος" - Μαύρο]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men?variant=40479792562333]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-176162.jpg?v=1627375012]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-574668.jpg?v=1627293791]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-665447.jpg?v=1627293791]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-434916.jpg?v=1627293791]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-633174.jpg?v=1627293790]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-213182.jpg?v=1627293790]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-926947.jpg?v=1627293789]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-180020.jpg?v=1627293789]]></additionalimage>
+        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>73.00</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1KL213LBLBL9]]></mpn>
+        <ean>5212033624725</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>6</quantity>
+        <color>Μαύρο</color>
+        <size>42,45,46</size>
+        <variations>
+          <variation>
+            <variationid>40479792562333</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>42</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1KL213LBLBL9]]></manufacturersku>
+            <mpn><![CDATA[1KL213LBLBL9]]></mpn>
+            <ean>5212033624725</ean>
+          </variation>
+          <variation>
+            <variationid>40479793381533</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>45</size>
+            <quantity>3</quantity>
+            <manufacturersku><![CDATA[1KL213LBLBL12]]></manufacturersku>
+            <mpn><![CDATA[1KL213LBLBL12]]></mpn>
+            <ean>5212033624787</ean>
+          </variation>
+          <variation>
+            <variationid>40479793905821</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>46</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL213LBLBL13]]></manufacturersku>
+            <mpn><![CDATA[1KL213LBLBL13]]></mpn>
+            <ean>5212033625913</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 42,45,46.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -52585,6 +52576,53 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Σανδάλια μπότες με φερμουάρ "Νεφέλη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 37,40.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40479874351261</id>
+        <name><![CDATA[Σανδάλια μπότες με φερμουάρ "Νεφέλη" - Μαύρο]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-white-nephele?variant=40479874351261]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-fermoyar-nefelh-emmanuela-handcrafted-for-you-sandalia-mpotes-me-fermoyar-nefelh-727940_17ea869a-6efa-4e1f-b31e-ee2d89ee9812.jpg?v=1627294888]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/1KL135_6b04f1f9-a9b8-4ae6-ba0f-cf21fe3efc9b.jpg?v=1653980585]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-fermoyar-nefelh-emmanuela-handcrafted-for-you-sandalia-mpotes-me-fermoyar-nefelh-457506.jpg?v=1627294815]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-fermoyar-nefelh-emmanuela-handcrafted-for-you-sandalia-mpotes-me-fermoyar-nefelh-456821.jpg?v=1627294815]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-fermoyar-nefelh-emmanuela-handcrafted-for-you-sandalia-mpotes-me-fermoyar-nefelh-268830.jpg?v=1653980588]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-fermoyar-nefelh-emmanuela-handcrafted-for-you-sandalia-mpotes-me-fermoyar-nefelh-445551.jpg?v=1627294815]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-fermoyar-nefelh-emmanuela-handcrafted-for-you-sandalia-mpotes-me-fermoyar-nefelh-339639.jpg?v=1627294815]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-fermoyar-nefelh-emmanuela-handcrafted-for-you-sandalia-mpotes-me-fermoyar-nefelh-842035.jpg?v=1653980591]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-fermoyar-nefelh-emmanuela-handcrafted-for-you-sandalia-mpotes-me-fermoyar-nefelh-493904.jpg?v=1627294816]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-fermoyar-nefelh-emmanuela-handcrafted-for-you-sandalia-mpotes-me-fermoyar-nefelh-478853.jpg?v=1627294817]]></additionalimage>
+        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>62.78</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1KL135LBLBE5]]></mpn>
+        <ean>5212033622202</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>4</quantity>
+        <color>Μαύρο</color>
+        <size>36,41</size>
+        <variations>
+          <variation>
+            <variationid>40479874351261</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>36</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1KL135LBLBE5]]></manufacturersku>
+            <mpn><![CDATA[1KL135LBLBE5]]></mpn>
+            <ean>5212033622202</ean>
+          </variation>
+          <variation>
+            <variationid>40479875596445</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>41</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1KL135LBLBE10]]></manufacturersku>
+            <mpn><![CDATA[1KL135LBLBE10]]></mpn>
+            <ean>5212033622301</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Σανδάλια μπότες με φερμουάρ "Νεφέλη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 36,41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -61251,9 +61289,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI72MANLBRBR7]]></mpn>
         <ean>5212033634267</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Καφέ</color>
-        <size>40,43,44,45,46,47</size>
+        <size>40,44,45,46,47</size>
         <variations>
           <variation>
             <variationid>40480057950365</variationid>
@@ -61263,15 +61301,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <manufacturersku><![CDATA[1LI72MANLBRBR7]]></manufacturersku>
             <mpn><![CDATA[1LI72MANLBRBR7]]></mpn>
             <ean>5212033634267</ean>
-          </variation>
-          <variation>
-            <variationid>40480058245277</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>43</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI72MANLBRBR10]]></manufacturersku>
-            <mpn><![CDATA[1LI72MANLBRBR10]]></mpn>
-            <ean>5212033634298</ean>
           </variation>
           <variation>
             <variationid>40480058343581</variationid>
@@ -61310,7 +61339,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033600101</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Ποσειδών". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,43,44,45,46,47.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Ποσειδών". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,44,45,46,47.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -62314,7 +62343,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL222LBRBR8]]></mpn>
         <ean>5212033624459</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>9</quantity>
+        <quantity>8</quantity>
         <color>Καφέ</color>
         <size>41,43,44,46,47</size>
         <variations>
@@ -62340,7 +62369,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40480107757725</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>44</size>
-            <quantity>2</quantity>
+            <quantity>1</quantity>
             <manufacturersku><![CDATA[1KL222LBRBR11]]></manufacturersku>
             <mpn><![CDATA[1KL222LBRBR11]]></mpn>
             <ean>5212033624510</ean>

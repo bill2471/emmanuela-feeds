@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-08 09:31</date>
+  <date>2026-07-08 15:07</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -170,29 +170,6 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479792332957</productId>
-      <title><![CDATA[Emmanuela Ανδρικά ανατομικά σανδάλια "Μενέλαος" - Μαύρο]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-176162.jpg?v=1627375012</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-176162.jpg?v=1627375012</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-574668.jpg?v=1627293791</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-665447.jpg?v=1627293791</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-423770.jpg?v=1627293791</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-434916.jpg?v=1627293791</img5>
-      </imagesURL>
-      <price>73.00</price>
-      <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1KL213LBLBL8</MPN>
-      <color>μαύρο</color>
-      <size>41,42,45,46</size>
-      <EAN>5212033624701</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
       <productId>40479792464029</productId>
       <title><![CDATA[Emmanuela Ανδρικά ανατομικά σανδάλια "Μενέλαος" - Καφέ]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men</productURL>
@@ -210,6 +187,29 @@
       <color>καφέ</color>
       <size>41,43,44</size>
       <EAN>5212033624824</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40479792562333</productId>
+      <title><![CDATA[Emmanuela Ανδρικά ανατομικά σανδάλια "Μενέλαος" - Μαύρο]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-menelaus-men</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-176162.jpg?v=1627375012</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-176162.jpg?v=1627375012</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-574668.jpg?v=1627293791</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-665447.jpg?v=1627293791</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-423770.jpg?v=1627293791</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-anatomika-sandalia-menelaos-emmanuela-handcrafted-for-you-andrika-anatomika-sandalia-menelaos-434916.jpg?v=1627293791</img5>
+      </imagesURL>
+      <price>73.00</price>
+      <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1KL213LBLBL9</MPN>
+      <color>μαύρο</color>
+      <size>42,45,46</size>
+      <EAN>5212033624725</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1369,6 +1369,27 @@
       <color>μπεζ</color>
       <size>37,40</size>
       <EAN>5212033622097</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40479874351261</productId>
+      <title><![CDATA[Emmanuela Σανδάλια μπότες με φερμουάρ "Νεφέλη" - Μαύρο]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-nephele</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-fermoyar-nefelh-emmanuela-handcrafted-for-you-sandalia-mpotes-me-fermoyar-nefelh-727940_17ea869a-6efa-4e1f-b31e-ee2d89ee9812.jpg?v=1627294888</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-fermoyar-nefelh-emmanuela-handcrafted-for-you-sandalia-mpotes-me-fermoyar-nefelh-727940_17ea869a-6efa-4e1f-b31e-ee2d89ee9812.jpg?v=1627294888</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/1KL135_6b04f1f9-a9b8-4ae6-ba0f-cf21fe3efc9b.jpg?v=1653980585</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-fermoyar-nefelh-emmanuela-handcrafted-for-you-sandalia-mpotes-me-fermoyar-nefelh-620195_a337fe6e-fe2d-47ca-9e6e-8d8ea1d1d421.jpg?v=1653980585</img3>
+      </imagesURL>
+      <price>139.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1KL135LBLBE5</MPN>
+      <color>μαύρο</color>
+      <size>36,41</size>
+      <EAN>5212033622202</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4318,7 +4339,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1LI72MANLBRBR7</MPN>
       <color>καφέ</color>
-      <size>40,43,44,45,46,47</size>
+      <size>40,44,45,46,47</size>
       <EAN>5212033634267</EAN>
       <shipping>0</shipping>
     </product>

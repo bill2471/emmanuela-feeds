@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-09 15:22</created_at>
+  <created_at>2026-07-09 20:10</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -57021,7 +57021,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS15LNABE7]]></mpn>
         <ean>5212033641449</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>11</quantity>
+        <quantity>10</quantity>
         <color>Μπεζ</color>
         <size>38,42</size>
         <variations>
@@ -57029,7 +57029,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40479977078941</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>38</size>
-            <quantity>10</quantity>
+            <quantity>9</quantity>
             <manufacturersku><![CDATA[1TS15LNABE7]]></manufacturersku>
             <mpn><![CDATA[1TS15LNABE7]]></mpn>
             <ean>5212033641449</ean>
@@ -63410,7 +63410,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL735LMDBE5]]></mpn>
         <ean>5212033614924</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Λευκό</color>
         <size>36,38</size>
         <variations>
@@ -63427,7 +63427,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40480169394333</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>38</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[1KL735LMDBE7]]></manufacturersku>
             <mpn><![CDATA[1KL735LMDBE7]]></mpn>
             <ean>5212033614962</ean>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-09 03:12</created_at>
+  <created_at>2026-07-09 10:02</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -10676,7 +10676,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[8009-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>24</quantity>
+        <quantity>23</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>3</weight>
@@ -18809,7 +18809,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1321M-Μαύρο]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Μαύρο</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -50562,70 +50562,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40479826477213</id>
-        <name><![CDATA[Σανδάλια μονομάχου "Σαμοθράκη" - Μαύρο]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-white-anaxilea?variant=40479826477213]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-943475.jpg?v=1627294275]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-543159.jpg?v=1627294274]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-482780.jpg?v=1627294274]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-226406.jpg?v=1627294275]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-272048.jpg?v=1627294275]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-694162.jpg?v=1627294276]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-428261.jpg?v=1627294276]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-910934.jpg?v=1627294268]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-199774.jpg?v=1627294268]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>32.90</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL838LMIBL5]]></mpn>
-        <ean>5212033624046</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
-        <color>Μαύρο</color>
-        <size>36,37,38,41</size>
-        <variations>
-          <variation>
-            <variationid>40479826477213</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>36</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL838LMIBL5]]></manufacturersku>
-            <mpn><![CDATA[1KL838LMIBL5]]></mpn>
-            <ean>5212033624046</ean>
-          </variation>
-          <variation>
-            <variationid>40479826608285</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>37</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL838LMIBL6]]></manufacturersku>
-            <mpn><![CDATA[1KL838LMIBL6]]></mpn>
-            <ean>5212033624060</ean>
-          </variation>
-          <variation>
-            <variationid>40479826739357</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>38</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL838LMIBL7]]></manufacturersku>
-            <mpn><![CDATA[1KL838LMIBL7]]></mpn>
-            <ean>5212033624084</ean>
-          </variation>
-          <variation>
-            <variationid>40479827755165</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL838LMIBL10]]></manufacturersku>
-            <mpn><![CDATA[1KL838LMIBL10]]></mpn>
-            <ean>5212033624145</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Σανδάλια μονομάχου "Σαμοθράκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 36,37,38,41.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>40479829262493</id>
         <name><![CDATA[Σανδάλια μονομάχου με φτερά "Ερμιόνη" - Χρυσό]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-rose-gold-hermione?variant=40479829262493]]></link>
@@ -53688,9 +53624,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI69TRLBLBL5]]></mpn>
         <ean>5212033632645</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>13</quantity>
+        <quantity>14</quantity>
         <color>Μαύρο</color>
-        <size>36,37,40,41,42</size>
+        <size>36,37,39,40,41,42</size>
         <variations>
           <variation>
             <variationid>40479891456157</variationid>
@@ -53709,6 +53645,15 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <manufacturersku><![CDATA[1LI69TRLBLBL6]]></manufacturersku>
             <mpn><![CDATA[1LI69TRLBLBL6]]></mpn>
             <ean>5212033632652</ean>
+          </variation>
+          <variation>
+            <variationid>40479891947677</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>39</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI69TRLBLBL8]]></manufacturersku>
+            <mpn><![CDATA[1LI69TRLBLBL8]]></mpn>
+            <ean>5212033632676</ean>
           </variation>
           <variation>
             <variationid>40479892144285</variationid>
@@ -53738,7 +53683,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033632706</ean>
           </variation>
         </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Αμάλθεια". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 36,37,40,41,42.]]></description>
+        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Αμάλθεια". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 36,37,39,40,41,42.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -54201,9 +54146,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL310LCOBE9]]></mpn>
         <ean>5212033621236</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
+        <quantity>1</quantity>
         <color>Κοραλί</color>
-        <size>40,41</size>
+        <size>40</size>
         <variations>
           <variation>
             <variationid>40479900270749</variationid>
@@ -54214,17 +54159,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1KL310LCOBE9]]></mpn>
             <ean>5212033621236</ean>
           </variation>
-          <variation>
-            <variationid>40479900500125</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL310LCOBE10]]></manufacturersku>
-            <mpn><![CDATA[1KL310LCOBE10]]></mpn>
-            <ean>5212033621250</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Κοραλί. Διαθέσιμα νούμερα: 40,41.]]></description>
+        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Κοραλί. Διαθέσιμα νούμερα: 40.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -56709,7 +56645,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS103LBLBL6]]></mpn>
         <ean>5212033638319</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>65</quantity>
+        <quantity>64</quantity>
         <color>Μαύρο</color>
         <size>37,38,39,40,41,42</size>
         <variations>
@@ -56726,7 +56662,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40479972425885</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>38</size>
-            <quantity>15</quantity>
+            <quantity>14</quantity>
             <manufacturersku><![CDATA[1TS103LBLBL7]]></manufacturersku>
             <mpn><![CDATA[1TS103LBLBL7]]></mpn>
             <ean>5212033638326</ean>
@@ -64353,62 +64289,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Σανδάλια παντόφλες με μαίανδρους "Ίος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 38.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>40480268517533</id>
-        <name><![CDATA[Flat πέδιλα "Αρτεμις" - Τιρκουάζ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-turquoise-leather-sandals-artemis?variant=40480268517533]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-375367.jpg?v=1627374037]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-207956.jpg?v=1627293321]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-474131.jpg?v=1627293264]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-487950.jpg?v=1627293264]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-623179.jpg?v=1627293264]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-749851.jpg?v=1627293278]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-574348.jpg?v=1627293278]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-222877.jpg?v=1627293278]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-675533.jpg?v=1627293250]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-474583.jpg?v=1627293250]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>46.90</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL839LTUBE5]]></mpn>
-        <ean>5212033620345</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
-        <color>Τιρκουάζ</color>
-        <size>36,37,38</size>
-        <variations>
-          <variation>
-            <variationid>40480268517533</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>36</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL839LTUBE5]]></manufacturersku>
-            <mpn><![CDATA[1KL839LTUBE5]]></mpn>
-            <ean>5212033620345</ean>
-          </variation>
-          <variation>
-            <variationid>40480268681373</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>37</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL839LTUBE6]]></manufacturersku>
-            <mpn><![CDATA[1KL839LTUBE6]]></mpn>
-            <ean>5212033620369</ean>
-          </variation>
-          <variation>
-            <variationid>40480268845213</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>38</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL839LTUBE7]]></manufacturersku>
-            <mpn><![CDATA[1KL839LTUBE7]]></mpn>
-            <ean>5212033620383</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Flat πέδιλα "Αρτεμις". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Τιρκουάζ. Διαθέσιμα νούμερα: 36,37,38.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

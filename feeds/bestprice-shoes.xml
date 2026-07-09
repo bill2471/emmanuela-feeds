@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-09 03:52</date>
+  <date>2026-07-09 10:42</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -683,29 +683,6 @@
       <color>μπεζ</color>
       <size>37,38,39,40</size>
       <EAN>5212033643085</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40479826477213</productId>
-      <title><![CDATA[Emmanuela Σανδάλια μονομάχου "Σαμοθράκη" - Μαύρο - Ροζ χρυσό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-anaxilea</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-943475.jpg?v=1627294275</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-943475.jpg?v=1627294275</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-248655.jpg?v=1627294275</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-738401.jpg?v=1627294275</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-653136.jpg?v=1627294276</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-samothrakh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-samothrakh-939897.jpg?v=1627294275</img5>
-      </imagesURL>
-      <price>64.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1KL838LMIBL5</MPN>
-      <color>μαύρο</color>
-      <size>36,37,38,41</size>
-      <EAN>5212033624046</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -1792,7 +1769,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1LI69TRLBLBL5</MPN>
       <color>μαύρο</color>
-      <size>36,37,40,41,42</size>
+      <size>36,37,39,40,41,42</size>
       <EAN>5212033632645</EAN>
       <shipping>0</shipping>
     </product>
@@ -1952,7 +1929,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL310LCOBE9</MPN>
       <color>κοραλί</color>
-      <size>40,41</size>
+      <size>40</size>
       <EAN>5212033621236</EAN>
       <shipping>0</shipping>
     </product>
@@ -5499,29 +5476,6 @@
       <color>λευκό</color>
       <size>38</size>
       <EAN>5212033629980</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40480268517533</productId>
-      <title><![CDATA[Emmanuela Flat πέδιλα "Αρτεμις" - Τιρκουάζ]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-turquoise-leather-sandals-artemis</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-375367.jpg?v=1627374037</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-375367.jpg?v=1627374037</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-207956.jpg?v=1627293321</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-441887.jpg?v=1627293321</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-813512.jpg?v=1627293321</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-artemis-emmanuela-handcrafted-for-you-flat-pedila-artemis-257086.jpg?v=1627293321</img5>
-      </imagesURL>
-      <price>69.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1KL839LTUBE5</MPN>
-      <color>τιρκουάζ</color>
-      <size>36,37,38</size>
-      <EAN>5212033620345</EAN>
       <shipping>0</shipping>
     </product>
     <product>

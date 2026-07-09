@@ -219,7 +219,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 42, 43, 45, 46, 47</VAL>
+      <VAL>41, 42, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -4278,7 +4278,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>46</VAL>
+      <VAL>46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -4290,6 +4290,39 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033626323</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
+    <ITEM_ID>43873661288677</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος" - Καφέ]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-icarus-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-189678.jpg?v=1627293852</IMGURL>
+    <PRICE_VAT>59</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[Ο Ίκαρος πέταξε πολύ κοντά στον ήλιο — μια ιστορία που μιλά για φιλοδοξία, ελευθερία και τη συγκίνηση του να σπας τα όρια. Αυτά τα ανδρικά σανδάλια με χιαστί λωρίδες μεταφέρουν εκείνο το τολμηρό πνεύμα, με σχέδιο X σε δέρμα που κάθεται σταθερά στο πόδι, έτοιμο για ό,τι φέρει η καλοκαιρινή μέρα. Φτιαγμένα στο χέρι στην Ελλάδα από γνήσιο δέρμα, τα Ίκαρος διαθέτουν σόλα 1,5 εκ. και δερμάτινο πάτο που αποκτά το σχήμα του ποδιού σας. Το χιαστί σχέδιο προσθέτει οπτικό ενδιαφέρον, ενώ η φόρμα χωρίς κούμπωμα κρατά τα πάντα αβίαστα. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,5 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 3 χρώματα: μπεζ φυσικό, μαύρο, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856627716253</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-364661.jpg?v=1627293852</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-576233.jpg?v=1627293852</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-751400.jpg?v=1627293852</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-icarus-men?variant=43873661288677</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>καφέ</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>5212033600019</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40479963807901</ITEM_ID>
@@ -7137,7 +7170,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 43, 45, 46, 47</VAL>
+      <VAL>41, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -7363,7 +7396,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 41, 43, 45</VAL>
+      <VAL>40, 41, 43, 44, 45</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -7440,6 +7473,38 @@
     <GTIN>05212033635318</GTIN>
   </SHOPITEM>
   <SHOPITEM>
+    <ITEM_ID>40480107004061</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Μαύρο]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-leander-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-571696.jpg?v=1693476562</IMGURL>
+    <PRICE_VAT>65</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[Πήραν το όνομα του μυθικού κολυμβητή που διέσχιζε τον Ελλήσποντο κάθε νύχτα από έρωτα, κι αυτά τα ανδρικά δερμάτινα σανδάλια είναι φτιαγμένα για θερμοκαιρικές περιπέτειες. Ο ανοιχτός σχεδιασμός μονομάχου αφήνει τα πόδια να αναπνέουν, ενώ η γερή κατασκευή ανταπεξέρχεται σε παραλιακούς πεζόδρομους και δρόμους πόλης. Χειροποίητα στην Ελλάδα από γνήσιο δέρμα, κάθε ζευγάρι αποκτά πλούσια πατίνα με τη χρήση. Η σόλα EVA 1,8 εκ. πατά αξιόπιστα σε βρεγμένες επιφάνειες, κι ο δερμάτινος πάτος αποκτά σταδιακά τα ανάγλυφα του ποδιού σας. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,8 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 4 χρώματα: σκούρο καφέ, μπεζ φυσικό, μαύρο, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856640495773</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222_-_SIZE_CHART_v2.png?v=1780317071</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-613021.jpg?v=1693476562</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-leander-men?variant=40480107004061</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>μαύρο</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>40, 43, 45, 46, 47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033624312</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
     <ITEM_ID>46729228222799</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Σκούρο Καφέ]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-leander-men</URL>
@@ -7503,38 +7568,6 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033624213</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>40480107430045</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Μαύρο]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-leander-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-571696.jpg?v=1693476562</IMGURL>
-    <PRICE_VAT>65</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[Πήραν το όνομα του μυθικού κολυμβητή που διέσχιζε τον Ελλήσποντο κάθε νύχτα από έρωτα, κι αυτά τα ανδρικά δερμάτινα σανδάλια είναι φτιαγμένα για θερμοκαιρικές περιπέτειες. Ο ανοιχτός σχεδιασμός μονομάχου αφήνει τα πόδια να αναπνέουν, ενώ η γερή κατασκευή ανταπεξέρχεται σε παραλιακούς πεζόδρομους και δρόμους πόλης. Χειροποίητα στην Ελλάδα από γνήσιο δέρμα, κάθε ζευγάρι αποκτά πλούσια πατίνα με τη χρήση. Η σόλα EVA 1,8 εκ. πατά αξιόπιστα σε βρεγμένες επιφάνειες, κι ο δερμάτινος πάτος αποκτά σταδιακά τα ανάγλυφα του ποδιού σας. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,8 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 4 χρώματα: σκούρο καφέ, μπεζ φυσικό, μαύρο, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856640495773</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222_-_SIZE_CHART_v2.png?v=1780317071</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-613021.jpg?v=1693476562</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-leander-men?variant=40480107430045</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>μαύρο</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>43, 45, 46, 47</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033624374</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480124731549</ITEM_ID>

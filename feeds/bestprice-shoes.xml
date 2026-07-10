@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-10 15:29</date>
+  <date>2026-07-10 20:31</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -272,6 +272,29 @@
       <color>μπλε</color>
       <size>41</size>
       <EAN>5212033635998</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40479796035741</productId>
+      <title><![CDATA[Emmanuela Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Καφέ]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-brown-bacchus-men</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-176961.jpg?v=1627375101</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-176961.jpg?v=1627375101</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-179808.jpg?v=1627293788</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-282636.jpg?v=1627293788</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-693793.jpg?v=1660111843</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-996920.jpg?v=1660111843</img5>
+      </imagesURL>
+      <price>84.00</price>
+      <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1KL225LBRBR8</MPN>
+      <color>καφέ</color>
+      <size>41,42,46,47</size>
+      <EAN>5212033625197</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2555,29 +2578,6 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479959056541</productId>
-      <title><![CDATA[Emmanuela Ανδρικά σανδάλια με χιαστί λουριά "Δαίδαλος" - Μαύρο]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-brown-daedalus-men</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-daidalos-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-daidalos-311271.jpg?v=1627293854</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-daidalos-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-daidalos-311271.jpg?v=1627293854</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-daidalos-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-daidalos-860435.jpg?v=1627293855</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-daidalos-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-daidalos-589185.jpg?v=1627293855</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-daidalos-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-daidalos-139442.jpg?v=1627293855</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-daidalos-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-daidalos-287512.jpg?v=1627293855</img5>
-      </imagesURL>
-      <price>49.00</price>
-      <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1TSA907LBLBL8</MPN>
-      <color>μαύρο</color>
-      <size>41,42</size>
-      <EAN>5212033644907</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
       <productId>40479959089309</productId>
       <title><![CDATA[Emmanuela Ανδρικά σανδάλια με χιαστί λουριά "Δαίδαλος" - Σουέντ Καφέ]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-brown-daedalus-men</productURL>
@@ -2596,6 +2596,29 @@
       <color>καφέ</color>
       <size>42,43,46</size>
       <EAN>5212033644846</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40479959154845</productId>
+      <title><![CDATA[Emmanuela Ανδρικά σανδάλια με χιαστί λουριά "Δαίδαλος" - Μαύρο]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-brown-daedalus-men</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-daidalos-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-daidalos-311271.jpg?v=1627293854</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-daidalos-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-daidalos-311271.jpg?v=1627293854</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-daidalos-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-daidalos-860435.jpg?v=1627293855</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-daidalos-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-daidalos-589185.jpg?v=1627293855</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-daidalos-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-daidalos-139442.jpg?v=1627293855</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-daidalos-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-daidalos-287512.jpg?v=1627293855</img5>
+      </imagesURL>
+      <price>49.00</price>
+      <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1TSA907LBLBL9</MPN>
+      <color>μαύρο</color>
+      <size>42</size>
+      <EAN>5212033644914</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2994,6 +3017,29 @@
       <color>καφέ</color>
       <size>45,46</size>
       <EAN>5212033645447</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40479974588573</productId>
+      <title><![CDATA[Emmanuela Ανδρικά σανδάλια με κούμπωμα "Έρως" - Μπεζ φυσικό]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-eros-men</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-koympwma-erws-emmanuela-handcrafted-for-you-andrika-sandalia-me-koympwma-erws-873321.jpg?v=1627375109</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-koympwma-erws-emmanuela-handcrafted-for-you-andrika-sandalia-me-koympwma-erws-873321.jpg?v=1627375109</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-koympwma-erws-emmanuela-handcrafted-for-you-andrika-sandalia-me-koympwma-erws-841177.jpg?v=1627293849</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-koympwma-erws-emmanuela-handcrafted-for-you-andrika-sandalia-me-koympwma-erws-897035.jpg?v=1627293849</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-koympwma-erws-emmanuela-handcrafted-for-you-andrika-sandalia-me-koympwma-erws-775837.jpg?v=1627293849</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-koympwma-erws-emmanuela-handcrafted-for-you-andrika-sandalia-me-koympwma-erws-583700.jpg?v=1627293849</img5>
+      </imagesURL>
+      <price>49.00</price>
+      <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1TSA908LNABE9</MPN>
+      <color>μπεζ</color>
+      <size>42</size>
+      <EAN>5212033644990</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5351,6 +5397,27 @@
       <color>λευκό</color>
       <size>40</size>
       <EAN>5212033649391</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40480250200221</productId>
+      <title><![CDATA[Emmanuela Ανδρικά σανδάλια παντόφλες "Ποσειδών" - Καφέ]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-poseidon-men-1</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-409789.jpg?v=1653979437</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-409789.jpg?v=1653979437</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-726994.jpg?v=1653979437</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-poseidwn-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-poseidwn-406798.jpg?v=1653979437</img3>
+      </imagesURL>
+      <price>59.00</price>
+      <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1LI72MANLBRBR7</MPN>
+      <color>καφέ</color>
+      <size>40,44,45,47</size>
+      <EAN>5212033634267</EAN>
       <shipping>0</shipping>
     </product>
     <product>

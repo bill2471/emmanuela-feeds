@@ -352,67 +352,74 @@ function translateProductType(greekType, language) {
 
 const DOMAIN = 'emmanuela.shoes';
 
+// ⚠ PATHS (fixed 2026-07-10): live market URLs are /{lang}-{cc} subfolders (verified against the
+// storefront hreflang cluster). Bare /{cc} paths DO NOT EXIST → they 404'd and caused ~4,900
+// landing_page_error disapprovals per country in GMC. Only el/en/fr/de/cs exist as language-only
+// folders (primary market). Working reference pattern = the Shopify Google app links:
+// /{lang}-{cc}/products/{handle}?variant=…&country={CC}&currency={CUR}
 const MARKETS = {
   // PRIMARY — Greece (no subfolder)
   GR: { country: 'GR', language: 'el', currency: 'EUR', locale: 'el', path: '', priority: 0, name: 'Greece' },
 
   // TIER 1 — Major EU
-  DE: { country: 'DE', language: 'de', currency: 'EUR', locale: 'de', path: '/de', priority: 1, name: 'Germany' },
-  FR: { country: 'FR', language: 'fr', currency: 'EUR', locale: 'fr', path: '/fr', priority: 1, name: 'France' },
-  IT: { country: 'IT', language: 'it', currency: 'EUR', locale: 'it', path: '/it', priority: 1, name: 'Italy' },
-  ES: { country: 'ES', language: 'es', currency: 'EUR', locale: 'es', path: '/es', priority: 1, name: 'Spain' },
-  GB: { country: 'GB', language: 'en', currency: 'GBP', locale: 'en', path: '/gb', priority: 1, name: 'United Kingdom' },
-  NL: { country: 'NL', language: 'nl', currency: 'EUR', locale: 'nl', path: '/nl', priority: 1, name: 'Netherlands' },
-  AT: { country: 'AT', language: 'de', currency: 'EUR', locale: 'de', path: '/at', priority: 1, name: 'Austria' },
-  BE: { country: 'BE', language: 'fr', currency: 'EUR', locale: 'fr', path: '/be', priority: 1, name: 'Belgium' },
+  DE: { country: 'DE', language: 'de', currency: 'EUR', locale: 'de', path: '/de-de', priority: 1, name: 'Germany' },
+  FR: { country: 'FR', language: 'fr', currency: 'EUR', locale: 'fr', path: '/fr-fr', priority: 1, name: 'France' },
+  IT: { country: 'IT', language: 'it', currency: 'EUR', locale: 'it', path: '/it-it', priority: 1, name: 'Italy' },
+  ES: { country: 'ES', language: 'es', currency: 'EUR', locale: 'es', path: '/es-es', priority: 1, name: 'Spain' },
+  GB: { country: 'GB', language: 'en', currency: 'GBP', locale: 'en', path: '/en-gb', priority: 1, name: 'United Kingdom' },
+  NL: { country: 'NL', language: 'nl', currency: 'EUR', locale: 'nl', path: '/nl-nl', priority: 1, name: 'Netherlands' },
+  AT: { country: 'AT', language: 'de', currency: 'EUR', locale: 'de', path: '/de-at', priority: 1, name: 'Austria' },
+  BE: { country: 'BE', language: 'fr', currency: 'EUR', locale: 'fr', path: '/fr-be', priority: 1, name: 'Belgium' },
 
   // TIER 2 — EU
-  PL: { country: 'PL', language: 'pl', currency: 'PLN', locale: 'pl', path: '/pl', priority: 2, name: 'Poland' },
-  CZ: { country: 'CZ', language: 'cs', currency: 'CZK', locale: 'cs', path: '/cz', priority: 2, name: 'Czech Republic' },
-  RO: { country: 'RO', language: 'ro', currency: 'RON', locale: 'ro', path: '/ro', priority: 2, name: 'Romania' },
-  HU: { country: 'HU', language: 'en', currency: 'HUF', locale: 'en', path: '/hu', priority: 2, name: 'Hungary' },
-  SE: { country: 'SE', language: 'sv', currency: 'SEK', locale: 'sv', path: '/se', priority: 2, name: 'Sweden' },
-  DK: { country: 'DK', language: 'da', currency: 'DKK', locale: 'da', path: '/dk', priority: 2, name: 'Denmark' },
-  FI: { country: 'FI', language: 'fi', currency: 'EUR', locale: 'fi', path: '/fi', priority: 2, name: 'Finland' },
-  PT: { country: 'PT', language: 'pt', currency: 'EUR', locale: 'pt-PT', path: '/pt', priority: 2, name: 'Portugal' },
-  IE: { country: 'IE', language: 'en', currency: 'EUR', locale: 'en', path: '/ie', priority: 2, name: 'Ireland' },
-  SK: { country: 'SK', language: 'en', currency: 'EUR', locale: 'en', path: '/sk', priority: 2, name: 'Slovakia' },
-  SI: { country: 'SI', language: 'en', currency: 'EUR', locale: 'en', path: '/si', priority: 2, name: 'Slovenia' },
-  BG: { country: 'BG', language: 'en', currency: 'BGN', locale: 'en', path: '/bg', priority: 2, name: 'Bulgaria' },
-  HR: { country: 'HR', language: 'en', currency: 'EUR', locale: 'en', path: '/gb', priority: 2, name: 'Croatia' },  // No dedicated subfolder — use /gb (EN hub)
-  CY: { country: 'CY', language: 'el', currency: 'EUR', locale: 'el', path: '/cy', priority: 2, name: 'Cyprus' },
-  EE: { country: 'EE', language: 'en', currency: 'EUR', locale: 'en', path: '/ee', priority: 2, name: 'Estonia' },
-  LV: { country: 'LV', language: 'en', currency: 'EUR', locale: 'en', path: '/lv', priority: 2, name: 'Latvia' },
-  LT: { country: 'LT', language: 'en', currency: 'EUR', locale: 'en', path: '/lt', priority: 2, name: 'Lithuania' },
-  MT: { country: 'MT', language: 'mt', currency: 'EUR', locale: 'mt', path: '/mt', priority: 2, name: 'Malta' },
-  LU: { country: 'LU', language: 'de', currency: 'EUR', locale: 'de', path: '/lu', priority: 2, name: 'Luxembourg' },
+  PL: { country: 'PL', language: 'pl', currency: 'PLN', locale: 'pl', path: '/pl-pl', priority: 2, name: 'Poland' },
+  CZ: { country: 'CZ', language: 'cs', currency: 'CZK', locale: 'cs', path: '/cs-cz', priority: 2, name: 'Czech Republic' },
+  RO: { country: 'RO', language: 'ro', currency: 'RON', locale: 'ro', path: '/ro-ro', priority: 2, name: 'Romania' },
+  HU: { country: 'HU', language: 'en', currency: 'HUF', locale: 'en', path: '/en-hu', priority: 2, name: 'Hungary' },
+  SE: { country: 'SE', language: 'sv', currency: 'SEK', locale: 'sv', path: '/sv-se', priority: 2, name: 'Sweden' },
+  DK: { country: 'DK', language: 'da', currency: 'DKK', locale: 'da', path: '/da-dk', priority: 2, name: 'Denmark' },
+  FI: { country: 'FI', language: 'fi', currency: 'EUR', locale: 'fi', path: '/fi-fi', priority: 2, name: 'Finland' },
+  PT: { country: 'PT', language: 'pt', currency: 'EUR', locale: 'pt-PT', path: '/pt-pt', priority: 2, name: 'Portugal' },
+  IE: { country: 'IE', language: 'en', currency: 'EUR', locale: 'en', path: '/en-ie', priority: 2, name: 'Ireland' },
+  SK: { country: 'SK', language: 'en', currency: 'EUR', locale: 'en', path: '/en-sk', priority: 2, name: 'Slovakia' },
+  SI: { country: 'SI', language: 'en', currency: 'EUR', locale: 'en', path: '/en-si', priority: 2, name: 'Slovenia' },
+  BG: { country: 'BG', language: 'en', currency: 'BGN', locale: 'en', path: '/en-bg', priority: 2, name: 'Bulgaria' },
+  HR: { country: 'HR', language: 'en', currency: 'EUR', locale: 'en', path: '/en', priority: 2, name: 'Croatia' },  // No HR market on the store — land on the EN language folder (exists, 200)
+  CY: { country: 'CY', language: 'el', currency: 'EUR', locale: 'el', path: '/el-cy', priority: 2, name: 'Cyprus' },
+  EE: { country: 'EE', language: 'en', currency: 'EUR', locale: 'en', path: '/en-ee', priority: 2, name: 'Estonia' },
+  LV: { country: 'LV', language: 'en', currency: 'EUR', locale: 'en', path: '/en-lv', priority: 2, name: 'Latvia' },
+  LT: { country: 'LT', language: 'en', currency: 'EUR', locale: 'en', path: '/en-lt', priority: 2, name: 'Lithuania' },
+  MT: { country: 'MT', language: 'mt', currency: 'EUR', locale: 'mt', path: '/mt-mt', priority: 2, name: 'Malta' },
+  LU: { country: 'LU', language: 'de', currency: 'EUR', locale: 'de', path: '/de-lu', priority: 2, name: 'Luxembourg' },
 
   // TIER 3 — Europe non-EU
-  CH: { country: 'CH', language: 'de', currency: 'CHF', locale: 'de', path: '/ch', priority: 3, name: 'Switzerland' },
-  NO: { country: 'NO', language: 'no', currency: 'NOK', locale: 'nb', path: '/no', priority: 3, name: 'Norway' },
+  CH: { country: 'CH', language: 'de', currency: 'CHF', locale: 'de', path: '/de-ch', priority: 3, name: 'Switzerland' },
+  // NO: store's Norway market sells EUR (not NOK) — NOK caused inconsistent_currencies ×4,911; locale is 'no' (published), not 'nb'
+  NO: { country: 'NO', language: 'no', currency: 'EUR', locale: 'no', path: '/no-no', priority: 3, name: 'Norway' },
 
   // TIER 4 — Americas
-  US: { country: 'US', language: 'en', currency: 'USD', locale: 'en', path: '/us', priority: 4, name: 'USA' },
-  CA: { country: 'CA', language: 'en', currency: 'CAD', locale: 'en', path: '/ca', priority: 4, name: 'Canada' },
-  MX: { country: 'MX', language: 'es', currency: 'MXN', locale: 'es', path: '/mx', priority: 4, name: 'Mexico' },
+  US: { country: 'US', language: 'en', currency: 'USD', locale: 'en', path: '/en-us', priority: 4, name: 'USA' },
+  CA: { country: 'CA', language: 'en', currency: 'CAD', locale: 'en', path: '/en-ca', priority: 4, name: 'Canada' },
+  // MX: store's Mexico market sells EUR (not MXN) — MXN caused inconsistent_currencies ×4,911
+  MX: { country: 'MX', language: 'es', currency: 'EUR', locale: 'es', path: '/es-mx', priority: 4, name: 'Mexico' },
 
   // TIER 5 — Oceania
-  AU: { country: 'AU', language: 'en', currency: 'AUD', locale: 'en', path: '/au', priority: 5, name: 'Australia' },
-  NZ: { country: 'NZ', language: 'en', currency: 'NZD', locale: 'en', path: '/nz', priority: 5, name: 'New Zealand' },
+  AU: { country: 'AU', language: 'en', currency: 'AUD', locale: 'en', path: '/en-au', priority: 5, name: 'Australia' },
+  NZ: { country: 'NZ', language: 'en', currency: 'NZD', locale: 'en', path: '/en-nz', priority: 5, name: 'New Zealand' },
 
   // TIER 6 — Asia/Middle East
-  JP: { country: 'JP', language: 'ja', currency: 'JPY', locale: 'ja', path: '/jp', priority: 6, name: 'Japan' },
-  SG: { country: 'SG', language: 'en', currency: 'SGD', locale: 'en', path: '/sg', priority: 6, name: 'Singapore' },
-  TW: { country: 'TW', language: 'en', currency: 'TWD', locale: 'en', path: '/tw', priority: 6, name: 'Taiwan' },
-  IL: { country: 'IL', language: 'en', currency: 'ILS', locale: 'en', path: '/il', priority: 6, name: 'Israel' },
-  SA: { country: 'SA', language: 'en', currency: 'SAR', locale: 'en', path: '/sa', priority: 6, name: 'Saudi Arabia' },
-  AE: { country: 'AE', language: 'en', currency: 'AED', locale: 'en', path: '/ae', priority: 6, name: 'UAE' },
+  JP: { country: 'JP', language: 'ja', currency: 'JPY', locale: 'ja', path: '/ja-jp', priority: 6, name: 'Japan' },
+  SG: { country: 'SG', language: 'en', currency: 'SGD', locale: 'en', path: '/en-sg', priority: 6, name: 'Singapore' },
+  TW: { country: 'TW', language: 'en', currency: 'TWD', locale: 'en', path: '/en-tw', priority: 6, name: 'Taiwan' },
+  IL: { country: 'IL', language: 'en', currency: 'ILS', locale: 'en', path: '/en-il', priority: 6, name: 'Israel' },
+  SA: { country: 'SA', language: 'en', currency: 'SAR', locale: 'en', path: '/en-sa', priority: 6, name: 'Saudi Arabia' },
+  AE: { country: 'AE', language: 'en', currency: 'AED', locale: 'en', path: '/en-ae', priority: 6, name: 'UAE' },
 
   // Multi-language country feeds
-  CH_FR: { country: 'CH', language: 'fr', currency: 'CHF', locale: 'fr', path: '/ch', priority: 3, name: 'Switzerland (French)', feedSuffix: 'ch-fr' },
-  CH_IT: { country: 'CH', language: 'it', currency: 'CHF', locale: 'it', path: '/ch', priority: 3, name: 'Switzerland (Italian)', feedSuffix: 'ch-it' },
-  BE_NL: { country: 'BE', language: 'nl', currency: 'EUR', locale: 'nl', path: '/be', priority: 1, name: 'Belgium (Dutch)', feedSuffix: 'be-nl' },
-  CA_FR: { country: 'CA', language: 'fr', currency: 'CAD', locale: 'fr', path: '/ca', priority: 4, name: 'Canada (French)', feedSuffix: 'ca-fr' },
+  CH_FR: { country: 'CH', language: 'fr', currency: 'CHF', locale: 'fr', path: '/fr-ch', priority: 3, name: 'Switzerland (French)', feedSuffix: 'ch-fr' },
+  CH_IT: { country: 'CH', language: 'it', currency: 'CHF', locale: 'it', path: '/it-ch', priority: 3, name: 'Switzerland (Italian)', feedSuffix: 'ch-it' },
+  BE_NL: { country: 'BE', language: 'nl', currency: 'EUR', locale: 'nl', path: '/nl-be', priority: 1, name: 'Belgium (Dutch)', feedSuffix: 'be-nl' },
+  CA_FR: { country: 'CA', language: 'fr', currency: 'CAD', locale: 'fr', path: '/fr-ca', priority: 4, name: 'Canada (French)', feedSuffix: 'ca-fr' },
 };
 
 
@@ -518,7 +525,10 @@ function smartTruncate(str, maxLen = 150) {
 }
 
 function buildProductUrl(handle, variantId, market) {
-  return `https://${DOMAIN}${market.path}/products/${handle}?variant=${variantId}`;
+  // country + currency params keep Shopify in the right market context (without them the
+  // /{lang}-{cc} prefix 302-bounces to the base product URL) — same pattern as the
+  // Shopify Google app's approved links.
+  return `https://${DOMAIN}${market.path}/products/${handle}?variant=${variantId}&country=${market.country}&currency=${market.currency}`;
 }
 
 function formatPrice(amount, currency) {

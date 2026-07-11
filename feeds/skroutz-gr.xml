@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-11 02:54</created_at>
+  <created_at>2026-07-11 08:19</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -31144,7 +31144,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU649br-Ασημί-21cm]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>2</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>6</weight>
@@ -53671,7 +53671,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI69TRLBLBL5]]></mpn>
         <ean>5212033632645</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>13</quantity>
+        <quantity>12</quantity>
         <color>Μαύρο</color>
         <size>36,37,39,40,41,42</size>
         <variations>
@@ -53688,7 +53688,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40479891587229</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>37</size>
-            <quantity>2</quantity>
+            <quantity>1</quantity>
             <manufacturersku><![CDATA[1LI69TRLBLBL6]]></manufacturersku>
             <mpn><![CDATA[1LI69TRLBLBL6]]></mpn>
             <ean>5212033632652</ean>
@@ -64215,9 +64215,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40480250396829</id>
+        <id>40480250593437</id>
         <name><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής" - Μαύρο]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-brown-hercules-men?variant=40480250396829]]></link>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-brown-hercules-men?variant=40480250593437]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-451498.jpg?v=1627293917]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-339664.jpg?v=1627293916]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-198672.jpg?v=1627293917]]></additionalimage>
@@ -64229,22 +64229,13 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <price_with_vat>59.00</price_with_vat>
         <vat>24.00</vat>
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1LI98MANLBLBL9]]></mpn>
-        <ean>5212033634878</ean>
+        <mpn><![CDATA[1LI98MANLBLBL10]]></mpn>
+        <ean>5212033634885</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
+        <quantity>1</quantity>
         <color>Μαύρο</color>
-        <size>42,43</size>
+        <size>43</size>
         <variations>
-          <variation>
-            <variationid>40480250396829</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>42</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI98MANLBLBL9]]></manufacturersku>
-            <mpn><![CDATA[1LI98MANLBLBL9]]></mpn>
-            <ean>5212033634878</ean>
-          </variation>
           <variation>
             <variationid>40480250593437</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
@@ -64255,7 +64246,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033634885</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 42,43.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 43.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

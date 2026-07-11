@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-11 08:19</created_at>
+  <created_at>2026-07-11 13:43</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -58811,80 +58811,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40480002965661</id>
-        <name><![CDATA[Σανδάλια με λουριά "Λευκάδα" - Μαύρο]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-lefkada?variant=40480002965661]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-178130.jpg?v=1627375590]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-232307.jpg?v=1627294087]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-350341.jpg?v=1627294087]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-917514.jpg?v=1627294087]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-963890.jpg?v=1627294087]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-367506.jpg?v=1627294084]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-627078.jpg?v=1627294084]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-171389.jpg?v=1627294084]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-719344.jpg?v=1627294084]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-291572.jpg?v=1627294084]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>59.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL845LBLBL5]]></mpn>
-        <ean>5212033613866</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>5</quantity>
-        <color>Μαύρο</color>
-        <size>36,38,39,40,41</size>
-        <variations>
-          <variation>
-            <variationid>40480002965661</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>36</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL845LBLBL5]]></manufacturersku>
-            <mpn><![CDATA[1KL845LBLBL5]]></mpn>
-            <ean>5212033613866</ean>
-          </variation>
-          <variation>
-            <variationid>40480003457181</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>38</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL845LBLBL7]]></manufacturersku>
-            <mpn><![CDATA[1KL845LBLBL7]]></mpn>
-            <ean>5212033613903</ean>
-          </variation>
-          <variation>
-            <variationid>40480003784861</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>39</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL845LBLBL8]]></manufacturersku>
-            <mpn><![CDATA[1KL845LBLBL8]]></mpn>
-            <ean>5212033613927</ean>
-          </variation>
-          <variation>
-            <variationid>40480004079773</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL845LBLBL9]]></manufacturersku>
-            <mpn><![CDATA[1KL845LBLBL9]]></mpn>
-            <ean>5212033613941</ean>
-          </variation>
-          <variation>
-            <variationid>40480004407453</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL845LBLBL10]]></manufacturersku>
-            <mpn><![CDATA[1KL845LBLBL10]]></mpn>
-            <ean>5212033613965</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Σανδάλια με λουριά "Λευκάδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 36,38,39,40,41.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>40480003096733</id>
         <name><![CDATA[Σανδάλια με λουριά "Λευκάδα" - Πολύχρωμα]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-lefkada?variant=40480003096733]]></link>
@@ -59003,6 +58929,71 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Σανδάλια με λουριά "Λευκάδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 37,38,40.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40480003457181</id>
+        <name><![CDATA[Σανδάλια με λουριά "Λευκάδα" - Μαύρο]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-lefkada?variant=40480003457181]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-178130.jpg?v=1627375590]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-232307.jpg?v=1627294087]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-350341.jpg?v=1627294087]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-917514.jpg?v=1627294087]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-963890.jpg?v=1627294087]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-367506.jpg?v=1627294084]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-627078.jpg?v=1627294084]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-171389.jpg?v=1627294084]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-719344.jpg?v=1627294084]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-291572.jpg?v=1627294084]]></additionalimage>
+        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>59.00</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1KL845LBLBL7]]></mpn>
+        <ean>5212033613903</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>4</quantity>
+        <color>Μαύρο</color>
+        <size>38,39,40,41</size>
+        <variations>
+          <variation>
+            <variationid>40480003457181</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>38</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL845LBLBL7]]></manufacturersku>
+            <mpn><![CDATA[1KL845LBLBL7]]></mpn>
+            <ean>5212033613903</ean>
+          </variation>
+          <variation>
+            <variationid>40480003784861</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>39</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL845LBLBL8]]></manufacturersku>
+            <mpn><![CDATA[1KL845LBLBL8]]></mpn>
+            <ean>5212033613927</ean>
+          </variation>
+          <variation>
+            <variationid>40480004079773</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>40</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL845LBLBL9]]></manufacturersku>
+            <mpn><![CDATA[1KL845LBLBL9]]></mpn>
+            <ean>5212033613941</ean>
+          </variation>
+          <variation>
+            <variationid>40480004407453</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>41</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL845LBLBL10]]></manufacturersku>
+            <mpn><![CDATA[1KL845LBLBL10]]></mpn>
+            <ean>5212033613965</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Σανδάλια με λουριά "Λευκάδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 38,39,40,41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -63383,7 +63374,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS1048LRMBE5]]></mpn>
         <ean>5212033639880</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Χρυσό</color>
         <size>36,38,39</size>
         <variations>
@@ -63391,7 +63382,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40480167067805</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>36</size>
-            <quantity>2</quantity>
+            <quantity>1</quantity>
             <manufacturersku><![CDATA[1TS1048LRMBE5]]></manufacturersku>
             <mpn><![CDATA[1TS1048LRMBE5]]></mpn>
             <ean>5212033639880</ean>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-11 19:26</created_at>
+  <created_at>2026-07-12 02:59</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -17785,7 +17785,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[7028-Ασημί-Τεχνόδερμα]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>3</weight>
@@ -55912,56 +55912,11 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40479960793245</id>
+        <id>43873659748581</id>
         <name><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος" - Καφέ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-brown-icarus-men?variant=40479960793245]]></link>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-brown-icarus-men?variant=43873659748581]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-224405.jpg?v=1627375193]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-913484.jpg?v=1627293850]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-998334.jpg?v=1627293850]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-260852.jpg?v=1627293850]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-257240.jpg?v=1627293856]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-861007.jpg?v=1627293856]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-789102.jpg?v=1627293852]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-725155.jpg?v=1627293852]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-364661.jpg?v=1627293852]]></additionalimage>
-        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>59.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1LI46MANLBRBR13]]></mpn>
-        <ean>5212033626323</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
-        <color>Καφέ</color>
-        <size>46,47</size>
-        <variations>
-          <variation>
-            <variationid>40479960793245</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>46</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI46MANLBRBR13]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLBRBR13]]></mpn>
-            <ean>5212033626323</ean>
-          </variation>
-          <variation>
-            <variationid>43873659748581</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>47</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI46MANLBRBR14]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLBRBR14]]></mpn>
-            <ean>5212033600019</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 46,47.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>43873661288677</id>
-        <name><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος" - Καφέ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-icarus-men?variant=43873661288677]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-189678.jpg?v=1627293852]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-998334.jpg?v=1627293850]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-260852.jpg?v=1627293850]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-257240.jpg?v=1627293856]]></additionalimage>
@@ -55981,7 +55936,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <size>47</size>
         <variations>
           <variation>
-            <variationid>43873661288677</variationid>
+            <variationid>43873659748581</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>47</size>
             <quantity>1</quantity>
@@ -55991,6 +55946,53 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 47.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40479962136733</id>
+        <name><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος" - Καφέ]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-icarus-men?variant=40479962136733]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-555975.jpg?v=1627293856]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-181561.jpg?v=1627293856]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-350639.jpg?v=1627293857]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-982923.jpg?v=1627293857]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-929529.jpg?v=1627293857]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1LI46_-_SIZE_CHART.png?v=1779356168]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-998334.jpg?v=1627293850]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-260852.jpg?v=1627293850]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-257240.jpg?v=1627293856]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-861007.jpg?v=1627293856]]></additionalimage>
+        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>59.00</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1LI46MANLBRBR13]]></mpn>
+        <ean>5212033626323</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>2</quantity>
+        <color>Καφέ</color>
+        <size>46,47</size>
+        <variations>
+          <variation>
+            <variationid>40479962136733</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>46</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI46MANLBRBR13]]></manufacturersku>
+            <mpn><![CDATA[1LI46MANLBRBR13]]></mpn>
+            <ean>5212033626323</ean>
+          </variation>
+          <variation>
+            <variationid>43873660403941</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>47</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI46MANLBRBR14]]></manufacturersku>
+            <mpn><![CDATA[1LI46MANLBRBR14]]></mpn>
+            <ean>5212033600019</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 46,47.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -62084,9 +62086,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI74MANLBRBR7]]></mpn>
         <ean>5212033635363</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Καφέ</color>
-        <size>40,41,43,44,45</size>
+        <size>40,41,44,45</size>
         <variations>
           <variation>
             <variationid>40480091373725</variationid>
@@ -62107,15 +62109,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033635370</ean>
           </variation>
           <variation>
-            <variationid>40480091668637</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>43</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI74MANLBRBR10]]></manufacturersku>
-            <mpn><![CDATA[1LI74MANLBRBR10]]></mpn>
-            <ean>5212033635394</ean>
-          </variation>
-          <variation>
             <variationid>40480091766941</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>44</size>
@@ -62134,7 +62127,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033635417</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,41,43,44,45.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,41,44,45.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -64084,6 +64077,77 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Flat πέδιλα παντόφλες με μαλακό πάτο "Ελπίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 40.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40480242040989</id>
+        <name><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Καφέ]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-dionysius-men?variant=40480242040989]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-704228.jpg?v=1627293917]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-125698.jpg?v=1627293850]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-324324.jpg?v=1627293850]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-329078.jpg?v=1627293917]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-936449.jpg?v=1627293917]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-146475.jpg?v=1627293917]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-111435.jpg?v=1627293917]]></additionalimage>
+        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>69.00</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1LI74MANLBRBR7]]></mpn>
+        <ean>5212033635363</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>6</quantity>
+        <color>Καφέ</color>
+        <size>40,41,43,44,45</size>
+        <variations>
+          <variation>
+            <variationid>40480242040989</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>40</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1LI74MANLBRBR7]]></manufacturersku>
+            <mpn><![CDATA[1LI74MANLBRBR7]]></mpn>
+            <ean>5212033635363</ean>
+          </variation>
+          <variation>
+            <variationid>40480242139293</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>41</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI74MANLBRBR8]]></manufacturersku>
+            <mpn><![CDATA[1LI74MANLBRBR8]]></mpn>
+            <ean>5212033635370</ean>
+          </variation>
+          <variation>
+            <variationid>40480242368669</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>43</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI74MANLBRBR10]]></manufacturersku>
+            <mpn><![CDATA[1LI74MANLBRBR10]]></mpn>
+            <ean>5212033635394</ean>
+          </variation>
+          <variation>
+            <variationid>40480242466973</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>44</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI74MANLBRBR11]]></manufacturersku>
+            <mpn><![CDATA[1LI74MANLBRBR11]]></mpn>
+            <ean>5212033635400</ean>
+          </variation>
+          <variation>
+            <variationid>40480242565277</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>45</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI74MANLBRBR12]]></manufacturersku>
+            <mpn><![CDATA[1LI74MANLBRBR12]]></mpn>
+            <ean>5212033635417</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,41,43,44,45.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -68318,7 +68382,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL620LBLBL5]]></mpn>
         <ean>5212033693578</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>12</quantity>
+        <quantity>11</quantity>
         <color>Μαύρο</color>
         <size>36,37,38,39,40,41</size>
         <variations>
@@ -68326,7 +68390,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>47212984664399</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>36</size>
-            <quantity>2</quantity>
+            <quantity>1</quantity>
             <manufacturersku><![CDATA[1KL620LBLBL5]]></manufacturersku>
             <mpn><![CDATA[1KL620LBLBL5]]></mpn>
             <ean>5212033693578</ean>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-13 09:49</created_at>
+  <created_at>2026-07-13 14:58</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -56394,62 +56394,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40479972229277</id>
-        <name><![CDATA[Flat σανδάλια "Αθηνά" - Λευκό]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-athena?variant=40479972229277]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-427974.jpg?v=1697547140]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/103_1_bfb6e379-48e6-4842-9cc6-c73330182100.jpg?v=1690957947]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/103_2_e266fb7e-6575-4f24-9b1d-66d1a1c90b9d.jpg?v=1690957947]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-557793.jpg?v=1697547140]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-225491.jpg?v=1697547140]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-201018.jpg?v=1697547140]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/103_1.jpg?v=1697547140]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/103_2.jpg?v=1697547140]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/103_1_ebecf7ad-7e3d-4d5d-b1d1-d0b0c52601ee.jpg?v=1690957888]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/103_2_322675eb-7e38-4092-ba74-122c72b17a0a.jpg?v=1690957888]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Πέδιλα]]></category>
-        <price_with_vat>54.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1TS103LWHBE5]]></mpn>
-        <ean>5212033638371</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>8</quantity>
-        <color>Λευκό</color>
-        <size>36,38,39</size>
-        <variations>
-          <variation>
-            <variationid>40479972229277</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>36</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1TS103LWHBE5]]></manufacturersku>
-            <mpn><![CDATA[1TS103LWHBE5]]></mpn>
-            <ean>5212033638371</ean>
-          </variation>
-          <variation>
-            <variationid>40479972491421</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>38</size>
-            <quantity>5</quantity>
-            <manufacturersku><![CDATA[1TS103LWHBE7]]></manufacturersku>
-            <mpn><![CDATA[1TS103LWHBE7]]></mpn>
-            <ean>5212033638395</ean>
-          </variation>
-          <variation>
-            <variationid>40479972622493</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>39</size>
-            <quantity>2</quantity>
-            <manufacturersku><![CDATA[1TS103LWHBE8]]></manufacturersku>
-            <mpn><![CDATA[1TS103LWHBE8]]></mpn>
-            <ean>5212033638401</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Flat σανδάλια "Αθηνά". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 36,38,39.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>40479972262045</id>
         <name><![CDATA[Flat σανδάλια "Αθηνά" - Μπεζ]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-athena?variant=40479972262045]]></link>
@@ -56613,6 +56557,53 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Flat σανδάλια "Αθηνά". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 37,38,39,40,41,42.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40479972491421</id>
+        <name><![CDATA[Flat σανδάλια "Αθηνά" - Λευκό]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-athena?variant=40479972491421]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-427974.jpg?v=1697547140]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/103_1_bfb6e379-48e6-4842-9cc6-c73330182100.jpg?v=1690957947]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/103_2_e266fb7e-6575-4f24-9b1d-66d1a1c90b9d.jpg?v=1690957947]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-557793.jpg?v=1697547140]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-225491.jpg?v=1697547140]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-201018.jpg?v=1697547140]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/103_1.jpg?v=1697547140]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/103_2.jpg?v=1697547140]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/103_1_ebecf7ad-7e3d-4d5d-b1d1-d0b0c52601ee.jpg?v=1690957888]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/103_2_322675eb-7e38-4092-ba74-122c72b17a0a.jpg?v=1690957888]]></additionalimage>
+        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Πέδιλα]]></category>
+        <price_with_vat>54.00</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1TS103LWHBE7]]></mpn>
+        <ean>5212033638395</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>7</quantity>
+        <color>Λευκό</color>
+        <size>38,39</size>
+        <variations>
+          <variation>
+            <variationid>40479972491421</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>38</size>
+            <quantity>5</quantity>
+            <manufacturersku><![CDATA[1TS103LWHBE7]]></manufacturersku>
+            <mpn><![CDATA[1TS103LWHBE7]]></mpn>
+            <ean>5212033638395</ean>
+          </variation>
+          <variation>
+            <variationid>40479972622493</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>39</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1TS103LWHBE8]]></manufacturersku>
+            <mpn><![CDATA[1TS103LWHBE8]]></mpn>
+            <ean>5212033638401</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Flat σανδάλια "Αθηνά". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 38,39.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -58137,7 +58128,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TSM19LSIBE5]]></mpn>
         <ean>5212033637497</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>10</quantity>
+        <quantity>9</quantity>
         <color>Ασημί</color>
         <size>36,37,38,39</size>
         <variations>
@@ -58163,7 +58154,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40479999787165</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>38</size>
-            <quantity>4</quantity>
+            <quantity>3</quantity>
             <manufacturersku><![CDATA[1TSM19LSIBE7]]></manufacturersku>
             <mpn><![CDATA[1TSM19LSIBE7]]></mpn>
             <ean>5212033637510</ean>
@@ -61969,7 +61960,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL222LDBDB7]]></mpn>
         <ean>5212033601818</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>19</quantity>
+        <quantity>18</quantity>
         <color>Καφέ</color>
         <size>40,41,44,45,46,47</size>
         <variations>
@@ -62013,7 +62004,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>46729228419407</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>46</size>
-            <quantity>6</quantity>
+            <quantity>5</quantity>
             <manufacturersku><![CDATA[1KL222LDBDB13]]></manufacturersku>
             <mpn><![CDATA[1KL222LDBDB13]]></mpn>
             <ean>5212033601870</ean>

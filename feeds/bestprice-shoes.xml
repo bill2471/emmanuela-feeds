@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-13 10:28</date>
+  <date>2026-07-13 15:37</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -2835,27 +2835,6 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479972229277</productId>
-      <title><![CDATA[Emmanuela Flat σανδάλια "Αθηνά" - Λευκό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-athena</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-427974.jpg?v=1697547140</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-427974.jpg?v=1697547140</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-225491.jpg?v=1697547140</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-708581.jpg?v=1697547140</img3>
-      </imagesURL>
-      <price>54.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Πέδιλα</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1TS103LWHBE5</MPN>
-      <color>λευκό</color>
-      <size>36,38,39</size>
-      <EAN>5212033638371</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
       <productId>40479972262045</productId>
       <title><![CDATA[Emmanuela Flat σανδάλια "Αθηνά" - Μπεζ φυσικό]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-athena</productURL>
@@ -2890,6 +2869,27 @@
       <color>μαύρο</color>
       <size>37,38,39,40,41,42</size>
       <EAN>5212033638319</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40479972491421</productId>
+      <title><![CDATA[Emmanuela Flat σανδάλια "Αθηνά" - Λευκό]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-athena</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-427974.jpg?v=1697547140</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-427974.jpg?v=1697547140</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-225491.jpg?v=1697547140</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-sandalia-athhna-emmanuela-handcrafted-for-you-flat-sandalia-athhna-708581.jpg?v=1697547140</img3>
+      </imagesURL>
+      <price>54.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Πέδιλα</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1TS103LWHBE7</MPN>
+      <color>λευκό</color>
+      <size>38,39</size>
+      <EAN>5212033638395</EAN>
       <shipping>0</shipping>
     </product>
     <product>

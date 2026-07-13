@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-12 19:28</created_at>
+  <created_at>2026-07-13 03:55</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1830,7 +1830,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1297-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>19</quantity>
+        <quantity>18</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -60200,9 +60200,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS101LMLBL5]]></mpn>
         <ean>5212033638739</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>16</quantity>
+        <quantity>15</quantity>
         <color>Δέρμα φιδιού</color>
-        <size>36,37,38,39,41</size>
+        <size>36,37,39,41</size>
         <variations>
           <variation>
             <variationid>40480041795741</variationid>
@@ -60223,15 +60223,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033638746</ean>
           </variation>
           <variation>
-            <variationid>40480042221725</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>38</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1TS101LMLBL7]]></manufacturersku>
-            <mpn><![CDATA[1TS101LMLBL7]]></mpn>
-            <ean>5212033638753</ean>
-          </variation>
-          <variation>
             <variationid>40480042418333</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>39</size>
@@ -60250,7 +60241,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033638784</ean>
           </variation>
         </variations>
-        <description><![CDATA[Σανδάλια με λεπτά λουριά "Λέσβος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Δέρμα φιδιού. Διαθέσιμα νούμερα: 36,37,38,39,41.]]></description>
+        <description><![CDATA[Σανδάλια με λεπτά λουριά "Λέσβος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Δέρμα φιδιού. Διαθέσιμα νούμερα: 36,37,39,41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -63862,71 +63853,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Σανδάλια με λουριά "Τήνος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 40,41.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>40480183222429</id>
-        <name><![CDATA[Σανδάλια με λεπτά λουριά "Λέσβος" - Δέρμα φιδιού]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-lesbos?variant=40480183222429]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-lepta-loyria-lesbos-emmanuela-handcrafted-for-you-sandalia-me-lepta-loyria-lesbos-169680.jpg?v=1685010025]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-snake-skin-lesbos-emmanuela-handcrafted-for-you-sandalia-me-snake-skin-lesbos-147215.jpg?v=1627294037]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-snake-skin-lesbos-emmanuela-handcrafted-for-you-sandalia-me-snake-skin-lesbos-719161.jpg?v=1627294037]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-snake-skin-lesbos-emmanuela-handcrafted-for-you-sandalia-me-snake-skin-lesbos-855694.jpg?v=1627294038]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-snake-skin-lesbos-emmanuela-handcrafted-for-you-sandalia-me-snake-skin-lesbos-385420.jpg?v=1627294038]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-lepta-loyria-lesbos-emmanuela-handcrafted-for-you-sandalia-me-lepta-loyria-lesbos-311149.jpg?v=1627294030]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-lepta-loyria-lesbos-emmanuela-handcrafted-for-you-sandalia-me-lepta-loyria-lesbos-168550.jpg?v=1627294030]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-lepta-loyria-lesbos-emmanuela-handcrafted-for-you-sandalia-me-lepta-loyria-lesbos-261291.jpg?v=1627294030]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-lepta-loyria-lesbos-emmanuela-handcrafted-for-you-sandalia-me-lepta-loyria-lesbos-382586.jpg?v=1627294043]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-lepta-loyria-lesbos-emmanuela-handcrafted-for-you-sandalia-me-lepta-loyria-lesbos-115230.jpg?v=1627294044]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>50.90</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1TS101LMLBL5]]></mpn>
-        <ean>5212033638739</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>15</quantity>
-        <color>Δέρμα φιδιού</color>
-        <size>36,37,39,41</size>
-        <variations>
-          <variation>
-            <variationid>40480183222429</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>36</size>
-            <quantity>2</quantity>
-            <manufacturersku><![CDATA[1TS101LMLBL5]]></manufacturersku>
-            <mpn><![CDATA[1TS101LMLBL5]]></mpn>
-            <ean>5212033638739</ean>
-          </variation>
-          <variation>
-            <variationid>40480183615645</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>37</size>
-            <quantity>2</quantity>
-            <manufacturersku><![CDATA[1TS101LMLBL6]]></manufacturersku>
-            <mpn><![CDATA[1TS101LMLBL6]]></mpn>
-            <ean>5212033638746</ean>
-          </variation>
-          <variation>
-            <variationid>40480184762525</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>39</size>
-            <quantity>10</quantity>
-            <manufacturersku><![CDATA[1TS101LMLBL8]]></manufacturersku>
-            <mpn><![CDATA[1TS101LMLBL8]]></mpn>
-            <ean>5212033638760</ean>
-          </variation>
-          <variation>
-            <variationid>40480186433693</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1TS101LMLBL10]]></manufacturersku>
-            <mpn><![CDATA[1TS101LMLBL10]]></mpn>
-            <ean>5212033638784</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Σανδάλια με λεπτά λουριά "Λέσβος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Δέρμα φιδιού. Διαθέσιμα νούμερα: 36,37,39,41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

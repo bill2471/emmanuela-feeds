@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-14 08:27</created_at>
+  <created_at>2026-07-14 13:59</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1336,7 +1336,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Μαύρο]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>7</quantity>
         <color>Μαύρο</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -1362,7 +1362,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Γκρι]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>5</quantity>
+        <quantity>6</quantity>
         <color>Γκρι</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -38849,7 +38849,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4458600300579-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>1</weight>
@@ -49217,9 +49217,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL213LBRBR8]]></mpn>
         <ean>5212033624824</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>7</quantity>
         <color>Καφέ</color>
-        <size>41,43,44</size>
+        <size>41,42,43,44</size>
         <variations>
           <variation>
             <variationid>40479792464029</variationid>
@@ -49229,6 +49229,15 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <manufacturersku><![CDATA[1KL213LBRBR8]]></manufacturersku>
             <mpn><![CDATA[1KL213LBRBR8]]></mpn>
             <ean>5212033624824</ean>
+          </variation>
+          <variation>
+            <variationid>40479792758941</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>42</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL213LBRBR9]]></manufacturersku>
+            <mpn><![CDATA[1KL213LBRBR9]]></mpn>
+            <ean>5212033624848</ean>
           </variation>
           <variation>
             <variationid>40479793053853</variationid>
@@ -49249,7 +49258,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033624886</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,43,44.]]></description>
+        <description><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,42,43,44.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -53931,9 +53940,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL310LBLBE5]]></mpn>
         <ean>5212033621540</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
+        <quantity>1</quantity>
         <color>Μαύρο</color>
-        <size>36,39</size>
+        <size>36</size>
         <variations>
           <variation>
             <variationid>40479899353245</variationid>
@@ -53944,17 +53953,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1KL310LBLBE5]]></mpn>
             <ean>5212033621540</ean>
           </variation>
-          <variation>
-            <variationid>40479900041373</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>39</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL310LBLBE8]]></manufacturersku>
-            <mpn><![CDATA[1KL310LBLBE8]]></mpn>
-            <ean>5212033621601</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 36,39.]]></description>
+        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 36.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -59916,9 +59916,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS101LMLBL5]]></mpn>
         <ean>5212033638739</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>15</quantity>
+        <quantity>16</quantity>
         <color>Δέρμα φιδιού</color>
-        <size>36,37,39,41</size>
+        <size>36,37,38,39,41</size>
         <variations>
           <variation>
             <variationid>40480041795741</variationid>
@@ -59939,6 +59939,15 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033638746</ean>
           </variation>
           <variation>
+            <variationid>40480042221725</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>38</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1TS101LMLBL7]]></manufacturersku>
+            <mpn><![CDATA[1TS101LMLBL7]]></mpn>
+            <ean>5212033638753</ean>
+          </variation>
+          <variation>
             <variationid>40480042418333</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>39</size>
@@ -59957,7 +59966,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033638784</ean>
           </variation>
         </variations>
-        <description><![CDATA[Σανδάλια με λεπτά λουριά "Λέσβος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Δέρμα φιδιού. Διαθέσιμα νούμερα: 36,37,39,41.]]></description>
+        <description><![CDATA[Σανδάλια με λεπτά λουριά "Λέσβος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Δέρμα φιδιού. Διαθέσιμα νούμερα: 36,37,38,39,41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -61728,9 +61737,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI74MANLBRBR7]]></mpn>
         <ean>5212033635363</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>5</quantity>
+        <quantity>6</quantity>
         <color>Καφέ</color>
-        <size>40,41,44,45</size>
+        <size>40,41,44,45,47</size>
         <variations>
           <variation>
             <variationid>40480091373725</variationid>
@@ -61768,8 +61777,17 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1LI74MANLBRBR12]]></mpn>
             <ean>5212033635417</ean>
           </variation>
+          <variation>
+            <variationid>43873673085157</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>47</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI74MANLBRBR14]]></manufacturersku>
+            <mpn><![CDATA[1LI74MANLBRBR14]]></mpn>
+            <ean>5212033600170</ean>
+          </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,41,44,45.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,41,44,45,47.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -62212,7 +62230,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI47MANLBRBR7]]></mpn>
         <ean>5212033634700</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Καφέ</color>
         <size>40,42,43,46</size>
         <variations>
@@ -62238,7 +62256,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40480142000285</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>43</size>
-            <quantity>2</quantity>
+            <quantity>1</quantity>
             <manufacturersku><![CDATA[1LI47MANLBRBR10]]></manufacturersku>
             <mpn><![CDATA[1LI47MANLBRBR10]]></mpn>
             <ean>5212033634731</ean>

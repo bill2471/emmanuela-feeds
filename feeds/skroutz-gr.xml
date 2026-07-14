@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-14 13:59</created_at>
+  <created_at>2026-07-14 19:44</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -61737,9 +61737,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI74MANLBRBR7]]></mpn>
         <ean>5212033635363</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Καφέ</color>
-        <size>40,41,44,45,47</size>
+        <size>40,44,45,47</size>
         <variations>
           <variation>
             <variationid>40480091373725</variationid>
@@ -61749,15 +61749,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <manufacturersku><![CDATA[1LI74MANLBRBR7]]></manufacturersku>
             <mpn><![CDATA[1LI74MANLBRBR7]]></mpn>
             <ean>5212033635363</ean>
-          </variation>
-          <variation>
-            <variationid>40480091472029</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI74MANLBRBR8]]></manufacturersku>
-            <mpn><![CDATA[1LI74MANLBRBR8]]></mpn>
-            <ean>5212033635370</ean>
           </variation>
           <variation>
             <variationid>40480091766941</variationid>
@@ -61787,7 +61778,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033600170</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,41,44,45,47.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,44,45,47.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -62435,41 +62426,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Θησέας". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 40,41,43,44,47.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>40480142885021</id>
-        <name><![CDATA[Flat πέδιλα παντόφλες με μαλακό πάτο "Ισμήνη" - Λευκό]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-white-leather-flat-ismene?variant=40480142885021]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-ismhnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-ismhnh-703126.jpg?v=1627374647]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-ismhnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-ismhnh-968211.jpg?v=1627293612]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-ismhnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-ismhnh-900847.jpg?v=1627293612]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-ismhnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-ismhnh-653572.jpg?v=1627293612]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-ismhnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-ismhnh-135511.jpg?v=1627293613]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-ismhnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-ismhnh-456189.jpg?v=1627293613]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-ismhnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-ismhnh-717904.jpg?v=1627293613]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Παντόφλες]]></category>
-        <price_with_vat>36.43</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1FA11580ALWH8]]></mpn>
-        <ean>5212033649643</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>1</quantity>
-        <color>Λευκό</color>
-        <size>39</size>
-        <variations>
-          <variation>
-            <variationid>40480142885021</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>39</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1FA11580ALWH8]]></manufacturersku>
-            <mpn><![CDATA[1FA11580ALWH8]]></mpn>
-            <ean>5212033649643</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Flat πέδιλα παντόφλες με μαλακό πάτο "Ισμήνη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 39.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -63896,7 +63852,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KLA21ALBRBR7]]></mpn>
         <ean>5212033652544</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>180</quantity>
+        <quantity>179</quantity>
         <color>Καφέ</color>
         <size>40,41,42,43,44,45,46</size>
         <variations>
@@ -63913,7 +63869,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>43291240726757</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>41</size>
-            <quantity>30</quantity>
+            <quantity>29</quantity>
             <manufacturersku><![CDATA[1KLA21ALBRBR8]]></manufacturersku>
             <mpn><![CDATA[1KLA21ALBRBR8]]></mpn>
             <ean>5212033652551</ean>

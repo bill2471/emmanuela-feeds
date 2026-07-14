@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-14 03:20</date>
+  <date>2026-07-14 09:08</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -208,7 +208,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL213LBRBR8</MPN>
       <color>καφέ</color>
-      <size>41,43,44</size>
+      <size>41,42,43,44</size>
       <EAN>5212033624824</EAN>
       <shipping>0</shipping>
     </product>
@@ -1855,7 +1855,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL310LBLBE5</MPN>
       <color>μαύρο</color>
-      <size>36,39</size>
+      <size>36</size>
       <EAN>5212033621540</EAN>
       <shipping>0</shipping>
     </product>
@@ -4501,7 +4501,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1LI74MANLBRBR7</MPN>
       <color>καφέ</color>
-      <size>40,41,44,45</size>
+      <size>40,41,44,45,47</size>
       <EAN>5212033635363</EAN>
       <shipping>0</shipping>
     </product>
@@ -6250,7 +6250,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL620LBLBL5</MPN>
       <color>μαύρο</color>
-      <size>36,37,38,39,40,41</size>
+      <size>36,37,38,39,41</size>
       <EAN>5212033693578</EAN>
       <shipping>0</shipping>
     </product>

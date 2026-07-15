@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-15 14:06</created_at>
+  <created_at>2026-07-15 19:35</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -17838,7 +17838,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[7028-Ασημί-Αλυσίδα-μπίλια]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>32</quantity>
+        <quantity>5</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>3</weight>
@@ -49377,9 +49377,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL213LBRBR8]]></mpn>
         <ean>5212033624824</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Καφέ</color>
-        <size>41,42,43,44</size>
+        <size>41,43,44</size>
         <variations>
           <variation>
             <variationid>40479792464029</variationid>
@@ -49389,15 +49389,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <manufacturersku><![CDATA[1KL213LBRBR8]]></manufacturersku>
             <mpn><![CDATA[1KL213LBRBR8]]></mpn>
             <ean>5212033624824</ean>
-          </variation>
-          <variation>
-            <variationid>40479792758941</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>42</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL213LBRBR9]]></manufacturersku>
-            <mpn><![CDATA[1KL213LBRBR9]]></mpn>
-            <ean>5212033624848</ean>
           </variation>
           <variation>
             <variationid>40479793053853</variationid>
@@ -49418,7 +49409,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033624886</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,42,43,44.]]></description>
+        <description><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,43,44.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -66980,9 +66971,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS2015LBLBL5]]></mpn>
         <ean>5212033601450</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>16</quantity>
+        <quantity>15</quantity>
         <color>Μαύρο</color>
-        <size>36,37,38,39,40,41,42</size>
+        <size>36,37,38,39,40,42</size>
         <variations>
           <variation>
             <variationid>46717653221711</variationid>
@@ -67030,15 +67021,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033601498</ean>
           </variation>
           <variation>
-            <variationid>46717653549391</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1TS2015LBLBL10]]></manufacturersku>
-            <mpn><![CDATA[1TS2015LBLBL10]]></mpn>
-            <ean>5212033601504</ean>
-          </variation>
-          <variation>
             <variationid>46717653614927</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>42</size>
@@ -67048,7 +67030,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033601511</ean>
           </variation>
         </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με κορδόνια "Εκάβη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 36,37,38,39,40,41,42.]]></description>
+        <description><![CDATA[Σανδάλια μονομάχου με κορδόνια "Εκάβη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 36,37,38,39,40,42.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

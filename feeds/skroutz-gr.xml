@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-15 19:35</created_at>
+  <created_at>2026-07-16 02:51</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -42178,7 +42178,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1349-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <description><![CDATA[Χαρακτηριστικά Προϊόντος
@@ -60159,7 +60159,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS101LBLBL5]]></mpn>
         <ean>5212033638876</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>107</quantity>
+        <quantity>106</quantity>
         <color>Μαύρο</color>
         <size>36,37,38,39,40,41,42</size>
         <variations>
@@ -60194,7 +60194,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40480042451101</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>39</size>
-            <quantity>21</quantity>
+            <quantity>20</quantity>
             <manufacturersku><![CDATA[1TS101LBLBL8]]></manufacturersku>
             <mpn><![CDATA[1TS101LBLBL8]]></mpn>
             <ean>5212033638906</ean>
@@ -60493,7 +60493,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS101LNABE5]]></mpn>
         <ean>5212033638807</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>78</quantity>
+        <quantity>77</quantity>
         <color>Μπεζ</color>
         <size>36,37,38,40,41,42</size>
         <variations>
@@ -60519,7 +60519,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40480042352797</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>38</size>
-            <quantity>4</quantity>
+            <quantity>3</quantity>
             <manufacturersku><![CDATA[1TS101LNABE7]]></manufacturersku>
             <mpn><![CDATA[1TS101LNABE7]]></mpn>
             <ean>5212033638821</ean>

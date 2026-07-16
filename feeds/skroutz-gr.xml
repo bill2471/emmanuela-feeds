@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-16 14:13</created_at>
+  <created_at>2026-07-16 19:31</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -436,7 +436,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1219-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -36380,7 +36380,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[2103-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>377</quantity>
+        <quantity>364</quantity>
         <color>Ασημί</color>
         <size>48,49,50,51,52,53,54,55,56,57,58,59,60,61</size>
         <variations>
@@ -36388,42 +36388,42 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
             <variationid>31723344003107</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>48</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723344101411</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>49</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723344199715</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>50</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723344298019</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>51</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723344396323</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>52</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723344494627</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>53</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
@@ -36437,49 +36437,49 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
             <variationid>31723344691235</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>55</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723344789539</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>56</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723344887843</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>57</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723344986147</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>58</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723345084451</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>59</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723345182755</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>60</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723345281059</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>61</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
         </variations>
@@ -36505,7 +36505,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[2103-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>376</quantity>
+        <quantity>364</quantity>
         <color>Χρυσό</color>
         <size>48,49,50,51,52,53,54,55,56,57,58,59,60,61</size>
         <variations>
@@ -36513,7 +36513,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
             <variationid>31723344035875</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>48</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
@@ -36527,56 +36527,56 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
             <variationid>31723344232483</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>50</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723344330787</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>51</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723344429091</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>52</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723344527395</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>53</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723344625699</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>54</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723344724003</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>55</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723344822307</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>56</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723344920611</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>57</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
@@ -36590,21 +36590,21 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
             <variationid>31723345117219</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>59</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723345215523</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>60</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31723345313827</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>61</size>
-            <quantity>27</quantity>
+            <quantity>26</quantity>
             <manufacturersku><![CDATA[2103]]></manufacturersku>
           </variation>
         </variations>
@@ -63856,41 +63856,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,44,46.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>40480250593437</id>
-        <name><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής" - Μαύρο]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-brown-hercules-men?variant=40480250593437]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-451498.jpg?v=1627293917]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-339664.jpg?v=1627293916]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-198672.jpg?v=1627293917]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-136467.jpg?v=1627293915]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-920214.jpg?v=1627293915]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-595954.jpg?v=1627293915]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-468318.jpg?v=1627293916]]></additionalimage>
-        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>59.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1LI98MANLBLBL10]]></mpn>
-        <ean>5212033634885</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>1</quantity>
-        <color>Μαύρο</color>
-        <size>43</size>
-        <variations>
-          <variation>
-            <variationid>40480250593437</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>43</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI98MANLBLBL10]]></manufacturersku>
-            <mpn><![CDATA[1LI98MANLBLBL10]]></mpn>
-            <ean>5212033634885</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 43.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

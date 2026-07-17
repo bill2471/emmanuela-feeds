@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-16 19:31</created_at>
+  <created_at>2026-07-17 02:54</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -23415,7 +23415,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1313M-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>1</weight>
@@ -27164,7 +27164,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU296ea]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -62339,9 +62339,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL222LBRBR8]]></mpn>
         <ean>5212033624459</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Καφέ</color>
-        <size>41,43,44,46</size>
+        <size>41,44,46</size>
         <variations>
           <variation>
             <variationid>40480107135133</variationid>
@@ -62351,15 +62351,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <manufacturersku><![CDATA[1KL222LBRBR8]]></manufacturersku>
             <mpn><![CDATA[1KL222LBRBR8]]></mpn>
             <ean>5212033624459</ean>
-          </variation>
-          <variation>
-            <variationid>40480107495581</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>43</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL222LBRBR10]]></manufacturersku>
-            <mpn><![CDATA[1KL222LBRBR10]]></mpn>
-            <ean>5212033624497</ean>
           </variation>
           <variation>
             <variationid>40480107757725</variationid>
@@ -62380,7 +62371,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033625890</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,43,44,46.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,44,46.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

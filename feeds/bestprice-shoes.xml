@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-17 09:13</date>
+  <date>2026-07-17 14:30</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -3944,26 +3944,6 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40480036749469</productId>
-      <title><![CDATA[Emmanuela Σανδάλια με πλεκτά λουριά "Χίος" - Λευκό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-green-chios</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-192396.jpg?v=1627294090</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-192396.jpg?v=1627294090</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-279607.jpg?v=1627294090</img2>
-      </imagesURL>
-      <price>64.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1LI111KLWHBE5</MPN>
-      <color>λευκό</color>
-      <size>36,41</size>
-      <EAN>5212033631402</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
       <productId>40480036847773</productId>
       <title><![CDATA[Emmanuela Σανδάλια με πλεκτά λουριά "Χίος" - Μπεζ φυσικό]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-green-chios</productURL>
@@ -4002,6 +3982,26 @@
       <color>πολύχρωμο</color>
       <size>38,42</size>
       <EAN>5212033631495</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40480037929117</productId>
+      <title><![CDATA[Emmanuela Σανδάλια με πλεκτά λουριά "Χίος" - Λευκό]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-green-chios</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-192396.jpg?v=1627294090</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-192396.jpg?v=1627294090</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-279607.jpg?v=1627294090</img2>
+      </imagesURL>
+      <price>64.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1LI111KLWHBE10</MPN>
+      <color>λευκό</color>
+      <size>41</size>
+      <EAN>5212033631457</EAN>
       <shipping>0</shipping>
     </product>
     <product>

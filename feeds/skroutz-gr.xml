@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-17 08:33</created_at>
+  <created_at>2026-07-17 13:50</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1362,7 +1362,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Γκρι]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Γκρι</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -41564,7 +41564,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1368-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>16</quantity>
+        <quantity>15</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <description><![CDATA[Χαρακτηριστικά Προϊόντος
@@ -42206,7 +42206,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1349-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>5</quantity>
+        <quantity>4</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <description><![CDATA[Χαρακτηριστικά Προϊόντος
@@ -59981,53 +59981,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40480036749469</id>
-        <name><![CDATA[Σανδάλια με πλεκτά λουριά "Χίος" - Λευκό]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-green-chios?variant=40480036749469]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-192396.jpg?v=1627294090]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-110054.jpg?v=1627294090]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-356690.jpg?v=1627294090]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-279607.jpg?v=1627294090]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-169991.jpg?v=1627296004]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-841896.jpg?v=1627296004]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-976040.jpg?v=1627296004]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-826981.jpg?v=1627294160]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-353897.jpg?v=1627294160]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-766691.jpg?v=1627294160]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>42.90</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1LI111KLWHBE5]]></mpn>
-        <ean>5212033631402</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
-        <color>Λευκό</color>
-        <size>36,41</size>
-        <variations>
-          <variation>
-            <variationid>40480036749469</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>36</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI111KLWHBE5]]></manufacturersku>
-            <mpn><![CDATA[1LI111KLWHBE5]]></mpn>
-            <ean>5212033631402</ean>
-          </variation>
-          <variation>
-            <variationid>40480037929117</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>2</quantity>
-            <manufacturersku><![CDATA[1LI111KLWHBE10]]></manufacturersku>
-            <mpn><![CDATA[1LI111KLWHBE10]]></mpn>
-            <ean>5212033631457</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Σανδάλια με πλεκτά λουριά "Χίος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 36,41.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>40480036847773</id>
         <name><![CDATA[Σανδάλια με πλεκτά λουριά "Χίος" - Μπεζ]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-green-chios?variant=40480036847773]]></link>
@@ -60128,6 +60081,44 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Σανδάλια με πλεκτά λουριά "Χίος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Πολύχρωμα. Διαθέσιμα νούμερα: 38,42.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40480037929117</id>
+        <name><![CDATA[Σανδάλια με πλεκτά λουριά "Χίος" - Λευκό]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-green-chios?variant=40480037929117]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-192396.jpg?v=1627294090]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-110054.jpg?v=1627294090]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-356690.jpg?v=1627294090]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-279607.jpg?v=1627294090]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-169991.jpg?v=1627296004]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-841896.jpg?v=1627296004]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-976040.jpg?v=1627296004]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-826981.jpg?v=1627294160]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-353897.jpg?v=1627294160]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-plekta-loyria-xios-emmanuela-handcrafted-for-you-sandalia-me-plekta-loyria-xios-766691.jpg?v=1627294160]]></additionalimage>
+        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>42.90</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1LI111KLWHBE10]]></mpn>
+        <ean>5212033631457</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>2</quantity>
+        <color>Λευκό</color>
+        <size>41</size>
+        <variations>
+          <variation>
+            <variationid>40480037929117</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>41</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1LI111KLWHBE10]]></manufacturersku>
+            <mpn><![CDATA[1LI111KLWHBE10]]></mpn>
+            <ean>5212033631457</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Σανδάλια με πλεκτά λουριά "Χίος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -62204,7 +62195,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL222LDBDB7]]></mpn>
         <ean>5212033601818</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>18</quantity>
+        <quantity>17</quantity>
         <color>Καφέ</color>
         <size>40,41,44,45,46,47</size>
         <variations>
@@ -62212,7 +62203,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>46729228222799</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>40</size>
-            <quantity>2</quantity>
+            <quantity>1</quantity>
             <manufacturersku><![CDATA[1KL222LDBDB7]]></manufacturersku>
             <mpn><![CDATA[1KL222LDBDB7]]></mpn>
             <ean>5212033601818</ean>

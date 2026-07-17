@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-17 07:26</created_at>
+  <created_at>2026-07-17 08:33</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -42206,7 +42206,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1349-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>5</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <description><![CDATA[Χαρακτηριστικά Προϊόντος
@@ -56329,9 +56329,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>46728854831439</id>
+        <id>46728854864207</id>
         <name><![CDATA[Flat κλειστά πέδιλα "Ολυμπία" - Λαδί Σουέντ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-mustard-leather-sandals-olympias?variant=46728854831439]]></link>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-mustard-leather-sandals-olympias?variant=46728854864207]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL701LOGBE_1_ce3d14d9-b1da-4cd6-8e48-5e336ce9d0c9.jpg?v=1693474339]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-kleista-pedila-olympia-emmanuela-handcrafted-for-you-flat-kleista-pedila-olympia-179716.jpg?v=1627293198]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-kleista-pedila-olympia-emmanuela-handcrafted-for-you-flat-kleista-pedila-olympia-787344.jpg?v=1627293198]]></additionalimage>
@@ -56346,22 +56346,13 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <price_with_vat>38.90</price_with_vat>
         <vat>24.00</vat>
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL701LOGBE5]]></mpn>
-        <ean>5212033601665</ean>
+        <mpn><![CDATA[1KL701LOGBE6]]></mpn>
+        <ean>5212033601672</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
+        <quantity>1</quantity>
         <color>Λαδί Σουέντ</color>
-        <size>36,37</size>
+        <size>37</size>
         <variations>
-          <variation>
-            <variationid>46728854831439</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>36</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL701LOGBE5]]></manufacturersku>
-            <mpn><![CDATA[1KL701LOGBE5]]></mpn>
-            <ean>5212033601665</ean>
-          </variation>
           <variation>
             <variationid>46728854864207</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
@@ -56372,7 +56363,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033601672</ean>
           </variation>
         </variations>
-        <description><![CDATA[Flat κλειστά πέδιλα "Ολυμπία". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λαδί Σουέντ. Διαθέσιμα νούμερα: 36,37.]]></description>
+        <description><![CDATA[Flat κλειστά πέδιλα "Ολυμπία". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λαδί Σουέντ. Διαθέσιμα νούμερα: 37.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

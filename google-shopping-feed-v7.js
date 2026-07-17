@@ -858,9 +858,7 @@ function formatShippingTimeAttributes(countryCode) {
 
   return `
       <g:ships_from_country>GR</g:ships_from_country>
-      <g:return_policy_label>${returnLabel}</g:return_policy_label>
-      <g:shipping_handling_business_days>Mon-Fri</g:shipping_handling_business_days>
-      <g:shipping_transit_business_days>Mon-Fri</g:shipping_transit_business_days>`;
+      <g:return_policy_label>${returnLabel}</g:return_policy_label>`;
 }
 
 
@@ -1013,7 +1011,7 @@ async function fetchProductsWithOptions() {
                   }
                   ... on Video {
                     id
-                    sources { url mimeType }
+                    sources { url mimeType height }
                   }
                 }
               }
@@ -1058,9 +1056,10 @@ async function fetchProductsWithOptions() {
               src: m.image.url
             });
           } else if (m.mediaContentType === 'VIDEO' && m.sources?.length > 0) {
-            // Prefer mp4 source, fallback to first available
-            const mp4Source = m.sources.find(s => s.mimeType === 'video/mp4');
-            const bestSource = mp4Source || m.sources[0];
+            // Prefer the HIGHEST-RESOLUTION mp4 (Google video processing needs >=720p; the first
+            // source is often the lowest/SD rendition -> video_link_processing_error x444, 2026-07-17)
+            const mp4s = m.sources.filter(s => s.mimeType === 'video/mp4').sort((a, b) => (b.height || 0) - (a.height || 0));
+            const bestSource = mp4s[0] || m.sources[0];
             if (bestSource?.url) {
               videos.push({
                 id: m.id.replace('gid://shopify/Video/', ''),

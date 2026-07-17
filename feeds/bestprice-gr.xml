@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-17 02:54</date>
+  <date>2026-07-17 07:25</date>
   <products>
     <product>
       <productId>31372692389923</productId>
@@ -1817,6 +1817,21 @@
       <MPN>1185</MPN>
       <color>ροζ</color>
       <weight>2</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>31372916293667</productId>
+      <title><![CDATA[Σκουλαρίκια καρφωτά σπείρες με μαργαριτάρια χειροποίητα από ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/karfota-skoularikia-speires-margaritaria</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/karfwta-skoylarikia-speires-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-274014.jpg?v=1730713165</imageURL>
+      <price>66.00</price>
+      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1129</MPN>
+      <color>ασημί</color>
+      <weight>6</weight>
       <shipping>0</shipping>
     </product>
     <product>
@@ -17943,7 +17958,7 @@
       <productURL>https://emmanuela.gr/products/karfota-skoularikia-megala-trigona-smalto</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/karfwta-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-890210.jpg?v=1767359798</imageURL>
       <price>74.00</price>
-      <category_path>Κοσμήματα</category_path>
+      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
@@ -18885,7 +18900,7 @@
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-mple-skoylarikia-pins-staxya-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-261207.jpg?v=1767358873</img3>
       </imagesURL>
       <price>64.00</price>
-      <category_path>Κοσμήματα</category_path>
+      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
@@ -18899,7 +18914,7 @@
       <productURL>https://emmanuela.gr/products/skoularikia-ear-pins-staxya</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-mple-skoylarikia-pins-staxya-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-702938.jpg?v=1767358854</imageURL>
       <price>64.00</price>
-      <category_path>Κοσμήματα</category_path>
+      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
@@ -18918,7 +18933,7 @@
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-prasino-skoylarikia-pins-staxya-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-505277.jpg?v=1767358889</img3>
       </imagesURL>
       <price>64.00</price>
-      <category_path>Κοσμήματα</category_path>
+      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
@@ -19289,7 +19304,7 @@
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-kremasto-mentagion-romboi-apo-ashmi-925-kosmhmata-emmanuela-264510.jpg?v=1767358557</img3>
       </imagesURL>
       <price>139.00</price>
-      <category_path>Κοσμήματα-&gt;Μενταγιόν-&gt;Γυναικεία μενταγιόν</category_path>
+      <category_path>Κοσμήματα-&gt;Κολιέ-&gt;Γυναικεία κολιέ</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
@@ -19309,7 +19324,7 @@
         <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-kremasto-mentagion-romboi-apo-ashmi-925-kosmhmata-emmanuela-789918.jpg?v=1767358568</img4>
       </imagesURL>
       <price>129.00</price>
-      <category_path>Κοσμήματα-&gt;Μενταγιόν-&gt;Γυναικεία μενταγιόν</category_path>
+      <category_path>Κοσμήματα-&gt;Κολιέ-&gt;Γυναικεία κολιέ</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
@@ -19969,7 +19984,7 @@
       <productURL>https://emmanuela.gr/products/kremasto-kolie-alysida</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-kremasto-kolie-alysida-apo-ashmi-925-kosmhmata-emmanuela-162444.jpg?v=1755856765</imageURL>
       <price>179.00</price>
-      <category_path>Κοσμήματα-&gt;Μενταγιόν-&gt;Γυναικεία μενταγιόν</category_path>
+      <category_path>Κοσμήματα-&gt;Κολιέ-&gt;Γυναικεία κολιέ</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
@@ -19987,7 +20002,7 @@
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-kremasto-kolie-alysida-apo-ashmi-925-kosmhmata-emmanuela-425631.jpg?v=1755856780</img2>
       </imagesURL>
       <price>179.00</price>
-      <category_path>Κοσμήματα-&gt;Μενταγιόν-&gt;Γυναικεία μενταγιόν</category_path>
+      <category_path>Κοσμήματα-&gt;Κολιέ-&gt;Γυναικεία κολιέ</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
@@ -20007,7 +20022,7 @@
         <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img4>
       </imagesURL>
       <price>179.00</price>
-      <category_path>Κοσμήματα-&gt;Μενταγιόν-&gt;Γυναικεία μενταγιόν</category_path>
+      <category_path>Κοσμήματα-&gt;Κολιέ-&gt;Γυναικεία κολιέ</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>

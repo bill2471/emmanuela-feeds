@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-19 13:39</created_at>
+  <created_at>2026-07-19 19:29</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1388,7 +1388,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
+        <quantity>4</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -1776,7 +1776,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1297-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -13100,7 +13100,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[6017]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -15252,9 +15252,9 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU217riWo]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>9</quantity>
+        <quantity>8</quantity>
         <color>Ασημί</color>
-        <size>53,55,56,57,61,62,63,64,66</size>
+        <size>53,55,56,61,62,63,64,66</size>
         <variations>
           <variation>
             <variationid>51038408474958</variationid>
@@ -15274,13 +15274,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
             <variationid>39346651365411</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>56</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[LU217riWo]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>32959951372323</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>57</size>
             <quantity>1</quantity>
             <manufacturersku><![CDATA[LU217riWo]]></manufacturersku>
           </variation>
@@ -15351,9 +15344,9 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU0190riWo]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Ασημί</color>
-        <size>50,51,52,53,54,55,56</size>
+        <size>50,51,52,53,54,55</size>
         <variations>
           <variation>
             <variationid>31373659930659</variationid>
@@ -15392,13 +15385,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
             <variationid>31373659537443</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>55</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[LU0190riWo]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>31373659570211</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>56</size>
             <quantity>1</quantity>
             <manufacturersku><![CDATA[LU0190riWo]]></manufacturersku>
           </variation>
@@ -33393,9 +33379,9 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU0190ri]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>6</quantity>
         <color>Ασημί</color>
-        <size>50,52,54,55,56,62,63</size>
+        <size>50,52,54,55,62,63</size>
         <variations>
           <variation>
             <variationid>31374415626275</variationid>
@@ -33422,13 +33408,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
             <variationid>31374415233059</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>55</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[LU0190ri]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>31374415265827</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>56</size>
             <quantity>1</quantity>
             <manufacturersku><![CDATA[LU0190ri]]></manufacturersku>
           </variation>
@@ -34404,9 +34383,9 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU217ri]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>9</quantity>
+        <quantity>8</quantity>
         <color>Ασημί</color>
-        <size>53,55,56,57,61,62,63,64,66</size>
+        <size>53,55,56,61,62,63,64,66</size>
         <variations>
           <variation>
             <variationid>51038382358862</variationid>
@@ -34426,13 +34405,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
             <variationid>31830490513443</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>56</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[LU217ri]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>32959944097827</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>57</size>
             <quantity>1</quantity>
             <manufacturersku><![CDATA[LU217ri]]></manufacturersku>
           </variation>
@@ -38156,7 +38128,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1261-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -50208,9 +50180,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI57MANLBRBR11]]></mpn>
         <ean>5212033635189</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
+        <quantity>1</quantity>
         <color>Καφέ</color>
-        <size>44,45</size>
+        <size>44</size>
         <variations>
           <variation>
             <variationid>40479818875037</variationid>
@@ -50221,17 +50193,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1LI57MANLBRBR11]]></mpn>
             <ean>5212033635189</ean>
           </variation>
-          <variation>
-            <variationid>40479818973341</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>45</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI57MANLBRBR12]]></manufacturersku>
-            <mpn><![CDATA[1LI57MANLBRBR12]]></mpn>
-            <ean>5212033635196</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια με κούμπωμα "Μίδας". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 44,45.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια με κούμπωμα "Μίδας". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 44.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -55433,41 +55396,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Φλατ πέδιλα παντόφλες με μαλακό πάτο "Αγνή". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 40.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>40479954337949</id>
-        <name><![CDATA[Φλατ πέδιλα παντόφλες με μαλακό πάτο "Ζωή" - Τιρκουάζ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-turquoise-zoe?variant=40479954337949]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-zwh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-zwh-260654.jpg?v=1627387167]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-zwh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-zwh-434095.jpg?v=1627296003]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-zwh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-zwh-632804.jpg?v=1627296003]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-zwh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-zwh-172300.jpg?v=1627296003]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-zwh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-zwh-481004.jpg?v=1627296003]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-zwh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-zwh-553005.jpg?v=1627296003]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-zwh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-zwh-231927.jpg?v=1627296003]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Παντόφλες]]></category>
-        <price_with_vat>44.18</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1FA11799LTU5]]></mpn>
-        <ean>5212033648479</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>1</quantity>
-        <color>Τιρκουάζ</color>
-        <size>36</size>
-        <variations>
-          <variation>
-            <variationid>40479954337949</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>36</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1FA11799LTU5]]></manufacturersku>
-            <mpn><![CDATA[1FA11799LTU5]]></mpn>
-            <ean>5212033648479</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Φλατ πέδιλα παντόφλες με μαλακό πάτο "Ζωή". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Τιρκουάζ. Διαθέσιμα νούμερα: 36.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

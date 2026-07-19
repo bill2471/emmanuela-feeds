@@ -12814,7 +12814,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>53, 55, 56, 57, 61, 62, 63, 64, 66</VAL>
+      <VAL>53, 55, 56, 61, 62, 63, 64, 66</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -12842,7 +12842,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>50, 51, 52, 53, 54, 55, 56</VAL>
+      <VAL>50, 51, 52, 53, 54, 55</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -17471,7 +17471,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>50, 52, 54, 55, 56, 62, 63</VAL>
+      <VAL>50, 52, 54, 55, 62, 63</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -17691,7 +17691,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>53, 55, 56, 57, 61, 62, 63, 64, 66</VAL>
+      <VAL>53, 55, 56, 61, 62, 63, 64, 66</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>

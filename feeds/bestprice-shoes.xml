@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-19 14:19</date>
+  <date>2026-07-19 20:09</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -522,7 +522,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1LI57MANLBRBR11</MPN>
       <color>καφέ</color>
-      <size>44,45</size>
+      <size>44</size>
       <EAN>5212033635189</EAN>
       <shipping>0</shipping>
     </product>
@@ -2404,29 +2404,6 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479954337949</productId>
-      <title><![CDATA[Emmanuela Φλατ πέδιλα παντόφλες με μαλακό πάτο "Ζωή"]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-turquoise-zoe</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-zwh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-zwh-260654.jpg?v=1627387167</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-zwh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-zwh-260654.jpg?v=1627387167</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-zwh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-zwh-434095.jpg?v=1627296003</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-zwh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-zwh-481004.jpg?v=1627296003</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-zwh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-zwh-632804.jpg?v=1627296003</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-zwh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-zwh-553005.jpg?v=1627296003</img5>
-      </imagesURL>
-      <price>109.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1FA11799LTU5</MPN>
-      <color>τιρκουάζ</color>
-      <size>36</size>
-      <EAN>5212033648479</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
       <productId>40479955189917</productId>
       <title><![CDATA[Emmanuela Flat πέδιλα "Υπατία"]]></title>
       <productURL>https://emmanuela.shoes/products/greek-lilac-suede-sandals-hypatia</productURL>
@@ -2637,30 +2614,8 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1LI46MANLBRBR13</MPN>
       <color>καφέ</color>
-      <size>46,47</size>
+      <size>46</size>
       <EAN>5212033626323</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>43873660403941</productId>
-      <title><![CDATA[Emmanuela Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος" - Καφέ]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-icarus-men</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-555975.jpg?v=1627293856</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-555975.jpg?v=1627293856</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-181561.jpg?v=1627293856</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-350639.jpg?v=1627293857</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-982923.jpg?v=1627293857</img4>
-      </imagesURL>
-      <price>59.00</price>
-      <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1LI46MANLBRBR14</MPN>
-      <color>καφέ</color>
-      <size>47</size>
-      <EAN>5212033600019</EAN>
       <shipping>0</shipping>
     </product>
     <product>

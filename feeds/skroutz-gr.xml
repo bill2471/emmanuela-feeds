@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-20 03:12</created_at>
+  <created_at>2026-07-20 09:21</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -15186,9 +15186,9 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU523riWo]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Ασημί</color>
-        <size>55,56,60,61,62</size>
+        <size>55,56,61,62</size>
         <variations>
           <variation>
             <variationid>39543322083363</variationid>
@@ -15201,13 +15201,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
             <variationid>39543322116131</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>56</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[LU523riWo]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>39543322148899</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>60</size>
             <quantity>1</quantity>
             <manufacturersku><![CDATA[LU523riWo]]></manufacturersku>
           </variation>
@@ -34076,9 +34069,9 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU523ri]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Ασημί</color>
-        <size>55,56,60,61,62</size>
+        <size>55,56,61,62</size>
         <variations>
           <variation>
             <variationid>39543321690147</variationid>
@@ -34091,13 +34084,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
             <variationid>39543321722915</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>56</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[LU523ri]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>39543321755683</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>60</size>
             <quantity>1</quantity>
             <manufacturersku><![CDATA[LU523ri]]></manufacturersku>
           </variation>
@@ -50547,7 +50533,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS1065LNABE6]]></mpn>
         <ean>5212033643085</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>14</quantity>
+        <quantity>13</quantity>
         <color>Μπεζ</color>
         <size>37,38,39,40</size>
         <variations>
@@ -50582,7 +50568,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40479824445597</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>40</size>
-            <quantity>3</quantity>
+            <quantity>2</quantity>
             <manufacturersku><![CDATA[1TS1065LNABE9]]></manufacturersku>
             <mpn><![CDATA[1TS1065LNABE9]]></mpn>
             <ean>5212033643115</ean>

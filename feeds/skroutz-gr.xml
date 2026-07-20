@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-19 19:29</created_at>
+  <created_at>2026-07-20 03:12</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1388,7 +1388,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -54129,53 +54129,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40479900139677</id>
-        <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη" - Χρυσό]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-red-circe?variant=40479900139677]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-337598.jpg?v=1653981761]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-472736.jpg?v=1627294647]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-652623.jpg?v=1627294647]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-984241.jpg?v=1627294654]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-465601.jpg?v=1627294654]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-575154.jpg?v=1627294652]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-288166.jpg?v=1627294652]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-217408.jpg?v=1627294703]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-233476.jpg?v=1627294703]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-271289.jpg?v=1627294697]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>87.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL310LRMBE8]]></mpn>
-        <ean>5212033621472</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
-        <color>Χρυσό</color>
-        <size>39,40</size>
-        <variations>
-          <variation>
-            <variationid>40479900139677</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>39</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL310LRMBE8]]></manufacturersku>
-            <mpn><![CDATA[1KL310LRMBE8]]></mpn>
-            <ean>5212033621472</ean>
-          </variation>
-          <variation>
-            <variationid>40479900401821</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL310LRMBE9]]></manufacturersku>
-            <mpn><![CDATA[1KL310LRMBE9]]></mpn>
-            <ean>5212033621496</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 39,40.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>40479900270749</id>
         <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη" - Κοραλί]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-red-circe?variant=40479900270749]]></link>
@@ -54211,6 +54164,44 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Κοραλί. Διαθέσιμα νούμερα: 40.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40479900401821</id>
+        <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη" - Χρυσό]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-red-circe?variant=40479900401821]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-337598.jpg?v=1653981761]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-472736.jpg?v=1627294647]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-652623.jpg?v=1627294647]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-984241.jpg?v=1627294654]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-465601.jpg?v=1627294654]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-575154.jpg?v=1627294652]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-288166.jpg?v=1627294652]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-217408.jpg?v=1627294703]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-233476.jpg?v=1627294703]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-271289.jpg?v=1627294697]]></additionalimage>
+        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>87.00</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1KL310LRMBE9]]></mpn>
+        <ean>5212033621496</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>1</quantity>
+        <color>Χρυσό</color>
+        <size>40</size>
+        <variations>
+          <variation>
+            <variationid>40479900401821</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>40</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL310LRMBE9]]></manufacturersku>
+            <mpn><![CDATA[1KL310LRMBE9]]></mpn>
+            <ean>5212033621496</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 40.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -55917,9 +55908,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI46MANLBRBR13]]></mpn>
         <ean>5212033626323</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
+        <quantity>1</quantity>
         <color>Καφέ</color>
-        <size>46,47</size>
+        <size>46</size>
         <variations>
           <variation>
             <variationid>40479960793245</variationid>
@@ -55930,55 +55921,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1LI46MANLBRBR13]]></mpn>
             <ean>5212033626323</ean>
           </variation>
-          <variation>
-            <variationid>43873659748581</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>47</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI46MANLBRBR14]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLBRBR14]]></mpn>
-            <ean>5212033600019</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 46,47.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>43873660403941</id>
-        <name><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος" - Καφέ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-icarus-men?variant=43873660403941]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-555975.jpg?v=1627293856]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-181561.jpg?v=1627293856]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-350639.jpg?v=1627293857]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-982923.jpg?v=1627293857]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-929529.jpg?v=1627293857]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1LI46_-_SIZE_CHART.png?v=1779356168]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-998334.jpg?v=1627293850]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-260852.jpg?v=1627293850]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-257240.jpg?v=1627293856]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-861007.jpg?v=1627293856]]></additionalimage>
-        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>59.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1LI46MANLBRBR14]]></mpn>
-        <ean>5212033600019</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>1</quantity>
-        <color>Καφέ</color>
-        <size>47</size>
-        <variations>
-          <variation>
-            <variationid>43873660403941</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>47</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI46MANLBRBR14]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLBRBR14]]></mpn>
-            <ean>5212033600019</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 47.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 46.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

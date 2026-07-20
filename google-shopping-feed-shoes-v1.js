@@ -740,6 +740,7 @@ async function fetchProductsWithOptions() {
   console.log('📦 Fetching products with options + weight + video...\n');
 
   const allProducts = [];
+  let skippedUnpublished = 0;
   let cursor = null;
   let page = 1;
 
@@ -751,7 +752,7 @@ async function fetchProductsWithOptions() {
         pageInfo { hasNextPage endCursor }
         edges {
           node {
-            id title handle descriptionHtml productType vendor
+            id title handle descriptionHtml productType vendor publishedAt
             media(first: 20) {
               edges {
                 node {
@@ -793,6 +794,12 @@ async function fetchProductsWithOptions() {
 
       const products = data.data?.products?.edges || [];
       products.forEach(({ node }) => {
+        // Skip products not published to the Online Store (e.g. unpublished clone families):
+        // their PDPs 404/302 -> permanent landing_page_error disapprovals in GMC (2026-07-20)
+        if (!node.publishedAt) {
+          skippedUnpublished++;
+          return;
+        }
         const mediaEdges = node.media?.edges || [];
         const images = [];
         const videos = [];
@@ -878,7 +885,8 @@ async function fetchProductsWithOptions() {
     } catch (error) { console.error(`❌ Error: ${error.message}`); break; }
   }
 
-  console.log(`\n✅ Total products: ${allProducts.length}\n`);
+  console.log(`\n✅ Total products: ${allProducts.length}` +
+    (skippedUnpublished ? ` (skipped ${skippedUnpublished} unpublished)` : '') + '\n');
   return allProducts;
 }
 
@@ -1215,7 +1223,9 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
           .slice(0, 9);
       }
 
-      const translatedHandle = prodTrans.handle || enFallback.handle || product.handle;
+      // Handle fallback = BASE handle (never the EN handle): a foreign-locale URL with the EN
+      // handle 301-canonicalizes; the base handle serves 200 direct in every locale (2026-07-20)
+      const translatedHandle = prodTrans.handle || product.handle;
       const productUrl = buildProductUrl(translatedHandle, variant.id, market);
       const adjustedVariantPrice = Math.round(parseFloat(variant.price) * priceFactor * 100) / 100;
       const price = formatPrice(adjustedVariantPrice, priceCurrency);

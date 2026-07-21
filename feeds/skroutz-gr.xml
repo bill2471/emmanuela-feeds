@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-21 02:55</created_at>
+  <created_at>2026-07-21 08:52</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -43268,7 +43268,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[8062-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <description><![CDATA[Χαρακτηριστικά Προϊόντος
@@ -53151,53 +53151,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40479884411037</id>
-        <name><![CDATA[Σανδάλια μπότες με κορδόνια "Αλήθεια" - Χρυσό]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-white-alethea?variant=40479884411037]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-371233_0646ea75-b76a-4c4a-9aa3-c3ba0ecd9074.jpg?v=1627294827]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-978435_fc0a5afc-ae3f-4d4d-8b97-fab7621bf368.jpg?v=1627294827]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-100065_01d5d3a6-6b23-4d5f-9e2d-046e2801072b.jpg?v=1627294827]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-722072_a39dd380-f6e9-4e3c-9660-497575b2adf6.jpg?v=1627294827]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-627990_9aa13b7b-9bc5-44df-b882-6c762d9a24b2.jpg?v=1627294827]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-105082_f74d9efe-8b12-4605-84c7-e607b69f913e.jpg?v=1627294827]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-713596_c09f33e3-2fac-4854-abd2-440b75698be7.jpg?v=1627294827]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-921470_601f0613-4114-4f4b-87b2-829efe66bc10.jpg?v=1627294828]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-902747.jpg?v=1627294771]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-314991.jpg?v=1627294771]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>65.10</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1LI141LRMBE7]]></mpn>
-        <ean>5212033628815</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
-        <color>Χρυσό</color>
-        <size>38,39</size>
-        <variations>
-          <variation>
-            <variationid>40479884411037</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>38</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI141LRMBE7]]></manufacturersku>
-            <mpn><![CDATA[1LI141LRMBE7]]></mpn>
-            <ean>5212033628815</ean>
-          </variation>
-          <variation>
-            <variationid>40479884935325</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>39</size>
-            <quantity>2</quantity>
-            <manufacturersku><![CDATA[1LI141LRMBE8]]></manufacturersku>
-            <mpn><![CDATA[1LI141LRMBE8]]></mpn>
-            <ean>5212033628822</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Σανδάλια μπότες με κορδόνια "Αλήθεια". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 38,39.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>40479884837021</id>
         <name><![CDATA[Σανδάλια μπότες με κορδόνια "Αλήθεια" - Μπεζ]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-white-alethea?variant=40479884837021]]></link>
@@ -53233,6 +53186,44 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Σανδάλια μπότες με κορδόνια "Αλήθεια". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 39.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40479884935325</id>
+        <name><![CDATA[Σανδάλια μπότες με κορδόνια "Αλήθεια" - Χρυσό]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-white-alethea?variant=40479884935325]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-371233_0646ea75-b76a-4c4a-9aa3-c3ba0ecd9074.jpg?v=1627294827]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-978435_fc0a5afc-ae3f-4d4d-8b97-fab7621bf368.jpg?v=1627294827]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-100065_01d5d3a6-6b23-4d5f-9e2d-046e2801072b.jpg?v=1627294827]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-722072_a39dd380-f6e9-4e3c-9660-497575b2adf6.jpg?v=1627294827]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-627990_9aa13b7b-9bc5-44df-b882-6c762d9a24b2.jpg?v=1627294827]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-105082_f74d9efe-8b12-4605-84c7-e607b69f913e.jpg?v=1627294827]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-713596_c09f33e3-2fac-4854-abd2-440b75698be7.jpg?v=1627294827]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-921470_601f0613-4114-4f4b-87b2-829efe66bc10.jpg?v=1627294828]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-902747.jpg?v=1627294771]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-314991.jpg?v=1627294771]]></additionalimage>
+        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>65.10</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1LI141LRMBE8]]></mpn>
+        <ean>5212033628822</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>2</quantity>
+        <color>Χρυσό</color>
+        <size>39</size>
+        <variations>
+          <variation>
+            <variationid>40479884935325</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>39</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1LI141LRMBE8]]></manufacturersku>
+            <mpn><![CDATA[1LI141LRMBE8]]></mpn>
+            <ean>5212033628822</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Σανδάλια μπότες με κορδόνια "Αλήθεια". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 39.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

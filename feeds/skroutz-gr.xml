@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-21 14:12</created_at>
+  <created_at>2026-07-21 19:45</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1388,7 +1388,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -10402,7 +10402,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1268-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>10</quantity>
+        <quantity>9</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>5</weight>
@@ -38224,7 +38224,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1294-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -38995,7 +38995,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4458600300579-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>1</weight>
@@ -43237,7 +43237,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[8062-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
+        <quantity>4</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <description><![CDATA[Χαρακτηριστικά Προϊόντος
@@ -48380,7 +48380,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1365M-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>23</quantity>
+        <quantity>24</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -61554,9 +61554,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI58MLBLBL5]]></mpn>
         <ean>5212033629300</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>12</quantity>
+        <quantity>11</quantity>
         <color>Μαύρο</color>
-        <size>36,37,38,39,40,41,42</size>
+        <size>36,37,38,39,41,42</size>
         <variations>
           <variation>
             <variationid>40480071090333</variationid>
@@ -61595,15 +61595,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033629331</ean>
           </variation>
           <variation>
-            <variationid>40480071942301</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI58MLBLBL9]]></manufacturersku>
-            <mpn><![CDATA[1LI58MLBLBL9]]></mpn>
-            <ean>5212033629348</ean>
-          </variation>
-          <variation>
             <variationid>40480072204445</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>41</size>
@@ -61622,7 +61613,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033629362</ean>
           </variation>
         </variations>
-        <description><![CDATA[Σανδάλια παντόφλες με μαίανδρους "Σπέτσες". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 36,37,38,39,40,41,42.]]></description>
+        <description><![CDATA[Σανδάλια παντόφλες με μαίανδρους "Σπέτσες". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 36,37,38,39,41,42.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -61794,9 +61785,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI74MANLBRBR7]]></mpn>
         <ean>5212033635363</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Καφέ</color>
-        <size>40,45,47</size>
+        <size>40,45</size>
         <variations>
           <variation>
             <variationid>40480091373725</variationid>
@@ -61816,17 +61807,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1LI74MANLBRBR12]]></mpn>
             <ean>5212033635417</ean>
           </variation>
-          <variation>
-            <variationid>43873673085157</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>47</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI74MANLBRBR14]]></manufacturersku>
-            <mpn><![CDATA[1LI74MANLBRBR14]]></mpn>
-            <ean>5212033600170</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,45,47.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,45.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -63793,44 +63775,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Σανδάλια παντόφλες με μαίανδρους "Ίος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Κοραλί. Διαθέσιμα νούμερα: 37,39.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>40480253903005</id>
-        <name><![CDATA[Σανδάλια παντόφλες με μαίανδρους "Ίος" - Λευκό]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-ios?variant=40480253903005]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-ios-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-ios-680096.jpg?v=1627295778]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-ios-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-ios-690553.jpg?v=1627295778]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-ios-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-ios-535808.jpg?v=1627295778]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-ios-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-ios-217697.jpg?v=1627295778]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-ios-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-ios-447734.jpg?v=1627295831]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-ios-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-ios-666445.jpg?v=1627295831]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-ios-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-ios-364041.jpg?v=1627295831]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-ios-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-ios-633995.jpg?v=1627295830]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-ios-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-ios-722417.jpg?v=1627295830]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-ios-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-ios-226087.jpg?v=1627295830]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Παντόφλες]]></category>
-        <price_with_vat>44.90</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1LI362MLWHBE7]]></mpn>
-        <ean>5212033629980</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>1</quantity>
-        <color>Λευκό</color>
-        <size>38</size>
-        <variations>
-          <variation>
-            <variationid>40480253903005</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>38</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI362MLWHBE7]]></manufacturersku>
-            <mpn><![CDATA[1LI362MLWHBE7]]></mpn>
-            <ean>5212033629980</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Σανδάλια παντόφλες με μαίανδρους "Ίος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 38.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

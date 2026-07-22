@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-22 09:32</date>
+  <date>2026-07-22 14:53</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -208,7 +208,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL213LBRBR8</MPN>
       <color>καφέ</color>
-      <size>41,43,44</size>
+      <size>41,43,44,45</size>
       <EAN>5212033624824</EAN>
       <shipping>0</shipping>
     </product>
@@ -2591,7 +2591,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1LI46MANLBLBL7</MPN>
       <color>μαύρο</color>
-      <size>40,42</size>
+      <size>40</size>
       <EAN>5212033634410</EAN>
       <shipping>0</shipping>
     </product>
@@ -3491,22 +3491,6 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40480003555485</productId>
-      <title><![CDATA[Emmanuela Σανδάλια με λουριά "Κέρκυρα" - Λευκό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-corfu</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-kerkyra-emmanuela-handcrafted-for-you-sandalia-me-loyria-kerkyra-453925.jpg?v=1627375546</imageURL>
-      <price>59.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1KL847LWHBE6</MPN>
-      <color>λευκό</color>
-      <size>37</size>
-      <EAN>5212033613484</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
       <productId>40480003096733</productId>
       <title><![CDATA[Emmanuela Σανδάλια με λουριά "Λευκάδα" - Πολύχρωμα]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-lefkada</productURL>
@@ -3530,6 +3514,27 @@
       <shipping>0</shipping>
     </product>
     <product>
+      <productId>40480003162269</productId>
+      <title><![CDATA[Emmanuela Σανδάλια με λουριά "Λευκάδα" - Μαύρο]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-lefkada</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-178130.jpg?v=1627375590</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-178130.jpg?v=1627375590</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-232307.jpg?v=1627294087</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-350341.jpg?v=1627294087</img3>
+      </imagesURL>
+      <price>59.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1KL845LBLBL6</MPN>
+      <color>μαύρο</color>
+      <size>37,38,39,40,41</size>
+      <EAN>5212033613880</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
       <productId>40480003227805</productId>
       <title><![CDATA[Emmanuela Σανδάλια με λουριά "Λευκάδα" - Μπεζ φυσικό]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-lefkada</productURL>
@@ -3547,27 +3552,6 @@
       <color>μπεζ</color>
       <size>37,38,40</size>
       <EAN>5212033613750</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40480003457181</productId>
-      <title><![CDATA[Emmanuela Σανδάλια με λουριά "Λευκάδα" - Μαύρο]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-lefkada</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-178130.jpg?v=1627375590</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-178130.jpg?v=1627375590</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-232307.jpg?v=1627294087</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-350341.jpg?v=1627294087</img3>
-      </imagesURL>
-      <price>59.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1KL845LBLBL7</MPN>
-      <color>μαύρο</color>
-      <size>38,39,40,41</size>
-      <EAN>5212033613903</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -4596,7 +4580,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL222LNABE8</MPN>
       <color>μπεζ</color>
-      <size>41,42,44,45,46</size>
+      <size>41,44,45,46</size>
       <EAN>5212033624213</EAN>
       <shipping>0</shipping>
     </product>

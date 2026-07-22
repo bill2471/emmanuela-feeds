@@ -324,7 +324,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 43, 44</VAL>
+      <VAL>41, 43, 44, 45</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -4174,7 +4174,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 42</VAL>
+      <VAL>40</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -5638,36 +5638,6 @@
     <GTIN>05212033613484</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40480003555485</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Σανδάλια με λουριά "Κέρκυρα" - Λευκό]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-white-corfu</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-kerkyra-emmanuela-handcrafted-for-you-sandalia-me-loyria-kerkyra-453925.jpg?v=1627375546</IMGURL>
-    <PRICE_VAT>59</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1cm 👌 Δερμάτινος πάτος ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα αρχαιοελληνικά σανδάλια μονομάχου υψηλής ποιότητας 👟 Εξαιρετικά εύκαμπτα, άνετα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα δερμάτινα σανδάλια gladiator, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856632041629</ITEMGROUP_ID>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-white-corfu?variant=40480003555485</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>λευκό</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>37</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033613484</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
     <ITEM_ID>40480003096733</ITEM_ID>
     <PRODUCTNAME><![CDATA[Σανδάλια με λουριά "Λευκάδα" - Πολύχρωμα]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-lefkada</URL>
@@ -5702,6 +5672,38 @@
     <GTIN>05212033613606</GTIN>
   </SHOPITEM>
   <SHOPITEM>
+    <ITEM_ID>40480003162269</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Σανδάλια με λουριά "Λευκάδα" - Μαύρο]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-lefkada</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-178130.jpg?v=1627375590</IMGURL>
+    <PRICE_VAT>59</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1cm 👌 Δερμάτινος πάτος ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα γυναικεία σανδάλια & πέδιλα υψηλής ποιότητας 👟 Εξαιρετικά εύκαμπτα, άνετα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα δερμάτινα σανδάλια & πέδιλα, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856632074397</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-232307.jpg?v=1627294087</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-350341.jpg?v=1627294087</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-lefkada?variant=40480003162269</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>μαύρο</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>37, 38, 39, 40, 41</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033613880</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
     <ITEM_ID>40480003227805</ITEM_ID>
     <PRODUCTNAME><![CDATA[Σανδάλια με λουριά "Λευκάδα" - Μπεζ φυσικό]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-lefkada</URL>
@@ -5731,38 +5733,6 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033613750</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>40480003457181</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Σανδάλια με λουριά "Λευκάδα" - Μαύρο]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-lefkada</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-178130.jpg?v=1627375590</IMGURL>
-    <PRICE_VAT>59</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Γυναικεία ρούχα και παπούτσια | Γυναικεία παπούτσια | Γυναικεία σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1cm 👌 Δερμάτινος πάτος ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα γυναικεία σανδάλια & πέδιλα υψηλής ποιότητας 👟 Εξαιρετικά εύκαμπτα, άνετα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα δερμάτινα σανδάλια & πέδιλα, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856632074397</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-232307.jpg?v=1627294087</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-leykada-emmanuela-handcrafted-for-you-sandalia-me-loyria-leykada-350341.jpg?v=1627294087</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-lefkada?variant=40480003457181</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>μαύρο</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>38, 39, 40, 41</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033613903</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480005095581</ITEM_ID>
@@ -7423,7 +7393,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 42, 44, 45, 46</VAL>
+      <VAL>41, 44, 45, 46</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>

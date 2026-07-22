@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-22 03:33</date>
+  <date>2026-07-22 09:32</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -3486,6 +3486,22 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL847LWHBE6</MPN>
       <color>λευκό</color>
+      <size>37,39</size>
+      <EAN>5212033613484</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40480003555485</productId>
+      <title><![CDATA[Emmanuela Σανδάλια με λουριά "Κέρκυρα" - Λευκό]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-corfu</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-me-loyria-kerkyra-emmanuela-handcrafted-for-you-sandalia-me-loyria-kerkyra-453925.jpg?v=1627375546</imageURL>
+      <price>59.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1KL847LWHBE6</MPN>
+      <color>λευκό</color>
       <size>37</size>
       <EAN>5212033613484</EAN>
       <shipping>0</shipping>
@@ -5276,6 +5292,26 @@
       <color>κοραλί</color>
       <size>37,39</size>
       <EAN>5212033631198</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40480253903005</productId>
+      <title><![CDATA[Emmanuela Σανδάλια παντόφλες με μαίανδρους "Ίος" - Λευκό]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-ios</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-ios-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-ios-680096.jpg?v=1627295778</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-ios-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-ios-680096.jpg?v=1627295778</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-ios-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-ios-217697.jpg?v=1627295778</img2>
+      </imagesURL>
+      <price>59.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1LI362MLWHBE7</MPN>
+      <color>λευκό</color>
+      <size>38</size>
+      <EAN>5212033629980</EAN>
       <shipping>0</shipping>
     </product>
     <product>

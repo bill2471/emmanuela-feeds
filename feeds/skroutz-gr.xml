@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-21 19:45</created_at>
+  <created_at>2026-07-22 02:54</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1388,7 +1388,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>5</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -45063,7 +45063,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1381-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <description><![CDATA[Χαρακτηριστικά Προϊόντος
@@ -51913,9 +51913,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40479850004637</id>
+        <id>40479850234013</id>
         <name><![CDATA[Σανδάλια μονομάχου με κορδόνια "Αλκινόη" - Χρυσό]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-gold-alcinoe?variant=40479850004637]]></link>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-gold-alcinoe?variant=40479850234013]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/1TS52LGOBE_1.jpg?v=1667222993]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/1TS52LGOBE_1_1.jpg?v=1667222993]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/1TS52LGOBE_1_2.jpg?v=1667222993]]></additionalimage>
@@ -51930,22 +51930,13 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <price_with_vat>32.90</price_with_vat>
         <vat>24.00</vat>
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1TS52LGOBE6]]></mpn>
-        <ean>5212033642729</ean>
+        <mpn><![CDATA[1TS52LGOBE7]]></mpn>
+        <ean>5212033642736</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>9</quantity>
+        <quantity>8</quantity>
         <color>Χρυσό</color>
-        <size>37,38,39,41</size>
+        <size>38,39,41</size>
         <variations>
-          <variation>
-            <variationid>40479850004637</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>37</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1TS52LGOBE6]]></manufacturersku>
-            <mpn><![CDATA[1TS52LGOBE6]]></mpn>
-            <ean>5212033642729</ean>
-          </variation>
           <variation>
             <variationid>40479850234013</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
@@ -51974,7 +51965,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033642767</ean>
           </variation>
         </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με κορδόνια "Αλκινόη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 37,38,39,41.]]></description>
+        <description><![CDATA[Σανδάλια μονομάχου με κορδόνια "Αλκινόη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 38,39,41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

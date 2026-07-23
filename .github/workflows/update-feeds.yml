@@ -166,15 +166,15 @@ jobs:
             echo "✅ Feeds updated and pushed!"
           fi
 
-      # 2026-07-23: loud alarm AFTER the commit. Keeps the hard-won "fail loudly"
-      # principle without letting one feed's throttle skip/discard the others:
-      # feeds are already built+committed above; here we only turn the run RED (and
-      # send the failure email) if a generator genuinely failed, naming WHICH one.
+      # 2026-07-23 (QUIET mode — Bill's choice): a transient single-cycle generator
+      # throttle self-heals next run and its feed kept its previous XML, so we do NOT
+      # fail the run (no "Run failed" email). The failure stays VISIBLE as a warning
+      # annotation — both here (named) and on the continue-on-error step itself.
       - name: Report generator failures
         if: always()
         run: |
           fail=0
-          check () { if [ "$1" = "failure" ]; then echo "❌ FAILED: $2"; fail=1; else echo "✅ ok: $2"; fi; }
+          check () { if [ "$1" = "failure" ]; then echo "::warning::Feed generator FAILED: $2 — kept previous XML, self-heals next run"; fail=1; else echo "✅ ok: $2"; fi; }
           check "${{ steps.gen_google.outcome }}"        "Google Shopping (jewelry)"
           check "${{ steps.gen_meta.outcome }}"          "Meta (jewelry)"
           check "${{ steps.gen_glami.outcome }}"         "GLAMI (jewelry)"
@@ -185,7 +185,9 @@ jobs:
           check "${{ steps.gen_bestprice_shoes.outcome }}" "BestPrice (shoes)"
           check "${{ steps.gen_glami_shoes.outcome }}"   "GLAMI (shoes)"
           if [ "$fail" = "1" ]; then
-            echo "::error::One or more feed generators failed (fresh feeds still committed; failed feed kept its previous XML)."
-            exit 1
+            echo "⚠️ One or more feed generators failed this cycle — their feeds kept the previous XML and refresh next run. (Run kept GREEN by design; see warning annotations above.)"
+          else
+            echo "🎉 All feed generators succeeded."
           fi
-          echo "🎉 All feed generators succeeded."
+          # Intentionally exit 0 (quiet): transient throttles self-heal; the failure is a
+          # warning annotation, not a red run / failure email.

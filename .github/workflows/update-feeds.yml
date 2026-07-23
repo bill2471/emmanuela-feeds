@@ -23,6 +23,12 @@ concurrency:
 jobs:
   update-feeds:
     runs-on: ubuntu-latest
+    # 2026-07-23: backstop against a HANG (continue-on-error only covers FAILURES).
+    # A half-open socket used to be able to stall a generator indefinitely; the runner
+    # default is 360min, which — combined with the concurrency group above — would also
+    # queue the next scheduled run behind it. A normal full run takes ~70min, so 120min
+    # is ~2x headroom while staying well inside the 6h cron interval.
+    timeout-minutes: 120
 
     steps:
       - name: Checkout repository

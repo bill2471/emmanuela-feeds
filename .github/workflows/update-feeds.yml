@@ -13,6 +13,13 @@ on:
 permissions:
   contents: write
 
+# 2026-07-23: serialize runs so a manual dispatch overlapping a scheduled run
+# can never race the final `git push` (the 2026-07-13 "fetch first" rejection).
+# cancel-in-progress:false => queue the later run instead of dropping a refresh.
+concurrency:
+  group: update-feeds
+  cancel-in-progress: false
+
 jobs:
   update-feeds:
     runs-on: ubuntu-latest
@@ -26,7 +33,17 @@ jobs:
         with:
           node-version: '20'
 
+      # 2026-07-23: every generator is now `continue-on-error` + has an id.
+      # Each feed is independent: a transient Shopify GraphQL throttle in ONE
+      # generator no longer aborts the job, so it can neither SKIP a later feed
+      # (e.g. Skroutz) nor DISCARD an already-built feed before the commit.
+      # Writes are atomic (build full XML in memory, single writeFileSync at end),
+      # so an aborted generator leaves its PREVIOUS xml intact — stale, never partial.
+      # A genuine failure is still surfaced loudly by the final "Report" step.
+
       - name: Run Google Shopping feed generator
+        id: gen_google
+        continue-on-error: true
         env:
           SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
         run: |
@@ -35,6 +52,8 @@ jobs:
           node google-shopping-feed-v7.js $COUNTRY
 
       - name: Run Meta/Facebook feed generator
+        id: gen_meta
+        continue-on-error: true
         env:
           SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
         run: |
@@ -42,6 +61,8 @@ jobs:
           node meta-feed-gr.js
 
       - name: Run GLAMI feed generator
+        id: gen_glami
+        continue-on-error: true
         env:
           SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
         run: |
@@ -49,6 +70,8 @@ jobs:
           node glami-feed-gr.js
 
       - name: Run BestPrice.gr feed generator
+        id: gen_bestprice
+        continue-on-error: true
         env:
           SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
         run: |
@@ -56,6 +79,8 @@ jobs:
           node bestprice-feed-gr.js
 
       - name: Run Skroutz.gr feed generator (COMBINED jewelry + sandals)
+        id: gen_skroutz
+        continue-on-error: true
         env:
           SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
           SHOPIFY_SHOES_ACCESS_TOKEN: ${{ secrets.SHOPIFY_SHOES_ACCESS_TOKEN }}
@@ -64,6 +89,8 @@ jobs:
           node skroutz-feed-gr.js
 
       - name: Run local inventory feed generator (Greece)
+        id: gen_localinv
+        continue-on-error: true
         env:
           SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
         run: |
@@ -71,6 +98,8 @@ jobs:
           node local-inventory-feed-gr.js
 
       - name: Run Google Shopping feed generator (Shoes)
+        id: gen_google_shoes
+        continue-on-error: true
         env:
           SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_SHOES_ACCESS_TOKEN }}
         run: |
@@ -79,6 +108,8 @@ jobs:
           node google-shopping-feed-shoes-v1.js $COUNTRY
 
       - name: Run BestPrice.gr feed generator (Shoes)
+        id: gen_bestprice_shoes
+        continue-on-error: true
         env:
           SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_SHOES_ACCESS_TOKEN }}
         run: |
@@ -86,13 +117,18 @@ jobs:
           node bestprice-feed-shoes.js
 
       - name: Run GLAMI feed generator (Shoes)
+        id: gen_glami_shoes
+        continue-on-error: true
         env:
           SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_SHOES_ACCESS_TOKEN }}
         run: |
           echo "👟 Generating GLAMI Product Feed (Shoes)..."
           node glami-feed-shoes.js
 
+      # if: always() => commit whatever XML was freshly built this cycle, even if
+      # a generator above failed (that feed simply keeps its previous XML).
       - name: Commit and push changes
+        if: always()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -129,3 +165,27 @@ jobs:
             git push
             echo "✅ Feeds updated and pushed!"
           fi
+
+      # 2026-07-23: loud alarm AFTER the commit. Keeps the hard-won "fail loudly"
+      # principle without letting one feed's throttle skip/discard the others:
+      # feeds are already built+committed above; here we only turn the run RED (and
+      # send the failure email) if a generator genuinely failed, naming WHICH one.
+      - name: Report generator failures
+        if: always()
+        run: |
+          fail=0
+          check () { if [ "$1" = "failure" ]; then echo "❌ FAILED: $2"; fail=1; else echo "✅ ok: $2"; fi; }
+          check "${{ steps.gen_google.outcome }}"        "Google Shopping (jewelry)"
+          check "${{ steps.gen_meta.outcome }}"          "Meta (jewelry)"
+          check "${{ steps.gen_glami.outcome }}"         "GLAMI (jewelry)"
+          check "${{ steps.gen_bestprice.outcome }}"     "BestPrice (jewelry)"
+          check "${{ steps.gen_skroutz.outcome }}"       "Skroutz (combined)"
+          check "${{ steps.gen_localinv.outcome }}"      "Local Inventory (jewelry)"
+          check "${{ steps.gen_google_shoes.outcome }}"  "Google Shopping (shoes)"
+          check "${{ steps.gen_bestprice_shoes.outcome }}" "BestPrice (shoes)"
+          check "${{ steps.gen_glami_shoes.outcome }}"   "GLAMI (shoes)"
+          if [ "$fail" = "1" ]; then
+            echo "::error::One or more feed generators failed (fresh feeds still committed; failed feed kept its previous XML)."
+            exit 1
+          fi
+          echo "🎉 All feed generators succeeded."

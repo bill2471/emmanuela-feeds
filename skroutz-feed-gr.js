@@ -618,6 +618,13 @@ function computeProductMpnBase(product, variants) {
 // HTTPS REQUEST HELPERS
 // ============================================
 
+// 2026-07-23: socket INACTIVITY timeout (env SHOPIFY_SOCKET_TIMEOUT_MS, default 90s).
+// Without it a half-open TLS socket leaves the promise below PENDING FOREVER — the generator
+// hangs silently and the CI job stalls until the 6h runner limit. This is an IDLE timeout:
+// it does NOT cut a slow-but-progressing response. ETIMEDOUT is kept in the message and
+// err.code is set so string-matching transient-error classifiers recognise it.
+const SOCKET_TIMEOUT_MS = parseInt(process.env.SHOPIFY_SOCKET_TIMEOUT_MS || '90000', 10);
+
 function httpsRequest(options, postData = null) {
   return new Promise((resolve, reject) => {
     const req = https.request(options, (res) => {
@@ -633,6 +640,11 @@ function httpsRequest(options, postData = null) {
       });
     });
     req.on('error', reject);
+    req.setTimeout(SOCKET_TIMEOUT_MS, () => {
+      const e = new Error(`Shopify socket timeout (ETIMEDOUT) after ${SOCKET_TIMEOUT_MS}ms`);
+      e.code = 'ESOCKETTIMEDOUT';
+      req.destroy(e);            // -> emits 'error' -> reject (same path as a network error)
+    });
     if (postData) req.write(postData);
     req.end();
   });

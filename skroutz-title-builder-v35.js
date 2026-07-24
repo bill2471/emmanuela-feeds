@@ -273,6 +273,19 @@ const TYPE_GRAMMAR = {
   Σκουλαρίκια: ['n', 'pl'], 'Στέφανα γάμου': ['n', 'pl'],
   Καρφίτσα: ['f', 'sg'],
   'Σετ κοσμημάτων': ['n', 'sg'],
+  // v3.5.7: plural head-words used by quantity sets ("Σετ από N <type>")
+  'σκουλαρίκια': ['n', 'pl'], 'δαχτυλίδια': ['n', 'pl'],
+  'βραχιόλια': ['n', 'pl'], 'μενταγιόν': ['n', 'pl'],
+  'κολιέ': ['n', 'pl'], 'τσόκερ': ['n', 'pl'],
+};
+
+// v3.5.7 (2026-07-24): plural head-word for quantity sets. Only neuter types are mapped —
+// a feminine type (Καρφίτσα) falls back to the singular, i.e. today's behaviour, so this
+// can never regress a type whose plural agreement is not modelled.
+const TYPE_PLURAL = {
+  'Σκουλαρίκι': 'σκουλαρίκια', 'Σκουλαρίκια': 'σκουλαρίκια',
+  'Δαχτυλίδι': 'δαχτυλίδια', 'Βραχιόλι': 'βραχιόλια',
+  'Μενταγιόν': 'μενταγιόν', 'Κολιέ': 'κολιέ', 'Τσόκερ': 'τσόκερ',
 };
 
 function handcraftedForm(typeWord) {
@@ -865,13 +878,26 @@ function buildSkroutzTitle({ product, variant, skroutzCategory }) {
   // "από <material>" → "με <material>" at start of body (only)
   body = body.replace(/^από\s+(στριφτό|πλεκτό|κεχριμπάρι|πέτρες|καρφιά|χάντρες|σύρμα)/i, 'με $1');
 
+  // v3.5.7 (2026-07-24): a QUANTITY SET must say so in the TITLE.
+  // v3.5.1 stripped "Σετ από N" because the structured block already carries
+  // «Πλήθος Τεμαχίων: Σετ από N». That premise is disproven: Skroutz has told us the
+  // <description> has ZERO clustering impact (the same reason our «Ζευγάρι (2 τεμάχια)»
+  // still renders as «Μονό»), so the customer-facing title was advertising e.g. a set of
+  // 4 rings as a single ring. We restore the prefix and switch the head word to its
+  // plural so the Greek agrees. Only the exact label "Σετ από N" triggers this —
+  // «Ζευγάρι…», «Μονό…» and «Σετ Κοσμημάτων…» are untouched.
+  const piecesInfo = detectPiecesCount({ product, typeWord });
+  const qtySet = /^Σετ από (\d+)$/.exec((piecesInfo && piecesInfo.label) || '');
+  const setPrefix = qtySet ? `Σετ από ${qtySet[1]}` : null;
+  const headWord = setPrefix ? (TYPE_PLURAL[typeWord] || typeWord) : typeWord;
+
   // Build parts
-  const parts = [typeWord];
-  if (gender === 'male') parts.push(genderForm(typeWord));
+  const parts = setPrefix ? [setPrefix, headWord] : [headWord];
+  if (gender === 'male') parts.push(genderForm(headWord));
   if (body) parts.push(body);
   if (side) parts.push(side);
-  parts.push(handcraftedForm(typeWord));
-  if (finish === 'X') parts.push(blackForm(typeWord));
+  parts.push(handcraftedForm(headWord));
+  if (finish === 'X') parts.push(blackForm(headWord));
   if (finish === 'G') parts.push('από επιχρυσωμένο ασήμι 925');
   else if (finish === 'R') parts.push('από ροζ επιχρυσωμένο ασήμι 925');
   else if (finish === 'O') parts.push('από οξειδωμένο ασήμι 925');

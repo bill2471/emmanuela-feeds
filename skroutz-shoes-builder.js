@@ -52,6 +52,65 @@ const PRICING_PATH = path.join(__dirname, 'skroutz-shoes-pricing.json');
 const LIFESTYLE_PATH = path.join(__dirname, 'skroutz-shoes-lifestyle.json');
 const MIN_PRODUCTS = 100;   // full shoes catalog ~495; anything tiny = failed/partial fetch
 
+// ---- COLOR ATTRIBUTION (2026-07-24) --------------------------------------------------
+// Skroutz excluded 88 sandals on 18/07 because our <additionalimage> list carried photos of a
+// DIFFERENT colorway («εικόνες που δεν αντιστοιχούν στην απόχρωση» — ticket #33670445). Root cause:
+// Shopify pins only ONE photo per color to that color's variants, so the old gallery-order
+// ("boundary") heuristic could attribute at most that single shot and the rest of the list was
+// filled from the shared lifestyle pool. The colour IS knowable: it is written in the image
+// altText («… "Βρισηίδα" - Ροζ χρυσό - Emmanuela …» / «… "Briseis" aus Türkis leder») and, on the
+// SKU-named uploads, in the filename itself (1KL916L**NA**_1_2.jpg). Live census 2026-07-24:
+// 3.919 of 4.489 product photos (87%) attribute this way.
+// Set SKROUTZ_FILL_LIFESTYLE=1 to restore the old behaviour of padding short lists with the
+// shared lifestyle pool (off by default — that padding is exactly what Skroutz rejects).
+const FILL_LIFESTYLE = process.env.SKROUTZ_FILL_LIFESTYLE === '1';
+const DE_TOKENS = {
+  turkis: 'τιρκουαζ', turkise: 'τιρκουαζ', turkisem: 'τιρκουαζ', turquoise: 'τιρκουαζ',
+  braun: 'καφε', braune: 'καφε', braunem: 'καφε', brown: 'καφε',
+  beige: 'μπεζ', beigem: 'μπεζ', naturfarben: 'μπεζ', naturfarbenem: 'μπεζ', natur: 'μπεζ',
+  schwarz: 'μαυρο', schwarze: 'μαυρο', schwarzem: 'μαυρο', black: 'μαυρο',
+  weiss: 'λευκο', weisse: 'λευκο', weissem: 'λευκο', white: 'λευκο',
+  rot: 'κοκκινο', rote: 'κοκκινο', rotem: 'κοκκινο', red: 'κοκκινο',
+  rosegold: 'ροζ χρυσο', rosegolden: 'ροζ χρυσο', rosegoldenem: 'ροζ χρυσο',
+  gold: 'χρυσο', goldene: 'χρυσο', goldenem: 'χρυσο', golden: 'χρυσο',
+  koralle: 'κοραλι', korallen: 'κοραλι', korallenrot: 'κοραλι', coral: 'κοραλι',
+  silber: 'ασημι', silberne: 'ασημι', silbernem: 'ασημι', silver: 'ασημι',
+  blau: 'μπλε', blaue: 'μπλε', blauem: 'μπλε', blue: 'μπλε',
+  grun: 'πρασινο', grune: 'πρασινο', grunem: 'πρασινο', green: 'πρασινο',
+  rosa: 'ροζ', pink: 'ροζ', grau: 'γκρι', graue: 'γκρι', grauem: 'γκρι', grey: 'γκρι', gray: 'γκρι',
+  mint: 'μεντα', minze: 'μεντα', minzgrun: 'μεντα'
+};
+const cnorm = (s) => String(s || '').toLowerCase()
+  .normalize('NFD').replace(/[̀-ͯ]/g, '')
+  .replace(/ß/g, 'ss').replace(/[äöü]/g, (c) => ({ 'ä': 'a', 'ö': 'o', 'ü': 'u' }[c])).trim();
+// Shopify appends _<uuid> when the SAME file is re-uploaded to another clone — strip it so one
+// physical photo is not counted 4-8 times.
+const IMG_UUID = /_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}(\.[A-Za-z0-9]+)$/;
+const photoKey = (src) => decodeURIComponent(String(src).split('/').pop().split('?')[0]).replace(IMG_UUID, '$1');
+
+// Returns the product-colour this photo depicts, or null when nothing states it.
+function attributeColor(im, colors, stemToColor) {
+  const file = photoKey(im.src);
+  let best = null;
+  for (const [stem, col] of stemToColor) {
+    if (stem.length >= 5 && file.toUpperCase().startsWith(stem.toUpperCase()) && (!best || stem.length > best[0].length)) best = [stem, col];
+  }
+  if (best) return best[1];
+  const alt = cnorm(im.alt);
+  if (!alt) return null;
+  let hit = null, hitLen = 0;
+  for (const c of colors) { const n = cnorm(c); if (n && alt.includes(n) && n.length > hitLen) { hit = c; hitLen = n.length; } }
+  if (hit) return hit;
+  const m = alt.match(/aus\s+([a-z\- ]+?)\s+leder/);
+  const cands = m ? [m[1].replace(/\s+/g, ''), ...m[1].split(/[\s-]+/)] : Object.keys(DE_TOKENS).filter((t) => alt.includes(t));
+  for (const t of cands) {
+    const greek = DE_TOKENS[t];
+    if (!greek) continue;
+    for (const c of colors) { const n = cnorm(c); if (n.includes(greek) || greek.includes(n)) return c; }
+  }
+  return null;
+}
+
 // ---- token resolution (CI env first, then local .env) ----
 function loadToken() {
   if (process.env.SHOPIFY_SHOES_ACCESS_TOKEN) return process.env.SHOPIFY_SHOES_ACCESS_TOKEN;
@@ -115,7 +174,7 @@ async function fetchProducts(token) {
   while (true) {
     const after = cursor ? `, after: "${cursor}"` : '';
     const q = `{ products(first: 50, query: "status:active"${after}) { pageInfo { hasNextPage endCursor } edges { node {
-      id title handle productType onlineStoreUrl images(first: 30){ edges { node { id url } } }
+      id title handle productType onlineStoreUrl images(first: 60){ edges { node { id url altText } } }
       variants(first: 100){ edges { node { id sku price inventoryQuantity barcode image { id } selectedOptions { name value } } } } } } } }`;
     const r = await gql(q, token);
     if (r.errors) {
@@ -127,7 +186,7 @@ async function fetchProducts(token) {
     const edges = (r.data && r.data.products && r.data.products.edges) || [];
     for (const { node } of edges) {
       out.push({ id: node.id.replace('gid://shopify/Product/', ''), title: node.title, handle: node.handle, productType: node.productType, onlineStoreUrl: node.onlineStoreUrl,
-        images: (node.images.edges || []).map((e) => ({ id: e.node.id.replace('gid://shopify/ProductImage/', ''), src: e.node.url })),
+        images: (node.images.edges || []).map((e) => ({ id: e.node.id.replace('gid://shopify/ProductImage/', ''), src: e.node.url, alt: e.node.altText || '' })),
         variants: (node.variants.edges || []).map((e) => ({ id: e.node.id.replace('gid://shopify/ProductVariant/', ''), sku: e.node.sku, price: e.node.price != null ? parseFloat(e.node.price) : null, qty: e.node.inventoryQuantity || 0, barcode: e.node.barcode, imageId: e.node.image && e.node.image.id ? e.node.image.id.replace('gid://shopify/ProductImage/', '') : null, opts: e.node.selectedOptions })) });
     }
     const pi = r.data.products.pageInfo; if (!pi.hasNextPage) break; cursor = pi.endCursor; page++; await new Promise((x) => setTimeout(x, 320));
@@ -194,6 +253,32 @@ async function buildSandalItems() {
       let acc = clonePools.get(key);
       if (!acc) { acc = []; clonePools.set(key, acc); }
       for (const im of p.images) if (cls(im) === 'L' && !acc.includes(im.src)) acc.push(im.src);
+    }
+  }
+
+  // Color-correct photo pool per PHYSICAL product, UNIONed across the clones exactly like the
+  // lifestyle pool above: a colour's extra angles are often uploaded to a sibling clone that leads
+  // with a different colour, so a per-clone view sees only 1 shot. Keyed sizelessKey -> colorKey.
+  // Deduped by photoKey() so the same file re-uploaded to 8 clones counts once. Only 'P' (product
+  // shot) images take part — 'L'/'G'/'C'/'F' are never colour-specific.
+  const cloneColorPhotos = new Map();
+  for (const p of products) {
+    const key = sizelessKey(p);
+    if (!key) continue;
+    const colors = [...new Set(p.variants.map((v) => extractColor(v.opts)).filter(Boolean))];
+    const stemToColor = new Map();
+    for (const v of p.variants) { const c = extractColor(v.opts); if (v.sku && c) stemToColor.set((v.sku || '').replace(/\d+$/, ''), c); }
+    let acc = cloneColorPhotos.get(key);
+    if (!acc) { acc = new Map(); cloneColorPhotos.set(key, acc); }
+    for (const im of p.images) {
+      if (cls(im) && cls(im) !== 'P') continue;          // lifestyle/chart/generic/file → not colour-specific
+      const col = attributeColor(im, colors, stemToColor);
+      if (!col) continue;
+      const ck = col.toLowerCase().trim();
+      let list = acc.get(ck);
+      if (!list) { list = []; acc.set(ck, list); }
+      const k = photoKey(im.src);
+      if (!list.some((x) => photoKey(x) === k)) list.push(im.src);
     }
   }
 
@@ -265,26 +350,43 @@ async function buildSandalItems() {
       const anchors = new Set();   // every image-index pinned to ANY color's variant
       for (const v of p.variants) { if (v.imageId && imgIndex.has(v.imageId)) anchors.add(imgIndex.get(v.imageId)); }
       const myAnchor = sizes.map((s) => s.imageId).filter((id) => id && imgIndex.has(id)).map((id) => imgIndex.get(id)).sort((a, b) => a - b)[0];
-      let own;                       // this color's own product shots (gallery order)
-      if (singleColor) {
-        own = p.images.filter((im) => { const c = cls(im); return c !== 'F' && c !== 'L' && c !== 'C' && c !== 'G'; }).map((i) => i.src);
-      } else if (myAnchor != null) {
-        own = [p.images[myAnchor].src];
-        for (let i = myAnchor + 1; i < p.images.length; i++) {
-          if (anchors.has(i)) break;                                // next color's block
-          const c = cls(p.images[i]);
-          if (hasLife && (c === 'L' || c === 'F' || c === 'C' || c === 'G')) break; // lifestyle/files/chart/generic end the color run
-          own.push(p.images[i].src);
+      // PRIMARY: every photo that STATES it depicts this colour (altText / SKU-named file),
+      // unioned across the design's clones. The pinned variant image leads, so the main image is
+      // unchanged from today wherever Shopify has one.
+      let own = (cloneColorPhotos.get(sizelessKey(p)) || new Map()).get((g.colorRaw || '∅').toLowerCase().trim()) || [];
+      own = own.slice();
+      if (myAnchor != null) {                                       // put the pinned shot first
+        const pinned = p.images[myAnchor].src;
+        const at = own.findIndex((u) => photoKey(u) === photoKey(pinned));
+        if (at > 0) own.splice(at, 1);
+        if (at !== 0) own.unshift(pinned);
+      }
+      if (!own.length) {                                            // FALLBACK: legacy boundary heuristic
+        if (singleColor) {
+          own = p.images.filter((im) => { const c = cls(im); return c !== 'F' && c !== 'L' && c !== 'C' && c !== 'G'; }).map((i) => i.src);
+        } else if (myAnchor != null) {
+          own = [p.images[myAnchor].src];
+          for (let i = myAnchor + 1; i < p.images.length; i++) {
+            if (anchors.has(i)) break;                              // next color's block
+            const c = cls(p.images[i]);
+            if (hasLife && (c === 'L' || c === 'F' || c === 'C' || c === 'G')) break;
+            own.push(p.images[i].src);
+          }
+        } else {
+          own = p.images[0] ? [p.images[0].src] : [];               // multi-color, no per-variant image → main only
         }
-      } else {
-        own = p.images[0] ? [p.images[0].src] : [];                 // multi-color, no per-variant image → main only
       }
       // shared lifestyle pool = the UNION of this physical product's lifestyle across ALL its clones
       // (this clone may hold only 1 of several — always take the full deduped pool). Applies to
       // single-color too: its `own` is product shots only (L is filtered out), so the pool adds the
       // lifestyle. .slice() because the degenerate shift() below must not mutate the shared array.
-      const pool = hasLife ? (clonePools.get(sizelessKey(p)) || []).slice() : [];
-      if (!own.length && pool.length) own = [pool.shift()];         // degenerate: no product shot at all
+      const pool = (hasLife && FILL_LIFESTYLE) ? (clonePools.get(sizelessKey(p)) || []).slice() : [];
+      // degenerate: no product shot at all → borrow one lifestyle so the entry keeps a main image
+      // (this path is independent of FILL_LIFESTYLE — without a main image the product is dropped).
+      if (!own.length) {
+        const life = hasLife ? (clonePools.get(sizelessKey(p)) || []) : [];
+        if (life.length) own = [life[0]];
+      }
       if (!own.length) continue;  // image mandatory
       const mainImg = own[0];
       const seenUrl = new Set([mainImg]);

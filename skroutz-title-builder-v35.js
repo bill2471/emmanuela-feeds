@@ -913,7 +913,10 @@ function buildSkroutzTitle({ product, variant, skroutzCategory }) {
     // Cover multi-word "με X" phrases at end of body (up to 5 trailing words — handles cases like "με mother of pearl")
     const bodyEndsWithMe = /(?<![\p{L}\p{N}])με\s+\p{L}+(?:\s+\p{L}+){0,4}\s*$/iu.test(body);
     const gemPhrase = bodyEndsWithMe ? `και ${gem}` : `με ${gem}`;
-    const handcraftedTok = handcraftedForm(typeWord);
+    // v3.5.7 fix: match the token ACTUALLY emitted into parts. For a quantity set the head
+    // word is the plural, so parts carries handcraftedForm(headWord); comparing against the
+    // singular form made the gem phrase silently disappear (e.g. «με μαύρη πέτρα» on ring sets).
+    const handcraftedTok = handcraftedForm(headWord);
     const newParts = [];
     let injected = false;
     for (const p of parts) {

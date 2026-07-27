@@ -50,6 +50,19 @@ const PRICING_PATH = path.join(__dirname, 'skroutz-shoes-pricing.json');
 // Built offline by skroutz-feed/emmanuela-shoes/_classify-lifestyle.py. Missing/empty file
 // -> builder behaves exactly like the pre-lifestyle version (pure boundary heuristic).
 const LIFESTYLE_PATH = path.join(__dirname, 'skroutz-shoes-lifestyle.json');
+// imageId -> byte length of the stored file = CONTENT identity (2026-07-27).
+// The 24/07 colour fix (c6eeb59d) works on the FILENAME. But the identical photograph is uploaded
+// as a SEPARATE Shopify media on each of the 4-8 clones of a design, each with its own filename AND
+// its own altText — and those altTexts name DIFFERENT colourways. So photoKey()/attributeColor()
+// happily put ONE photograph into TWO colour pools, and we ship it under both — which is exactly
+// what Skroutz rejects («εικόνες που δεν αντιστοιχούν στην απόχρωση», ticket #33670445).
+// Live audit 27/07 over the published feed: 587 of the 1722 <additionalimage> we send are
+// byte-identical to a photo sent under ANOTHER colourway of the same design, and 294 more are exact
+// duplicates INSIDE one entry — only 841 of 1722 are usable. MD5 confirmation on an unbiased sample
+// (every 10th of the 247 flagged groups): 25/25 = 100%, no false positives.
+// Built offline by skroutz-feed/_imagefp-refresh-0727.js. Missing/empty file -> fail-open, the
+// builder behaves exactly as it does today.
+const IMAGEFP_PATH = path.join(__dirname, 'skroutz-shoes-imagefp.json');
 const MIN_PRODUCTS = 100;   // full shoes catalog ~495; anything tiny = failed/partial fetch
 
 // ---- COLOR ATTRIBUTION (2026-07-24) --------------------------------------------------
@@ -239,6 +252,16 @@ async function buildSandalItems() {
   // galleries are entirely there, incl. their lifestyle). Unmapped image -> null = legacy behavior.
   const cls = (im) => LIFE[im.id] || null;
 
+  // content-fingerprint map (optional — empty map = today's filename-only behaviour)
+  let FP = {};
+  try { const j = JSON.parse(fs.readFileSync(IMAGEFP_PATH, 'utf8')); FP = j.map || j; } catch { /* fail-open */ }
+  const fpBySrc = new Map();
+  for (const p of products) for (const im of p.images) {
+    fpBySrc.set(im.src, FP[im.id] ? 'L' + FP[im.id] : 'N' + photoKey(im.src));
+  }
+  // identity of a photo: its byte length when known, else its filename (= today's behaviour)
+  const fpKey = (src) => fpBySrc.get(src) || ('N' + photoKey(src));
+
   // Lifestyle pool per PHYSICAL product. The 4-8× catalog clones MIRROR the same variants, but the
   // lifestyle uploads are SPRINKLED unevenly across them (one clone holds 1, a sibling holds 2…), so
   // we UNION every clone's lifestyle into one shared pool, keyed by the SIZELESS sku-root set (clones
@@ -277,12 +300,32 @@ async function buildSandalItems() {
       const ck = col.toLowerCase().trim();
       let list = acc.get(ck);
       if (!list) { list = []; acc.set(ck, list); }
-      const k = photoKey(im.src);
-      if (!list.some((x) => photoKey(x) === k)) list.push(im.src);
+      const k = fpKey(im.src);
+      if (!list.some((x) => fpKey(x) === k)) list.push(im.src);
     }
   }
 
-  const stats = { products: products.length, groups: 0, slash: 0, keep: 0, keepDefault: 0, variations: 0, units: 0, unmatched: 0, skippedUnpublished: 0, withAdditional: 0, additionalTotal: 0, multiColorMainOnly: 0, lifestylePooled: 0, byType: {}, samples: [] };
+  // A photograph depicts exactly ONE colourway. If the same CONTENT lands in two colour pools of the
+  // same physical product, it is a re-upload of one shot claimed by both altTexts — neither colour
+  // may present it as its own extra angle. Collect those per design; they are skipped when the
+  // <additionalimage> list is built. The MAIN image is deliberately NOT filtered: an entry without a
+  // main image is dropped from the feed entirely, and a shared main is far less bad than a lost
+  // listing. (The 6 entries whose main is shared — Κυβέλη, Σέριφος, Κέρκυρα — need a real photo, not
+  // a code change.)
+  const sharedFp = new Map();   // sizelessKey -> Set(fp)
+  for (const [key, acc] of cloneColorPhotos) {
+    const owners = new Map();
+    for (const [ck, list] of acc) for (const u of list) {
+      const k = fpKey(u);
+      if (!owners.has(k)) owners.set(k, new Set());
+      owners.get(k).add(ck);
+    }
+    const banned = new Set([...owners].filter(([, s]) => s.size > 1).map(([k]) => k));
+    if (banned.size) sharedFp.set(key, banned);
+  }
+
+  const EMPTY_SET = new Set();
+  const stats = { products: products.length, groups: 0, slash: 0, keep: 0, keepDefault: 0, variations: 0, units: 0, unmatched: 0, skippedUnpublished: 0, withAdditional: 0, additionalTotal: 0, multiColorMainOnly: 0, lifestylePooled: 0, fpDupDropped: 0, fpSharedDropped: 0, byType: {}, samples: [] };
   const items = [];
   const seenFp = new Set();
 
@@ -389,10 +432,14 @@ async function buildSandalItems() {
       }
       if (!own.length) continue;  // image mandatory
       const mainImg = own[0];
-      const seenUrl = new Set([mainImg]);
+      const banned = sharedFp.get(sizelessKey(p)) || EMPTY_SET;
+      const seenUrl = new Set([fpKey(mainImg)]);                    // dedupe by CONTENT, not filename
       const additionalImgs = [];
       for (const u of [...own.slice(1), ...pool]) {                 // own angles first, lifestyle after
-        if (seenUrl.has(u)) continue; seenUrl.add(u);
+        const k = fpKey(u);
+        if (seenUrl.has(k)) { stats.fpDupDropped++; continue; }     // same photo already in this entry
+        if (banned.has(k)) { stats.fpSharedDropped++; continue; }   // same photo also claimed by another colour
+        seenUrl.add(k);
         additionalImgs.push(u);
         if (additionalImgs.length >= 9) break;
       }
@@ -475,7 +522,7 @@ if (require.main === module) {
     L(`products fetched: ${stats.products}  ·  unpublished skipped: ${stats.skippedUnpublished}`);
     L(`entries: ${stats.groups}  (SLASH ${stats.slash} / KEEP ${stats.keep})  ·  variations: ${stats.variations}  ·  units: ${stats.units}`);
     L(`COGS-floored SLASH groups: ${stats.floored || 0}  (price raised to cost×grossUp)`);
-    L(`additionalimages: ${stats.withAdditional}/${stats.groups} groups have >=1 (total ${stats.additionalTotal}, avg ${(stats.additionalTotal / Math.max(stats.groups, 1)).toFixed(1)})  ·  main-only (multicolor, no per-variant img): ${stats.multiColorMainOnly}  ·  lifestyle-pooled: ${stats.lifestylePooled}`);
+    L(`additionalimages: ${stats.withAdditional}/${stats.groups} groups have >=1 (total ${stats.additionalTotal}, avg ${(stats.additionalTotal / Math.max(stats.groups, 1)).toFixed(1)})  ·  main-only (multicolor, no per-variant img): ${stats.multiColorMainOnly}  ·  lifestyle-pooled: ${stats.lifestylePooled}  ·  dropped by content-fingerprint: ${stats.fpDupDropped} dup-in-entry + ${stats.fpSharedDropped} shared-with-another-colour`);
     L(`unmatched (defaulted to KEEP@normal): ${stats.unmatched}  (of which kept: ${stats.keepDefault})`);
     L('by type: ' + Object.entries(stats.byType).sort((a, b) => b[1] - a[1]).map(([t, c]) => `${c} ${t}`).join(' | '));
     L('samples:'); for (const s of stats.samples) { L(`  [${s.tier}] ${s.name} | νούμερα ${s.sizes} | €${s.normal}→€${s.price} | +${s.addl} additional img | key ${s.key}`); if (s.addl) L(`        main: ...${s.mainImg.slice(-46)}\n        +1st: ...${s.addlSample.slice(-46)}`); }

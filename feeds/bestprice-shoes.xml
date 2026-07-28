@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-28 15:08</date>
+  <date>2026-07-28 20:25</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -4347,12 +4347,15 @@
     </product>
     <product>
       <productId>40480068468893</productId>
-      <title><![CDATA[Emmanuela Flat πέδιλα "Ουρανία" - Μαύρο]]></title>
+      <title><![CDATA[Emmanuela Flat πέδιλα "Ουρανία"]]></title>
       <productURL>https://emmanuela.shoes/products/greek-white-leather-sandals-urania</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-389578.jpg?v=1627293367</imageURL>
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-389578.jpg?v=1627293367</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-467293.jpg?v=1627293367</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-458363.jpg?v=1627293367</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-871302.jpg?v=1627293367</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-745526.jpg?v=1627293367</img5>
       </imagesURL>
       <price>49.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Πέδιλα</category_path>
@@ -4363,29 +4366,6 @@
       <color>μαύρο</color>
       <size>41</size>
       <EAN>5212033642330</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40480068534429</productId>
-      <title><![CDATA[Emmanuela Flat πέδιλα "Ουρανία" - Καφέ]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-white-leather-sandals-urania</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-458363.jpg?v=1627293367</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-458363.jpg?v=1627293367</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-871302.jpg?v=1627293367</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-745526.jpg?v=1627293367</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-878495.jpg?v=1627293367</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-626282.jpg?v=1627293367</img5>
-      </imagesURL>
-      <price>49.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Πέδιλα</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1TS46LHOBE10</MPN>
-      <color>καφέ</color>
-      <size>41</size>
-      <EAN>5212033642408</EAN>
       <shipping>0</shipping>
     </product>
     <product>

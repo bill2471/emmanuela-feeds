@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-28 14:29</created_at>
+  <created_at>2026-07-28 19:46</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1388,7 +1388,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
+        <quantity>4</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -11780,7 +11780,7 @@ Minimal κομψότητα που αγκαλιάζει τα αυτιά σου! �
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1193-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -37917,7 +37917,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1261-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -59688,40 +59688,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Flat πέδιλα "Ουρανία". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 41.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>40480068534429</id>
-        <name><![CDATA[Flat πέδιλα "Ουρανία" - Καφέ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-white-leather-sandals-urania?variant=40480068534429]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-458363.jpg?v=1627293367]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-871302.jpg?v=1627293367]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-745526.jpg?v=1627293367]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-878495.jpg?v=1627293367]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-285537.jpg?v=1627293434]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-323529.jpg?v=1627293368]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Πέδιλα]]></category>
-        <price_with_vat>38.90</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1TS46LHOBE10]]></mpn>
-        <ean>5212033642408</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>1</quantity>
-        <color>Καφέ</color>
-        <size>41</size>
-        <variations>
-          <variation>
-            <variationid>40480068534429</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1TS46LHOBE10]]></manufacturersku>
-            <mpn><![CDATA[1TS46LHOBE10]]></mpn>
-            <ean>5212033642408</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Flat πέδιλα "Ουρανία". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

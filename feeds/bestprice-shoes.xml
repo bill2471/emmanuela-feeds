@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-28 03:28</date>
+  <date>2026-07-28 09:36</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -481,7 +481,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL838LMIBL5</MPN>
       <color>μαύρο</color>
-      <size>36,37,39,41</size>
+      <size>36,37,41</size>
       <EAN>5212033624046</EAN>
       <shipping>0</shipping>
     </product>
@@ -1566,6 +1566,22 @@
       <shipping>0</shipping>
     </product>
     <product>
+      <productId>40479884411037</productId>
+      <title><![CDATA[Emmanuela Σανδάλια μπότες με κορδόνια "Αλήθεια" - Ροζ χρυσό]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-alethea</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-726774_edbed388-51ba-42b4-b113-52798efdbc01.jpg?v=1627376418</imageURL>
+      <price>142.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1LI141LRMBE7</MPN>
+      <color>χρυσό</color>
+      <size>38,39</size>
+      <EAN>5212033628815</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
       <productId>40479884837021</productId>
       <title><![CDATA[Emmanuela Σανδάλια μπότες με κορδόνια "Αλήθεια" - Μπεζ φυσικό]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-alethea</productURL>
@@ -1579,22 +1595,6 @@
       <color>μπεζ</color>
       <size>39</size>
       <EAN>5212033628549</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40479884935325</productId>
-      <title><![CDATA[Emmanuela Σανδάλια μπότες με κορδόνια "Αλήθεια" - Ροζ χρυσό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-alethea</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-726774_edbed388-51ba-42b4-b113-52798efdbc01.jpg?v=1627376418</imageURL>
-      <price>142.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1LI141LRMBE8</MPN>
-      <color>χρυσό</color>
-      <size>39</size>
-      <EAN>5212033628822</EAN>
       <shipping>0</shipping>
     </product>
     <product>

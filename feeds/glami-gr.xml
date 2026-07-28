@@ -12842,7 +12842,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>50, 51, 52, 53, 54, 55</VAL>
+      <VAL>50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -17447,7 +17447,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>50, 52, 54, 55, 62, 63</VAL>
+      <VAL>50, 51, 52, 53</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>

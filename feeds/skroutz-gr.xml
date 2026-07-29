@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-29 09:04</created_at>
+  <created_at>2026-07-29 10:35</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -792,54 +792,6 @@
         <shipping>0</shipping>
       </product>
       <product>
-        <id>39259675590691</id>
-        <name><![CDATA[Βραχιόλι κυψέλες χειροποίητο από ασήμι 925 17cm]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/braxioli-kypseles?variant=39259675590691]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-braxioli-kypseles-apo-ashmi-925-kosmhmata-emmanuela-271646.jpg?v=1730713069]]></image>
-        <category><![CDATA[Κοσμήματα > Βραχιόλια > Γυναικεία Βραχιόλια]]></category>
-        <price_with_vat>99.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[3034-Ασημί]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>12</quantity>
-        <color>Ασημί</color>
-        <size>S - 17 cm,M - 19 cm,L - 21 cm</size>
-        <variations>
-          <variation>
-            <variationid>39259675590691</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>S - 17 cm</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[3034]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>39259675623459</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>M - 19 cm</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[3034]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>39259675656227</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>L - 21 cm</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[3034]]></manufacturersku>
-          </variation>
-        </variations>
-        <weight>5</weight>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Βραχιόλι
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
-Πλήθος Τεμαχίων: 1 τεμάχιο
-Φύλο: Γυναικείο
-
-Ένα μοναδικό χειροποίητο ασημένιο βραχιόλι που μαγνητίζει τα βλέμματα με το μοντέρνο και καλλιτεχνικό του σχέδιο. Το βραχιόλι κυψέλες είναι δημιουργημένο για γυναίκες που δεν θέλουν να περνούν απαρατήρητες και αναζητούν κοσμήματα που ξεχωρίζουν. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 Βάρος: 11,00g Τύπος: Γυναικείο βραχιόλι Ιδιότητα: Ανοιχτό και προσαρμόσιμο Φορεσιά: Ψηλά στον πήχη Διαθέσιμα φινιρίσματα: Ασημένιο, Επιχρυσωμένο Χειροποίητο στην Ελλάδα Η Ιστορία του Κοσμήματος Το μοτίβο των κυψελών αντλεί έμπνευση από τη φύση και τη γεωμετρική τελειότητα των κηρηθρών. Συμβολίζει την οργάνωση, τη συνεργασία και τη δημιουργικότητα. Κάθε εξάγωνο σχήμα της κυψέλης αντιπροσωπεύει τη δύναμη της συλλογικής προσπάθειας και την αρμονία στη φύση. Φορώντας αυτό το κόσμημα, φέρνεις μαζί σου ένα σύμβολο επιμονής, εργατικότητας και φυσικής ομορφιάς. Πώς να το φορέσεις Το βραχιόλι κυψέλες φοριέται ψηλά στον πήχη και είναι προσαρμόσιμο, ώστε να ταιριάζει τέλεια σε κάθε χέρι. Είναι ιδανικό για ξεχωριστές εμφανίσεις σε γάμους, βαφτίσεις ή επίσημες εκδηλώσεις. Συνδύασέ το με τα αντίστοιχα σκουλαρίκια κυψέλες για ένα ολοκληρωμένο αριστοκρατικό σετ που θα κλέψει την παράσταση. Για πιο casual look, φόρεσέ το με απλή μπλούζα και τζιν για να προσθέσεις μια πινελιά μοντέρνας κομψότητας. Είναι επίσης ένα εξαιρετικό δώρο για δυναμικές και μοντέρνες γυναίκες που αγαπούν να ξεχωρίζουν. Έρχεται σε συσκευασία δώρου — ιδανικό και για να το προσφέρεις.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>39259675492387</id>
         <name><![CDATA[Βραχιόλι κυψέλες χειροποίητο από επιχρυσωμένο ασήμι 925 17cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/braxioli-kypseles?variant=39259675492387]]></link>
@@ -972,67 +924,6 @@
 Τύπος Προϊόντος: Βραχιόλι
 Υλικό: Ασήμι 925 (Sterling Silver 925)
 Επιμετάλλωση: Επιχρύσωση (Yellow Gold)
-Πλήθος Τεμαχίων: 1 τεμάχιο
-Φύλο: Γυναικείο
-
-Ένα μοντέρνο χειροποίητο βραχιόλι που φέρνει τη χαρά της μαργαρίτας στο χέρι σου. Καλλιτεχνικό σχέδιο που μαγνητίζει τα βλέμματα και προσθέτει χαρούμενη φινέτσα σε κάθε εμφάνιση. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 Βάρος: 23,5g Τύπος: Γυναικείο βραχιόλι Σχέδιο: λουλούδι μαργαρίτα Χαρακτηριστικά: Ανοιχτό και προσαρμόσιμο Διαθέσιμα φινιρίσματα: Ασημένιο, Επιχρυσωμένο Χειροποίητο: Κατασκευή στην Ελλάδα Η Ιστορία του Κοσμήματος Η μαργαρίτα συμβολίζει την αθωότητα, τη χαρά και την αισιοδοξία. Το λουλούδι αυτό φέρνει μηνύματα καθαρότητας και φρεσκάδας, ενώ το γλυπτικό του σχέδιο σε ασήμι 925 δημιουργεί ένα αριστοκρατικό κόσμημα που αντανακλά τη φυσική ομορφιά. Κάθε πέταλο είναι σκαλισμένο με λεπτομέρεια, δημιουργώντας ένα έργο τέχνης που φοριέται. Πώς να το φορέσεις Φοριέται ψηλά στον πήχη για μια εντυπωσιακή, chic εμφάνιση που ξεχωρίζει. Το ανοιχτό, προσαρμόσιμο σχέδιο ταιριάζει σε κάθε χέρι και προσφέρει άνεση καθ' όλη τη διάρκεια της ημέρας. Συνδύασέ το με τα αντίστοιχα σκουλαρίκια ή κολιέ με μαργαρίτα για ένα ολοκληρωμένο σετ που θα λάμψει σε γάμους, βραδινές εξόδους ή ειδικές στιγμές. Ιδανικό για δυναμικές γυναίκες που αγαπούν τα πρωτότυπα, μοντέρνα σχέδια και θέλουν να εκφράσουν την αληθινή τους ταυτότητα. Αποτελεί επίσης εξαιρετικό δώρο για αγαπημένα πρόσωπα που εκτιμούν τη χειροτεχνία και την ποιότητα.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>39259674738723</id>
-        <name><![CDATA[Βραχιόλι λουλούδι μαργαρίτα χειροποίητο από ασήμι 925 17cm]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/braxioli-louloudi?variant=39259674738723]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-braxioli-loyloydi-margarita-apo-ashmi-925-kosmhmata-emmanuela-917559.jpg?v=1730713081]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-braxioli-loyloydi-margarita-apo-ashmi-925-kosmhmata-emmanuela-731806.jpg?v=1730713081]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-braxioli-loyloydi-margarita-apo-ashmi-925-kosmhmata-emmanuela-143949.jpg?v=1730713081]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-braxioli-loyloydi-margarita-apo-ashmi-925-kosmhmata-emmanuela-166777.jpg?v=1730713081]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-braxioli-loyloydi-margarita-apo-ashmi-925-kosmhmata-emmanuela-818694.jpg?v=1730713081]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-braxioli-loyloydi-margarita-apo-ashmi-925-kosmhmata-emmanuela-397255.jpg?v=1730713081]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Βραχιόλια > Γυναικεία Βραχιόλια]]></category>
-        <price_with_vat>149.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[3033-Ασημί]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>16</quantity>
-        <color>Ασημί</color>
-        <size>S - 17 cm,M - 19 cm,L - 21 cm,XL - 23 cm</size>
-        <variations>
-          <variation>
-            <variationid>39259674738723</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>S - 17 cm</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[3033]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>39259674771491</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>M - 19 cm</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[3033]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>39259674804259</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>L - 21 cm</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[3033]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>39259674837027</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>XL - 23 cm</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[3033]]></manufacturersku>
-          </variation>
-        </variations>
-        <weight>5</weight>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Βραχιόλι
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
 Πλήθος Τεμαχίων: 1 τεμάχιο
 Φύλο: Γυναικείο
 
@@ -1336,7 +1227,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Μαύρο]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Μαύρο</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -9523,7 +9414,6 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <link><![CDATA[https://emmanuela.gr/products/choker-plekto?variant=49314579415374]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-tsoker-apo-plegmenes-berges-apo-ashmi-925-kosmhmata-emmanuela-532780.jpg?v=1767373357]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-tsoker-apo-plegmenes-berges-apo-ashmi-925-kosmhmata-emmanuela-867424.jpg?v=1767373362]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-456339.jpg?v=1763632852]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Κολιέ > Γυναικεία Κολιέ]]></category>
         <price_with_vat>109.00</price_with_vat>
         <vat>24.00</vat>
@@ -10663,7 +10553,6 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <name><![CDATA[Σκουλαρίκι ear cuff τόξα δεξί αυτί χειροποίητο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/skoulariki-ear-cuff-toxa?variant=31373343064099]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-toxa-apo-ashmi-925-kosmhmata-emmanuela-459189.jpg?v=1767372823]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-toxa-apo-ashmi-925-kosmhmata-emmanuela-273390.jpg?v=1767372828]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-toxa-apo-ashmi-925-kosmhmata-emmanuela-295805.jpg?v=1767372852]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-toxa-apo-ashmi-925-kosmhmata-emmanuela-898140.jpg?v=1767372855]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
@@ -11969,8 +11858,6 @@ Minimal κομψότητα που αγκαλιάζει τα αυτιά σου! �
         <name><![CDATA[Σκουλαρίκι helix φύλλα ελιάς χειροποίητο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/skoulariki-ear-cuff-pterygio-fylla-elias?variant=31373429538851]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/products/skoylariki-helix-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-236668.jpg?v=1767372053]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-helix-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-329263.jpg?v=1767372056]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-helix-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-180051.jpg?v=1767372063]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>42.00</price_with_vat>
         <vat>24.00</vat>
@@ -12403,7 +12290,7 @@ Minimal κομψότητα που αγκαλιάζει τα αυτιά σου! �
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1269]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>6</weight>
@@ -13491,7 +13378,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <name><![CDATA[Σκουλαρίκια καρφωτά μικρά huggies χειροποίητα από ροζ επιχρυσωμένο ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/karfota-skoularikia-huggies?variant=31373520240675]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-karfwta-skoylarikia-mikra-huggies-apo-ashmi-925-kosmhmata-emmanuela-408606.jpg?v=1767371099]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-mikra-huggies-apo-ashmi-925-kosmhmata-emmanuela-906553.jpg?v=1767371104]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>54.00</price_with_vat>
         <vat>24.00</vat>
@@ -13586,122 +13472,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
 Τύπος Προϊόντος: Σκουλαρίκια
 Υλικό: Ασήμι 925 (Sterling Silver 925)
 Επιμετάλλωση: Οξείδωση (Antiqued Silver)
-Πλήθος Τεμαχίων: Ζευγάρι (2 τεμάχια)
-Φύλο: Γυναικείο
-
-Ξεχωριστά καρφωτά σκουλαρίκια με σχέδιο έντομα που συνδυάζουν τη φυσική ομορφιά με μινιμαλ γραμμή. Χειροποίητα από ασήμι 925, ιδανικά για γυναίκες που επιλέγουν να ξεχωρίζουν με στιλ. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Τύπος: Καρφωτά σκουλαρίκια Βάρος: 2g το ζευγάρι Διαστάσεις: Ύψος 20mm, Πλάτος 15mm Πώληση: Ζευγάρι — η τιμή αφορά δύο τεμάχια Χρώματα: Οξειδωμένα, Ασημένια, Επιχρυσωμένα, Μαύρο ανθρακί, Ροζ επιχρυσωμένα Ιδιότητες: Υποαλλεργικά, δε μαυρίζουν Piercing: Απαιτείται τρυπημένο αυτί Συσκευασία: Κουτί δώρου με χάρτινη τσάντα Η Ιστορία του Κοσμήματος Τα έντομα στη φύση συμβολίζουν τη μεταμόρφωση, την προσαρμοστικότητα και τη δύναμη της ανανέωσης. Αυτά τα σκουλαρίκια αποτυπώνουν την ομορφιά των μικρών λεπτομερειών που συχνά παραβλέπουμε, υπενθυμίζοντάς μας να εκτιμούμε τη μοναδικότητα της φύσης. Το οξειδωμένο φινίρισμα προσδίδει βάθος και χαρακτήρα, ενώ οι εναλλακτικές επιλογές χρωμάτων προσφέρουν ευελιξία στο στιλ σου. Πώς να τα φορέσεις Τα καρφωτά σκουλαρίκια έντομα είναι το τέλειο κόσμημα που ξεχωρίζει για καθημερινές εμφανίσεις με άποψη. Συνδύασε τα με minimal ντύσιμο για να αναδείξουν το μοναδικό τους σχέδιο, ή φόρεσε τα μαζί με άλλα ασημένια κοσμήματα από τη συλλογή για ένα cohesive look. Ιδανικά για boho styling, urban looks ή rock εμφανίσεις. Διάλεξε μεταξύ πέντε διαφορετικών φινιρισμάτων για να ταιριάξουν στην προσωπικότητά σου — από το κλασικό ασημί μέχρι το τολμηρό μαύρο ανθρακί. Αποτελούν εξαιρετική επιλογή δώρου για δυναμικές γυναίκες που αγαπούν τα πρωτότυπα σχέδια και την ποιότητα του χειροποίητου κοσμήματος.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>31373524271139</id>
-        <name><![CDATA[Σκουλαρίκια καρφωτά έντομα χειροποίητα από ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/karfota-skoularikia-entoma?variant=31373524271139]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-279647.jpg?v=1767371074]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-303368.jpg?v=1767371078]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-102836.jpg?v=1767371083]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-300949.jpg?v=1767371088]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
-        <price_with_vat>39.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1330-Ασημί]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
-        <color>Ασημί</color>
-        <size>One Size</size>
-        <weight>2</weight>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Σκουλαρίκια
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
-Πλήθος Τεμαχίων: Ζευγάρι (2 τεμάχια)
-Φύλο: Γυναικείο
-
-Ξεχωριστά καρφωτά σκουλαρίκια με σχέδιο έντομα που συνδυάζουν τη φυσική ομορφιά με μινιμαλ γραμμή. Χειροποίητα από ασήμι 925, ιδανικά για γυναίκες που επιλέγουν να ξεχωρίζουν με στιλ. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Τύπος: Καρφωτά σκουλαρίκια Βάρος: 2g το ζευγάρι Διαστάσεις: Ύψος 20mm, Πλάτος 15mm Πώληση: Ζευγάρι — η τιμή αφορά δύο τεμάχια Χρώματα: Οξειδωμένα, Ασημένια, Επιχρυσωμένα, Μαύρο ανθρακί, Ροζ επιχρυσωμένα Ιδιότητες: Υποαλλεργικά, δε μαυρίζουν Piercing: Απαιτείται τρυπημένο αυτί Συσκευασία: Κουτί δώρου με χάρτινη τσάντα Η Ιστορία του Κοσμήματος Τα έντομα στη φύση συμβολίζουν τη μεταμόρφωση, την προσαρμοστικότητα και τη δύναμη της ανανέωσης. Αυτά τα σκουλαρίκια αποτυπώνουν την ομορφιά των μικρών λεπτομερειών που συχνά παραβλέπουμε, υπενθυμίζοντάς μας να εκτιμούμε τη μοναδικότητα της φύσης. Το οξειδωμένο φινίρισμα προσδίδει βάθος και χαρακτήρα, ενώ οι εναλλακτικές επιλογές χρωμάτων προσφέρουν ευελιξία στο στιλ σου. Πώς να τα φορέσεις Τα καρφωτά σκουλαρίκια έντομα είναι το τέλειο κόσμημα που ξεχωρίζει για καθημερινές εμφανίσεις με άποψη. Συνδύασε τα με minimal ντύσιμο για να αναδείξουν το μοναδικό τους σχέδιο, ή φόρεσε τα μαζί με άλλα ασημένια κοσμήματα από τη συλλογή για ένα cohesive look. Ιδανικά για boho styling, urban looks ή rock εμφανίσεις. Διάλεξε μεταξύ πέντε διαφορετικών φινιρισμάτων για να ταιριάξουν στην προσωπικότητά σου — από το κλασικό ασημί μέχρι το τολμηρό μαύρο ανθρακί. Αποτελούν εξαιρετική επιλογή δώρου για δυναμικές γυναίκες που αγαπούν τα πρωτότυπα σχέδια και την ποιότητα του χειροποίητου κοσμήματος.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>31373524303907</id>
-        <name><![CDATA[Σκουλαρίκια καρφωτά έντομα χειροποίητα από επιχρυσωμένο ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/karfota-skoularikia-entoma?variant=31373524303907]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-279647.jpg?v=1767371074]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-303368.jpg?v=1767371078]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-102836.jpg?v=1767371083]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-300949.jpg?v=1767371088]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
-        <price_with_vat>39.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1330-Χρυσό]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
-        <color>Χρυσό</color>
-        <size>One Size</size>
-        <weight>2</weight>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Σκουλαρίκια
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Επιχρύσωση (Yellow Gold)
-Πλήθος Τεμαχίων: Ζευγάρι (2 τεμάχια)
-Φύλο: Γυναικείο
-
-Ξεχωριστά καρφωτά σκουλαρίκια με σχέδιο έντομα που συνδυάζουν τη φυσική ομορφιά με μινιμαλ γραμμή. Χειροποίητα από ασήμι 925, ιδανικά για γυναίκες που επιλέγουν να ξεχωρίζουν με στιλ. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Τύπος: Καρφωτά σκουλαρίκια Βάρος: 2g το ζευγάρι Διαστάσεις: Ύψος 20mm, Πλάτος 15mm Πώληση: Ζευγάρι — η τιμή αφορά δύο τεμάχια Χρώματα: Οξειδωμένα, Ασημένια, Επιχρυσωμένα, Μαύρο ανθρακί, Ροζ επιχρυσωμένα Ιδιότητες: Υποαλλεργικά, δε μαυρίζουν Piercing: Απαιτείται τρυπημένο αυτί Συσκευασία: Κουτί δώρου με χάρτινη τσάντα Η Ιστορία του Κοσμήματος Τα έντομα στη φύση συμβολίζουν τη μεταμόρφωση, την προσαρμοστικότητα και τη δύναμη της ανανέωσης. Αυτά τα σκουλαρίκια αποτυπώνουν την ομορφιά των μικρών λεπτομερειών που συχνά παραβλέπουμε, υπενθυμίζοντάς μας να εκτιμούμε τη μοναδικότητα της φύσης. Το οξειδωμένο φινίρισμα προσδίδει βάθος και χαρακτήρα, ενώ οι εναλλακτικές επιλογές χρωμάτων προσφέρουν ευελιξία στο στιλ σου. Πώς να τα φορέσεις Τα καρφωτά σκουλαρίκια έντομα είναι το τέλειο κόσμημα που ξεχωρίζει για καθημερινές εμφανίσεις με άποψη. Συνδύασε τα με minimal ντύσιμο για να αναδείξουν το μοναδικό τους σχέδιο, ή φόρεσε τα μαζί με άλλα ασημένια κοσμήματα από τη συλλογή για ένα cohesive look. Ιδανικά για boho styling, urban looks ή rock εμφανίσεις. Διάλεξε μεταξύ πέντε διαφορετικών φινιρισμάτων για να ταιριάξουν στην προσωπικότητά σου — από το κλασικό ασημί μέχρι το τολμηρό μαύρο ανθρακί. Αποτελούν εξαιρετική επιλογή δώρου για δυναμικές γυναίκες που αγαπούν τα πρωτότυπα σχέδια και την ποιότητα του χειροποίητου κοσμήματος.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>31373524336675</id>
-        <name><![CDATA[Σκουλαρίκια καρφωτά έντομα χειροποίητα μαύρα από ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/karfota-skoularikia-entoma?variant=31373524336675]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-279647.jpg?v=1767371074]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-303368.jpg?v=1767371078]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-102836.jpg?v=1767371083]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-300949.jpg?v=1767371088]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
-        <price_with_vat>39.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1330-Μαύρο]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
-        <color>Μαύρο</color>
-        <size>One Size</size>
-        <weight>2</weight>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Σκουλαρίκια
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Επιροδίωση Μαύρη (Black Rhodium)
-Πλήθος Τεμαχίων: Ζευγάρι (2 τεμάχια)
-Φύλο: Γυναικείο
-
-Ξεχωριστά καρφωτά σκουλαρίκια με σχέδιο έντομα που συνδυάζουν τη φυσική ομορφιά με μινιμαλ γραμμή. Χειροποίητα από ασήμι 925, ιδανικά για γυναίκες που επιλέγουν να ξεχωρίζουν με στιλ. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Τύπος: Καρφωτά σκουλαρίκια Βάρος: 2g το ζευγάρι Διαστάσεις: Ύψος 20mm, Πλάτος 15mm Πώληση: Ζευγάρι — η τιμή αφορά δύο τεμάχια Χρώματα: Οξειδωμένα, Ασημένια, Επιχρυσωμένα, Μαύρο ανθρακί, Ροζ επιχρυσωμένα Ιδιότητες: Υποαλλεργικά, δε μαυρίζουν Piercing: Απαιτείται τρυπημένο αυτί Συσκευασία: Κουτί δώρου με χάρτινη τσάντα Η Ιστορία του Κοσμήματος Τα έντομα στη φύση συμβολίζουν τη μεταμόρφωση, την προσαρμοστικότητα και τη δύναμη της ανανέωσης. Αυτά τα σκουλαρίκια αποτυπώνουν την ομορφιά των μικρών λεπτομερειών που συχνά παραβλέπουμε, υπενθυμίζοντάς μας να εκτιμούμε τη μοναδικότητα της φύσης. Το οξειδωμένο φινίρισμα προσδίδει βάθος και χαρακτήρα, ενώ οι εναλλακτικές επιλογές χρωμάτων προσφέρουν ευελιξία στο στιλ σου. Πώς να τα φορέσεις Τα καρφωτά σκουλαρίκια έντομα είναι το τέλειο κόσμημα που ξεχωρίζει για καθημερινές εμφανίσεις με άποψη. Συνδύασε τα με minimal ντύσιμο για να αναδείξουν το μοναδικό τους σχέδιο, ή φόρεσε τα μαζί με άλλα ασημένια κοσμήματα από τη συλλογή για ένα cohesive look. Ιδανικά για boho styling, urban looks ή rock εμφανίσεις. Διάλεξε μεταξύ πέντε διαφορετικών φινιρισμάτων για να ταιριάξουν στην προσωπικότητά σου — από το κλασικό ασημί μέχρι το τολμηρό μαύρο ανθρακί. Αποτελούν εξαιρετική επιλογή δώρου για δυναμικές γυναίκες που αγαπούν τα πρωτότυπα σχέδια και την ποιότητα του χειροποίητου κοσμήματος.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>31373524369443</id>
-        <name><![CDATA[Σκουλαρίκια καρφωτά έντομα χειροποίητα από ροζ επιχρυσωμένο ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/karfota-skoularikia-entoma?variant=31373524369443]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-279647.jpg?v=1767371074]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-303368.jpg?v=1767371078]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-102836.jpg?v=1767371083]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-entoma-apo-ashmi-925-kosmhmata-emmanuela-300949.jpg?v=1767371088]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
-        <price_with_vat>39.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1330-Ροζ]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
-        <color>Ροζ</color>
-        <size>One Size</size>
-        <weight>2</weight>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Σκουλαρίκια
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Επιχρύσωση Ροζ (Rose Gold)
 Πλήθος Τεμαχίων: Ζευγάρι (2 τεμάχια)
 Φύλο: Γυναικείο
 
@@ -14952,9 +14722,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/skoularikia-stayroi-krikous-mikra?variant=31373636206627]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-me-syrma-apo-ashmi-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-527830.jpg?v=1767370385]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-me-syrma-apo-ashmi-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-205415.jpg?v=1767370391]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-me-syrma-apo-xalko-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-396119.jpg?v=1767370398]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-me-syrma-apo-xalko-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-414401.jpg?v=1767370402]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-me-syrma-apo-xalko-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-170996.jpg?v=1767370407]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>59.00</price_with_vat>
@@ -14981,12 +14748,8 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <name><![CDATA[Σκουλαρίκια σταυροί σε κρίκους χειροποίητα μαύρα από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/skoularikia-stayroi-krikous-mikra?variant=31373636010019]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-me-xryso-syrma-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-401126.jpg?v=1767370367]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayra-me-mayro-syrma-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-106879.jpg?v=1767370351]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-me-xryso-syrma-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-952009.jpg?v=1767370372]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-me-xryso-syrma-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-742687.jpg?v=1767370379]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-me-syrma-apo-xalko-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-396119.jpg?v=1767370398]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-me-syrma-apo-xalko-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-414401.jpg?v=1767370402]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-me-syrma-apo-xalko-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-170996.jpg?v=1767370407]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>59.00</price_with_vat>
@@ -20417,8 +20180,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <name><![CDATA[Σκουλαρίκι ανδρικό suspender χειροποίητο από οξειδωμένο ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-skoulariki-suspender?variant=31373811384355]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-suspender-apo-ashmi-925-kosmhmata-emmanuela-394105.jpg?v=1767368876]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-andriko-skoylariki-suspender-apo-ashmi-925-kosmhmata-emmanuela-484962.jpg?v=1767368892]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-andriko-skoylariki-suspender-apo-ashmi-925-kosmhmata-emmanuela-882370.jpg?v=1767368898]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Ανδρικά Σκουλαρίκια]]></category>
         <price_with_vat>42.00</price_with_vat>
         <vat>24.00</vat>
@@ -37680,62 +37441,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <shipping>0</shipping>
       </product>
       <product>
-        <id>31720249884707</id>
-        <name><![CDATA[Σκουλαρίκι ear cuff μικρό κλαδί με μαργαριτάρι αριστερό αυτί χειροποίητο από ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/skoulariki-ear-cuff-mikro-kladi-margaritari?variant=31720249884707]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-mikro-kladi-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-453930.jpg?v=1767363168]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-mikro-kladi-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-844262.jpg?v=1767363173]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-mikro-kladi-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-823560.jpg?v=1767363178]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
-        <price_with_vat>41.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[8017-Ασημί]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>12</quantity>
-        <color>Ασημί</color>
-        <size>One Size</size>
-        <weight>2</weight>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Σκουλαρίκι
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
-Πλήθος Τεμαχίων: Μονό (1 τεμάχιο)
-Φύλο: Γυναικείο
-Πλευρά: Αριστερό αυτί
-
-Ένα λεπτό κλαδί από ασήμι που ανθίζει με ένα λευκό μαργαριτάρι. Αυτό το ear cuff συνδυάζει τη φυσική ομορφιά του οργανικού σχεδιασμού με την κομψότητα του μαργαριταριού, δημιουργώντας ένα κόσμημα που εκπέμπει θηλυκότητα και χάρη. Χαρακτηριστικά & Υλικά Υλικό: Μασίφ ασήμι 925 επιροδιωμένο — υποαλλεργικό και ανθεκτικό στο μαύρισμα Πέτρα: Ένα λευκό μαργαριτάρι Μοτίβο: Κλαδί — οργανικό, φυσικό σχέδιο Τύπος: Ear cuff που χρειάζεται piercing στο λοβό Βάρος: 2.4g (πωλείται μονό) Ύψος: 4.8cm Χρώματα: Διαθέσιμο σε ασημί και άλλες αποχρώσεις Κατασκευή: Χειροποίητο στην Ελλάδα Η Ιστορία του Κοσμήματος Το κλαδί στη συμβολική έχει πάντα αντιπροσωπεύσει τη ζωή, την ανάπτυξη και τη σύνδεση με τη φύση. Σε αυτό το σχέδιο, το κλαδί ξετυλίγεται γύρω από το αυτί σαν μια τρυφερή αγκαλιά, ενώ το μαργαριτάρι — σύμβολο καθαρότητας και σοφίας — λάμπει σαν ένας καρπός αυτής της ανάπτυξης. Είναι ένα κόσμημα που μιλάει για τη φυσική ομορφιά, την ισορροπία και τη γαλήνη. Γιατί Ear Cuff με Μαργαριτάρι; Το μαργαριτάρι προσθέτει μια κομψή, διαχρονική πινελιά σε αυτό το σύγχρονο σχέδιο. Ενώ τα ear cuffs είναι trendy και μοντέρνα, το μαργαριτάρι φέρνει μια κλασική θηλυκότητα που δεν ξεπερνιέται ποτέ. Το κόσμημα φοριέται περνώντας το pin στο piercing του λοβού, ανασηκώνοντάς το στο πτερύγιο και στερεώνοντάς το με ελαφριά πίεση. Το επιροδιωμένο ασήμι εξασφαλίζει ότι το κόσμημα διατηρεί τη λάμψη του, ενώ η ελαφριά του κατασκευή (2.4g) το καθιστά άνετο για ολοήμερη χρήση. Μονό ή Ζευγάρι; Αυτό το ear cuff πωλείται μονό, δίνοντάς σου την ελευθερία να το φορέσεις ασύμμετρα ή να επιλέξεις ζευγάρι με ειδική έκπτωση. Η ασυμμετρία είναι μια δυνατή τάση στο σύγχρονο κόσμημα — ένα μόνο κόσμημα με χαρακτήρα μπορεί να μετασχηματίσει ολόκληρο το look σου.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>31720249983011</id>
-        <name><![CDATA[Σκουλαρίκι ear cuff μικρό κλαδί με μαργαριτάρι αριστερό αυτί χειροποίητο από ροζ επιχρυσωμένο ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/skoulariki-ear-cuff-mikro-kladi-margaritari?variant=31720249983011]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-mikro-kladi-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-453930.jpg?v=1767363168]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-mikro-kladi-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-844262.jpg?v=1767363173]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-mikro-kladi-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-823560.jpg?v=1767363178]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
-        <price_with_vat>41.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[8017-Ροζ]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>12</quantity>
-        <color>Ροζ</color>
-        <size>One Size</size>
-        <weight>2</weight>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Σκουλαρίκι
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Επιχρύσωση Ροζ (Rose Gold)
-Πλήθος Τεμαχίων: Μονό (1 τεμάχιο)
-Φύλο: Γυναικείο
-Πλευρά: Αριστερό αυτί
-
-Ένα λεπτό κλαδί από ασήμι που ανθίζει με ένα λευκό μαργαριτάρι. Αυτό το ear cuff συνδυάζει τη φυσική ομορφιά του οργανικού σχεδιασμού με την κομψότητα του μαργαριταριού, δημιουργώντας ένα κόσμημα που εκπέμπει θηλυκότητα και χάρη. Χαρακτηριστικά & Υλικά Υλικό: Μασίφ ασήμι 925 επιροδιωμένο — υποαλλεργικό και ανθεκτικό στο μαύρισμα Πέτρα: Ένα λευκό μαργαριτάρι Μοτίβο: Κλαδί — οργανικό, φυσικό σχέδιο Τύπος: Ear cuff που χρειάζεται piercing στο λοβό Βάρος: 2.4g (πωλείται μονό) Ύψος: 4.8cm Χρώματα: Διαθέσιμο σε ασημί και άλλες αποχρώσεις Κατασκευή: Χειροποίητο στην Ελλάδα Η Ιστορία του Κοσμήματος Το κλαδί στη συμβολική έχει πάντα αντιπροσωπεύσει τη ζωή, την ανάπτυξη και τη σύνδεση με τη φύση. Σε αυτό το σχέδιο, το κλαδί ξετυλίγεται γύρω από το αυτί σαν μια τρυφερή αγκαλιά, ενώ το μαργαριτάρι — σύμβολο καθαρότητας και σοφίας — λάμπει σαν ένας καρπός αυτής της ανάπτυξης. Είναι ένα κόσμημα που μιλάει για τη φυσική ομορφιά, την ισορροπία και τη γαλήνη. Γιατί Ear Cuff με Μαργαριτάρι; Το μαργαριτάρι προσθέτει μια κομψή, διαχρονική πινελιά σε αυτό το σύγχρονο σχέδιο. Ενώ τα ear cuffs είναι trendy και μοντέρνα, το μαργαριτάρι φέρνει μια κλασική θηλυκότητα που δεν ξεπερνιέται ποτέ. Το κόσμημα φοριέται περνώντας το pin στο piercing του λοβού, ανασηκώνοντάς το στο πτερύγιο και στερεώνοντάς το με ελαφριά πίεση. Το επιροδιωμένο ασήμι εξασφαλίζει ότι το κόσμημα διατηρεί τη λάμψη του, ενώ η ελαφριά του κατασκευή (2.4g) το καθιστά άνετο για ολοήμερη χρήση. Μονό ή Ζευγάρι; Αυτό το ear cuff πωλείται μονό, δίνοντάς σου την ελευθερία να το φορέσεις ασύμμετρα ή να επιλέξεις ζευγάρι με ειδική έκπτωση. Η ασυμμετρία είναι μια δυνατή τάση στο σύγχρονο κόσμημα — ένα μόνο κόσμημα με χαρακτήρα μπορεί να μετασχηματίσει ολόκληρο το look σου.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>31720273969187</id>
         <name><![CDATA[Σκουλαρίκια pins κυματιστά χειροποίητα από επιχρυσωμένο ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/skoularikia-ear-pins-kymatista?variant=31720273969187]]></link>
@@ -38193,9 +37898,9 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31720648900643</id>
         <name><![CDATA[Σκουλαρίκι ear cuff φύλλα ελιάς μεγάλο αριστερό αυτί χειροποίητο από επιχρυσωμένο ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/skoulariki-ear-cuff-fylla-elias?variant=31720648900643]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/8026_2.jpg?v=1777455983]]></image>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-279371.jpg?v=1767362823]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/8026_2.jpg?v=1777455983]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/8026_3.jpg?v=1777455987]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-279371.jpg?v=1767362823]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-801039.jpg?v=1767362827]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-271070.jpg?v=1767362831]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-898450.jpg?v=1767362837]]></additionalimage>
@@ -38230,13 +37935,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/skoulariki-ear-cuff-fylla-elias?variant=31720648998947]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/8026_2.jpg?v=1777455983]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/8026_3.jpg?v=1777455987]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-279371.jpg?v=1767362823]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-801039.jpg?v=1767362827]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-271070.jpg?v=1767362831]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-898450.jpg?v=1767362837]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-914411.jpg?v=1767362840]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-856528.jpg?v=1767362846]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-841110.jpg?v=1767362849]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>82.00</price_with_vat>
@@ -38265,13 +37963,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/skoulariki-ear-cuff-fylla-elias?variant=31720649097251]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/8026_2.jpg?v=1777455983]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/8026_3.jpg?v=1777455987]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-279371.jpg?v=1767362823]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-801039.jpg?v=1767362827]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-271070.jpg?v=1767362831]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-898450.jpg?v=1767362837]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-914411.jpg?v=1767362840]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-856528.jpg?v=1767362846]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-841110.jpg?v=1767362849]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>82.00</price_with_vat>
@@ -39131,7 +38822,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <name><![CDATA[Σκουλαρίκια ανδρικά κρίκοι φύλλα χειροποίητα μαύρα από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-skoulariki-krikos-fyllo?variant=31751981957155]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-krikos-fyllo-apo-ashmi-925-kosmhmata-emmanuela-216613.jpg?v=1767362467]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-andriko-skoylariki-krikos-fyllo-apo-ashmi-925-kosmhmata-emmanuela-236315.jpg?v=1767362474]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-krikos-fyllo-apo-ashmi-925-kosmhmata-emmanuela-912357.jpg?v=1767362480]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-krikos-fyllo-apo-ashmi-925-kosmhmata-emmanuela-827696.jpg?v=1767362486]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Ανδρικά Σκουλαρίκια]]></category>
@@ -39378,8 +39068,8 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31770456227875</id>
         <name><![CDATA[Τσόκερ με φύλλα ελιάς χειροποίητο από επιχρυσωμένο ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/choker-fylla-elias?variant=31770456227875]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/4061.jpg?v=1777456311]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-463745.jpg?v=1767362319]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-463745.jpg?v=1767362319]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/4061.jpg?v=1777456311]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-508569.jpg?v=1767362325]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/4061_2.jpg?v=1777456316]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-774643.jpg?v=1767362328]]></additionalimage>
@@ -39435,13 +39125,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <name><![CDATA[Τσόκερ με φύλλα ελιάς χειροποίητο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/choker-fylla-elias?variant=31770456326179]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/4061.jpg?v=1777456311]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-463745.jpg?v=1767362319]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-508569.jpg?v=1767362325]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/4061_2.jpg?v=1777456316]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-774643.jpg?v=1767362328]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-104371.jpg?v=1767362335]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-844329.jpg?v=1767362343]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-960371.jpg?v=1767362346]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Κολιέ > Γυναικεία Κολιέ]]></category>
         <price_with_vat>119.00</price_with_vat>
@@ -39491,13 +39175,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <name><![CDATA[Τσόκερ με φύλλα ελιάς χειροποίητο από ροζ επιχρυσωμένο ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/choker-fylla-elias?variant=31770456424483]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/4061.jpg?v=1777456311]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-463745.jpg?v=1767362319]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-508569.jpg?v=1767362325]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/4061_2.jpg?v=1777456316]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-774643.jpg?v=1767362328]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-104371.jpg?v=1767362335]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-844329.jpg?v=1767362343]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-960371.jpg?v=1767362346]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Κολιέ > Γυναικεία Κολιέ]]></category>
         <price_with_vat>119.00</price_with_vat>
@@ -40557,7 +40235,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <name><![CDATA[Σκουλαρίκι ear cuff μαργαρίτα δεξί αυτί χειροποίητο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/skoulariki-ear-cuff-margarita?variant=49348466409806]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-margarita-apo-ashmi-925-kosmhmata-emmanuela-544642.jpg?v=1767361860]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-margarita-apo-ashmi-925-kosmhmata-emmanuela-229584.jpg?v=1767361865]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-margarita-apo-ashmi-925-kosmhmata-emmanuela-979156.jpg?v=1767361888]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>59.00</price_with_vat>
@@ -40929,34 +40606,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>49348966744398</id>
-        <name><![CDATA[Σκουλαρίκια pins φίδια με ζιρκόν και μπλε πέτρα χειροποίητα από ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/skoularikia-ear-pins-fidia-zircon?variant=49348966744398]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-mayro-skoylarikia-pins-fidia-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-153867.jpg?v=1767361754]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-mayro-skoylarikia-pins-fidia-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-496571.jpg?v=1767361761]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-mayro-skoylarikia-pins-fidia-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-840958.jpg?v=1767361766]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-mayro-skoylarikia-pins-fidia-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-935503.jpg?v=1767361771]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-mayro-skoylarikia-pins-fidia-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-368667.jpg?v=1767361774]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
-        <price_with_vat>54.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1358-Ασημί]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>8</quantity>
-        <color>Ασημί</color>
-        <size>One Size</size>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Σκουλαρίκια
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
-Πλήθος Τεμαχίων: Ζευγάρι (2 τεμάχια)
-Φύλο: Γυναικείο
-
-Μοναδικά χειροποίητα σκουλαρίκια ear pins που σκαρφαλώνουν στα αυτιά σου με τη μορφή φιδιού στολισμένου με λαμπερά ζιρκόν. Minimal σχεδιασμός, σφυρήλατη υφή και μοντέρνο ύφος που κλέβει τις εντυπώσεις. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Πέτρες: Συνθετικά ζιρκόν Τύπος: Γυναικεία σκουλαρίκια ear pins Βάρος: 2,6g Διαστάσεις: 40 mm Κατασκευή: Σφυρήλατο, χειροποίητο Ιδιότητες: Υποαλλεργικό, δεν σκουριάζει Χρειάζεται piercing: Ναι, μία τρύπα στο λοβό Πώληση: Ζευγάρι — η τιμή αφορά δύο τεμάχια Φινιρίσματα: Ασημένιο - Μπλε, Ασημένιο - Μωβ, Επιχρυσωμένο - Ρουμπινί, Επιχρυσωμένο - Μαύρο, Μαύρο ανθρακί - Γαλάζιο, Μαύρο ανθρακί - Πράσινο Η Ιστορία του ΚοσμήματοςΤο φίδι είναι αρχέγονο σύμβολο μεταμόρφωσης, σοφίας και αναγέννησης. Στην αρχαία Ελλάδα το φίδι συνδεόταν με τη θεά Αθηνά και την ιατρική τέχνη, ενώ στην κοσμηματοποιία αντιπροσωπεύει τη δύναμη, την προστασία και την αιώνια ανανέωση. Αυτά τα σκουλαρίκια pins με τη μορφή φιδιού που σκαρφαλώνει κομψά στο αυτί φέρουν αυτή τη συμβολική δύναμη, ενώ τα ζιρκόν προσθέτουν λάμψη και πολυτέλεια στο minimal σχεδιασμό. Πώς να τα φορέσειςΤα ear pins φοριούνται με έναν μοναδικό τρόπο που δημιουργεί εντυπωσιακή εικόνα: περνάς το pin μέσα από την τρύπα του λοβού σου όπως ένα κλασικό σκουλαρίκι, το ανασηκώνεις ώστε να σκαρφαλώσει και να φωλιάσει στο πτερύγιο του αυτιού, και στη συνέχεια πιέζεις απαλά το έλασμα στο πίσω μέρος για να στερεωθεί. Το αποτέλεσμα; Τα φίδια κυριολεκτικά αγκαλιάζουν τα αυτιά σου δημιουργώντας την ψευδαίσθηση πολλαπλών piercings χωρίς επιπλέον τρύπες! Συνδυάζονται τέλεια με απλά studs ή mini hoops στο δεύτερο piercing, ενώ είναι ιδανικά για layering με ear cuffs. Η minimal αισθητική τους τα καθιστά κατάλληλα για καθημερινή χρήση αλλά και για ιδιαίτερες εμφανίσεις. Αποτελούν επίσης μοναδικό δώρο για γυναίκες που αγαπούν τα statement κοσμήματα με υπόγεια ομορφιά και σύγχρονο χαρακτήρα.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>49348967203150</id>
         <name><![CDATA[Σκουλαρίκια pins φίδια με ζιρκόν και ρουμπινί πέτρα χειροποίητα από επιχρυσωμένο ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/skoularikia-ear-pins-fidia-zircon?variant=49348967203150]]></link>
@@ -40978,34 +40627,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
 Τύπος Προϊόντος: Σκουλαρίκια
 Υλικό: Ασήμι 925 (Sterling Silver 925)
 Επιμετάλλωση: Επιχρύσωση (Yellow Gold)
-Πλήθος Τεμαχίων: Ζευγάρι (2 τεμάχια)
-Φύλο: Γυναικείο
-
-Μοναδικά χειροποίητα σκουλαρίκια ear pins που σκαρφαλώνουν στα αυτιά σου με τη μορφή φιδιού στολισμένου με λαμπερά ζιρκόν. Minimal σχεδιασμός, σφυρήλατη υφή και μοντέρνο ύφος που κλέβει τις εντυπώσεις. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Πέτρες: Συνθετικά ζιρκόν Τύπος: Γυναικεία σκουλαρίκια ear pins Βάρος: 2,6g Διαστάσεις: 40 mm Κατασκευή: Σφυρήλατο, χειροποίητο Ιδιότητες: Υποαλλεργικό, δεν σκουριάζει Χρειάζεται piercing: Ναι, μία τρύπα στο λοβό Πώληση: Ζευγάρι — η τιμή αφορά δύο τεμάχια Φινιρίσματα: Ασημένιο - Μπλε, Ασημένιο - Μωβ, Επιχρυσωμένο - Ρουμπινί, Επιχρυσωμένο - Μαύρο, Μαύρο ανθρακί - Γαλάζιο, Μαύρο ανθρακί - Πράσινο Η Ιστορία του ΚοσμήματοςΤο φίδι είναι αρχέγονο σύμβολο μεταμόρφωσης, σοφίας και αναγέννησης. Στην αρχαία Ελλάδα το φίδι συνδεόταν με τη θεά Αθηνά και την ιατρική τέχνη, ενώ στην κοσμηματοποιία αντιπροσωπεύει τη δύναμη, την προστασία και την αιώνια ανανέωση. Αυτά τα σκουλαρίκια pins με τη μορφή φιδιού που σκαρφαλώνει κομψά στο αυτί φέρουν αυτή τη συμβολική δύναμη, ενώ τα ζιρκόν προσθέτουν λάμψη και πολυτέλεια στο minimal σχεδιασμό. Πώς να τα φορέσειςΤα ear pins φοριούνται με έναν μοναδικό τρόπο που δημιουργεί εντυπωσιακή εικόνα: περνάς το pin μέσα από την τρύπα του λοβού σου όπως ένα κλασικό σκουλαρίκι, το ανασηκώνεις ώστε να σκαρφαλώσει και να φωλιάσει στο πτερύγιο του αυτιού, και στη συνέχεια πιέζεις απαλά το έλασμα στο πίσω μέρος για να στερεωθεί. Το αποτέλεσμα; Τα φίδια κυριολεκτικά αγκαλιάζουν τα αυτιά σου δημιουργώντας την ψευδαίσθηση πολλαπλών piercings χωρίς επιπλέον τρύπες! Συνδυάζονται τέλεια με απλά studs ή mini hoops στο δεύτερο piercing, ενώ είναι ιδανικά για layering με ear cuffs. Η minimal αισθητική τους τα καθιστά κατάλληλα για καθημερινή χρήση αλλά και για ιδιαίτερες εμφανίσεις. Αποτελούν επίσης μοναδικό δώρο για γυναίκες που αγαπούν τα statement κοσμήματα με υπόγεια ομορφιά και σύγχρονο χαρακτήρα.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>49349665161550</id>
-        <name><![CDATA[Σκουλαρίκια pins φίδια με ζιρκόν και γαλάζια πέτρα χειροποίητα μαύρα από ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/skoularikia-ear-pins-fidia-zircon?variant=49349665161550]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-mayro-skoylarikia-pins-fidia-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-153867.jpg?v=1767361754]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-mayro-skoylarikia-pins-fidia-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-496571.jpg?v=1767361761]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-mayro-skoylarikia-pins-fidia-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-840958.jpg?v=1767361766]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-mayro-skoylarikia-pins-fidia-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-935503.jpg?v=1767361771]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-mayro-skoylarikia-pins-fidia-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-368667.jpg?v=1767361774]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
-        <price_with_vat>54.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1358-Μαύρο]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
-        <color>Μαύρο</color>
-        <size>One Size</size>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Σκουλαρίκια
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Επιροδίωση Μαύρη (Black Rhodium)
 Πλήθος Τεμαχίων: Ζευγάρι (2 τεμάχια)
 Φύλο: Γυναικείο
 
@@ -41226,8 +40847,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Σκουλαρίκι ear cuff φίδι με γαλάζια πέτρα δεξί αυτί χειροποίητο μαύρο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/skoulariki-ear-cuff-fidi?variant=49348977656142]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-galazio-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-490950.jpg?v=1767361619]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-roympini-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-846833.jpg?v=1767361626]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-roympini-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-415581.jpg?v=1767361631]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-galazio-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-419043.jpg?v=1767361663]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-prasino-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-170941.jpg?v=1767361633]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-prasino-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-963519.jpg?v=1767361640]]></additionalimage>
@@ -41597,31 +41216,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>49357093667150</id>
-        <name><![CDATA[Σκουλαρίκια ανδρικά μπάρες χειροποίητα μαύρα από ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/andrika-skoularikia-mpares?variant=49357093667150]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-andrika-skoylarikia-mpares-apo-ashmi-925-kosmhmata-emmanuela-941678.jpg?v=1767361422]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-andrika-skoylarikia-mpares-apo-ashmi-925-kosmhmata-emmanuela-810231.jpg?v=1767361427]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Ανδρικά Σκουλαρίκια]]></category>
-        <price_with_vat>44.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1338M-Μαύρο]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
-        <color>Μαύρο</color>
-        <size>One Size</size>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Σκουλαρίκια
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Επιροδίωση Μαύρη (Black Rhodium)
-Πλήθος Τεμαχίων: Ζευγάρι (2 τεμάχια)
-Φύλο: Ανδρικό
-
-Χειροποίητα ανδρικά σκουλαρίκια με minimal σχεδιασμό μπάρας, κατασκευασμένα από επιροδιωμένο ασήμι 925. Ένα κόσμημα που συνδυάζει το σύγχρονο στυλ με την ποιότητα του αυθεντικού ασημιού, ιδανικό για άνδρες που εκτιμούν το διακριτικό αλλά ξεχωριστό στυλ. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Τύπος: Καρφωτό σκουλαρίκι (απαιτεί piercing) Βάρος: 1,20g (ανά τεμάχιο) Πλάτος: 4mm Ύψος: 15mm Φύλο: Ανδρικό Πώληση: Ζευγάρι — η τιμή αφορά δύο τεμάχια Διαθέσιμα χρώματα: Ασημί (silver), χρυσό (gold), μαύρο (black) Ιδιότητες: Υποαλλεργικό, δε μαυρίζει Η Φιλοσοφία του Minimal Design Η μπάρα ως σχέδιο εκφράζει τη γεωμετρική καθαρότητα και την ισορροπία. Στον ανδρικό κόσμο των κοσμημάτων, το minimal design αντιπροσωπεύει την αυτοπεποίθηση που δεν χρειάζεται υπερβολές. Τα σκουλαρίκια μπάρες είναι η επιλογή του σύγχρονου άνδρα που εκτιμά τη λιτότητα και την κομψότητα, δημιουργώντας μια subtle δήλωση στυλ που ξεχωρίζει χωρίς να φωνάζει. Πώς να τα φορέσεις Τα ανδρικά σκουλαρίκια μπάρες προσφέρουν απεριόριστες δυνατότητες styling. Φόρεσέ τα και στα δύο αυτιά για ένα συμμετρικό, μοντέρνο look που ταιριάζει τέλεια με casual ή smart-casual ντύσιμο. Συνδύασέ τα με μαύρο t-shirt και jeans για urban εμφάνιση, ή με πουκάμισο για πιο sophisticated αισθητική. Διαθέσιμα σε τρία χρώματα, μπορείς να επιλέξεις ασημί για classic elegance, χρυσό για ζεστή λάμψη, ή μαύρο για edgy rock προσωπικότητα. Αποτελούν ιδανικό δώρο για άνδρες με αισθητική συνείδηση — ένα ζευγάρι που θα φορεθεί καθημερινά και θα θυμίζει τη φροντίδα σου. Το επιροδιωμένο φινίρισμα εγγυάται μακροχρόνια ανθεκτικότητα και διατήρηση της λάμψης, ενώ η υποαλλεργική σύνθεση το καθιστά κατάλληλο για κάθε τύπο δέρματος.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>49357093601614</id>
         <name><![CDATA[Σκουλαρίκια ανδρικά μπάρες χειροποίητα από επιχρυσωμένο ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andrika-skoularikia-mpares?variant=49357093601614]]></link>
@@ -41700,7 +41294,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Σκουλαρίκια ανδρικά άγκυρες χειροποίητα από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andrika-skoylarikia-agkyres-ashmi?variant=49357093994830]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-andrika-skoylarikia-agkyres-apo-ashmi-925-kosmhmata-emmanuela-607539.jpg?v=1767361397]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-andrika-skoylarikia-agkyres-apo-ashmi-925-kosmhmata-emmanuela-440179.jpg?v=1767361403]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-andrika-skoylarikia-agkyres-apo-ashmi-925-kosmhmata-emmanuela-967019.jpg?v=1767361410]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Ανδρικά Σκουλαρίκια]]></category>
         <price_with_vat>49.00</price_with_vat>
@@ -42690,7 +42283,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Σκουλαρίκι ear cuff ανθισμένο λουλούδι δεξί αυτί χειροποίητο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/skoulariki-ear-cuff-anthismeno-louloudi?variant=49357918994766]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-anthismeno-loyloydi-apo-ashmi-925-kosmhmata-emmanuela-417231.jpg?v=1767360759]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-anthismeno-loyloydi-apo-ashmi-925-kosmhmata-emmanuela-223752.jpg?v=1767360766]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-anthismeno-loyloydi-apo-ashmi-925-kosmhmata-emmanuela-477895.jpg?v=1767360792]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5417780476_ddd2.jpg?v=1767360801]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5489887026_q03u.jpg?v=1767360807]]></additionalimage>
@@ -42769,7 +42361,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Μενταγιόν νούφαρο με ζιρκόν και τυρκουάζ πέτρα χειροποίητο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/kremasto-noufaro?variant=49357932790094]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-tyrkoyaz-kremasto-mentagion-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-209243.jpg?v=1767360715]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-prasino-kremasto-mentagion-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-323760.jpg?v=1767360724]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Γυναικεία Μενταγιόν]]></category>
         <price_with_vat>54.00</price_with_vat>
         <vat>24.00</vat>
@@ -42920,7 +42511,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Μενταγιόν φύλλα χειροποίητο από ασήμι 925 αλυσίδα 45cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/kremasto-fylla?variant=49357943013710]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-kremasto-mentagion-fylla-apo-ashmi-925-kosmhmata-emmanuela-136785.jpg?v=1767360586]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-kremasto-mentagion-fylla-apo-ashmi-925-kosmhmata-emmanuela-213961.jpg?v=1767360593]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-kremasto-mentagion-fylla-apo-ashmi-925-kosmhmata-emmanuela-243011.jpg?v=1767360601]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-kremasto-mentagion-fylla-apo-ashmi-925-kosmhmata-emmanuela-841433.jpg?v=1767360608]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-kremasto-mentagion-fylla-apo-ashmi-925-kosmhmata-emmanuela-711147.jpg?v=1767360615]]></additionalimage>
@@ -42948,7 +42538,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Μενταγιόν φύλλα χειροποίητο από ασήμι 925 αλυσίδα 60cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/kremasto-fylla?variant=49357943046478]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-kremasto-mentagion-fylla-apo-ashmi-925-kosmhmata-emmanuela-136785.jpg?v=1767360586]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-kremasto-mentagion-fylla-apo-ashmi-925-kosmhmata-emmanuela-213961.jpg?v=1767360593]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-kremasto-mentagion-fylla-apo-ashmi-925-kosmhmata-emmanuela-243011.jpg?v=1767360601]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-kremasto-mentagion-fylla-apo-ashmi-925-kosmhmata-emmanuela-841433.jpg?v=1767360608]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-kremasto-mentagion-fylla-apo-ashmi-925-kosmhmata-emmanuela-711147.jpg?v=1767360615]]></additionalimage>
@@ -43000,9 +42589,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Σκουλαρίκι ear cuff κρίκοι χειροποίητο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/skoulariki-ear-cuff-krikoi?variant=49383176831310]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-krikoi-apo-ashmi-925-kosmhmata-emmanuela-345587.jpg?v=1767360520]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-krikoi-apo-ashmi-925-kosmhmata-emmanuela-430839.jpg?v=1767360530]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-krikoi-apo-ashmi-925-kosmhmata-emmanuela-216866.jpg?v=1767360535]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-krikoi-apo-ashmi-925-kosmhmata-emmanuela-170803.jpg?v=1767360543]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-krikoi-apo-ashmi-925-kosmhmata-emmanuela-441154.jpg?v=1767360548]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-krikoi-apo-ashmi-925-kosmhmata-emmanuela-547713.jpg?v=1767360560]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.6244480410_2rdg.jpg?v=1767360567]]></additionalimage>
@@ -43079,8 +42666,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Σκουλαρίκι ear cuff ρόμβος χειροποίητο μαύρο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/skoulariki-ear-cuff-romvos?variant=49383179256142]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylariki-cuff-rombos-apo-ashmi-925-kosmhmata-emmanuela-233112.jpg?v=1767360474]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-rombos-apo-ashmi-925-kosmhmata-emmanuela-700994.jpg?v=1767360480]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-rombos-apo-ashmi-925-kosmhmata-emmanuela-340622.jpg?v=1767360484]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylariki-cuff-rombos-apo-ashmi-925-kosmhmata-emmanuela-871253.jpg?v=1767360490]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5466146633_tqm5.jpg?v=1767360504]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5554714221_q3x5.jpg?v=1767360506]]></additionalimage>
@@ -43108,9 +42693,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Σκουλαρίκι ear cuff αράχνη με μαργαριτάρι χειροποίητο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/skoulariki-cuff-araxni-margaritari?variant=49383181123918]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-araxnh-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-700001.jpg?v=1767360417]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-araxnh-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-572425.jpg?v=1767360423]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-araxnh-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-816560.jpg?v=1767360429]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-araxnh-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-456274.jpg?v=1767360434]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>69.00</price_with_vat>
         <vat>24.00</vat>
@@ -43393,9 +42975,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Σκουλαρίκι τριπλό ear cuff στριφτό χειροποίητο μαύρο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/skoulariki-ear-cuff-triplo-strifto?variant=49383185383758]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylariki-triplo-cuff-strifto-apo-ashmi-925-kosmhmata-emmanuela-777463.jpg?v=1767360288]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-triplo-cuff-strifto-apo-ashmi-925-kosmhmata-emmanuela-436665.jpg?v=1767360293]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylariki-triplo-cuff-strifto-apo-ashmi-925-kosmhmata-emmanuela-354041.jpg?v=1767360295]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-triplo-cuff-strifto-apo-ashmi-925-kosmhmata-emmanuela-200977.jpg?v=1767360302]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylariki-triplo-cuff-strifto-apo-ashmi-925-kosmhmata-emmanuela-999739.jpg?v=1767360307]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylariki-triplo-cuff-strifto-apo-ashmi-925-kosmhmata-emmanuela-170748.jpg?v=1767360311]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylariki-triplo-cuff-strifto-apo-ashmi-925-kosmhmata-emmanuela-379591.jpg?v=1767360317]]></additionalimage>
@@ -43692,7 +43272,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-kremastos-stayros-me-mpilies-gia-andres-apo-ashmi-925-kosmhmata-emmanuela-538220.jpg?v=1767360129]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-kremastos-stayros-me-mpilies-gia-andres-apo-ashmi-925-kosmhmata-emmanuela-967233.jpg?v=1767360134]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-kremastos-stayros-me-mpilies-gia-andres-apo-ashmi-925-kosmhmata-emmanuela-325111.jpg?v=1767360145]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-kremastos-stayros-me-mpilies-gia-andres-apo-ashmi-925-kosmhmata-emmanuela-172026.jpg?v=1767360148]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>59.00</price_with_vat>
         <vat>24.00</vat>
@@ -43720,7 +43299,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-kremastos-stayros-me-mpilies-gia-andres-apo-ashmi-925-kosmhmata-emmanuela-538220.jpg?v=1767360129]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-kremastos-stayros-me-mpilies-gia-andres-apo-ashmi-925-kosmhmata-emmanuela-967233.jpg?v=1767360134]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-kremastos-stayros-me-mpilies-gia-andres-apo-ashmi-925-kosmhmata-emmanuela-325111.jpg?v=1767360145]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-kremastos-stayros-me-mpilies-gia-andres-apo-ashmi-925-kosmhmata-emmanuela-172026.jpg?v=1767360148]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>79.00</price_with_vat>
         <vat>24.00</vat>
@@ -44953,7 +44531,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Σκουλαρίκια κρεμαστά βέλη με σμάλτο και τυρκουάζ πέτρα χειροποίητα από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/kremasta-skoularikia-veli?variant=49401170592078]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-tyrkoyaz-kremasta-skoylarikia-belh-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-494273.jpg?v=1767359413]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tyrkoyaz-kremasta-skoylarikia-belh-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-265161.jpg?v=1767359422]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-tyrkoyaz-kremasta-skoylarikia-belh-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-772344.jpg?v=1767359424]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>54.00</price_with_vat>
@@ -45790,66 +45367,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>49467126120782</id>
-        <name><![CDATA[Δαχτυλίδι νούφαρο με τυρκουάζ πέτρα χειροποίητο από ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/daxtylidi-noufaro-zircon?variant=49467126120782]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-prasino-daxtylidi-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-356759.jpg?v=1767358803]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tyrkoyaz-daxtylidi-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-877807.jpg?v=1767358809]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tyrkoyaz-daxtylidi-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-743269.jpg?v=1767358815]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tyrkoyaz-daxtylidi-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-568061.jpg?v=1767358821]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tyrkoyaz-daxtylidi-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-152433.jpg?v=1767358829]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tyrkoyaz-daxtylidi-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-403391.jpg?v=1767358834]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tyrkoyaz-daxtylidi-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-107173.jpg?v=1767358839]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Δαχτυλίδια > Γυναικεία Δαχτυλίδια]]></category>
-        <price_with_vat>52.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[2126-Ασημί]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>16</quantity>
-        <color>Ασημί</color>
-        <size>52,55,57,59</size>
-        <variations>
-          <variation>
-            <variationid>49467126120782</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>52</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[2126ST6]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>49467126186318</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>55</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[2126ST7]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>49467126219086</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>57</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[2126ST8]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>49467126251854</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>59</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[2126ST9]]></manufacturersku>
-          </variation>
-        </variations>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Δαχτυλίδι
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
-Πλήθος Τεμαχίων: 1 τεμάχιο
-Φύλο: Γυναικείο
-
-Το δαχτυλίδι "νούφαρο" είναι ένα χειροποίητο κόσμημα από ανακυκλωμένο ασήμι 925, με το άνθος να τυλίγεται γύρω από το δάχτυλο και ένα χρωματιστό ζιργκόν στην καρδιά του. Χαρακτηριστικά & Υλικά Υλικό: Ανακυκλωμένο ασήμι 925 Ζιργκόν: Πράσινο, Τυρκουάζ, Μαύρο, Μπλε Διαθέσιμα φινιρίσματα: Επιχρυσωμένο, Ροζ επιχρυσωμένο, Ασημένιο Βάρος: 1,8 γρ. Φύλο: Γυναικείο Κατασκευή: Χειροποίητο στην Ελλάδα Συσκευασία: Καλαίσθητο κουτί δώρου με χάρτινη τσάντα Η Ιστορία του ΚοσμήματοςΤο νούφαρο ανοίγει τα πέταλά του πάνω στο νερό, σύμβολο αναγέννησης και γαλήνης· εδώ τυλίγεται απαλά γύρω από το δάχτυλο, με ένα χρωματιστό ζιργκόν κρυμμένο στην καρδιά του άνθους. Είναι χειροποίητο, φτιαγμένο από ανακυκλωμένο ασήμι 925 στο εργαστήριό μου στην Ελλάδα, ώστε κάθε πέταλο να έχει τη δική του φυσική κίνηση. Ένα μοντέρνο κόσμημα εμπνευσμένο από τη φύση, για όσες θέλουν κάτι ιδιαίτερο. Πώς να το φορέσειςΦόρεσέ το μόνο του ως ένα διακριτικό statement κόσμημα στο χέρι σου, εκεί όπου το γλυπτό άνθος κερδίζει το βλέμμα. Συνδύασέ το με λιτές, λεπτές βέρες στα διπλανά δάχτυλα για να ξεχωρίσει η φόρμα του. Διάλεξε το χρώμα του ζιργκόν και το φινίρισμα που ταιριάζει στο υπόλοιπο στυλ σου, από καθημερινό μέχρι πιο εντυπωσιακό. Συχνές ΕρωτήσειςΕίναι από αληθινό ασήμι 925; Ναι, το δαχτυλίδι είναι κατασκευασμένο από ανακυκλωμένο ασήμι 925. Ο αριθμός σημαίνει ότι το κράμα περιέχει 92,5% καθαρό ασήμι, το διεθνές πρότυπο για το ασημένιο κόσμημα. Είναι το ίδιο υλικό που θα βρεις σφραγισμένο με την ένδειξη 925, φτιαγμένο στο εργαστήριό μου στην Ελλάδα με προσοχή στη λεπτομέρεια. Είναι υποαλλεργικό και χωρίς νικέλιο; Το κράμα του ασημιού 925 δεν περιέχει νικέλιο, οπότε είναι γενικά φιλικό προς ευαίσθητα δέρματα και θεωρείται υποαλλεργικό. Αυτό βοηθά να αποφεύγονται οι ερεθισμοί που προκαλεί συνήθως το νικέλιο σε άλλα μέταλλα. Αν έχεις ιδιαίτερα ευαίσθητη επιδερμίδα, σου προτείνουμε να παρατηρήσεις πώς αντιδρά το δέρμα σου τις πρώτες ημέρες. Πώς το φροντίζω για να μη μαυρίσει; Το ασήμι 925 με τον καιρό οξειδώνεται φυσικά και μπορεί να θαμπώσει, κάτι απολύτως αναμενόμενο. Κράτησέ το μακριά από αρώματα και κρέμες, και φύλαξέ το σε στεγνό μέρος. Όταν χρειαστεί, καθάρισέ το απαλά με ένα ειδικό πανί για ασήμι και θα επανέλθει η λάμψη του εύκολα. Είναι κατάλληλο για δώρο; Ναι, είναι ιδανικό δώρο για μια γυναίκα που αγαπά τη φύση και τα ιδιαίτερα κοσμήματα. Το σχέδιο με το νούφαρο και το χρωματιστό ζιργκόν το κάνουν ένα προσωπικό, μοντέρνο δώρο. Παραδίδεται σε καλαίσθητο κουτί δώρου με χάρτινη τσάντα, έτοιμο να χαριστεί, μια ευχάριστη έκπληξη για κάθε περίσταση.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>49467126284622</id>
         <name><![CDATA[Δαχτυλίδι νούφαρο με τυρκουάζ πέτρα χειροποίητο από επιχρυσωμένο ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/daxtylidi-noufaro-zircon?variant=49467126284622]]></link>
@@ -46186,8 +45703,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <id>54996325400910</id>
         <name><![CDATA[Δαχτυλίδι ρόμβος χειροποίητο από επιχρυσωμένο ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/daxtylidi-romvos?variant=54996325400910]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Generated-Image-March-27_-2026---2_21PM.jpg?v=1774617129]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-868446.jpg?v=1774617129]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-868446.jpg?v=1774617129]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Generated-Image-March-27_-2026---2_21PM.jpg?v=1774617129]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-794546.jpg?v=1774617129]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/black.jpg?v=1774617530]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-225775.jpg?v=1774617530]]></additionalimage>
@@ -46304,13 +45821,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Δαχτυλίδι ρόμβος χειροποίητο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/daxtylidi-romvos?variant=54996325663054]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Generated-Image-March-27_-2026---2_21PM.jpg?v=1774617129]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-868446.jpg?v=1774617129]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-794546.jpg?v=1774617129]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/black.jpg?v=1774617530]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-225775.jpg?v=1774617530]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/silver.jpg?v=1774617530]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-256821.jpg?v=1774617530]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-639018.jpg?v=1774617530]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Δαχτυλίδια > Γυναικεία Δαχτυλίδια]]></category>
         <price_with_vat>54.00</price_with_vat>
         <vat>24.00</vat>
@@ -46421,13 +45933,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Δαχτυλίδι ρόμβος χειροποίητο μαύρο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/daxtylidi-romvos?variant=54996325925198]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Generated-Image-March-27_-2026---2_21PM.jpg?v=1774617129]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-868446.jpg?v=1774617129]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-794546.jpg?v=1774617129]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/black.jpg?v=1774617530]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-225775.jpg?v=1774617530]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/silver.jpg?v=1774617530]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-256821.jpg?v=1774617530]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-639018.jpg?v=1774617530]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Δαχτυλίδια > Γυναικεία Δαχτυλίδια]]></category>
         <price_with_vat>54.00</price_with_vat>
         <vat>24.00</vat>
@@ -46945,33 +46452,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>51758871740750</id>
-        <name><![CDATA[Κολιέ με ρόμβους χειροποίητο από ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/kremasto-romvoi?variant=51758871740750]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-kremasto-mentagion-romboi-apo-ashmi-925-kosmhmata-emmanuela-894351.jpg?v=1767358571]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-kremasto-mentagion-romboi-apo-ashmi-925-kosmhmata-emmanuela-938450.jpg?v=1767358579]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-kremasto-mentagion-romboi-apo-ashmi-925-kosmhmata-emmanuela-894597.jpg?v=1767358562]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-kremasto-mentagion-romboi-apo-ashmi-925-kosmhmata-emmanuela-789918.jpg?v=1767358568]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Κολιέ > Γυναικεία Κολιέ]]></category>
-        <price_with_vat>129.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[5039-Ασημί]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>8</quantity>
-        <color>Ασημί</color>
-        <size>One Size</size>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Κολιέ
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
-Πλήθος Τεμαχίων: 1 τεμάχιο
-Φύλο: Γυναικείο
-
-Ένα κολιέ που συνδυάζει γεωμετρική κομψότητα με φυσική ομορφιά — διαδοχικοί ρόμβοι από ασήμι 925 καταλήγουν σε μια υπέροχη πέτρα λαριμάρ ή φεγγαρόπετρα, δημιουργώντας ένα μοναδικό boho chic κόσμημα με χαρακτήρα. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 με επιχρύσωση Διαθέσιμα φινιρίσματα: Ασημένιο, Επιχρυσωμένο Πέτρες: Λαριμάρ (γαλάζιο/τυρκουάζ) ή Φεγγαρόπετρα (λευκό) Βάρος μενταγιόν: 13,8g Πλάτος μενταγιόν: 40mm Ύψος μενταγιόν: 155mm Μήκος αλυσίδας: 45cm Χειροποίητη κατασκευή στην Ελλάδα Δεν απαιτείται τρύπημα Η Ιστορία του Κοσμήματος Οι ρόμβοι στο κόσμημα συμβολίζουν την ισορροπία και την αρμονία, ενώ η πέτρα λαριμάρ — γνωστή ως η «πέτρα της γαλήνης» — φέρνει ηρεμία και θετική ενέργεια. Η φεγγαρόπετρα, από την άλλη, συνδέεται με τη θηλυκή ενέργεια και την εσωτερική ισορροπία. Το boho chic στυλ του κοσμήματος αντανακλά την ελευθερία, τη φύση και την αυθεντικότητα — ιδανικό για γυναίκες που εκφράζουν τον εαυτό τους με τόλμη και αυτοπεποίθηση. Πώς να το φορέσεις Αυτό το εντυπωσιακό κολιέ με ρόμβους είναι ιδανικό για καθημερινή ή εορταστική εμφάνιση. Φόρεσε το μόνο του πάνω από ένα μονόχρωμο top για να αναδείξεις το σχέδιο και τη φυσική πέτρα, ή συνδύασε το με άλλα minimal κοσμήματα για ένα layered boho look. Η αλυσίδα 45cm το τοποθετεί στο τέλειο σημείο του λαιμού, ενώ μπορείς να το συνδυάσεις με το αντίστοιχο δαχτυλίδι «ρόμβος», ear cuff ή κρίκους σκουλαρίκια «ρόμβους» από την ίδια συλλογή για ολοκληρωμένο σύνολο. Ένα ιδανικό δώρο για γυναίκες που αγαπούν την ελευθερία, τη φύση και τα κοσμήματα με ιστορία. Παραδίδεται σε καλαίσθητο κουτί δώρου με χάρτινη τσάντα.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>49626434699598</id>
         <name><![CDATA[Δαχτυλίδι ανθισμένο λουλούδι χειροποίητο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/daxtylidi-anthismeno-louloudi?variant=49626434699598]]></link>
@@ -47208,97 +46688,12 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>49707851383118</id>
-        <name><![CDATA[Βραχιόλι φίδι με ζιρκόν και ρουμπινί πέτρα χειροποίητο από ασήμι 925 19-20cm]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/braxioli-fidi?variant=49707851383118]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-me-roympini-braxioli-fidi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-823554.jpg?v=1767358480]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-me-roympini-braxioli-fidi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-979439.jpg?v=1767358487]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-me-roympini-braxioli-fidi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-233694.jpg?v=1767358492]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-me-roympini-braxioli-fidi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-593586.jpg?v=1767358495]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-me-roympini-braxioli-fidi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-811661.jpg?v=1767358503]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Βραχιόλια > Γυναικεία Βραχιόλια]]></category>
-        <price_with_vat>79.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[3049-Ασημί-Small-19-20cm/7.5-&quot;]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
-        <color>Ασημί</color>
-        <size>One Size</size>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Βραχιόλι
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
-Πλήθος Τεμαχίων: 1 τεμάχιο
-Φύλο: Γυναικείο
-
-Ένα μοναδικό βραχιόλι που συνδυάζει τη μυστηριώδη γοητεία του φιδιού με τη λάμψη των ζιρκόν. Μοντέρνο και μινιμαλιστικό, δημιουργημένο για να μαγνητίσει τα βλέμματα σε κάθε περίσταση. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 Πέτρες: Ζιρκόν Βάρος: 5,8g Φύλο: Γυναικείο Στυλ: μοντέρνο, minimal Διαθέσιμα Φινιρίσματα: Επιχρυσωμένο με Ρουμπινί, Ασημένιο με Ρουμπινί Συσκευασία: Σε καλαίσθητο κουτί δώρου με χάρτινη τσάντα Η Ιστορία του Κοσμήματος Το φίδι αποτελεί ένα από τα πιο συμβολικά μοτίβα στην ιστορία του κοσμήματος, αντιπροσωπεύοντας τη μεταμόρφωση, τη σοφία και την αιώνια ανανέωση. Από την αρχαία Αίγυπτο μέχρι τη σύγχρονη μόδα, το φίδι εκφράζει δύναμη και μυστήριο. Η λάμψη των ζιρκόν προσθέτει μια πινελιά πολυτέλειας σε αυτό το διαχρονικό σύμβολο, δημιουργώντας ένα κόσμημα που ξεχωρίζει. Πώς να το φορέσεις Αυτό το βραχιόλι είναι ιδανικό για τις δυναμικές γυναίκες που αγαπούν να ξεχωρίζουν. Φόρεσέ το μόνο του για μια chic καλοκαιρινή βραδιά ή συνδύασέ το με άλλα minimal βραχιόλια για ένα layered look. Ταιριάζει τέλεια τόσο σε καθημερινές εμφανίσεις όσο και σε ιδιαίτερες περιστάσεις. Συνδυάζεται υπέροχα με σκούρα χρώματα που αναδεικνύουν τη λάμψη του ασημιού και των ζιρκόν. Αποτελεί επίσης ένα εντυπωσιακό δώρο για γυναίκες που εκτιμούν τα πρωτότυπα σχέδια και τη χειροποίητη δημιουργία. Ένα κόσμημα που αντανακλά την αληθινή σου ταυτότητα και σε κάνει να μην περνάς απαρατήρητη.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>49707851415886</id>
-        <name><![CDATA[Βραχιόλι φίδι με ζιρκόν και ρουμπινί πέτρα χειροποίητο από ασήμι 925 21-22cm]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/braxioli-fidi?variant=49707851415886]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-me-roympini-braxioli-fidi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-823554.jpg?v=1767358480]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-me-roympini-braxioli-fidi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-979439.jpg?v=1767358487]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-me-roympini-braxioli-fidi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-233694.jpg?v=1767358492]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-me-roympini-braxioli-fidi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-593586.jpg?v=1767358495]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-me-roympini-braxioli-fidi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-811661.jpg?v=1767358503]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Βραχιόλια > Γυναικεία Βραχιόλια]]></category>
-        <price_with_vat>79.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[3049-Ασημί-Medium-21-22cm/8.3-&quot;]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
-        <color>Ασημί</color>
-        <size>One Size</size>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Βραχιόλι
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
-Πλήθος Τεμαχίων: 1 τεμάχιο
-Φύλο: Γυναικείο
-
-Ένα μοναδικό βραχιόλι που συνδυάζει τη μυστηριώδη γοητεία του φιδιού με τη λάμψη των ζιρκόν. Μοντέρνο και μινιμαλιστικό, δημιουργημένο για να μαγνητίσει τα βλέμματα σε κάθε περίσταση. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 Πέτρες: Ζιρκόν Βάρος: 5,8g Φύλο: Γυναικείο Στυλ: μοντέρνο, minimal Διαθέσιμα Φινιρίσματα: Επιχρυσωμένο με Ρουμπινί, Ασημένιο με Ρουμπινί Συσκευασία: Σε καλαίσθητο κουτί δώρου με χάρτινη τσάντα Η Ιστορία του Κοσμήματος Το φίδι αποτελεί ένα από τα πιο συμβολικά μοτίβα στην ιστορία του κοσμήματος, αντιπροσωπεύοντας τη μεταμόρφωση, τη σοφία και την αιώνια ανανέωση. Από την αρχαία Αίγυπτο μέχρι τη σύγχρονη μόδα, το φίδι εκφράζει δύναμη και μυστήριο. Η λάμψη των ζιρκόν προσθέτει μια πινελιά πολυτέλειας σε αυτό το διαχρονικό σύμβολο, δημιουργώντας ένα κόσμημα που ξεχωρίζει. Πώς να το φορέσεις Αυτό το βραχιόλι είναι ιδανικό για τις δυναμικές γυναίκες που αγαπούν να ξεχωρίζουν. Φόρεσέ το μόνο του για μια chic καλοκαιρινή βραδιά ή συνδύασέ το με άλλα minimal βραχιόλια για ένα layered look. Ταιριάζει τέλεια τόσο σε καθημερινές εμφανίσεις όσο και σε ιδιαίτερες περιστάσεις. Συνδυάζεται υπέροχα με σκούρα χρώματα που αναδεικνύουν τη λάμψη του ασημιού και των ζιρκόν. Αποτελεί επίσης ένα εντυπωσιακό δώρο για γυναίκες που εκτιμούν τα πρωτότυπα σχέδια και τη χειροποίητη δημιουργία. Ένα κόσμημα που αντανακλά την αληθινή σου ταυτότητα και σε κάνει να μην περνάς απαρατήρητη.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>49707851448654</id>
-        <name><![CDATA[Βραχιόλι φίδι με ζιρκόν και ρουμπινί πέτρα χειροποίητο από ασήμι 925 23-24cm]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/braxioli-fidi?variant=49707851448654]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-me-roympini-braxioli-fidi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-823554.jpg?v=1767358480]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-me-roympini-braxioli-fidi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-979439.jpg?v=1767358487]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-me-roympini-braxioli-fidi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-233694.jpg?v=1767358492]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-me-roympini-braxioli-fidi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-593586.jpg?v=1767358495]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-me-roympini-braxioli-fidi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-811661.jpg?v=1767358503]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Βραχιόλια > Γυναικεία Βραχιόλια]]></category>
-        <price_with_vat>79.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[3049-Ασημί-Large-23-24cm/9.2-&quot;]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
-        <color>Ασημί</color>
-        <size>One Size</size>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Βραχιόλι
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
-Πλήθος Τεμαχίων: 1 τεμάχιο
-Φύλο: Γυναικείο
-
-Ένα μοναδικό βραχιόλι που συνδυάζει τη μυστηριώδη γοητεία του φιδιού με τη λάμψη των ζιρκόν. Μοντέρνο και μινιμαλιστικό, δημιουργημένο για να μαγνητίσει τα βλέμματα σε κάθε περίσταση. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 Πέτρες: Ζιρκόν Βάρος: 5,8g Φύλο: Γυναικείο Στυλ: μοντέρνο, minimal Διαθέσιμα Φινιρίσματα: Επιχρυσωμένο με Ρουμπινί, Ασημένιο με Ρουμπινί Συσκευασία: Σε καλαίσθητο κουτί δώρου με χάρτινη τσάντα Η Ιστορία του Κοσμήματος Το φίδι αποτελεί ένα από τα πιο συμβολικά μοτίβα στην ιστορία του κοσμήματος, αντιπροσωπεύοντας τη μεταμόρφωση, τη σοφία και την αιώνια ανανέωση. Από την αρχαία Αίγυπτο μέχρι τη σύγχρονη μόδα, το φίδι εκφράζει δύναμη και μυστήριο. Η λάμψη των ζιρκόν προσθέτει μια πινελιά πολυτέλειας σε αυτό το διαχρονικό σύμβολο, δημιουργώντας ένα κόσμημα που ξεχωρίζει. Πώς να το φορέσεις Αυτό το βραχιόλι είναι ιδανικό για τις δυναμικές γυναίκες που αγαπούν να ξεχωρίζουν. Φόρεσέ το μόνο του για μια chic καλοκαιρινή βραδιά ή συνδύασέ το με άλλα minimal βραχιόλια για ένα layered look. Ταιριάζει τέλεια τόσο σε καθημερινές εμφανίσεις όσο και σε ιδιαίτερες περιστάσεις. Συνδυάζεται υπέροχα με σκούρα χρώματα που αναδεικνύουν τη λάμψη του ασημιού και των ζιρκόν. Αποτελεί επίσης ένα εντυπωσιακό δώρο για γυναίκες που εκτιμούν τα πρωτότυπα σχέδια και τη χειροποίητη δημιουργία. Ένα κόσμημα που αντανακλά την αληθινή σου ταυτότητα και σε κάνει να μην περνάς απαρατήρητη.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>49707951620430</id>
         <name><![CDATA[Καρφίτσα φύλλα με μαργαριτάρια χειροποίητη από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/karfitsa-fylla-margaritaria?variant=49707951620430]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-karfitsa-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-283117.jpg?v=1767358471]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-karfitsa-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-384305.jpg?v=1767358474]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-karfitsa-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-757189.jpg?v=1730899911]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-karfitsa-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-957501.jpg?v=1757334040]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Καρφίτσες]]></category>
         <price_with_vat>64.00</price_with_vat>
         <vat>24.00</vat>
@@ -47349,7 +46744,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Καρφίτσα φύλλα με μαργαριτάρια χειροποίητη από ροζ επιχρυσωμένο ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/karfitsa-fylla-margaritaria?variant=49707970986318]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/6060.jpg?v=1767358458]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-karfitsa-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-957501.jpg?v=1757334040]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Καρφίτσες]]></category>
         <price_with_vat>64.00</price_with_vat>
         <vat>24.00</vat>
@@ -47416,110 +46810,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
 Τύπος Προϊόντος: Τσόκερ
 Υλικό: Ασήμι 925 (Sterling Silver 925)
 Επιμετάλλωση: Επιχρύσωση (Yellow Gold)
-Πλήθος Τεμαχίων: 1 τεμάχιο
-Φύλο: Γυναικείο
-
-Ένα μοναδικό χειροποίητο κολιέ τσόκερ που συνδυάζει μοντέρνο minimal design με στριφτές βέργες ασημιού. Ιδανικό για να μαγνητίσεις τα βλέμματα σε κάθε περίσταση. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 Βάρος: 18,6g Τύπος: Κολιέ τσόκερ Σχεδιασμός: Στριφτές βέργες Στυλ: Μοντέρνο, μινιμαλιστικό Διαθέσιμα φινιρίσματα: Επιχρυσωμένο, Ασημένιο, Μαύρο ανθρακί Διαθέσιμα μεγέθη: Small (28-33cm), Medium (33-38cm), Large (39-43cm) Χειροποίητο στην Ελλάδα Η Ιστορία του Κοσμήματος Το τσόκερ με στριφτές βέργες αντιπροσωπεύει τη σύγχρονη minimal αισθητική που συναντά την αρχιτεκτονική ομορφιά. Οι στριφτές γραμμές του ασημιού δημιουργούν ένα δυναμικό παιχνίδι φωτός που αλλάζει με κάθε κίνηση, ενώ η καθαρή του φόρμα εκφράζει τη δύναμη της απλότητας. Είναι ένα κόσμημα για τη γυναίκα που επιλέγει να ξεχωρίζει μέσα από την κομψότητα και όχι την υπερβολή. Πώς να το φορέσεις Το τσόκερ με στριφτές βέργες είναι το τέλειο κόσμημα με χαρακτήρα για chic εμφανίσεις. Φόρεσέ το μόνο του για να αναδείξεις τον λαιμό σου σε καλοκαιρινές βραδιές ή σε elegant εξόδους. Συνδυάζεται υπέροχα με V-neck tops και strapless φορέματα. Για πιο bold look, μπορείς να το layάρεις με λεπτότερες αλυσίδες σε διαφορετικά μήκη. Μέτρησε την περίμετρο του λαιμού σου για τέλεια εφαρμογή και επίλεξε το κατάλληλο μέγεθος. Αποτελεί εξαιρετική επιλογή δώρου για δυναμικές, μοντέρνες γυναίκες που αγαπούν τα ξεχωριστά αξεσουάρ. Παραδίδεται σε κουτί δώρου με χάρτινη τσάντα EMMANUELA.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>49708035670350</id>
-        <name><![CDATA[Τσόκερ με στριφτές βέργες χειροποίητο από ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/tsoker-epichrysomeno-strifto-syrma?variant=49708035670350]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-525018.jpg?v=1767358429]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-918838.jpg?v=1767358435]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-696948.jpg?v=1767358442]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-603269.jpg?v=1767358447]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-456339.jpg?v=1763632852]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Κολιέ > Γυναικεία Κολιέ]]></category>
-        <price_with_vat>129.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[4070-Ασημί]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>12</quantity>
-        <color>Ασημί</color>
-        <size>S,M,L</size>
-        <variations>
-          <variation>
-            <variationid>49708035670350</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>S</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[4070SS]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>49708035703118</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>M</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[4070SM]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>49708035735886</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>L</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[4070SL]]></manufacturersku>
-          </variation>
-        </variations>
-        <weight>10</weight>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Τσόκερ
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
-Πλήθος Τεμαχίων: 1 τεμάχιο
-Φύλο: Γυναικείο
-
-Ένα μοναδικό χειροποίητο κολιέ τσόκερ που συνδυάζει μοντέρνο minimal design με στριφτές βέργες ασημιού. Ιδανικό για να μαγνητίσεις τα βλέμματα σε κάθε περίσταση. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 Βάρος: 18,6g Τύπος: Κολιέ τσόκερ Σχεδιασμός: Στριφτές βέργες Στυλ: Μοντέρνο, μινιμαλιστικό Διαθέσιμα φινιρίσματα: Επιχρυσωμένο, Ασημένιο, Μαύρο ανθρακί Διαθέσιμα μεγέθη: Small (28-33cm), Medium (33-38cm), Large (39-43cm) Χειροποίητο στην Ελλάδα Η Ιστορία του Κοσμήματος Το τσόκερ με στριφτές βέργες αντιπροσωπεύει τη σύγχρονη minimal αισθητική που συναντά την αρχιτεκτονική ομορφιά. Οι στριφτές γραμμές του ασημιού δημιουργούν ένα δυναμικό παιχνίδι φωτός που αλλάζει με κάθε κίνηση, ενώ η καθαρή του φόρμα εκφράζει τη δύναμη της απλότητας. Είναι ένα κόσμημα για τη γυναίκα που επιλέγει να ξεχωρίζει μέσα από την κομψότητα και όχι την υπερβολή. Πώς να το φορέσεις Το τσόκερ με στριφτές βέργες είναι το τέλειο κόσμημα με χαρακτήρα για chic εμφανίσεις. Φόρεσέ το μόνο του για να αναδείξεις τον λαιμό σου σε καλοκαιρινές βραδιές ή σε elegant εξόδους. Συνδυάζεται υπέροχα με V-neck tops και strapless φορέματα. Για πιο bold look, μπορείς να το layάρεις με λεπτότερες αλυσίδες σε διαφορετικά μήκη. Μέτρησε την περίμετρο του λαιμού σου για τέλεια εφαρμογή και επίλεξε το κατάλληλο μέγεθος. Αποτελεί εξαιρετική επιλογή δώρου για δυναμικές, μοντέρνες γυναίκες που αγαπούν τα ξεχωριστά αξεσουάρ. Παραδίδεται σε κουτί δώρου με χάρτινη τσάντα EMMANUELA.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>49708035768654</id>
-        <name><![CDATA[Τσόκερ με στριφτές βέργες χειροποίητο μαύρο από ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/tsoker-epichrysomeno-strifto-syrma?variant=49708035768654]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-525018.jpg?v=1767358429]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-918838.jpg?v=1767358435]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-696948.jpg?v=1767358442]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-603269.jpg?v=1767358447]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-456339.jpg?v=1763632852]]></additionalimage>
-        <category><![CDATA[Κοσμήματα > Κολιέ > Γυναικεία Κολιέ]]></category>
-        <price_with_vat>129.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[4070-Μαύρο]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>12</quantity>
-        <color>Μαύρο</color>
-        <size>S,M,L</size>
-        <variations>
-          <variation>
-            <variationid>49708035768654</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>S</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[4070XS]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>49708035801422</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>M</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[4070XM]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>49708035834190</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>L</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[4070XL]]></manufacturersku>
-          </variation>
-        </variations>
-        <weight>10</weight>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Τσόκερ
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Επιροδίωση Μαύρη (Black Rhodium)
 Πλήθος Τεμαχίων: 1 τεμάχιο
 Φύλο: Γυναικείο
 
@@ -47682,7 +46972,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-skoylarikia-krikoi-aktines-apo-ashmi-925-kosmhmata-emmanuela-371116.jpg?v=1757334046]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-skoylarikia-krikoi-aktines-apo-ashmi-925-kosmhmata-emmanuela-588834.jpg?v=1757334051]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-skoylarikia-krikoi-aktines-apo-ashmi-925-kosmhmata-emmanuela-674033.jpg?v=1757334054]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-456339.jpg?v=1763632852]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>69.00</price_with_vat>
         <vat>24.00</vat>
@@ -47727,54 +47016,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>51025027825998</id>
-        <name><![CDATA[Σκουλαρίκια κρίκοι ακτίνες χειροποίητα από ροζ επιχρυσωμένο ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/skoularikia-krikoi-aktines?variant=51025027825998]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-456339.jpg?v=1763632852]]></image>
-        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
-        <price_with_vat>69.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1374-Ροζ]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
-        <color>Ροζ</color>
-        <size>One Size</size>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Σκουλαρίκια
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Επιχρύσωση Ροζ (Rose Gold)
-Πλήθος Τεμαχίων: Ζευγάρι (2 τεμάχια)
-Φύλο: Γυναικείο
-
-Ξεχωριστοί κρίκοι που αιχμαλωτίζουν το φως σαν πραγματικές ακτίνες, δημιουργώντας ένα μοντέρνο εντυπωσιακή εμφάνιση που συνδυάζει minimal αισθητική με δυναμική παρουσία. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Τύπος: Κρίκοι Φύλο: Γυναικείο Πώληση: Ζευγάρι — η τιμή αφορά δύο τεμάχια Βάρος: 5,4g Διάμετρος: 37 mm Διαθέσιμα Χρώματα: Ασημένια, Επιχρυσωμένα, Ροζ Επιχρυσωμένα, Μαύρα Ανθρακί Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει Χειροποίητο: Κατασκευή στην Ελλάδα με προσοχή στη λεπτομέρεια Η Ιστορία του Κοσμήματος Οι ακτίνες συμβολίζουν τη δύναμη, την ενέργεια και το φως που εκπέμπει κάθε γυναίκα. Το γεωμετρικό μοτίβο αυτών των κρίκων αποτυπώνει την κίνηση του φωτός, δημιουργώντας ένα κόσμημα που λάμπει με κάθε κίνηση. Είναι η τέλεια επιλογή για όσες αγαπούν τα μοντέρνα, δυναμικά σχέδια με χαρακτήρα. Πώς να τους φορέσεις Οι κρίκοι ακτίνες είναι ιδανικοί τόσο για καθημερινό όσο και για βραδινό look. Συνδύασε τους με minimal ear cuffs για ένα edgy styling ή φόρεσε τους μόνους τους για να κλέψουν τις εντυπώσεις. Η ευελιξία των 4 διαθέσιμων χρωμάτων σου επιτρέπει να τους προσαρμόσεις σε κάθε outfit — από casual denim looks μέχρι elegant φορέματα. Το επιροδιωμένο φινίρισμα εξασφαλίζει ότι θα διατηρήσουν τη λάμψη τους χωρίς να μαυρίσουν. Αποτελούν εξαιρετική ιδέα δώρου για μία μοντέρνα γυναίκα που θέλει να ξεχωρίζει. Κάθε ζευγάρι παραδίδεται σε καλαίσθητο κουτί δώρου με χάρτινη τσάντα.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>51025027858766</id>
-        <name><![CDATA[Σκουλαρίκια κρίκοι ακτίνες χειροποίητα μαύρα από ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/skoularikia-krikoi-aktines?variant=51025027858766]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-456339.jpg?v=1763632852]]></image>
-        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
-        <price_with_vat>69.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1374-Μαύρο]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
-        <color>Μαύρο</color>
-        <size>One Size</size>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Σκουλαρίκια
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Επιροδίωση Μαύρη (Black Rhodium)
-Πλήθος Τεμαχίων: Ζευγάρι (2 τεμάχια)
-Φύλο: Γυναικείο
-
-Ξεχωριστοί κρίκοι που αιχμαλωτίζουν το φως σαν πραγματικές ακτίνες, δημιουργώντας ένα μοντέρνο εντυπωσιακή εμφάνιση που συνδυάζει minimal αισθητική με δυναμική παρουσία. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Τύπος: Κρίκοι Φύλο: Γυναικείο Πώληση: Ζευγάρι — η τιμή αφορά δύο τεμάχια Βάρος: 5,4g Διάμετρος: 37 mm Διαθέσιμα Χρώματα: Ασημένια, Επιχρυσωμένα, Ροζ Επιχρυσωμένα, Μαύρα Ανθρακί Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει Χειροποίητο: Κατασκευή στην Ελλάδα με προσοχή στη λεπτομέρεια Η Ιστορία του Κοσμήματος Οι ακτίνες συμβολίζουν τη δύναμη, την ενέργεια και το φως που εκπέμπει κάθε γυναίκα. Το γεωμετρικό μοτίβο αυτών των κρίκων αποτυπώνει την κίνηση του φωτός, δημιουργώντας ένα κόσμημα που λάμπει με κάθε κίνηση. Είναι η τέλεια επιλογή για όσες αγαπούν τα μοντέρνα, δυναμικά σχέδια με χαρακτήρα. Πώς να τους φορέσεις Οι κρίκοι ακτίνες είναι ιδανικοί τόσο για καθημερινό όσο και για βραδινό look. Συνδύασε τους με minimal ear cuffs για ένα edgy styling ή φόρεσε τους μόνους τους για να κλέψουν τις εντυπώσεις. Η ευελιξία των 4 διαθέσιμων χρωμάτων σου επιτρέπει να τους προσαρμόσεις σε κάθε outfit — από casual denim looks μέχρι elegant φορέματα. Το επιροδιωμένο φινίρισμα εξασφαλίζει ότι θα διατηρήσουν τη λάμψη τους χωρίς να μαυρίσουν. Αποτελούν εξαιρετική ιδέα δώρου για μία μοντέρνα γυναίκα που θέλει να ξεχωρίζει. Κάθε ζευγάρι παραδίδεται σε καλαίσθητο κουτί δώρου με χάρτινη τσάντα.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>51054089634126</id>
         <name><![CDATA[Σετ από 3 σκουλαρίκια φίδι με μπλε πέτρα χειροποίητα από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/set-skoularikia-fidia?variant=51054089634126]]></link>
@@ -47783,7 +47024,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmi-me-mple-set-apo-3-skoylarikia-fidi-apo-ashmi-925-kosmhmata-emmanuela-597238.jpg?v=1757334018]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmi-me-mple-set-apo-3-skoylarikia-fidi-apo-ashmi-925-kosmhmata-emmanuela-829146.jpg?v=1757334033]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmi-me-mple-set-apo-3-skoylarikia-fidi-apo-ashmi-925-kosmhmata-emmanuela-167781.png?v=1757334038]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-karfitsa-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-957501.jpg?v=1757334040]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>79.00</price_with_vat>
         <vat>24.00</vat>
@@ -47808,12 +47048,12 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <id>51054089830734</id>
         <name><![CDATA[Σετ από 3 σκουλαρίκια φίδι με ρουμπινί πέτρα χειροποίητα από επιχρυσωμένο ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/set-skoularikia-fidia?variant=51054089830734]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmi-me-mple-set-apo-3-skoylarikia-fidi-apo-ashmi-925-kosmhmata-emmanuela-510063.jpg?v=1757334006]]></image>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-karfitsa-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-957501.jpg?v=1757334040]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmi-me-mple-set-apo-3-skoylarikia-fidi-apo-ashmi-925-kosmhmata-emmanuela-510063.jpg?v=1757334006]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmi-me-mple-set-apo-3-skoylarikia-fidi-apo-ashmi-925-kosmhmata-emmanuela-707928.jpg?v=1757334013]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmi-me-mple-set-apo-3-skoylarikia-fidi-apo-ashmi-925-kosmhmata-emmanuela-597238.jpg?v=1757334018]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmi-me-mple-set-apo-3-skoylarikia-fidi-apo-ashmi-925-kosmhmata-emmanuela-829146.jpg?v=1757334033]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmi-me-mple-set-apo-3-skoylarikia-fidi-apo-ashmi-925-kosmhmata-emmanuela-167781.png?v=1757334038]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-karfitsa-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-957501.jpg?v=1757334040]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>79.00</price_with_vat>
         <vat>24.00</vat>
@@ -47843,7 +47083,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmi-me-mple-set-apo-3-skoylarikia-fidi-apo-ashmi-925-kosmhmata-emmanuela-597238.jpg?v=1757334018]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmi-me-mple-set-apo-3-skoylarikia-fidi-apo-ashmi-925-kosmhmata-emmanuela-829146.jpg?v=1757334033]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmi-me-mple-set-apo-3-skoylarikia-fidi-apo-ashmi-925-kosmhmata-emmanuela-167781.png?v=1757334038]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-karfitsa-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-957501.jpg?v=1757334040]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>79.00</price_with_vat>
         <vat>24.00</vat>
@@ -47889,80 +47128,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
 Φύλο: Γυναικείο
 
 Χειροποίητα καρφωτά σκουλαρίκια με κρεμαστό ζιρκόν από ασήμι 925 που συνδυάζουν minimal αισθητική με διακριτική κομψότητα. Ένα πρωτότυπο σχέδιο που αγκαλιάζει τον λοβό του αυτιού με φινέτσα. Χαρακτηριστικά & Υλικά Υλικό: Επιροδιωμένο ασήμι 925 Πέτρες: Ζιρκόν Τύπος: Καρφωτά σκουλαρίκια Βάρος: 2g Διαστάσεις: Πλάτος 6mm, Ύψος 25mm Πώληση: Ζευγάρι — η τιμή αφορά δύο τεμάχια Διαθέσιμα φινιρίσματα: Ασημένια, Επιχρυσωμένα, Ροζ επιχρυσωμένα Ιδιότητες: Υποαλλεργικά, δε μαυρίζουν Χρειάζεται τρύπα στο αυτί Η Φιλοσοφία του Σχεδιασμού Ο minimal σχεδιασμός αυτών των σκουλαρίκιων με κρεμαστό ζιρκόν αποτελεί την ιδανική επιλογή για γυναίκες που προτιμούν να τραβούν διακριτικά την προσοχή. Το κρεμαστό ζιρκόν προσθέτει μια λεπτή λάμψη, ενώ η καρφωτή βάση εξασφαλίζει άνεση και ασφάλεια όλη την ημέρα. Η ειδική επεξεργασία επιμετάλλωσης προσφέρει εκπληκτικό φινίρισμα και προστασία από τους παράγοντες που θα μπορούσαν να επηρεάσουν το ασήμι. Πώς να τα φορέσεις Αυτά τα καρφωτά σκουλαρίκια είναι ιδανικά για καθημερινή χρήση αλλά και για ειδικές περιστάσεις. Συνδύασε τα με άλλα minimal κοσμήματα από ασήμι για ένα sophisticated look ή φόρεσε τα μόνα τους για να αναδείξουν τη φυσική σου ομορφιά. Η διακριτική τους παρουσία τα καθιστά τέλειο δώρο για κάθε γυναίκα που εκτιμά την ποιότητα και την κομψότητα. Η συσκευασία περιλαμβάνει κουτί δώρου και χάρτινη τσάντα.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>51054146945358</id>
-        <name><![CDATA[Σκουλαρίκια καρφωτά με κρεμαστό ζιρκόν και μπλε ζιρκόν χειροποίητα από ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/karfota-skoularikia-me-kremasto-zircon?variant=51054146945358]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-karfitsa-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-957501.jpg?v=1757334040]]></image>
-        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
-        <price_with_vat>59.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1384-Ασημί]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>16</quantity>
-        <color>Ασημί</color>
-        <size>One Size</size>
-        <weight>1</weight>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Σκουλαρίκια
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
-Πλήθος Τεμαχίων: Ζευγάρι (2 τεμάχια)
-Φύλο: Γυναικείο
-
-Χειροποίητα καρφωτά σκουλαρίκια με κρεμαστό ζιρκόν από ασήμι 925 που συνδυάζουν minimal αισθητική με διακριτική κομψότητα. Ένα πρωτότυπο σχέδιο που αγκαλιάζει τον λοβό του αυτιού με φινέτσα. Χαρακτηριστικά & Υλικά Υλικό: Επιροδιωμένο ασήμι 925 Πέτρες: Ζιρκόν Τύπος: Καρφωτά σκουλαρίκια Βάρος: 2g Διαστάσεις: Πλάτος 6mm, Ύψος 25mm Πώληση: Ζευγάρι — η τιμή αφορά δύο τεμάχια Διαθέσιμα φινιρίσματα: Ασημένια, Επιχρυσωμένα, Ροζ επιχρυσωμένα Ιδιότητες: Υποαλλεργικά, δε μαυρίζουν Χρειάζεται τρύπα στο αυτί Η Φιλοσοφία του Σχεδιασμού Ο minimal σχεδιασμός αυτών των σκουλαρίκιων με κρεμαστό ζιρκόν αποτελεί την ιδανική επιλογή για γυναίκες που προτιμούν να τραβούν διακριτικά την προσοχή. Το κρεμαστό ζιρκόν προσθέτει μια λεπτή λάμψη, ενώ η καρφωτή βάση εξασφαλίζει άνεση και ασφάλεια όλη την ημέρα. Η ειδική επεξεργασία επιμετάλλωσης προσφέρει εκπληκτικό φινίρισμα και προστασία από τους παράγοντες που θα μπορούσαν να επηρεάσουν το ασήμι. Πώς να τα φορέσεις Αυτά τα καρφωτά σκουλαρίκια είναι ιδανικά για καθημερινή χρήση αλλά και για ειδικές περιστάσεις. Συνδύασε τα με άλλα minimal κοσμήματα από ασήμι για ένα sophisticated look ή φόρεσε τα μόνα τους για να αναδείξουν τη φυσική σου ομορφιά. Η διακριτική τους παρουσία τα καθιστά τέλειο δώρο για κάθε γυναίκα που εκτιμά την ποιότητα και την κομψότητα. Η συσκευασία περιλαμβάνει κουτί δώρου και χάρτινη τσάντα.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>51054147010894</id>
-        <name><![CDATA[Σκουλαρίκια καρφωτά με κρεμαστό ζιρκόν και μπλε ζιρκόν χειροποίητα από ροζ επιχρυσωμένο ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/karfota-skoularikia-me-kremasto-zircon?variant=51054147010894]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-karfitsa-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-957501.jpg?v=1757334040]]></image>
-        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
-        <price_with_vat>59.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1384-Ροζ]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>16</quantity>
-        <color>Ροζ</color>
-        <size>One Size</size>
-        <weight>1</weight>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Σκουλαρίκια
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Επιχρύσωση Ροζ (Rose Gold)
-Πλήθος Τεμαχίων: Ζευγάρι (2 τεμάχια)
-Φύλο: Γυναικείο
-
-Χειροποίητα καρφωτά σκουλαρίκια με κρεμαστό ζιρκόν από ασήμι 925 που συνδυάζουν minimal αισθητική με διακριτική κομψότητα. Ένα πρωτότυπο σχέδιο που αγκαλιάζει τον λοβό του αυτιού με φινέτσα. Χαρακτηριστικά & Υλικά Υλικό: Επιροδιωμένο ασήμι 925 Πέτρες: Ζιρκόν Τύπος: Καρφωτά σκουλαρίκια Βάρος: 2g Διαστάσεις: Πλάτος 6mm, Ύψος 25mm Πώληση: Ζευγάρι — η τιμή αφορά δύο τεμάχια Διαθέσιμα φινιρίσματα: Ασημένια, Επιχρυσωμένα, Ροζ επιχρυσωμένα Ιδιότητες: Υποαλλεργικά, δε μαυρίζουν Χρειάζεται τρύπα στο αυτί Η Φιλοσοφία του Σχεδιασμού Ο minimal σχεδιασμός αυτών των σκουλαρίκιων με κρεμαστό ζιρκόν αποτελεί την ιδανική επιλογή για γυναίκες που προτιμούν να τραβούν διακριτικά την προσοχή. Το κρεμαστό ζιρκόν προσθέτει μια λεπτή λάμψη, ενώ η καρφωτή βάση εξασφαλίζει άνεση και ασφάλεια όλη την ημέρα. Η ειδική επεξεργασία επιμετάλλωσης προσφέρει εκπληκτικό φινίρισμα και προστασία από τους παράγοντες που θα μπορούσαν να επηρεάσουν το ασήμι. Πώς να τα φορέσεις Αυτά τα καρφωτά σκουλαρίκια είναι ιδανικά για καθημερινή χρήση αλλά και για ειδικές περιστάσεις. Συνδύασε τα με άλλα minimal κοσμήματα από ασήμι για ένα sophisticated look ή φόρεσε τα μόνα τους για να αναδείξουν τη φυσική σου ομορφιά. Η διακριτική τους παρουσία τα καθιστά τέλειο δώρο για κάθε γυναίκα που εκτιμά την ποιότητα και την κομψότητα. Η συσκευασία περιλαμβάνει κουτί δώρου και χάρτινη τσάντα.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>51054282277198</id>
-        <name><![CDATA[Μενταγιόν στριφτό με ζιρκόν και μπλε και πράσινο ζιρκόν χειροποίητο από ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/kremasto-strifto-syrma-zircon?variant=51054282277198]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-456339.jpg?v=1763632852]]></image>
-        <category><![CDATA[Κοσμήματα > Μενταγιόν > Γυναικεία Μενταγιόν]]></category>
-        <price_with_vat>64.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[5037-Ασημί]]></mpn>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>12</quantity>
-        <color>Ασημί</color>
-        <size>One Size</size>
-        <description><![CDATA[Χαρακτηριστικά Προϊόντος
-Τύπος Προϊόντος: Μενταγιόν
-Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
-Πλήθος Τεμαχίων: 1 τεμάχιο
-Φύλο: Γυναικείο
-
-Ένα κρεμαστό μενταγιόν που συνδυάζει την τέχνη του στριφτού συρματοπλεκτικού με τη λάμψη του ζιρκόν. Χειροποίητο από ασήμι 925, δημιουργεί μια μοναδική σύνθεση που ξεχωρίζει με την κομψή του απλότητα. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 Πέτρες: Ζιρκόν Βάρος: 3,10g Διαστάσεις μενταγιόν: 20mm πλάτος, 27mm ύψος Αλυσίδα: Ασημένια 45cm (συμπεριλαμβάνεται) Διαθέσιμα φινιρίσματα: Ασημένιο, Επιχρυσωμένο Φύλο: Γυναικείο Χειροποίηση: Κάθε κόσμημα δημιουργείται με προσοχή στη λεπτομέρεια Η Ιστορία του Κοσμήματος Η τεχνική του στριφτού σύρματος αποτελεί μια από τις παλαιότερες μεθόδους κοσμηματοποιίας, συνδέοντας το σύγχρονο design με την παράδοση. Το ζιρκόν προσθέτει μια λεπτή λάμψη που τονίζει τη γεωμετρική δομή του μενταγιόν, δημιουργώντας ένα κόσμημα που συνδυάζει δύναμη και θηλυκότητα. Κάθε στροφή του συρμάτου αφηγείται μια ιστορία χειροτεχνίας και αφοσίωσης στην τέχνη. Πώς να το φορέσεις Αυτό το κρεμαστό μενταγιόν είναι ιδανικό για καθημερινή χρήση αλλά και για ειδικές στιγμές. Φοριέται με την ασημένια αλυσίδα των 45cm που το συνοδεύει, δημιουργώντας ένα κομψό look που ταιριάζει τόσο σε casual όσο και σε πιο επίσημα σύνολα. Μπορείς να το συνδυάσεις με τα αντίστοιχα σκουλαρίκια από στριφτό σύρμα με ζιρκόν για ένα ολοκληρωμένο σετ. Το επιχρυσωμένο φινίρισμα προσφέρει μια πιο ζεστή εναλλακτική για layering με χρυσά κοσμήματα. Αποτελεί ένα υπέροχο δώρο για γυναίκες που εκτιμούν τη χειροποίητη αισθητική και τα μοναδικά σχέδια. Έρχεται σε συσκευασία δώρου — ιδανικό και για να το προσφέρεις.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -48030,7 +47195,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/earrings3.jpg?v=1767358376]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/earrings5.jpg?v=1767358380]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/earrings4.jpg?v=1767358386]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-456339.jpg?v=1763632852]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>79.00</price_with_vat>
         <vat>24.00</vat>
@@ -48060,7 +47224,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/earrings3.jpg?v=1767358376]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/earrings5.jpg?v=1767358380]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/earrings4.jpg?v=1767358386]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-456339.jpg?v=1763632852]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>79.00</price_with_vat>
         <vat>24.00</vat>
@@ -48090,7 +47253,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/earrings3.jpg?v=1767358376]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/earrings5.jpg?v=1767358380]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/earrings4.jpg?v=1767358386]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-456339.jpg?v=1763632852]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Γυναικεία Σκουλαρίκια]]></category>
         <price_with_vat>79.00</price_with_vat>
         <vat>24.00</vat>
@@ -48118,7 +47280,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-830835.jpg?v=1761119642]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-567680.jpg?v=1761119642]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-513545.jpg?v=1761119642]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-tsoker-strifto-apo-ashmi-925-kosmhmata-emmanuela-456339.jpg?v=1763632852]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Ανδρικά Σκουλαρίκια]]></category>
         <price_with_vat>52.00</price_with_vat>
         <vat>24.00</vat>
@@ -48391,8 +47552,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Κολιέ σφυρήλατη αλυσίδα λαιμού χειροποίητο μαύρο από ασήμι 925 αλυσίδα 40cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/kremasto-kolie-alysida?variant=51758803157326]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-kremasto-kolie-alysida-apo-ashmi-925-kosmhmata-emmanuela-651598.jpg?v=1755856788]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-kremasto-kolie-alysida-apo-ashmi-925-kosmhmata-emmanuela-150401.jpg?v=1755856786]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-kremasto-kolie-alysida-apo-ashmi-925-kosmhmata-emmanuela-981320.jpg?v=1755856794]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Κολιέ > Γυναικεία Κολιέ]]></category>
         <price_with_vat>179.00</price_with_vat>
@@ -48418,8 +47577,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <name><![CDATA[Κολιέ σφυρήλατη αλυσίδα λαιμού χειροποίητο μαύρο από ασήμι 925 αλυσίδα 50cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/kremasto-kolie-alysida?variant=51758820065614]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-kremasto-kolie-alysida-apo-ashmi-925-kosmhmata-emmanuela-651598.jpg?v=1755856788]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-kremasto-kolie-alysida-apo-ashmi-925-kosmhmata-emmanuela-150401.jpg?v=1755856786]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-kremasto-kolie-alysida-apo-ashmi-925-kosmhmata-emmanuela-981320.jpg?v=1755856794]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Κολιέ > Γυναικεία Κολιέ]]></category>
         <price_with_vat>209.00</price_with_vat>
@@ -50703,103 +49860,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40479848300701</id>
-        <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Μαύρο]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-briseis?variant=40479848300701]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-556621.jpg?v=1627376235]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-594600.jpg?v=1653980755]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>109.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL345LBLBE7]]></mpn>
-        <ean>5212033622776</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
-        <color>Μαύρο</color>
-        <size>38,39,40</size>
-        <variations>
-          <variation>
-            <variationid>40479848300701</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>38</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL345LBLBE7]]></manufacturersku>
-            <mpn><![CDATA[1KL345LBLBE7]]></mpn>
-            <ean>5212033622776</ean>
-          </variation>
-          <variation>
-            <variationid>40479848562845</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>39</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL345LBLBE8]]></manufacturersku>
-            <mpn><![CDATA[1KL345LBLBE8]]></mpn>
-            <ean>5212033622790</ean>
-          </variation>
-          <variation>
-            <variationid>40479848824989</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL345LBLBE9]]></manufacturersku>
-            <mpn><![CDATA[1KL345LBLBE9]]></mpn>
-            <ean>5212033622813</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 38,39,40.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>40479848431773</id>
-        <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Χρυσό]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-briseis?variant=40479848431773]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-151048.jpg?v=1627294550]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-689897.jpg?v=1627294585]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-463897.jpg?v=1627294649]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>47.28</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL345LRMBE7]]></mpn>
-        <ean>5212033622905</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>5</quantity>
-        <color>Χρυσό</color>
-        <size>38,40,41</size>
-        <variations>
-          <variation>
-            <variationid>40479848431773</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>38</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL345LRMBE7]]></manufacturersku>
-            <mpn><![CDATA[1KL345LRMBE7]]></mpn>
-            <ean>5212033622905</ean>
-          </variation>
-          <variation>
-            <variationid>40479848956061</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL345LRMBE9]]></manufacturersku>
-            <mpn><![CDATA[1KL345LRMBE9]]></mpn>
-            <ean>5212033622943</ean>
-          </variation>
-          <variation>
-            <variationid>40479849218205</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>3</quantity>
-            <manufacturersku><![CDATA[1KL345LRMBE10]]></manufacturersku>
-            <mpn><![CDATA[1KL345LRMBE10]]></mpn>
-            <ean>5212033622967</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 38,40,41.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>40479848497309</id>
         <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Κοραλί]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-briseis?variant=40479848497309]]></link>
@@ -50912,6 +49972,45 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
+        <id>40479848562845</id>
+        <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Μαύρο]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-briseis?variant=40479848562845]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-556621.jpg?v=1627376235]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-594600.jpg?v=1653980755]]></additionalimage>
+        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>109.00</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1KL345LBLBE8]]></mpn>
+        <ean>5212033622790</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>2</quantity>
+        <color>Μαύρο</color>
+        <size>39,40</size>
+        <variations>
+          <variation>
+            <variationid>40479848562845</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>39</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL345LBLBE8]]></manufacturersku>
+            <mpn><![CDATA[1KL345LBLBE8]]></mpn>
+            <ean>5212033622790</ean>
+          </variation>
+          <variation>
+            <variationid>40479848824989</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>40</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL345LBLBE9]]></manufacturersku>
+            <mpn><![CDATA[1KL345LBLBE9]]></mpn>
+            <ean>5212033622813</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 39,40.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
         <id>40479848661149</id>
         <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Κόκκινο]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-briseis?variant=40479848661149]]></link>
@@ -50956,6 +50055,46 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Κόκκινο. Διαθέσιμα νούμερα: 39,40,41.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40479848956061</id>
+        <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Χρυσό]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-briseis?variant=40479848956061]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-151048.jpg?v=1627294550]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-689897.jpg?v=1627294585]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-463897.jpg?v=1627294649]]></additionalimage>
+        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>47.28</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1KL345LRMBE9]]></mpn>
+        <ean>5212033622943</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>4</quantity>
+        <color>Χρυσό</color>
+        <size>40,41</size>
+        <variations>
+          <variation>
+            <variationid>40479848956061</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>40</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL345LRMBE9]]></manufacturersku>
+            <mpn><![CDATA[1KL345LRMBE9]]></mpn>
+            <ean>5212033622943</ean>
+          </variation>
+          <variation>
+            <variationid>40479849218205</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>41</size>
+            <quantity>3</quantity>
+            <manufacturersku><![CDATA[1KL345LRMBE10]]></manufacturersku>
+            <mpn><![CDATA[1KL345LRMBE10]]></mpn>
+            <ean>5212033622967</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 40,41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -60240,85 +59379,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,44,46.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>40480116310173</id>
-        <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Μαύρο]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-white-briseis?variant=40480116310173]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-594600.jpg?v=1653980755]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-556621.jpg?v=1627376235]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>109.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL345LBLBE8]]></mpn>
-        <ean>5212033622790</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
-        <color>Μαύρο</color>
-        <size>39,40</size>
-        <variations>
-          <variation>
-            <variationid>40480116310173</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>39</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL345LBLBE8]]></manufacturersku>
-            <mpn><![CDATA[1KL345LBLBE8]]></mpn>
-            <ean>5212033622790</ean>
-          </variation>
-          <variation>
-            <variationid>40480116572317</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL345LBLBE9]]></manufacturersku>
-            <mpn><![CDATA[1KL345LBLBE9]]></mpn>
-            <ean>5212033622813</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 39,40.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>40480116637853</id>
-        <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Χρυσό]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-white-briseis?variant=40480116637853]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-360128.jpg?v=1627294583]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-689897.jpg?v=1627294585]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-463897.jpg?v=1627294649]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>47.28</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL345LRMBE9]]></mpn>
-        <ean>5212033622943</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
-        <color>Χρυσό</color>
-        <size>40,41</size>
-        <variations>
-          <variation>
-            <variationid>40480116637853</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL345LRMBE9]]></manufacturersku>
-            <mpn><![CDATA[1KL345LRMBE9]]></mpn>
-            <ean>5212033622943</ean>
-          </variation>
-          <variation>
-            <variationid>40480117063837</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>3</quantity>
-            <manufacturersku><![CDATA[1KL345LRMBE10]]></manufacturersku>
-            <mpn><![CDATA[1KL345LRMBE10]]></mpn>
-            <ean>5212033622967</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 40,41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

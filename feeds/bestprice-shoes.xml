@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-29 03:32</date>
+  <date>2026-07-29 09:43</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -120,7 +120,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL225LBLBL7</MPN>
       <color>μαύρο</color>
-      <size>40,42,43,45,46,47</size>
+      <size>40,43,45,46,47</size>
       <EAN>5212033625050</EAN>
       <shipping>0</shipping>
     </product>
@@ -937,29 +937,8 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL345LGOBE5</MPN>
       <color>χρυσό</color>
-      <size>36,38,40,41</size>
+      <size>36,40,41</size>
       <EAN>5212033622998</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40479848300701</productId>
-      <title><![CDATA[Emmanuela Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Μαύρο]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-briseis</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-556621.jpg?v=1627376235</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-556621.jpg?v=1627376235</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-438798.jpg?v=1627294550</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-428285.jpg?v=1627294550</img3>
-      </imagesURL>
-      <price>109.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1KL345LBLBE7</MPN>
-      <color>μαύρο</color>
-      <size>38,39,40</size>
-      <EAN>5212033622776</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -996,6 +975,27 @@
       <color>τιρκουάζ</color>
       <size>38,39,40,41</size>
       <EAN>5212033623292</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40479848562845</productId>
+      <title><![CDATA[Emmanuela Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Μαύρο]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-briseis</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-556621.jpg?v=1627376235</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-556621.jpg?v=1627376235</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-438798.jpg?v=1627294550</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-428285.jpg?v=1627294550</img3>
+      </imagesURL>
+      <price>109.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1KL345LBLBE8</MPN>
+      <color>μαύρο</color>
+      <size>39,40</size>
+      <EAN>5212033622790</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -3530,7 +3530,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL845LBLBL6</MPN>
       <color>μαύρο</color>
-      <size>37,38,39,40,41</size>
+      <size>37,39,40,41</size>
       <EAN>5212033613880</EAN>
       <shipping>0</shipping>
     </product>

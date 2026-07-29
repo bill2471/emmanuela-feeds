@@ -477,13 +477,28 @@ const FILENAME_COLOR_PATTERNS = [
   // Ροζ MUST be checked before Χρυσό (roz-epixryswmeno-...)
   { pattern: /^roz[-_]/i, color: 'Ροζ' },
   // Gold-plated family
-  { pattern: /^(epixryswmen|epixrysomen|epixysomen|xryso|xrysa|gold)[-_a]/i, color: 'Χρυσό' },
+  // v3.4 (2026-07-29) — SYMMETRIC Greek noun endings. The v3.3 character classes were
+  // inconsistent: gold accepted only the PLURAL (epixryswmenA-) while oxidized accepted
+  // only the SINGULAR (oxeidwmenO-) and black only "mayro" (not "mayra"). Every unmatched
+  // form fell through to "colour-neutral", and a colour-neutral image is emitted into EVERY
+  // colour group — i.e. exactly the "additional images show another colourway" defect
+  // Skroutz penalises (ticket #33670445).
+  // Measured on the live feed of 2026-07-29: 303 of 2855 jewelry image URLs were wrongly
+  // classified neutral (248 Χρυσό, 52 Γκρι, 3 Μαύρο), producing 143 wrong-colour
+  // <additionalimage> and 23 wrong-colour MAIN images across 62 entries.
+  // Endings accepted: -ο (neut.sg), -α (neut.pl/fem.sg), -η (fem.sg), plus - and _.
+  // Verified before deploy: 0 images CHANGE colour — the fix only ADDS attribution.
+  // KNOWN CONSEQUENCE, approved by Bill 2026-07-29: the v3.5.1 SAFETY GATE below (which
+  // was silently under-firing because of this gap) now correctly drops 23 entries whose
+  // MAIN image is of another colourway — per his 2026-05-14 rule "better to not list than
+  // to mislead the customer with a wrong-color photo". They return once photographed.
+  { pattern: /^(epixryswmen|epixrysomen|epixysomen|xrys|gold)[-_aoh]/i, color: 'Χρυσό' },
   // Oxidized → Γκρι (per COLOR_MAP_GREEK)
-  { pattern: /^(oxeidwmen|oxidomen|anthrak)[-_o]/i, color: 'Γκρι' },
+  { pattern: /^(oxeidwmen|oxidomen|anthrak)[-_oah]/i, color: 'Γκρι' },
   // Black
-  { pattern: /^(mayro|mavro|black)[-_a]/i, color: 'Μαύρο' },
+  { pattern: /^(mayr|mavr|black)[-_oah]/i, color: 'Μαύρο' },
   // Silver / default — only word forms that actually appear at start of CDN names
-  { pattern: /^(ashmenio|ashmenia|silver)[-_a]/i, color: 'Ασημί' },
+  { pattern: /^(ashmeni|ashmen|silver)[-_oah]/i, color: 'Ασημί' },
 ];
 
 function getColorFromFilename(imageUrl) {

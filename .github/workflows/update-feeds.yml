@@ -172,6 +172,52 @@ jobs:
             echo "✅ Feeds updated and pushed!"
           fi
 
+      # 2026-07-30: BestPrice's servers CANNOT fetch raw.githubusercontent (host-level
+      # HTTP 500 — see skill emmanuela-bestprice), so BOTH BestPrice feeds are served to
+      # them through jsDelivr. jsDelivr caches a BRANCH ref (@main) at the edge for
+      # s-maxage=43200 (12h) while this workflow runs every 6h => the CDN can serve a feed
+      # up to TWO generations old, and NOTHING here ever invalidated it.
+      # Measured that day: the fix for 24 duplicated «Σετ από N σετ από N» titles was
+      # committed (682b1157) and pushed twice, yet BestPrice was STILL being served the
+      # broken file 4h later (Age: 26940, CDN <date> 08:47 vs repo 15:16). The shoes feed
+      # was 12h42m behind. Purging is the documented remedy — it was just never wired in.
+      # Only BestPrice needs it: Google/Meta/GLAMI/Skroutz are read straight from
+      # raw.githubusercontent. Add a filename below if a channel ever moves to jsDelivr.
+      # NON-FATAL by design (same QUIET philosophy as the report step below): a CDN
+      # hiccup must never turn a successful feed build red.
+      - name: Purge jsDelivr cache (BestPrice feeds)
+        if: always()
+        continue-on-error: true
+        run: |
+          for f in bestprice-gr.xml bestprice-shoes.xml; do
+            if [ ! -f "feeds/$f" ]; then
+              echo "::warning::purge skipped — feeds/$f not present in the workspace"
+              continue
+            fi
+            echo "🧹 purging $f"
+            curl -sS --max-time 60 "https://purge.jsdelivr.net/gh/bill2471/emmanuela-feeds@main/feeds/$f" || true
+            echo
+            # VERIFY — never trust the purge response. The CDN copy must be byte-identical
+            # to the file we just pushed; retry because the edge needs a few seconds.
+            # (--compressed is required: it makes curl DECODE gzip, so the hash is of the
+            # real file. Verified 2026-07-30 against the git blob sha.)
+            want=$(sha256sum "feeds/$f" | cut -d' ' -f1)
+            ok=0
+            for i in 1 2 3; do
+              got=$(curl -sS --compressed --max-time 60 "https://cdn.jsdelivr.net/gh/bill2471/emmanuela-feeds@main/feeds/$f" | sha256sum | cut -d' ' -f1)
+              if [ "$got" = "$want" ]; then
+                echo "✅ $f: CDN matches repo ($want)"
+                ok=1
+                break
+              fi
+              echo "… attempt $i: CDN=$got want=$want — retrying in 5s"
+              sleep 5
+            done
+            if [ "$ok" != "1" ]; then
+              echo "::warning::jsDelivr is STILL serving a stale $f after purge — BestPrice may read an outdated feed for up to 12h. Re-run: curl -s https://purge.jsdelivr.net/gh/bill2471/emmanuela-feeds@main/feeds/$f"
+            fi
+          done
+
       # 2026-07-23 (QUIET mode — Bill's choice): a transient single-cycle generator
       # throttle self-heals next run and its feed kept its previous XML, so we do NOT
       # fail the run (no "Run failed" email). The failure stays VISIBLE as a warning

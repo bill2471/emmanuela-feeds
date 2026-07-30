@@ -112,6 +112,20 @@ const SET_INFLECTION_TYPES = {
 };
 
 function applySetInflection(title, setN) {
+  // v3.1 fix (2026-07-30): do NOT prepend when the prefix is ALREADY there.
+  // The v3.0 logic above was written on the premise — stated verbatim in detectSetQuantity's
+  // comment — that "Skroutz title-builder strips this prefix". That premise DIED on 2026-07-24:
+  // skroutz-title-builder-v35 v3.5.7 deliberately RESTORED it ("a QUANTITY SET must say so in
+  // the TITLE", shared module line ~890) and emits `Σετ από N` as parts[0] with a plural head
+  // word. Since then both layers prepend, producing "Σετ από 3 σετ από 3 δαχτυλίδια μπίλιες" —
+  // 24 live entries across 9 products, measured on the live feed 2026-07-30.
+  // We KEEP BestPrice's broader detection (it also fires on a "Δύο…" title and on a handle that
+  // starts with "N-", which the shared builder does not cover) and only stop double-writing.
+  // If a prefix is present it already carries the quantity, so returning it unchanged cannot
+  // lose information.
+  if (/^Σετ\s+από\s+(?:\d+|δύο|τρία|τέσσερα|πέντε|έξι)\b/iu.test(title.trim())) {
+    return title.trim();
+  }
   let lower = title.charAt(0).toLowerCase() + title.slice(1);
   for (const [sg, { plural, adj }] of Object.entries(SET_INFLECTION_TYPES)) {
     if (lower.startsWith(sg + ' ')) {

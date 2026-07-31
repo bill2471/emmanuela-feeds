@@ -140,6 +140,36 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
+
+          # ── v4.0 (2026-07-31) — ΜΗΝ κάνεις commit feed που άλλαξε ΜΟΝΟ στο <date> ──
+          # ΓΙΑΤΙ (μετρημένο): δύο διαδοχικά commits του bestprice-gr.xml διέφεραν σε
+          # ΑΚΡΙΒΩΣ 2 γραμμές, και οι δύο ήταν το <date> — μηδέν αλλαγή περιεχομένου.
+          # Το repo έχει φτάσει τα 8,7 GB = 177x το όριο των 50 MB του jsDelivr (το
+          # data.jsdelivr.com απαντά 403 "Package size exceeded"), σχεδόν εξ ολοκλήρου
+          # από αυτό το timestamp churn (~120 MB/ημέρα σε 5 feeds x 4 runs).
+          # Το spec της BestPrice ονομάζει το <date> «ημερομηνία δημιουργίας του αρχείου»
+          # και ΔΕΝ επιβάλλει καμία απαίτηση φρεσκάδας (κανένας δείκτης ^ υποχρεωτικού).
+          # ⛔ OPT-IN ΑΝΑ ΑΡΧΕΙΟ: feed μπαίνει εδώ ΜΟΝΟ αφού ο κάτοχός του διαβάσει το
+          # spec του δικού του καναλιού. ΜΗΝ προσθέσεις feed που δεν σου ανήκει.
+          SKIP_IF_ONLY_DATE="bestprice-gr.xml bestprice-shoes.xml"
+          for name in $SKIP_IF_ONLY_DATE; do
+            f="feeds/$name"
+            [ -f "$f" ] || continue
+            # --text: ένα NUL byte θα έκανε το git να το πει binary και να μην τυπώσει +/-
+            d=$(git diff --text -U0 -- "$f" || true)
+            changed=$(printf '%s\n' "$d" | grep -c '^[+-][^+-]' || true)
+            dateonly=$(printf '%s\n' "$d" | grep -c '^[+-][[:space:]]*<date>' || true)
+            changed=${changed:-0}; dateonly=${dateonly:-0}
+            if [ "$changed" -eq 0 ]; then
+              echo "   $name: καμία αλλαγή"
+            elif [ "$changed" -eq "$dateonly" ]; then
+              git checkout -- "$f"
+              echo "⏭️  $name: ΜΟΝΟ το <date> άλλαξε — δεν γίνεται commit"
+            else
+              echo "✅ $name: πραγματικές αλλαγές ($changed γραμμές, οι $dateonly είναι <date>)"
+            fi
+          done
+
           git add feeds/*.xml || true  # ignore warning for .gitignore'd dated snapshots
           if git diff --staged --quiet; then
             echo "📭 No changes to commit"

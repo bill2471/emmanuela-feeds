@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-31 03:02</created_at>
+  <created_at>2026-07-31 09:13</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -628,7 +628,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[9020]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>16</quantity>
+        <quantity>15</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>41</weight>
@@ -10394,7 +10394,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1254-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>14</quantity>
+        <quantity>13</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -52701,9 +52701,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS036LBUBE5]]></mpn>
         <ean>5212033693431</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>13</quantity>
+        <quantity>12</quantity>
         <color>Μπλε</color>
-        <size>36,37,38,39,40,41,42</size>
+        <size>36,37,38,40,41,42</size>
         <variations>
           <variation>
             <variationid>46685582065999</variationid>
@@ -52733,15 +52733,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033693455</ean>
           </variation>
           <variation>
-            <variationid>46685582164303</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>39</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1TS036LBUBE8]]></manufacturersku>
-            <mpn><![CDATA[1TS036LBUBE8]]></mpn>
-            <ean>5212033693462</ean>
-          </variation>
-          <variation>
             <variationid>46685582197071</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>40</size>
@@ -52769,7 +52760,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033693493</ean>
           </variation>
         </variations>
-        <description><![CDATA[Flat πέδιλα "Ευνίκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπλε. Διαθέσιμα νούμερα: 36,37,38,39,40,41,42.]]></description>
+        <description><![CDATA[Flat πέδιλα "Ευνίκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπλε. Διαθέσιμα νούμερα: 36,37,38,40,41,42.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

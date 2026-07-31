@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-07-31 14:26</created_at>
+  <created_at>2026-07-31 19:47</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -10518,7 +10518,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[8016-Ροζ]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>18</quantity>
+        <quantity>17</quantity>
         <color>Ροζ</color>
         <size>One Size</size>
         <weight>4</weight>
@@ -58875,9 +58875,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL222LBRBR8]]></mpn>
         <ean>5212033624459</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>5</quantity>
+        <quantity>4</quantity>
         <color>Καφέ</color>
-        <size>41,43,44,46</size>
+        <size>41,43,46</size>
         <variations>
           <variation>
             <variationid>40480107135133</variationid>
@@ -58898,15 +58898,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033624497</ean>
           </variation>
           <variation>
-            <variationid>40480107757725</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>44</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL222LBRBR11]]></manufacturersku>
-            <mpn><![CDATA[1KL222LBRBR11]]></mpn>
-            <ean>5212033624510</ean>
-          </variation>
-          <variation>
             <variationid>40480108216477</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>46</size>
@@ -58916,7 +58907,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033625890</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,43,44,46.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,43,46.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

@@ -189,32 +189,58 @@ jobs:
         if: always()
         continue-on-error: true
         run: |
+          # 🔴 v2 (2026-07-31) — THE FIRST VERSION MADE THINGS WORSE. Measured on two real
+          # runs: the purge fired 22s after the commit (03:42:29 push → 03:42:51 purge), so
+          # jsDelivr re-fetched from a GitHub origin that had NOT propagated yet, cached the
+          # OLD file, and gave it a FRESH 12h TTL. Both runs logged "STILL serving a stale".
+          # A purge is only safe once the ORIGIN already serves the new bytes — otherwise it
+          # re-primes the CDN with stale content and resets the clock. Hence phase 1.
+          RAW=https://raw.githubusercontent.com/bill2471/emmanuela-feeds/main/feeds
+          CDN=https://cdn.jsdelivr.net/gh/bill2471/emmanuela-feeds@main/feeds
+          PURGE=https://purge.jsdelivr.net/gh/bill2471/emmanuela-feeds@main/feeds
+          # --compressed is REQUIRED: it makes curl DECODE gzip so the hash is of the real
+          # file (verified 2026-07-30 against the git blob sha).
+          fetch_sha () { curl -sS --compressed --max-time 60 "$1" | sha256sum | cut -d' ' -f1; }
+
           for f in bestprice-gr.xml bestprice-shoes.xml; do
             if [ ! -f "feeds/$f" ]; then
               echo "::warning::purge skipped — feeds/$f not present in the workspace"
               continue
             fi
-            echo "🧹 purging $f"
-            curl -sS --max-time 60 "https://purge.jsdelivr.net/gh/bill2471/emmanuela-feeds@main/feeds/$f" || true
-            echo
-            # VERIFY — never trust the purge response. The CDN copy must be byte-identical
-            # to the file we just pushed; retry because the edge needs a few seconds.
-            # (--compressed is required: it makes curl DECODE gzip, so the hash is of the
-            # real file. Verified 2026-07-30 against the git blob sha.)
             want=$(sha256sum "feeds/$f" | cut -d' ' -f1)
+
+            # ── PHASE 1: wait for GitHub's own origin to serve what we just pushed ──
+            origin_ok=0
+            for i in 1 2 3 4 5 6; do
+              if [ "$(fetch_sha "$RAW/$f")" = "$want" ]; then
+                echo "✅ $f: GitHub origin ready (check $i)"
+                origin_ok=1
+                break
+              fi
+              echo "… $f: origin still old — waiting 15s ($i/6)"
+              sleep 15
+            done
+            if [ "$origin_ok" != "1" ]; then
+              echo "::warning::GitHub origin did not serve the new $f within 90s — SKIPPING the purge on purpose. Purging now would re-cache the OLD file for 12h. Re-run later: curl -s $PURGE/$f"
+              continue
+            fi
+
+            # ── PHASE 2: purge, verify, and PURGE AGAIN on mismatch (not just re-read) ──
             ok=0
             for i in 1 2 3; do
-              got=$(curl -sS --compressed --max-time 60 "https://cdn.jsdelivr.net/gh/bill2471/emmanuela-feeds@main/feeds/$f" | sha256sum | cut -d' ' -f1)
+              echo "🧹 purging $f (round $i)"
+              curl -sS --max-time 60 "$PURGE/$f" > /dev/null || true
+              sleep $((5 * i))
+              got=$(fetch_sha "$CDN/$f")
               if [ "$got" = "$want" ]; then
                 echo "✅ $f: CDN matches repo ($want)"
                 ok=1
                 break
               fi
-              echo "… attempt $i: CDN=$got want=$want — retrying in 5s"
-              sleep 5
+              echo "… round $i: CDN=$got want=$want"
             done
             if [ "$ok" != "1" ]; then
-              echo "::warning::jsDelivr is STILL serving a stale $f after purge — BestPrice may read an outdated feed for up to 12h. Re-run: curl -s https://purge.jsdelivr.net/gh/bill2471/emmanuela-feeds@main/feeds/$f"
+              echo "::warning::jsDelivr is STILL serving a stale $f after 3 purge rounds — BestPrice may read an outdated feed for up to 12h. Re-run: curl -s $PURGE/$f"
             fi
           done
 

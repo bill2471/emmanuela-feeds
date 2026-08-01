@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-07-31 20:26</date>
+  <date>2026-08-01 03:38</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -2946,27 +2946,6 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479976980637</productId>
-      <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Αλόννησος" - Λέοπαρντ]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-mustard-alonissos</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-637804.jpg?v=1627294893</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-637804.jpg?v=1627294893</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-287762.jpg?v=1627294893</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-615165.jpg?v=1627294893</img3>
-      </imagesURL>
-      <price>59.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1TS15LMNBR6</MPN>
-      <color>πολύχρωμο</color>
-      <size>37,41</size>
-      <EAN>5212033641500</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
       <productId>40479977013405</productId>
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Αλόννησος" - Ροζ χρυσό]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-mustard-alonissos</productURL>
@@ -3016,6 +2995,27 @@
       <color>λευκό</color>
       <size>38</size>
       <EAN>5212033641371</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40479978193053</productId>
+      <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Αλόννησος" - Ζέβρα]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-mustard-alonissos</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-615165.jpg?v=1627294893</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-615165.jpg?v=1627294893</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-637804.jpg?v=1627294893</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-287762.jpg?v=1627294893</img3>
+      </imagesURL>
+      <price>59.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1TS15LMMBL10</MPN>
+      <color>πολύχρωμο</color>
+      <size>41</size>
+      <EAN>5212033641685</EAN>
       <shipping>0</shipping>
     </product>
     <product>

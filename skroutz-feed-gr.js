@@ -824,6 +824,7 @@ function generateSkroutzFeed(products) {
     withVariations: 0,
     withMaterial: 0,
     packagingDemoted: 0,  // v3.2: count of entries where packaging photo was demoted from main
+    packagingAdditionalDropped: 0,  // 2026-08-03: packaging shots kept out of <additionalimage>
     categoryBreakdown: {},
     unmappedTypes: {},
     sampleItems: []
@@ -1201,7 +1202,20 @@ function generateSkroutzFeed(products) {
       item += `        <image><![CDATA[${variantImage}]]></image>\n`;
 
       // Additional images (fashion: mandatory when available)
-      for (const addImg of additionalImages) {
+      // 2026-08-03: the PACKAGING shot must not ship as an <additionalimage>. Skroutz stated the
+      // rule twice on ticket #33670445 (24/07, refined 31/07): every additional image must show
+      // THE PRODUCT, in a DIFFERENT VIEW of that colourway. The gift-bag/box/cleaning-cloth photo
+      // contains no jewellery at all — visually confirmed on all 3 distinct files that match.
+      // Scale of the violation on the live feed of 2026-08-03: ONE file appeared 777 times, ~50x
+      // more than any other image in the whole feed, across 785 of 1355 jewelry entries.
+      // The v3.2 note above ("still allowed in <additionalimage>") was written BEFORE that rule
+      // existed and is what this supersedes.
+      // Measured cost, live feed: 785 images removed · 41 entries drop 2+ -> 1 · 23 drop 1 -> 0.
+      // The MAIN image is untouched by construction (this filter runs only on the additional
+      // list) and was already never packaging — measured 0 of 1694 entries.
+      const emittedAdditional = additionalImages.filter(src => !isPackagingImage(src));
+      stats.packagingAdditionalDropped += additionalImages.length - emittedAdditional.length;
+      for (const addImg of emittedAdditional) {
         item += `        <additionalimage><![CDATA[${addImg}]]></additionalimage>\n`;
       }
 
@@ -1465,6 +1479,7 @@ async function generateFeed(options = {}) {
   console.log(`  Feed entries:          ${stats.feedEntries}`);
   console.log(`  With material phrase:   ${stats.withMaterial}`);
   console.log(`  Packaging demoted:     ${stats.packagingDemoted}  (v3.2: packaging photos not used as main)`);
+  console.log(`  Packaging additionals dropped: ${stats.packagingAdditionalDropped}  (2026-08-03: a gift-box shot is not a product view)`);
   console.log(`  With color:            ${stats.withColor}`);
   console.log(`  With MPN/SKU:          ${stats.withMPN}`);
   console.log(`  With EAN/barcode:      ${stats.withEAN}`);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-08-02 19:31</created_at>
+  <created_at>2026-08-03 03:00</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -37872,7 +37872,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4458600300579-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>1</weight>
@@ -53343,9 +53343,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI46MANLBRBR10]]></mpn>
         <ean>5212033634519</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>2</quantity>
         <color>Καφέ</color>
-        <size>43,44,46</size>
+        <size>43,44</size>
         <variations>
           <variation>
             <variationid>40479960334493</variationid>
@@ -53358,57 +53358,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
           <variation>
             <variationid>40479960498333</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>44</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI46MANLBRBR11]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLBRBR11]]></mpn>
-            <ean>5212033634526</ean>
-          </variation>
-          <variation>
-            <variationid>40479960793245</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>46</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI46MANLBRBR13]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLBRBR13]]></mpn>
-            <ean>5212033626323</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 43,44,46.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>40479961841821</id>
-        <name><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος" - Καφέ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-icarus-men?variant=40479961841821]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-555975.jpg?v=1627293856]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-913484.jpg?v=1627293850]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-488931.jpg?v=1627293850]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-350639.jpg?v=1627293857]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-929529.jpg?v=1627293857]]></additionalimage>
-        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>59.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1LI46MANLBRBR10]]></mpn>
-        <ean>5212033634519</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
-        <color>Καφέ</color>
-        <size>43,44</size>
-        <variations>
-          <variation>
-            <variationid>40479961841821</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>43</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI46MANLBRBR10]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLBRBR10]]></mpn>
-            <ean>5212033634519</ean>
-          </variation>
-          <variation>
-            <variationid>40479961940125</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>44</size>
             <quantity>1</quantity>
@@ -54537,31 +54486,22 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40479986942109</id>
+        <id>40479987040413</id>
         <name><![CDATA[Σανδάλια παντόφλες "Θήρα" - Τιρκουάζ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-turquoise-thira?variant=40479986942109]]></link>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-turquoise-thira?variant=40479987040413]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-thhra-emmanuela-handcrafted-for-you-sandalia-pantofles-thhra-651024.jpg?v=1627386172]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-thhra-emmanuela-handcrafted-for-you-sandalia-pantofles-thhra-641930.jpg?v=1627295177]]></additionalimage>
         <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Παντόφλες]]></category>
         <price_with_vat>29.45</price_with_vat>
         <vat>24.00</vat>
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL771CLTUBE9]]></mpn>
-        <ean>5212033647625</ean>
+        <mpn><![CDATA[1KL771CLTUBE10]]></mpn>
+        <ean>5212033647649</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Τιρκουάζ</color>
-        <size>40,41</size>
+        <size>41</size>
         <variations>
-          <variation>
-            <variationid>40479986942109</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL771CLTUBE9]]></manufacturersku>
-            <mpn><![CDATA[1KL771CLTUBE9]]></mpn>
-            <ean>5212033647625</ean>
-          </variation>
           <variation>
             <variationid>40479987040413</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
@@ -54572,7 +54512,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033647649</ean>
           </variation>
         </variations>
-        <description><![CDATA[Σανδάλια παντόφλες "Θήρα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Τιρκουάζ. Διαθέσιμα νούμερα: 40,41.]]></description>
+        <description><![CDATA[Σανδάλια παντόφλες "Θήρα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Τιρκουάζ. Διαθέσιμα νούμερα: 41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

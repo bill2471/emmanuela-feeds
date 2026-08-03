@@ -4969,7 +4969,7 @@
     <GTIN>05212033647328</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40479986942109</ITEM_ID>
+    <ITEM_ID>40479987040413</ITEM_ID>
     <PRODUCTNAME><![CDATA[Σανδάλια παντόφλες "Θήρα" - Τιρκουάζ]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-turquoise-thira</URL>
     <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-thhra-emmanuela-handcrafted-for-you-sandalia-pantofles-thhra-651024.jpg?v=1627386172</IMGURL>
@@ -4980,14 +4980,14 @@
     <ITEMGROUP_ID>6856630272157</ITEMGROUP_ID>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-thhra-emmanuela-handcrafted-for-you-sandalia-pantofles-thhra-213313.jpg?v=1627295177</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-thhra-emmanuela-handcrafted-for-you-sandalia-pantofles-thhra-718758.jpg?v=1627295177</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-turquoise-thira?variant=40479986942109</URL_SIZE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-turquoise-thira?variant=40479987040413</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>τιρκουάζ</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>40, 41</VAL>
+      <VAL>41</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -4998,7 +4998,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033647625</GTIN>
+    <GTIN>05212033647649</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40479987105949</ITEM_ID>

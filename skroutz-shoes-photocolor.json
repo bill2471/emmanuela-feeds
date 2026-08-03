@@ -1,0 +1,1757 @@
+[
+ {
+  "key": "1BR2001LBL|1BR2001LBU|1BR2001LR",
+  "fp": "L225238",
+  "color": "κόκκινο"
+ },
+ {
+  "key": "1BR2001LBL|1BR2001LBU|1BR2001LR",
+  "fp": "L228729",
+  "color": "κόκκινο"
+ },
+ {
+  "key": "1BR2001LBL|1BR2001LBU|1BR2001LR",
+  "fp": "L238297",
+  "color": "κόκκινο"
+ },
+ {
+  "key": "1BR2001LBL|1BR2001LBU|1BR2001LR",
+  "fp": "L269640",
+  "color": "κόκκινο"
+ },
+ {
+  "key": "1BR2001LBL|1BR2001LBU|1BR2001LR",
+  "fp": "L264102",
+  "color": "κόκκινο"
+ },
+ {
+  "key": "1BR2001LBL|1BR2001LBU|1BR2001LR",
+  "fp": "L319391",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1BR2001LBL|1BR2001LBU|1BR2001LR",
+  "fp": "L322264",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1BR2001LBL|1BR2001LBU|1BR2001LR",
+  "fp": "L242726",
+  "color": "μπλε"
+ },
+ {
+  "key": "1SPSH24LBL|1SPSH24LIC|1SPSH24LLE",
+  "fp": "L99033",
+  "color": "μαύρο σουέντ"
+ },
+ {
+  "key": "1KL839LBLBL|1KL839LMUBR|1KL839LNABE|1KL839LTBE|1KL839LTUBE",
+  "fp": "L244037",
+  "color": "καφέ"
+ },
+ {
+  "key": "1KL839LBLBL|1KL839LMUBR|1KL839LNABE|1KL839LTBE|1KL839LTUBE",
+  "fp": "L252821",
+  "color": "καφέ"
+ },
+ {
+  "key": "1KL839LBLBL|1KL839LMUBR|1KL839LNABE|1KL839LTBE|1KL839LTUBE",
+  "fp": "L259921",
+  "color": "καφέ"
+ },
+ {
+  "key": "1KL839LBLBL|1KL839LMUBR|1KL839LNABE|1KL839LTBE|1KL839LTUBE",
+  "fp": "L224888",
+  "color": "τιρκουάζ"
+ },
+ {
+  "key": "1KL839LBLBL|1KL839LMUBR|1KL839LNABE|1KL839LTBE|1KL839LTUBE",
+  "fp": "L268718",
+  "color": "τιρκουάζ"
+ },
+ {
+  "key": "1KL839LBLBL|1KL839LMUBR|1KL839LNABE|1KL839LTBE|1KL839LTUBE",
+  "fp": "L189872",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL839LBLBL|1KL839LMUBR|1KL839LNABE|1KL839LTBE|1KL839LTUBE",
+  "fp": "L293253",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1KL839LBLBL|1KL839LMUBR|1KL839LNABE|1KL839LTBE|1KL839LTUBE",
+  "fp": "L331201",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1KL839LBLBL|1KL839LMUBR|1KL839LNABE|1KL839LTBE|1KL839LTUBE",
+  "fp": "L296349",
+  "color": "καφέ"
+ },
+ {
+  "key": "1KL839LBLBL|1KL839LMUBR|1KL839LNABE|1KL839LTBE|1KL839LTUBE",
+  "fp": "L292849",
+  "color": "τιρκουάζ"
+ },
+ {
+  "key": "1KL839LBLBL|1KL839LMUBR|1KL839LNABE|1KL839LTBE|1KL839LTUBE",
+  "fp": "L234062",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TS036LBLBL|1TS036LBUBE|1TS036LGRBE|1TS036LHOBE",
+  "fp": "L156510",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1FA239LIC|1FA239LLT|1FA239LR",
+  "fp": "L247401",
+  "color": "καφέ"
+ },
+ {
+  "key": "1TS103LBLBL|1TS103LFMBE|1TS103LGMBE|1TS103LNABE|1TS103LWHBE",
+  "fp": "L128389",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1BR3020LTRLBL|1BR3020LTRLBU|1BR3020LTRLR",
+  "fp": "L381027",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1BR3020LTRLBL|1BR3020LTRLBU|1BR3020LTRLR",
+  "fp": "L354175",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL213LBLBL|1KL213LBRBR|1KL213LNABE",
+  "fp": "L193953",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL213LBLBL|1KL213LBRBR|1KL213LNABE",
+  "fp": "L236414",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL213LBLBL|1KL213LBRBR|1KL213LNABE",
+  "fp": "L219107",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL213LBLBL|1KL213LBRBR|1KL213LNABE",
+  "fp": "L257456",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1KL213LBLBL|1KL213LBRBR|1KL213LNABE",
+  "fp": "L187592",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1KL213LBLBL|1KL213LBRBR|1KL213LNABE",
+  "fp": "L224440",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1KL213LBLBL|1KL213LBRBR|1KL213LNABE",
+  "fp": "L166902",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL225LBLBL|1KL225LBRBR|1KL225LDBDB|1KL225LNABE",
+  "fp": "L225709",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL225LBLBL|1KL225LBRBR|1KL225LDBDB|1KL225LNABE",
+  "fp": "L297567",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL225LBLBL|1KL225LBRBR|1KL225LDBDB|1KL225LNABE",
+  "fp": "L216848",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL225LBLBL|1KL225LBRBR|1KL225LDBDB|1KL225LNABE",
+  "fp": "L329265",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL225LBLBL|1KL225LBRBR|1KL225LDBDB|1KL225LNABE",
+  "fp": "L232533",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1KL225LBLBL|1KL225LBRBR|1KL225LDBDB|1KL225LNABE",
+  "fp": "L167607",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL225LBLBL|1KL225LBRBR|1KL225LDBDB|1KL225LNABE",
+  "fp": "L247569",
+  "color": "καφέ"
+ },
+ {
+  "key": "1KL225LBLBL|1KL225LBRBR|1KL225LDBDB|1KL225LNABE",
+  "fp": "L325557",
+  "color": "καφέ"
+ },
+ {
+  "key": "1TSA908LBLBL|1TSA908LCIBE|1TSA908LNABE",
+  "fp": "L206683",
+  "color": "σουέντ καφέ"
+ },
+ {
+  "key": "1TSA908LBLBL|1TSA908LCIBE|1TSA908LNABE",
+  "fp": "L232003",
+  "color": "σουέντ καφέ"
+ },
+ {
+  "key": "1TSA908LBLBL|1TSA908LCIBE|1TSA908LNABE",
+  "fp": "L134157",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1TSA908LBLBL|1TSA908LCIBE|1TSA908LNABE",
+  "fp": "L196900",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI57MANLBLBL|1LI57MANLBRBR|1LI57MANLNABE",
+  "fp": "L196961",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI57MANLBLBL|1LI57MANLBRBR|1LI57MANLNABE",
+  "fp": "L179705",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI57MANLBLBL|1LI57MANLBRBR|1LI57MANLNABE",
+  "fp": "L209612",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI57MANLBLBL|1LI57MANLBRBR|1LI57MANLNABE",
+  "fp": "L249335",
+  "color": "καφέ"
+ },
+ {
+  "key": "1LI46MANLBLBL|1LI46MANLBRBR|1LI46MANLNABE",
+  "fp": "L228371",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI46MANLBLBL|1LI46MANLBRBR|1LI46MANLNABE",
+  "fp": "L169456",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI46MANLBLBL|1LI46MANLBRBR|1LI46MANLNABE",
+  "fp": "L153035",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI46MANLBLBL|1LI46MANLBRBR|1LI46MANLNABE",
+  "fp": "L131301",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TSA907LBLBL|1TSA907LCIBE|1TSA907LNABE",
+  "fp": "L140237",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI74MANLBLBL|1LI74MANLBRBR|1LI74MANLNABE",
+  "fp": "L150301",
+  "color": "καφέ"
+ },
+ {
+  "key": "1LI74MANLBLBL|1LI74MANLBRBR|1LI74MANLNABE",
+  "fp": "L182900",
+  "color": "καφέ"
+ },
+ {
+  "key": "1LI74MANLBLBL|1LI74MANLBRBR|1LI74MANLNABE",
+  "fp": "L288746",
+  "color": "καφέ"
+ },
+ {
+  "key": "1LI74MANLBLBL|1LI74MANLBRBR|1LI74MANLNABE",
+  "fp": "L371812",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1KL222LBLBL|1KL222LBRBR|1KL222LDBDB|1KL222LNABE",
+  "fp": "L231805",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1KL222LBLBL|1KL222LBRBR|1KL222LDBDB|1KL222LNABE",
+  "fp": "L224364",
+  "color": "καφέ"
+ },
+ {
+  "key": "1KL222LBLBL|1KL222LBRBR|1KL222LDBDB|1KL222LNABE",
+  "fp": "L188970",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1KL222LBLBL|1KL222LBRBR|1KL222LDBDB|1KL222LNABE",
+  "fp": "L203358",
+  "color": "καφέ"
+ },
+ {
+  "key": "1KL222LBLBL|1KL222LBRBR|1KL222LDBDB|1KL222LNABE",
+  "fp": "L274140",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1KL222LBLBL|1KL222LBRBR|1KL222LDBDB|1KL222LNABE",
+  "fp": "L225441",
+  "color": "καφέ"
+ },
+ {
+  "key": "1LI98MANLBLBL|1LI98MANLBRBR|1LI98MANLNABE",
+  "fp": "L134105",
+  "color": "καφέ"
+ },
+ {
+  "key": "1LI98MANLBLBL|1LI98MANLBRBR|1LI98MANLNABE",
+  "fp": "L160493",
+  "color": "καφέ"
+ },
+ {
+  "key": "1LI98MANLBLBL|1LI98MANLBRBR|1LI98MANLNABE",
+  "fp": "L246617",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI98MANLBLBL|1LI98MANLBRBR|1LI98MANLNABE",
+  "fp": "L258607",
+  "color": "καφέ"
+ },
+ {
+  "key": "1LI98MANLBLBL|1LI98MANLBRBR|1LI98MANLNABE",
+  "fp": "L192453",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI47MANLBLBL|1LI47MANLBRBR|1LI47MANLNABE",
+  "fp": "L132464",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI47MANLBLBL|1LI47MANLBRBR|1LI47MANLNABE",
+  "fp": "L105764",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI47MANLBLBL|1LI47MANLBRBR|1LI47MANLNABE",
+  "fp": "L200866",
+  "color": "καφέ"
+ },
+ {
+  "key": "1LI72MANLBLBL|1LI72MANLBRBR|1LI72MANLNABE",
+  "fp": "L135361",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI72MANLBLBL|1LI72MANLBRBR|1LI72MANLNABE",
+  "fp": "L239805",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI72MANLBLBL|1LI72MANLBRBR|1LI72MANLNABE",
+  "fp": "L190378",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TSA903LBLBL|1TSA903LCIBE|1TSA903LNABE",
+  "fp": "L141646",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TS101LBLBL|1TS101LGOBL|1TS101LLIBL|1TS101LMABE|1TS101LMABL|1TS101LMLBL|1TS101LNABE|1TS101LRMBL",
+  "fp": "L175204",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1TS101LBLBL|1TS101LGOBL|1TS101LLIBL|1TS101LMABE|1TS101LMABL|1TS101LMLBL|1TS101LNABE|1TS101LRMBL",
+  "fp": "L165984",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1TS101LBLBL|1TS101LGOBL|1TS101LLIBL|1TS101LMABE|1TS101LMABL|1TS101LMLBL|1TS101LNABE|1TS101LRMBL",
+  "fp": "L143751",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TS101LBLBL|1TS101LGOBL|1TS101LLIBL|1TS101LMABE|1TS101LMABL|1TS101LMLBL|1TS101LNABE|1TS101LRMBL",
+  "fp": "L161620",
+  "color": "ροζ χρυσό"
+ },
+ {
+  "key": "1KL847LBLBL|1KL847LNABE|1KL847LWHBE",
+  "fp": "L185254",
+  "color": "λευκό"
+ },
+ {
+  "key": "1KL847LBLBL|1KL847LNABE|1KL847LWHBE",
+  "fp": "L182552",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI111KLMABL|1LI111KLMNBE|1LI111KLNABE|1LI111KLWHBE",
+  "fp": "L175164",
+  "color": "μέντα"
+ },
+ {
+  "key": "1LI111KLMABL|1LI111KLMNBE|1LI111KLNABE|1LI111KLWHBE",
+  "fp": "L153283",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI111KLMABL|1LI111KLMNBE|1LI111KLNABE|1LI111KLWHBE",
+  "fp": "L163456",
+  "color": "πολύχρωμα"
+ },
+ {
+  "key": "1LI111KLMABL|1LI111KLMNBE|1LI111KLNABE|1LI111KLWHBE",
+  "fp": "L274643",
+  "color": "μέντα"
+ },
+ {
+  "key": "1LI111KLMABL|1LI111KLMNBE|1LI111KLNABE|1LI111KLWHBE",
+  "fp": "L232638",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI111KLMABL|1LI111KLMNBE|1LI111KLNABE|1LI111KLWHBE",
+  "fp": "L257305",
+  "color": "πολύχρωμα"
+ },
+ {
+  "key": "1LI111KLMABL|1LI111KLMNBE|1LI111KLNABE|1LI111KLWHBE",
+  "fp": "L185412",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI111KLMABL|1LI111KLMNBE|1LI111KLNABE|1LI111KLWHBE",
+  "fp": "L270377",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI122LBLBL|1LI122LMABL|1LI122LNABE|1LI122LTBL|1LI122LWHBE",
+  "fp": "L126439",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI122LBLBL|1LI122LMABL|1LI122LNABE|1LI122LTBL|1LI122LWHBE",
+  "fp": "L180476",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI122LBLBL|1LI122LMABL|1LI122LNABE|1LI122LTBL|1LI122LWHBE",
+  "fp": "L188217",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI122LBLBL|1LI122LMABL|1LI122LNABE|1LI122LTBL|1LI122LWHBE",
+  "fp": "L168056",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI122LBLBL|1LI122LMABL|1LI122LNABE|1LI122LTBL|1LI122LWHBE",
+  "fp": "L240394",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI122LBLBL|1LI122LMABL|1LI122LNABE|1LI122LTBL|1LI122LWHBE",
+  "fp": "L134876",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI122LBLBL|1LI122LMABL|1LI122LNABE|1LI122LTBL|1LI122LWHBE",
+  "fp": "L295234",
+  "color": "πολύχρωμα"
+ },
+ {
+  "key": "1LI122LBLBL|1LI122LMABL|1LI122LNABE|1LI122LTBL|1LI122LWHBE",
+  "fp": "L238973",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI122LBLBL|1LI122LMABL|1LI122LNABE|1LI122LTBL|1LI122LWHBE",
+  "fp": "L337897",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI122LBLBL|1LI122LMABL|1LI122LNABE|1LI122LTBL|1LI122LWHBE",
+  "fp": "L352449",
+  "color": "καφέ"
+ },
+ {
+  "key": "1LI125LBLBL|1LI125LMABL|1LI125LRMBE|1LI125LSIBE|1LI125LWHBE",
+  "fp": "L204842",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI125LBLBL|1LI125LMABL|1LI125LRMBE|1LI125LSIBE|1LI125LWHBE",
+  "fp": "L266775",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI125LBLBL|1LI125LMABL|1LI125LRMBE|1LI125LSIBE|1LI125LWHBE",
+  "fp": "L123769",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI125LBLBL|1LI125LMABL|1LI125LRMBE|1LI125LSIBE|1LI125LWHBE",
+  "fp": "L153056",
+  "color": "ροζ χρυσό"
+ },
+ {
+  "key": "1LI125LBLBL|1LI125LMABL|1LI125LRMBE|1LI125LSIBE|1LI125LWHBE",
+  "fp": "L127482",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL838LBLBL|1KL838LMIBL|1KL838LNABE|1KL838LWHBE",
+  "fp": "L213335",
+  "color": "λευκό"
+ },
+ {
+  "key": "1KL838LBLBL|1KL838LMIBL|1KL838LNABE|1KL838LWHBE",
+  "fp": "L179866",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL838LBLBL|1KL838LMIBL|1KL838LNABE|1KL838LWHBE",
+  "fp": "L269057",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI139LBLBL|1LI139LGOBE|1LI139LNABE|1LI139LRMBE|1LI139LSIBE|1LI139LWHBE",
+  "fp": "L317784",
+  "color": "ασημί"
+ },
+ {
+  "key": "1LI139LBLBL|1LI139LGOBE|1LI139LNABE|1LI139LRMBE|1LI139LSIBE|1LI139LWHBE",
+  "fp": "L237282",
+  "color": "ασημί"
+ },
+ {
+  "key": "1LI139LBLBL|1LI139LGOBE|1LI139LNABE|1LI139LRMBE|1LI139LSIBE|1LI139LWHBE",
+  "fp": "L303294",
+  "color": "ασημί"
+ },
+ {
+  "key": "1LI139LBLBL|1LI139LGOBE|1LI139LNABE|1LI139LRMBE|1LI139LSIBE|1LI139LWHBE",
+  "fp": "L195912",
+  "color": "ασημί"
+ },
+ {
+  "key": "1LI139LBLBL|1LI139LGOBE|1LI139LNABE|1LI139LRMBE|1LI139LSIBE|1LI139LWHBE",
+  "fp": "L171477",
+  "color": "ασημί"
+ },
+ {
+  "key": "1LI139LBLBL|1LI139LGOBE|1LI139LNABE|1LI139LRMBE|1LI139LSIBE|1LI139LWHBE",
+  "fp": "L168910",
+  "color": "ασημί"
+ },
+ {
+  "key": "1LI139LBLBL|1LI139LGOBE|1LI139LNABE|1LI139LRMBE|1LI139LSIBE|1LI139LWHBE",
+  "fp": "L195531",
+  "color": "χρυσό"
+ },
+ {
+  "key": "1LI139LBLBL|1LI139LGOBE|1LI139LNABE|1LI139LRMBE|1LI139LSIBE|1LI139LWHBE",
+  "fp": "L186418",
+  "color": "χρυσό"
+ },
+ {
+  "key": "1LI139LBLBL|1LI139LGOBE|1LI139LNABE|1LI139LRMBE|1LI139LSIBE|1LI139LWHBE",
+  "fp": "L340528",
+  "color": "χρυσό"
+ },
+ {
+  "key": "1LI139LBLBL|1LI139LGOBE|1LI139LNABE|1LI139LRMBE|1LI139LSIBE|1LI139LWHBE",
+  "fp": "L304443",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI140LBLBL|1LI140LNABE|1LI140LRMBE|1LI140LSIBE|1LI140LWHBE",
+  "fp": "L190818",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI140LBLBL|1LI140LNABE|1LI140LRMBE|1LI140LSIBE|1LI140LWHBE",
+  "fp": "L179753",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI140LBLBL|1LI140LNABE|1LI140LRMBE|1LI140LSIBE|1LI140LWHBE",
+  "fp": "L188764",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI140LBLBL|1LI140LNABE|1LI140LRMBE|1LI140LSIBE|1LI140LWHBE",
+  "fp": "L213268",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI140LBLBL|1LI140LNABE|1LI140LRMBE|1LI140LSIBE|1LI140LWHBE",
+  "fp": "L141572",
+  "color": "ροζ χρυσό"
+ },
+ {
+  "key": "1LI140LBLBL|1LI140LNABE|1LI140LRMBE|1LI140LSIBE|1LI140LWHBE",
+  "fp": "L132512",
+  "color": "ροζ χρυσό"
+ },
+ {
+  "key": "1LI140LBLBL|1LI140LNABE|1LI140LRMBE|1LI140LSIBE|1LI140LWHBE",
+  "fp": "L134267",
+  "color": "ροζ χρυσό"
+ },
+ {
+  "key": "1LI140LBLBL|1LI140LNABE|1LI140LRMBE|1LI140LSIBE|1LI140LWHBE",
+  "fp": "L219418",
+  "color": "ασημί"
+ },
+ {
+  "key": "1LI136LBLBL|1LI136LGOBE|1LI136LNABE|1LI136LRMBE|1LI136LSIBE|1LI136LWHBE",
+  "fp": "L233640",
+  "color": "ασημί"
+ },
+ {
+  "key": "1LI136LBLBL|1LI136LGOBE|1LI136LNABE|1LI136LRMBE|1LI136LSIBE|1LI136LWHBE",
+  "fp": "L239439",
+  "color": "ασημί"
+ },
+ {
+  "key": "1LI136LBLBL|1LI136LGOBE|1LI136LNABE|1LI136LRMBE|1LI136LSIBE|1LI136LWHBE",
+  "fp": "L234276",
+  "color": "ασημί"
+ },
+ {
+  "key": "1LI136LBLBL|1LI136LGOBE|1LI136LNABE|1LI136LRMBE|1LI136LSIBE|1LI136LWHBE",
+  "fp": "L234844",
+  "color": "ασημί"
+ },
+ {
+  "key": "1LI136LBLBL|1LI136LGOBE|1LI136LNABE|1LI136LRMBE|1LI136LSIBE|1LI136LWHBE",
+  "fp": "L180477",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI136LBLBL|1LI136LGOBE|1LI136LNABE|1LI136LRMBE|1LI136LSIBE|1LI136LWHBE",
+  "fp": "L186394",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL685LBLBL|1KL685LCOBE|1KL685LNABE|1KL685LTUBE|1KL685LWHBE",
+  "fp": "L224100",
+  "color": "λευκό"
+ },
+ {
+  "key": "1KL685LBLBL|1KL685LCOBE|1KL685LNABE|1KL685LTUBE|1KL685LWHBE",
+  "fp": "L258995",
+  "color": "λευκό"
+ },
+ {
+  "key": "1KL685LBLBL|1KL685LCOBE|1KL685LNABE|1KL685LTUBE|1KL685LWHBE",
+  "fp": "L170916",
+  "color": "λευκό"
+ },
+ {
+  "key": "1KL685LBLBL|1KL685LCOBE|1KL685LNABE|1KL685LTUBE|1KL685LWHBE",
+  "fp": "L177312",
+  "color": "λευκό"
+ },
+ {
+  "key": "1KL685LBLBL|1KL685LCOBE|1KL685LNABE|1KL685LTUBE|1KL685LWHBE",
+  "fp": "L239204",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL685LBLBL|1KL685LCOBE|1KL685LNABE|1KL685LTUBE|1KL685LWHBE",
+  "fp": "L168677",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL685LBLBL|1KL685LCOBE|1KL685LNABE|1KL685LTUBE|1KL685LWHBE",
+  "fp": "L266625",
+  "color": "τιρκουάζ"
+ },
+ {
+  "key": "1LI69TRLBLBL|1LI69TRLMABL|1LI69TRLNABE|1LI69TRLTBE|1LI69TRLWHBE",
+  "fp": "L299292",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI69TRLBLBL|1LI69TRLMABL|1LI69TRLNABE|1LI69TRLTBE|1LI69TRLWHBE",
+  "fp": "L459346",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI69TRLBLBL|1LI69TRLMABL|1LI69TRLNABE|1LI69TRLTBE|1LI69TRLWHBE",
+  "fp": "L176568",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL345LBLBE|1KL345LCOBE|1KL345LGOBE|1KL345LNABE|1KL345LRBE|1KL345LRMBE|1KL345LTUBE|1KL345LWHBE",
+  "fp": "L267589",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL345LBLBE|1KL345LCOBE|1KL345LGOBE|1KL345LNABE|1KL345LRBE|1KL345LRMBE|1KL345LTUBE|1KL345LWHBE",
+  "fp": "L284790",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL345LBLBE|1KL345LCOBE|1KL345LGOBE|1KL345LNABE|1KL345LRBE|1KL345LRMBE|1KL345LTUBE|1KL345LWHBE",
+  "fp": "L277835",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL345LBLBE|1KL345LCOBE|1KL345LGOBE|1KL345LNABE|1KL345LRBE|1KL345LRMBE|1KL345LTUBE|1KL345LWHBE",
+  "fp": "L372696",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL345LBLBE|1KL345LCOBE|1KL345LGOBE|1KL345LNABE|1KL345LRBE|1KL345LRMBE|1KL345LTUBE|1KL345LWHBE",
+  "fp": "L305010",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL345LBLBE|1KL345LCOBE|1KL345LGOBE|1KL345LNABE|1KL345LRBE|1KL345LRMBE|1KL345LTUBE|1KL345LWHBE",
+  "fp": "L395253",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL345LBLBE|1KL345LCOBE|1KL345LGOBE|1KL345LNABE|1KL345LRBE|1KL345LRMBE|1KL345LTUBE|1KL345LWHBE",
+  "fp": "L246269",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL345LBLBE|1KL345LCOBE|1KL345LGOBE|1KL345LNABE|1KL345LRBE|1KL345LRMBE|1KL345LTUBE|1KL345LWHBE",
+  "fp": "L295496",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL345LBLBE|1KL345LCOBE|1KL345LGOBE|1KL345LNABE|1KL345LRBE|1KL345LRMBE|1KL345LTUBE|1KL345LWHBE",
+  "fp": "L318504",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL345LBLBE|1KL345LCOBE|1KL345LGOBE|1KL345LNABE|1KL345LRBE|1KL345LRMBE|1KL345LTUBE|1KL345LWHBE",
+  "fp": "L389652",
+  "color": "κόκκινο"
+ },
+ {
+  "key": "1KL345LBLBE|1KL345LCOBE|1KL345LGOBE|1KL345LNABE|1KL345LRBE|1KL345LRMBE|1KL345LTUBE|1KL345LWHBE",
+  "fp": "L418140",
+  "color": "κόκκινο"
+ },
+ {
+  "key": "1KL345LBLBE|1KL345LCOBE|1KL345LGOBE|1KL345LNABE|1KL345LRBE|1KL345LRMBE|1KL345LTUBE|1KL345LWHBE",
+  "fp": "L317060",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL310LBLBE|1KL310LCOBE|1KL310LMUBE|1KL310LNABE|1KL310LRBE|1KL310LRMBE|1KL310LTBE",
+  "fp": "L212353",
+  "color": "κόκκινο"
+ },
+ {
+  "key": "1KL310LBLBE|1KL310LCOBE|1KL310LMUBE|1KL310LNABE|1KL310LRBE|1KL310LRMBE|1KL310LTBE",
+  "fp": "L192139",
+  "color": "κόκκινο"
+ },
+ {
+  "key": "1KL310LBLBE|1KL310LCOBE|1KL310LMUBE|1KL310LNABE|1KL310LRBE|1KL310LRMBE|1KL310LTBE",
+  "fp": "L185799",
+  "color": "κόκκινο"
+ },
+ {
+  "key": "1KL310LBLBE|1KL310LCOBE|1KL310LMUBE|1KL310LNABE|1KL310LRBE|1KL310LRMBE|1KL310LTBE",
+  "fp": "L230459",
+  "color": "κόκκινο"
+ },
+ {
+  "key": "1KL310LBLBE|1KL310LCOBE|1KL310LMUBE|1KL310LNABE|1KL310LRBE|1KL310LRMBE|1KL310LTBE",
+  "fp": "L273461",
+  "color": "κόκκινο"
+ },
+ {
+  "key": "1KL310LBLBE|1KL310LCOBE|1KL310LMUBE|1KL310LNABE|1KL310LRBE|1KL310LRMBE|1KL310LTBE",
+  "fp": "L224052",
+  "color": "κόκκινο"
+ },
+ {
+  "key": "1KL310LBLBE|1KL310LCOBE|1KL310LMUBE|1KL310LNABE|1KL310LRBE|1KL310LRMBE|1KL310LTBE",
+  "fp": "L208142",
+  "color": "κόκκινο"
+ },
+ {
+  "key": "1KL310LBLBE|1KL310LCOBE|1KL310LMUBE|1KL310LNABE|1KL310LRBE|1KL310LRMBE|1KL310LTBE",
+  "fp": "L377979",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1KL310LBLBE|1KL310LCOBE|1KL310LMUBE|1KL310LNABE|1KL310LRBE|1KL310LRMBE|1KL310LTBE",
+  "fp": "L344038",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1KL310LBLBE|1KL310LCOBE|1KL310LMUBE|1KL310LNABE|1KL310LRBE|1KL310LRMBE|1KL310LTBE",
+  "fp": "L424821",
+  "color": "ροζ χρυσό"
+ },
+ {
+  "key": "1KL310LBLBE|1KL310LCOBE|1KL310LMUBE|1KL310LNABE|1KL310LRBE|1KL310LRMBE|1KL310LTBE",
+  "fp": "L400619",
+  "color": "ροζ χρυσό"
+ },
+ {
+  "key": "1KL310LBLBE|1KL310LCOBE|1KL310LMUBE|1KL310LNABE|1KL310LRBE|1KL310LRMBE|1KL310LTBE",
+  "fp": "L338406",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1KL310LBLBE|1KL310LCOBE|1KL310LMUBE|1KL310LNABE|1KL310LRBE|1KL310LRMBE|1KL310LTBE",
+  "fp": "L262009",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1TSERMLBLBL|1TSERMLNABE|1TSERMLRMBE|1TSERMLWHBE|1TSERMLYBR",
+  "fp": "L151353",
+  "color": "λευκό"
+ },
+ {
+  "key": "1TSERMLBLBL|1TSERMLNABE|1TSERMLRMBE|1TSERMLWHBE|1TSERMLYBR",
+  "fp": "L180563",
+  "color": "λευκό"
+ },
+ {
+  "key": "1TSERMLBLBL|1TSERMLNABE|1TSERMLRMBE|1TSERMLWHBE|1TSERMLYBR",
+  "fp": "L188552",
+  "color": "λευκό"
+ },
+ {
+  "key": "1TSERMLBLBL|1TSERMLNABE|1TSERMLRMBE|1TSERMLWHBE|1TSERMLYBR",
+  "fp": "L229426",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TSERMLBLBL|1TSERMLNABE|1TSERMLRMBE|1TSERMLWHBE|1TSERMLYBR",
+  "fp": "L239182",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TSERMLBLBL|1TSERMLNABE|1TSERMLRMBE|1TSERMLWHBE|1TSERMLYBR",
+  "fp": "L205460",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1TSERMLBLBL|1TSERMLNABE|1TSERMLRMBE|1TSERMLWHBE|1TSERMLYBR",
+  "fp": "L214398",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1TSERMLBLBL|1TSERMLNABE|1TSERMLRMBE|1TSERMLWHBE|1TSERMLYBR",
+  "fp": "L164961",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TSERMLBLBL|1TSERMLNABE|1TSERMLRMBE|1TSERMLWHBE|1TSERMLYBR",
+  "fp": "L267254",
+  "color": "ροζ χρυσό"
+ },
+ {
+  "key": "1TSERMLBLBL|1TSERMLNABE|1TSERMLRMBE|1TSERMLWHBE|1TSERMLYBR",
+  "fp": "L359134",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1TSERMLBLBL|1TSERMLNABE|1TSERMLRMBE|1TSERMLWHBE|1TSERMLYBR",
+  "fp": "L165130",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI141LBLBL|1LI141LNABE|1LI141LRMBE|1LI141LSIBE|1LI141LWHBE",
+  "fp": "L191708",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI141LBLBL|1LI141LNABE|1LI141LRMBE|1LI141LSIBE|1LI141LWHBE",
+  "fp": "L272836",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI141LBLBL|1LI141LNABE|1LI141LRMBE|1LI141LSIBE|1LI141LWHBE",
+  "fp": "L208508",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI141LBLBL|1LI141LNABE|1LI141LRMBE|1LI141LSIBE|1LI141LWHBE",
+  "fp": "L247896",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI141LBLBL|1LI141LNABE|1LI141LRMBE|1LI141LSIBE|1LI141LWHBE",
+  "fp": "L133820",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI141LBLBL|1LI141LNABE|1LI141LRMBE|1LI141LSIBE|1LI141LWHBE",
+  "fp": "L177448",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL135LBLBE|1KL135LNABE|1KL135LRMBE|1KL135LWHBE",
+  "fp": "L194722",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL135LBLBE|1KL135LNABE|1KL135LRMBE|1KL135LWHBE",
+  "fp": "L177873",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL135LBLBE|1KL135LNABE|1KL135LRMBE|1KL135LWHBE",
+  "fp": "L214255",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI462SLNAWHBE|1LI462SLPOTUBE|1LI462SLTUPOBE|1LI462SLTUWHBE|1LI462SLYEBRBR",
+  "fp": "L190260",
+  "color": "κίτρινο-καφέ"
+ },
+ {
+  "key": "1LI462SLNAWHBE|1LI462SLPOTUBE|1LI462SLTUPOBE|1LI462SLTUWHBE|1LI462SLYEBRBR",
+  "fp": "L198365",
+  "color": "κίτρινο-καφέ"
+ },
+ {
+  "key": "1LI462SLNAWHBE|1LI462SLPOTUBE|1LI462SLTUPOBE|1LI462SLTUWHBE|1LI462SLYEBRBR",
+  "fp": "L177061",
+  "color": "φυσικό-λευκό"
+ },
+ {
+  "key": "1LI462SLNAWHBE|1LI462SLPOTUBE|1LI462SLTUPOBE|1LI462SLTUWHBE|1LI462SLYEBRBR",
+  "fp": "L271749",
+  "color": "φυσικό-λευκό"
+ },
+ {
+  "key": "1LI462SLNAWHBE|1LI462SLPOTUBE|1LI462SLTUPOBE|1LI462SLTUWHBE|1LI462SLYEBRBR",
+  "fp": "L290899",
+  "color": "κίτρινο-καφέ"
+ },
+ {
+  "key": "1LI462SLNAWHBE|1LI462SLPOTUBE|1LI462SLTUPOBE|1LI462SLTUWHBE|1LI462SLYEBRBR",
+  "fp": "L291096",
+  "color": "τιρκουάζ-λευκό"
+ },
+ {
+  "key": "1LI462SLNAWHBE|1LI462SLPOTUBE|1LI462SLTUPOBE|1LI462SLTUWHBE|1LI462SLYEBRBR",
+  "fp": "L179371",
+  "color": "τιρκουάζ-λευκό"
+ },
+ {
+  "key": "1KL505LNABE|1KL505LRBE|1KL505LWHBE",
+  "fp": "L223011",
+  "color": "κόκκινο"
+ },
+ {
+  "key": "1KL505LNABE|1KL505LRBE|1KL505LWHBE",
+  "fp": "L133898",
+  "color": "λευκό"
+ },
+ {
+  "key": "1TS15LMMBL|1TS15LMNBR|1TS15LNABE|1TS15LRMBL|1TS15LWHBE|1TS15LYBR",
+  "fp": "L123238",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1TS15LMMBL|1TS15LMNBR|1TS15LNABE|1TS15LRMBL|1TS15LWHBE|1TS15LYBR",
+  "fp": "L137618",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1TS15LMMBL|1TS15LMNBR|1TS15LNABE|1TS15LRMBL|1TS15LWHBE|1TS15LYBR",
+  "fp": "L154153",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1TS15LMMBL|1TS15LMNBR|1TS15LNABE|1TS15LRMBL|1TS15LWHBE|1TS15LYBR",
+  "fp": "L146742",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1TS15LMMBL|1TS15LMNBR|1TS15LNABE|1TS15LRMBL|1TS15LWHBE|1TS15LYBR",
+  "fp": "L143357",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1TS15LMMBL|1TS15LMNBR|1TS15LNABE|1TS15LRMBL|1TS15LWHBE|1TS15LYBR",
+  "fp": "L240928",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1TS15LMMBL|1TS15LMNBR|1TS15LNABE|1TS15LRMBL|1TS15LWHBE|1TS15LYBR",
+  "fp": "L231547",
+  "color": "λέοπαρντ"
+ },
+ {
+  "key": "1TS15LMMBL|1TS15LMNBR|1TS15LNABE|1TS15LRMBL|1TS15LWHBE|1TS15LYBR",
+  "fp": "L225731",
+  "color": "πάγος"
+ },
+ {
+  "key": "1TS1049LBLBL|1TS1049LOWBE|1TS1049LYBR",
+  "fp": "L131310",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TS1049LBLBL|1TS1049LOWBE|1TS1049LYBR",
+  "fp": "L132145",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L159129",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L181476",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L146231",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L176929",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L147756",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L159436",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L120704",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L157950",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L142133",
+  "color": "ζέβρα"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L177320",
+  "color": "ζέβρα"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L123298",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L226010",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L108570",
+  "color": "πάγος"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L236139",
+  "color": "δέρμα φιδιού"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L287760",
+  "color": "λέοπαρντ"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L217023",
+  "color": "μαύρο κροκό"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L237913",
+  "color": "ζέβρα"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L221354",
+  "color": "πάγος"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L243825",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L180699",
+  "color": "ροζ χρυσό κροκό"
+ },
+ {
+  "key": "1TSHLBCBL|1TSHLCOBE|1TSHLLEBR|1TSHLPOBL|1TSHLRCBE|1TSHLSNBL|1TSHLWHBE|1TSHLYBR",
+  "fp": "L255055",
+  "color": "ροζ χρυσό κροκό"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L175927",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L194027",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L178224",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L212712",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L175005",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L184973",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L212484",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L154310",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L149370",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L172440",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L154539",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L175304",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L162111",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L206549",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L146577",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L217080",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L176950",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L207461",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L186928",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L210478",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L114861",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL37LBLBL|1KL37LCONA|1KL37LMUNA|1KL37LRMNA|1KL37LRNA|1KL37LTNA|1KL37LTUNA|1KL37LYBR",
+  "fp": "L173833",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1TS1050LBCBL|1TS1050LMMBL|1TS1050LMNBR",
+  "fp": "L145368",
+  "color": "μαύρο κροκό"
+ },
+ {
+  "key": "1TS1050LBCBL|1TS1050LMMBL|1TS1050LMNBR",
+  "fp": "L140167",
+  "color": "ζέβρα"
+ },
+ {
+  "key": "1TST37LBLBL|1TST37LNABE|1TST37LRMBL",
+  "fp": "L313171",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1TST37LBLBL|1TST37LNABE|1TST37LRMBL",
+  "fp": "L203487",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1KL771CLNABE|1KL771CLTUBE|1KL771CLWHBE",
+  "fp": "L188139",
+  "color": "τιρκουάζ"
+ },
+ {
+  "key": "1KL771CLNABE|1KL771CLTUBE|1KL771CLWHBE",
+  "fp": "L208615",
+  "color": "τιρκουάζ"
+ },
+ {
+  "key": "1KL771CLNABE|1KL771CLTUBE|1KL771CLWHBE",
+  "fp": "L266190",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI36LMNBE|1LI36LNABE|1LI36LPOBR|1LI36LWHBE",
+  "fp": "L144551",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI36LMNBE|1LI36LNABE|1LI36LPOBR|1LI36LWHBE",
+  "fp": "L173741",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI36LMNBE|1LI36LNABE|1LI36LPOBR|1LI36LWHBE",
+  "fp": "L164624",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI36LMNBE|1LI36LNABE|1LI36LPOBR|1LI36LWHBE",
+  "fp": "L229067",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI36LMNBE|1LI36LNABE|1LI36LPOBR|1LI36LWHBE",
+  "fp": "L209212",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI36LMNBE|1LI36LNABE|1LI36LPOBR|1LI36LWHBE",
+  "fp": "L98310",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI36LMNBE|1LI36LNABE|1LI36LPOBR|1LI36LWHBE",
+  "fp": "L119823",
+  "color": "μέντα"
+ },
+ {
+  "key": "1LI36LMNBE|1LI36LNABE|1LI36LPOBR|1LI36LWHBE",
+  "fp": "L173344",
+  "color": "μέντα"
+ },
+ {
+  "key": "1LI46LBFBR|1LI46LBFLBR|1LI46LGFBR|1LI46LNABE|1LI46LYFBR",
+  "fp": "L179500",
+  "color": "χρυσό"
+ },
+ {
+  "key": "1LI46LBFBR|1LI46LBFLBR|1LI46LGFBR|1LI46LNABE|1LI46LYFBR",
+  "fp": "L191195",
+  "color": "χρυσό"
+ },
+ {
+  "key": "1LI46LBFBR|1LI46LBFLBR|1LI46LGFBR|1LI46LNABE|1LI46LYFBR",
+  "fp": "L187209",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI46LBFBR|1LI46LBFLBR|1LI46LGFBR|1LI46LNABE|1LI46LYFBR",
+  "fp": "L151270",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI46LBFBR|1LI46LBFLBR|1LI46LGFBR|1LI46LNABE|1LI46LYFBR",
+  "fp": "L333733",
+  "color": "κίτρινο σουέντ"
+ },
+ {
+  "key": "1LI46LBFBR|1LI46LBFLBR|1LI46LGFBR|1LI46LNABE|1LI46LYFBR",
+  "fp": "L174746",
+  "color": "κίτρινο σουέντ"
+ },
+ {
+  "key": "1LI46LBFBR|1LI46LBFLBR|1LI46LGFBR|1LI46LNABE|1LI46LYFBR",
+  "fp": "L315307",
+  "color": "χρυσό"
+ },
+ {
+  "key": "1LI46LBFBR|1LI46LBFLBR|1LI46LGFBR|1LI46LNABE|1LI46LYFBR",
+  "fp": "L365041",
+  "color": "μπρούτζος"
+ },
+ {
+  "key": "1LI46LBFBR|1LI46LBFLBR|1LI46LGFBR|1LI46LNABE|1LI46LYFBR",
+  "fp": "L260037",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1TS1048LNABE|1TS1048LOWBE|1TS1048LRMBE",
+  "fp": "L136171",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1TS1048LNABE|1TS1048LOWBE|1TS1048LRMBE",
+  "fp": "L164670",
+  "color": "ροζ χρυσό"
+ },
+ {
+  "key": "1TS36LBCBL|1TS36LMLBL|1TS36LMNBR|1TS36LNABE|1TS36LRMBL|1TS36LWHBE|1TS36LYBR",
+  "fp": "L123272",
+  "color": "μαύρο κροκό"
+ },
+ {
+  "key": "1TS36LBCBL|1TS36LMLBL|1TS36LMNBR|1TS36LNABE|1TS36LRMBL|1TS36LWHBE|1TS36LYBR",
+  "fp": "L148896",
+  "color": "μαύρο κροκό"
+ },
+ {
+  "key": "1TS36LBCBL|1TS36LMLBL|1TS36LMNBR|1TS36LNABE|1TS36LRMBL|1TS36LWHBE|1TS36LYBR",
+  "fp": "L124692",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1KL735LMABL|1KL735LMDBE|1KL735LMEBE|1KL735LMFBE",
+  "fp": "L151014",
+  "color": "λευκό τιρκουάζ μουσταρδί"
+ },
+ {
+  "key": "1KL735LMABL|1KL735LMDBE|1KL735LMEBE|1KL735LMFBE",
+  "fp": "L162422",
+  "color": "λευκό τιρκουάζ μουσταρδί"
+ },
+ {
+  "key": "1KL735LMABL|1KL735LMDBE|1KL735LMEBE|1KL735LMFBE",
+  "fp": "L148911",
+  "color": "λευκό τιρκουάζ μουσταρδί"
+ },
+ {
+  "key": "1KL735LMABL|1KL735LMDBE|1KL735LMEBE|1KL735LMFBE",
+  "fp": "L164458",
+  "color": "λευκό τιρκουάζ μουσταρδί"
+ },
+ {
+  "key": "1KL735LMABL|1KL735LMDBE|1KL735LMEBE|1KL735LMFBE",
+  "fp": "L150526",
+  "color": "λευκό κοραλί ροζ"
+ },
+ {
+  "key": "1KL735LMABL|1KL735LMDBE|1KL735LMEBE|1KL735LMFBE",
+  "fp": "L145154",
+  "color": "λευκό κοραλί ροζ"
+ },
+ {
+  "key": "1KL735LMABL|1KL735LMDBE|1KL735LMEBE|1KL735LMFBE",
+  "fp": "L177356",
+  "color": "ροζ χρυσό ασημί"
+ },
+ {
+  "key": "1TSHNEWLMLBL|1TSHNEWLMMBL|1TSHNEWLMNBR",
+  "fp": "L263159",
+  "color": "λέοπαρντ"
+ },
+ {
+  "key": "1TSHNEWLMLBL|1TSHNEWLMMBL|1TSHNEWLMNBR",
+  "fp": "L147821",
+  "color": "λέοπαρντ"
+ },
+ {
+  "key": "1LI171SLNAWHBE|1LI171SLPOTUBE|1LI171SLTUPOBE|1LI171SLTUWHBE|1LI171SLYEBRBR",
+  "fp": "L334973",
+  "color": "κίτρινο-καφέ"
+ },
+ {
+  "key": "1LI171SLNAWHBE|1LI171SLPOTUBE|1LI171SLTUPOBE|1LI171SLTUWHBE|1LI171SLYEBRBR",
+  "fp": "L274794",
+  "color": "κίτρινο-καφέ"
+ },
+ {
+  "key": "1LI171SLNAWHBE|1LI171SLPOTUBE|1LI171SLTUPOBE|1LI171SLTUWHBE|1LI171SLYEBRBR",
+  "fp": "L174368",
+  "color": "φυσικό-λευκό"
+ },
+ {
+  "key": "1LI171SLNAWHBE|1LI171SLPOTUBE|1LI171SLTUPOBE|1LI171SLTUWHBE|1LI171SLYEBRBR",
+  "fp": "L177620",
+  "color": "φυσικό-λευκό"
+ },
+ {
+  "key": "1LI171SLNAWHBE|1LI171SLPOTUBE|1LI171SLTUPOBE|1LI171SLTUWHBE|1LI171SLYEBRBR",
+  "fp": "L272444",
+  "color": "τιρκουάζ-λευκό"
+ },
+ {
+  "key": "1KL772LCEBE|1KL772LMABR|1KL772LMDBE|1KL772LOGBE|1KL772LTUBE|1KL772LWHBR",
+  "fp": "L158969",
+  "color": "πράσινο"
+ },
+ {
+  "key": "1KL772LCEBE|1KL772LMABR|1KL772LMDBE|1KL772LOGBE|1KL772LTUBE|1KL772LWHBR",
+  "fp": "L147866",
+  "color": "πράσινο"
+ },
+ {
+  "key": "1KL772LCEBE|1KL772LMABR|1KL772LMDBE|1KL772LOGBE|1KL772LTUBE|1KL772LWHBR",
+  "fp": "L153199",
+  "color": "πράσινο"
+ },
+ {
+  "key": "1KL772LCEBE|1KL772LMABR|1KL772LMDBE|1KL772LOGBE|1KL772LTUBE|1KL772LWHBR",
+  "fp": "L173771",
+  "color": "πράσινο"
+ },
+ {
+  "key": "1KL772LCEBE|1KL772LMABR|1KL772LMDBE|1KL772LOGBE|1KL772LTUBE|1KL772LWHBR",
+  "fp": "L173703",
+  "color": "πράσινο"
+ },
+ {
+  "key": "1KL772LCEBE|1KL772LMABR|1KL772LMDBE|1KL772LOGBE|1KL772LTUBE|1KL772LWHBR",
+  "fp": "L153741",
+  "color": "ροζ λευκό λιλά"
+ },
+ {
+  "key": "1KL772LCEBE|1KL772LMABR|1KL772LMDBE|1KL772LOGBE|1KL772LTUBE|1KL772LWHBR",
+  "fp": "L194134",
+  "color": "ροζ χρυσό ασημί"
+ },
+ {
+  "key": "1KL772LCEBE|1KL772LMABR|1KL772LMDBE|1KL772LOGBE|1KL772LTUBE|1KL772LWHBR",
+  "fp": "L160811",
+  "color": "λευκό"
+ },
+ {
+  "key": "1KL772LCEBE|1KL772LMABR|1KL772LMDBE|1KL772LOGBE|1KL772LTUBE|1KL772LWHBR",
+  "fp": "L137082",
+  "color": "λευκό"
+ },
+ {
+  "key": "1TSM19LGOBE|1TSM19LGRBE|1TSM19LNABE|1TSM19LOGBE|1TSM19LSIBE",
+  "fp": "L165048",
+  "color": "χρυσό"
+ },
+ {
+  "key": "1TSM19LGOBE|1TSM19LGRBE|1TSM19LNABE|1TSM19LOGBE|1TSM19LSIBE",
+  "fp": "L168947",
+  "color": "χρυσό"
+ },
+ {
+  "key": "1TSM19LGOBE|1TSM19LGRBE|1TSM19LNABE|1TSM19LOGBE|1TSM19LSIBE",
+  "fp": "L237483",
+  "color": "χρυσό"
+ },
+ {
+  "key": "1TSM19LGOBE|1TSM19LGRBE|1TSM19LNABE|1TSM19LOGBE|1TSM19LSIBE",
+  "fp": "L255233",
+  "color": "ασημί"
+ },
+ {
+  "key": "1TSM19LGOBE|1TSM19LGRBE|1TSM19LNABE|1TSM19LOGBE|1TSM19LSIBE",
+  "fp": "L177305",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1KL732LMABL|1KL732LMBBE|1KL732LMCBE|1KL732LMDBE|1KL732LMEBE",
+  "fp": "L189635",
+  "color": "λευκό - κοραλί"
+ },
+ {
+  "key": "1KL732LMABL|1KL732LMBBE|1KL732LMCBE|1KL732LMDBE|1KL732LMEBE",
+  "fp": "L187105",
+  "color": "λευκό - κοραλί"
+ },
+ {
+  "key": "1KL732LMABL|1KL732LMBBE|1KL732LMCBE|1KL732LMDBE|1KL732LMEBE",
+  "fp": "L182839",
+  "color": "λευκό - κοραλί"
+ },
+ {
+  "key": "1KL732LMABL|1KL732LMBBE|1KL732LMCBE|1KL732LMDBE|1KL732LMEBE",
+  "fp": "L143204",
+  "color": "λευκό - τιρκουάζ"
+ },
+ {
+  "key": "1KL732LMABL|1KL732LMBBE|1KL732LMCBE|1KL732LMDBE|1KL732LMEBE",
+  "fp": "L152438",
+  "color": "ροζ λευκό λιλά"
+ },
+ {
+  "key": "1KL732LMABL|1KL732LMBBE|1KL732LMCBE|1KL732LMDBE|1KL732LMEBE",
+  "fp": "L219006",
+  "color": "ροζ λευκό λιλά"
+ },
+ {
+  "key": "1KL732LMABL|1KL732LMBBE|1KL732LMCBE|1KL732LMDBE|1KL732LMEBE",
+  "fp": "L228700",
+  "color": "ροζ χρυσό ασημί"
+ },
+ {
+  "key": "1KL831LMUBR|1KL831LNABE|1KL831LTUBE|1KL831LWHBE",
+  "fp": "L166506",
+  "color": "λευκό"
+ },
+ {
+  "key": "1KL831LMUBR|1KL831LNABE|1KL831LTUBE|1KL831LWHBE",
+  "fp": "L171902",
+  "color": "λευκό"
+ },
+ {
+  "key": "1KL831LMUBR|1KL831LNABE|1KL831LTUBE|1KL831LWHBE",
+  "fp": "L193633",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1KL831LMUBR|1KL831LNABE|1KL831LTUBE|1KL831LWHBE",
+  "fp": "L164510",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1KL831LMUBR|1KL831LNABE|1KL831LTUBE|1KL831LWHBE",
+  "fp": "L163891",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1KL831LMUBR|1KL831LNABE|1KL831LTUBE|1KL831LWHBE",
+  "fp": "L141755",
+  "color": "λευκό"
+ },
+ {
+  "key": "1KL831LMUBR|1KL831LNABE|1KL831LTUBE|1KL831LWHBE",
+  "fp": "L148936",
+  "color": "μουσταρδί"
+ },
+ {
+  "key": "1KL831LMUBR|1KL831LNABE|1KL831LTUBE|1KL831LWHBE",
+  "fp": "L136268",
+  "color": "τιρκουάζ"
+ },
+ {
+  "key": "1KL848LBLBL|1KL848LCOBE|1KL848LNABE|1KL848LTUBE|1KL848LW1BE|1KL848LWHBR",
+  "fp": "L142405",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL848LBLBL|1KL848LCOBE|1KL848LNABE|1KL848LTUBE|1KL848LW1BE|1KL848LWHBR",
+  "fp": "L161762",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1KL848LBLBL|1KL848LCOBE|1KL848LNABE|1KL848LTUBE|1KL848LW1BE|1KL848LWHBR",
+  "fp": "L122258",
+  "color": "λευκό με καφέ πάτο"
+ },
+ {
+  "key": "1KL848LBLBL|1KL848LCOBE|1KL848LNABE|1KL848LTUBE|1KL848LW1BE|1KL848LWHBR",
+  "fp": "L146424",
+  "color": "τιρκουάζ"
+ },
+ {
+  "key": "1KL848LBLBL|1KL848LCOBE|1KL848LNABE|1KL848LTUBE|1KL848LW1BE|1KL848LWHBR",
+  "fp": "L158352",
+  "color": "λευκό με μπέζ πάτο"
+ },
+ {
+  "key": "1LI362MLBLBL|1LI362MLCOBE|1LI362MLWHBE",
+  "fp": "L115708",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI362MLBLBL|1LI362MLCOBE|1LI362MLWHBE",
+  "fp": "L197751",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI362MLBLBL|1LI362MLCOBE|1LI362MLWHBE",
+  "fp": "L138283",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1LI362MLBLBL|1LI362MLCOBE|1LI362MLWHBE",
+  "fp": "L223377",
+  "color": "κοραλί"
+ },
+ {
+  "key": "1LI147MLBLBL|1LI147MLNABE|1LI147MLTBL|1LI147MLWHBE",
+  "fp": "L256585",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI147MLBLBL|1LI147MLNABE|1LI147MLTBL|1LI147MLWHBE",
+  "fp": "L107650",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI147MLBLBL|1LI147MLNABE|1LI147MLTBL|1LI147MLWHBE",
+  "fp": "L109767",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI147MLBLBL|1LI147MLNABE|1LI147MLTBL|1LI147MLWHBE",
+  "fp": "L116394",
+  "color": "καφέ"
+ },
+ {
+  "key": "1LI147MLBLBL|1LI147MLNABE|1LI147MLTBL|1LI147MLWHBE",
+  "fp": "L239101",
+  "color": "καφέ"
+ },
+ {
+  "key": "1LI147MLBLBL|1LI147MLNABE|1LI147MLTBL|1LI147MLWHBE",
+  "fp": "L186213",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI147MLBLBL|1LI147MLNABE|1LI147MLTBL|1LI147MLWHBE",
+  "fp": "L211754",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI58MLBLBL|1LI58MLNABE|1LI58MLRKBL|1LI58MLSKBL|1LI58MLWHBE",
+  "fp": "L225751",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI58MLBLBL|1LI58MLNABE|1LI58MLRKBL|1LI58MLSKBL|1LI58MLWHBE",
+  "fp": "L124366",
+  "color": "ροζ χρυσό"
+ },
+ {
+  "key": "1LI58MLBLBL|1LI58MLNABE|1LI58MLRKBL|1LI58MLSKBL|1LI58MLWHBE",
+  "fp": "L254293",
+  "color": "λευκό"
+ },
+ {
+  "key": "1LI58MLBLBL|1LI58MLNABE|1LI58MLRKBL|1LI58MLSKBL|1LI58MLWHBE",
+  "fp": "L312482",
+  "color": "μπεζ φυσικό"
+ },
+ {
+  "key": "1LI58MLBLBL|1LI58MLNABE|1LI58MLRKBL|1LI58MLSKBL|1LI58MLWHBE",
+  "fp": "L211671",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1LI58MLBLBL|1LI58MLNABE|1LI58MLRKBL|1LI58MLSKBL|1LI58MLWHBE",
+  "fp": "L268718",
+  "color": "ροζ χρυσό"
+ },
+ {
+  "key": "1LI58MLBLBL|1LI58MLNABE|1LI58MLRKBL|1LI58MLSKBL|1LI58MLWHBE",
+  "fp": "L114812",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TS1001LBCBL|1TS1001LBLBL|1TS1001LLEBR|1TS1001LNABE|1TS1001LOWBE|1TS1001LYBR",
+  "fp": "L140516",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TS1001LBCBL|1TS1001LBLBL|1TS1001LLEBR|1TS1001LNABE|1TS1001LOWBE|1TS1001LYBR",
+  "fp": "L153292",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TS1001LBCBL|1TS1001LBLBL|1TS1001LLEBR|1TS1001LNABE|1TS1001LOWBE|1TS1001LYBR",
+  "fp": "L168341",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TS1001LBCBL|1TS1001LBLBL|1TS1001LLEBR|1TS1001LNABE|1TS1001LOWBE|1TS1001LYBR",
+  "fp": "L149700",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TS1001LBCBL|1TS1001LBLBL|1TS1001LLEBR|1TS1001LNABE|1TS1001LOWBE|1TS1001LYBR",
+  "fp": "L195025",
+  "color": "μαύρο"
+ },
+ {
+  "key": "1TS1001LBCBL|1TS1001LBLBL|1TS1001LLEBR|1TS1001LNABE|1TS1001LOWBE|1TS1001LYBR",
+  "fp": "L127769",
+  "color": "πάγος"
+ },
+ {
+  "key": "1BR2012L2M|1BR2012L3M|1BR2012L5M",
+  "fp": "L381997",
+  "color": "πολύχρωμα με πούλιες"
+ },
+ {
+  "key": "1BR2012L2M|1BR2012L3M|1BR2012L5M",
+  "fp": "L393917",
+  "color": "πολύχρωμο ύφασμα"
+ }
+]

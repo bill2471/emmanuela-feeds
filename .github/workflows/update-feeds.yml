@@ -299,3 +299,39 @@ jobs:
           fi
           # Intentionally exit 0 (quiet): transient throttles self-heal; the failure is a
           # warning annotation, not a red run / failure email.
+
+      # 2026-08-03: the QUIET rule above is the right call for a TRANSIENT generator throttle —
+      # but it also swallowed a TOTAL CATEGORY LOSS, silently, for five hours.
+      # On 2026-07-18 the shoes pull hit «GraphQL: max retries exceeded», the documented
+      # jewelry-only fail-safe fired exactly as designed, the Skroutz generator still reported
+      # SUCCESS, and we published a feed carrying ZERO of our 344 sandals from 08:56 to 14:17 UTC
+      # (commit 10b6ffc9) while this workflow showed a green ✅. Nobody was told. Frequency:
+      # 1 occurrence in 128 commits over 30 days — rare, total, and invisible.
+      # This guard is deliberately NARROW: it fires ONLY when a whole category sits at ZERO.
+      # A transient throttle leaves the previous XML in place with both categories intact, so it
+      # stays quiet — exactly as chosen on 2026-07-23.
+      # The grep is validated in both directions against real feeds (2026-08-03): today's feed
+      # gives jewelry=1355 / sandals=340, matching the XML parser exactly; the broken 18/07 feed
+      # gives sandals=0.
+      - name: Skroutz feed — guard against TOTAL category loss
+        if: always()
+        run: |
+          F=feeds/skroutz-gr.xml
+          if [ ! -s "$F" ]; then
+            echo "::error::$F is missing or empty — the Skroutz feed was not produced at all"
+            exit 1
+          fi
+          jewel=$(grep -c 'emmanuela\.gr/' "$F" || true)
+          shoes=$(grep -c 'emmanuela\.shoes' "$F" || true)
+          echo "Skroutz feed: jewelry=$jewel  ·  sandals=$shoes"
+          bad=0
+          if [ "$jewel" -eq 0 ]; then
+            echo "::error::Skroutz feed carries ZERO jewelry entries — a whole category vanished from the feed"
+            bad=1
+          fi
+          if [ "$shoes" -eq 0 ]; then
+            echo "::error::Skroutz feed carries ZERO sandal entries — the shoes merge was skipped (look for the 'SANDAL merge skipped' warning earlier in this log). The jewelry feed is fine; the sandals are NOT on Skroutz until the next successful run."
+            bad=1
+          fi
+          if [ "$bad" = "0" ]; then echo "✅ both categories present"; fi
+          exit $bad

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-08-03 14:59</created_at>
+  <created_at>2026-08-03 19:53</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1234,7 +1234,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -36456,7 +36456,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1258H]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -36851,7 +36851,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[2069-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>60</quantity>
+        <quantity>59</quantity>
         <color>Ασημί</color>
         <size>48,49,50,51,52,53,54,55,56,57,58,59,60,61,Ανοιχτή γάμπα</size>
         <variations>
@@ -36957,7 +36957,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
             <variationid>31791966027811</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>Ανοιχτή γάμπα</size>
-            <quantity>4</quantity>
+            <quantity>3</quantity>
             <manufacturersku><![CDATA[2069]]></manufacturersku>
           </variation>
         </variations>
@@ -42826,7 +42826,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-9767859781966-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>8</quantity>
+        <quantity>7</quantity>
         <color>Ασημί</color>
         <size>Τριπλά τρίγωνα,Μονά τρίγωνα</size>
         <variations>
@@ -42834,7 +42834,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>49401161220430</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>Τριπλά τρίγωνα</size>
-            <quantity>4</quantity>
+            <quantity>3</quantity>
             <price_with_vat>64.00</price_with_vat>
             <manufacturersku><![CDATA[1382S]]></manufacturersku>
           </variation>
@@ -46643,9 +46643,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL225LBLBL7]]></mpn>
         <ean>5212033625050</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Μαύρο</color>
-        <size>40,43,45,46,47</size>
+        <size>40,43,46,47</size>
         <variations>
           <variation>
             <variationid>40479787417757</variationid>
@@ -46666,15 +46666,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033625111</ean>
           </variation>
           <variation>
-            <variationid>40479788728477</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>45</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL225LBLBL12]]></manufacturersku>
-            <mpn><![CDATA[1KL225LBLBL12]]></mpn>
-            <ean>5212033625159</ean>
-          </variation>
-          <variation>
             <variationid>40479789056157</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>46</size>
@@ -46693,7 +46684,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033651349</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 40,43,45,46,47.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 40,43,46,47.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -48617,9 +48608,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL345LTUBE7]]></mpn>
         <ean>5212033623292</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>6</quantity>
+        <quantity>5</quantity>
         <color>Τιρκουάζ</color>
-        <size>38,39,40,41</size>
+        <size>38,40,41</size>
         <variations>
           <variation>
             <variationid>40479848530077</variationid>
@@ -48629,15 +48620,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <manufacturersku><![CDATA[1KL345LTUBE7]]></manufacturersku>
             <mpn><![CDATA[1KL345LTUBE7]]></mpn>
             <ean>5212033623292</ean>
-          </variation>
-          <variation>
-            <variationid>40479848792221</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>39</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL345LTUBE8]]></manufacturersku>
-            <mpn><![CDATA[1KL345LTUBE8]]></mpn>
-            <ean>5212033623315</ean>
           </variation>
           <variation>
             <variationid>40479849054365</variationid>
@@ -48658,7 +48640,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033623353</ean>
           </variation>
         </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Τιρκουάζ. Διαθέσιμα νούμερα: 38,39,40,41.]]></description>
+        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Τιρκουάζ. Διαθέσιμα νούμερα: 38,40,41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

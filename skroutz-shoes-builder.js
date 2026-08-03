@@ -63,6 +63,41 @@ const LIFESTYLE_PATH = path.join(__dirname, 'skroutz-shoes-lifestyle.json');
 // Built offline by skroutz-feed/_imagefp-refresh-0727.js. Missing/empty file -> fail-open, the
 // builder behaves exactly as it does today.
 const IMAGEFP_PATH = path.join(__dirname, 'skroutz-shoes-imagefp.json');
+// imageId -> dHash (64-bit hex) = PERCEPTUAL identity of the photograph (2026-08-03).
+// WHY: IMAGEFP above identifies a photo by its BYTE LENGTH. The same shot, re-uploaded or
+// re-encoded a second time onto a sibling clone, gets a DIFFERENT length and sails through as a
+// distinct image. But Skroutz requires «2 minimum additional εικόνες ... με ΔΙΑΦΟΡΕΤΙΚΕΣ ΛΗΨΕΙΣ»
+// (ticket #33670445, 31/07/2026) and rejected 3 of our products for exactly this.
+// Measured on the live build 03/08/2026: of the 663 <additionalimage> we ship, 308 are a REPEAT of
+// a shot already present in the same entry — Skroutz counts none of them. Real «≥2 distinct shots»
+// is 106/340 while «≥2 sent» reads 183. We were reporting a number nobody grades.
+// Calibrated on VISUALLY VERIFIED pairs (31/07): same shot 0-1, different shot 11-28 -> threshold 6
+// with a clean gap. Cross-validated 03/08: this map + the Hamming below reproduce the independent
+// Python detector exactly (308 = 308).
+// Built offline by skroutz-feed/_dhash-refresh-0803.py. Missing/empty map, or an image absent from
+// it, -> fail-open: that image is never dropped and the builder behaves exactly as it does today.
+const DHASH_PATH = path.join(__dirname, 'skroutz-shoes-dhash.json');
+const DHASH_THR = 6;
+// Emergency kill-switch: restores the exact pre-2026-08-03 behaviour with no redeploy.
+const NO_SHOT_DEDUP = process.env.SKROUTZ_NO_SHOT_DEDUP === '1';
+// design sizelessKey + content fingerprint -> the ONE colourway that photo really depicts (2026-08-03).
+// WHY: the 27/07 cross-colour rule below is FAIL-CLOSED on top of an UNRELIABLE signal. Shopify's
+// altText is bulk-applied PER CLONE, not per photo («Ευγενία» = 9 clones × ~36 images, and all 36 of
+// clone #1 say «Κοραλί»), so ONE physical photograph is claimed by two colours and the rule bans it
+// for BOTH — including its rightful owner. Measured on live data 31/07 with an instrumented copy of
+// this builder: 1.009 image-slots dropped as «shared with another colour» + 670 with no colour at
+// all, only 666 emitted; 31 entries emit ZERO while holding 204 images in their pool; 64 products
+// carry ONE altText across every image while selling 2+ colourways.
+// The rule is NOT wrong (it was added for 587 genuine cross-colour images) — it simply had no
+// arbiter. This map is that arbiter: a CONTESTED fingerprint whose true colour is KNOWN is allowed
+// for that colour and stays banned for every other one. Unknown -> unchanged, banned everywhere.
+// Format: [{ key: <sizelessKey>, fp: <fpKey>, color: <colour, case-insensitive> }, ...]
+// Built offline by the human labelling sheet (_make_sheet.py -> photocolor-labels.json).
+// Missing/empty file -> NO arbitration at all, i.e. the exact pre-2026-08-03 fail-closed behaviour.
+const PHOTOCOLOR_PATH = path.join(__dirname, 'skroutz-shoes-photocolor.json');
+// Emergency kill-switch: SKROUTZ_NO_ARBITRATION=1 restores the exact pre-2026-08-03 fail-closed
+// behaviour without a redeploy (same escape-hatch pattern as SKROUTZ_FILL_LIFESTYLE).
+const NO_ARBITRATION = process.env.SKROUTZ_NO_ARBITRATION === '1';
 const MIN_PRODUCTS = 100;   // full shoes catalog ~495; anything tiny = failed/partial fetch
 
 // ---- COLOR ATTRIBUTION (2026-07-24) --------------------------------------------------
@@ -262,6 +297,22 @@ async function buildSandalItems() {
   // identity of a photo: its byte length when known, else its filename (= today's behaviour)
   const fpKey = (src) => fpBySrc.get(src) || ('N' + photoKey(src));
 
+  // perceptual map (optional — missing/empty file = today's byte-length-only behaviour)
+  let DH = {};
+  if (!NO_SHOT_DEDUP) { try { const j = JSON.parse(fs.readFileSync(DHASH_PATH, 'utf8')); DH = j.map || j; } catch { /* fail-open */ } }
+  const shotBySrc = new Map();
+  for (const p of products) for (const im of p.images) { if (DH[im.id]) shotBySrc.set(im.src, DH[im.id]); }
+  // Hamming distance over a 64-bit hex string, as two 32-bit halves (no BigInt).
+  const hamming = (a, b) => {
+    let n = 0;
+    for (let h = 0; h < 2; h++) {
+      let v = (parseInt(a.substr(h * 8, 8), 16) ^ parseInt(b.substr(h * 8, 8), 16)) >>> 0;
+      while (v) { n += v & 1; v >>>= 1; }
+    }
+    return n;
+  };
+  const EMPTY_MAP = new Map();
+
   // Lifestyle pool per PHYSICAL product. The 4-8× catalog clones MIRROR the same variants, but the
   // lifestyle uploads are SPRINKLED unevenly across them (one clone holds 1, a sibling holds 2…), so
   // we UNION every clone's lifestyle into one shared pool, keyed by the SIZELESS sku-root set (clones
@@ -312,7 +363,33 @@ async function buildSandalItems() {
   // main image is dropped from the feed entirely, and a shared main is far less bad than a lost
   // listing. (The 6 entries whose main is shared — Κυβέλη, Σέριφος, Κέρκυρα — need a real photo, not
   // a code change.)
-  const sharedFp = new Map();   // sizelessKey -> Set(fp)
+  // human colour labels — the ONLY arbitration signal (missing/empty file = no arbitration)
+  let PC = [];
+  try { const j = JSON.parse(fs.readFileSync(PHOTOCOLOR_PATH, 'utf8')); PC = Array.isArray(j) ? j : (j.labels || []); } catch { /* no labels -> no arbitration */ }
+  const labelByDesign = new Map();          // sizelessKey -> Map(fp -> colorKey)
+  for (const l of PC) {
+    if (!l || !l.key || !l.fp || !l.color) continue;
+    let m = labelByDesign.get(l.key);
+    if (!m) { m = new Map(); labelByDesign.set(l.key, m); }
+    m.set(l.fp, String(l.color).toLowerCase().trim());
+  }
+  // The ONE colour a contested fingerprint belongs to, or null when nothing settles it.
+  // ⛔ A Shopify variant-PIN arm was built and then REMOVED on 2026-08-03 — measured, not guessed.
+  // On live data it freed 12 more <additionalimage> slots but added ZERO distinct shots (106 -> 106),
+  // and 25/25 of the images it freed were a repeat of a shot already in that entry. The reason is
+  // structural: the pinned photo is the one this builder puts FIRST in `own`, i.e. it IS the main
+  // image, so un-banning a pin-resolved fingerprint almost always re-adds a re-upload of the main.
+  // Skroutz grades DISTINCT SHOTS, not files («2 από τις 3 είναι ίδιες», ticket #33670445, 31/07),
+  // so the pin arm was pure noise. Do not rebuild it. The human labels are the only signal that
+  // adds real angles.
+  const arbitrate = (key, k) => {
+    if (NO_ARBITRATION) return null;
+    return (labelByDesign.get(key) || EMPTY_MAP).get(k) || null;
+  };
+  let arbitratedFps = 0, unarbitratedFps = 0;
+
+  const sharedFp = new Map();   // sizelessKey -> Set(fp)  — contested AND unsettled: banned everywhere
+  const ownedFp = new Map();    // sizelessKey -> Map(fp -> colorKey)  — contested but SETTLED
   for (const [key, acc] of cloneColorPhotos) {
     const owners = new Map();
     for (const [ck, list] of acc) for (const u of list) {
@@ -320,12 +397,20 @@ async function buildSandalItems() {
       if (!owners.has(k)) owners.set(k, new Set());
       owners.get(k).add(ck);
     }
-    const banned = new Set([...owners].filter(([, s]) => s.size > 1).map(([k]) => k));
+    const banned = new Set();
+    const owned = new Map();
+    for (const [k, s] of owners) {
+      if (s.size <= 1) continue;                       // not contested — untouched by all of this
+      const col = arbitrate(key, k);
+      if (col) { owned.set(k, col); arbitratedFps++; } // settled: its owner may use it, nobody else
+      else { banned.add(k); unarbitratedFps++; }       // unsettled: unchanged, banned everywhere
+    }
     if (banned.size) sharedFp.set(key, banned);
+    if (owned.size) ownedFp.set(key, owned);
   }
 
   const EMPTY_SET = new Set();
-  const stats = { products: products.length, groups: 0, slash: 0, keep: 0, keepDefault: 0, variations: 0, units: 0, unmatched: 0, skippedUnpublished: 0, withAdditional: 0, additionalTotal: 0, multiColorMainOnly: 0, lifestylePooled: 0, fpDupDropped: 0, fpSharedDropped: 0, byType: {}, samples: [] };
+  const stats = { products: products.length, groups: 0, slash: 0, keep: 0, keepDefault: 0, variations: 0, units: 0, unmatched: 0, skippedUnpublished: 0, withAdditional: 0, additionalTotal: 0, multiColorMainOnly: 0, lifestylePooled: 0, fpDupDropped: 0, fpSharedDropped: 0, shotDupDropped: 0, shotUnmapped: 0, fpArbitrated: arbitratedFps, fpUnarbitrated: unarbitratedFps, byType: {}, samples: [] };
   const items = [];
   const seenFp = new Set();
 
@@ -433,12 +518,24 @@ async function buildSandalItems() {
       if (!own.length) continue;  // image mandatory
       const mainImg = own[0];
       const banned = sharedFp.get(sizelessKey(p)) || EMPTY_SET;
+      const owned = ownedFp.get(sizelessKey(p)) || EMPTY_MAP;     // contested but arbitrated
+      const myColorKey = (g.colorRaw || '∅').toLowerCase().trim();
       const seenUrl = new Set([fpKey(mainImg)]);                    // dedupe by CONTENT, not filename
+      // …and by SHOT: a re-upload of the main (or of an angle already kept) is a different file with
+      // a different byte length, so the content check above cannot see it — but Skroutz can, and
+      // does not count it. An image missing from the map is never dropped (fail-open).
+      const seenShots = [];
+      { const mh = shotBySrc.get(mainImg); if (mh) seenShots.push(mh); }
       const additionalImgs = [];
       for (const u of [...own.slice(1), ...pool]) {                 // own angles first, lifestyle after
         const k = fpKey(u);
         if (seenUrl.has(k)) { stats.fpDupDropped++; continue; }     // same photo already in this entry
-        if (banned.has(k)) { stats.fpSharedDropped++; continue; }   // same photo also claimed by another colour
+        if (banned.has(k)) { stats.fpSharedDropped++; continue; }   // claimed by 2+ colours, unsettled
+        if (owned.has(k) && owned.get(k) !== myColorKey) { stats.fpSharedDropped++; continue; }  // arbitrated to ANOTHER colour
+        const sh = shotBySrc.get(u);
+        if (!sh) stats.shotUnmapped++;
+        else if (seenShots.some((s) => hamming(s, sh) <= DHASH_THR)) { stats.shotDupDropped++; continue; }
+        else seenShots.push(sh);
         seenUrl.add(k);
         additionalImgs.push(u);
         if (additionalImgs.length >= 9) break;
@@ -522,7 +619,7 @@ if (require.main === module) {
     L(`products fetched: ${stats.products}  ·  unpublished skipped: ${stats.skippedUnpublished}`);
     L(`entries: ${stats.groups}  (SLASH ${stats.slash} / KEEP ${stats.keep})  ·  variations: ${stats.variations}  ·  units: ${stats.units}`);
     L(`COGS-floored SLASH groups: ${stats.floored || 0}  (price raised to cost×grossUp)`);
-    L(`additionalimages: ${stats.withAdditional}/${stats.groups} groups have >=1 (total ${stats.additionalTotal}, avg ${(stats.additionalTotal / Math.max(stats.groups, 1)).toFixed(1)})  ·  main-only (multicolor, no per-variant img): ${stats.multiColorMainOnly}  ·  lifestyle-pooled: ${stats.lifestylePooled}  ·  dropped by content-fingerprint: ${stats.fpDupDropped} dup-in-entry + ${stats.fpSharedDropped} shared-with-another-colour`);
+    L(`additionalimages: ${stats.withAdditional}/${stats.groups} groups have >=1 (total ${stats.additionalTotal}, avg ${(stats.additionalTotal / Math.max(stats.groups, 1)).toFixed(1)})  ·  main-only (multicolor, no per-variant img): ${stats.multiColorMainOnly}  ·  lifestyle-pooled: ${stats.lifestylePooled}  ·  dropped by content-fingerprint: ${stats.fpDupDropped} dup-in-entry + ${stats.fpSharedDropped} shared-with-another-colour  ·  dropped as SAME SHOT: ${stats.shotDupDropped} (unmapped, kept: ${stats.shotUnmapped})  ·  colour-arbitrated: ${stats.fpArbitrated} settled / ${stats.fpUnarbitrated} still banned`);
     L(`unmatched (defaulted to KEEP@normal): ${stats.unmatched}  (of which kept: ${stats.keepDefault})`);
     L('by type: ' + Object.entries(stats.byType).sort((a, b) => b[1] - a[1]).map(([t, c]) => `${c} ${t}`).join(' | '));
     L('samples:'); for (const s of stats.samples) { L(`  [${s.tier}] ${s.name} | νούμερα ${s.sizes} | €${s.normal}→€${s.price} | +${s.addl} additional img | key ${s.key}`); if (s.addl) L(`        main: ...${s.mainImg.slice(-46)}\n        +1st: ...${s.addlSample.slice(-46)}`); }

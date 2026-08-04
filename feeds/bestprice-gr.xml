@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-08-04 08:58</date>
+  <date>2026-08-04 14:31</date>
   <products>
     <product>
       <productId>31372692389923</productId>
@@ -10762,6 +10762,21 @@
       <shipping>0</shipping>
     </product>
     <product>
+      <productId>31374151647267</productId>
+      <title><![CDATA[Μενταγιόν ανδρικό ξυραφάκι χειροποίητο από ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/andriko-kremasto-xyrafaki</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-xyrafaki-apo-ashmi-925-kosmhmata-emmanuela-512861.jpg?v=1767367217</imageURL>
+      <price>49.00</price>
+      <category_path>Κοσμήματα-&gt;Μενταγιόν-&gt;Ανδρικά μενταγιόν</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>LU426pe</MPN>
+      <color>ασημί</color>
+      <weight>3</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
       <productId>31374154334243</productId>
       <title><![CDATA[Μενταγιόν ανδρικό σκάφανδρο χειροποίητο από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-kremasto-skafandro</productURL>
@@ -14713,8 +14728,6 @@
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-kremasta-skoylarikia-me-mother-of-pearl-apo-ashmi-925-kosmhmata-emmanuela-173813.jpg?v=1767361932</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-kremasta-skoylarikia-me-mother-of-pearl-apo-ashmi-925-kosmhmata-emmanuela-203531.jpg?v=1767361944</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-kremasta-skoylarikia-me-mother-of-pearl-apo-ashmi-925-kosmhmata-emmanuela-993756.jpg?v=1767361950</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-kremasta-skoylarikia-me-mother-of-pearl-apo-ashmi-925-kosmhmata-emmanuela-114702.jpg?v=1767361964</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-kremasta-skoylarikia-me-mother-of-pearl-apo-ashmi-925-kosmhmata-emmanuela-192350.jpg?v=1767361969</img5>
       </imagesURL>
       <price>89.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -18632,10 +18645,8 @@
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-kremasta-skoylarikia-me-mayro-onyxa-apo-ashmi-925-kosmhmata-emmanuela-564910.jpg?v=1767359201</imageURL>
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-kremasta-skoylarikia-me-mayro-onyxa-apo-ashmi-925-kosmhmata-emmanuela-564910.jpg?v=1767359201</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-kremasta-skoylarikia-me-mayro-onyxa-apo-ashmi-925-kosmhmata-emmanuela-618800.jpg?v=1767359236</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-kremasta-skoylarikia-me-mayro-onyxa-apo-ashmi-925-kosmhmata-emmanuela-999651.jpg?v=1767359242</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-kremasta-skoylarikia-me-mayro-onyxa-apo-ashmi-925-kosmhmata-emmanuela-528486.jpg?v=1767359246</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-kremasta-skoylarikia-me-mayro-onyxa-apo-ashmi-925-kosmhmata-emmanuela-198787.jpg?v=1767359251</img5>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-kremasta-skoylarikia-me-mayro-onyxa-apo-ashmi-925-kosmhmata-emmanuela-528486.jpg?v=1767359246</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-kremasta-skoylarikia-me-mayro-onyxa-apo-ashmi-925-kosmhmata-emmanuela-198787.jpg?v=1767359251</img3>
       </imagesURL>
       <price>89.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -18861,44 +18872,41 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>49409715241294</productId>
+      <productId>49466721468750</productId>
       <title><![CDATA[Σκουλαρίκια κρεμαστά με λάπις λάζουλι χειροποίητα από επιχρυσωμένο ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/kremasta-skoularikia-lapis-lazuli</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5707764518_hkmj.jpg?v=1767358894</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5705007130_49i8.jpg?v=1767358915</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5707764518_hkmj.jpg?v=1767358894</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5705007130_49i8.jpg?v=1767358915</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5707757636_3s8c.jpg?v=1767358931</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5455604514_55a3.jpg?v=1767358951</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5707842646_rqp6.jpg?v=1767358963</img5>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5705007130_49i8.jpg?v=1767358915</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5707757636_3s8c.jpg?v=1767358931</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5455604514_55a3.jpg?v=1767358951</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5707842646_rqp6.jpg?v=1767358963</img4>
       </imagesURL>
       <price>89.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1387G</MPN>
+      <MPN>1386G</MPN>
       <color>χρυσό</color>
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>49409715274062</productId>
+      <productId>49466721534286</productId>
       <title><![CDATA[Σκουλαρίκια κρεμαστά με λάπις λάζουλι χειροποίητα από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/kremasta-skoularikia-lapis-lazuli</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5755824199_n1i4.jpg?v=1767358901</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5753065913_8f7y.jpg?v=1767358937</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5755824199_n1i4.jpg?v=1767358901</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5740163162_o09h.jpg?v=1767358912</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5753065913_8f7y.jpg?v=1767358937</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5753066573_lcxq.jpg?v=1767358947</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5455604572_i4ac.jpg?v=1767358969</img5>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5753065913_8f7y.jpg?v=1767358937</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5753066573_lcxq.jpg?v=1767358947</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5455604572_i4ac.jpg?v=1767358969</img3>
       </imagesURL>
       <price>89.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1387S</MPN>
+      <MPN>1386S</MPN>
       <color>ασημί</color>
       <shipping>0</shipping>
     </product>

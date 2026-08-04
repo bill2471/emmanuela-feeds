@@ -534,10 +534,52 @@ function isColorNeutralFilename(imageUrl) {
 //      (cleaning cloth packaging shot — 0 as main but kept in regex for safety)
 const PACKAGING_PATTERN = /(?:925[-_]sterling[-_]silver[-_]jewelry[-_]gift[-_]packaging|gift[-_]packaging|packaging[-_]emmanuela|packaging[-_]photo|emmanuela[-_]925[-_]sterling[-_]silver[-_]packaging)/i;
 
+// 2026-08-04: the SAME gift-box photograph is uploaded under 86 DIFFERENT filenames, and only 3
+// of them match the name-based PACKAGING_PATTERN above. The other 83 read like ordinary product
+// names ("epixryswmeno-karfitsa-fylla-...jpg") — 68 of the 86 even START with a colour word, so
+// getColorFromFilename happily assigns them a colour and they sail through every colour filter.
+// Consequence measured on the live feed of 2026-08-04: 89 of them still shipped as
+// <additionalimage> across 89 entries, plus 3 as the MAIN image — exactly what Skroutz penalises
+// ("οι πρόσθετες εικόνες απεικονίζουν άλλα σχέδια ή αποχρώσεις", ticket #33670445).
+//
+// Identity must therefore be the SHOT, not the name. The list is produced OFFLINE by
+// skroutz-feed/_make-pkglist-0804.js (dHash <= 6 from the named packaging files) so the builder
+// only does a Set lookup — no image fetch, no hashing at runtime.
+// Threshold is NOT critical: over 3.014 catalogue images there are 11 files at distance 0 and
+// 75 at distance 1 and NOTHING AT ALL between 2 and 12.
+//
+// ⚠ THE LIST IS FROZEN. A gift-box photo uploaded AFTER it was generated is invisible to both
+// detectors until someone re-runs _make-pkglist-0804.js. That is why the file carries a
+// "generated" date and why it is printed on every run — a stale date is the only warning you get.
+// Missing / unreadable / empty list => name-only behaviour, i.e. exactly what shipped before.
+let PACKAGING_FILES = new Set();
+let PACKAGING_LIST_STAMP = 'not loaded';
+if (process.env.SKROUTZ_NO_PKGLIST !== '1') {
+  const pkgListPath = path.join(__dirname, 'skroutz-jewelry-packaging.json');
+  try {
+    const j = JSON.parse(fs.readFileSync(pkgListPath, 'utf8'));
+    // tolerant on shape — same idiom the sibling skroutz-shoes-builder.js already uses for its
+    // three frozen maps, so provenance can be added later without silently disabling the fix.
+    const files = Array.isArray(j) ? j : (j.files || []);
+    PACKAGING_FILES = new Set(files);
+    PACKAGING_LIST_STAMP = (!Array.isArray(j) && j.generated) ? j.generated : 'undated';
+    if (PACKAGING_FILES.size === 0) {
+      console.error('  [PKGLIST] WARNING: packaging-shot list is EMPTY — name-only detection (the shot-based fix is INERT).');
+    } else {
+      console.log(`  [PKGLIST] Packaging-shot list: ${PACKAGING_FILES.size} files, generated ${PACKAGING_LIST_STAMP}`);
+    }
+  } catch (e) {
+    console.error(`  [PKGLIST] WARNING: skroutz-jewelry-packaging.json missing or unreadable (${e.message}) — name-only detection (the shot-based fix is INERT).`);
+  }
+} else {
+  console.error('  [PKGLIST] kill-switch SKROUTZ_NO_PKGLIST=1 — name-only detection.');
+}
+
 function isPackagingImage(imageUrl) {
   if (!imageUrl) return false;
   const filename = imageUrl.split('/').pop() || '';
-  return PACKAGING_PATTERN.test(filename);
+  if (PACKAGING_PATTERN.test(filename)) return true;
+  return PACKAGING_FILES.has(filename.split('?')[0]);
 }
 
 // Filter images for a specific color group when variant.image_id is unavailable.
@@ -1211,8 +1253,12 @@ function generateSkroutzFeed(products) {
       // The v3.2 note above ("still allowed in <additionalimage>") was written BEFORE that rule
       // existed and is what this supersedes.
       // Measured cost, live feed: 785 images removed · 41 entries drop 2+ -> 1 · 23 drop 1 -> 0.
-      // The MAIN image is untouched by construction (this filter runs only on the additional
-      // list) and was already never packaging — measured 0 of 1694 entries.
+      // This filter runs only on the additional list, so it cannot change the MAIN image.
+      // ⚠ CORRECTED 2026-08-04: the original note here said the MAIN image "was already never
+      // packaging — measured 0 of 1694 entries". That was a measurement of the NAME detector,
+      // not of reality: with shot-based identity, 3 of 1356 jewelry entries were serving the
+      // gift-box photo AS THEIR MAIN IMAGE. They are handled by the main-picking ladder above
+      // (which calls isPackagingImage), not here.
       const emittedAdditional = additionalImages.filter(src => !isPackagingImage(src));
       stats.packagingAdditionalDropped += additionalImages.length - emittedAdditional.length;
       for (const addImg of emittedAdditional) {
@@ -1475,6 +1521,9 @@ async function generateFeed(options = {}) {
   console.log(`  In stock:              ${stats.inStock}`);
   console.log(`  Out of stock (skip):   ${stats.outOfStock}`);
   console.log(`  No image (skip):       ${stats.noImage}`);
+  // 2026-08-04: this counter existed since v3.5.1 but was never printed, so the only cost
+  // channel of the packaging fix was invisible. A jump here after a deploy is the signal.
+  console.log(`  Colour mismatch (skip):${stats.skippedColorMismatch || 0}`);
   console.log(`  Gift cards (skip):     ${stats.skippedGiftCards}`);
   console.log(`  Feed entries:          ${stats.feedEntries}`);
   console.log(`  With material phrase:   ${stats.withMaterial}`);

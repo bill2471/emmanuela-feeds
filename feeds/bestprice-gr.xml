@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-08-04 02:39</date>
+  <date>2026-08-04 08:58</date>
   <products>
     <product>
       <productId>31372692389923</productId>
@@ -10013,8 +10013,6 @@
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andrika-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-596444.jpg?v=1767368232</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andrika-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-846415.jpg?v=1767368239</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andrika-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-934343.jpg?v=1767368252</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andrika-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-725930.jpg?v=1767368258</img4>
       </imagesURL>
       <price>39.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
@@ -10042,6 +10040,25 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1313M</MPN>
       <color>ασημί</color>
+      <weight>1</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>54932891304270</productId>
+      <title><![CDATA[Σκουλαρίκια ανδρικά Χ χειροποίητα μαύρα από ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/andrika-skoularikia-x</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andrika-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-934343.jpg?v=1767368252</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andrika-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-934343.jpg?v=1767368252</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andrika-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-725930.jpg?v=1767368258</img2>
+      </imagesURL>
+      <price>39.00</price>
+      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1313MX</MPN>
+      <color>μαύρο</color>
       <weight>1</weight>
       <shipping>0</shipping>
     </product>
@@ -14267,8 +14284,6 @@
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayra-anthraki-karfwta-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-233790.jpg?v=1767362358</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayra-anthraki-karfwta-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-962091.jpg?v=1767362363</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-767056.jpg?v=1767362395</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-316251.jpg?v=1767362401</img4>
       </imagesURL>
       <price>39.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -14276,7 +14291,7 @@
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1313X</MPN>
-      <color>γκρι</color>
+      <color>μαύρο</color>
       <weight>2</weight>
       <shipping>0</shipping>
     </product>
@@ -14316,6 +14331,25 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1313</MPN>
       <color>ασημί</color>
+      <weight>2</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>31752070725667</productId>
+      <title><![CDATA[Σκουλαρίκια καρφωτά Χ χειροποίητα από οξειδωμένο ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/karfota-skoularikia-x</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-767056.jpg?v=1767362395</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-767056.jpg?v=1767362395</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-316251.jpg?v=1767362401</img2>
+      </imagesURL>
+      <price>39.00</price>
+      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1313O</MPN>
+      <color>γκρι</color>
       <weight>2</weight>
       <shipping>0</shipping>
     </product>
@@ -19631,7 +19665,7 @@
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1374X</MPN>
-      <color>γκρι</color>
+      <color>μαύρο</color>
       <shipping>0</shipping>
     </product>
     <product>

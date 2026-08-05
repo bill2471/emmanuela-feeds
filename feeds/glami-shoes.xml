@@ -6450,7 +6450,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 37, 38, 40</VAL>
+      <VAL>36, 37, 38</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -7209,7 +7209,7 @@
     <GTIN>05212033635431</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40480091635869</ITEM_ID>
+    <ITEM_ID>40480091734173</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Μαύρο]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-dionysius-men</URL>
     <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-570478.jpg?v=1653979657</IMGURL>
@@ -7221,14 +7221,14 @@
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1LI74_-_SIZE_CHART_v2.png?v=1779870771</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-465450.jpg?v=1653979657</IMGURL_ALTERNATIVE>
     <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/emmanuela-handcrafted-for-you-gladiator-sandalen-fur-herren-dionysius-aus-schwarze-leder-emmanuela-handcrafted-for-you-368189.jpg?v=1653979657</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-dionysius-men?variant=40480091635869</URL_SIZE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-dionysius-men?variant=40480091734173</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>μαύρο</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>42, 43</VAL>
+      <VAL>43</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -7239,7 +7239,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033635318</GTIN>
+    <GTIN>05212033635325</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480107004061</ITEM_ID>
@@ -8176,7 +8176,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 37, 38, 40</VAL>
+      <VAL>36, 37, 38</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>

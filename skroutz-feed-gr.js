@@ -575,11 +575,59 @@ if (process.env.SKROUTZ_NO_PKGLIST !== '1') {
   console.error('  [PKGLIST] kill-switch SKROUTZ_NO_PKGLIST=1 — name-only detection.');
 }
 
+// 2026-08-05: HUMAN photo-colour labels (Emmanouela, sheet of 2026-08-04 — 106 of 110 cards).
+// The 29/07 retraction established that NO per-photo metadata (filename OR altText) is
+// reliable; colour-word-less filenames fell through both colour filters as "neutral" and
+// leaked into EVERY colourway of their design (89 entries / 399 additionals measured live).
+// Attribution for those files now comes from a frozen human-label map:
+//   basename -> Greek colour word  = the photo belongs ONLY to that colourway
+//   basename -> __NONE__           = the photo does not show the jewel (gift box, prop...):
+//                                    treated exactly like packaging — never MAIN, never additional.
+// ⚠ THE MAP IS FROZEN (same duty as the packaging list): photos uploaded after its
+// "generated" date are invisible to it and keep today's behaviour (fail-open, no ban).
+// Missing / unreadable / empty map => the fix is INERT and the feed is byte-identical
+// to the pre-patch output.
+let JPHOTO_LABELS = new Map();
+let JPHOTO_NONE = new Set();
+let JPHOTO_STAMP = 'not loaded';
+if (process.env.SKROUTZ_NO_JPHOTO !== '1') {
+  const jphotoPath = path.join(__dirname, 'jewelry-photocolor.json');
+  try {
+    const j = JSON.parse(fs.readFileSync(jphotoPath, 'utf8'));
+    const obj = (j && typeof j === 'object' && j.labels && typeof j.labels === 'object') ? j.labels : j;
+    for (const [f, c] of Object.entries(obj || {})) {
+      if (typeof c !== 'string') continue;
+      if (c === '__NONE__') JPHOTO_NONE.add(f); else JPHOTO_LABELS.set(f, c);
+    }
+    JPHOTO_STAMP = (j && j.generated) ? j.generated : 'undated';
+    if (JPHOTO_LABELS.size === 0 && JPHOTO_NONE.size === 0) {
+      console.error('  [JPHOTO] WARNING: photo-colour label map is EMPTY — label routing is INERT.');
+    } else {
+      console.log(`  [JPHOTO] Photo-colour labels: ${JPHOTO_LABELS.size} colour + ${JPHOTO_NONE.size} not-jewel, generated ${JPHOTO_STAMP}`);
+    }
+  } catch (e) {
+    console.error(`  [JPHOTO] WARNING: jewelry-photocolor.json missing or unreadable (${e.message}) — label routing is INERT.`);
+  }
+} else {
+  console.error('  [JPHOTO] kill-switch SKROUTZ_NO_JPHOTO=1 — label routing disabled.');
+}
+
+// Colour label of a photo, or null. __NONE__ files are NOT returned here — they are
+// handled by isPackagingImage below (never main, never additional).
+function jphotoColourOf(imageUrl) {
+  if (!imageUrl) return null;
+  const base = (String(imageUrl).split('/').pop() || '').split('?')[0];
+  return JPHOTO_LABELS.get(base) || null;
+}
+
 function isPackagingImage(imageUrl) {
   if (!imageUrl) return false;
   const filename = imageUrl.split('/').pop() || '';
   if (PACKAGING_PATTERN.test(filename)) return true;
-  return PACKAGING_FILES.has(filename.split('?')[0]);
+  const base = filename.split('?')[0];
+  if (PACKAGING_FILES.has(base)) return true;
+  // 2026-08-05: Emmanouela-confirmed "does not show the jewel" photos — same class.
+  return JPHOTO_NONE.has(base);
 }
 
 // Filter images for a specific color group when variant.image_id is unavailable.
@@ -588,6 +636,9 @@ function isPackagingImage(imageUrl) {
 function filterImagesByColorFromFilename(images, targetColor) {
   if (!images || images.length === 0) return [];
   return images.filter(img => {
+    // 2026-08-05: human label outranks the filename (see jewelry-photocolor.json).
+    const lc = jphotoColourOf(img.src);
+    if (lc) return lc === targetColor;
     const c = getColorFromFilename(img.src);
     return c === targetColor || c === null;
   });
@@ -1071,6 +1122,11 @@ function generateSkroutzFeed(products) {
         // Cross-color filter: drop images whose filename color != entry's color
         // (color-neutral images like packaging shots are kept).
         const filteredColorImages = colorImages.filter(img => {
+          // 2026-08-05: a human label outranks the filename. A colour-word-less file
+          // that Emmanouela labelled for ANOTHER colour no longer passes the
+          // fc===null door into this entry; labelled-for-THIS-colour files stay.
+          const lc = jphotoColourOf(img.src);
+          if (lc) return lc === color;
           const fc = getColorFromFilename(img.src);
           return fc === null || fc === color;
         });
@@ -1166,7 +1222,9 @@ function generateSkroutzFeed(products) {
       // with no color word in filename) pass the check.
       const _hasColorOption = (repVariant.selectedOptions || []).some(o =>
         (o.name || '').toLowerCase().includes('χρώμα'));
-      const _picturedColor = getColorFromFilename(variantImage);
+      // 2026-08-05: the human label outranks the filename here too — a MAIN image that
+      // Emmanouela labelled for another colourway now (correctly) trips the gate.
+      const _picturedColor = jphotoColourOf(variantImage) || getColorFromFilename(variantImage);
       if (_hasColorOption && _picturedColor && _picturedColor !== color) {
         stats.skippedColorMismatch = (stats.skippedColorMismatch || 0) + 1;
         continue;

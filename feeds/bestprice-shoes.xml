@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-08-05 20:26</date>
+  <date>2026-08-06 09:32</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -4699,30 +4699,6 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40480091373725</productId>
-      <title><![CDATA[Emmanuela Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Καφέ]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-brown-dionysius-men</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-913269.jpg?v=1627375267</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-913269.jpg?v=1627375267</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-379938.jpg?v=1627293850</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-125698.jpg?v=1627293850</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-825150.jpg?v=1627293850</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-324324.jpg?v=1627293850</img5>
-      </imagesURL>
-      <price>69.00</price>
-      <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1LI74MANLBRBR7</MPN>
-      <color>καφέ</color>
-      <size>40,45</size>
-      <weight>1500</weight>
-      <EAN>5212033635363</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
       <productId>40480091406493</productId>
       <title><![CDATA[Emmanuela Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Μπεζ φυσικό]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-brown-dionysius-men</productURL>
@@ -4760,6 +4736,30 @@
       <size>43</size>
       <weight>1500</weight>
       <EAN>5212033635325</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40480091865245</productId>
+      <title><![CDATA[Emmanuela Ανδρικά σανδάλια μονομάχου "Διόνυσος" - Καφέ]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-brown-dionysius-men</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-913269.jpg?v=1627375267</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-913269.jpg?v=1627375267</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-379938.jpg?v=1627293850</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-125698.jpg?v=1627293850</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-825150.jpg?v=1627293850</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-dionysos-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-dionysos-324324.jpg?v=1627293850</img5>
+      </imagesURL>
+      <price>69.00</price>
+      <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1LI74MANLBRBR12</MPN>
+      <color>καφέ</color>
+      <size>45</size>
+      <weight>1500</weight>
+      <EAN>5212033635417</EAN>
       <shipping>0</shipping>
     </product>
     <product>

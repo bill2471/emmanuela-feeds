@@ -999,6 +999,61 @@ function generateSkroutzFeed(products) {
     const hasPairOption = variants.some(isPairVariant);
     const excludePairs = hasSingleOption && hasPairOption;
 
+    // v3.7 (2026-08-06): SIDE SPLIT — left/right ear as SEPARATE entries.
+    // Reported by Emmanouela; measured on the 06/08 feed: 21 titles already say «δεξί» and
+    // 27 «αριστερό», with ZERO colliding pairs — Skroutz accepts side-specific listings, but
+    // today only ONE side per (colour) bucket is ever emitted while the bucket's quantity is
+    // the sum of BOTH sides (+ the pair). A shopper sees «αριστερό αυτί, 27 available» when
+    // only 4 left cuffs exist.
+    // ⛔ SPLIT ONLY WHEN THE SIDES ARE DIFFERENT MERCHANDISE. Measured: 14 products carry a
+    // distinct SKU per side (8027L vs 8027, 8056GRL vs 8056GRR …) — those are genuinely two
+    // items. 7 products use ONE SKU for both sides (8006, 8003, 8048, 8017, 8026, 1320,
+    // 1303M) — splitting those would emit two entries for the SAME sku, which Skroutz files
+    // as «Διπλή εγγραφή» and hides (the «Καλυψώ» failure of 03/08). The disjoint-SKU test
+    // below is what separates the two cases; it fails CLOSED (no split when unsure).
+    // Kill-switch: SKROUTZ_NO_SIDESPLIT=1 restores the previous grouping.
+    const _SIDE_VALUE_RE = /αριστερ|δεξ[ιί]/i;
+    let _sideAxis = null;
+    let _sidePrimary = null;
+    let _sideValuesWithSku = null;
+    if (process.env.SKROUTZ_NO_SIDESPLIT !== '1') {
+      const _eligible = variants.filter(v =>
+        v.inventory_quantity > 0 && !(excludePairs && isPairVariant(v)));
+      const _names = [...new Set(_eligible.flatMap(v => (v.selectedOptions || []).map(o => o.name)))];
+      for (const _nm of _names) {
+        const _valOf = v => ((v.selectedOptions || []).find(o => o.name === _nm) || {}).value;
+        const _vals = [...new Set(_eligible.map(_valOf).filter(Boolean))];
+        if (_vals.length < 2) continue;
+        if (!_vals.some(x => _SIDE_VALUE_RE.test(x))) continue;
+        // Ο έλεγχος γίνεται ΜΟΝΟ πάνω στις τιμές που ΕΧΟΥΝ sku. Οι παραλλαγές «Ζευγάρι»
+        // συχνά δεν φέρουν sku· δεν μπορούν να αποδείξουν τίποτα, αλλά δεν πρέπει και να
+        // μπλοκάρουν τον διαχωρισμό των δύο πλευρών που ΕΧΟΥΝ ξεχωριστούς κωδικούς.
+        const _skusOf = val => new Set(
+          _eligible.filter(v => _valOf(v) === val)
+            .map(v => (v.sku || '').trim()).filter(Boolean));
+        const _withSku = _vals.filter(val => _skusOf(val).size > 0);
+        if (_withSku.length < 2) continue;                     // δεν αποδεικνύεται ⇒ ΟΧΙ split
+        const _sets = _withSku.map(_skusOf);
+        let _disjoint = true;
+        for (let i = 0; i < _sets.length && _disjoint; i++) {
+          for (let j = i + 1; j < _sets.length; j++) {
+            if ([..._sets[i]].some(s => _sets[j].has(s))) { _disjoint = false; break; }
+          }
+        }
+        if (!_disjoint) continue;                              // ίδιο sku σε 2 πλευρές ⇒ ΟΧΙ split
+        _sideAxis = _nm;
+        // ⛔ Εκπέμπονται ΜΟΝΟ οι τιμές που έχουν sku. Οι παραλλαγές «Ζευγάρι» αυτών των
+        // σχεδίων δεν φέρουν κωδικό: αν γίνονταν δική τους καταχώρηση, μια παραγγελία θα
+        // επέστρεφε κενό sku και θα κατέληγε «άγνωστο είδος» στο Pylon (το περιστατικό της
+        // 04/08). Σήμερα ούτως ή άλλως δεν είναι ξεχωριστά αγοράσιμες — απλώς φούσκωναν το
+        // άθροισμα της ομάδας. Ίδια φιλοσοφία με το υπάρχον excludePairs.
+        _sideValuesWithSku = new Set(_withSku);
+        const _first = _eligible.find(v => _sideValuesWithSku.has(_valOf(v)));
+        _sidePrimary = _first ? _valOf(_first) : null;         // η πλευρά που εκπέμπεται ΣΗΜΕΡΑ
+        break;
+      }
+    }
+
     // v3.1: Look up the STABLE product-level base MPN computed in the pre-pass.
     // Previously (v3.0) we used `repVariant.sku || EMM-{variant.id}` inside the
     // group loop, which produced a DIFFERENT MPN root per color group when:
@@ -1038,6 +1093,15 @@ function generateSkroutzFeed(products) {
       // key so each (color × length) becomes its own feed entry. Otherwise
       // group by color only (existing v2.1 behavior — sizes go in variations).
       let groupKey = color;
+      let groupSideRaw = null;
+      if (_sideAxis) {
+        const _sv = ((variant.selectedOptions || []).find(o => o.name === _sideAxis) || {}).value;
+        if (_sv && _sideValuesWithSku && !_sideValuesWithSku.has(_sv)) {
+          stats.outOfStock++;                                  // τιμή χωρίς sku ⇒ δεν εκπέμπεται
+          return;
+        }
+        if (_sv) { groupSideRaw = _sv; groupKey = `${color}|side:${_sv}`; }
+      }
       let groupLengthRaw = null;
       let groupLengthParsed = { length: null, type: null };
       if (hasLengthAxis) {
@@ -1055,6 +1119,10 @@ function generateSkroutzFeed(products) {
           variants: [],
           lengthRaw: groupLengthRaw,
           lengthParsed: groupLengthParsed,
+          sideRaw: groupSideRaw,
+          // κλειδί ΧΩΡΙΣ την πλευρά: κρατά το πλήθος καταχωρήσεων όπως ΠΡΙΝ, ώστε το MPN
+          // της πλευράς που ήδη ζει στη Skroutz να μείνει ΑΠΑΡΑΛΛΑΚΤΟ (κανένα soft reset).
+          oldKey: groupKey.replace(/\|side:[^|]*/, ''),
         };
       }
       entryGroups[groupKey].variants.push(variant);
@@ -1092,12 +1160,24 @@ function generateSkroutzFeed(products) {
 
     // Create 1 entry per group (color × second option)
     for (const [groupKey, group] of Object.entries(entryGroups)) {
-      const { color, variants: groupVariants, lengthRaw, lengthParsed } = group;
+      const { color, variants: groupVariants, lengthRaw, lengthParsed, sideRaw, oldKey } = group;
       const repVariant = groupVariants[0];
 
-      // Images: use variant image boundaries to select same-color images
+      // Images: use variant image boundaries to select same-color images.
+      // v3.7 (2026-08-06): when the bucket was split by SIDE, the image pool must stay the
+      // pool of the WHOLE colour, not of one side. Left and right are the SAME DESIGN in the
+      // SAME colourway — mirrored — so a photo of the left cuff depicts the right one just as
+      // truthfully; Skroutz's rule bans images of a different design or a different colourway,
+      // which this is not. Without this, splitting halves each entry's photos: measured on the
+      // 03/08 cache, 23 entries lost images and 14 fell below the «1 main + 2 additional»
+      // threshold — trading an accuracy defect for an exclusion risk, which is exactly the
+      // trap the 31/07 sandal measurement warned about.
+      const _imagePoolVariants = (sideRaw && oldKey)
+        ? Object.values(entryGroups).filter(g => (g.oldKey || '') === oldKey)
+            .flatMap(g => g.variants)
+        : groupVariants;
       const groupImageIds = new Set(
-        groupVariants.map(v => v.image_id).filter(Boolean)
+        _imagePoolVariants.map(v => v.image_id).filter(Boolean)
       );
 
       let variantImage;
@@ -1236,9 +1316,25 @@ function generateSkroutzFeed(products) {
       // actual price. Only multi-variant groups (e.g., rings) actually need min.
       const lowestPrice = Math.min(...groupVariants.map(v => parseFloat(v.price)));
 
-      // Total quantity for this group (sum of all variants in the bucket).
-      // For length-axis entries this is now per-length, not inflated across lengths.
-      const totalQuantity = groupVariants.reduce((sum, v) => sum + Math.max(0, v.inventory_quantity), 0);
+      // Quantity for this entry.
+      // v3.6 (2026-08-06): the number must describe THE ENTRY, not the bucket.
+      // When this entry emits a <variations> block, every size carries its own <quantity>
+      // and the product-level total is the documented Skroutz semantics — kept as the sum.
+      // When it does NOT (1180 of 1285 jewelry entries on 06/08), every non-representative
+      // variant of the bucket is INVISIBLE to the shopper — a different monogram letter, a
+      // different stone, small-vs-large, or a same-SKU mirror — yet its units were being
+      // added into the advertised number. The «κασέτα» pendant Emmanouela reported showed
+      // 13 = 4 small + 4 large + 5 bundle on nine entries, of which only the small could
+      // ever be bought. A variant with inventory <= 0 is already dropped at the top of the
+      // loop, so the representative always carries >= 1 and no entry can fall to zero.
+      // Kill-switch: SKROUTZ_NO_REPQTY=1 restores the previous (sum) behaviour.
+      const _bucketSizes = [...new Set(
+        groupVariants.map(v => extractVariantSize(v.selectedOptions)).filter(Boolean)
+      )];
+      const _emitsVariations = groupVariants.length > 1 && _bucketSizes.length > 1;
+      const totalQuantity = (_emitsVariations || process.env.SKROUTZ_NO_REPQTY === '1')
+        ? groupVariants.reduce((sum, v) => sum + Math.max(0, v.inventory_quantity), 0)
+        : Math.max(0, repVariant.inventory_quantity);
 
       // Weight from representative variant
       const weightGrams = getWeightGrams(repVariant);
@@ -1264,7 +1360,9 @@ function generateSkroutzFeed(products) {
       // v3.1: baseMpn comes from `productMpnBase` (computed once above), NOT
       // from repVariant.sku/id. The color and length suffixes (added below)
       // are what discriminate siblings.
-      const entryCount = Object.keys(entryGroups).length;
+      // Πλήθος καταχωρήσεων ΑΓΝΟΩΝΤΑΣ τον διαχωρισμό πλευράς: έτσι ένα προϊόν που ΠΡΙΝ
+      // έβγαζε 1 καταχώρηση (χωρίς επίθεμα χρώματος) δεν αποκτά ξαφνικά επίθεμα.
+      const entryCount = new Set(Object.values(entryGroups).map(g => g.oldKey || '')).size;
       let mpn = productMpnBase;
       if (entryCount > 1) {
         mpn = `${productMpnBase}-${color}`;
@@ -1273,6 +1371,12 @@ function generateSkroutzFeed(products) {
           const lengthToken = lengthRaw.trim().replace(/\s+/g, '-');
           if (lengthToken) mpn = `${mpn}-${lengthToken}`;
         }
+      }
+      // Η πλευρά που ήδη εκπέμπεται σήμερα κρατά ΤΟ ΙΔΙΟ MPN· μόνο η ΝΕΑ πλευρά παίρνει
+      // επίθεμα ⇒ καμία υπάρχουσα καταχώρηση δεν αλλάζει ταυτότητα στη Skroutz.
+      if (sideRaw && _sidePrimary && sideRaw !== _sidePrimary) {
+        const sideToken = sideRaw.trim().replace(/\s+/g, '-');
+        if (sideToken) mpn = `${mpn}-${sideToken}`;
       }
 
       // Intra-product disambiguation: if we've already emitted this exact MPN,

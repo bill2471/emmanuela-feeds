@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-08-06 08:58</created_at>
+  <created_at>2026-08-06 14:29</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -6673,7 +6673,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[2028]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>24</quantity>
+        <quantity>23</quantity>
         <color>Ασημί</color>
         <size>Μικρό: κανονικό μέγεθος δακτύλου 51 έως 54,Μεσαίο: κανονικό μέγεθος δακτύλου 55 έως 58,Μεγάλο: κανονικό μέγεθος δακτύλου 60 έως 63</size>
         <variations>
@@ -6709,7 +6709,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
             <variationid>31373216219171</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>Μεγάλο: κανονικό μέγεθος δακτύλου 60 έως 63</size>
-            <quantity>4</quantity>
+            <quantity>3</quantity>
             <manufacturersku><![CDATA[2028]]></manufacturersku>
           </variation>
           <variation>
@@ -8889,7 +8889,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1268-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>8</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>5</weight>
@@ -17891,7 +17891,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1322M-Γκρι]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Γκρι</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -19540,10 +19540,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31373828292643</id>
         <name><![CDATA[Μενταγιόν ανδρικό μικρόφωνο χειροποίητο από ασήμι 925 κορδόνι τεχνόδερμα 50cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-mikrofono?variant=31373828292643]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-773188.jpg?v=1767368739]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-449858.jpg?v=1767368747]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-534675.jpg?v=1767368751]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-527121.jpg?v=1767368753]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/30.jpg?v=1786013814]]></image>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>59.00</price_with_vat>
         <vat>24.00</vat>
@@ -19568,10 +19565,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31373828325411</id>
         <name><![CDATA[Μενταγιόν ανδρικό μικρόφωνο χειροποίητο από ασήμι 925 κορδόνι τεχνόδερμα 55cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-mikrofono?variant=31373828325411]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-773188.jpg?v=1767368739]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-449858.jpg?v=1767368747]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-534675.jpg?v=1767368751]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-527121.jpg?v=1767368753]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/30.jpg?v=1786013814]]></image>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>59.00</price_with_vat>
         <vat>24.00</vat>
@@ -19596,10 +19590,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31373828358179</id>
         <name><![CDATA[Μενταγιόν ανδρικό μικρόφωνο χειροποίητο από ασήμι 925 κορδόνι τεχνόδερμα 60cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-mikrofono?variant=31373828358179]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-773188.jpg?v=1767368739]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-449858.jpg?v=1767368747]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-534675.jpg?v=1767368751]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-527121.jpg?v=1767368753]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/30.jpg?v=1786013814]]></image>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>59.00</price_with_vat>
         <vat>24.00</vat>
@@ -19628,6 +19619,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-449858.jpg?v=1767368747]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-534675.jpg?v=1767368751]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-527121.jpg?v=1767368753]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/30.jpg?v=1786013814]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>77.00</price_with_vat>
         <vat>24.00</vat>
@@ -19656,6 +19648,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-449858.jpg?v=1767368747]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-534675.jpg?v=1767368751]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-527121.jpg?v=1767368753]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/30.jpg?v=1786013814]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>78.00</price_with_vat>
         <vat>24.00</vat>
@@ -19684,6 +19677,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-449858.jpg?v=1767368747]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-534675.jpg?v=1767368751]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-mikrofwno-apo-ashmi-925-kosmhmata-emmanuela-527121.jpg?v=1767368753]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/30.jpg?v=1786013814]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>79.00</price_with_vat>
         <vat>24.00</vat>
@@ -19821,13 +19815,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31373836189731</id>
         <name><![CDATA[Μενταγιόν ανδρικό πατίνι χειροποίητο από ασήμι 925 κορδόνι τεχνόδερμα 50cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-patini-skateboard?variant=31373836189731]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-979260.jpg?v=1767368671]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-710684.jpg?v=1767368676]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-962393.jpg?v=1767368684]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-801975.jpg?v=1767368690]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-957968.jpg?v=1767368697]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-748456.jpg?v=1767368704]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-714314.jpg?v=1767368706]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-704.jpg?v=1786015306]]></image>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>54.00</price_with_vat>
         <vat>24.00</vat>
@@ -19852,13 +19840,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31373836222499</id>
         <name><![CDATA[Μενταγιόν ανδρικό πατίνι χειροποίητο από ασήμι 925 κορδόνι τεχνόδερμα 55cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-patini-skateboard?variant=31373836222499]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-979260.jpg?v=1767368671]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-710684.jpg?v=1767368676]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-962393.jpg?v=1767368684]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-801975.jpg?v=1767368690]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-957968.jpg?v=1767368697]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-748456.jpg?v=1767368704]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-714314.jpg?v=1767368706]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-704.jpg?v=1786015306]]></image>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>54.00</price_with_vat>
         <vat>24.00</vat>
@@ -19883,13 +19865,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31373836255267</id>
         <name><![CDATA[Μενταγιόν ανδρικό πατίνι χειροποίητο από ασήμι 925 κορδόνι τεχνόδερμα 60cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-patini-skateboard?variant=31373836255267]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-979260.jpg?v=1767368671]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-710684.jpg?v=1767368676]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-962393.jpg?v=1767368684]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-801975.jpg?v=1767368690]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-957968.jpg?v=1767368697]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-748456.jpg?v=1767368704]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-714314.jpg?v=1767368706]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-704.jpg?v=1786015306]]></image>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>54.00</price_with_vat>
         <vat>24.00</vat>
@@ -19914,10 +19890,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31373836288035</id>
         <name><![CDATA[Μενταγιόν ανδρικό πατίνι χειροποίητο από ασήμι 925 αλυσίδα ρολό 50cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-patini-skateboard?variant=31373836288035]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-979260.jpg?v=1767368671]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-710684.jpg?v=1767368676]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-962393.jpg?v=1767368684]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-801975.jpg?v=1767368690]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-703.jpg?v=1786015306]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-957968.jpg?v=1767368697]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-748456.jpg?v=1767368704]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-714314.jpg?v=1767368706]]></additionalimage>
@@ -19945,10 +19918,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31373836320803</id>
         <name><![CDATA[Μενταγιόν ανδρικό πατίνι χειροποίητο από ασήμι 925 αλυσίδα ρολό 55cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-patini-skateboard?variant=31373836320803]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-979260.jpg?v=1767368671]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-710684.jpg?v=1767368676]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-962393.jpg?v=1767368684]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-801975.jpg?v=1767368690]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-703.jpg?v=1786015306]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-957968.jpg?v=1767368697]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-748456.jpg?v=1767368704]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-714314.jpg?v=1767368706]]></additionalimage>
@@ -19976,10 +19946,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31373836353571</id>
         <name><![CDATA[Μενταγιόν ανδρικό πατίνι χειροποίητο από ασήμι 925 αλυσίδα ρολό 60cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-patini-skateboard?variant=31373836353571]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-979260.jpg?v=1767368671]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-710684.jpg?v=1767368676]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-962393.jpg?v=1767368684]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-801975.jpg?v=1767368690]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-703.jpg?v=1786015306]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-957968.jpg?v=1767368697]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-748456.jpg?v=1767368704]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-714314.jpg?v=1767368706]]></additionalimage>
@@ -20011,9 +19978,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-710684.jpg?v=1767368676]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-962393.jpg?v=1767368684]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-801975.jpg?v=1767368690]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-957968.jpg?v=1767368697]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-748456.jpg?v=1767368704]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-714314.jpg?v=1767368706]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>80.00</price_with_vat>
         <vat>24.00</vat>
@@ -20042,9 +20006,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-710684.jpg?v=1767368676]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-962393.jpg?v=1767368684]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-801975.jpg?v=1767368690]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-957968.jpg?v=1767368697]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-748456.jpg?v=1767368704]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-714314.jpg?v=1767368706]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>82.00</price_with_vat>
         <vat>24.00</vat>
@@ -20073,9 +20034,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-710684.jpg?v=1767368676]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-962393.jpg?v=1767368684]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-801975.jpg?v=1767368690]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-957968.jpg?v=1767368697]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-748456.jpg?v=1767368704]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-patini-apo-ashmi-925-kosmhmata-emmanuela-714314.jpg?v=1767368706]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>84.00</price_with_vat>
         <vat>24.00</vat>
@@ -20100,14 +20058,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31614134911011</id>
         <name><![CDATA[Μενταγιόν ανδρικό γάντι του Box χειροποίητο από ασήμι 925 κορδόνι τεχνόδερμα 50cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-ganti-box?variant=31614134911011]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-291096.jpg?v=1767368629]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-943141.jpg?v=1767368634]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-350157.jpg?v=1767368643]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-715493.jpg?v=1767368646]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-342743.jpg?v=1767368652]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-346701.jpg?v=1767368658]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-762678.jpg?v=1767368662]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-850112.jpg?v=1767368665]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-699.jpg?v=1786013582]]></image>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>54.00</price_with_vat>
         <vat>24.00</vat>
@@ -20132,14 +20083,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31373838745635</id>
         <name><![CDATA[Μενταγιόν ανδρικό γάντι του Box χειροποίητο από ασήμι 925 κορδόνι τεχνόδερμα 55cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-ganti-box?variant=31373838745635]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-291096.jpg?v=1767368629]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-943141.jpg?v=1767368634]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-350157.jpg?v=1767368643]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-715493.jpg?v=1767368646]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-342743.jpg?v=1767368652]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-346701.jpg?v=1767368658]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-762678.jpg?v=1767368662]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-850112.jpg?v=1767368665]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-699.jpg?v=1786013582]]></image>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>54.00</price_with_vat>
         <vat>24.00</vat>
@@ -20164,14 +20108,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31373838778403</id>
         <name><![CDATA[Μενταγιόν ανδρικό γάντι του Box χειροποίητο από ασήμι 925 κορδόνι τεχνόδερμα 60cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-ganti-box?variant=31373838778403]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-291096.jpg?v=1767368629]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-943141.jpg?v=1767368634]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-350157.jpg?v=1767368643]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-715493.jpg?v=1767368646]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-342743.jpg?v=1767368652]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-346701.jpg?v=1767368658]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-762678.jpg?v=1767368662]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-850112.jpg?v=1767368665]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-699.jpg?v=1786013582]]></image>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>54.00</price_with_vat>
         <vat>24.00</vat>
@@ -20196,10 +20133,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31373838811171</id>
         <name><![CDATA[Μενταγιόν ανδρικό γάντι του Box χειροποίητο από ασήμι 925 αλυσίδα ρολό 50cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-ganti-box?variant=31373838811171]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-291096.jpg?v=1767368629]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-943141.jpg?v=1767368634]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-350157.jpg?v=1767368643]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-715493.jpg?v=1767368646]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-700.jpg?v=1786013582]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-342743.jpg?v=1767368652]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-346701.jpg?v=1767368658]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-762678.jpg?v=1767368662]]></additionalimage>
@@ -20228,10 +20162,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31373838843939</id>
         <name><![CDATA[Μενταγιόν ανδρικό γάντι του Box χειροποίητο από ασήμι 925 αλυσίδα ρολό 55cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-ganti-box?variant=31373838843939]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-291096.jpg?v=1767368629]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-943141.jpg?v=1767368634]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-350157.jpg?v=1767368643]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-715493.jpg?v=1767368646]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-700.jpg?v=1786013582]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-342743.jpg?v=1767368652]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-346701.jpg?v=1767368658]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-762678.jpg?v=1767368662]]></additionalimage>
@@ -20260,10 +20191,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31373838876707</id>
         <name><![CDATA[Μενταγιόν ανδρικό γάντι του Box χειροποίητο από ασήμι 925 αλυσίδα ρολό 60cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-ganti-box?variant=31373838876707]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-291096.jpg?v=1767368629]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-943141.jpg?v=1767368634]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-350157.jpg?v=1767368643]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-715493.jpg?v=1767368646]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-700.jpg?v=1786013582]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-342743.jpg?v=1767368652]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-346701.jpg?v=1767368658]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-762678.jpg?v=1767368662]]></additionalimage>
@@ -20296,10 +20224,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-943141.jpg?v=1767368634]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-350157.jpg?v=1767368643]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-715493.jpg?v=1767368646]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-342743.jpg?v=1767368652]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-346701.jpg?v=1767368658]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-762678.jpg?v=1767368662]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-850112.jpg?v=1767368665]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>78.00</price_with_vat>
         <vat>24.00</vat>
@@ -20328,10 +20252,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-943141.jpg?v=1767368634]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-350157.jpg?v=1767368643]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-715493.jpg?v=1767368646]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-342743.jpg?v=1767368652]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-346701.jpg?v=1767368658]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-762678.jpg?v=1767368662]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-850112.jpg?v=1767368665]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>80.00</price_with_vat>
         <vat>24.00</vat>
@@ -20360,10 +20280,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-943141.jpg?v=1767368634]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-350157.jpg?v=1767368643]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-715493.jpg?v=1767368646]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-342743.jpg?v=1767368652]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-346701.jpg?v=1767368658]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-762678.jpg?v=1767368662]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-ganti-toy-box-apo-ashmi-925-kosmhmata-emmanuela-850112.jpg?v=1767368665]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>82.00</price_with_vat>
         <vat>24.00</vat>
@@ -21762,9 +21678,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374045282339</id>
         <name><![CDATA[Μενταγιόν ανδρικό ψαλίδι vintage χειροποίητο από ασήμι 925 κορδόνι τεχνόδερμα 50cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-psalidi-vintage?variant=31374045282339]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-435339.jpg?v=1767368114]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-330217.jpg?v=1767368119]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-383531.jpg?v=1767368124]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-383531.jpg?v=1767368124]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-697099.jpg?v=1767368126]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-812178.jpg?v=1767368133]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-375332.jpg?v=1767368137]]></additionalimage>
@@ -21792,9 +21706,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374045315107</id>
         <name><![CDATA[Μενταγιόν ανδρικό ψαλίδι vintage χειροποίητο από ασήμι 925 κορδόνι τεχνόδερμα 55cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-psalidi-vintage?variant=31374045315107]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-435339.jpg?v=1767368114]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-330217.jpg?v=1767368119]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-383531.jpg?v=1767368124]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-383531.jpg?v=1767368124]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-697099.jpg?v=1767368126]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-812178.jpg?v=1767368133]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-375332.jpg?v=1767368137]]></additionalimage>
@@ -21822,9 +21734,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374045347875</id>
         <name><![CDATA[Μενταγιόν ανδρικό ψαλίδι vintage χειροποίητο από ασήμι 925 κορδόνι τεχνόδερμα 60cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-psalidi-vintage?variant=31374045347875]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-435339.jpg?v=1767368114]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-330217.jpg?v=1767368119]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-383531.jpg?v=1767368124]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-383531.jpg?v=1767368124]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-697099.jpg?v=1767368126]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-812178.jpg?v=1767368133]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-375332.jpg?v=1767368137]]></additionalimage>
@@ -21854,10 +21764,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-psalidi-vintage?variant=31374045380643]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-435339.jpg?v=1767368114]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-330217.jpg?v=1767368119]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-383531.jpg?v=1767368124]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-697099.jpg?v=1767368126]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-812178.jpg?v=1767368133]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-375332.jpg?v=1767368137]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>90.00</price_with_vat>
         <vat>24.00</vat>
@@ -21884,10 +21790,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-psalidi-vintage?variant=31374045413411]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-435339.jpg?v=1767368114]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-330217.jpg?v=1767368119]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-383531.jpg?v=1767368124]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-697099.jpg?v=1767368126]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-812178.jpg?v=1767368133]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-375332.jpg?v=1767368137]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>91.00</price_with_vat>
         <vat>24.00</vat>
@@ -21914,10 +21816,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-psalidi-vintage?variant=31374045446179]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-435339.jpg?v=1767368114]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-330217.jpg?v=1767368119]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-383531.jpg?v=1767368124]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-697099.jpg?v=1767368126]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-812178.jpg?v=1767368133]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-psalidi-vintage-apo-ashmi-925-kosmhmata-emmanuela-375332.jpg?v=1767368137]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>92.00</price_with_vat>
         <vat>24.00</vat>
@@ -21944,6 +21842,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-rolo-cinema?variant=31374049148963]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-154512.jpg?v=1767368085]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-188764.jpg?v=1767368091]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/29.jpg?v=1786015621]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-565309.jpg?v=1767368097]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-631592.jpg?v=1767368102]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-490374.jpg?v=1767368107]]></additionalimage>
@@ -21974,6 +21873,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-rolo-cinema?variant=31374049181731]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-154512.jpg?v=1767368085]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-188764.jpg?v=1767368091]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/29.jpg?v=1786015621]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-565309.jpg?v=1767368097]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-631592.jpg?v=1767368102]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-490374.jpg?v=1767368107]]></additionalimage>
@@ -22004,6 +21904,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-rolo-cinema?variant=31374049214499]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-154512.jpg?v=1767368085]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-188764.jpg?v=1767368091]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/29.jpg?v=1786015621]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-565309.jpg?v=1767368097]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-631592.jpg?v=1767368102]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-490374.jpg?v=1767368107]]></additionalimage>
@@ -22032,8 +21933,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374049247267</id>
         <name><![CDATA[Μενταγιόν ανδρικό ρολό σινεμά χειροποίητο από ασήμι 925 αλυσίδα ρολό 50cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-rolo-cinema?variant=31374049247267]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-154512.jpg?v=1767368085]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-188764.jpg?v=1767368091]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/29.jpg?v=1786015621]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-565309.jpg?v=1767368097]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-631592.jpg?v=1767368102]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-490374.jpg?v=1767368107]]></additionalimage>
@@ -22062,8 +21962,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374049280035</id>
         <name><![CDATA[Μενταγιόν ανδρικό ρολό σινεμά χειροποίητο από ασήμι 925 αλυσίδα ρολό 55cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-rolo-cinema?variant=31374049280035]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-154512.jpg?v=1767368085]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-188764.jpg?v=1767368091]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/29.jpg?v=1786015621]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-565309.jpg?v=1767368097]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-631592.jpg?v=1767368102]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-490374.jpg?v=1767368107]]></additionalimage>
@@ -22092,8 +21991,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374049312803</id>
         <name><![CDATA[Μενταγιόν ανδρικό ρολό σινεμά χειροποίητο από ασήμι 925 αλυσίδα ρολό 60cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-rolo-cinema?variant=31374049312803]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-154512.jpg?v=1767368085]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-188764.jpg?v=1767368091]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/29.jpg?v=1786015621]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-565309.jpg?v=1767368097]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-631592.jpg?v=1767368102]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-490374.jpg?v=1767368107]]></additionalimage>
@@ -22124,10 +22022,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-rolo-cinema?variant=31374049345571]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-154512.jpg?v=1767368085]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-188764.jpg?v=1767368091]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-565309.jpg?v=1767368097]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-631592.jpg?v=1767368102]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-490374.jpg?v=1767368107]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-383442.jpg?v=1767368108]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>85.00</price_with_vat>
         <vat>24.00</vat>
@@ -22154,10 +22048,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-rolo-cinema?variant=31374049378339]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-154512.jpg?v=1767368085]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-188764.jpg?v=1767368091]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-565309.jpg?v=1767368097]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-631592.jpg?v=1767368102]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-490374.jpg?v=1767368107]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-383442.jpg?v=1767368108]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>87.00</price_with_vat>
         <vat>24.00</vat>
@@ -22184,10 +22074,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-rolo-cinema?variant=31374049411107]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-154512.jpg?v=1767368085]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-188764.jpg?v=1767368091]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-565309.jpg?v=1767368097]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-631592.jpg?v=1767368102]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-490374.jpg?v=1767368107]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-rolo-sinema-apo-ashmi-925-kosmhmata-emmanuela-383442.jpg?v=1767368108]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>89.00</price_with_vat>
         <vat>24.00</vat>
@@ -22230,7 +22116,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
 Πλήθος Τεμαχίων: Μονό (1 τεμάχιο)
 Φύλο: Ανδρικό
 
-Ένας κλασικός ανδρικός κρίκος που ξεχωρίζει για τη minimal αισθητική και την ποιότητα του ασημιού 925. Χειροποίητο κόσμημα που συνδυάζει την αισθητική της απλότητας με το ιδιαίτερο ανδρικό στυλ. Χαρακτηριστικά & Υλικά Τύπος: Ανδρικό σκουλαρίκι κρίκος Υλικό: Ασήμι 925 επιροδιωμένο Βάρος: 1,7g Διάμετρος: 17mm Χρώματα: Ασημένιο, Μαύρο ανθρακί, Επιχρυσωμένο Πώληση: Πωλείται μονό — η τιμή αφορά ένα τεμάχιο Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει, ανθεκτικό φινίρισμα Η Ιστορία του Κοσμήματος Ο κρίκος είναι ένα από τα πιο διαχρονικά και αγαπημένα ανδρικά κοσμήματα. Συμβολίζει τη δύναμη, την ελευθερία και το ξεχωριστό στυλ. Από τους αρχαίους πολεμιστές μέχρι τους σύγχρονους άντρες που αναζητούν ένα minimal αλλά εντυπωσιακό αξεσουάρ, ο κρίκος παραμένει επίκαιρος. Η λιτή γραμμή και το καθαρό design τον καθιστούν ιδανικό για κάθε άντρα που θέλει να εκφράσει την προσωπικότητά του με διακριτικότητα. Πώς να τον φορέσεις Αυτός ο κλασικός κρίκος ταιριάζει τέλεια σε κάθε περίσταση — από καθημερινό casual look μέχρι πιο rock ή μοντέρνο εμφανίσεις. Συνδυάζεται άψογα με t-shirt και jeans για έναν χαλαρό αλλά stylish χαρακτήρα, ή με πιο επίσημα ρούχα για μια πινελιά ατμόσφαιρας. Διαθέσιμος σε τρία χρώματα (ασημί, μαύρο ανθρακί, επιχρυσωμένο), μπορείς να επιλέξεις αυτό που ταιριάζει στο προσωπικό σου στυλ. Αποτελεί επίσης ιδανικό δώρο για άντρες που εκτιμούν την ποιότητα και το ιδιαίτερο γούστο. Έρχεται σε συσκευασία δώρου — ιδανικό και για να το προσφέρεις.]]></description>
+Ένας κλασικός ανδρικός κρίκος που ξεχωρίζει για τη minimal αισθητική και την ποιότητα του ασημιού 925. Χειροποίητο κόσμημα που συνδυάζει την αισθητική της απλότητας με το ιδιαίτερο ανδρικό στυλ. Χαρακτηριστικά & Υλικά Τύπος: Ανδρικό σκουλαρίκι κρίκος Υλικό: Ασήμι 925 Βάρος: 1,7g Διάμετρος: 17mm Χρώματα: Ασημένιο, Μαύρο ανθρακί, Επιχρυσωμένο Πώληση: Πωλείται μονό — η τιμή αφορά ένα τεμάχιο Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει, ανθεκτικό φινίρισμα Η Ιστορία του Κοσμήματος Ο κρίκος είναι ένα από τα πιο διαχρονικά και αγαπημένα ανδρικά κοσμήματα. Συμβολίζει τη δύναμη, την ελευθερία και το ξεχωριστό στυλ. Από τους αρχαίους πολεμιστές μέχρι τους σύγχρονους άντρες που αναζητούν ένα minimal αλλά εντυπωσιακό αξεσουάρ, ο κρίκος παραμένει επίκαιρος. Η λιτή γραμμή και το καθαρό design τον καθιστούν ιδανικό για κάθε άντρα που θέλει να εκφράσει την προσωπικότητά του με διακριτικότητα. Πώς να τον φορέσεις Αυτός ο κλασικός κρίκος ταιριάζει τέλεια σε κάθε περίσταση — από καθημερινό casual look μέχρι πιο rock ή μοντέρνο εμφανίσεις. Συνδυάζεται άψογα με t-shirt και jeans για έναν χαλαρό αλλά stylish χαρακτήρα, ή με πιο επίσημα ρούχα για μια πινελιά ατμόσφαιρας. Διαθέσιμος σε τρία χρώματα (ασημί, μαύρο ανθρακί, επιχρυσωμένο), μπορείς να επιλέξεις αυτό που ταιριάζει στο προσωπικό σου στυλ. Αποτελεί επίσης ιδανικό δώρο για άντρες που εκτιμούν την ποιότητα και το ιδιαίτερο γούστο. Έρχεται σε συσκευασία δώρου — ιδανικό και για να το προσφέρεις.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -22256,7 +22142,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
 Πλήθος Τεμαχίων: Μονό (1 τεμάχιο)
 Φύλο: Ανδρικό
 
-Ένας κλασικός ανδρικός κρίκος που ξεχωρίζει για τη minimal αισθητική και την ποιότητα του ασημιού 925. Χειροποίητο κόσμημα που συνδυάζει την αισθητική της απλότητας με το ιδιαίτερο ανδρικό στυλ. Χαρακτηριστικά & Υλικά Τύπος: Ανδρικό σκουλαρίκι κρίκος Υλικό: Ασήμι 925 επιροδιωμένο Βάρος: 1,7g Διάμετρος: 17mm Χρώματα: Ασημένιο, Μαύρο ανθρακί, Επιχρυσωμένο Πώληση: Πωλείται μονό — η τιμή αφορά ένα τεμάχιο Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει, ανθεκτικό φινίρισμα Η Ιστορία του Κοσμήματος Ο κρίκος είναι ένα από τα πιο διαχρονικά και αγαπημένα ανδρικά κοσμήματα. Συμβολίζει τη δύναμη, την ελευθερία και το ξεχωριστό στυλ. Από τους αρχαίους πολεμιστές μέχρι τους σύγχρονους άντρες που αναζητούν ένα minimal αλλά εντυπωσιακό αξεσουάρ, ο κρίκος παραμένει επίκαιρος. Η λιτή γραμμή και το καθαρό design τον καθιστούν ιδανικό για κάθε άντρα που θέλει να εκφράσει την προσωπικότητά του με διακριτικότητα. Πώς να τον φορέσεις Αυτός ο κλασικός κρίκος ταιριάζει τέλεια σε κάθε περίσταση — από καθημερινό casual look μέχρι πιο rock ή μοντέρνο εμφανίσεις. Συνδυάζεται άψογα με t-shirt και jeans για έναν χαλαρό αλλά stylish χαρακτήρα, ή με πιο επίσημα ρούχα για μια πινελιά ατμόσφαιρας. Διαθέσιμος σε τρία χρώματα (ασημί, μαύρο ανθρακί, επιχρυσωμένο), μπορείς να επιλέξεις αυτό που ταιριάζει στο προσωπικό σου στυλ. Αποτελεί επίσης ιδανικό δώρο για άντρες που εκτιμούν την ποιότητα και το ιδιαίτερο γούστο. Έρχεται σε συσκευασία δώρου — ιδανικό και για να το προσφέρεις.]]></description>
+Ένας κλασικός ανδρικός κρίκος που ξεχωρίζει για τη minimal αισθητική και την ποιότητα του ασημιού 925. Χειροποίητο κόσμημα που συνδυάζει την αισθητική της απλότητας με το ιδιαίτερο ανδρικό στυλ. Χαρακτηριστικά & Υλικά Τύπος: Ανδρικό σκουλαρίκι κρίκος Υλικό: Ασήμι 925 Βάρος: 1,7g Διάμετρος: 17mm Χρώματα: Ασημένιο, Μαύρο ανθρακί, Επιχρυσωμένο Πώληση: Πωλείται μονό — η τιμή αφορά ένα τεμάχιο Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει, ανθεκτικό φινίρισμα Η Ιστορία του Κοσμήματος Ο κρίκος είναι ένα από τα πιο διαχρονικά και αγαπημένα ανδρικά κοσμήματα. Συμβολίζει τη δύναμη, την ελευθερία και το ξεχωριστό στυλ. Από τους αρχαίους πολεμιστές μέχρι τους σύγχρονους άντρες που αναζητούν ένα minimal αλλά εντυπωσιακό αξεσουάρ, ο κρίκος παραμένει επίκαιρος. Η λιτή γραμμή και το καθαρό design τον καθιστούν ιδανικό για κάθε άντρα που θέλει να εκφράσει την προσωπικότητά του με διακριτικότητα. Πώς να τον φορέσεις Αυτός ο κλασικός κρίκος ταιριάζει τέλεια σε κάθε περίσταση — από καθημερινό casual look μέχρι πιο rock ή μοντέρνο εμφανίσεις. Συνδυάζεται άψογα με t-shirt και jeans για έναν χαλαρό αλλά stylish χαρακτήρα, ή με πιο επίσημα ρούχα για μια πινελιά ατμόσφαιρας. Διαθέσιμος σε τρία χρώματα (ασημί, μαύρο ανθρακί, επιχρυσωμένο), μπορείς να επιλέξεις αυτό που ταιριάζει στο προσωπικό σου στυλ. Αποτελεί επίσης ιδανικό δώρο για άντρες που εκτιμούν την ποιότητα και το ιδιαίτερο γούστο. Έρχεται σε συσκευασία δώρου — ιδανικό και για να το προσφέρεις.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -22265,12 +22151,10 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-skoulariki-krikos?variant=31374061076515]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-andriko-skoylariki-krikos-apo-ashmi-925-kosmhmata-emmanuela-346005.jpg?v=1767368043]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-andriko-skoylariki-krikos-apo-ashmi-925-kosmhmata-emmanuela-977071.jpg?v=1767368051]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1304_2.jpg?v=1786019357]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-andriko-skoylariki-krikos-apo-ashmi-925-kosmhmata-emmanuela-680451.jpg?v=1767368054]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-andriko-skoylariki-krikos-apo-ashmi-925-kosmhmata-emmanuela-792279.jpg?v=1767368059]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-andriko-skoylariki-krikos-apo-ashmi-925-kosmhmata-emmanuela-497840.jpg?v=1767368064]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-andriko-skoylariki-krikos-apo-ashmi-925-kosmhmata-emmanuela-174321.jpg?v=1767368068]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-andriko-skoylariki-krikos-apo-ashmi-925-kosmhmata-emmanuela-794598.jpg?v=1767368076]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-andriko-skoylariki-krikos-apo-ashmi-925-kosmhmata-emmanuela-664132.jpg?v=1767368081]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1304_4.jpg?v=1786019357]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1304_3.jpg?v=1786019357]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Ανδρικά Σκουλαρίκια]]></category>
         <price_with_vat>39.00</price_with_vat>
         <vat>24.00</vat>
@@ -22288,7 +22172,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
 Πλήθος Τεμαχίων: Μονό (1 τεμάχιο)
 Φύλο: Ανδρικό
 
-Ένας κλασικός ανδρικός κρίκος που ξεχωρίζει για τη minimal αισθητική και την ποιότητα του ασημιού 925. Χειροποίητο κόσμημα που συνδυάζει την αισθητική της απλότητας με το ιδιαίτερο ανδρικό στυλ. Χαρακτηριστικά & Υλικά Τύπος: Ανδρικό σκουλαρίκι κρίκος Υλικό: Ασήμι 925 επιροδιωμένο Βάρος: 1,7g Διάμετρος: 17mm Χρώματα: Ασημένιο, Μαύρο ανθρακί, Επιχρυσωμένο Πώληση: Πωλείται μονό — η τιμή αφορά ένα τεμάχιο Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει, ανθεκτικό φινίρισμα Η Ιστορία του Κοσμήματος Ο κρίκος είναι ένα από τα πιο διαχρονικά και αγαπημένα ανδρικά κοσμήματα. Συμβολίζει τη δύναμη, την ελευθερία και το ξεχωριστό στυλ. Από τους αρχαίους πολεμιστές μέχρι τους σύγχρονους άντρες που αναζητούν ένα minimal αλλά εντυπωσιακό αξεσουάρ, ο κρίκος παραμένει επίκαιρος. Η λιτή γραμμή και το καθαρό design τον καθιστούν ιδανικό για κάθε άντρα που θέλει να εκφράσει την προσωπικότητά του με διακριτικότητα. Πώς να τον φορέσεις Αυτός ο κλασικός κρίκος ταιριάζει τέλεια σε κάθε περίσταση — από καθημερινό casual look μέχρι πιο rock ή μοντέρνο εμφανίσεις. Συνδυάζεται άψογα με t-shirt και jeans για έναν χαλαρό αλλά stylish χαρακτήρα, ή με πιο επίσημα ρούχα για μια πινελιά ατμόσφαιρας. Διαθέσιμος σε τρία χρώματα (ασημί, μαύρο ανθρακί, επιχρυσωμένο), μπορείς να επιλέξεις αυτό που ταιριάζει στο προσωπικό σου στυλ. Αποτελεί επίσης ιδανικό δώρο για άντρες που εκτιμούν την ποιότητα και το ιδιαίτερο γούστο. Έρχεται σε συσκευασία δώρου — ιδανικό και για να το προσφέρεις.]]></description>
+Ένας κλασικός ανδρικός κρίκος που ξεχωρίζει για τη minimal αισθητική και την ποιότητα του ασημιού 925. Χειροποίητο κόσμημα που συνδυάζει την αισθητική της απλότητας με το ιδιαίτερο ανδρικό στυλ. Χαρακτηριστικά & Υλικά Τύπος: Ανδρικό σκουλαρίκι κρίκος Υλικό: Ασήμι 925 Βάρος: 1,7g Διάμετρος: 17mm Χρώματα: Ασημένιο, Μαύρο ανθρακί, Επιχρυσωμένο Πώληση: Πωλείται μονό — η τιμή αφορά ένα τεμάχιο Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει, ανθεκτικό φινίρισμα Η Ιστορία του Κοσμήματος Ο κρίκος είναι ένα από τα πιο διαχρονικά και αγαπημένα ανδρικά κοσμήματα. Συμβολίζει τη δύναμη, την ελευθερία και το ξεχωριστό στυλ. Από τους αρχαίους πολεμιστές μέχρι τους σύγχρονους άντρες που αναζητούν ένα minimal αλλά εντυπωσιακό αξεσουάρ, ο κρίκος παραμένει επίκαιρος. Η λιτή γραμμή και το καθαρό design τον καθιστούν ιδανικό για κάθε άντρα που θέλει να εκφράσει την προσωπικότητά του με διακριτικότητα. Πώς να τον φορέσεις Αυτός ο κλασικός κρίκος ταιριάζει τέλεια σε κάθε περίσταση — από καθημερινό casual look μέχρι πιο rock ή μοντέρνο εμφανίσεις. Συνδυάζεται άψογα με t-shirt και jeans για έναν χαλαρό αλλά stylish χαρακτήρα, ή με πιο επίσημα ρούχα για μια πινελιά ατμόσφαιρας. Διαθέσιμος σε τρία χρώματα (ασημί, μαύρο ανθρακί, επιχρυσωμένο), μπορείς να επιλέξεις αυτό που ταιριάζει στο προσωπικό σου στυλ. Αποτελεί επίσης ιδανικό δώρο για άντρες που εκτιμούν την ποιότητα και το ιδιαίτερο γούστο. Έρχεται σε συσκευασία δώρου — ιδανικό και για να το προσφέρεις.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -24122,10 +24006,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374078541859</id>
         <name><![CDATA[Μενταγιόν ανδρικό ακουστικά χειροποίητο από ασήμι 925 κορδόνι τεχνόδερμα]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-akoustika?variant=31374078541859]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-251907.jpg?v=1767367817]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-908759.jpg?v=1767367825]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-694942.jpg?v=1767367829]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-701609.jpg?v=1767367834]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-643.jpg?v=1786011004]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-393724.jpg?v=1767367839]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-139059.jpg?v=1767367844]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-252151.jpg?v=1767367848]]></additionalimage>
@@ -24153,13 +24034,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374078640163</id>
         <name><![CDATA[Μενταγιόν ανδρικό ακουστικά χειροποίητο από ασήμι 925 αλυσίδα ρολό]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-akoustika?variant=31374078640163]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-251907.jpg?v=1767367817]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-908759.jpg?v=1767367825]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-694942.jpg?v=1767367829]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-701609.jpg?v=1767367834]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-393724.jpg?v=1767367839]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-139059.jpg?v=1767367844]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-252151.jpg?v=1767367848]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-644.jpg?v=1786011004]]></image>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>94.00</price_with_vat>
         <vat>24.00</vat>
@@ -24188,9 +24063,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-908759.jpg?v=1767367825]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-694942.jpg?v=1767367829]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-701609.jpg?v=1767367834]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-393724.jpg?v=1767367839]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-139059.jpg?v=1767367844]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-akoystika-apo-ashmi-925-kosmhmata-emmanuela-252151.jpg?v=1767367848]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>104.00</price_with_vat>
         <vat>24.00</vat>
@@ -24324,6 +24196,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-glompos?variant=31374089388067]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-934763.jpg?v=1767367705]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-979262.jpg?v=1767367709]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/28.jpg?v=1786014767]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-334563.jpg?v=1767367715]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-866211.jpg?v=1767367721]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-583354.jpg?v=1767367723]]></additionalimage>
@@ -24353,6 +24226,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-glompos?variant=31374089420835]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-934763.jpg?v=1767367705]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-979262.jpg?v=1767367709]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/28.jpg?v=1786014767]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-334563.jpg?v=1767367715]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-866211.jpg?v=1767367721]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-583354.jpg?v=1767367723]]></additionalimage>
@@ -24382,6 +24256,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-glompos?variant=31374089453603]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-934763.jpg?v=1767367705]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-979262.jpg?v=1767367709]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/28.jpg?v=1786014767]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-334563.jpg?v=1767367715]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-866211.jpg?v=1767367721]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-583354.jpg?v=1767367723]]></additionalimage>
@@ -24409,8 +24284,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374089486371</id>
         <name><![CDATA[Μενταγιόν ανδρικό γλόμπος χειροποίητο από ασήμι 925 αλυσίδα ρολό 50cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-glompos?variant=31374089486371]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-934763.jpg?v=1767367705]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-979262.jpg?v=1767367709]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/28.jpg?v=1786014767]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-334563.jpg?v=1767367715]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-866211.jpg?v=1767367721]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-583354.jpg?v=1767367723]]></additionalimage>
@@ -24438,8 +24312,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374089519139</id>
         <name><![CDATA[Μενταγιόν ανδρικό γλόμπος χειροποίητο από ασήμι 925 αλυσίδα ρολό 55cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-glompos?variant=31374089519139]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-934763.jpg?v=1767367705]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-979262.jpg?v=1767367709]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/28.jpg?v=1786014767]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-334563.jpg?v=1767367715]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-866211.jpg?v=1767367721]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-583354.jpg?v=1767367723]]></additionalimage>
@@ -24467,8 +24340,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374089551907</id>
         <name><![CDATA[Μενταγιόν ανδρικό γλόμπος χειροποίητο από ασήμι 925 αλυσίδα ρολό 60cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-glompos?variant=31374089551907]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-934763.jpg?v=1767367705]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-979262.jpg?v=1767367709]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/28.jpg?v=1786014767]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-334563.jpg?v=1767367715]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-866211.jpg?v=1767367721]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-583354.jpg?v=1767367723]]></additionalimage>
@@ -24498,9 +24370,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-glompos?variant=31374089584675]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-934763.jpg?v=1767367705]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-979262.jpg?v=1767367709]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-334563.jpg?v=1767367715]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-866211.jpg?v=1767367721]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-583354.jpg?v=1767367723]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>75.00</price_with_vat>
         <vat>24.00</vat>
@@ -24527,9 +24396,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-glompos?variant=31374089617443]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-934763.jpg?v=1767367705]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-979262.jpg?v=1767367709]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-334563.jpg?v=1767367715]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-866211.jpg?v=1767367721]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-583354.jpg?v=1767367723]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>77.00</price_with_vat>
         <vat>24.00</vat>
@@ -24556,9 +24422,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-glompos?variant=31374089650211]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-934763.jpg?v=1767367705]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-979262.jpg?v=1767367709]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-334563.jpg?v=1767367715]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-866211.jpg?v=1767367721]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-glompos-apo-ashmi-925-kosmhmata-emmanuela-583354.jpg?v=1767367723]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>79.00</price_with_vat>
         <vat>24.00</vat>
@@ -25246,10 +25109,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374120026147</id>
         <name><![CDATA[Μενταγιόν ανδρικό σαΐτα χειροποίητο από ασήμι 925 κορδόνι τεχνόδερμα]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-saita?variant=31374120026147]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-971504.jpg?v=1767367435]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-106396.jpg?v=1767367442]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-857260.jpg?v=1767367444]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-892565.jpg?v=1767367450]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-689.jpg?v=1786012767]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-701263.jpg?v=1767367455]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-759188.jpg?v=1767367460]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-549098.jpg?v=1767367463]]></additionalimage>
@@ -25277,13 +25137,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374120124451</id>
         <name><![CDATA[Μενταγιόν ανδρικό σαΐτα χειροποίητο από ασήμι 925 αλυσίδα ρολό]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-saita?variant=31374120124451]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-971504.jpg?v=1767367435]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-106396.jpg?v=1767367442]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-857260.jpg?v=1767367444]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-892565.jpg?v=1767367450]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-701263.jpg?v=1767367455]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-759188.jpg?v=1767367460]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-549098.jpg?v=1767367463]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-687.jpg?v=1786012766]]></image>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>69.00</price_with_vat>
         <vat>24.00</vat>
@@ -25312,9 +25166,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-106396.jpg?v=1767367442]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-857260.jpg?v=1767367444]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-892565.jpg?v=1767367450]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-701263.jpg?v=1767367455]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-759188.jpg?v=1767367460]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-saita-apo-ashmi-925-kosmhmata-emmanuela-549098.jpg?v=1767367463]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>79.00</price_with_vat>
         <vat>24.00</vat>
@@ -26763,6 +26614,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-maska-katadysis?variant=31374176714787]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-737995.jpg?v=1767366969]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-264945.jpg?v=1767366975]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/27.jpg?v=1786015467]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-991921.jpg?v=1767366980]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-573958.jpg?v=1767366985]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-913091.jpg?v=1767366991]]></additionalimage>
@@ -26793,6 +26645,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-maska-katadysis?variant=31374176747555]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-737995.jpg?v=1767366969]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-264945.jpg?v=1767366975]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/27.jpg?v=1786015467]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-991921.jpg?v=1767366980]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-573958.jpg?v=1767366985]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-913091.jpg?v=1767366991]]></additionalimage>
@@ -26823,6 +26676,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-maska-katadysis?variant=31374176780323]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-737995.jpg?v=1767366969]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-264945.jpg?v=1767366975]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/27.jpg?v=1786015467]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-991921.jpg?v=1767366980]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-573958.jpg?v=1767366985]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-913091.jpg?v=1767366991]]></additionalimage>
@@ -26851,8 +26705,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374176813091</id>
         <name><![CDATA[Μενταγιόν ανδρικό μάσκα κατάδυσης χειροποίητο από ασήμι 925 αλυσίδα ρολό 50cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-maska-katadysis?variant=31374176813091]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-737995.jpg?v=1767366969]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-264945.jpg?v=1767366975]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/27.jpg?v=1786015467]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-991921.jpg?v=1767366980]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-573958.jpg?v=1767366985]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-913091.jpg?v=1767366991]]></additionalimage>
@@ -26881,8 +26734,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374176845859</id>
         <name><![CDATA[Μενταγιόν ανδρικό μάσκα κατάδυσης χειροποίητο από ασήμι 925 αλυσίδα ρολό 55cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-maska-katadysis?variant=31374176845859]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-737995.jpg?v=1767366969]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-264945.jpg?v=1767366975]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/27.jpg?v=1786015467]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-991921.jpg?v=1767366980]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-573958.jpg?v=1767366985]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-913091.jpg?v=1767366991]]></additionalimage>
@@ -26911,8 +26763,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374176878627</id>
         <name><![CDATA[Μενταγιόν ανδρικό μάσκα κατάδυσης χειροποίητο από ασήμι 925 αλυσίδα ρολό 60cm]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-maska-katadysis?variant=31374176878627]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-737995.jpg?v=1767366969]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-264945.jpg?v=1767366975]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/27.jpg?v=1786015467]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-991921.jpg?v=1767366980]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-573958.jpg?v=1767366985]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-913091.jpg?v=1767366991]]></additionalimage>
@@ -26943,10 +26794,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-maska-katadysis?variant=31374176911395]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-737995.jpg?v=1767366969]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-264945.jpg?v=1767366975]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-991921.jpg?v=1767366980]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-573958.jpg?v=1767366985]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-913091.jpg?v=1767366991]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-463308.jpg?v=1767366994]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>75.00</price_with_vat>
         <vat>24.00</vat>
@@ -26973,10 +26820,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-maska-katadysis?variant=31374176944163]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-737995.jpg?v=1767366969]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-264945.jpg?v=1767366975]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-991921.jpg?v=1767366980]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-573958.jpg?v=1767366985]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-913091.jpg?v=1767366991]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-463308.jpg?v=1767366994]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>77.00</price_with_vat>
         <vat>24.00</vat>
@@ -27003,10 +26846,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-maska-katadysis?variant=31374176976931]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-737995.jpg?v=1767366969]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-264945.jpg?v=1767366975]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-991921.jpg?v=1767366980]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-573958.jpg?v=1767366985]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-913091.jpg?v=1767366991]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-50cm-kremasto-mentagion-maska-katadyshs-apo-ashmi-925-kosmhmata-emmanuela-463308.jpg?v=1767366994]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>79.00</price_with_vat>
         <vat>24.00</vat>
@@ -27060,19 +26899,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374183301155</id>
         <name><![CDATA[Μενταγιόν ανδρικό φωτογραφική μηχανή χειροποίητο από ασήμι 925 κορδόνι τεχνόδερμα]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-fotografiki-camera?variant=31374183301155]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-902852.jpg?v=1767366870]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-359655.jpg?v=1767366875]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-449184.jpg?v=1767366882]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-406003.jpg?v=1767366886]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-634743.jpg?v=1767366891]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-762681.jpg?v=1767366898]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-909254.jpg?v=1767366903]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-961766.jpg?v=1767366907]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-418880.jpg?v=1767366911]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-509787.jpg?v=1767366923]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-203534.jpg?v=1767366927]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-348781.jpg?v=1767366931]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-382123.jpg?v=1767366937]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-649.jpg?v=1786011589]]></image>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>59.00</price_with_vat>
         <vat>24.00</vat>
@@ -27098,18 +26925,6 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <name><![CDATA[Μενταγιόν ανδρικό φωτογραφική μηχανή χειροποίητο από ασήμι 925 αλυσίδα μπίλια]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-fotografiki-camera?variant=31374183890979]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-902852.jpg?v=1767366870]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-359655.jpg?v=1767366875]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-449184.jpg?v=1767366882]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-406003.jpg?v=1767366886]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-634743.jpg?v=1767366891]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-762681.jpg?v=1767366898]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-909254.jpg?v=1767366903]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-961766.jpg?v=1767366907]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-418880.jpg?v=1767366911]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-509787.jpg?v=1767366923]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-203534.jpg?v=1767366927]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-348781.jpg?v=1767366931]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-382123.jpg?v=1767366937]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>89.00</price_with_vat>
         <vat>24.00</vat>
@@ -27134,19 +26949,12 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <id>31374183596067</id>
         <name><![CDATA[Μενταγιόν ανδρικό φωτογραφική μηχανή χειροποίητο από ασήμι 925 αλυσίδα ρολό]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-kremasto-fotografiki-camera?variant=31374183596067]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-902852.jpg?v=1767366870]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-359655.jpg?v=1767366875]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-449184.jpg?v=1767366882]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-406003.jpg?v=1767366886]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-634743.jpg?v=1767366891]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-762681.jpg?v=1767366898]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-909254.jpg?v=1767366903]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-650.jpg?v=1786011589]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-961766.jpg?v=1767366907]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-418880.jpg?v=1767366911]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-509787.jpg?v=1767366923]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-203534.jpg?v=1767366927]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-348781.jpg?v=1767366931]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-382123.jpg?v=1767366937]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Μενταγιόν > Ανδρικά Μενταγιόν]]></category>
         <price_with_vat>79.00</price_with_vat>
         <vat>24.00</vat>
@@ -34541,7 +34349,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
 Πλήθος Τεμαχίων: Μονό (1 τεμάχιο)
 Φύλο: Ανδρικό
 
-Ανδρικός κρίκος με άγκυρα από οξειδωμένο ασήμι 925 — ένα κόσμημα γεμάτο περιπέτεια και μυστήριο για άνδρες που αγαπούν τα ταξίδια και τη θάλασσα. Με έντονο χαρακτήρα και πρωτότυπο design που ξεχωρίζει. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 (sterling silver) με ειδική επεξεργασία οξείδωσης Τύπος: Ανδρικό σκουλαρίκι κρίκος Σχέδιο: Με άγκυρα Βάρος: 2,2g Διαστάσεις: Ύψος 35mm, Πλάτος 14mm Φινίρισμα: Οξειδωμένο σατινέ φινίρισμα Διαθέσιμα φινιρίσματα: Μονό, Ζευγάρι Πωλείται μονό — η τιμή αφορά ένα τεμάχιο Piercing: Δεν χρειάζεται Χειροποίηση: Κατασκευασμένο στην Ελλάδα με προσοχή στη λεπτομέρεια Η Ιστορία του Κοσμήματος Η άγκυρα είναι ένα από τα πιο συμβολικά μοτίβα για άνδρες που αγαπούν τη θάλασσα, την περιπέτεια και τα ταξίδια. Συμβολίζει τη σταθερότητα, την ασφάλεια και την αντοχή ακόμη και στα πιο δύσκολα ταξίδια της ζωής. Αυτός ο ανδρικός κρίκος με άγκυρα φέρνει το πνεύμα της θάλασσας και της ελευθερίας στην καθημερινότητα, προσθέτοντας μυστηριώδη και δυναμική αύρα στο στυλ σου. Ιδανικός για δυναμικούς άνδρες που επιλέγουν να ξεχωρίζουν. Πώς να τον φορέσεις Ο κρίκος με άγκυρα είναι ιδανικός για rock, gothic και μοντέρνο ανδρικό στυλ. Συνδυάζεται άψογα με casual ντύσιμο — τζιν, μαύρο t-shirt και δερμάτινο μπουφάν — αλλά και με πιο trendy εμφανίσεις. Φόρεσέ τον μόνο του για minimal look ή συνδύασέ τον με άλλα ανδρικά κοσμήματα από τη συλλογή για πιο έντονο αποτέλεσμα. Λόγω του οξειδωμένου φινιρίσματος, είναι εξαιρετικά ανθεκτικό και άτρωτο στους παράγοντες που επηρεάζουν το ασήμι. Αποτελεί ιδανική επιλογή δώρου για άνδρες που αγαπούν τη θάλασσα, τα ταξίδια και την περιπέτεια — ένα χειροποίητο κόσμημα με ψυχή που παραδίδεται σε καλαίσθητο κουτί δώρου με χάρτινη τσάντα.]]></description>
+Ανδρικός κρίκος με άγκυρα από οξειδωμένο ασήμι 925 — ένα κόσμημα γεμάτο περιπέτεια και μυστήριο για άνδρες που αγαπούν τα ταξίδια και τη θάλασσα. Με έντονο χαρακτήρα και πρωτότυπο design που ξεχωρίζει. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 (sterling silver) με ειδική επεξεργασία οξείδωσης Τύπος: Ανδρικό σκουλαρίκι κρίκος Σχέδιο: Με άγκυρα Βάρος: 2,2g Διαστάσεις: Ύψος 35mm, Πλάτος 14mm Φινίρισμα: Οξειδωμένο σατινέ φινίρισμα Πωλείται μονό — η τιμή αφορά ένα τεμάχιο Piercing: Χρειάζεται τρύπα Χειροποίηση: Κατασκευασμένο στην Ελλάδα με προσοχή στη λεπτομέρεια Η Ιστορία του Κοσμήματος Η άγκυρα είναι ένα από τα πιο συμβολικά μοτίβα για άνδρες που αγαπούν τη θάλασσα, την περιπέτεια και τα ταξίδια. Συμβολίζει τη σταθερότητα, την ασφάλεια και την αντοχή ακόμη και στα πιο δύσκολα ταξίδια της ζωής. Αυτός ο ανδρικός κρίκος με άγκυρα φέρνει το πνεύμα της θάλασσας και της ελευθερίας στην καθημερινότητα, προσθέτοντας μυστηριώδη και δυναμική αύρα στο στυλ σου. Ιδανικός για δυναμικούς άνδρες που επιλέγουν να ξεχωρίζουν. Πώς να τον φορέσεις Ο κρίκος με άγκυρα είναι ιδανικός για rock, gothic και μοντέρνο ανδρικό στυλ. Συνδυάζεται άψογα με casual ντύσιμο — τζιν, μαύρο t-shirt και δερμάτινο μπουφάν — αλλά και με πιο trendy εμφανίσεις. Φόρεσέ τον μόνο του για minimal look ή συνδύασέ τον με άλλα ανδρικά κοσμήματα από τη συλλογή για πιο έντονο αποτέλεσμα. Λόγω του οξειδωμένου φινιρίσματος, είναι εξαιρετικά ανθεκτικό και άτρωτο στους παράγοντες που επηρεάζουν το ασήμι. Αποτελεί ιδανική επιλογή δώρου για άνδρες που αγαπούν τη θάλασσα, τα ταξίδια και την περιπέτεια — ένα χειροποίητο κόσμημα με ψυχή που παραδίδεται σε καλαίσθητο κουτί δώρου με χάρτινη τσάντα.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -37623,14 +37431,14 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
 Πλήθος Τεμαχίων: Μονό (1 τεμάχιο)
 Φύλο: Ανδρικό
 
-Ένας μικρός κρίκος με ραβδωτή υφή που προσθέτει ανδρική αισθητική στο στυλ σου. Χειροποίητος από ασήμι 925, με ανάγλυφες λεπτομέρειες που τον κάνουν να ξεχωρίζει. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Τύπος: Ανδρικός κρίκος μικρός Σχεδιασμός: Ραβδωτή ανάγλυφη επιφάνεια Διάμετρος: 14mm Βάρος: 2,40g Πώληση: Μονό — η τιμή αφορά ένα τεμάχιο Διαθέσιμα φινιρίσματα: Επιχρυσωμένο, Ασημένιο, Οξειδωμένο, Μαύρο ανθρακί Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει Piercing: Δεν χρειάζεται Η Ιστορία του Κοσμήματος Ο κρίκος είναι ένα από τα πιο διαχρονικά ανδρικά κοσμήματα, σύμβολο δύναμης και ανεξαρτησίας. Η ραβδωτή υφή προσθέτει μια τολμηρή, rock αισθητική που αντανακλά τον δυναμικό χαρακτήρα του κατόχου του. Ένα σκουλαρίκι που συνδυάζει την κλασική γραμμή του κρίκου με σύγχρονες λεπτομέρειες, για άνδρες που δεν συμβιβάζονται με το συνηθισμένο. Πώς να τον φορέσεις Ο μικρός ραβδωτός κρίκος είναι ιδανικός για καθημερινή χρήση και ταιριάζει τέλεια σε sport, rock ή casual εμφανίσεις. Φόρεσέ τον μόνο του για minimal στυλ ή συνδύασέ τον με άλλα ανδρικά κοσμήματα για πιο έντονο look. Λόγω του μικρού μεγέθους του (14mm) είναι κομψός με έντονη παρουσία, χάρη στην ανάγλυφη υφή. Αποτελεί επίσης ένα ξεχωριστό δώρο για άνδρες που εκτιμούν τα πρωτότυπα αξεσουάρ και θέλουν να προσθέσουν χαρακτήρα στο στυλ τους. Διαθέσιμος σε τέσσερα φινιρίσματα, από το κλασικό ασημένιο μέχρι το έντονο μαύρο ανθρακί, για να ταιριάζει στην προσωπικότητά σου.]]></description>
+Ένας μικρός κρίκος με ραβδωτή υφή που προσθέτει ανδρική αισθητική στο στυλ σου. Χειροποίητος από ασήμι 925, με ανάγλυφες λεπτομέρειες που τον κάνουν να ξεχωρίζει. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 Τύπος: Ανδρικός κρίκος μικρός Σχεδιασμός: Ραβδωτή ανάγλυφη επιφάνεια Διάμετρος: 14mm Βάρος: 2,40g Πώληση: Μονό — η τιμή αφορά ένα τεμάχιο Διαθέσιμα φινιρίσματα: Επιχρυσωμένο, Ασημένιο, Οξειδωμένο, Μαύρο ανθρακί Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει Piercing: Χρειάζεται τρύπα Η Ιστορία του Κοσμήματος Ο κρίκος είναι ένα από τα πιο διαχρονικά ανδρικά κοσμήματα, σύμβολο δύναμης και ανεξαρτησίας. Η ραβδωτή υφή προσθέτει μια τολμηρή, rock αισθητική που αντανακλά τον δυναμικό χαρακτήρα του κατόχου του. Ένα σκουλαρίκι που συνδυάζει την κλασική γραμμή του κρίκου με σύγχρονες λεπτομέρειες, για άνδρες που δεν συμβιβάζονται με το συνηθισμένο. Πώς να τον φορέσεις Ο μικρός ραβδωτός κρίκος είναι ιδανικός για καθημερινή χρήση και ταιριάζει τέλεια σε sport, rock ή casual εμφανίσεις. Φόρεσέ τον μόνο του για minimal στυλ ή συνδύασέ τον με άλλα ανδρικά κοσμήματα για πιο έντονο look. Λόγω του μικρού μεγέθους του (14mm) είναι κομψός με έντονη παρουσία, χάρη στην ανάγλυφη υφή. Αποτελεί επίσης ένα ξεχωριστό δώρο για άνδρες που εκτιμούν τα πρωτότυπα αξεσουάρ και θέλουν να προσθέσουν χαρακτήρα στο στυλ τους. Διαθέσιμος σε τέσσερα φινιρίσματα, από το κλασικό ασημένιο μέχρι το έντονο μαύρο ανθρακί, για να ταιριάζει στην προσωπικότητά σου.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
         <id>49357103432014</id>
         <name><![CDATA[Σκουλαρίκι ανδρικό κρίκος μικρός ραβδωτός χειροποίητο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-skoulariki-krikos-ravdotos?variant=49357103432014]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-615174.jpg?v=1767361219]]></image>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/hoopwide2.jpg?v=1786019997]]></image>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Ανδρικά Σκουλαρίκια]]></category>
         <price_with_vat>46.00</price_with_vat>
         <vat>24.00</vat>
@@ -37647,15 +37455,15 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
 Πλήθος Τεμαχίων: Μονό (1 τεμάχιο)
 Φύλο: Ανδρικό
 
-Ένας μικρός κρίκος με ραβδωτή υφή που προσθέτει ανδρική αισθητική στο στυλ σου. Χειροποίητος από ασήμι 925, με ανάγλυφες λεπτομέρειες που τον κάνουν να ξεχωρίζει. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Τύπος: Ανδρικός κρίκος μικρός Σχεδιασμός: Ραβδωτή ανάγλυφη επιφάνεια Διάμετρος: 14mm Βάρος: 2,40g Πώληση: Μονό — η τιμή αφορά ένα τεμάχιο Διαθέσιμα φινιρίσματα: Επιχρυσωμένο, Ασημένιο, Οξειδωμένο, Μαύρο ανθρακί Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει Piercing: Δεν χρειάζεται Η Ιστορία του Κοσμήματος Ο κρίκος είναι ένα από τα πιο διαχρονικά ανδρικά κοσμήματα, σύμβολο δύναμης και ανεξαρτησίας. Η ραβδωτή υφή προσθέτει μια τολμηρή, rock αισθητική που αντανακλά τον δυναμικό χαρακτήρα του κατόχου του. Ένα σκουλαρίκι που συνδυάζει την κλασική γραμμή του κρίκου με σύγχρονες λεπτομέρειες, για άνδρες που δεν συμβιβάζονται με το συνηθισμένο. Πώς να τον φορέσεις Ο μικρός ραβδωτός κρίκος είναι ιδανικός για καθημερινή χρήση και ταιριάζει τέλεια σε sport, rock ή casual εμφανίσεις. Φόρεσέ τον μόνο του για minimal στυλ ή συνδύασέ τον με άλλα ανδρικά κοσμήματα για πιο έντονο look. Λόγω του μικρού μεγέθους του (14mm) είναι κομψός με έντονη παρουσία, χάρη στην ανάγλυφη υφή. Αποτελεί επίσης ένα ξεχωριστό δώρο για άνδρες που εκτιμούν τα πρωτότυπα αξεσουάρ και θέλουν να προσθέσουν χαρακτήρα στο στυλ τους. Διαθέσιμος σε τέσσερα φινιρίσματα, από το κλασικό ασημένιο μέχρι το έντονο μαύρο ανθρακί, για να ταιριάζει στην προσωπικότητά σου.]]></description>
+Ένας μικρός κρίκος με ραβδωτή υφή που προσθέτει ανδρική αισθητική στο στυλ σου. Χειροποίητος από ασήμι 925, με ανάγλυφες λεπτομέρειες που τον κάνουν να ξεχωρίζει. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 Τύπος: Ανδρικός κρίκος μικρός Σχεδιασμός: Ραβδωτή ανάγλυφη επιφάνεια Διάμετρος: 14mm Βάρος: 2,40g Πώληση: Μονό — η τιμή αφορά ένα τεμάχιο Διαθέσιμα φινιρίσματα: Επιχρυσωμένο, Ασημένιο, Οξειδωμένο, Μαύρο ανθρακί Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει Piercing: Χρειάζεται τρύπα Η Ιστορία του Κοσμήματος Ο κρίκος είναι ένα από τα πιο διαχρονικά ανδρικά κοσμήματα, σύμβολο δύναμης και ανεξαρτησίας. Η ραβδωτή υφή προσθέτει μια τολμηρή, rock αισθητική που αντανακλά τον δυναμικό χαρακτήρα του κατόχου του. Ένα σκουλαρίκι που συνδυάζει την κλασική γραμμή του κρίκου με σύγχρονες λεπτομέρειες, για άνδρες που δεν συμβιβάζονται με το συνηθισμένο. Πώς να τον φορέσεις Ο μικρός ραβδωτός κρίκος είναι ιδανικός για καθημερινή χρήση και ταιριάζει τέλεια σε sport, rock ή casual εμφανίσεις. Φόρεσέ τον μόνο του για minimal στυλ ή συνδύασέ τον με άλλα ανδρικά κοσμήματα για πιο έντονο look. Λόγω του μικρού μεγέθους του (14mm) είναι κομψός με έντονη παρουσία, χάρη στην ανάγλυφη υφή. Αποτελεί επίσης ένα ξεχωριστό δώρο για άνδρες που εκτιμούν τα πρωτότυπα αξεσουάρ και θέλουν να προσθέσουν χαρακτήρα στο στυλ τους. Διαθέσιμος σε τέσσερα φινιρίσματα, από το κλασικό ασημένιο μέχρι το έντονο μαύρο ανθρακί, για να ταιριάζει στην προσωπικότητά σου.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
         <id>49357103464782</id>
         <name><![CDATA[Σκουλαρίκι ανδρικό κρίκος μικρός ραβδωτός χειροποίητο από οξειδωμένο ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-skoulariki-krikos-ravdotos?variant=49357103464782]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-532119.jpg?v=1767361237]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixyswmeno-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-765651.jpg?v=1767361241]]></additionalimage>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/hoopwide7.jpg?v=1786019988]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/hoopwide1.jpg?v=1786019998]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Ανδρικά Σκουλαρίκια]]></category>
         <price_with_vat>46.00</price_with_vat>
         <vat>24.00</vat>
@@ -37672,14 +37480,14 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
 Πλήθος Τεμαχίων: Μονό (1 τεμάχιο)
 Φύλο: Ανδρικό
 
-Ένας μικρός κρίκος με ραβδωτή υφή που προσθέτει ανδρική αισθητική στο στυλ σου. Χειροποίητος από ασήμι 925, με ανάγλυφες λεπτομέρειες που τον κάνουν να ξεχωρίζει. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Τύπος: Ανδρικός κρίκος μικρός Σχεδιασμός: Ραβδωτή ανάγλυφη επιφάνεια Διάμετρος: 14mm Βάρος: 2,40g Πώληση: Μονό — η τιμή αφορά ένα τεμάχιο Διαθέσιμα φινιρίσματα: Επιχρυσωμένο, Ασημένιο, Οξειδωμένο, Μαύρο ανθρακί Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει Piercing: Δεν χρειάζεται Η Ιστορία του Κοσμήματος Ο κρίκος είναι ένα από τα πιο διαχρονικά ανδρικά κοσμήματα, σύμβολο δύναμης και ανεξαρτησίας. Η ραβδωτή υφή προσθέτει μια τολμηρή, rock αισθητική που αντανακλά τον δυναμικό χαρακτήρα του κατόχου του. Ένα σκουλαρίκι που συνδυάζει την κλασική γραμμή του κρίκου με σύγχρονες λεπτομέρειες, για άνδρες που δεν συμβιβάζονται με το συνηθισμένο. Πώς να τον φορέσεις Ο μικρός ραβδωτός κρίκος είναι ιδανικός για καθημερινή χρήση και ταιριάζει τέλεια σε sport, rock ή casual εμφανίσεις. Φόρεσέ τον μόνο του για minimal στυλ ή συνδύασέ τον με άλλα ανδρικά κοσμήματα για πιο έντονο look. Λόγω του μικρού μεγέθους του (14mm) είναι κομψός με έντονη παρουσία, χάρη στην ανάγλυφη υφή. Αποτελεί επίσης ένα ξεχωριστό δώρο για άνδρες που εκτιμούν τα πρωτότυπα αξεσουάρ και θέλουν να προσθέσουν χαρακτήρα στο στυλ τους. Διαθέσιμος σε τέσσερα φινιρίσματα, από το κλασικό ασημένιο μέχρι το έντονο μαύρο ανθρακί, για να ταιριάζει στην προσωπικότητά σου.]]></description>
+Ένας μικρός κρίκος με ραβδωτή υφή που προσθέτει ανδρική αισθητική στο στυλ σου. Χειροποίητος από ασήμι 925, με ανάγλυφες λεπτομέρειες που τον κάνουν να ξεχωρίζει. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 Τύπος: Ανδρικός κρίκος μικρός Σχεδιασμός: Ραβδωτή ανάγλυφη επιφάνεια Διάμετρος: 14mm Βάρος: 2,40g Πώληση: Μονό — η τιμή αφορά ένα τεμάχιο Διαθέσιμα φινιρίσματα: Επιχρυσωμένο, Ασημένιο, Οξειδωμένο, Μαύρο ανθρακί Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει Piercing: Χρειάζεται τρύπα Η Ιστορία του Κοσμήματος Ο κρίκος είναι ένα από τα πιο διαχρονικά ανδρικά κοσμήματα, σύμβολο δύναμης και ανεξαρτησίας. Η ραβδωτή υφή προσθέτει μια τολμηρή, rock αισθητική που αντανακλά τον δυναμικό χαρακτήρα του κατόχου του. Ένα σκουλαρίκι που συνδυάζει την κλασική γραμμή του κρίκου με σύγχρονες λεπτομέρειες, για άνδρες που δεν συμβιβάζονται με το συνηθισμένο. Πώς να τον φορέσεις Ο μικρός ραβδωτός κρίκος είναι ιδανικός για καθημερινή χρήση και ταιριάζει τέλεια σε sport, rock ή casual εμφανίσεις. Φόρεσέ τον μόνο του για minimal στυλ ή συνδύασέ τον με άλλα ανδρικά κοσμήματα για πιο έντονο look. Λόγω του μικρού μεγέθους του (14mm) είναι κομψός με έντονη παρουσία, χάρη στην ανάγλυφη υφή. Αποτελεί επίσης ένα ξεχωριστό δώρο για άνδρες που εκτιμούν τα πρωτότυπα αξεσουάρ και θέλουν να προσθέσουν χαρακτήρα στο στυλ τους. Διαθέσιμος σε τέσσερα φινιρίσματα, από το κλασικό ασημένιο μέχρι το έντονο μαύρο ανθρακί, για να ταιριάζει στην προσωπικότητά σου.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
         <id>49357103530318</id>
         <name><![CDATA[Σκουλαρίκι ανδρικό κρίκος μικρός ραβδωτός χειροποίητο μαύρο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/andriko-skoulariki-krikos-ravdotos?variant=49357103530318]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-552421.jpg?v=1767361229]]></image>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/hoopwide3.jpg?v=1786019997]]></image>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Ανδρικά Σκουλαρίκια]]></category>
         <price_with_vat>46.00</price_with_vat>
         <vat>24.00</vat>
@@ -37696,7 +37504,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
 Πλήθος Τεμαχίων: Μονό (1 τεμάχιο)
 Φύλο: Ανδρικό
 
-Ένας μικρός κρίκος με ραβδωτή υφή που προσθέτει ανδρική αισθητική στο στυλ σου. Χειροποίητος από ασήμι 925, με ανάγλυφες λεπτομέρειες που τον κάνουν να ξεχωρίζει. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Τύπος: Ανδρικός κρίκος μικρός Σχεδιασμός: Ραβδωτή ανάγλυφη επιφάνεια Διάμετρος: 14mm Βάρος: 2,40g Πώληση: Μονό — η τιμή αφορά ένα τεμάχιο Διαθέσιμα φινιρίσματα: Επιχρυσωμένο, Ασημένιο, Οξειδωμένο, Μαύρο ανθρακί Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει Piercing: Δεν χρειάζεται Η Ιστορία του Κοσμήματος Ο κρίκος είναι ένα από τα πιο διαχρονικά ανδρικά κοσμήματα, σύμβολο δύναμης και ανεξαρτησίας. Η ραβδωτή υφή προσθέτει μια τολμηρή, rock αισθητική που αντανακλά τον δυναμικό χαρακτήρα του κατόχου του. Ένα σκουλαρίκι που συνδυάζει την κλασική γραμμή του κρίκου με σύγχρονες λεπτομέρειες, για άνδρες που δεν συμβιβάζονται με το συνηθισμένο. Πώς να τον φορέσεις Ο μικρός ραβδωτός κρίκος είναι ιδανικός για καθημερινή χρήση και ταιριάζει τέλεια σε sport, rock ή casual εμφανίσεις. Φόρεσέ τον μόνο του για minimal στυλ ή συνδύασέ τον με άλλα ανδρικά κοσμήματα για πιο έντονο look. Λόγω του μικρού μεγέθους του (14mm) είναι κομψός με έντονη παρουσία, χάρη στην ανάγλυφη υφή. Αποτελεί επίσης ένα ξεχωριστό δώρο για άνδρες που εκτιμούν τα πρωτότυπα αξεσουάρ και θέλουν να προσθέσουν χαρακτήρα στο στυλ τους. Διαθέσιμος σε τέσσερα φινιρίσματα, από το κλασικό ασημένιο μέχρι το έντονο μαύρο ανθρακί, για να ταιριάζει στην προσωπικότητά σου.]]></description>
+Ένας μικρός κρίκος με ραβδωτή υφή που προσθέτει ανδρική αισθητική στο στυλ σου. Χειροποίητος από ασήμι 925, με ανάγλυφες λεπτομέρειες που τον κάνουν να ξεχωρίζει. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 Τύπος: Ανδρικός κρίκος μικρός Σχεδιασμός: Ραβδωτή ανάγλυφη επιφάνεια Διάμετρος: 14mm Βάρος: 2,40g Πώληση: Μονό — η τιμή αφορά ένα τεμάχιο Διαθέσιμα φινιρίσματα: Επιχρυσωμένο, Ασημένιο, Οξειδωμένο, Μαύρο ανθρακί Ιδιότητες: Υποαλλεργικό, δεν μαυρίζει Piercing: Χρειάζεται τρύπα Η Ιστορία του Κοσμήματος Ο κρίκος είναι ένα από τα πιο διαχρονικά ανδρικά κοσμήματα, σύμβολο δύναμης και ανεξαρτησίας. Η ραβδωτή υφή προσθέτει μια τολμηρή, rock αισθητική που αντανακλά τον δυναμικό χαρακτήρα του κατόχου του. Ένα σκουλαρίκι που συνδυάζει την κλασική γραμμή του κρίκου με σύγχρονες λεπτομέρειες, για άνδρες που δεν συμβιβάζονται με το συνηθισμένο. Πώς να τον φορέσεις Ο μικρός ραβδωτός κρίκος είναι ιδανικός για καθημερινή χρήση και ταιριάζει τέλεια σε sport, rock ή casual εμφανίσεις. Φόρεσέ τον μόνο του για minimal στυλ ή συνδύασέ τον με άλλα ανδρικά κοσμήματα για πιο έντονο look. Λόγω του μικρού μεγέθους του (14mm) είναι κομψός με έντονη παρουσία, χάρη στην ανάγλυφη υφή. Αποτελεί επίσης ένα ξεχωριστό δώρο για άνδρες που εκτιμούν τα πρωτότυπα αξεσουάρ και θέλουν να προσθέσουν χαρακτήρα στο στυλ τους. Διαθέσιμος σε τέσσερα φινιρίσματα, από το κλασικό ασημένιο μέχρι το έντονο μαύρο ανθρακί, για να ταιριάζει στην προσωπικότητά σου.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -43311,9 +43119,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <id>51054326612302</id>
         <name><![CDATA[Σκουλαρίκι ανδρικό τρίγωνο με σμάλτο και πράσινη πέτρα χειροποίητο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/karfota-skoularikia-trigwna-smalto?variant=51054326612302]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-830835.jpg?v=1761119642]]></image>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-513545.jpg?v=1761119642]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-830835.jpg?v=1761119642]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-567680.jpg?v=1761119642]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-513545.jpg?v=1761119642]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Ανδρικά Σκουλαρίκια]]></category>
         <price_with_vat>52.00</price_with_vat>
         <vat>24.00</vat>
@@ -43338,9 +43146,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <id>51054344700238</id>
         <name><![CDATA[Σκουλαρίκι ανδρικό τρίγωνο με σμάλτο και πράσινη πέτρα χειροποίητο από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/karfota-skoularikia-trigwna-smalto?variant=51054344700238]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-830835.jpg?v=1761119642]]></image>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-513545.jpg?v=1761119642]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-830835.jpg?v=1761119642]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-567680.jpg?v=1761119642]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-513545.jpg?v=1761119642]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Ανδρικά Σκουλαρίκια]]></category>
         <price_with_vat>52.00</price_with_vat>
         <vat>24.00</vat>
@@ -43365,9 +43173,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <id>51054344733006</id>
         <name><![CDATA[Σκουλαρίκια ανδρικά τρίγωνα με σμάλτο και πράσινη πέτρα χειροποίητα από ασήμι 925]]></name>
         <link><![CDATA[https://emmanuela.gr/products/karfota-skoularikia-trigwna-smalto?variant=51054344733006]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-830835.jpg?v=1761119642]]></image>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-513545.jpg?v=1761119642]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-830835.jpg?v=1761119642]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-567680.jpg?v=1761119642]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-me-prasino-andrika-skoylarikia-trigwna-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-513545.jpg?v=1761119642]]></additionalimage>
         <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Ανδρικά Σκουλαρίκια]]></category>
         <price_with_vat>79.00</price_with_vat>
         <vat>24.00</vat>
@@ -43382,6 +43190,84 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
 Τύπος Προϊόντος: Σκουλαρίκια
 Υλικό: Ασήμι 925 (Sterling Silver 925)
 Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
+Πλήθος Τεμαχίων: Ζευγάρι (2 τεμάχια)
+Φύλο: Ανδρικό
+
+Ένα ζευγάρι ανδρικά σκουλαρίκια που ξεχωρίζει με τη γεωμετρική του φόρμα και το έντονο σμάλτο. Τα τρίγωνα σκουλαρίκια είναι η τέλεια επιλογή για άντρες που αναζητούν ένα μοντέρνο κόσμημα με χαρακτήρα και στυλ. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Τύπος: Ανδρικό καρφωτό σκουλαρίκι (χρειάζεται piercing) Βάρος ζευγαριού: 1,9g (0,9g το μονό) Διαστάσεις: 18mm πλάτος × 11mm ύψος Πώληση: Ζευγάρι — η τιμή αφορά δύο τεμάχια Φινιρίσματα: Ασημένιο με Πράσινο, Ασημένιο με Μπλε, Επιχρυσωμένο με Πράσινο, Επιχρυσωμένο με Μπλε Ιδιότητες: Σμάλτο χειροποίητο, υποαλλεργικό, δε μαυρίζει Η Συμβολική του Τριγώνου Το τρίγωνο είναι ένα από τα πιο δυνατά γεωμετρικά σχήματα, σύμβολο ισορροπίας, δύναμης και σταθερότητας. Στον σύγχρονο ανδρικό κόσμο, το τρίγωνο αντιπροσωπεύει την αποφασιστικότητα και τη σύνδεση μεταξύ σώματος, μυαλού και πνεύματος. Τα σκουλαρίκια αυτά με το έντονο σμάλτο προσθέτουν χρώμα και ενέργεια, δημιουργώντας ένα statement κόσμημα που δεν περνά απαρατήρητο. Πώς να τα φορέσεις Τα τρίγωνα σκουλαρίκια με σμάλτο είναι ιδανικά για καθημερινό ή βραδινό look με άποψη. Συνδυάζονται τέλεια με casual ντύσιμο — t-shirt και jeans — αλλά και με πιο rock εμφανίσεις. Φόρεσέ τα μόνα τους για minimal statement ή συνδύασέ τα με άλλα ασημένια αξεσουάρ για πιο edgy look. Διαθέσιμα σε τέσσερα χρωματικά φινιρίσματα (ασημί ή χρυσό με πράσινο ή μπλε σμάλτο), μπορείς να επιλέξεις αυτό που ταιριάζει στην προσωπικότητά σου. Ένα εξαιρετικό δώρο για άντρες που εκτιμούν το χειροποίητο design και την ποιότητα του ασημιού 925. Κάθε ζευγάρι έρχεται σε καλαίσθητο κουτί δώρου, έτοιμο να εντυπωσιάσει.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>51054345683278</id>
+        <name><![CDATA[Σκουλαρίκι ανδρικό τρίγωνο με σμάλτο και πράσινη πέτρα χειροποίητο από επιχρυσωμένο ασήμι 925]]></name>
+        <link><![CDATA[https://emmanuela.gr/products/karfota-skoularikia-trigwna-smalto?variant=51054345683278]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-817.jpg?v=1786017835]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-817b.jpg?v=1786017836]]></additionalimage>
+        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Ανδρικά Σκουλαρίκια]]></category>
+        <price_with_vat>52.00</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1365M-Χρυσό]]></mpn>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>4</quantity>
+        <color>Χρυσό</color>
+        <size>One Size</size>
+        <weight>2</weight>
+        <description><![CDATA[Χαρακτηριστικά Προϊόντος
+Τύπος Προϊόντος: Σκουλαρίκι
+Υλικό: Ασήμι 925 (Sterling Silver 925)
+Επιμετάλλωση: Επιχρύσωση (Yellow Gold)
+Πλήθος Τεμαχίων: Μονό (1 τεμάχιο)
+Φύλο: Ανδρικό
+
+Ένα ζευγάρι ανδρικά σκουλαρίκια που ξεχωρίζει με τη γεωμετρική του φόρμα και το έντονο σμάλτο. Τα τρίγωνα σκουλαρίκια είναι η τέλεια επιλογή για άντρες που αναζητούν ένα μοντέρνο κόσμημα με χαρακτήρα και στυλ. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Τύπος: Ανδρικό καρφωτό σκουλαρίκι (χρειάζεται piercing) Βάρος ζευγαριού: 1,9g (0,9g το μονό) Διαστάσεις: 18mm πλάτος × 11mm ύψος Πώληση: Ζευγάρι — η τιμή αφορά δύο τεμάχια Φινιρίσματα: Ασημένιο με Πράσινο, Ασημένιο με Μπλε, Επιχρυσωμένο με Πράσινο, Επιχρυσωμένο με Μπλε Ιδιότητες: Σμάλτο χειροποίητο, υποαλλεργικό, δε μαυρίζει Η Συμβολική του Τριγώνου Το τρίγωνο είναι ένα από τα πιο δυνατά γεωμετρικά σχήματα, σύμβολο ισορροπίας, δύναμης και σταθερότητας. Στον σύγχρονο ανδρικό κόσμο, το τρίγωνο αντιπροσωπεύει την αποφασιστικότητα και τη σύνδεση μεταξύ σώματος, μυαλού και πνεύματος. Τα σκουλαρίκια αυτά με το έντονο σμάλτο προσθέτουν χρώμα και ενέργεια, δημιουργώντας ένα statement κόσμημα που δεν περνά απαρατήρητο. Πώς να τα φορέσεις Τα τρίγωνα σκουλαρίκια με σμάλτο είναι ιδανικά για καθημερινό ή βραδινό look με άποψη. Συνδυάζονται τέλεια με casual ντύσιμο — t-shirt και jeans — αλλά και με πιο rock εμφανίσεις. Φόρεσέ τα μόνα τους για minimal statement ή συνδύασέ τα με άλλα ασημένια αξεσουάρ για πιο edgy look. Διαθέσιμα σε τέσσερα χρωματικά φινιρίσματα (ασημί ή χρυσό με πράσινο ή μπλε σμάλτο), μπορείς να επιλέξεις αυτό που ταιριάζει στην προσωπικότητά σου. Ένα εξαιρετικό δώρο για άντρες που εκτιμούν το χειροποίητο design και την ποιότητα του ασημιού 925. Κάθε ζευγάρι έρχεται σε καλαίσθητο κουτί δώρου, έτοιμο να εντυπωσιάσει.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>51054345716046</id>
+        <name><![CDATA[Σκουλαρίκι ανδρικό τρίγωνο με σμάλτο και πράσινη πέτρα χειροποίητο από επιχρυσωμένο ασήμι 925]]></name>
+        <link><![CDATA[https://emmanuela.gr/products/karfota-skoularikia-trigwna-smalto?variant=51054345716046]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-817.jpg?v=1786017835]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-817b.jpg?v=1786017836]]></additionalimage>
+        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Ανδρικά Σκουλαρίκια]]></category>
+        <price_with_vat>52.00</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1365M-Χρυσό-Μονό-για-το-δεξί-αφτί]]></mpn>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>4</quantity>
+        <color>Χρυσό</color>
+        <size>One Size</size>
+        <weight>2</weight>
+        <description><![CDATA[Χαρακτηριστικά Προϊόντος
+Τύπος Προϊόντος: Σκουλαρίκι
+Υλικό: Ασήμι 925 (Sterling Silver 925)
+Επιμετάλλωση: Επιχρύσωση (Yellow Gold)
+Πλήθος Τεμαχίων: Μονό (1 τεμάχιο)
+Φύλο: Ανδρικό
+
+Ένα ζευγάρι ανδρικά σκουλαρίκια που ξεχωρίζει με τη γεωμετρική του φόρμα και το έντονο σμάλτο. Τα τρίγωνα σκουλαρίκια είναι η τέλεια επιλογή για άντρες που αναζητούν ένα μοντέρνο κόσμημα με χαρακτήρα και στυλ. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 επιροδιωμένο Τύπος: Ανδρικό καρφωτό σκουλαρίκι (χρειάζεται piercing) Βάρος ζευγαριού: 1,9g (0,9g το μονό) Διαστάσεις: 18mm πλάτος × 11mm ύψος Πώληση: Ζευγάρι — η τιμή αφορά δύο τεμάχια Φινιρίσματα: Ασημένιο με Πράσινο, Ασημένιο με Μπλε, Επιχρυσωμένο με Πράσινο, Επιχρυσωμένο με Μπλε Ιδιότητες: Σμάλτο χειροποίητο, υποαλλεργικό, δε μαυρίζει Η Συμβολική του Τριγώνου Το τρίγωνο είναι ένα από τα πιο δυνατά γεωμετρικά σχήματα, σύμβολο ισορροπίας, δύναμης και σταθερότητας. Στον σύγχρονο ανδρικό κόσμο, το τρίγωνο αντιπροσωπεύει την αποφασιστικότητα και τη σύνδεση μεταξύ σώματος, μυαλού και πνεύματος. Τα σκουλαρίκια αυτά με το έντονο σμάλτο προσθέτουν χρώμα και ενέργεια, δημιουργώντας ένα statement κόσμημα που δεν περνά απαρατήρητο. Πώς να τα φορέσεις Τα τρίγωνα σκουλαρίκια με σμάλτο είναι ιδανικά για καθημερινό ή βραδινό look με άποψη. Συνδυάζονται τέλεια με casual ντύσιμο — t-shirt και jeans — αλλά και με πιο rock εμφανίσεις. Φόρεσέ τα μόνα τους για minimal statement ή συνδύασέ τα με άλλα ασημένια αξεσουάρ για πιο edgy look. Διαθέσιμα σε τέσσερα χρωματικά φινιρίσματα (ασημί ή χρυσό με πράσινο ή μπλε σμάλτο), μπορείς να επιλέξεις αυτό που ταιριάζει στην προσωπικότητά σου. Ένα εξαιρετικό δώρο για άντρες που εκτιμούν το χειροποίητο design και την ποιότητα του ασημιού 925. Κάθε ζευγάρι έρχεται σε καλαίσθητο κουτί δώρου, έτοιμο να εντυπωσιάσει.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>51054345748814</id>
+        <name><![CDATA[Σκουλαρίκια ανδρικά τρίγωνα με σμάλτο και πράσινη πέτρα χειροποίητα από επιχρυσωμένο ασήμι 925]]></name>
+        <link><![CDATA[https://emmanuela.gr/products/karfota-skoularikia-trigwna-smalto?variant=51054345748814]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-817.jpg?v=1786017835]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-817b.jpg?v=1786017836]]></additionalimage>
+        <category><![CDATA[Κοσμήματα > Σκουλαρίκια > Ανδρικά Σκουλαρίκια]]></category>
+        <price_with_vat>79.00</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1365M-Χρυσό-Ένα-ζευγάρι]]></mpn>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>4</quantity>
+        <color>Χρυσό</color>
+        <size>One Size</size>
+        <weight>2</weight>
+        <description><![CDATA[Χαρακτηριστικά Προϊόντος
+Τύπος Προϊόντος: Σκουλαρίκια
+Υλικό: Ασήμι 925 (Sterling Silver 925)
+Επιμετάλλωση: Επιχρύσωση (Yellow Gold)
 Πλήθος Τεμαχίων: Ζευγάρι (2 τεμάχια)
 Φύλο: Ανδρικό
 
@@ -53718,7 +53604,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS101LNABE5]]></mpn>
         <ean>5212033638807</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>76</quantity>
+        <quantity>75</quantity>
         <color>Μπεζ</color>
         <size>36,37,38,40,41,42</size>
         <variations>
@@ -53771,7 +53657,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40480043171997</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>42</size>
-            <quantity>8</quantity>
+            <quantity>7</quantity>
             <manufacturersku><![CDATA[1TS101LNABE11]]></manufacturersku>
             <mpn><![CDATA[1TS101LNABE11]]></mpn>
             <ean>5212033638869</ean>

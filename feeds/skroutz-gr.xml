@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-08-07 07:34</created_at>
+  <created_at>2026-08-07 13:20</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -397,7 +397,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1219-Ροζ]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Ροζ</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -423,7 +423,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1219-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -24124,7 +24124,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU452pe-Ασημί-Τεχνόδερμα-60cm]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>3</weight>
@@ -34525,7 +34525,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1311M-Μαύρο]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Μαύρο</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -48253,35 +48253,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40479900270749</id>
-        <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη" - Κοραλί]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-red-circe?variant=40479900270749]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-kirkh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-kirkh-456470.jpg?v=1653981761]]></image>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>42.90</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL310LCOBE9]]></mpn>
-        <ean>5212033621236</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>1</quantity>
-        <color>Κοραλί</color>
-        <size>40</size>
-        <variations>
-          <variation>
-            <variationid>40479900270749</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL310LCOBE9]]></manufacturersku>
-            <mpn><![CDATA[1KL310LCOBE9]]></mpn>
-            <ean>5212033621236</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Κοραλί. Διαθέσιμα νούμερα: 40.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>40479900401821</id>
         <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη" - Χρυσό]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-red-circe?variant=40479900401821]]></link>
@@ -50280,7 +50251,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS103LNABE6]]></mpn>
         <ean>5212033638456</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>70</quantity>
+        <quantity>69</quantity>
         <color>Μπεζ</color>
         <size>37,38,39,40,41,42</size>
         <variations>
@@ -50306,7 +50277,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40479972556957</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>39</size>
-            <quantity>14</quantity>
+            <quantity>13</quantity>
             <manufacturersku><![CDATA[1TS103LNABE8]]></manufacturersku>
             <mpn><![CDATA[1TS103LNABE8]]></mpn>
             <ean>5212033638470</ean>

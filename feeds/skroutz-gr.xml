@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-08-09 01:51</created_at>
+  <created_at>2026-08-09 07:17</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1204,7 +1204,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Γκρι]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
+        <quantity>4</quantity>
         <color>Γκρι</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -16247,7 +16247,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[7028-Ασημί-Αλυσίδα-rolo]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>3</weight>
@@ -45852,54 +45852,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40479848497309</id>
-        <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Κοραλί]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-briseis?variant=40479848497309]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-621466.jpg?v=1627294550]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-876215.jpg?v=1653980755]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>47.28</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL345LCOBE7]]></mpn>
-        <ean>5212033623162</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
-        <color>Κοραλί</color>
-        <size>38,40,41</size>
-        <variations>
-          <variation>
-            <variationid>40479848497309</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>38</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL345LCOBE7]]></manufacturersku>
-            <mpn><![CDATA[1KL345LCOBE7]]></mpn>
-            <ean>5212033623162</ean>
-          </variation>
-          <variation>
-            <variationid>40479849021597</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL345LCOBE9]]></manufacturersku>
-            <mpn><![CDATA[1KL345LCOBE9]]></mpn>
-            <ean>5212033623209</ean>
-          </variation>
-          <variation>
-            <variationid>40479849283741</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL345LCOBE10]]></manufacturersku>
-            <mpn><![CDATA[1KL345LCOBE10]]></mpn>
-            <ean>5212033623223</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Κοραλί. Διαθέσιμα νούμερα: 38,40,41.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>40479848530077</id>
         <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Τιρκουάζ]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-briseis?variant=40479848530077]]></link>
@@ -46072,6 +46024,45 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 40,41.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40479849021597</id>
+        <name><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα" - Κοραλί]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-black-briseis?variant=40479849021597]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-621466.jpg?v=1627294550]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-fermoyar-brishida-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-fermoyar-brishida-876215.jpg?v=1653980755]]></additionalimage>
+        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>47.28</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1KL345LCOBE9]]></mpn>
+        <ean>5212033623209</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>2</quantity>
+        <color>Κοραλί</color>
+        <size>40,41</size>
+        <variations>
+          <variation>
+            <variationid>40479849021597</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>40</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL345LCOBE9]]></manufacturersku>
+            <mpn><![CDATA[1KL345LCOBE9]]></mpn>
+            <ean>5212033623209</ean>
+          </variation>
+          <variation>
+            <variationid>40479849283741</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>41</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL345LCOBE10]]></manufacturersku>
+            <mpn><![CDATA[1KL345LCOBE10]]></mpn>
+            <ean>5212033623223</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Κοραλί. Διαθέσιμα νούμερα: 40,41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

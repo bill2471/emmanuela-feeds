@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-08-09 13:08</created_at>
+  <created_at>2026-08-09 19:01</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1259,7 +1259,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -49591,9 +49591,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI46MANLNABE7]]></mpn>
         <ean>5212033634557</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>12</quantity>
+        <quantity>11</quantity>
         <color>Μπεζ</color>
-        <size>40,41,42,43,44,46,47</size>
+        <size>40,41,42,43,44,46</size>
         <variations>
           <variation>
             <variationid>40479959908509</variationid>
@@ -49649,17 +49649,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1LI46MANLNABE13]]></mpn>
             <ean>5212033626392</ean>
           </variation>
-          <variation>
-            <variationid>43873659781349</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>47</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI46MANLNABE14]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLNABE14]]></mpn>
-            <ean>5212033600033</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 40,41,42,43,44,46,47.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 40,41,42,43,44,46.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

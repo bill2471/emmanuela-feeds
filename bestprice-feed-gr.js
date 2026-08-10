@@ -33,6 +33,13 @@
  *
  * Created: 2026-02-06
  * Updated: 2026-05-14 — v3.0: Skroutz title-builder integration
+ * Updated: 2026-08-10 — v3.1: completion pass for capped connections. The page query's
+ *   variants(first:100)/images(first:10) silently truncate large products — the 702-variant
+ *   monogram pendant emitted ONLY its first-100 (all-silver) variants, so its gold/rose
+ *   entries never existed; 115/463 products exceed 10 images and lost additional photos.
+ *   Any product whose arrays hit a cap is re-fetched COMPLETE (per-product pagination,
+ *   first:250 + cursor) and the truncated arrays are REPLACED. The page query itself is
+ *   untouched — its GraphQL cost stays exactly as before.
  */
 
 const https = require('https');
@@ -575,7 +582,83 @@ async function fetchProducts() {
   }
 
   console.log(`\nTotal products fetched: ${allProducts.length}\n`);
+  await completeTruncatedProducts(allProducts);
   return allProducts;
+}
+
+// v3.1: the page query caps variants at 100 and images at 10. A product whose array
+// length EQUALS the cap may have more — re-fetch that connection COMPLETE (per-product
+// pagination) and REPLACE the truncated array. On follow-up failure we keep the
+// truncated data (old behavior) but say so loudly — a silent skip would be invisible.
+async function completeTruncatedProducts(allProducts) {
+  const suspects = allProducts.filter(p => p.variants.length === 100 || p.images.length === 10);
+  if (!suspects.length) return;
+  console.log(`Completing ${suspects.length} products that hit the variants(100)/images(10) caps...`);
+  let okCount = 0, failCount = 0;
+
+  async function fetchAllPages(productGid, connName, connFields, first) {
+    const out = [];
+    let after = null;
+    while (true) {
+      const afterClause = after ? `, after: "${after}"` : '';
+      const q = `{
+        node(id: "${productGid}") {
+          ... on Product {
+            ${connName}(first: ${first}${afterClause}) {
+              pageInfo { hasNextPage endCursor }
+              edges { node { ${connFields} } }
+            }
+          }
+        }
+      }`;
+      const { data } = await graphqlRequest(q);
+      if (data.errors) throw new Error(data.errors[0]?.message || JSON.stringify(data.errors).slice(0, 120));
+      const conn = data.data?.node?.[connName];
+      if (!conn) throw new Error(`${connName}: empty node response`);
+      conn.edges.forEach(e => out.push(e.node));
+      if (!conn.pageInfo.hasNextPage) break;
+      after = conn.pageInfo.endCursor;
+      await new Promise(r => setTimeout(r, 300));
+    }
+    return out;
+  }
+
+  for (const p of suspects) {
+    const gid = `gid://shopify/Product/${p.id}`;
+    try {
+      if (p.variants.length === 100) {
+        const nodes = await fetchAllPages(gid, 'variants',
+          `id sku price compareAtPrice inventoryQuantity barcode
+           image { id }
+           selectedOptions { name value }
+           inventoryItem { measurement { weight { value unit } } }`, 250);
+        p.variants = nodes.map(n => ({
+          id: n.id.replace('gid://shopify/ProductVariant/', ''),
+          sku: n.sku,
+          price: n.price,
+          compare_at_price: n.compareAtPrice,
+          inventory_quantity: n.inventoryQuantity,
+          barcode: n.barcode,
+          image_id: n.image?.id?.replace('gid://shopify/ProductImage/', ''),
+          selectedOptions: n.selectedOptions,
+          weight: n.inventoryItem?.measurement?.weight || null
+        }));
+      }
+      if (p.images.length === 10) {
+        const nodes = await fetchAllPages(gid, 'images', 'id url', 250);
+        p.images = nodes.map(n => ({
+          id: n.id.replace('gid://shopify/ProductImage/', ''),
+          src: n.url
+        }));
+      }
+      okCount++;
+      await new Promise(r => setTimeout(r, 300));
+    } catch (error) {
+      failCount++;
+      console.error(`   COMPLETION FAILED for ${p.handle}: ${error.message} — keeping truncated data (variants=${p.variants.length}, images=${p.images.length})`);
+    }
+  }
+  console.log(`Completion pass: ok=${okCount} failed=${failCount}\n`);
 }
 
 // ============================================

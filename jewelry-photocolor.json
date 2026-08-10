@@ -1,8 +1,5 @@
 {
- "generated": "2026-08-05",
- "source": "jewelry-photocolor-labels.json (Emmanouela, email 2026-08-04 12:25Z) — 106 of the 110 sheet cards",
- "semantics": "basename -> Greek colour word (photo belongs ONLY to that colourway) or __NONE__ (photo does not show the jewel: never main, never additional)",
- "refreshWith": "node skroutz-feed/_make-jphoto-map-0805.js <labels.json> <skroutz-jewelry-packaging-v2.json> jewelry-photocolor.json",
+ "generated": "2026-08-05 +4labels 2026-08-10 (Emmanouela email 13:14Z: όλα ασημένιο)",
  "labels": {
   "Untitled-565.jpg": "Μαύρο",
   "48-daxtylidi-kladi-elias-apo-ashmi-925-kosmhmata-emmanuela-235588.jpg": "Ασημί",
@@ -109,6 +106,10 @@
   "16cm-xeiropoihto-andriko-braxioli-cuff-apo-ashmi-925-kosmhmata-emmanuela-276572.jpg": "Ασημί",
   "16cm-xeiropoihto-andriko-braxioli-cuff-apo-ashmi-925-kosmhmata-emmanuela-556738.jpg": "Ασημί",
   "16cm-xeiropoihto-andriko-braxioli-cuff-apo-ashmi-925-kosmhmata-emmanuela-606697.jpg": "Ασημί",
-  "16cm-xeiropoihto-andriko-braxioli-cuff-apo-ashmi-925-kosmhmata-emmanuela-761858.jpg": "Ασημί"
+  "16cm-xeiropoihto-andriko-braxioli-cuff-apo-ashmi-925-kosmhmata-emmanuela-761858.jpg": "Ασημί",
+  "48-daxtylidi-kypseles-apo-ashmi-925-kosmhmata-emmanuela-418309.jpg": "Ασημί",
+  "48-daxtylidi-me-petra-amazonith-apo-ashmi-925-kosmhmata-emmanuela-625264.jpg": "Ασημί",
+  "texnoderma-50cm-kremasto-mentagion-donti-apo-ashmi-925-kosmhmata-emmanuela-774928.jpg": "Ασημί",
+  "16cm-xeiropoihto-andriko-braxioli-cuff-apo-ashmi-925-kosmhmata-emmanuela-697947.jpg": "Ασημί"
  }
 }

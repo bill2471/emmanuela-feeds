@@ -712,6 +712,24 @@ function extractBraceletLength(variant) {
   return null;
 }
 
+// ΒΗΜΑ Β πιλότος (2026-08-06): το μέγεθος του μενταγιόν στον τίτλο.
+// ΠΑΓΩΜΕΝΗ λευκή λίστα — η αλλαγή ΔΕΝ μπορεί να διαρρεύσει σε άλλο προϊόν.
+const PSIZE_PILOT_PRODUCTS = new Set(['4376372379683']); // Κρεμαστό μενταγιόν "κασέτα"
+
+// Επιστρέφει ΜΟΝΟ το επίθετο μεγέθους — ποτέ ολόκληρη την τιμή της επιλογής
+// («Μικρή Κασέτα»), αλλιώς ο τίτλος θα έλεγε «μικρή κασέτα κασέτα».
+function extractPendantSizeToken(variant) {
+  for (const opt of variant.selectedOptions || []) {
+    const name = (opt.name || '').toLowerCase();
+    if (!name.includes('μικρ') || !name.includes('μεγάλ')) continue;
+    const val = (opt.value || '').trim().toLowerCase();
+    if (val.includes('και τα δύο')) return 'μικρή και μεγάλη';
+    if (val.startsWith('μικρ')) return 'μικρή';
+    if (val.startsWith('μεγάλ') || val.startsWith('μεγαλ')) return 'μεγάλη';
+  }
+  return null;
+}
+
 function extractSide(variant) {
   for (const opt of variant.selectedOptions || []) {
     const name = (opt.name || '').toLowerCase();
@@ -843,6 +861,16 @@ function buildSkroutzTitle({ product, variant, skroutzCategory }) {
       body = body ? `μονόγραμμα ${monogram} ${body}`.trim() : `μονόγραμμα ${monogram}`;
     } else if (!bodyL.includes(expectedPattern)) {
       body = body.replace(/μονόγραμμα(?![\p{L}\p{N}])/iu, `μονόγραμμα ${monogram}`);
+    }
+  }
+
+  // ΒΗΜΑ Β πιλότος: το μέγεθος μπαίνει ΕΠΙΘΕΜΑ στο body — «κασέτα μικρή», όχι «μικρή κασέτα».
+  // Επιλογή του Bill 06/08 από δύο πραγματικά υποψήφια strings.
+  // Fail-closed: εκτός λευκής λίστας ή με kill-switch ⇒ καμία αλλαγή.
+  if (process.env.SKROUTZ_NO_PSIZE !== '1' && PSIZE_PILOT_PRODUCTS.has(String((product && product.id) || ''))) {
+    const psizeTok = extractPendantSizeToken(v);
+    if (psizeTok && body && !body.toLowerCase().includes(psizeTok)) {
+      body = (body + ' ' + psizeTok).trim();
     }
   }
 

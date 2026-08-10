@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-08-10 13:25</date>
+  <date>2026-08-10 16:09</date>
   <products>
     <product>
       <productId>31372692389923</productId>
@@ -171,6 +171,88 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>EMM-54857572122958</MPN>
       <color>μαύρο</color>
+      <weight>2</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>31372714213411</productId>
+      <title><![CDATA[Σκουλαρίκι ανδρικό κρίκος χειροποίητο μαύρο από ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/andriko-plekto-skoulariki-krikos</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1_10fd98e8-c9b5-4844-b331-5ca5b102805a.jpg?v=1786373044</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1_10fd98e8-c9b5-4844-b331-5ca5b102805a.jpg?v=1786373044</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/products/DSC_0463.jpg?v=1730712243</img2>
+      </imagesURL>
+      <price>44.00</price>
+      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1333MXS</MPN>
+      <color>μαύρο</color>
+      <weight>2</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>31372714246179</productId>
+      <title><![CDATA[Σκουλαρίκι ανδρικό κρίκος χειροποίητο από ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/andriko-plekto-skoulariki-krikos</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1_95a22d3d-9f6a-4160-851f-888d34c59d86.jpg?v=1786373043</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1_95a22d3d-9f6a-4160-851f-888d34c59d86.jpg?v=1786373043</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/products/R0B0674.jpg?v=1730712227</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/products/DSC_0383.jpg?v=1730712232</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/products/R0B1066.jpg?v=1730712238</img4>
+      </imagesURL>
+      <price>44.00</price>
+      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1333MSS</MPN>
+      <color>ασημί</color>
+      <weight>2</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>31372714278947</productId>
+      <title><![CDATA[Σκουλαρίκι ανδρικό κρίκος χειροποίητο από επιχρυσωμένο ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/andriko-plekto-skoulariki-krikos</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1_212b8e2d-6917-4fd8-ba03-d0139e23c2e8.jpg?v=1786373043</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1_212b8e2d-6917-4fd8-ba03-d0139e23c2e8.jpg?v=1786373043</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/products/R0B1068.jpg?v=1730712253</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/products/DSC_0459.jpg?v=1730712259</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/products/R0B1075_11079025-7ee0-429a-99bc-125907a9c1da.jpg?v=1730712266</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/packaging-photo_f79ffd82-2c8a-41a4-a5ad-a7f635d1e265.jpg?v=1777455436</img5>
+      </imagesURL>
+      <price>44.00</price>
+      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1333MGS</MPN>
+      <color>χρυσό</color>
+      <weight>2</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>31372714344483</productId>
+      <title><![CDATA[Σκουλαρίκι ανδρικό κρίκος χειροποίητο από οξειδωμένο ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/andriko-plekto-skoulariki-krikos</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1_447c841b-d03a-44d9-805f-b37a29547cad.jpg?v=1786373044</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1_447c841b-d03a-44d9-805f-b37a29547cad.jpg?v=1786373044</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/products/DSC_0385_f90a4e42-49fb-4193-9a35-ad11c9286229.jpg?v=1730712209</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/products/R0B1069.jpg?v=1730712222</img3>
+      </imagesURL>
+      <price>44.00</price>
+      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1333MOS</MPN>
+      <color>γκρι</color>
       <weight>2</weight>
       <shipping>0</shipping>
     </product>
@@ -903,13 +985,32 @@
       <shipping>0</shipping>
     </product>
     <product>
+      <productId>31372836700195</productId>
+      <title><![CDATA[Σκουλαρίκια ανδρικά τρίγωνα χειροποίητα από ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/andrika-skoularikia-trigona</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-788831.jpg?v=1752669188</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-788831.jpg?v=1752669188</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-386966.jpg?v=1752669188</img2>
+      </imagesURL>
+      <price>39.00</price>
+      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1265M</MPN>
+      <color>ασημί</color>
+      <weight>2</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
       <productId>31372836667427</productId>
       <title><![CDATA[Σκουλαρίκια ανδρικά τρίγωνα χειροποίητα μαύρα από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andrika-skoularikia-trigona</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-842801.jpg?v=1730712980</imageURL>
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-842801.jpg?v=1730712980</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-386966.jpg?v=1752669188</img2>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-282235.jpg?v=1752669188</img2>
       </imagesURL>
       <price>39.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
@@ -941,25 +1042,6 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>31372836700195</productId>
-      <title><![CDATA[Σκουλαρίκια ανδρικά τρίγωνα χειροποίητα από ασήμι 925]]></title>
-      <productURL>https://emmanuela.gr/products/andrika-skoularikia-trigona</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-788831.jpg?v=1752669188</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-788831.jpg?v=1752669188</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-282235.jpg?v=1752669188</img2>
-      </imagesURL>
-      <price>39.00</price>
-      <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1265M</MPN>
-      <color>ασημί</color>
-      <weight>2</weight>
-      <shipping>0</shipping>
-    </product>
-    <product>
       <productId>31372836601891</productId>
       <title><![CDATA[Σκουλαρίκια ανδρικά τρίγωνα χειροποίητα από επιχρυσωμένο ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andrika-skoularikia-trigona</productURL>
@@ -969,6 +1051,7 @@
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-352859.jpg?v=1752669188</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-799281.jpg?v=1752669188</img3>
         <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-910610.jpg?v=1752669188</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-577541.jpg?v=1752669188</img5>
       </imagesURL>
       <price>39.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
@@ -987,7 +1070,10 @@
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-875436.jpg?v=1739447451</imageURL>
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-875436.jpg?v=1739447451</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-607045.jpg?v=1739447451</img2>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-157251.jpg?v=1739447451</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-345023.jpg?v=1739447451</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-607045.jpg?v=1739447451</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-585433.jpg?v=1739447451</img5>
       </imagesURL>
       <price>54.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -1009,7 +1095,7 @@
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-782169.jpg?v=1739447451</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-326617.jpg?v=1739447451</img3>
         <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-773440.jpg?v=1739447451</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-373173.jpg?v=1739447451</img5>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-611984.jpg?v=1739447451</img5>
       </imagesURL>
       <price>54.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -1028,7 +1114,10 @@
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-666114.jpg?v=1739447451</imageURL>
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-666114.jpg?v=1739447451</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-946961.jpg?v=1739447451</img2>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-879056.jpg?v=1739447451</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-946961.jpg?v=1739447451</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-497104.jpg?v=1739447451</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-867197.jpg?v=1739447451</img5>
       </imagesURL>
       <price>54.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -1492,6 +1581,7 @@
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-karfwta-skoylarikia-krikoi-me-aktines-apo-ashmi-925-kosmhmata-emmanuela-706997.jpg?v=1730713198</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-karfwta-skoylarikia-krikoi-me-aktines-apo-ashmi-925-kosmhmata-emmanuela-721006.jpg?v=1730713198</img3>
         <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-karfwta-skoylarikia-krikoi-me-aktines-apo-ashmi-925-kosmhmata-emmanuela-770293.jpg?v=1730713198</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-karfwta-skoylarikia-krikoi-me-aktines-apo-ashmi-925-kosmhmata-emmanuela-818774.jpg?v=1730713198</img5>
       </imagesURL>
       <price>58.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -4184,6 +4274,10 @@
       <title><![CDATA[Σκουλαρίκι ear cuff τόξα αριστερό αυτί χειροποίητο από ροζ επιχρυσωμένο ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/skoulariki-ear-cuff-toxa</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmeno-skoylariki-cuff-toxa-apo-ashmi-925-kosmhmata-emmanuela-979749.jpg?v=1767372868</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmeno-skoylariki-cuff-toxa-apo-ashmi-925-kosmhmata-emmanuela-979749.jpg?v=1767372868</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img2>
+      </imagesURL>
       <price>47.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -4483,6 +4577,11 @@
       <title><![CDATA[Σκουλαρίκι ear cuff φύλλα ελιάς αριστερό αυτί χειροποίητο από επιχρυσωμένο ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/skoulariki-ear-cuff-fylla-elias-megalo</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-152022.jpg?v=1767372751</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-152022.jpg?v=1767372751</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-skoylariki-cuff-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-365786.jpg?v=1767372755</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img3>
+      </imagesURL>
       <price>69.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -5201,6 +5300,7 @@
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmeno-skoylariki-cuff-speires-apo-ashmi-925-kosmhmata-emmanuela-296982.jpg?v=1767372331</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmeno-skoylariki-cuff-speires-apo-ashmi-925-kosmhmata-emmanuela-923128.jpg?v=1767372335</img3>
         <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmeno-skoylariki-cuff-speires-apo-ashmi-925-kosmhmata-emmanuela-774106.jpg?v=1767372340</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmeno-skoylariki-cuff-speires-apo-ashmi-925-kosmhmata-emmanuela-386624.jpg?v=1767372346</img5>
       </imagesURL>
       <price>47.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -5222,6 +5322,7 @@
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmeno-skoylariki-cuff-speires-apo-ashmi-925-kosmhmata-emmanuela-296982.jpg?v=1767372331</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmeno-skoylariki-cuff-speires-apo-ashmi-925-kosmhmata-emmanuela-923128.jpg?v=1767372335</img3>
         <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmeno-skoylariki-cuff-speires-apo-ashmi-925-kosmhmata-emmanuela-774106.jpg?v=1767372340</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmeno-skoylariki-cuff-speires-apo-ashmi-925-kosmhmata-emmanuela-386624.jpg?v=1767372346</img5>
       </imagesURL>
       <price>47.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -7211,6 +7312,7 @@
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-xryso-me-roz-xryso-syrma-karfwta-skoylarikia-stayroi-apo-ashmi-925-kosmhmata-emmanuela-757262.jpg?v=1767371171</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-xryso-me-roz-xryso-syrma-karfwta-skoylarikia-stayroi-apo-ashmi-925-kosmhmata-emmanuela-349696.jpg?v=1767371178</img3>
         <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-xryso-me-roz-xryso-syrma-karfwta-skoylarikia-stayroi-apo-ashmi-925-kosmhmata-emmanuela-729418.jpg?v=1767371181</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-xryso-me-roz-xryso-syrma-karfwta-skoylarikia-stayroi-apo-ashmi-925-kosmhmata-emmanuela-591945.jpg?v=1767371187</img5>
       </imagesURL>
       <price>59.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -7909,6 +8011,7 @@
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-karfwta-skoylarikia-loyloydia-me-misxo-apo-ashmi-925-kosmhmata-emmanuela-555385.png?v=1767370777</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-karfwta-skoylarikia-loyloydia-me-misxo-apo-ashmi-925-kosmhmata-emmanuela-399062.png?v=1767370781</img3>
         <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-karfwta-skoylarikia-loyloydia-me-misxo-apo-ashmi-925-kosmhmata-emmanuela-871848.png?v=1767370784</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-karfwta-skoylarikia-loyloydia-me-misxo-apo-ashmi-925-kosmhmata-emmanuela-318474.png?v=1767370788</img5>
       </imagesURL>
       <price>62.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -8120,6 +8223,9 @@
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylarikia-krikoi-me-ftera-apo-ashmi-925-kosmhmata-emmanuela-905809.jpg?v=1767370621</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylarikia-krikoi-me-ftera-apo-ashmi-925-kosmhmata-emmanuela-531923.jpg?v=1767370628</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylarikia-krikoi-me-ftera-apo-ashmi-925-kosmhmata-emmanuela-323993.jpg?v=1767370633</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylarikia-krikoi-me-ftera-apo-ashmi-925-kosmhmata-emmanuela-216611.jpg?v=1767370638</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylarikia-krikoi-me-ftera-apo-ashmi-925-kosmhmata-emmanuela-814193.jpg?v=1767370645</img5>
       </imagesURL>
       <price>64.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -8248,6 +8354,7 @@
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-krikoi-mayroi-apo-ashmi-925-kosmhmata-emmanuela-135649.jpg?v=1767370531</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-krikoi-mayroi-apo-ashmi-925-kosmhmata-emmanuela-438338.jpg?v=1767370536</img3>
         <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-krikoi-mayroi-apo-ashmi-925-kosmhmata-emmanuela-262142.jpg?v=1767370541</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-krikoi-mayroi-apo-ashmi-925-kosmhmata-emmanuela-709893.jpg?v=1767370548</img5>
       </imagesURL>
       <price>52.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -8358,6 +8465,8 @@
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-me-syrma-apo-xalko-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-396119.jpg?v=1767370398</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-me-syrma-apo-xalko-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-414401.jpg?v=1767370402</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-me-syrma-apo-xalko-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-170996.jpg?v=1767370407</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img4>
       </imagesURL>
       <price>59.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -8583,7 +8692,23 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>54181223629134</productId>
+      <productId>51038408474958</productId>
+      <title><![CDATA[Δαχτυλίδι κορώνα με σταυρούς χειροποίητο από ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/daxtylidi-korona-stayrous</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/55-daxtylidi-korwna-me-stayroys-apo-ashmi-925-kosmhmata-emmanuela-509541.jpg?v=1767370107</imageURL>
+      <price>52.00</price>
+      <category_path>Κοσμήματα-&gt;Δαχτυλίδια-&gt;Γυναικεία δαχτυλίδια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>LU217riWo</MPN>
+      <color>ασημί</color>
+      <size>53,55,56,57,61,62,63,64</size>
+      <weight>4</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>31373659930659</productId>
       <title><![CDATA[Δαχτυλίδι σταυρός χειροποίητο από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/daxtylidi-stayros</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/50-daxtylidi-stayros-apo-ashmi-925-kosmhmata-emmanuela-658924.jpg?v=1767370065</imageURL>
@@ -8592,9 +8717,9 @@
       <availability>Παράδοση σε 1-3 ημέρες</availability>
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>EMM-54181223629134</MPN>
+      <MPN>LU0190riWo</MPN>
       <color>ασημί</color>
-      <size>51,53,57,59,60</size>
+      <size>50,51,52,53,57,58,59,60</size>
       <weight>6</weight>
       <shipping>0</shipping>
     </product>
@@ -8637,9 +8762,9 @@
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-40cm-kremastos-stayros-apo-karfia-apo-ashmi-925-kosmhmata-emmanuela-960250.jpg?v=1767369920</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-40cm-kremastos-stayros-apo-karfia-apo-ashmi-925-kosmhmata-emmanuela-560321.jpg?v=1767369922</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-40cm-kremastos-stayros-apo-karfia-apo-ashmi-925-kosmhmata-emmanuela-368851.jpg?v=1767369914</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-40cm-kremastos-stayros-apo-karfia-apo-ashmi-925-kosmhmata-emmanuela-586725.jpg?v=1767369902</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-40cm-kremastos-stayros-apo-karfia-apo-ashmi-925-kosmhmata-emmanuela-205583.jpg?v=1767369909</img5>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-40cm-kremastos-stayros-apo-karfia-apo-ashmi-925-kosmhmata-emmanuela-368851.jpg?v=1767369914</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-40cm-kremastos-stayros-apo-karfia-apo-ashmi-925-kosmhmata-emmanuela-586725.jpg?v=1767369902</img5>
       </imagesURL>
       <price>59.00</price>
       <category_path>Κοσμήματα-&gt;Μενταγιόν-&gt;Γυναικεία μενταγιόν</category_path>
@@ -8966,6 +9091,7 @@
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andrika-toxwta-skoylarikia-apo-ashmi-925-kosmhmata-emmanuela-865360.jpg?v=1767369550</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andrika-toxwta-skoylarikia-apo-ashmi-925-kosmhmata-emmanuela-653149.jpg?v=1767369556</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andrika-toxwta-skoylarikia-apo-ashmi-925-kosmhmata-emmanuela-363518.jpg?v=1767369562</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img4>
       </imagesURL>
       <price>49.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
@@ -9096,6 +9222,8 @@
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-me-oxeidwmeno-syrma-andriko-skoylariki-krikos-me-stayro-apo-ashmi-925-kosmhmata-emmanuela-316483.jpg?v=1767369419</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-me-oxeidwmeno-syrma-andriko-skoylariki-krikos-me-stayro-apo-ashmi-925-kosmhmata-emmanuela-446612.jpg?v=1767369427</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-me-oxeidwmeno-syrma-andriko-skoylariki-krikos-me-stayro-apo-ashmi-925-kosmhmata-emmanuela-505286.jpg?v=1767369435</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-me-oxeidwmeno-syrma-andriko-skoylariki-krikos-me-stayro-apo-ashmi-925-kosmhmata-emmanuela-269717.jpg?v=1767369440</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-me-oxeidwmeno-syrma-andriko-skoylariki-krikos-me-stayro-apo-ashmi-925-kosmhmata-emmanuela-669428.jpg?v=1767369443</img5>
       </imagesURL>
       <price>42.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
@@ -9298,6 +9426,7 @@
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-me-ftero-apo-ashmi-925-kosmhmata-emmanuela-798834.jpg?v=1767369224</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-me-ftero-apo-ashmi-925-kosmhmata-emmanuela-713360.jpg?v=1767369229</img3>
         <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-me-ftero-apo-ashmi-925-kosmhmata-emmanuela-466921.jpg?v=1767369236</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-me-ftero-apo-ashmi-925-kosmhmata-emmanuela-413035.jpg?v=1767369242</img5>
       </imagesURL>
       <price>42.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
@@ -9319,6 +9448,7 @@
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-me-ftero-apo-ashmi-925-kosmhmata-emmanuela-798834.jpg?v=1767369224</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-me-ftero-apo-ashmi-925-kosmhmata-emmanuela-713360.jpg?v=1767369229</img3>
         <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-me-ftero-apo-ashmi-925-kosmhmata-emmanuela-466921.jpg?v=1767369236</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-me-ftero-apo-ashmi-925-kosmhmata-emmanuela-413035.jpg?v=1767369242</img5>
       </imagesURL>
       <price>64.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
@@ -9603,7 +9733,11 @@
       <productId>31373800964131</productId>
       <title><![CDATA[Σκουλαρίκια ανδρικά suspender σφυρήλατα χειροποίητα μαύρα από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-skoulariki-sfyrilato</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1308_2.jpg?v=1767368966</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-suspender-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-644753.jpg?v=1767369019</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-suspender-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-644753.jpg?v=1767369019</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img2>
+      </imagesURL>
       <price>63.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -9723,7 +9857,11 @@
       <productId>31373811417123</productId>
       <title><![CDATA[Σκουλαρίκια ανδρικά suspender χειροποίητα από οξειδωμένο ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-skoulariki-suspender</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1314.jpg?v=1767368871</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-suspender-apo-ashmi-925-kosmhmata-emmanuela-470553.jpg?v=1767368930</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-suspender-apo-ashmi-925-kosmhmata-emmanuela-470553.jpg?v=1767368930</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img2>
+      </imagesURL>
       <price>59.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -9753,7 +9891,7 @@
       <productId>31373811220515</productId>
       <title><![CDATA[Σκουλαρίκια ανδρικά suspender χειροποίητα μαύρα από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-skoulariki-suspender</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1314.jpg?v=1767368871</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-suspender-apo-ashmi-925-kosmhmata-emmanuela-867205.jpg?v=1767368923</imageURL>
       <price>59.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -10352,7 +10490,7 @@
       <productId>31374042333219</productId>
       <title><![CDATA[Σκουλαρίκια ανδρικά τρίγωνα σφυρήλατα χειροποίητα από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-trigoniko-skoulariki</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-andriko-skoylariki-trigwno-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-634936.jpg?v=1767368141</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-andriko-skoylariki-trigwno-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-715650.jpg?v=1767368191</imageURL>
       <price>52.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -10406,7 +10544,12 @@
       <productId>31374042431523</productId>
       <title><![CDATA[Σκουλαρίκι ανδρικό τρίγωνο σφυρήλατο χειροποίητο από οξειδωμένο ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-trigoniko-skoulariki</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-andriko-skoylariki-trigwno-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-634936.jpg?v=1767368141</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-trigwno-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-230774.jpg?v=1767368196</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-trigwno-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-230774.jpg?v=1767368196</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-trigwno-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-562567.jpg?v=1767368200</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img3>
+      </imagesURL>
       <price>39.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -10421,7 +10564,12 @@
       <productId>31374042464291</productId>
       <title><![CDATA[Σκουλαρίκια ανδρικά τρίγωνα σφυρήλατα χειροποίητα από οξειδωμένο ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-trigoniko-skoulariki</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-andriko-skoylariki-trigwno-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-634936.jpg?v=1767368141</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-trigwno-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-230774.jpg?v=1767368196</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-trigwno-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-230774.jpg?v=1767368196</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-trigwno-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-562567.jpg?v=1767368200</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img3>
+      </imagesURL>
       <price>52.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -11118,7 +11266,10 @@
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-649.jpg?v=1786011589</imageURL>
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-649.jpg?v=1786011589</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-650.jpg?v=1786011589</img2>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-47.jpg?v=1786011706</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/Untitled-650.jpg?v=1786011589</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-961766.jpg?v=1767366907</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/texnoderma-kremasto-mentagion-fwtografikh-mhxanh-apo-ashmi-925-kosmhmata-emmanuela-418880.jpg?v=1767366911</img5>
       </imagesURL>
       <price>59.00</price>
       <category_path>Κοσμήματα-&gt;Μενταγιόν-&gt;Ανδρικά μενταγιόν</category_path>
@@ -11206,6 +11357,21 @@
       <shipping>0</shipping>
     </product>
     <product>
+      <productId>31374222852131</productId>
+      <title><![CDATA[Βραχιόλι ανδρικό αλυσίδα με δίσκους χειροποίητο από ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/andriko-braxioli-alysida-mikroi-diskoi</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/17-cm-andriko-braxioli-me-mikroys-diskoys-apo-ashmi-925-kosmhmata-emmanuela-346992.jpg?v=1767366521</imageURL>
+      <price>62.00</price>
+      <category_path>Κοσμήματα-&gt;Βραχιόλια-&gt;Ανδρικά βραχιόλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>LU636br</MPN>
+      <color>ασημί</color>
+      <weight>6</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
       <productId>59908205740366</productId>
       <title><![CDATA[Βραχιόλι ανδρικό αλυσίδα με μικρές μπίλιες χειροποίητο από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-braxioli-alysida-mikres-mpilies</productURL>
@@ -11216,6 +11382,36 @@
       <stock>Y</stock>
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>EMM-59908205740366</MPN>
+      <color>ασημί</color>
+      <weight>6</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>39456812269603</productId>
+      <title><![CDATA[Βραχιόλι ανδρικό αλυσίδα χειροποίητο από ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/andriko-braxioli-alysida</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/17-cm-andriko-braxioli-alysida-apo-ashmi-925-kosmhmata-emmanuela-242152.jpg?v=1767366314</imageURL>
+      <price>74.00</price>
+      <category_path>Κοσμήματα-&gt;Βραχιόλια-&gt;Ανδρικά βραχιόλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>LU459br</MPN>
+      <color>ασημί</color>
+      <weight>6</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>39255505436707</productId>
+      <title><![CDATA[Βραχιόλι ανδρικό αλυσίδα με εξοχές χειροποίητο από ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/andriko-braxioli-alysida-exoxes</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/17-cm-andriko-braxioli-alysida-me-exoxes-apo-ashmi-925-kosmhmata-emmanuela-688710.jpg?v=1767366245</imageURL>
+      <price>102.00</price>
+      <category_path>Κοσμήματα-&gt;Βραχιόλια-&gt;Ανδρικά βραχιόλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>LU280br</MPN>
       <color>ασημί</color>
       <weight>6</weight>
       <shipping>0</shipping>
@@ -11527,6 +11723,22 @@
       <shipping>0</shipping>
     </product>
     <product>
+      <productId>31374415626275</productId>
+      <title><![CDATA[Δαχτυλίδι ανδρικό σταυρός χειροποίητο από ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/andriko-daxtylidi-stayros</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/50-andriko-daxtylidi-stayros-apo-ashmi-925-kosmhmata-emmanuela-260533.jpg?v=1767365334</imageURL>
+      <price>62.00</price>
+      <category_path>Κοσμήματα-&gt;Δαχτυλίδια-&gt;Ανδρικά δαχτυλίδια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>LU0190ri</MPN>
+      <color>ασημί</color>
+      <size>50,51,52,53,57,58</size>
+      <weight>3</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
       <productId>31374418608163</productId>
       <title><![CDATA[Δαχτυλίδι ανδρικό ασπίδα σταυρός χειροποίητο από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-daxtylidi-aspida-mikro</productURL>
@@ -11618,6 +11830,22 @@
       <MPN>LU076ri</MPN>
       <color>ασημί</color>
       <size>57,58,59,60,61,62,63,64,65,66,67,68,69,70</size>
+      <weight>3</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>51038382358862</productId>
+      <title><![CDATA[Δαχτυλίδι ανδρικό κορώνα με σταυρούς χειροποίητο από ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/anriko-daxtylidi-korona-stayroi</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/55-andriko-daxtylidi-korwna-me-stayroys-apo-ashmi-925-kosmhmata-emmanuela-780940.jpg?v=1767364668</imageURL>
+      <price>52.00</price>
+      <category_path>Κοσμήματα-&gt;Δαχτυλίδια-&gt;Ανδρικά δαχτυλίδια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>LU217ri</MPN>
+      <color>ασημί</color>
+      <size>53,55,56,57,61,62,63,64</size>
       <weight>3</weight>
       <shipping>0</shipping>
     </product>
@@ -12262,7 +12490,9 @@
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-jackets-loyloydia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-469134.jpg?v=1767363766</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-jackets-loyloydia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-915488.jpg?v=1767363719</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-jackets-loyloydia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-839537.jpg?v=1767363760</img3>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-jackets-loyloydia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-859692.jpg?v=1767363773</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-jackets-loyloydia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-839537.jpg?v=1767363760</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img5>
       </imagesURL>
       <price>57.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -12300,7 +12530,13 @@
       <productId>31696452321315</productId>
       <title><![CDATA[Σκουλαρίκια jackets λουλούδια με μαργαριτάρια και λευκό μαργαριτάρι χειροποίητα από ροζ επιχρυσωμένο ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/skoularikia-ear-jacket-margaritaria</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-skoylarikia-jackets-loyloydia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-469134.jpg?v=1767363766</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-jackets-loyloydia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-380761.jpg?v=1767363785</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-jackets-loyloydia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-380761.jpg?v=1767363785</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-jackets-loyloydia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-917503.jpg?v=1767363791</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-jackets-loyloydia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-268278.jpg?v=1767363801</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmena-skoylarikia-jackets-loyloydia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-528979.jpg?v=1767363779</img4>
+      </imagesURL>
       <price>57.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -12494,6 +12730,9 @@
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylarikia-krikoi-huggies-sfyrhlata-apo-ashmi-925-kosmhmata-emmanuela-931323.jpg?v=1767363668</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylarikia-krikoi-huggies-sfyrhlata-apo-ashmi-925-kosmhmata-emmanuela-751514.jpg?v=1767363671</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylarikia-krikoi-huggies-sfyrhlata-apo-ashmi-925-kosmhmata-emmanuela-447388.jpg?v=1767363674</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylarikia-krikoi-huggies-sfyrhlata-apo-ashmi-925-kosmhmata-emmanuela-937905.jpg?v=1767363679</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylarikia-krikoi-huggies-sfyrhlata-apo-ashmi-925-kosmhmata-emmanuela-786214.jpg?v=1767363683</img5>
       </imagesURL>
       <price>42.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -12605,6 +12844,8 @@
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylarikia-krikoi-huggies-apo-ashmi-925-kosmhmata-emmanuela-231477.jpg?v=1767363614</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylarikia-krikoi-huggies-apo-ashmi-925-kosmhmata-emmanuela-364643.jpg?v=1767363616</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylarikia-krikoi-huggies-apo-ashmi-925-kosmhmata-emmanuela-208366.jpg?v=1767363621</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-skoylarikia-krikoi-huggies-apo-ashmi-925-kosmhmata-emmanuela-561435.jpg?v=1767363624</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img5>
       </imagesURL>
       <price>63.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -12680,6 +12921,7 @@
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-karfwta-skoylarikia-huggies-apo-ashmi-925-kosmhmata-emmanuela-297778.jpg?v=1767363554</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-karfwta-skoylarikia-huggies-apo-ashmi-925-kosmhmata-emmanuela-759350.jpg?v=1767363557</img3>
         <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-karfwta-skoylarikia-huggies-apo-ashmi-925-kosmhmata-emmanuela-102531.jpg?v=1767363561</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-karfwta-skoylarikia-huggies-apo-ashmi-925-kosmhmata-emmanuela-170043.jpg?v=1767363565</img5>
       </imagesURL>
       <price>57.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -12819,7 +13061,7 @@
     </product>
     <product>
       <productId>32345001721891</productId>
-      <title><![CDATA[Δαχτυλίδι φίογκος χειροποίητο από ασήμι 925]]></title>
+      <title><![CDATA[Δαχτυλίδι φιόγκος χειροποίητο από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/daxtylidi-fiogkos</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/48-daxtylidi-fiogkos-apo-ashmi-925-kosmhmata-emmanuela-184570.jpg?v=1767363396</imageURL>
       <price>42.00</price>
@@ -12835,7 +13077,7 @@
     </product>
     <product>
       <productId>32345001754659</productId>
-      <title><![CDATA[Δαχτυλίδι φίογκος χειροποίητο από επιχρυσωμένο ασήμι 925]]></title>
+      <title><![CDATA[Δαχτυλίδι φιόγκος χειροποίητο από επιχρυσωμένο ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/daxtylidi-fiogkos</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/48-daxtylidi-fiogkos-apo-ashmi-925-kosmhmata-emmanuela-184570.jpg?v=1767363396</imageURL>
       <price>42.00</price>
@@ -12958,7 +13200,7 @@
     </product>
     <product>
       <productId>51131566391630</productId>
-      <title><![CDATA[Μενταγιόν μονόγραμμα Α με λουούδι και σιτρίν πέτρα χειροποίητο από ασήμι 925]]></title>
+      <title><![CDATA[Μενταγιόν μονόγραμμα Α με λουλούδι και σιτρίν πέτρα χειροποίητο από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/kremasto-monogramma-louloudi</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/kremasto-mentagion-monogramma-me-loyoydi-apo-ashmi-925-kosmhmata-emmanuela-901213.jpg?v=1767363249</imageURL>
       <price>59.00</price>
@@ -12968,6 +13210,36 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>7027</MPN>
       <color>ασημί</color>
+      <weight>3</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>51131578810702</productId>
+      <title><![CDATA[Μενταγιόν μονόγραμμα Α με λουλούδι και σιτρίν πέτρα χειροποίητο από επιχρυσωμένο ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/kremasto-monogramma-louloudi</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/kremasto-mentagion-monogramma-me-loyoydi-apo-ashmi-925-kosmhmata-emmanuela-901213.jpg?v=1767363249</imageURL>
+      <price>59.00</price>
+      <category_path>Κοσμήματα-&gt;Μενταγιόν-&gt;Γυναικεία μενταγιόν</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>EMM-51131578810702</MPN>
+      <color>χρυσό</color>
+      <weight>3</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>51131583398222</productId>
+      <title><![CDATA[Μενταγιόν μονόγραμμα Α με λουλούδι και σιτρίν πέτρα χειροποίητο από ροζ επιχρυσωμένο ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/kremasto-monogramma-louloudi</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/kremasto-mentagion-monogramma-me-loyoydi-apo-ashmi-925-kosmhmata-emmanuela-901213.jpg?v=1767363249</imageURL>
+      <price>59.00</price>
+      <category_path>Κοσμήματα-&gt;Μενταγιόν-&gt;Γυναικεία μενταγιόν</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>EMM-51131583398222</MPN>
+      <color>ροζ</color>
       <weight>3</weight>
       <shipping>0</shipping>
     </product>
@@ -13130,7 +13402,11 @@
       <productId>31712625459235</productId>
       <title><![CDATA[Σκουλαρίκι ear cuff με κόκκινο λουλούδι αριστερό αυτί χειροποίητο μαύρο από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/skoulariki-ear-cuff-kokkino-louloudi</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-skoylariki-cuff-me-kokkino-loyloydi-apo-ashmi-925-kosmhmata-emmanuela-263717.jpg?v=1767363203</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/products/skoylariki-cuff-me-kokkino-loyloydi-apo-ashmi-925-kosmhmata-emmanuela-949367.gif?v=1641373137</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/products/skoylariki-cuff-me-kokkino-loyloydi-apo-ashmi-925-kosmhmata-emmanuela-949367.gif?v=1641373137</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img2>
+      </imagesURL>
       <price>52.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -13864,7 +14140,7 @@
     </product>
     <product>
       <productId>31724412764195</productId>
-      <title><![CDATA[Δαχτυλίδι λιβελουλα με σπείρες χειροποίητο από ασήμι 925]]></title>
+      <title><![CDATA[Δαχτυλίδι λιβελούλα με σπείρες χειροποίητο από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/daxtylidi-libeloula-speires</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-daxtylidi-libeloyla-me-speires-apo-ashmi-925-kosmhmata-emmanuela-573917.jpg?v=1767362813</imageURL>
       <imagesURL>
@@ -13885,7 +14161,7 @@
     </product>
     <product>
       <productId>31724413255715</productId>
-      <title><![CDATA[Δαχτυλίδι λιβελουλα με σπείρες χειροποίητο από επιχρυσωμένο ασήμι 925]]></title>
+      <title><![CDATA[Δαχτυλίδι λιβελούλα με σπείρες χειροποίητο από επιχρυσωμένο ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/daxtylidi-libeloula-speires</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-daxtylidi-libeloyla-me-speires-apo-ashmi-925-kosmhmata-emmanuela-573917.jpg?v=1767362813</imageURL>
       <price>39.00</price>
@@ -14271,7 +14547,7 @@
       <productId>54860549521742</productId>
       <title><![CDATA[Σκουλαρίκια ανδρικά κρίκος σφυρήλατος χειροποίητα από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-skoulariki-krikos-sfyrilatos</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-andriko-skoylariki-krikos-sfyrhlatos-apo-ashmi-925-kosmhmata-emmanuela-531832.jpg?v=1767362531</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1311_9.jpg?v=1786019676</imageURL>
       <price>63.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -14305,7 +14581,7 @@
       <productId>54860549554510</productId>
       <title><![CDATA[Σκουλαρίκια ανδρικά κρίκος σφυρήλατος χειροποίητα από επιχρυσωμένο ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-skoulariki-krikos-sfyrilatos</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-andriko-skoylariki-krikos-sfyrhlatos-apo-ashmi-925-kosmhmata-emmanuela-531832.jpg?v=1767362531</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1311_6.jpg?v=1786019676</imageURL>
       <price>63.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -14342,7 +14618,7 @@
       <productId>54860549587278</productId>
       <title><![CDATA[Σκουλαρίκια ανδρικά κρίκος σφυρήλατος χειροποίητα μαύρα από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-skoulariki-krikos-sfyrilatos</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-andriko-skoylariki-krikos-sfyrhlatos-apo-ashmi-925-kosmhmata-emmanuela-531832.jpg?v=1767362531</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1311_10.jpg?v=1786019677</imageURL>
       <price>63.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -14372,7 +14648,11 @@
       <productId>54860549620046</productId>
       <title><![CDATA[Σκουλαρίκια ανδρικά κρίκος σφυρήλατος χειροποίητα από οξειδωμένο ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-skoulariki-krikos-sfyrilatos</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-andriko-skoylariki-krikos-sfyrhlatos-apo-ashmi-925-kosmhmata-emmanuela-531832.jpg?v=1767362531</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1311_5.jpg?v=1786019677</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/1311_5.jpg?v=1786019677</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img2>
+      </imagesURL>
       <price>63.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -14444,6 +14724,8 @@
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-andriko-skoylariki-krikos-fyllo-apo-ashmi-925-kosmhmata-emmanuela-356577.jpg?v=1767362496</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-andriko-skoylariki-krikos-fyllo-apo-ashmi-925-kosmhmata-emmanuela-124857.jpg?v=1767362502</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-andriko-skoylariki-krikos-fyllo-apo-ashmi-925-kosmhmata-emmanuela-183353.jpg?v=1767362508</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-andriko-skoylariki-krikos-fyllo-apo-ashmi-925-kosmhmata-emmanuela-868484.jpg?v=1767362512</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img5>
       </imagesURL>
       <price>42.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
@@ -14573,6 +14855,8 @@
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-767056.jpg?v=1767362395</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-316251.jpg?v=1767362401</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-186930.jpg?v=1767362408</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg?v=1774616918</img4>
       </imagesURL>
       <price>39.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -15556,6 +15840,10 @@
       <title><![CDATA[Σκουλαρίκι ear cuff φίδι με ρουμπινί πέτρα αριστερό αυτί χειροποίητο από επιχρυσωμένο ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/skoulariki-ear-cuff-fidi</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-roympini-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-600682.jpg?v=1767361654</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-roympini-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-600682.jpg?v=1767361654</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-mayro-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-487990.jpg?v=1767361668</img2>
+      </imagesURL>
       <price>54.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -15601,7 +15889,12 @@
       <productId>49348977426766</productId>
       <title><![CDATA[Σκουλαρίκι ear cuff φίδι με μπλε πέτρα αριστερό αυτί χειροποίητο από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/skoulariki-ear-cuff-fidi</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-mayro-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-337235.jpg?v=1767361607</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-mple-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-898323.jpg?v=1767361678</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-mple-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-898323.jpg?v=1767361678</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-mple-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-856327.jpg?v=1767361684</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-mwb-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-838366.jpg?v=1767361672</img3>
+      </imagesURL>
       <price>54.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -15650,7 +15943,11 @@
       <productId>49348977688910</productId>
       <title><![CDATA[Σκουλαρίκι ear cuff φίδι με γαλάζια πέτρα αριστερό αυτί χειροποίητο μαύρο από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/skoulariki-ear-cuff-fidi</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmeno-mayro-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-337235.jpg?v=1767361607</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-galazio-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-419043.jpg?v=1767361663</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-galazio-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-419043.jpg?v=1767361663</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-prasino-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-731617.jpg?v=1767361658</img2>
+      </imagesURL>
       <price>54.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -16275,6 +16572,10 @@
       <title><![CDATA[Σκουλαρίκι ανδρικό κρίκος μικρός ραβδωτός χειροποίητο μαύρο από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-skoulariki-krikos-ravdotos</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/hoopwide3.jpg?v=1786019997</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/hoopwide3.jpg?v=1786019997</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixyswmeno-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-688165.jpg?v=1767361247</img2>
+      </imagesURL>
       <price>46.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -16289,6 +16590,10 @@
       <title><![CDATA[Σκουλαρίκια ανδρικά κρίκος μικρός ραβδωτός χειροποίητα μαύρα από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-skoulariki-krikos-ravdotos</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/hoopwide3.jpg?v=1786019997</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/hoopwide3.jpg?v=1786019997</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixyswmeno-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-688165.jpg?v=1767361247</img2>
+      </imagesURL>
       <price>66.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -16684,6 +16989,8 @@
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-andrika-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-125127.jpg?v=1767360932</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-andrika-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-556859.jpg?v=1767360936</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-andrika-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-243251.jpg?v=1767360944</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-andrika-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-155760.jpg?v=1767360947</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-andrika-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-784723.jpg?v=1767360953</img5>
       </imagesURL>
       <price>49.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
@@ -16696,7 +17003,7 @@
     </product>
     <product>
       <productId>49357118112078</productId>
-      <title><![CDATA[Σκουλαρίκια κρεμαστά ανθισμένα λουλουλούδια χειροποίητα από επιχρυσωμένο ασήμι 925]]></title>
+      <title><![CDATA[Σκουλαρίκια κρεμαστά ανθισμένα λουλούδια χειροποίητα από επιχρυσωμένο ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/kremasta-skoularikia-anthismena-louloudia</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/epixryswmena-kremasta-skoylarikia-anthismena-loyloyloydia-apo-ashmi-925-kosmhmata-emmanuela-691252.jpg?v=1767360858</imageURL>
       <price>89.00</price>
@@ -16710,7 +17017,7 @@
     </product>
     <product>
       <productId>49357118144846</productId>
-      <title><![CDATA[Σκουλαρίκια κρεμαστά ανθισμένα λουλουλούδια χειροποίητα από ασήμι 925]]></title>
+      <title><![CDATA[Σκουλαρίκια κρεμαστά ανθισμένα λουλούδια χειροποίητα από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/kremasta-skoularikia-anthismena-louloudia</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenia-kremasta-skoylarikia-anthismena-loyloyloydia-apo-ashmi-925-kosmhmata-emmanuela-838825.jpg?v=1767360863</imageURL>
       <imagesURL>
@@ -18162,10 +18469,12 @@
       <productId>49401156075854</productId>
       <title><![CDATA[Σκουλαρίκια καρφωτά huggies με ζιρκόν και μαύρη πέτρα χειροποίητα από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/karfota-skoularikia-huggies-zircon</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-tyrkoyaz-karfwta-skoylarikia-huggies-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-740071.jpg?v=1767359836</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-mayro-karfwta-skoylarikia-huggies-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-151609.jpg?v=1767359883</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-tyrkoyaz-karfwta-skoylarikia-huggies-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-740071.jpg?v=1767359836</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmeno-mwb-karfwta-skoylarikia-huggies-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-875331.jpg?v=1767359845</img2>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-mayro-karfwta-skoylarikia-huggies-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-151609.jpg?v=1767359883</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-tyrkoyaz-karfwta-skoylarikia-huggies-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-179614.jpg?v=1767359889</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-tyrkoyaz-karfwta-skoylarikia-huggies-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-740071.jpg?v=1767359836</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/roz-epixryswmeno-mwb-karfwta-skoylarikia-huggies-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-875331.jpg?v=1767359845</img4>
       </imagesURL>
       <price>54.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -18301,6 +18610,7 @@
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-296690.jpg?v=1767359723</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-151775.jpg?v=1767359729</img3>
         <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-391544.jpg?v=1767359733</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmena-karfwta-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-490521.jpg?v=1767359738</img5>
       </imagesURL>
       <price>44.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>
@@ -19098,6 +19408,8 @@
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5753065913_8f7y.jpg?v=1767358937</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5753066573_lcxq.jpg?v=1767358947</img2>
         <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5455604572_i4ac.jpg?v=1767358969</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5455776572_2f23.jpg?v=1767358980</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/il_fullxfull.5538523611_nkzr_2d21fcec-3873-4389-a851-c5c0089a56d0.jpg?v=1767358984</img5>
       </imagesURL>
       <price>89.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Γυναικεία σκουλαρίκια</category_path>

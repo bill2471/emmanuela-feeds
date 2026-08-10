@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-08-09 19:35</date>
+  <date>2026-08-10 16:36</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -288,9 +288,9 @@
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-dermatines-espantrigies-emmanuela-handcrafted-for-you-flat-dermatines-espantrigies-838035.jpg?v=1627293131</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-dermatines-espantrigies-emmanuela-handcrafted-for-you-flat-dermatines-espantrigies-809154.jpg?v=1627293131</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-dermatines-espantrigies-emmanuela-handcrafted-for-you-flat-dermatines-espantrigies-945560.jpg?v=1627293131</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-dermatines-espantrigies-emmanuela-handcrafted-for-you-flat-dermatines-espantrigies-533193.jpg?v=1627293131</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-dermatines-espantrigies-emmanuela-handcrafted-for-you-flat-dermatines-espantrigies-487340.jpg?v=1627293131</img5>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-dermatines-espantrigies-emmanuela-handcrafted-for-you-flat-dermatines-espantrigies-533193.jpg?v=1627293131</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-dermatines-espantrigies-emmanuela-handcrafted-for-you-flat-dermatines-espantrigies-487340.jpg?v=1627293131</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-dermatines-espantrigies-emmanuela-handcrafted-for-you-flat-dermatines-espantrigies-499787.jpg?v=1627293131</img5>
       </imagesURL>
       <price>89.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Εσπαντρίγιες</category_path>
@@ -305,10 +305,17 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479799214237</productId>
+      <productId>40479800721565</productId>
       <title><![CDATA[Emmanuela Flatform εσπαντρίγιες]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-peeptoe-espadrilles-fabric</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-yfasmatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-yfasmatines-espantrigies-peeptoe-654575.jpg?v=1627293680</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-straw-peeptoe-espadrilles</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-psathines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-psathines-espantrigies-peeptoe-818095.jpg?v=1627374884</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-psathines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-psathines-espantrigies-peeptoe-818095.jpg?v=1627374884</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-psathines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-psathines-espantrigies-peeptoe-765068.jpg?v=1627293723</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-psathines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-psathines-espantrigies-peeptoe-675572.jpg?v=1627293723</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-psathines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-psathines-espantrigies-peeptoe-874835.jpg?v=1627293723</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-psathines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-psathines-espantrigies-peeptoe-407292.jpg?v=1627293723</img5>
+      </imagesURL>
       <price>94.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Εσπαντρίγιες</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -322,30 +329,6 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479800262813</productId>
-      <title><![CDATA[Emmanuela Flatform εσπαντρίγιες]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-straw-espadrilles</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-psathines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-psathines-espantrigies-detes-622768.jpg?v=1627293724</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-psathines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-psathines-espantrigies-detes-622768.jpg?v=1627293724</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-psathines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-psathines-espantrigies-detes-317589.jpg?v=1627293724</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-psathines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-psathines-espantrigies-detes-137098.jpg?v=1627293724</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-psathines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-psathines-espantrigies-detes-829510.jpg?v=1627293724</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-psathines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-psathines-espantrigies-detes-947432.jpg?v=1627293724</img5>
-      </imagesURL>
-      <price>94.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Εσπαντρίγιες</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1BR30331FABL3M10</MPN>
-      <color>πολύχρωμο</color>
-      <size>41</size>
-      <weight>1500</weight>
-      <EAN>5212033645737</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
       <productId>40479805374621</productId>
       <title><![CDATA[Emmanuela Flatform εσπαντρίγιες - Φυσικό]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-nude-peeptoe-espadrilles</productURL>
@@ -354,8 +337,8 @@
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-439523.jpg?v=1627374816</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-123868.jpg?v=1627293694</img2>
         <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-151574.jpg?v=1627293694</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-504566.jpg?v=1627293694</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-796045.jpg?v=1627293694</img5>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-796045.jpg?v=1627293694</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-567505.jpg?v=1627293694</img5>
       </imagesURL>
       <price>94.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Εσπαντρίγιες</category_path>
@@ -376,8 +359,10 @@
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-747446.jpg?v=1627293694</imageURL>
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-747446.jpg?v=1627293694</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-817433.jpg?v=1627293694</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-761693.jpg?v=1627293694</img3>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-437410.jpg?v=1627293694</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-727343.jpg?v=1627293695</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-557476.jpg?v=1627293695</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-peeptoe-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-peeptoe-817433.jpg?v=1627293694</img5>
       </imagesURL>
       <price>94.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Εσπαντρίγιες</category_path>
@@ -392,13 +377,16 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479809044637</productId>
+      <productId>40479811141789</productId>
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Αδράστεια" - Κόκκινο]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-adrasteia</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-272074.jpg?v=1627294829</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-adrasteia</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-842449.jpg?v=1627294829</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-272074.jpg?v=1627294829</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-377589.jpg?v=1627294829</img2>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-842449.jpg?v=1627294829</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-737802.jpg?v=1627294829</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-450722.jpg?v=1627294829</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-807192.jpg?v=1627294829</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-115320.jpg?v=1627294829</img5>
       </imagesURL>
       <price>57.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -413,16 +401,14 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479809241245</productId>
+      <productId>40479811240093</productId>
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Αδράστεια" - Λευκό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-adrasteia</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-750552.jpg?v=1627294828</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-adrasteia</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-101319.jpg?v=1627376457</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-750552.jpg?v=1627294828</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-932536.jpg?v=1627294828</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-339181.jpg?v=1627294828</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-832528.jpg?v=1627294828</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-736732.jpg?v=1627294829</img5>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-101319.jpg?v=1627376457</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-415748.jpg?v=1627294829</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-adrasteia-emmanuela-handcrafted-for-you-sandalia-pantofles-adrasteia-286820.jpg?v=1627294829</img3>
       </imagesURL>
       <price>57.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -437,14 +423,16 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479812616349</productId>
+      <productId>40479814353053</productId>
       <title><![CDATA[Emmanuela Flatform εσπαντρίγιες]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-flatform-blue-peeptoe-espadrilles</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-detes-879439.jpg?v=1627293679</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-red-flatform-espadrilles</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-detes-267619.jpg?v=1627374869</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-detes-879439.jpg?v=1627293679</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-detes-557455.jpg?v=1627293679</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-detes-119183.jpg?v=1627293679</img3>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-detes-267619.jpg?v=1627374869</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-detes-127806.jpg?v=1627293724</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-detes-219521.jpg?v=1627293724</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-detes-202189.jpg?v=1627293724</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flatform-dermatines-espantrigies-detes-emmanuela-handcrafted-for-you-flatform-dermatines-espantrigies-detes-967719.jpg?v=1627293724</img5>
       </imagesURL>
       <price>94.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Εσπαντρίγιες</category_path>
@@ -593,13 +581,13 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479821562013</productId>
+      <productId>40479821824157</productId>
       <title><![CDATA[Emmanuela Σανδάλια μονομάχου "Κασσάνδρα" - Πολύχρωμα]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-rose-gold-cassandra</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-877471.jpg?v=1627294228</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-silver-cassandra</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-818596.jpg?v=1627294219</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-877471.jpg?v=1627294228</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-960006.jpg?v=1627294228</img2>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-818596.jpg?v=1627294219</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-641268.jpg?v=1627294219</img2>
       </imagesURL>
       <price>59.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
@@ -614,13 +602,16 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479821955229</productId>
+      <productId>40479821987997</productId>
       <title><![CDATA[Emmanuela Σανδάλια μονομάχου "Κασσάνδρα" - Λευκό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-rose-gold-cassandra</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-542974.jpg?v=1627294228</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-silver-cassandra</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-310713.jpg?v=1627294219</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-542974.jpg?v=1627294228</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-408138.jpg?v=1627294228</img2>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-310713.jpg?v=1627294219</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-805753.jpg?v=1627294219</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-498034.jpg?v=1627294219</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-575434.jpg?v=1627294219</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-439383.jpg?v=1627294219</img5>
       </imagesURL>
       <price>59.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
@@ -635,14 +626,14 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479822938269</productId>
+      <productId>40479822282909</productId>
       <title><![CDATA[Emmanuela Σανδάλια μονομάχου "Κασσάνδρα" - Ασημί]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-rose-gold-cassandra</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-506680.jpg?v=1627294228</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-silver-cassandra</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-654178.jpg?v=1627375732</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-506680.jpg?v=1627294228</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-949788.jpg?v=1627294228</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-424222.jpg?v=1627294228</img3>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-654178.jpg?v=1627375732</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-662122.jpg?v=1627294219</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-kassandra-emmanuela-handcrafted-for-you-sandalia-monomaxoy-kassandra-127871.jpg?v=1627294219</img3>
       </imagesURL>
       <price>59.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
@@ -743,9 +734,9 @@
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-ftera-ermionh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-ftera-ermionh-133317.jpg?v=1627376349</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-ftera-ermionh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-ftera-ermionh-141873.jpg?v=1627294699</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-ftera-ermionh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-ftera-ermionh-896943.jpg?v=1627294699</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-ftera-ermionh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-ftera-ermionh-594826.jpg?v=1627294699</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-ftera-ermionh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-ftera-ermionh-184650.jpg?v=1627294699</img5>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-ftera-ermionh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-ftera-ermionh-750406.jpg?v=1627294699</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-ftera-ermionh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-ftera-ermionh-794607.jpg?v=1627294699</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-ftera-ermionh-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-ftera-ermionh-854097.jpg?v=1627294699</img5>
       </imagesURL>
       <price>64.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
@@ -764,6 +755,11 @@
       <title><![CDATA[Emmanuela Σανδάλια μονομάχου "Νέμεσις" - Καφέ]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-nemesis</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-599760.jpg?v=1697536940</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-599760.jpg?v=1697536940</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-701059.jpg?v=1697536940</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-573629.jpg?v=1697536940</img3>
+      </imagesURL>
       <price>64.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -783,9 +779,7 @@
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-314654.jpg?v=1697536940</imageURL>
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-314654.jpg?v=1697536940</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-745858.jpg?v=1697536940</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-104906.jpg?v=1697536940</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/4_ea76690f-61ea-43cb-9dd4-c9ef50bd26b7.jpg?v=1697536940</img4>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/4_ea76690f-61ea-43cb-9dd4-c9ef50bd26b7.jpg?v=1697536940</img2>
       </imagesURL>
       <price>64.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
@@ -850,7 +844,6 @@
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-hxw-emmanuela-handcrafted-for-you-sandalia-monomaxoy-hxw-197322.jpg?v=1627294159</img2>
         <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-hxw-emmanuela-handcrafted-for-you-sandalia-monomaxoy-hxw-302158.jpg?v=1627294159</img3>
         <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-hxw-emmanuela-handcrafted-for-you-sandalia-monomaxoy-hxw-591692.jpg?v=1627294159</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-hxw-emmanuela-handcrafted-for-you-sandalia-monomaxoy-hxw-492303.jpg?v=1627294159</img5>
       </imagesURL>
       <price>65.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
@@ -873,6 +866,7 @@
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-hxw-emmanuela-handcrafted-for-you-sandalia-monomaxoy-hxw-712047.jpg?v=1627294159</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-hxw-emmanuela-handcrafted-for-you-sandalia-monomaxoy-hxw-335371.jpg?v=1627294159</img2>
         <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-hxw-emmanuela-handcrafted-for-you-sandalia-monomaxoy-hxw-227565.jpg?v=1627294159</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-hxw-emmanuela-handcrafted-for-you-sandalia-monomaxoy-hxw-221651.jpg?v=1627294159</img4>
       </imagesURL>
       <price>65.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
@@ -1233,10 +1227,10 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479856787613</productId>
+      <productId>40479858065565</productId>
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Ανδρομέδα" - Μαύρο κροκό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-mustard-andromeda</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-andromeda-emmanuela-handcrafted-for-you-sandalia-pantofles-andromeda-975208.jpg?v=1627294977</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-snake-andromeda</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-anromeda-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-anromeda-641215.jpg?v=1627295808</imageURL>
       <price>47.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -1250,10 +1244,15 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479856820381</productId>
+      <productId>40479858196637</productId>
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Ανδρομέδα" - Ροζ χρυσό Κροκό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-mustard-andromeda</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-andromeda-emmanuela-handcrafted-for-you-sandalia-pantofles-andromeda-150844.jpg?v=1627385879</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-snake-andromeda</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-anromeda-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-anromeda-935548.jpg?v=1627295809</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-anromeda-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-anromeda-935548.jpg?v=1627295809</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-anromeda-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-anromeda-512821.jpg?v=1627295809</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-anromeda-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-anromeda-132615.jpg?v=1627295809</img3>
+      </imagesURL>
       <price>47.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -1267,10 +1266,17 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479857148061</productId>
+      <productId>40479858753693</productId>
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Ανδρομέδα" - Δέρμα φιδιού]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-mustard-andromeda</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-andromeda-emmanuela-handcrafted-for-you-sandalia-pantofles-andromeda-150844.jpg?v=1627385879</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-snake-andromeda</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-anromeda-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-anromeda-210257.jpg?v=1627386798</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-anromeda-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-anromeda-210257.jpg?v=1627386798</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-anromeda-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-anromeda-258707.jpg?v=1627295808</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-anromeda-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-anromeda-376222.jpg?v=1627295808</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-anromeda-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-anromeda-165061.jpg?v=1627295808</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-anromeda-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-anromeda-279067.jpg?v=1627295808</img5>
+      </imagesURL>
       <price>47.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -1594,7 +1600,7 @@
       <productId>40479882576029</productId>
       <title><![CDATA[Emmanuela Σανδάλια μονομάχου με κορδόνια "Ιοκάστη" - Ροζ χρυσό]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-jocasta</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-475204.jpg?v=1627375977</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-406754.jpg?v=1627294356</imageURL>
       <price>119.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -1639,7 +1645,6 @@
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-431825.jpg?v=1627294356</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-517257.jpg?v=1627294356</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-me-kordonia-iokasth-emmanuela-handcrafted-for-you-sandalia-monomaxoy-me-kordonia-iokasth-422778.jpg?v=1627294356</img3>
       </imagesURL>
       <price>119.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
@@ -1719,7 +1724,7 @@
       <productId>40479884837021</productId>
       <title><![CDATA[Emmanuela Σανδάλια μπότες με κορδόνια "Αλήθεια" - Μπεζ φυσικό]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-alethea</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-726774_edbed388-51ba-42b4-b113-52798efdbc01.jpg?v=1627376418</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-mpotes-me-kordonia-alhtheia-emmanuela-handcrafted-for-you-sandalia-mpotes-me-kordonia-alhtheia-716125_631cdccb-f358-4389-81a2-3185f8b2825f.jpg?v=1627294827</imageURL>
       <price>142.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -2046,8 +2051,8 @@
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-me-malako-pato-alexandra-emmanuela-handcrafted-for-you-flat-pedila-me-malako-pato-alexandra-319500.jpg?v=1627374343</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-me-malako-pato-alexandra-emmanuela-handcrafted-for-you-flat-pedila-me-malako-pato-alexandra-561046.jpg?v=1627293431</img2>
         <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-me-malako-pato-alexandra-emmanuela-handcrafted-for-you-flat-pedila-me-malako-pato-alexandra-312495.jpg?v=1627293431</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-me-malako-pato-alexandra-emmanuela-handcrafted-for-you-flat-pedila-me-malako-pato-alexandra-837901.jpg?v=1627293431</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-me-malako-pato-alexandra-emmanuela-handcrafted-for-you-flat-pedila-me-malako-pato-alexandra-334657.jpg?v=1627293431</img5>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-me-malako-pato-alexandra-emmanuela-handcrafted-for-you-flat-pedila-me-malako-pato-alexandra-334657.jpg?v=1627293431</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-me-malako-pato-alexandra-emmanuela-handcrafted-for-you-flat-pedila-me-malako-pato-alexandra-632407.jpg?v=1627293431</img5>
       </imagesURL>
       <price>99.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Πέδιλα</category_path>
@@ -2203,7 +2208,6 @@
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-eynikh-emmanuela-handcrafted-for-you-flat-pedila-eynikh-423810.jpg?v=1627374042</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-eynikh-emmanuela-handcrafted-for-you-flat-pedila-eynikh-794208.jpg?v=1627293302</img2>
         <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-eynikh-emmanuela-handcrafted-for-you-flat-pedila-eynikh-605054.jpg?v=1627293302</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-eynikh-emmanuela-handcrafted-for-you-flat-pedila-eynikh-919892.jpg?v=1627293302</img4>
       </imagesURL>
       <price>65.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Πέδιλα</category_path>
@@ -2358,30 +2362,6 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479935365277</productId>
-      <title><![CDATA[Emmanuela Flat πέδιλα παντόφλες με μαλακό πάτο "Ελπίδα"]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-brown-leather-flat-elpis</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-199999.jpg?v=1627293553</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-199999.jpg?v=1627293553</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-106605.jpg?v=1627293553</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-817052.jpg?v=1627293553</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-557624.jpg?v=1627293553</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-408802.jpg?v=1627293553</img5>
-      </imagesURL>
-      <price>89.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1FA301LBE8</MPN>
-      <color>μπεζ</color>
-      <size>39</size>
-      <weight>1000</weight>
-      <EAN>5212033651295</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
       <productId>40479937069213</productId>
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Αμοργός" - Μουσταρδί]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-amorgos</productURL>
@@ -2389,9 +2369,9 @@
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-amorgos-emmanuela-handcrafted-for-you-sandalia-pantofles-amorgos-166023.jpg?v=1627294952</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-amorgos-emmanuela-handcrafted-for-you-sandalia-pantofles-amorgos-149474.jpg?v=1627294952</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-amorgos-emmanuela-handcrafted-for-you-sandalia-pantofles-amorgos-464203.jpg?v=1627294952</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-amorgos-emmanuela-handcrafted-for-you-sandalia-pantofles-amorgos-496496.jpg?v=1627294952</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-amorgos-emmanuela-handcrafted-for-you-sandalia-pantofles-amorgos-769940.jpg?v=1627294952</img5>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-amorgos-emmanuela-handcrafted-for-you-sandalia-pantofles-amorgos-496496.jpg?v=1627294952</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-amorgos-emmanuela-handcrafted-for-you-sandalia-pantofles-amorgos-769940.jpg?v=1627294952</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-amorgos-emmanuela-handcrafted-for-you-sandalia-pantofles-amorgos-729304.jpg?v=1627294952</img5>
       </imagesURL>
       <price>54.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -2434,10 +2414,10 @@
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-knwssos-emmanuela-handcrafted-for-you-sandalia-pantofles-knwssos-725893.jpg?v=1627295299</imageURL>
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-knwssos-emmanuela-handcrafted-for-you-sandalia-pantofles-knwssos-725893.jpg?v=1627295299</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-knwssos-emmanuela-handcrafted-for-you-sandalia-pantofles-knwssos-487293.jpg?v=1627295299</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-knwssos-emmanuela-handcrafted-for-you-sandalia-pantofles-knwssos-626356.jpg?v=1627295299</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-knwssos-emmanuela-handcrafted-for-you-sandalia-pantofles-knwssos-877716.jpg?v=1627295299</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-knwssos-emmanuela-handcrafted-for-you-sandalia-pantofles-knwssos-266333.jpg?v=1627295299</img5>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-knwssos-emmanuela-handcrafted-for-you-sandalia-pantofles-knwssos-266333.jpg?v=1627295299</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-knwssos-emmanuela-handcrafted-for-you-sandalia-pantofles-knwssos-544862.jpg?v=1627295299</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-knwssos-emmanuela-handcrafted-for-you-sandalia-pantofles-knwssos-931829.jpg?v=1627295299</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-knwssos-emmanuela-handcrafted-for-you-sandalia-pantofles-knwssos-877805.jpg?v=1627295299</img5>
       </imagesURL>
       <price>59.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -2476,16 +2456,16 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479948570781</productId>
+      <productId>40479948603549</productId>
       <title><![CDATA[Emmanuela Flat πέδιλα παντόφλες με μαλακό πάτο "Ιόλη"]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-brown-leather-flat-iole</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-iolh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-iolh-324120.jpg?v=1627293570</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-white-leather-flat-iole</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-iolh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-iolh-331607.jpg?v=1627374569</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-iolh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-iolh-324120.jpg?v=1627293570</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-iolh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-iolh-952480.jpg?v=1627293570</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-iolh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-iolh-648798.jpg?v=1627293570</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-iolh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-iolh-984297.jpg?v=1627293570</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-iolh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-iolh-684611.jpg?v=1627293570</img5>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-iolh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-iolh-331607.jpg?v=1627374569</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-iolh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-iolh-362016.jpg?v=1627293559</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-iolh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-iolh-721334.jpg?v=1627293559</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-iolh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-iolh-450872.jpg?v=1627293559</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-iolh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-iolh-565306.jpg?v=1627293559</img5>
       </imagesURL>
       <price>89.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -2500,16 +2480,16 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479950700701</productId>
+      <productId>40479950897309</productId>
       <title><![CDATA[Emmanuela Flat πέδιλα παντόφλες με μαλακό πάτο "Αγνή"]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-brown-hagne</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-agnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-agnh-495337.jpg?v=1627295957</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-hagne</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-agnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-agnh-434914.jpg?v=1627387149</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-agnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-agnh-495337.jpg?v=1627295957</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-agnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-agnh-834185.jpg?v=1627295957</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-agnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-agnh-845322.jpg?v=1627295957</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-agnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-agnh-709843.jpg?v=1627295957</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-agnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-agnh-367426.jpg?v=1627295957</img5>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-agnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-agnh-434914.jpg?v=1627387149</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-agnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-agnh-755221.jpg?v=1627295966</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-agnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-agnh-238642.jpg?v=1627295966</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-agnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-agnh-174634.jpg?v=1627295966</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-agnh-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-agnh-217432.jpg?v=1627295966</img5>
       </imagesURL>
       <price>89.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -2521,30 +2501,6 @@
       <size>40</size>
       <weight>1000</weight>
       <EAN>5212033604758</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40479955189917</productId>
-      <title><![CDATA[Emmanuela Flat πέδιλα "Υπατία"]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-lilac-suede-sandals-hypatia</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-ypatia-emmanuela-handcrafted-for-you-flat-pedila-ypatia-917065.jpg?v=1627293367</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-ypatia-emmanuela-handcrafted-for-you-flat-pedila-ypatia-917065.jpg?v=1627293367</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-ypatia-emmanuela-handcrafted-for-you-flat-pedila-ypatia-242926.jpg?v=1627293367</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-ypatia-emmanuela-handcrafted-for-you-flat-pedila-ypatia-798408.jpg?v=1627293367</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-ypatia-emmanuela-handcrafted-for-you-flat-pedila-ypatia-220040.jpg?v=1627293367</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-ypatia-emmanuela-handcrafted-for-you-flat-pedila-ypatia-220707.jpg?v=1627293367</img5>
-      </imagesURL>
-      <price>65.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Πέδιλα</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1KL652ALSABE5</MPN>
-      <color>κόκκινο</color>
-      <size>36,39</size>
-      <weight>1000</weight>
-      <EAN>5212033646741</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -2749,23 +2705,6 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479963807901</productId>
-      <title><![CDATA[Emmanuela Πέδιλα με λουράκι "Κυβέλη"]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-mustard-cybele</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-pedila-me-loyraki-kybelh-emmanuela-handcrafted-for-you-pedila-me-loyraki-kybelh-810736.jpg?v=1627375460</imageURL>
-      <price>54.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Πέδιλα</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1TS1021LMMBL5</MPN>
-      <color>πολύχρωμο</color>
-      <size>36,37,38,39,40</size>
-      <weight>1000</weight>
-      <EAN>5212033640541</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
       <productId>40479964954781</productId>
       <title><![CDATA[Emmanuela Flat πέδιλα "Καλλιστώ" - Κόκκινο-Καφέ Σουέντ]]></title>
       <productURL>https://emmanuela.shoes/products/greek-brown-suede-sandals-kallisto</productURL>
@@ -2898,7 +2837,7 @@
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-kleista-pedila-olympia-emmanuela-handcrafted-for-you-flat-kleista-pedila-olympia-482008.jpg?v=1693474339</imageURL>
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-kleista-pedila-olympia-emmanuela-handcrafted-for-you-flat-kleista-pedila-olympia-482008.jpg?v=1693474339</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-kleista-pedila-olympia-emmanuela-handcrafted-for-you-flat-kleista-pedila-olympia-247494.jpg?v=1693474339</img2>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL701_-_SIZE_CHART.png?v=1779354613</img2>
       </imagesURL>
       <price>76.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Πέδιλα</category_path>
@@ -3077,10 +3016,15 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479977013405</productId>
+      <productId>40479977701533</productId>
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Αλόννησος" - Ροζ χρυσό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-mustard-alonissos</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-525522.jpg?v=1627294893</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-rose-gold-alonissos</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-158658.jpg?v=1627376539</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-158658.jpg?v=1627376539</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-102029.jpg?v=1627294963</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-167414.jpg?v=1627294963</img3>
+      </imagesURL>
       <price>59.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -3094,10 +3038,10 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479977078941</productId>
+      <productId>40479978258589</productId>
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Αλόννησος" - Μπεζ φυσικό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-mustard-alonissos</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-633422.jpg?v=1627294893</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-rose-gold-alonissos</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-234882.jpg?v=1627294963</imageURL>
       <price>59.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -3111,13 +3055,13 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479977111709</productId>
+      <productId>40479978324125</productId>
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Αλόννησος" - Πάγος]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-mustard-alonissos</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-855240.jpg?v=1627294893</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-rose-gold-alonissos</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-956224.jpg?v=1627294963</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-855240.jpg?v=1627294893</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-678409.jpg?v=1627294893</img2>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-956224.jpg?v=1627294963</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-444036.jpg?v=1627294963</img2>
       </imagesURL>
       <price>59.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -3132,14 +3076,15 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40479978193053</productId>
+      <productId>40479979143325</productId>
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Αλόννησος" - Ζέβρα]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-mustard-alonissos</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-615165.jpg?v=1627294893</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-rose-gold-alonissos</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-119747.jpg?v=1627294963</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-615165.jpg?v=1627294893</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-637804.jpg?v=1627294893</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-287762.jpg?v=1627294893</img3>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-119747.jpg?v=1627294963</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-162864.jpg?v=1627294963</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-218031.jpg?v=1627294963</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-alonnhsos-emmanuela-handcrafted-for-you-sandalia-pantofles-alonnhsos-631587.jpg?v=1627294963</img4>
       </imagesURL>
       <price>59.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -3791,7 +3736,6 @@
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-x-zhnobia-emmanuela-handcrafted-for-you-sandalia-pantofles-x-zhnobia-545438.jpg?v=1627387061</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-x-zhnobia-emmanuela-handcrafted-for-you-sandalia-pantofles-x-zhnobia-775808.jpg?v=1627295894</img2>
         <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-x-zhnobia-emmanuela-handcrafted-for-you-sandalia-pantofles-x-zhnobia-882148.jpg?v=1627295894</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-x-zhnobia-emmanuela-handcrafted-for-you-sandalia-pantofles-x-zhnobia-229657.jpg?v=1627295894</img4>
       </imagesURL>
       <price>64.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -3814,6 +3758,7 @@
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-x-zhnobia-emmanuela-handcrafted-for-you-sandalia-pantofles-x-zhnobia-932970.jpg?v=1627295894</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-x-zhnobia-emmanuela-handcrafted-for-you-sandalia-pantofles-x-zhnobia-530779.jpg?v=1627295894</img2>
         <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-x-zhnobia-emmanuela-handcrafted-for-you-sandalia-pantofles-x-zhnobia-310946.jpg?v=1627295894</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-x-zhnobia-emmanuela-handcrafted-for-you-sandalia-pantofles-x-zhnobia-194862.jpg?v=1627295894</img4>
       </imagesURL>
       <price>64.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -3872,6 +3817,11 @@
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Μήλος" - Μπεζ φυσικό]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-snake-milos</productURL>
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-mhlos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-mhlos-509784.jpg?v=1627295782</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-mhlos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-mhlos-509784.jpg?v=1627295782</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-mhlos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-mhlos-903994.jpg?v=1627295782</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-mhlos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-mhlos-533486.jpg?v=1627295782</img3>
+      </imagesURL>
       <price>54.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -3891,9 +3841,7 @@
       <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-mhlos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-mhlos-316223.jpg?v=1627295781</imageURL>
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-mhlos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-mhlos-316223.jpg?v=1627295781</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-mhlos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-mhlos-446433.jpg?v=1627295781</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-mhlos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-mhlos-717207.jpg?v=1627295781</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-mhlos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-mhlos-910215.jpg?v=1627386801</img4>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-snake-skin-mhlos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-snake-skin-mhlos-910215.jpg?v=1627386801</img2>
       </imagesURL>
       <price>54.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -4430,6 +4378,30 @@
       <shipping>0</shipping>
     </product>
     <product>
+      <productId>40480050184349</productId>
+      <title><![CDATA[Emmanuela Flat πέδιλα "Κυβέλη"]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-zebra-sandals-cybele</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-zebra-kybelh-emmanuela-handcrafted-for-you-flat-pedila-zebra-kybelh-189171.jpg?v=1627374217</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-zebra-kybelh-emmanuela-handcrafted-for-you-flat-pedila-zebra-kybelh-189171.jpg?v=1627374217</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-zebra-kybelh-emmanuela-handcrafted-for-you-flat-pedila-zebra-kybelh-195628.jpg?v=1627293364</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-zebra-kybelh-emmanuela-handcrafted-for-you-flat-pedila-zebra-kybelh-742061.jpg?v=1627293364</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-zebra-kybelh-emmanuela-handcrafted-for-you-flat-pedila-zebra-kybelh-608089.jpg?v=1627293364</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-zebra-kybelh-emmanuela-handcrafted-for-you-flat-pedila-zebra-kybelh-270738.jpg?v=1627293364</img5>
+      </imagesURL>
+      <price>54.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Πέδιλα</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1TS1021LMMBL5</MPN>
+      <color>πολύχρωμο</color>
+      <size>36,37,38,39,40</size>
+      <weight>1000</weight>
+      <EAN>5212033640541</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
       <productId>40480051232925</productId>
       <title><![CDATA[Emmanuela Flat μυτερά mules παντόφλες λεοπάρντ]]></title>
       <productURL>https://emmanuela.shoes/products/leopard-mules</productURL>
@@ -4439,7 +4411,7 @@
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-mytera-mules-pantofles-leoparnt-emmanuela-handcrafted-for-you-flat-mytera-mules-pantofles-leoparnt-910087.jpg?v=1627293257</img2>
         <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-mytera-mules-pantofles-leoparnt-emmanuela-handcrafted-for-you-flat-mytera-mules-pantofles-leoparnt-424926.jpg?v=1627293257</img3>
         <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-mytera-mules-pantofles-leoparnt-emmanuela-handcrafted-for-you-flat-mytera-mules-pantofles-leoparnt-644808.jpg?v=1627293257</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-mytera-mules-pantofles-leoparnt-emmanuela-handcrafted-for-you-flat-mytera-mules-pantofles-leoparnt-995223.jpg?v=1627293257</img5>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-mytera-mules-pantofles-leoparnt-emmanuela-handcrafted-for-you-flat-mytera-mules-pantofles-leoparnt-357356.jpg?v=1627293257</img5>
       </imagesURL>
       <price>109.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -4521,15 +4493,39 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40480059490461</productId>
-      <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Πόρος" - Τιρκουάζ-Λευκό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-yellow-poros</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-477145.jpg?v=1627295431</imageURL>
+      <productId>40480060571805</productId>
+      <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Πόρος" - Μουσταρδί με τιρκουάζ]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-mustard-poros</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-108492_5aa4a619-5c56-4d86-95ad-4b4c1df49f58.jpg?v=1627295490</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-477145.jpg?v=1627295431</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-349310.jpg?v=1627295431</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-939817.jpg?v=1627295431</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-276645.jpg?v=1627295431</img4>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-108492_5aa4a619-5c56-4d86-95ad-4b4c1df49f58.jpg?v=1627295490</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-277906_c093f301-3f3d-4e65-b8f2-20240f849e46.jpg?v=1627295490</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-450848_b45fe76e-f845-44ff-af2b-e5dc01d3520f.jpg?v=1627295490</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-309894_009988dd-12fb-4c59-aabf-e3bb79a97b4d.jpg?v=1627295490</img4>
+      </imagesURL>
+      <price>64.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1LI171SLPOTUBE5</MPN>
+      <color>κίτρινο</color>
+      <size>36,38</size>
+      <weight>1000</weight>
+      <EAN>5212033633727</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40480060768413</productId>
+      <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Πόρος" - Τιρκουάζ-Λευκό]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-mustard-poros</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-503529_512ae94f-83ed-4a85-b738-a75eee1c9fbe.jpg?v=1627295490</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-503529_512ae94f-83ed-4a85-b738-a75eee1c9fbe.jpg?v=1627295490</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-200176_9cd10d30-9960-499c-80af-214d015a7529.jpg?v=1627295490</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-433327_9d9db45e-85e0-49cb-b6fd-6cd7755ab134.jpg?v=1627295490</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-868442_00dbf283-9434-489c-9ab0-0b65b06c63aa.jpg?v=1627295490</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-755501_46865906-6d5a-4679-a9be-0e41d2b9e8d3.jpg?v=1627295490</img5>
       </imagesURL>
       <price>64.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -4544,27 +4540,10 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40480059555997</productId>
-      <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Πόρος" - Μουσταρδί με τιρκουάζ]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-yellow-poros</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-981689.jpg?v=1627295431</imageURL>
-      <price>64.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1LI171SLPOTUBE5</MPN>
-      <color>κίτρινο</color>
-      <size>36,38</size>
-      <weight>1000</weight>
-      <EAN>5212033633727</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40480059621533</productId>
+      <productId>40480061063325</productId>
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Πόρος" - Φυσικό-Λευκό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-yellow-poros</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-656612.jpg?v=1627295431</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-mustard-poros</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-poros-emmanuela-handcrafted-for-you-sandalia-pantofles-poros-186370_e5d186c9-3085-4783-ac50-9919e9b91c90.jpg?v=1627295490</imageURL>
       <price>64.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -4578,16 +4557,16 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40480068468893</productId>
+      <productId>40480069910685</productId>
       <title><![CDATA[Emmanuela Flat πέδιλα "Ουρανία"]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-white-leather-sandals-urania</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-389578.jpg?v=1627293367</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-black-leather-sandals-urania</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-669402.jpg?v=1627374194</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-389578.jpg?v=1627293367</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-467293.jpg?v=1627293367</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-458363.jpg?v=1627293367</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-871302.jpg?v=1627293367</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-745526.jpg?v=1627293367</img5>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-669402.jpg?v=1627374194</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-871801.jpg?v=1627293434</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-833513.jpg?v=1627293434</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-706659.jpg?v=1627293434</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-oyrania-emmanuela-handcrafted-for-you-flat-pedila-oyrania-721235.jpg?v=1627293434</img5>
       </imagesURL>
       <price>49.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Πέδιλα</category_path>
@@ -4663,7 +4642,7 @@
       <productId>40480072106141</productId>
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες με μαίανδρους "Σπέτσες" - Ροζ χρυσό]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-silver-spetses</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-spetses-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-spetses-486538.jpg?v=1627386993</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-spetses-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-spetses-108277.jpg?v=1653977632</imageURL>
       <price>57.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -4943,6 +4922,30 @@
       <shipping>0</shipping>
     </product>
     <product>
+      <productId>40480155467933</productId>
+      <title><![CDATA[Emmanuela Flat πέδιλα "Υπατία"]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-brown-suede-sandals-hypatia</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-ypatia-emmanuela-handcrafted-for-you-flat-pedila-ypatia-740271.jpg?v=1627374210</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-ypatia-emmanuela-handcrafted-for-you-flat-pedila-ypatia-740271.jpg?v=1627374210</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-ypatia-emmanuela-handcrafted-for-you-flat-pedila-ypatia-826661.jpg?v=1627293367</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-ypatia-emmanuela-handcrafted-for-you-flat-pedila-ypatia-503502.jpg?v=1627293367</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-ypatia-emmanuela-handcrafted-for-you-flat-pedila-ypatia-787451.jpg?v=1627293367</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-ypatia-emmanuela-handcrafted-for-you-flat-pedila-ypatia-224064.jpg?v=1627293367</img5>
+      </imagesURL>
+      <price>65.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1KL652ALSABE5</MPN>
+      <color>κόκκινο</color>
+      <size>36,39</size>
+      <weight>1000</weight>
+      <EAN>5212033646741</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
       <productId>40480157859997</productId>
       <title><![CDATA[Emmanuela Flat πέδιλα "Σελήνη"]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-snake-sandals-selene</productURL>
@@ -4951,8 +4954,8 @@
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-me-snake-skin-selhnh-emmanuela-handcrafted-for-you-flat-pedila-me-snake-skin-selhnh-118288.jpg?v=1627374283</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-me-snake-skin-selhnh-emmanuela-handcrafted-for-you-flat-pedila-me-snake-skin-selhnh-987882.jpg?v=1627293434</img2>
         <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-me-snake-skin-selhnh-emmanuela-handcrafted-for-you-flat-pedila-me-snake-skin-selhnh-135412.jpg?v=1627293434</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-me-snake-skin-selhnh-emmanuela-handcrafted-for-you-flat-pedila-me-snake-skin-selhnh-169636.jpg?v=1627293435</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-me-snake-skin-selhnh-emmanuela-handcrafted-for-you-flat-pedila-me-snake-skin-selhnh-881037.jpg?v=1627293435</img5>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-me-snake-skin-selhnh-emmanuela-handcrafted-for-you-flat-pedila-me-snake-skin-selhnh-881037.jpg?v=1627293435</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-me-snake-skin-selhnh-emmanuela-handcrafted-for-you-flat-pedila-me-snake-skin-selhnh-321497.jpg?v=1627293435</img5>
       </imagesURL>
       <price>49.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Πέδιλα</category_path>
@@ -5100,37 +5103,15 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>40480167002269</productId>
-      <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Κως" - Πάγος]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-samothrace</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-300363.jpg?v=1627295478</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-300363.jpg?v=1627295478</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-659166.jpg?v=1627295478</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-839377.jpg?v=1627295479</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-130207.jpg?v=1627295479</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-105012.jpg?v=1627295479</img5>
-      </imagesURL>
-      <price>54.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1TS1048LOWBE5</MPN>
-      <color>λευκό</color>
-      <size>36,37,38,39</size>
-      <weight>1000</weight>
-      <EAN>5212033639811</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40480167067805</productId>
+      <productId>40480166871197</productId>
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Κως" - Ροζ χρυσό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-samothrace</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-999576.jpg?v=1627295478</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-rose-gold-samothrace</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-538937.jpg?v=1627386559</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-999576.jpg?v=1627295478</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-192574.jpg?v=1627295478</img2>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-538937.jpg?v=1627386559</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-337688.jpg?v=1627295479</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-441268.jpg?v=1627295479</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-330203.jpg?v=1627295479</img4>
       </imagesURL>
       <price>54.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -5142,6 +5123,30 @@
       <size>36,38,39</size>
       <weight>1000</weight>
       <EAN>5212033639880</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40480166969501</productId>
+      <title><![CDATA[Emmanuela Σανδάλια παντόφλες "Κως" - Πάγος]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-rose-gold-samothrace</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-524732.jpg?v=1627295479</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-524732.jpg?v=1627295479</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-227163.jpg?v=1627295479</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-568095.jpg?v=1627295479</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-112638.jpg?v=1627295479</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-samothrakh-emmanuela-handcrafted-for-you-sandalia-pantofles-samothrakh-849020.jpg?v=1627295479</img5>
+      </imagesURL>
+      <price>54.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1TS1048LOWBE5</MPN>
+      <color>λευκό</color>
+      <size>36,37,38,39</size>
+      <weight>1000</weight>
+      <EAN>5212033639811</EAN>
       <shipping>0</shipping>
     </product>
     <product>
@@ -5360,6 +5365,30 @@
       <shipping>0</shipping>
     </product>
     <product>
+      <productId>40480194396317</productId>
+      <title><![CDATA[Emmanuela Υφασμάτινες εσπαντρίγιες]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-espadrilles-fabric</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-yfasmatines-espantigies-me-poylies-emmanuela-handcrafted-for-you-yfasmatines-espantigies-me-poylies-903683.jpg?v=1627387124</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-yfasmatines-espantigies-me-poylies-emmanuela-handcrafted-for-you-yfasmatines-espantigies-me-poylies-903683.jpg?v=1627387124</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-yfasmatines-espantigies-me-poylies-emmanuela-handcrafted-for-you-yfasmatines-espantigies-me-poylies-351249.jpg?v=1627295954</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-yfasmatines-espantigies-me-poylies-emmanuela-handcrafted-for-you-yfasmatines-espantigies-me-poylies-714558.jpg?v=1627295954</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-yfasmatines-espantigies-me-poylies-emmanuela-handcrafted-for-you-yfasmatines-espantigies-me-poylies-547456.jpg?v=1627295954</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-yfasmatines-espantigies-me-poylies-emmanuela-handcrafted-for-you-yfasmatines-espantigies-me-poylies-701661.jpg?v=1627295954</img5>
+      </imagesURL>
+      <price>94.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Εσπαντρίγιες</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1BR30331FABL3M10</MPN>
+      <color>πολύχρωμο</color>
+      <size>41</size>
+      <weight>1000</weight>
+      <EAN>5212033645737</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
       <productId>40480198164637</productId>
       <title><![CDATA[Emmanuela Σανδάλια παντόφλες με μαίανδρους "Αντίπαρος" - Μπεζ φυσικό]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-antiparos</productURL>
@@ -5392,6 +5421,7 @@
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-antiparos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-antiparos-347697.jpg?v=1627295777</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-antiparos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-antiparos-234833.jpg?v=1627295777</img2>
         <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-antiparos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-antiparos-731549.jpg?v=1627295777</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-pantofles-me-maiandroys-antiparos-emmanuela-handcrafted-for-you-sandalia-pantofles-me-maiandroys-antiparos-771957.jpg?v=1627295777</img4>
       </imagesURL>
       <price>59.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -5423,6 +5453,30 @@
       <shipping>0</shipping>
     </product>
     <product>
+      <productId>40480218513565</productId>
+      <title><![CDATA[Emmanuela Flat πέδιλα παντόφλες με μαλακό πάτο "Ελπίδα"]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-flat-elpis</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-286076.jpg?v=1627374550</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-286076.jpg?v=1627374550</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-172979.jpg?v=1627293545</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-800016.jpg?v=1627293545</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-327715.jpg?v=1627293545</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-428750.jpg?v=1627293545</img5>
+      </imagesURL>
+      <price>89.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1FA301LBE8</MPN>
+      <color>μπεζ</color>
+      <size>39</size>
+      <weight>1000</weight>
+      <EAN>5212033651295</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
       <productId>40480219562141</productId>
       <title><![CDATA[Emmanuela Flat πέδιλα παντόφλες με μαλακό πάτο "Ελπίδα"]]></title>
       <productURL>https://emmanuela.shoes/products/greek-white-leather-flat-elpis</productURL>
@@ -5431,8 +5485,8 @@
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-425201.jpg?v=1627374553</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-492685.jpg?v=1627293559</img2>
         <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-551570.jpg?v=1627293559</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-579521.jpg?v=1627293559</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-581987.jpg?v=1627293559</img5>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-581987.jpg?v=1627293559</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-flat-pedila-pantofles-me-malako-pato-elpida-emmanuela-handcrafted-for-you-flat-pedila-pantofles-me-malako-pato-elpida-665444.jpg?v=1627293559</img5>
       </imagesURL>
       <price>89.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Παντόφλες</category_path>
@@ -5480,6 +5534,7 @@
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-423156.jpg?v=1627293917</img2>
         <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-535325.jpg?v=1627293917</img3>
         <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-219887.jpg?v=1627293917</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-561268.jpg?v=1627293917</img5>
       </imagesURL>
       <price>59.00</price>
       <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
@@ -6003,32 +6058,14 @@
       <shipping>0</shipping>
     </product>
     <product>
-      <productId>46638088421711</productId>
-      <title><![CDATA[Emmanuela Σανδάλια μονομάχου με μαλακό πάτο "Καλυψώ" - Καφέ]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-calypso</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/264_1.jpg?v=1697534673</imageURL>
-      <price>84.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1LI264LT5</MPN>
-      <color>καφέ</color>
-      <size>36</size>
-      <weight>1000</weight>
-      <EAN>5212033696951</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>46638099398991</productId>
+      <productId>46638123483471</productId>
       <title><![CDATA[Emmanuela Σανδάλια μονομάχου με μαλακό πάτο "Καλυψώ" - Χρυσό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-calypso</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/264_1.png?v=1697534673</imageURL>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-gold-calypso</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/264_1_b279393e-0ed7-459e-91e6-374f23c2dc44.png?v=1683877473</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/264_1.png?v=1697534673</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/new-banner-emmanuela-women-sandals_57434db2-a6af-4340-b918-3b58fbc127ba.jpg?v=1697534673</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/liparakissizechart_f94cbee6-933a-4580-b2da-82f656b73292.jpg?v=1697534673</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/Cushioned-flexible_01b7b923-460f-465f-b038-99f1c9bda105.jpg?v=1697534678</img4>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/264_1_b279393e-0ed7-459e-91e6-374f23c2dc44.png?v=1683877473</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/264_2_78f66c4f-0a9c-4dda-b311-8dbc29b13c89.jpg?v=1697534713</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1LI264LBL_1_1_1076f807-0dd6-4aee-b01f-7ef9a86f1679.jpg?v=1697534713</img3>
       </imagesURL>
       <price>84.00</price>
       <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
@@ -6040,6 +6077,30 @@
       <size>36,37,38,39,40,41,42</size>
       <weight>1000</weight>
       <EAN>5212033696883</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>46638123450703</productId>
+      <title><![CDATA[Emmanuela Σανδάλια μονομάχου με μαλακό πάτο "Καλυψώ" - Καφέ]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-gold-calypso</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/264_1_74a19009-14e6-4a9f-8d05-356b6a812392.jpg?v=1697534713</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/264_1_74a19009-14e6-4a9f-8d05-356b6a812392.jpg?v=1697534713</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/liparakissizechart_13deb16c-ca60-4f17-80a0-73264a8fcad7.jpg?v=1697534713</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/new-banner-emmanuela-women-sandals_846c9e4e-7728-41f2-b1b8-86c7e294781b.jpg?v=1697534713</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1LI264LBL_1_2_9bd3b509-42b9-40fd-8a40-e2ada9d56bec.jpg?v=1697534713</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/Cushioned-flexible_60b0e1cb-6b7b-45eb-adfe-e739ee048594.jpg?v=1697534684</img5>
+      </imagesURL>
+      <price>84.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1LI264LT5</MPN>
+      <color>καφέ</color>
+      <size>36</size>
+      <weight>1000</weight>
+      <EAN>5212033696951</EAN>
       <shipping>0</shipping>
     </product>
     <product>

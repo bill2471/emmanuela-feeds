@@ -262,7 +262,11 @@ const MATERIAL_TRANSLATIONS = {
 
 
 // ============================================
-// PRODUCT TYPE TRANSLATIONS (Shopify product_type is NOT translatable via API)
+// PRODUCT TYPE TRANSLATIONS — ΕΠΙΜΕΛΗΜΕΝΟΣ χάρτης (ΟΧΙ οι μεταφράσεις της Shopify).
+// ⚠ 2026-08-11: το παλιό σχόλιο έλεγε «Shopify product_type is NOT translatable via API» και ΕΙΝΑΙ
+// ΨΕΥΔΕΣ — το product_type ΕΧΕΙ μεταφράσεις σε 20 locales (μετρημένο, 464 προϊόντα). Τις ΔΕΝ
+// χρησιμοποιούμε ΣΚΟΠΙΜΑ: φέρουν 53 ασυνέπειες και λάθος σημασίες (π.χ. mt «Widnejn»=ΑΥΤΙΑ).
+// Ο επιμελημένος χάρτης είναι ΑΝΩΤΕΡΟΣ — αρκεί να μη λείπουν κλειδιά (βλ. FILL παρακάτω).
 // ============================================
 
 const PRODUCT_TYPE_TRANSLATIONS = {
@@ -362,6 +366,77 @@ const PRODUCT_TYPE_TRANSLATIONS = {
     'Μινιατούρες': 'Miniaturas',
   },
 };
+
+// ============================================
+// 2026-08-11 — ΣΥΜΠΛΗΡΩΣΗ ΚΕΝΩΝ ΚΛΕΙΔΙΩΝ (μετρημένο πρόβλημα, όχι εικασία)
+// 7 ζωντανοί τύποι ΔΕΝ υπήρχαν σε ΚΑΜΙΑ γλώσσα ⇒ ο fallback έβγαζε ΩΜΑ ΕΛΛΗΝΙΚΑ μέσα σε κάθε
+// ξενόγλωσσο feed: 671 / 3.283 items = 20,4% (μετρημένο σε de/it/es/fr, 11/08/2026).
+// Επιπλέον it/es δεν είχαν «Ανδρικά δαχτυλίδια»/«Ανδρικά βραχιόλια» ⇒ 274 items (8,3%) έβγαιναν
+// ΑΓΓΛΙΚΑ («Men's Rings») μέσα σε ιταλικό/ισπανικό feed.
+// Οι όροι είναι HARVESTED: είτε από τους δικούς μας τίτλους ανά γλώσσα, είτε mirror του ήδη
+// υπάρχοντος θηλυκού κλειδιού του ίδιου χάρτη. Το «Ear Jacket» μένει δάνειο, όπως ήδη κάνει ο
+// χάρτης για «Ear Cuff» και «Ear Climber» και στις 5 γλώσσες.
+// ⚠ Ο βρόχος γράφει ΜΟΝΟ όπου ΔΕΝ υπάρχει κλειδί — καμία υπάρχουσα τιμή δεν αλλάζει.
+// ============================================
+const PRODUCT_TYPE_TRANSLATIONS_FILL = {
+  en: {
+    'Ανδρικά μενταγιόν': "Men's Pendants",
+    'Ανδρικά σκουλαρίκια κρίκοι': "Men's Hoop Earrings",
+    'Ανδρικά σκουλαρίκια ear climber': "Men's Ear Climber Earrings",
+    'Ανδρικά σκουλαρίκια ear jacket': "Men's Ear Jacket Earrings",
+    'Γυναικεία σκουλαρίκια ear jacket': "Women's Ear Jacket Earrings",
+    'Γυναικεία σκουλαρίκια μύτης': "Women's Nose Rings",
+    'Καρφίτσες': 'Brooches',
+  },
+  de: {
+    'Ανδρικά μενταγιόν': 'Herren Anhänger',
+    'Ανδρικά σκουλαρίκια κρίκοι': 'Herren Creolen',
+    'Ανδρικά σκουλαρίκια ear climber': 'Herren Ear Climber Ohrringe',
+    'Ανδρικά σκουλαρίκια ear jacket': 'Herren Ear Jacket Ohrringe',
+    'Γυναικεία σκουλαρίκια ear jacket': 'Damen Ear Jacket Ohrringe',
+    'Γυναικεία σκουλαρίκια μύτης': 'Damen Nasenringe',
+    'Καρφίτσες': 'Broschen',
+  },
+  fr: {
+    'Ανδρικά μενταγιόν': 'Pendentifs Homme',
+    'Ανδρικά σκουλαρίκια κρίκοι': "Boucles d'oreilles Créoles Homme",
+    'Ανδρικά σκουλαρίκια ear climber': "Boucles d'oreilles Ear Climber Homme",
+    'Ανδρικά σκουλαρίκια ear jacket': "Boucles d'oreilles Ear Jacket Homme",
+    'Γυναικεία σκουλαρίκια ear jacket': "Boucles d'oreilles Ear Jacket Femme",
+    'Γυναικεία σκουλαρίκια μύτης': 'Anneaux de Nez Femme',
+    'Καρφίτσες': 'Broches',
+  },
+  it: {
+    'Ανδρικά μενταγιόν': 'Ciondoli Uomo',
+    'Ανδρικά σκουλαρίκια κρίκοι': 'Orecchini a Cerchio Uomo',
+    'Ανδρικά σκουλαρίκια ear climber': 'Orecchini Ear Climber Uomo',
+    'Ανδρικά σκουλαρίκια ear jacket': 'Orecchini Ear Jacket Uomo',
+    'Γυναικεία σκουλαρίκια ear jacket': 'Orecchini Ear Jacket Donna',
+    'Γυναικεία σκουλαρίκια μύτης': 'Anelli al Naso Donna',
+    'Καρφίτσες': 'Spille',
+    'Ανδρικά δαχτυλίδια': 'Anelli Uomo',
+    'Ανδρικά βραχιόλια': 'Bracciali Uomo',
+    'Ανδρικά κολιέ': 'Collane Uomo',
+  },
+  es: {
+    'Ανδρικά μενταγιόν': 'Colgantes Hombre',
+    'Ανδρικά σκουλαρίκια κρίκοι': 'Pendientes de Aro Hombre',
+    'Ανδρικά σκουλαρίκια ear climber': 'Pendientes Ear Climber Hombre',
+    'Ανδρικά σκουλαρίκια ear jacket': 'Pendientes Ear Jacket Hombre',
+    'Γυναικεία σκουλαρίκια ear jacket': 'Pendientes Ear Jacket Mujer',
+    'Γυναικεία σκουλαρίκια μύτης': 'Anillos Nasales Mujer',
+    'Καρφίτσες': 'Broches',
+    'Ανδρικά δαχτυλίδια': 'Anillos Hombre',
+    'Ανδρικά βραχιόλια': 'Pulseras Hombre',
+    'Ανδρικά κολιέ': 'Collares Hombre',
+  },
+};
+for (const _lang of Object.keys(PRODUCT_TYPE_TRANSLATIONS_FILL)) {
+  if (!PRODUCT_TYPE_TRANSLATIONS[_lang]) continue;
+  for (const [_k, _v] of Object.entries(PRODUCT_TYPE_TRANSLATIONS_FILL[_lang])) {
+    if (!PRODUCT_TYPE_TRANSLATIONS[_lang][_k]) PRODUCT_TYPE_TRANSLATIONS[_lang][_k] = _v;
+  }
+}
 
 /**
  * Translate product type from Greek to target language

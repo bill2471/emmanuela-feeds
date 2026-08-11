@@ -199,39 +199,6 @@
     <GTIN>05212033625050</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40479787778205</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Καφέ]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-bacchus-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-921290.jpg?v=1693475296</IMGURL>
-    <PRICE_VAT>84</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[Ο Βάκχος — θεός του κρασιού, της γιορτής και της καλοπέρασης — δίνει το όνομά του σε αυτά τα ανδρικά σανδάλια με κορδόνια, φτιαγμένα για όσους πιστεύουν ότι το καλοκαίρι αξίζει να απολαμβάνεται. Τα λεπτά δερμάτινα κορδόνια σας επιτρέπουν να ρυθμίσετε την εφαρμογή κατά βούληση, ενώ η μεσογειακή σιλουέτα γεφυρώνει το casual με το κομψό. Φτιαγμένα στην Ελλάδα από πραγματικό δέρμα, τα Βάκχος διαθέτουν σόλα 1,5 εκ. που πατά σταθερά σε βρεγμένα πλακάκια και στεγνή πέτρα. Ο δερμάτινος πάτος δένει μέσα στα πρώτα φορέματα, κι το φυσικό δέρμα σκουραίνει ωραία με τον χρόνο — κάνοντας κάθε ζευγάρι μοναδικά δικό σας. Συμβουλή μεγέθους: αυτό το σχέδιο εφαρμόζει μικρότερα από το κανονικό — ρίξε μια ματιά στο size chart και διάλεξε συνήθως ένα νούμερο μεγαλύτερο από αυτό που φοράς. Λεπτομέρειες Επάνω μέρος: 100% πραγματικό δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,5 cm Κούμπωμα: με κορδόνια Διαθέσιμο σε 4 χρώματα: σκούρο καφέ, μαύρο, μπεζ φυσικό, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856614576285</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225_-_SIZE_CHART_v2.png?v=1779870604</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-500912.jpg?v=1693475296</IMGURL_ALTERNATIVE>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225LDBDB_1_65154b60-8f03-4fd6-bb54-6a9bf3740b90.jpg?v=1693475296</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-bacchus-men?variant=40479787778205</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>καφέ</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 46, 47</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033625197</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
     <ITEM_ID>40479787974813</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Μπεζ φυσικό]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-bacchus-men</URL>
@@ -260,6 +227,39 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033624978</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
+    <ITEM_ID>40479789187229</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Καφέ]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-bacchus-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-921290.jpg?v=1693475296</IMGURL>
+    <PRICE_VAT>84</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[Ο Βάκχος — θεός του κρασιού, της γιορτής και της καλοπέρασης — δίνει το όνομά του σε αυτά τα ανδρικά σανδάλια με κορδόνια, φτιαγμένα για όσους πιστεύουν ότι το καλοκαίρι αξίζει να απολαμβάνεται. Τα λεπτά δερμάτινα κορδόνια σας επιτρέπουν να ρυθμίσετε την εφαρμογή κατά βούληση, ενώ η μεσογειακή σιλουέτα γεφυρώνει το casual με το κομψό. Φτιαγμένα στην Ελλάδα από πραγματικό δέρμα, τα Βάκχος διαθέτουν σόλα 1,5 εκ. που πατά σταθερά σε βρεγμένα πλακάκια και στεγνή πέτρα. Ο δερμάτινος πάτος δένει μέσα στα πρώτα φορέματα, κι το φυσικό δέρμα σκουραίνει ωραία με τον χρόνο — κάνοντας κάθε ζευγάρι μοναδικά δικό σας. Συμβουλή μεγέθους: αυτό το σχέδιο εφαρμόζει μικρότερα από το κανονικό — ρίξε μια ματιά στο size chart και διάλεξε συνήθως ένα νούμερο μεγαλύτερο από αυτό που φοράς. Λεπτομέρειες Επάνω μέρος: 100% πραγματικό δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,5 cm Κούμπωμα: με κορδόνια Διαθέσιμο σε 4 χρώματα: σκούρο καφέ, μαύρο, μπεζ φυσικό, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856614576285</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225_-_SIZE_CHART_v2.png?v=1779870604</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-500912.jpg?v=1693475296</IMGURL_ALTERNATIVE>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225LDBDB_1_65154b60-8f03-4fd6-bb54-6a9bf3740b90.jpg?v=1693475296</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-bacchus-men?variant=40479789187229</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>καφέ</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>46, 47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033625951</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40479789973661</ITEM_ID>

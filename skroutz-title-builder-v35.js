@@ -734,7 +734,13 @@ function extractSide(variant) {
   for (const opt of variant.selectedOptions || []) {
     const name = (opt.name || '').toLowerCase();
     const val = (opt.value || '').trim().toLowerCase();
-    if (name.includes('πλευρά') || val === 'αριστερό' || val === 'δεξί' || val.startsWith('μονό αριστερό') || val.startsWith('μονό δεξί')) {
+    // στάδιο-2 (2026-08-10): σύνθετες τιμές «Μονό/Σετ για το αριστερό/δεξί αφτί». Η στενή
+    // πύλη δεχόταν μόνο σκέτο «αριστερό/δεξί» ⇒ οι value-καταχωρήσεις του v3.7 έβγαιναν με
+    // ΤΑΥΤΟΣΗΜΟ τίτλο και η Skroutz τις έκρυψε ως «Πανομοιότυπη» (07/08: 1365M, 8054).
+    // Kill-switch: SKROUTZ_NO_VALTITLES=1.
+    const _compositeSide = process.env.SKROUTZ_NO_VALTITLES !== '1' &&
+      /(αριστερ|δεξ)/.test(val) && /(αφτ|αυτ)/.test(val);
+    if (name.includes('πλευρά') || val === 'αριστερό' || val === 'δεξί' || val.startsWith('μονό αριστερό') || val.startsWith('μονό δεξί') || _compositeSide) {
       if (val.includes('αριστερ')) return 'αριστερό αυτί';
       if (val.includes('δεξ')) return 'δεξί αυτί';
     }
@@ -916,7 +922,17 @@ function buildSkroutzTitle({ product, variant, skroutzCategory }) {
   // «Ζευγάρι…», «Μονό…» and «Σετ Κοσμημάτων…» are untouched.
   const piecesInfo = detectPiecesCount({ product, typeWord });
   const qtySet = /^Σετ από (\d+)$/.exec((piecesInfo && piecesInfo.label) || '');
-  const setPrefix = qtySet ? `Σετ από ${qtySet[1]}` : null;
+  // στάδιο-2 (2026-08-10): οι τιμές-με-δικό-τους-SKU «Δύο σετ» / «Ένα ζευγάρι» πρέπει να
+  // ΛΕΝΕ τι είναι στον τίτλο — αλλιώς βγαίνουν ταυτόσημες με τα αδέλφια τους και η Skroutz
+  // κρύβει τη μία («Πανομοιότυπη», 07/08). «Δύο σετ» ⇒ «Δύο σετ από N …» · «Ένα ζευγάρι» ⇒
+  // πρόθεμα «Ζευγάρι …» (καβαλάει το slot του setPrefix ⇒ κληρονομεί πληθυντικό/πεζά).
+  // Kill-switch: SKROUTZ_NO_VALTITLES=1.
+  const _valtitles = process.env.SKROUTZ_NO_VALTITLES !== '1';
+  const _optVals = (v.selectedOptions || []).map(o => (o.value || '').trim().toLowerCase());
+  const _twoSets = _valtitles && _optVals.includes('δύο σετ');
+  const _onePair = _valtitles && _optVals.includes('ένα ζευγάρι');
+  const setPrefix = qtySet ? (_twoSets ? `Δύο σετ από ${qtySet[1]}` : `Σετ από ${qtySet[1]}`)
+    : (_onePair ? 'Ζευγάρι' : null);
   const headWord = setPrefix ? (TYPE_PLURAL[typeWord] || typeWord) : typeWord;
 
   // Build parts

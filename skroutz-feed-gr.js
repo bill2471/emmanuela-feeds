@@ -1013,6 +1013,11 @@ function generateSkroutzFeed(products) {
     // below is what separates the two cases; it fails CLOSED (no split when unsure).
     // Kill-switch: SKROUTZ_NO_SIDESPLIT=1 restores the previous grouping.
     const _SIDE_VALUE_RE = /αριστερ|δεξ[ιί]/i;
+    // στάδιο-2Α (2026-08-10): ο άξονας μεγέθους του psize πιλότου («Μικρό, μεγάλο ή …»)
+    // γίνεται ΚΙ ΑΥΤΟΣ άξονας διαχωρισμού — ΜΟΝΟ για τα whitelisted προϊόντα (καθρέφτης
+    // του PSIZE_PILOT_PRODUCTS στον title builder). Kill-switch: SKROUTZ_NO_PSIZE_SPLIT=1.
+    const _PSIZE_SPLIT_PRODUCTS = new Set(['4376372379683']); // Κρεμαστό μενταγιόν "κασέτα"
+    let _axisFromPsize = false;
     let _sideAxis = null;
     let _sidePrimary = null;
     let _sideValuesWithSku = null;
@@ -1024,14 +1029,24 @@ function generateSkroutzFeed(products) {
         const _valOf = v => ((v.selectedOptions || []).find(o => o.name === _nm) || {}).value;
         const _vals = [...new Set(_eligible.map(_valOf).filter(Boolean))];
         if (_vals.length < 2) continue;
-        if (!_vals.some(x => _SIDE_VALUE_RE.test(x))) continue;
+        const _isPsizeAxis = process.env.SKROUTZ_NO_PSIZE_SPLIT !== '1' &&
+          _PSIZE_SPLIT_PRODUCTS.has(String(product.id)) &&
+          _nm.toLowerCase().includes('μικρ') && _nm.toLowerCase().includes('μεγάλ');
+        if (!_vals.some(x => _SIDE_VALUE_RE.test(x)) && !_isPsizeAxis) continue;
         // Ο έλεγχος γίνεται ΜΟΝΟ πάνω στις τιμές που ΕΧΟΥΝ sku. Οι παραλλαγές «Ζευγάρι»
         // συχνά δεν φέρουν sku· δεν μπορούν να αποδείξουν τίποτα, αλλά δεν πρέπει και να
         // μπλοκάρουν τον διαχωρισμό των δύο πλευρών που ΕΧΟΥΝ ξεχωριστούς κωδικούς.
         const _skusOf = val => new Set(
           _eligible.filter(v => _valOf(v) === val)
             .map(v => (v.sku || '').trim()).filter(Boolean));
-        const _withSku = _vals.filter(val => _skusOf(val).size > 0);
+        const _withSku0 = _vals.filter(val => _skusOf(val).size > 0);
+        // ΠΥΛΗ PYLON (στάδιο-2Α): στον psize άξονα, τιμή με SKU που περιέχει ΚΕΝΟ = πακέτο
+        // δύο κωδικών («LU288pe LU325pe»). Παραγγελία του θα έφτανε στο Pylon ως άγνωστο
+        // είδος (περιστατικό 04/08) ⇒ ΔΕΝ εκπέμπεται. Αίρεται στο στάδιο-2Β μόνο μετά από
+        // ρητό OK του order-aggregator. Στον κλασικό αριστερό/δεξί άξονα: ταυτοτικό φίλτρο.
+        const _withSku = _isPsizeAxis
+          ? _withSku0.filter(val => [..._skusOf(val)].every(s => !/\s/.test(s)))
+          : _withSku0;
         if (_withSku.length < 2) continue;                     // δεν αποδεικνύεται ⇒ ΟΧΙ split
         const _sets = _withSku.map(_skusOf);
         let _disjoint = true;
@@ -1042,6 +1057,7 @@ function generateSkroutzFeed(products) {
         }
         if (!_disjoint) continue;                              // ίδιο sku σε 2 πλευρές ⇒ ΟΧΙ split
         _sideAxis = _nm;
+        _axisFromPsize = _isPsizeAxis;
         // ⛔ Εκπέμπονται ΜΟΝΟ οι τιμές που έχουν sku. Οι παραλλαγές «Ζευγάρι» αυτών των
         // σχεδίων δεν φέρουν κωδικό: αν γίνονταν δική τους καταχώρηση, μια παραγγελία θα
         // επέστρεφε κενό sku και θα κατέληγε «άγνωστο είδος» στο Pylon (το περιστατικό της
@@ -1109,7 +1125,10 @@ function generateSkroutzFeed(products) {
         if (lengthOpt) {
           groupLengthRaw = lengthOpt.value;
           groupLengthParsed = parseLengthValue(lengthOpt.value);
-          groupKey = `${color}|${lengthOpt.value}`;
+          // στάδιο-2Α: στον psize άξονα το μήκος ΠΡΟΣΤΙΘΕΤΑΙ στο κλειδί (color|side|length) —
+          // το παλιό rebuild πετούσε την πλευρά, οπότε προϊόν με ΚΑΙ άξονα μεγέθους ΚΑΙ άξονα
+          // μήκους (η κασέτα) δεν θα διαχωριζόταν ποτέ. Εκτός psize: ΑΚΡΙΒΩΣ το παλιό κλειδί.
+          groupKey = _axisFromPsize ? `${groupKey}|${lengthOpt.value}` : `${color}|${lengthOpt.value}`;
         }
       }
 

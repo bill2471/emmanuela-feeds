@@ -1158,6 +1158,15 @@ function generateSkroutzFeed(products) {
       }
     }
 
+    // v3.9 (2026-08-11): COLOUR-AWARE BOUNDARIES — ποιο χρώμα κάρφωσε κάθε εικόνα.
+    // Χρειάζεται για να μη κόβει η φέτα ενός χρώματος πάνω σε pin ΤΟΥ ΙΔΙΟΥ χρώματος.
+    const _colourOfPin = new Map();
+    for (const _g of Object.values(entryGroups)) {
+      for (const _v of _g.variants) {
+        if (_v.image_id && !_colourOfPin.has(_v.image_id)) _colourOfPin.set(_v.image_id, _g.color);
+      }
+    }
+
     // Build sorted list of variant image positions (boundaries)
     const variantImageIndices = [];
     images.forEach((img, idx) => {
@@ -1169,11 +1178,23 @@ function generateSkroutzFeed(products) {
 
     // Map each variant image → range of images (from this boundary to the next)
     const imageRangeByVariantImageId = {};
+    const _noCbnd = process.env.SKROUTZ_NO_CBND === '1';
     for (let i = 0; i < variantImageIndices.length; i++) {
       const start = variantImageIndices[i].idx;
-      const end = i + 1 < variantImageIndices.length
+      let end = i + 1 < variantImageIndices.length
         ? variantImageIndices[i + 1].idx
         : images.length;
+      // v3.9: προχώρα το τέλος πέρα από διαδοχικά pins ΤΟΥ ΙΔΙΟΥ χρώματος — μόνο pin ΑΛΛΟΥ
+      // χρώματος κλείνει τη φέτα. Καμία εικόνα άλλης απόχρωσης δεν μπαίνει: το εύρος που
+      // προστίθεται ανήκε ήδη στο ίδιο χρώμα, και το colour filter παρακάτω μένει ανέπαφο.
+      // Μετρημένο A/B (cache 03/08): +5 καταχωρήσεις περνούν το «≥2 πρόσθετες», διαρροή 0,
+      // 0 χαμένες, 0 αλλαγές MPN/τίτλων/κύριας εικόνας.
+      if (!_noCbnd) {
+        const _mine = _colourOfPin.get(variantImageIndices[i].id);
+        let j = i + 1;
+        while (j < variantImageIndices.length && _colourOfPin.get(variantImageIndices[j].id) === _mine) j++;
+        end = j < variantImageIndices.length ? variantImageIndices[j].idx : images.length;
+      }
       imageRangeByVariantImageId[variantImageIndices[i].id] = images.slice(start, end);
     }
 

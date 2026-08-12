@@ -262,7 +262,7 @@ function getGreekColor(variantColorRaw) {
   // Ο title-builder resolveFinish() σπάει ήδη στο « με » και κρατά το ΜΕΤΑΛΛΟ —
   // εδώ ευθυγραμμίζονται τα δύο αντίγραφα της ίδιας απόφασης.
   // Kill-switch: SKROUTZ_COLOURFIX=off ⇒ byte-identical με πριν.
-  const _cfMode = process.env.SKROUTZ_COLOURFIX || 'narrow';
+  const _cfMode = process.env.SKROUTZ_COLOURFIX || 'wide';
   if (_cfMode !== 'off') {
     const _seps = (_cfMode === 'wide' || _cfMode === 'widelong') ? [' - ', ' με '] : [' με '];
     const _keys = _cfMode === 'widelong'

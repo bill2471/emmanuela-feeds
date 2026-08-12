@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-08-12 02:09</created_at>
+  <created_at>2026-08-12 07:47</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1438,7 +1438,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Γκρι]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Γκρι</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -57568,9 +57568,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI98MANLBRBR9]]></mpn>
         <ean>5212033634946</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>2</quantity>
         <color>Καφέ</color>
-        <size>42,44,46</size>
+        <size>42,44</size>
         <variations>
           <variation>
             <variationid>40480250298525</variationid>
@@ -57590,17 +57590,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1LI98MANLBRBR11]]></mpn>
             <ean>5212033634960</ean>
           </variation>
-          <variation>
-            <variationid>40480251117725</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>46</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI98MANLBRBR13]]></manufacturersku>
-            <mpn><![CDATA[1LI98MANLBRBR13]]></mpn>
-            <ean>5212033626767</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 42,44,46.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 42,44.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

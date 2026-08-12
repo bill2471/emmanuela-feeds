@@ -295,6 +295,22 @@ function getGreekColor(variantColorRaw) {
 // Skroutz requires material info in titles for jewelry. We derive it from the
 // color/finish of the variant, since nearly all products are sterling silver 925.
 
+// v4.1 (2026-08-12): ΦΙΝΙΡΙΣΜΑ ΑΠΟ ΤΟΝ ΤΙΤΛΟ ΤΟΥ ΠΡΟΪΟΝΤΟΣ — τελευταίο καταφύγιο.
+// Χρησιμοποιείται ΜΟΝΟ στην εκπομπή του <color>, ΜΟΝΟ όταν το προϊόν βγάζει ΜΙΑ
+// καταχώρηση (οπότε το mpn δεν περιέχει χρώμα ⇒ κανένα soft reset) και ΜΟΝΟ όταν
+// το χρώμα ήταν η προεπιλογή 'Ασημί' επειδή δεν υπήρχε ούτε option ούτε metafield.
+// ⛔ Τα χρώματα ΠΕΤΡΩΝ δεν είναι χρώμα μετάλλου («με μαύρη πέτρα») — αφαιρούνται.
+// ⛔ Το «ασήμι 925» ΔΕΝ είναι σήμα — υπάρχει σε κάθε τίτλο.
+const _TF_GEM = /(μαυρ|λευκ|κοκκιν|πρασιν|γαλαζ|μπλε|ροζ|τιρκουαζ|πολυχρωμ)[α-ωa-z]*\s+(πετρ|ζιργκον|ζιρκον|σμαλτ|οπαλ|αχατ|μαργαριταρ|κρυσταλλ|αιματιτ|ονυχ|χαλαζ|ρουμπιν|ζαφειρ)[α-ωa-z]*/g;
+function finishFromProductTitle(title) {
+  if (!title || process.env.SKROUTZ_TITLEFINISH === 'off') return null;
+  const t = String(title).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(_TF_GEM, ' ');
+  if (/ροζ\s*επιχρυσ/.test(t)) return 'Ροζ';
+  if (/επιχρυσ/.test(t)) return 'Χρυσό';
+  if (/οξειδωμ/.test(t)) return 'Γκρι';
+  return null;
+}
+
 function getMaterialPhrase(variantColorRaw) {
   if (!variantColorRaw) return 'από Ασήμι 925';
   const c = variantColorRaw.toLowerCase().trim();
@@ -1131,6 +1147,8 @@ function generateSkroutzFeed(products) {
 
       const rawColor = extractVariantColor(variant.selectedOptions);
       const color = getGreekColor(rawColor) || getGreekColor(product.metafields.color) || 'Ασημί';
+      // v4.1: το χρώμα ήταν ΟΝΤΩΣ η προεπιλογή; (ούτε option ούτε metafield)
+      const _colorDefaulted = !getGreekColor(rawColor) && !getGreekColor(product.metafields.color);
 
       // v3.0: When the product has a length axis, include length in the group
       // key so each (color × length) becomes its own feed entry. Otherwise
@@ -1162,6 +1180,7 @@ function generateSkroutzFeed(products) {
       if (!entryGroups[groupKey]) {
         entryGroups[groupKey] = {
           color,
+          colorDefaulted: _colorDefaulted,   // v4.1
           variants: [],
           lengthRaw: groupLengthRaw,
           lengthParsed: groupLengthParsed,
@@ -1521,7 +1540,12 @@ function generateSkroutzFeed(products) {
       item += `        <quantity>${totalQuantity}</quantity>\n`;
 
       // Color (fashion: mandatory)
-      item += `        <color>${escapeXml(color)}</color>\n`;
+      // v4.1: το χρώμα μπαίνει στο mpn ΜΟΝΟ όταν entryCount > 1 (βλ. παραπάνω), άρα
+      // με entryCount === 1 η διόρθωση είναι αδύνατο να προκαλέσει soft reset.
+      const _emitColor = (entryCount === 1 && group.colorDefaulted)
+        ? (finishFromProductTitle(product.title) || color)
+        : color;
+      item += `        <color>${escapeXml(_emitColor)}</color>\n`;
       stats.withColor++;
 
       // Size — per Skroutz quality reviewer (Γιάννης, 18/02/2026):

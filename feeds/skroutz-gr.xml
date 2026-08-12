@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-08-12 13:29</created_at>
+  <created_at>2026-08-12 19:24</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -5684,7 +5684,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[2063-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>60</quantity>
+        <quantity>59</quantity>
         <color>Ασημί</color>
         <size>48,49,50,51,52,53,54,55,56,57,58,59,60,61,Ανοιχτή γάμπα</size>
         <variations>
@@ -5772,7 +5772,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
             <variationid>31373153042467</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>58</size>
-            <quantity>4</quantity>
+            <quantity>3</quantity>
             <manufacturersku><![CDATA[2063]]></manufacturersku>
           </variation>
           <variation>
@@ -17013,7 +17013,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1336M-Μαύρο]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Μαύρο</color>
         <size>One Size</size>
         <weight>1</weight>
@@ -50455,9 +50455,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1FA239LIC7]]></mpn>
         <ean>5212033606486</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>1</quantity>
+        <quantity>2</quantity>
         <color>Λευκό</color>
-        <size>38</size>
+        <size>38,39</size>
         <variations>
           <variation>
             <variationid>40479948603549</variationid>
@@ -50468,8 +50468,17 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1FA239LIC7]]></mpn>
             <ean>5212033606486</ean>
           </variation>
+          <variation>
+            <variationid>40479948800157</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>39</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1FA239LIC8]]></manufacturersku>
+            <mpn><![CDATA[1FA239LIC8]]></mpn>
+            <ean>5212033606509</ean>
+          </variation>
         </variations>
-        <description><![CDATA[Flat πέδιλα παντόφλες με μαλακό πάτο "Ιόλη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 38.]]></description>
+        <description><![CDATA[Flat πέδιλα παντόφλες με μαλακό πάτο "Ιόλη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 38,39.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -50909,9 +50918,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI46MANLBRBR10]]></mpn>
         <ean>5212033634519</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Καφέ</color>
-        <size>43,44,46</size>
+        <size>43,44,46,47</size>
         <variations>
           <variation>
             <variationid>40479960334493</variationid>
@@ -50940,8 +50949,17 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1LI46MANLBRBR13]]></mpn>
             <ean>5212033626323</ean>
           </variation>
+          <variation>
+            <variationid>43873659748581</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>47</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI46MANLBRBR14]]></manufacturersku>
+            <mpn><![CDATA[1LI46MANLBRBR14]]></mpn>
+            <ean>5212033600019</ean>
+          </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 43,44,46.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 43,44,46,47.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

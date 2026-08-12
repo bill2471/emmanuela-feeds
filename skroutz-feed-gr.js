@@ -254,6 +254,33 @@ function getGreekColor(variantColorRaw) {
   if (/\d/.test(normalized)) return null;        // skip numeric values (sizes)
   if (normalized.length > 25) return null;        // skip corrupted strings
   if (COLOR_MAP_GREEK[normalized]) return COLOR_MAP_GREEK[normalized];
+  // ── v4.0 (2026-08-12): ΣΥΝΘΕΤΕΣ ΤΙΜΕΣ ΧΡΩΜΑΤΟΣ ────────────────────────────
+  // Το partial-match παρακάτω επιστρέφει το πρώτο κλειδί ΤΟΥ ΛΕΞΙΚΟΥ που
+  // περιέχεται στη φράση — όχι την πρώτη λέξη ΤΗΣ ΦΡΑΣΗΣ. Έτσι το
+  // «Μαύρο με χρυσό σύρμα» έπαιρνε το χρώμα του ΣΥΡΜΑΤΟΣ (Χρυσό) και το
+  // «Ροζ επιχρυσωμένα με μαύρο» το σκίαζε το 'επιχρυσωμένα' (Χρυσό αντί Ροζ).
+  // Ο title-builder resolveFinish() σπάει ήδη στο « με » και κρατά το ΜΕΤΑΛΛΟ —
+  // εδώ ευθυγραμμίζονται τα δύο αντίγραφα της ίδιας απόφασης.
+  // Kill-switch: SKROUTZ_COLOURFIX=off ⇒ byte-identical με πριν.
+  const _cfMode = process.env.SKROUTZ_COLOURFIX || 'narrow';
+  if (_cfMode !== 'off') {
+    const _seps = (_cfMode === 'wide' || _cfMode === 'widelong') ? [' - ', ' με '] : [' με '];
+    const _keys = _cfMode === 'widelong'
+      ? Object.keys(COLOR_MAP_GREEK).sort((a, b) => b.length - a.length)
+      : Object.keys(COLOR_MAP_GREEK);
+    for (const _s of _seps) {
+      const _i = normalized.indexOf(_s);
+      if (_i > 0) {
+        const _head = normalized.slice(0, _i).trim();
+        if (COLOR_MAP_GREEK[_head]) return COLOR_MAP_GREEK[_head];
+        for (const _k of _keys) if (_head.includes(_k)) return COLOR_MAP_GREEK[_k];
+        break;                       // fail-open: συνεχίζει στη σημερινή λογική
+      }
+    }
+    if (_cfMode === 'widelong') {
+      for (const _k of _keys) if (normalized.includes(_k)) return COLOR_MAP_GREEK[_k];
+    }
+  }
   // Partial match
   for (const [key, val] of Object.entries(COLOR_MAP_GREEK)) {
     if (normalized.includes(key)) return val;

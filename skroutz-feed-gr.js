@@ -1540,9 +1540,12 @@ function generateSkroutzFeed(products) {
       item += `        <quantity>${totalQuantity}</quantity>\n`;
 
       // Color (fashion: mandatory)
-      // v4.1: το χρώμα μπαίνει στο mpn ΜΟΝΟ όταν entryCount > 1 (βλ. παραπάνω), άρα
-      // με entryCount === 1 η διόρθωση είναι αδύνατο να προκαλέσει soft reset.
-      const _emitColor = (entryCount === 1 && group.colorDefaulted)
+      // v4.2 (2026-08-12): η πύλη entryCount===1 ΑΦΑΙΡΕΘΗΚΕ. Ιχνηλατήθηκε ότι το mpn
+      // (γρ. ~1453) διαβάζει `color`, ΟΧΙ `_emitColor` — άρα η διόρθωση του εκπεμπόμενου
+      // <color> ΔΕΝ αγγίζει το mpn σε καμία περίπτωση ⇒ κανένα soft reset, ούτε με
+      // entryCount > 1. Μετρημένος αντίκτυπος: 4 καταχωρήσεις / 2 προϊόντα (5036G επιχρυσωμένο
+      // ως «Ασημί», 7031MO οξειδωμένο ως «Ασημί»). Τα 1101 και 2124M τα κάλυψε ήδη η v4.1.
+      const _emitColor = group.colorDefaulted
         ? (finishFromProductTitle(product.title) || color)
         : color;
       item += `        <color>${escapeXml(_emitColor)}</color>\n`;

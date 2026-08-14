@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-08-13 19:26</created_at>
+  <created_at>2026-08-14 02:10</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1387,7 +1387,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -1438,7 +1438,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Γκρι]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Γκρι</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -49402,9 +49402,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL310LMUBE5]]></mpn>
         <ean>5212033621809</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>2</quantity>
         <color>Μουσταρδί</color>
-        <size>36,40,41</size>
+        <size>36,40</size>
         <variations>
           <variation>
             <variationid>40479899287709</variationid>
@@ -49424,17 +49424,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1KL310LMUBE9]]></mpn>
             <ean>5212033621885</ean>
           </variation>
-          <variation>
-            <variationid>40479900467357</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL310LMUBE10]]></manufacturersku>
-            <mpn><![CDATA[1KL310LMUBE10]]></mpn>
-            <ean>5212033621908</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μουσταρδί. Διαθέσιμα νούμερα: 36,40,41.]]></description>
+        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μουσταρδί. Διαθέσιμα νούμερα: 36,40.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

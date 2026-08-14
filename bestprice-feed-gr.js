@@ -65,7 +65,24 @@ const { buildSkroutzTitle } = require('./skroutz-title-builder-v35');
 // Skroutz title-builder strips this prefix (Skroutz marketplace removes quantity disclosures
 // anyway). BestPrice is price-comparison — quantity info MUST be preserved or customers
 // see a single-item title but receive a multi-piece set (price/expectation mismatch).
-function detectSetQuantity(product) {
+// v3.10 (2026-08-14): ΤΟ ΠΡΟΪΟΝ ΜΠΟΡΕΙ ΝΑ ΛΕΓΕΤΑΙ «ΣΕΤ» ΚΑΙ Η ΑΠΟΧΡΩΣΗ ΝΑ ΕΙΝΑΙ ΜΟΝΗ.
+// Το `3-daxtylidia-set-mpilies` πουλά ΚΑΙ το πολύχρωμο σετ των 3 (74 €) ΚΑΙ τρία μονά
+// δαχτυλίδια (44 €) ως τιμές του option «Χρώμα» («Μονό ασημένιο» κ.λπ.). Επειδή η ανίχνευση
+// κοιτούσε ΜΟΝΟ τον τίτλο/handle του προϊόντος, και οι 4 καταχωρήσεις έβγαιναν «Σετ από 3
+// δαχτυλίδια μπίλιες» — δηλαδή τρία μονά διαφημίζονταν ως σετ, 30 € φθηνότερα από το αληθινό
+// σετ, με τη φωτογραφία των τριών δαχτυλιδιών. Ακριβώς η παραπλάνηση που τιμωρεί η BestPrice
+// («Πολλαπλή καταχώρηση προϊόντος», tickets 2795185/2795186 για το αδελφό συμπτωμα).
+// ⚠ Μετρημένο ΠΡΙΝ την αλλαγή σε 464 ενεργά προϊόντα: 9 ενεργοποιούν detectSetQuantity και
+// ΜΟΝΟ 1 (αυτό) έχει απόχρωση «Μονό…» ⇒ τα υπόλοιπα 8 μένουν αμετάβλητα.
+// ⛔ Το \b της JS ΔΕΝ δουλεύει με ελληνικά ([A-Za-z0-9_]) — Unicode lookahead αντ' αυτού.
+const SINGLE_PIECE_RE = /^\s*μον[όή](?![\p{L}])/iu;
+
+function detectSetQuantity(product, variant) {
+  // Η απόχρωση υπερισχύει του τίτλου: «Μονό …» ⇒ ΔΕΝ είναι σετ, ό,τι κι αν λέει ο τίτλος.
+  if (variant) {
+    const rawColor = extractVariantColor(variant.selectedOptions);
+    if (rawColor && SINGLE_PIECE_RE.test(rawColor)) return null;
+  }
   const t = (product.title || '').trim();
   const h = (product.handle || '').toLowerCase();
   // Pattern 1: title starts with "Σετ από N" where N = digit or Greek number word
@@ -101,7 +118,7 @@ function buildBestPriceTitle({ product, variant, categoryPath }) {
   // v3.0 fix #1: re-add "Σετ από N" prefix for multi-piece sets (Skroutz strips this).
   // Also inflect the leading type word + adjectives from singular to plural for grammatical
   // agreement with "Σετ από N <plural>".
-  const setN = detectSetQuantity(product);
+  const setN = detectSetQuantity(product, variant);
   if (setN) {
     title = applySetInflection(title, setN);
   }

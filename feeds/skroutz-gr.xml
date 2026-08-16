@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-08-16 13:01</created_at>
+  <created_at>2026-08-16 18:51</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1467,7 +1467,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -50911,9 +50911,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI46MANLBRBR10]]></mpn>
         <ean>5212033634519</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Καφέ</color>
-        <size>43,44,46,47</size>
+        <size>43,44,46</size>
         <variations>
           <variation>
             <variationid>40479960334493</variationid>
@@ -50942,17 +50942,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1LI46MANLBRBR13]]></mpn>
             <ean>5212033626323</ean>
           </variation>
-          <variation>
-            <variationid>43873659748581</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>47</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI46MANLBRBR14]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLBRBR14]]></mpn>
-            <ean>5212033600019</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 43,44,46,47.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 43,44,46.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

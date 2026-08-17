@@ -920,7 +920,7 @@ function buildSkroutzTitle({ product, variant, skroutzCategory }) {
   // 4 rings as a single ring. We restore the prefix and switch the head word to its
   // plural so the Greek agrees. Only the exact label "Σετ από N" triggers this —
   // «Ζευγάρι…», «Μονό…» and «Σετ Κοσμημάτων…» are untouched.
-  const piecesInfo = detectPiecesCount({ product, typeWord });
+  const piecesInfo = detectPiecesCount({ product, typeWord, variant: v });
   const qtySet = /^Σετ από (\d+)$/.exec((piecesInfo && piecesInfo.label) || '');
   // στάδιο-2 (2026-08-10): οι τιμές-με-δικό-τους-SKU «Δύο σετ» / «Ένα ζευγάρι» πρέπει να
   // ΛΕΝΕ τι είναι στον τίτλο — αλλιώς βγαίνουν ταυτόσημες με τα αδέλφια τους και η Skroutz
@@ -1054,7 +1054,21 @@ const GREEK_NUMBER_WORDS = {
   'οκτώ': 8, 'οκτω': 8, 'εννέα': 9, 'εννεα': 9, 'δέκα': 10, 'δεκα': 10,
 };
 
-function detectPiecesCount({ product, typeWord }) {
+function detectPiecesCount({ product, typeWord, variant }) {
+  // v4.3 (2026-08-17): a variant whose OPTION VALUE declares itself «Μονό …» is ONE piece,
+  // whatever the product title says. Root case: «Σετ από 3 Δαχτυλίδια Μπίλιες» (2123) sells
+  // 3 singles (Χρώμα=«Μονό Επιχρυσωμένο/ασημένιο/μαύρο ανθρακί», 44€) + the set (74€) as
+  // variants of ONE product — case 1 below read only product.title and advertised a 44€
+  // single as a 3-ring set on Skroutz AND BestPrice (their 14/08 patch was inert because
+  // this prepend runs first). Accent-insensitive, boundary-safe («Μονόγραμμα» does NOT
+  // match). Kill-switch: SKROUTZ_NO_MONOFIX=1. `variant` is optional — callers without it
+  // keep the exact old behaviour.
+  if (process.env.SKROUTZ_NO_MONOFIX !== '1' && variant) {
+    const so = variant.selectedOptions || variant.selected_options || [];
+    const mono = so.some((o) => /(^|\s)μονο(\s|$)/.test(
+      String((o && o.value) || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')));
+    if (mono) return { count: 1, label: 'Μονό (1 τεμάχιο)' };
+  }
   const title = (product.title || '').toLowerCase();
   // 1. Explicit "Σετ από N" prefix
   const setDigit = title.match(/^σετ\s+από\s+(\d+)/i);
@@ -1099,7 +1113,7 @@ function buildStructuredAttributes({ product, variant, skroutzCategory }) {
   const gender = detectGender(product, v, skroutzCategory);
   const side = extractSide(v);
   const { finish } = getFinishForVariant(product, v);
-  const pieces = detectPiecesCount({ product, typeWord });
+  const pieces = detectPiecesCount({ product, typeWord, variant: v });
 
   const lines = ['Χαρακτηριστικά Προϊόντος'];
 

@@ -3745,7 +3745,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>38, 39</VAL>
+      <VAL>38</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -7216,7 +7216,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 44, 45, 46</VAL>
+      <VAL>41, 42, 44, 45, 46</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -8359,6 +8359,36 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033649391</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
+    <ITEM_ID>40480243515549</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Μπεζ φυσικό]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-black-leander-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-693381.jpg?v=1693476635</IMGURL>
+    <PRICE_VAT>65</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[Πήραν το όνομα του μυθικού κολυμβητή που διέσχιζε τον Ελλήσποντο κάθε νύχτα από έρωτα, κι αυτά τα ανδρικά δερμάτινα σανδάλια είναι φτιαγμένα για θερμοκαιρικές περιπέτειες. Ο ανοιχτός σχεδιασμός μονομάχου αφήνει τα πόδια να αναπνέουν, ενώ η γερή κατασκευή ανταπεξέρχεται σε παραλιακούς πεζόδρομους και δρόμους πόλης. Χειροποίητα στην Ελλάδα από γνήσιο δέρμα, κάθε ζευγάρι αποκτά πλούσια πατίνα με τη χρήση. Η σόλα EVA 1,8 εκ. πατά αξιόπιστα σε βρεγμένες επιφάνειες, κι ο δερμάτινος πάτος αποκτά σταδιακά τα ανάγλυφα του ποδιού σας. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,8 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 4 χρώματα: σκούρο καφέ, μπεζ φυσικό, μαύρο, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856651767965</ITEMGROUP_ID>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-black-leander-men?variant=40480243515549</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>μπεζ</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>41, 44, 45, 46</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>05212033624213</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480250298525</ITEM_ID>

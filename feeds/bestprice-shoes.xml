@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-08-16 19:18</date>
+  <date>2026-08-17 13:03</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -2474,7 +2474,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1FA239LIC7</MPN>
       <color>λευκό</color>
-      <size>38,39</size>
+      <size>38</size>
       <weight>1000</weight>
       <EAN>5212033606486</EAN>
       <shipping>0</shipping>
@@ -4760,7 +4760,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL222LNABE8</MPN>
       <color>μπεζ</color>
-      <size>41,44,45,46</size>
+      <size>41,42,44,45,46</size>
       <weight>1500</weight>
       <EAN>5212033624213</EAN>
       <shipping>0</shipping>
@@ -5498,6 +5498,23 @@
       <size>40</size>
       <weight>1000</weight>
       <EAN>5212033649391</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>40480243515549</productId>
+      <title><![CDATA[Emmanuela Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Μπεζ φυσικό]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-leander-men</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-693381.jpg?v=1693476635</imageURL>
+      <price>65.00</price>
+      <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1KL222LNABE8</MPN>
+      <color>μπεζ</color>
+      <size>41,44,45,46</size>
+      <weight>1500</weight>
+      <EAN>5212033624213</EAN>
       <shipping>0</shipping>
     </product>
     <product>

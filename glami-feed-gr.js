@@ -16,6 +16,10 @@
  *   - Buffer.concat UTF-8 fix for Greek characters
  *   - CI cooldown + retry for API throttle handling
  *
+ * v3.1 changes (2026-08-17):
+ *   - DELIVERY block (ACS, DELIVERY_PRICE 0 — free GR shipping, per GLAMI recommendations)
+ *   - size_system=EU PARAM, ONLY for entries whose sizes are all EU ring numbers (44-75)
+ *
  * v3.0 changes (2026-03-20):
  *   - Μονό/Ζευγάρι split: separate entries per color × second option (correct prices)
  *   - Color-correct images: variant boundary heuristic (no cross-color contamination)
@@ -791,6 +795,16 @@ function generateGlamiFeed(products) {
         item += `\n      <PARAM_NAME>μέγεθος</PARAM_NAME>`;
         item += `\n      <VAL>${escapeXml(group.sizes.join(', '))}</VAL>`;
         item += `\n    </PARAM>`;
+        // PARAM: size_system (GLAMI recommended) — ONLY when every size is an EU
+        // ring-size number (44-75). Chain/wrist lengths in cm are NOT a size system.
+        const allEuRingSizes = group.sizes.every(s => /^\d{2}$/.test(String(s).trim()) && +String(s).trim() >= 44 && +String(s).trim() <= 75);
+        if (allEuRingSizes) {
+          stats.withSizeSystem = (stats.withSizeSystem || 0) + 1;
+          item += `\n    <PARAM>`;
+          item += `\n      <PARAM_NAME>size_system</PARAM_NAME>`;
+          item += `\n      <VAL>EU</VAL>`;
+          item += `\n    </PARAM>`;
+        }
       }
 
       // PARAM: material
@@ -810,6 +824,13 @@ function generateGlamiFeed(products) {
 
       // DELIVERY_DATE: 0 = in stock
       item += `\n    <DELIVERY_DATE>0</DELIVERY_DATE>`;
+
+      // DELIVERY (GLAMI recommended): free courier shipping in Greece
+      // (verified on the live storefront shipping page: «Δωρεάν μεταφορικά»)
+      item += `\n    <DELIVERY>`;
+      item += `\n      <DELIVERY_ID>ACS</DELIVERY_ID>`;
+      item += `\n      <DELIVERY_PRICE>0</DELIVERY_PRICE>`;
+      item += `\n    </DELIVERY>`;
 
       // GTIN (EAN barcode) if available
       if (repVariant.barcode && /^\d{8,18}$/.test(repVariant.barcode)) {

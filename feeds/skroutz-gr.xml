@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-08-17 13:34</created_at>
+  <created_at>2026-08-17 19:04</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1438,7 +1438,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Γκρι]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Γκρι</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -46982,46 +46982,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40479831031965</id>
-        <name><![CDATA[Σανδάλια μονομάχου "Νέμεσις" - Μπεζ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-white-nemesis?variant=40479831031965]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-314654.jpg?v=1697536940]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-625818.jpg?v=1697536953]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-145177.jpg?v=1697536953]]></additionalimage>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>42.90</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1LI177LNABE7]]></mpn>
-        <ean>5212033630788</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
-        <color>Μπεζ</color>
-        <size>38,41</size>
-        <variations>
-          <variation>
-            <variationid>40479831031965</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>38</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI177LNABE7]]></manufacturersku>
-            <mpn><![CDATA[1LI177LNABE7]]></mpn>
-            <ean>5212033630788</ean>
-          </variation>
-          <variation>
-            <variationid>40479832113309</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI177LNABE10]]></manufacturersku>
-            <mpn><![CDATA[1LI177LNABE10]]></mpn>
-            <ean>5212033630818</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Σανδάλια μονομάχου "Νέμεσις". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 38,41.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>40479831982237</id>
         <name><![CDATA[Σανδάλια μονομάχου "Νέμεσις" - Λευκό]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-white-nemesis?variant=40479831982237]]></link>
@@ -47050,6 +47010,37 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Σανδάλια μονομάχου "Νέμεσις". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 41.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40479832113309</id>
+        <name><![CDATA[Σανδάλια μονομάχου "Νέμεσις" - Μπεζ]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-white-nemesis?variant=40479832113309]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-314654.jpg?v=1697536940]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-625818.jpg?v=1697536953]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-145177.jpg?v=1697536953]]></additionalimage>
+        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>42.90</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1LI177LNABE10]]></mpn>
+        <ean>5212033630818</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>1</quantity>
+        <color>Μπεζ</color>
+        <size>41</size>
+        <variations>
+          <variation>
+            <variationid>40479832113309</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>41</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI177LNABE10]]></manufacturersku>
+            <mpn><![CDATA[1LI177LNABE10]]></mpn>
+            <ean>5212033630818</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Σανδάλια μονομάχου "Νέμεσις". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -51086,7 +51077,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI46MANLNABE7]]></mpn>
         <ean>5212033634557</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>11</quantity>
+        <quantity>10</quantity>
         <color>Μπεζ</color>
         <size>40,41,42,43,44,46</size>
         <variations>
@@ -51112,7 +51103,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40479960236189</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>42</size>
-            <quantity>2</quantity>
+            <quantity>1</quantity>
             <manufacturersku><![CDATA[1LI46MANLNABE9]]></manufacturersku>
             <mpn><![CDATA[1LI46MANLNABE9]]></mpn>
             <ean>5212033634571</ean>

@@ -304,11 +304,11 @@ async function fetchProducts() {
     const afterClause = cursor ? `, after: "${cursor}"` : '';
 
     const query = `{
-      products(first: 50, query: "status:active"${afterClause}) {
+      products(first: 50${afterClause}) {
         pageInfo { hasNextPage endCursor }
         edges {
           node {
-            id title handle descriptionHtml productType vendor
+            id title handle descriptionHtml productType vendor status
             images(first: 10) { edges { node { id url } } }
             options { id name optionValues { id name } }
             variants(first: 100) {
@@ -344,6 +344,7 @@ async function fetchProducts() {
           id: node.id.replace('gid://shopify/Product/', ''),
           gid: node.id,
           title: node.title,
+          status: node.status,
           handle: node.handle,
           body_html: node.descriptionHtml,
           product_type: node.productType,
@@ -478,13 +479,12 @@ function generateMetaFeed(products) {
     stats.categoryBreakdown[googleCategory] = (stats.categoryBreakdown[googleCategory] || 0) + 1;
 
     variants.forEach(variant => {
-      // Skip out of stock items
-      if (variant.inventory_quantity <= 0) {
-        stats.outOfStock++;
-        return;
-      }
-
-      stats.inStock++;
+      // 2026-08-18: ΔΕΝ παραλείπουμε τα εξαντλημένα/draft — τα εκπέμπουμε με availability=out of stock,
+      // ώστε το Meta να τα ΕΝΗΜΕΡΩΝΕΙ (το scheduled fetch δεν διαγράφει απόντα items: num_deleted_items=0 ⇒
+      // ό,τι έλειπε από το feed έμενε «in stock» για πάντα και σερβιριζόταν — μετρημένο 14,7% των catalog κλικ).
+      const sellable = product.status === 'ACTIVE' && variant.inventory_quantity > 0;
+      const availability = sellable ? 'in stock' : 'out of stock';
+      if (sellable) stats.inStock++; else stats.outOfStock++;
       stats.totalVariants++;
 
       // Extract variant options
@@ -576,7 +576,7 @@ function generateMetaFeed(products) {
 
       <!-- PRICE & AVAILABILITY -->
       <g:price>${price}</g:price>
-      <g:availability>in stock</g:availability>
+      <g:availability>${availability}</g:availability>
       <g:condition>new</g:condition>`;
 
       // Sale price handling
@@ -661,7 +661,7 @@ function generateMetaFeed(products) {
   // Print stats
   console.log(`\n   📊 Feed Statistics:`);
   console.log(`      In-stock items: ${stats.inStock}`);
-  console.log(`      Out-of-stock (skipped): ${stats.outOfStock}`);
+  console.log(`      Out-of-stock / draft (emitted as "out of stock"): ${stats.outOfStock}`);
   console.log(`      Products without image (skipped): ${stats.noImage}`);
   console.log(`      With color: ${stats.withColor}`);
   console.log(`      With material: ${stats.withMaterial}`);
@@ -752,7 +752,7 @@ async function generateFeed(options = {}) {
   console.log(`\n✅ Feed saved:`);
   console.log(`   ${filepath}`);
   console.log(`   ${datedFilepath}`);
-  console.log(`\n📊 Summary: ${stats.inStock} items in feed\n`);
+  console.log(`\n📊 Summary: ${stats.totalVariants} items in feed (${stats.inStock} in stock)\n`);
 
   // Print validation info if requested
   if (options.validate) {

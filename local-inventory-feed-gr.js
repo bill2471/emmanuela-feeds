@@ -58,10 +58,11 @@ const OUTPUT_DIR = path.join(__dirname, 'feeds');
 function httpsRequest(options, postData = null) {
   return new Promise((resolve, reject) => {
     const req = https.request(options, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
+      const chunks = [];
+      res.on('data', chunk => chunks.push(chunk));
       res.on('end', () => {
         try {
+          const data = Buffer.concat(chunks).toString('utf8');
           resolve({ data: JSON.parse(data), statusCode: res.statusCode, headers: res.headers });
         } catch (e) { reject(new Error(`Parse error: ${e.message}`)); }
       });

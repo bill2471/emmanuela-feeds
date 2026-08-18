@@ -732,6 +732,31 @@ function generateGlamiFeed(products) {
       if (group.secondOption) {
         productName = `${productName} ${group.secondOption}`;
       }
+
+      // ── monofix (18/08/2026) ────────────────────────────────────────────────
+      // Το «Σετ από N» ΔΕΝ πρέπει να μπαίνει σε ΜΟΝΟ κομμάτι: στο 3-daxtylidia-set-mpilies
+      // τρεις παραλλαγές «Μονό…» (44 €) διαφημίζονταν ως «Σετ από 3 …» δίπλα στο γνήσιο σετ
+      // (74 €) — ο πελάτης διάβαζε «ίδιο σετ, 30 € φθηνότερα».
+      // Το ίδιο ελάττωμα θεραπεύτηκε 17-18/08 σε Skroutz + BestPrice μέσω του ΚΟΙΝΟΥ
+      // skroutz-title-builder-v35· ο GLAMI χτίζει τον τίτλο ΜΟΝΟΣ του (product.title + χρώμα),
+      // οπότε χρειάζεται δικό του guard.
+      // ⚠ Ελληνικά: ΠΟΤΕ \b (είναι [A-Za-z0-9_]) → Unicode lookahead.
+      // Kill-switch: GLAMI_NO_MONOFIX=1 ⇒ byte-identical με την προηγούμενη έκδοση.
+      if (!process.env.GLAMI_NO_MONOFIX) {
+        const SET_PREFIX = /^\s*Σετ από\s+(?:\d+|δύο|τρία|τέσσερα)\s+/iu;
+        const IS_SINGLE = /μον[όήο](?![\p{L}])/iu;
+        if (IS_SINGLE.test(group.rawColor || '') && SET_PREFIX.test(productName)) {
+          // Ενικός ΜΟΝΟ από ρητό χάρτη — άγνωστη λέξη μένει ως έχει (καμία εφεύρεση ελληνικών).
+          const SINGULAR = {
+            'δαχτυλίδια': 'Δαχτυλίδι', 'σκουλαρίκια': 'Σκουλαρίκι', 'βραχιόλια': 'Βραχιόλι',
+            'κολιέ': 'Κολιέ', 'μενταγιόν': 'Μενταγιόν', 'καρφίτσες': 'Καρφίτσα',
+          };
+          productName = productName.replace(SET_PREFIX, '');
+          productName = productName.replace(/^(\p{L}+)/u, (w) => SINGULAR[w.toLowerCase()] || w);
+          stats.monofixApplied = (stats.monofixApplied || 0) + 1;
+        }
+      }
+
       productName = productName.substring(0, 200);
 
       // Collect sample items for validation

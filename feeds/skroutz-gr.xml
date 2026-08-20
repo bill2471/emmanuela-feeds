@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-08-20 13:09</created_at>
+  <created_at>2026-08-20 19:02</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -47452,9 +47452,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL345LBLBE8]]></mpn>
         <ean>5212033622790</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
+        <quantity>1</quantity>
         <color>Μαύρο</color>
-        <size>39,40</size>
+        <size>39</size>
         <variations>
           <variation>
             <variationid>40479848562845</variationid>
@@ -47465,17 +47465,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1KL345LBLBE8]]></mpn>
             <ean>5212033622790</ean>
           </variation>
-          <variation>
-            <variationid>40479848824989</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL345LBLBE9]]></manufacturersku>
-            <mpn><![CDATA[1KL345LBLBE9]]></mpn>
-            <ean>5212033622813</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 39,40.]]></description>
+        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Βρισηίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 39.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

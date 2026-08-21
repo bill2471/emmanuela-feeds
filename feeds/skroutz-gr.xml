@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-08-21 07:08</created_at>
+  <created_at>2026-08-21 13:08</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1387,7 +1387,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -4409,7 +4409,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[2102-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>16</quantity>
+        <quantity>15</quantity>
         <color>Ασημί</color>
         <size>XS,S,M,L</size>
         <variations>
@@ -4424,7 +4424,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
             <variationid>31373048512547</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>S</size>
-            <quantity>4</quantity>
+            <quantity>3</quantity>
             <manufacturersku><![CDATA[2102]]></manufacturersku>
           </variation>
           <variation>
@@ -5169,7 +5169,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[2078-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>60</quantity>
+        <quantity>59</quantity>
         <color>Ασημί</color>
         <size>48,49,50,51,52,53,54,55,56,57,58,59,60,61,Ανοιχτή γάμπα</size>
         <variations>
@@ -5275,7 +5275,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
             <variationid>31641051529251</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>Ανοιχτή γάμπα</size>
-            <quantity>4</quantity>
+            <quantity>3</quantity>
             <manufacturersku><![CDATA[2078]]></manufacturersku>
           </variation>
         </variations>
@@ -14030,9 +14030,9 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <shipping>0</shipping>
       </product>
       <product>
-        <id>39543322116131</id>
+        <id>32969975136291</id>
         <name><![CDATA[Δαχτυλίδι κορώνα χειροποίητο από ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/daxtylidi-korona?variant=39543322116131]]></link>
+        <link><![CDATA[https://emmanuela.gr/products/daxtylidi-korona?variant=32969975136291]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/55-daxtylidi-korwna-apo-ashmi-925-kosmhmata-emmanuela-897242.jpg?v=1767370123]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/55-daxtylidi-korwna-apo-ashmi-925-kosmhmata-emmanuela-408334.jpg?v=1767370130]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/55-daxtylidi-korwna-apo-ashmi-925-kosmhmata-emmanuela-620342.jpg?v=1767370133]]></additionalimage>
@@ -14044,17 +14044,10 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU523riWo]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
-        <size>56,59,60,61</size>
+        <size>59,60,61</size>
         <variations>
-          <variation>
-            <variationid>39543322116131</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>56</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[LU523riWo]]></manufacturersku>
-          </variation>
           <variation>
             <variationid>32969975136291</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
@@ -31783,9 +31776,9 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <shipping>0</shipping>
       </product>
       <product>
-        <id>39543321722915</id>
+        <id>32969973268515</id>
         <name><![CDATA[Δαχτυλίδι ανδρικό κορώνα χειροποίητο από ασήμι 925]]></name>
-        <link><![CDATA[https://emmanuela.gr/products/andriko-daxtylidi-korona?variant=39543321722915]]></link>
+        <link><![CDATA[https://emmanuela.gr/products/andriko-daxtylidi-korona?variant=32969973268515]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/55-andriko-daxtylidi-korwna-apo-ashmi-925-kosmhmata-emmanuela-203382.jpg?v=1767364852]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/55-andriko-daxtylidi-korwna-apo-ashmi-925-kosmhmata-emmanuela-575574.jpg?v=1767364858]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/55-andriko-daxtylidi-korwna-apo-ashmi-925-kosmhmata-emmanuela-852081.jpg?v=1767364862]]></additionalimage>
@@ -31799,17 +31792,10 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU523ri]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
-        <size>56,59,60,61</size>
+        <size>59,60,61</size>
         <variations>
-          <variation>
-            <variationid>39543321722915</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>56</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[LU523ri]]></manufacturersku>
-          </variation>
           <variation>
             <variationid>32969973268515</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
@@ -33017,7 +33003,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1266-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>

@@ -366,6 +366,17 @@ function stripHtml(html) {
 
 function extractVariantColor(selectedOptions) {
   if (!selectedOptions) return null;
+  // (2026-08-25) — ΠΡΩΤΑ ο ΑΚΡΙΒΗΣ άξονας χρώματος (προσθετικό· ο παλιός βρόχος μένει από κάτω).
+  // Ένα ΣΥΝΘΕΤΟ όνομα («Επίλεξε νούμερο και χρώμα») ΔΕΝ χαρακτηρίζει τον άξονα και δεν
+  // επιτρέπεται να ΣΚΙΑΣΕΙ τον γνήσιο «Χρώμα» που έρχεται μετά. Μετρημένο 24/08/2026:
+  // 1 προϊόν σε 464 (daxtylidi-kokkini-paparouna) έχανε ΟΛΟΚΛΗΡΗ την επιχρυσωμένη εκδοχή.
+  // Ζωντανό σε bestprice-feed-gr.js + glami-feed-gr.js από 24/08 (commits e230ef75/58b92f2a).
+  for (const opt of selectedOptions) {
+    const exact = (opt.name || '').toLowerCase().trim();
+    if (exact === 'χρώμα' || exact === 'χρώμα μετάλλου' || exact === 'color' || exact === 'colour') {
+      return opt.value;
+    }
+  }
   for (const opt of selectedOptions) {
     const name = (opt.name || '').toLowerCase();
     if (name.includes('χρώμα') || name.includes('color') || name.includes('colour')

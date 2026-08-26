@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-08-26 01:35</created_at>
+  <created_at>2026-08-26 07:11</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1387,7 +1387,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -1412,7 +1412,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Μαύρο]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Μαύρο</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -6864,21 +6864,14 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <price_with_vat>62.00</price_with_vat>
         <vat>24.00</vat>
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[2028]]></mpn>
+        <mpn><![CDATA[2028-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>23</quantity>
+        <quantity>11</quantity>
         <color>Ασημί</color>
         <size>Μικρό: κανονικό μέγεθος δακτύλου 51 έως 54,Μεσαίο: κανονικό μέγεθος δακτύλου 55 έως 58,Μεγάλο: κανονικό μέγεθος δακτύλου 60 έως 63</size>
         <variations>
           <variation>
             <variationid>31373216088099</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>Μικρό: κανονικό μέγεθος δακτύλου 51 έως 54</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[2028]]></manufacturersku>
-          </variation>
-          <variation>
-            <variationid>31373216120867</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>Μικρό: κανονικό μέγεθος δακτύλου 51 έως 54</size>
             <quantity>4</quantity>
@@ -6892,17 +6885,58 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
             <manufacturersku><![CDATA[2028]]></manufacturersku>
           </variation>
           <variation>
-            <variationid>31373216186403</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>Μεσαίο: κανονικό μέγεθος δακτύλου 55 έως 58</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[2028]]></manufacturersku>
-          </variation>
-          <variation>
             <variationid>31373216219171</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>Μεγάλο: κανονικό μέγεθος δακτύλου 60 έως 63</size>
             <quantity>3</quantity>
+            <manufacturersku><![CDATA[2028]]></manufacturersku>
+          </variation>
+        </variations>
+        <weight>4</weight>
+        <description><![CDATA[Χαρακτηριστικά Προϊόντος
+Τύπος Προϊόντος: Δαχτυλίδι
+Υλικό: Ασήμι 925 (Sterling Silver 925)
+Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
+Πλήθος Τεμαχίων: 1 τεμάχιο
+Φύλο: Γυναικείο
+
+Ένα μικρό κομψοτέχνημα που φέρνει τη μαγεία της παπαρούνας στο δάχτυλό σου. Το δαχτυλίδι λουλούδι παπαρούνα συνδυάζει την αιθέρια ομορφιά της φύσης με τη ζεστασιά του χρώματος του πάθους. Χαρακτηριστικά & Υλικά Υλικό: Ασήμι 925 με κόκκινο σμάλτο Τύπος: Γυναικείο δαχτυλίδι Βάρος: 6,8g Διαστάσεις: Πλάτος 2,3cm, Ύψος 2,3cm Κατασκευή: Εξολοκλήρου χειροποίητο στην Ελλάδα Διαθέσιμα μεγέθη: — Μικρό: κανονικό μέγεθος δακτύλου 51 έως 54 — Μεσαίο: κανονικό μέγεθος δακτύλου 55 έως 58 — Μεγάλο: κανονικό μέγεθος δακτύλου 60 έως 63 Η Ιστορία του Κοσμήματος Η παπαρούνα είναι σύμβολο της φύσης που αναγεννιέται, της ελπίδας και του πάθους. Με το έντονο κόκκινο χρώμα της, αντιπροσωπεύει την αγάπη και την ενέργεια της ζωής. Αυτό το δαχτυλίδι αιχμαλωτίζει την ευαίσθητη ομορφιά του λουλουδιού, μεταφέροντας ένα μήνυμα ρομαντισμού και τόλμης. Πώς να το φορέσεις Ιδανικό για floral, ρομαντικά ή casual looks που θέλεις να ξεχωρίσεις. Φόρεσέ το μόνο του για ένα εντυπωσιακή εμφάνιση που τραβάει τα βλέμματα, ή συνδύασέ το με άλλα λεπτά δαχτυλίδια για boho layering. Συμπληρώνει τέλεια λευκά, μπεζ και earth tones, αλλά και denim για πιο χαλαρή εμφάνιση. Συνδύασέ το με το μενταγιόν ή τα σκουλαρίκια παπαρούνες για να δημιουργήσεις ένα ολοκληρωμένο σετ. Αποτελεί μια υπέροχη επιλογή δώρου για τον Άγιο Βαλεντίνο ή για κάθε γυναίκα που αγαπά τη φύση και το χρώμα. Παραδίδεται σε καλαίσθητο κουτί δώρου με χάρτινη τσάντα. Διάλεξε χρώμα και νούμερο!]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>31373216120867</id>
+        <name><![CDATA[Δαχτυλίδι λουλούδι παπαρούνα χειροποίητο από επιχρυσωμένο ασήμι 925 μέγεθος 51]]></name>
+        <link><![CDATA[https://emmanuela.gr/products/daxtylidi-kokkini-paparouna?variant=31373216120867]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/2028H.jpg?v=1767373702]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mikro-kanoniko-megethos-daktyloy-51-ews-54-daxtylidi-loyloydi-paparoyna-apo-ashmi-925-kosmhmata-emmanuela-474577.jpg?v=1767373707]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/61keZhEgaNL._SL1500.jpg?v=1767373711]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mikro-kanoniko-megethos-daktyloy-51-ews-54-daxtylidi-loyloydi-paparoyna-apo-ashmi-925-kosmhmata-emmanuela-819126.jpg?v=1767373713]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mikro-kanoniko-megethos-daktyloy-51-ews-54-daxtylidi-loyloydi-paparoyna-apo-ashmi-925-kosmhmata-emmanuela-883469.jpg?v=1767373717]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mikro-kanoniko-megethos-daktyloy-51-ews-54-daxtylidi-loyloydi-paparoyna-apo-ashmi-925-kosmhmata-emmanuela-754486.jpg?v=1767373722]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mikro-kanoniko-megethos-daktyloy-51-ews-54-daxtylidi-loyloydi-paparoyna-apo-ashmi-925-kosmhmata-emmanuela-645453.jpg?v=1767373724]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mikro-kanoniko-megethos-daktyloy-51-ews-54-daxtylidi-loyloydi-paparoyna-apo-ashmi-925-kosmhmata-emmanuela-665087.jpg?v=1767373728]]></additionalimage>
+        <category><![CDATA[Κοσμήματα > Δαχτυλίδια > Γυναικεία Δαχτυλίδια]]></category>
+        <price_with_vat>62.00</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[2028-Χρυσό]]></mpn>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>12</quantity>
+        <color>Χρυσό</color>
+        <size>Μικρό: κανονικό μέγεθος δακτύλου 51 έως 54,Μεσαίο: κανονικό μέγεθος δακτύλου 55 έως 58,Μεγάλο: κανονικό μέγεθος δακτύλου 60 έως 63</size>
+        <variations>
+          <variation>
+            <variationid>31373216120867</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>Μικρό: κανονικό μέγεθος δακτύλου 51 έως 54</size>
+            <quantity>4</quantity>
+            <manufacturersku><![CDATA[2028]]></manufacturersku>
+          </variation>
+          <variation>
+            <variationid>31373216186403</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>Μεσαίο: κανονικό μέγεθος δακτύλου 55 έως 58</size>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[2028]]></manufacturersku>
           </variation>
           <variation>
@@ -6917,7 +6951,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <description><![CDATA[Χαρακτηριστικά Προϊόντος
 Τύπος Προϊόντος: Δαχτυλίδι
 Υλικό: Ασήμι 925 (Sterling Silver 925)
-Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)
+Επιμετάλλωση: Επιχρύσωση (Yellow Gold)
 Πλήθος Τεμαχίων: 1 τεμάχιο
 Φύλο: Γυναικείο
 
@@ -51001,82 +51035,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40479959908509</id>
-        <name><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος" - Μπεζ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-brown-icarus-men?variant=40479959908509]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-691163.jpg?v=1627293850]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-248908.jpg?v=1627293850]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-800156.jpg?v=1627293852]]></additionalimage>
-        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>43.90</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1LI46MANLNABE7]]></mpn>
-        <ean>5212033634557</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>11</quantity>
-        <color>Μπεζ</color>
-        <size>40,41,42,43,44,46</size>
-        <variations>
-          <variation>
-            <variationid>40479959908509</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI46MANLNABE7]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLNABE7]]></mpn>
-            <ean>5212033634557</ean>
-          </variation>
-          <variation>
-            <variationid>40479960039581</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>2</quantity>
-            <manufacturersku><![CDATA[1LI46MANLNABE8]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLNABE8]]></mpn>
-            <ean>5212033634564</ean>
-          </variation>
-          <variation>
-            <variationid>40479960236189</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>42</size>
-            <quantity>2</quantity>
-            <manufacturersku><![CDATA[1LI46MANLNABE9]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLNABE9]]></mpn>
-            <ean>5212033634571</ean>
-          </variation>
-          <variation>
-            <variationid>40479960400029</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>43</size>
-            <quantity>2</quantity>
-            <manufacturersku><![CDATA[1LI46MANLNABE10]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLNABE10]]></mpn>
-            <ean>5212033634588</ean>
-          </variation>
-          <variation>
-            <variationid>40479960563869</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>44</size>
-            <quantity>3</quantity>
-            <manufacturersku><![CDATA[1LI46MANLNABE11]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLNABE11]]></mpn>
-            <ean>5212033634595</ean>
-          </variation>
-          <variation>
-            <variationid>40479960858781</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>46</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI46MANLNABE13]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLNABE13]]></mpn>
-            <ean>5212033626392</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 40,41,42,43,44,46.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
         <id>40479959941277</id>
         <name><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος" - Μαύρο]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-brown-icarus-men?variant=40479959941277]]></link>
@@ -51114,6 +51072,64 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μαύρο. Διαθέσιμα νούμερα: 40,43.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
+        <id>40479960039581</id>
+        <name><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος" - Μπεζ]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-brown-icarus-men?variant=40479960039581]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-691163.jpg?v=1627293850]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-248908.jpg?v=1627293850]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-xiasti-loyria-ikaros-emmanuela-handcrafted-for-you-andrika-sandalia-me-xiasti-loyria-ikaros-800156.jpg?v=1627293852]]></additionalimage>
+        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>43.90</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1LI46MANLNABE8]]></mpn>
+        <ean>5212033634564</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>8</quantity>
+        <color>Μπεζ</color>
+        <size>41,43,44,46</size>
+        <variations>
+          <variation>
+            <variationid>40479960039581</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>41</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1LI46MANLNABE8]]></manufacturersku>
+            <mpn><![CDATA[1LI46MANLNABE8]]></mpn>
+            <ean>5212033634564</ean>
+          </variation>
+          <variation>
+            <variationid>40479960400029</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>43</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1LI46MANLNABE10]]></manufacturersku>
+            <mpn><![CDATA[1LI46MANLNABE10]]></mpn>
+            <ean>5212033634588</ean>
+          </variation>
+          <variation>
+            <variationid>40479960563869</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>44</size>
+            <quantity>3</quantity>
+            <manufacturersku><![CDATA[1LI46MANLNABE11]]></manufacturersku>
+            <mpn><![CDATA[1LI46MANLNABE11]]></mpn>
+            <ean>5212033634595</ean>
+          </variation>
+          <variation>
+            <variationid>40479960858781</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>46</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI46MANLNABE13]]></manufacturersku>
+            <mpn><![CDATA[1LI46MANLNABE13]]></mpn>
+            <ean>5212033626392</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 41,43,44,46.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

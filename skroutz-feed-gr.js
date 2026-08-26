@@ -1014,7 +1014,47 @@ function generateSkroutzFeed(products) {
   // color+length selectedOptions — e.g. Shopify data inconsistency). In that
   // case we append a variant.id suffix to keep MPNs globally unique.
   const seenMpns = new Set();
+  const _emittedIds = new Set();   // v4.4: για να μη συγκρουστεί κληρονομημένο id φαντάσματος
   let intraProductDupCount = 0;
+
+  // ── v4.4 ΠΥΛΗ ΠΡΟΣΦΑΤΟΤΗΤΑΣ ΓΙΑ ΤΑ ΦΑΝΤΑΣΜΑΤΑ ────────────────────────────────────────
+  // Ένα φάντασμα έχει νόημα ΜΟΝΟ αν το Skroutz ΗΔΗ ΞΕΡΕΙ την καταχώρηση: τότε το quantity 0
+  // την ενημερώνει και κλείνει το παράθυρο 48-62h. Αν την ΔΕΝ ξέρει, το φάντασμα απλώς
+  // δημοσιεύει νεκρό εμπόρευμα. Μετρημένο 26/08 πάνω σε 12 ιστορικές γενιές του feed:
+  // 0/84 υποψήφια φαντάσματα είχαν ΠΟΤΕ δημοσιευμένο mpn ή id (control: 40/40 ζωντανά ΝΑΙ).
+  // Πηγή αλήθειας = το ΠΡΟΗΓΟΥΜΕΝΟ αρχείο feed, που το CI έχει ήδη κάνει checkout.
+  // Κληρονομούμε ΚΑΙ το <id>: ο αντιπρόσωπος της ομάδας αλλάζει όταν εξαντληθεί (ο ζωντανός
+  // ήταν ο 1ος IN-STOCK, το φάντασμα ο 1ος οποιοσδήποτε), οπότε χωρίς κληρονομιά το Skroutz
+  // θα έβλεπε ΝΕΑ καταχώρηση — μετρημένο σε δαχτυλίδια με νούμερα.
+  // ⛔ FAIL-CLOSED ΚΑΙ ΦΩΝΑΧΤΑ: λείπει/άδειο/ασυνήθιστα μικρό ⇒ ΚΑΝΕΝΑ φάντασμα.
+  const PREV_ID_BY_MPN = new Map();
+  let PREV_OK = false;
+  if (process.env.SKROUTZ_NO_GHOST !== '1') {
+    const _prevPath = path.join(OUTPUT_DIR, 'skroutz-gr.xml');
+    try {
+      const _prev = fs.readFileSync(_prevPath, 'utf8');
+      const _blocks = _prev.split('<product>').slice(1);
+      for (const _b of _blocks) {
+        const _body = _b.split('</product>')[0];
+        const _mId = _body.match(/<id>\s*(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?\s*<\/id>/);
+        const _mMp = _body.match(/<mpn>\s*(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?\s*<\/mpn>/);
+        const _mPr = _body.match(/<price_with_vat>\s*([\s\S]*?)\s*<\/price_with_vat>/);
+        if (_mId && _mMp && !PREV_ID_BY_MPN.has(_mMp[1].trim())) {
+          PREV_ID_BY_MPN.set(_mMp[1].trim(), { id: _mId[1].trim(), price: _mPr ? _mPr[1].trim() : null });
+        }
+      }
+      // Ο έλεγχος που κάνει την πύλη αξιόπιστη: ένα feed με λίγες καταχωρήσεις είναι
+      // ΥΠΟΠΤΟ (μισο-γραμμένο/κατεστραμμένο) και ΔΕΝ επιτρέπεται να οδηγήσει αποφάσεις.
+      PREV_OK = PREV_ID_BY_MPN.size >= 500;
+      if (PREV_OK) {
+        console.log(`  [GHOST] Προηγούμενο feed: ${PREV_ID_BY_MPN.size} καταχωρήσεις — η πύλη προσφατότητας είναι ΕΝΕΡΓΗ.`);
+      } else {
+        console.error(`  [GHOST] WARNING: το προηγούμενο feed έδωσε μόλις ${PREV_ID_BY_MPN.size} καταχωρήσεις (<500) — ΚΑΝΕΝΑ φάντασμα δεν θα εκπεμφθεί.`);
+      }
+    } catch (e) {
+      console.error(`  [GHOST] WARNING: δεν διαβάστηκε το προηγούμενο feed (${e.message}) — ΚΑΝΕΝΑ φάντασμα δεν θα εκπεμφθεί.`);
+    }
+  }
 
   products.forEach(product => {
     stats.totalProducts++;
@@ -1139,13 +1179,26 @@ function generateSkroutzFeed(products) {
     const productMpnBase = baseByProduct.get(product.id) || `EMM-${product.id}`;
 
     const entryGroups = {};
+    // v4.4 (2026-08-26): οι ομάδες που αποτελούνται ΑΠΟΚΛΕΙΣΤΙΚΑ από εξαντλημένα variants
+    // μαζεύονται χωριστά και προωθούνται ΜΟΝΟ αν δεν υπάρχει ζωντανή ομάδα με το ίδιο κλειδί.
+    const _oosGroups = {};
 
     variants.forEach(variant => {
       stats.totalVariants++;
 
-      if (variant.inventory_quantity <= 0) {
+      // v4.4 (2026-08-26) GHOST ENTRIES. Το εξαντλημένο variant ΔΕΝ βγαίνει πια από τον
+      // βρόχο: συνεχίζει ώστε το groupKey του να υπολογιστεί με ΤΗΝ ΙΔΙΑ ΑΚΡΙΒΩΣ λογική
+      // (μία αντιγραφή της απόφασης, ποτέ δύο — νόμος S56). Καταλήγει σε ΞΕΧΩΡΙΣΤΟ κάδο:
+      //   · αν η ομάδα του έχει έστω ΕΝΑ ζωντανό variant ⇒ ΑΓΝΟΕΙΤΑΙ, όπως πάντα
+      //     (αλλιώς το <size> της ζωντανής καταχώρησης θα διαφήμιζε εξαντλημένα νούμερα —
+      //      μετρημένο 26/08: 142 καταχωρήσεις θα μολύνονταν)·
+      //   · αν ΚΑΜΙΑ δεν είναι ζωντανή ⇒ μία καταχώρηση με quantity 0, ώστε το Skroutz να
+      //     τη σβήσει σωστά αντί να την πουλά επί 48-62 ώρες (μετρημένο παράθυρο, S82).
+      // Kill-switch: SKROUTZ_NO_GHOST=1 ⇒ έξοδος BYTE-ΤΑΥΤΟΣΗΜΗ με πριν.
+      const _isOos = variant.inventory_quantity <= 0;
+      if (_isOos) {
         stats.outOfStock++;
-        return;
+        if (process.env.SKROUTZ_NO_GHOST === '1') return;
       }
 
       // If product has both Μονό and Ζευγάρι, exclude Ζευγάρι variants
@@ -1154,7 +1207,7 @@ function generateSkroutzFeed(products) {
         return;
       }
 
-      stats.inStock++;
+      if (!_isOos) stats.inStock++;
 
       const rawColor = extractVariantColor(variant.selectedOptions);
       const color = getGreekColor(rawColor) || getGreekColor(product.metafields.color) || 'Ασημί';
@@ -1188,10 +1241,12 @@ function generateSkroutzFeed(products) {
         }
       }
 
-      if (!entryGroups[groupKey]) {
-        entryGroups[groupKey] = {
+      const _bucket = _isOos ? _oosGroups : entryGroups;
+      if (!_bucket[groupKey]) {
+        _bucket[groupKey] = {
           color,
           colorDefaulted: _colorDefaulted,   // v4.1
+          ghost: _isOos,
           variants: [],
           lengthRaw: groupLengthRaw,
           lengthParsed: groupLengthParsed,
@@ -1201,15 +1256,29 @@ function generateSkroutzFeed(products) {
           oldKey: groupKey.replace(/\|side:[^|]*/, ''),
         };
       }
-      entryGroups[groupKey].variants.push(variant);
+      _bucket[groupKey].variants.push(variant);
     });
+
+    // v4.4: ΤΟ ΠΛΗΘΟΣ ΤΩΝ ΖΩΝΤΑΝΩΝ ΚΑΤΑΧΩΡΗΣΕΩΝ ΚΛΕΙΔΩΝΕΙ ΕΔΩ, ΠΡΙΝ μπουν τα φαντάσματα.
+    // Το MPN των ζωντανών εξαρτάται από αυτό (entryCount>1 ⇒ επίθεμα χρώματος)· αν το
+    // μετρούσαμε ΜΕΤΑ, ένα φάντασμα θα ΜΕΤΟΝΟΜΑΖΕ ζωντανή καταχώρηση = soft reset στο Skroutz.
+    const _liveEntryCount = new Set(Object.values(entryGroups).map(g => g.oldKey || '')).size;
+    for (const [_gk, _gg] of Object.entries(_oosGroups)) {
+      if (entryGroups[_gk]) continue;              // η ομάδα ζει ⇒ το εξαντλημένο αγνοείται
+      entryGroups[_gk] = _gg;
+      stats.ghostEntries = (stats.ghostEntries || 0) + 1;
+    }
 
     // Pre-compute image ranges per color group.
     // In Shopify, images are typically ordered by color (e.g., silver shots, then gold shots).
     // Variant-assigned images serve as boundaries — we include adjacent images between boundaries.
     // This captures same-color lifestyle/detail shots without cross-color contamination.
+    // v4.4: ο υπολογισμός ορίων γίνεται ΣΥΝΑΡΤΗΣΗ και καλείται ΔΥΟ φορές — μία με τις
+    // ΖΩΝΤΑΝΕΣ ομάδες ΜΟΝΟ (ταυτόσημο αποτέλεσμα με πριν ⇒ καμία ζωντανή καταχώρηση δεν
+    // αλλάζει εικόνες) και μία με ΟΛΕΣ, που τη χρησιμοποιούν ΜΟΝΟ τα φαντάσματα.
+    const _buildRanges = (_grps) => {
     const allVariantImageIds = new Set();
-    for (const group of Object.values(entryGroups)) {
+    for (const group of _grps) {
       for (const v of group.variants) {
         if (v.image_id) allVariantImageIds.add(v.image_id);
       }
@@ -1218,7 +1287,7 @@ function generateSkroutzFeed(products) {
     // v3.9 (2026-08-11): COLOUR-AWARE BOUNDARIES — ποιο χρώμα κάρφωσε κάθε εικόνα.
     // Χρειάζεται για να μη κόβει η φέτα ενός χρώματος πάνω σε pin ΤΟΥ ΙΔΙΟΥ χρώματος.
     const _colourOfPin = new Map();
-    for (const _g of Object.values(entryGroups)) {
+    for (const _g of _grps) {
       for (const _v of _g.variants) {
         if (_v.image_id && !_colourOfPin.has(_v.image_id)) _colourOfPin.set(_v.image_id, _g.color);
       }
@@ -1234,7 +1303,7 @@ function generateSkroutzFeed(products) {
     variantImageIndices.sort((a, b) => a.idx - b.idx);
 
     // Map each variant image → range of images (from this boundary to the next)
-    const imageRangeByVariantImageId = {};
+    const imageRangeByVariantImageId = {};   // τοπικό της _buildRanges
     const _noCbnd = process.env.SKROUTZ_NO_CBND === '1';
     for (let i = 0; i < variantImageIndices.length; i++) {
       const start = variantImageIndices[i].idx;
@@ -1254,6 +1323,13 @@ function generateSkroutzFeed(products) {
       }
       imageRangeByVariantImageId[variantImageIndices[i].id] = images.slice(start, end);
     }
+    return imageRangeByVariantImageId;
+    };
+    const _liveGroups = Object.values(entryGroups).filter(g => !g.ghost);
+    const imageRangeByVariantImageId = _buildRanges(_liveGroups);
+    const _imageRangeGhost = (_liveGroups.length === Object.keys(entryGroups).length)
+      ? imageRangeByVariantImageId
+      : _buildRanges(Object.values(entryGroups));
 
     // Create 1 entry per group (color × second option)
     for (const [groupKey, group] of Object.entries(entryGroups)) {
@@ -1270,7 +1346,7 @@ function generateSkroutzFeed(products) {
       // threshold — trading an accuracy defect for an exclusion risk, which is exactly the
       // trap the 31/07 sandal measurement warned about.
       const _imagePoolVariants = (sideRaw && oldKey)
-        ? Object.values(entryGroups).filter(g => (g.oldKey || '') === oldKey)
+        ? Object.values(entryGroups).filter(g => (g.oldKey || '') === oldKey && !!g.ghost === !!group.ghost)
             .flatMap(g => g.variants)
         : groupVariants;
       const groupImageIds = new Set(
@@ -1288,7 +1364,7 @@ function generateSkroutzFeed(products) {
         const colorImages = [];
         const seen = new Set();
         for (const imgId of groupImageIds) {
-          const range = imageRangeByVariantImageId[imgId] || [];
+          const range = (group.ghost ? _imageRangeGhost : imageRangeByVariantImageId)[imgId] || [];
           for (const img of range) {
             if (!seen.has(img.id)) {
               seen.add(img.id);
@@ -1459,7 +1535,11 @@ function generateSkroutzFeed(products) {
       // are what discriminate siblings.
       // Πλήθος καταχωρήσεων ΑΓΝΟΩΝΤΑΣ τον διαχωρισμό πλευράς: έτσι ένα προϊόν που ΠΡΙΝ
       // έβγαζε 1 καταχώρηση (χωρίς επίθεμα χρώματος) δεν αποκτά ξαφνικά επίθεμα.
-      const entryCount = new Set(Object.values(entryGroups).map(g => g.oldKey || '')).size;
+      // v4.4: ΖΩΝΤΑΝΟ πλήθος (κλειδώθηκε πριν τα φαντάσματα) ⇒ καμία υπάρχουσα καταχώρηση
+      // δεν αλλάζει MPN. Το ΦΑΝΤΑΣΜΑ παίρνει ΠΑΝΤΑ επίθεμα χρώματος: αλλιώς, σε προϊόν με
+      // μία ζωντανή απόχρωση, θα συγκρουόταν με το MPN της (ίδια ρίζα, χωρίς επίθεμα).
+      const _allEntryCount = new Set(Object.values(entryGroups).map(g => g.oldKey || '')).size;
+      const entryCount = group.ghost ? _allEntryCount : _liveEntryCount;
       let mpn = productMpnBase;
       if (entryCount > 1) {
         mpn = `${productMpnBase}-${color}`;
@@ -1486,6 +1566,21 @@ function generateSkroutzFeed(products) {
       }
       seenMpns.add(mpn);
 
+      // v4.4: ΠΥΛΗ ΠΡΟΣΦΑΤΟΤΗΤΑΣ — φάντασμα μόνο για καταχώρηση που το Skroutz ΗΔΗ ΞΕΡΕΙ.
+      let _emitId = repVariant.id;
+      let _emitPrice = null;   // v4.4: κληρονομημένη τιμή φαντάσματος (null = υπολογισμένη)
+      if (group.ghost) {
+        const _prev = PREV_OK ? PREV_ID_BY_MPN.get(mpn) : undefined;
+        if (!_prev) { stats.ghostSkippedUnknown = (stats.ghostSkippedUnknown || 0) + 1; continue; }
+        if (_emittedIds.has(_prev.id)) { stats.ghostSkippedIdClash = (stats.ghostSkippedIdClash || 0) + 1; continue; }
+        _emitId = _prev.id;      // κληρονομιά ταυτότητας ⇒ ενημερώνεται η ΥΠΑΡΧΟΥΣΑ καταχώρηση
+        // Η τιμή κληρονομείται για τον ίδιο λόγο: ο αντιπρόσωπος της νεκρής ομάδας μπορεί να
+        // είναι φθηνότερο μέγεθος που είχε ήδη εξαντληθεί ⇒ ψεύτικη πτώση τιμής + επανεξέταση.
+        if (_prev.price && /^\d+(\.\d+)?$/.test(_prev.price)) _emitPrice = _prev.price;
+        stats.ghostEmitted = (stats.ghostEmitted || 0) + 1;
+      }
+      _emittedIds.add(_emitId);
+
       // EAN/Barcode
       const ean = repVariant.barcode && /^\d{8,13}$/.test(repVariant.barcode.trim())
         ? repVariant.barcode.trim() : null;
@@ -1497,7 +1592,7 @@ function generateSkroutzFeed(products) {
       // Build product XML entry
       let item = '';
       item += `      <product>\n`;
-      item += `        <id>${repVariant.id}</id>\n`;
+      item += `        <id>${_emitId}</id>\n`;
       item += `        <name><![CDATA[${name}]]></name>\n`;
       item += `        <link><![CDATA[https://${DOMAIN}/products/${product.handle}?variant=${repVariant.id}]]></link>\n`;
       item += `        <image><![CDATA[${variantImage}]]></image>\n`;
@@ -1528,7 +1623,7 @@ function generateSkroutzFeed(products) {
       item += `        <category><![CDATA[${categoryPath}]]></category>\n`;
 
       // Price with VAT (already VAT-inclusive in Shopify for .gr)
-      item += `        <price_with_vat>${lowestPrice.toFixed(2)}</price_with_vat>\n`;
+      item += `        <price_with_vat>${_emitPrice !== null ? _emitPrice : lowestPrice.toFixed(2)}</price_with_vat>\n`;
       item += `        <vat>${VAT_RATE}.00</vat>\n`;
 
       // Manufacturer
@@ -1765,6 +1860,20 @@ async function generateFeed(options = {}) {
   }
 
   // Write files
+  // v4.4 ΑΣΦΑΛΕΙΟΔΙΑΚΟΠΤΗΣ ΦΑΝΤΑΣΜΑΤΩΝ — δες σχόλιο πύλης προσφατότητας παραπάνω.
+  // Τα φαντάσματα κρατούν το πλήθος καταχωρήσεων σταθερό ακόμη κι όταν μηδενιστεί ΟΛΟ το
+  // απόθεμα, άρα ΤΥΦΛΩΝΟΥΝ την πύλη «total category loss» του CI. Αν ξεπεράσουν το 25% των
+  // καταχωρήσεων, το σενάριο ΔΕΝ είναι «πούλησαν μερικά» — είναι βλάβη αποθέματος.
+  const _ghosts = stats.ghostEmitted || 0;
+  const _ghostPct = stats.feedEntries > 0 ? (_ghosts / stats.feedEntries) : 0;
+  if (_ghosts > 0 && _ghostPct > 0.25) {
+    console.error(`\n  [GHOST] ⛔ ΑΣΦΑΛΕΙΟΔΙΑΚΟΠΤΗΣ: ${_ghosts} φαντάσματα σε ${stats.feedEntries} καταχωρήσεις ` +
+      `(${(_ghostPct * 100).toFixed(1)}% > 25%). Αυτό δεν είναι φυσιολογικός ρυθμός εξαντλήσεων — μοιάζει με ` +
+      `βλάβη αποθέματος (seed regression / χαμένο read_inventory / untracked variants).`);
+    console.error(`  [GHOST] ΔΕΝ γράφω feed. Το προηγούμενο XML παραμένει και το CI θα σημάνει warning.`);
+    process.exit(1);
+  }
+
   const filename = 'skroutz-gr.xml';
   const filepath = path.join(OUTPUT_DIR, filename);
   fs.writeFileSync(filepath, xml, 'utf8');
@@ -1787,6 +1896,7 @@ async function generateFeed(options = {}) {
   console.log(`  Total variants:        ${stats.totalVariants}`);
   console.log(`  In stock:              ${stats.inStock}`);
   console.log(`  Out of stock (skip):   ${stats.outOfStock}`);
+  console.log(`  Ghost εκπέμφθηκαν:     ${stats.ghostEmitted || 0}  (άγνωστα στο προηγούμενο feed: ${stats.ghostSkippedUnknown || 0}, σύγκρουση id: ${stats.ghostSkippedIdClash || 0})`);
   console.log(`  No image (skip):       ${stats.noImage}`);
   // 2026-08-04: this counter existed since v3.5.1 but was never printed, so the only cost
   // channel of the packaging fix was invisible. A jump here after a deploy is the signal.

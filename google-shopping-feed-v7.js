@@ -991,7 +991,7 @@ const PRODUCT_HIGHLIGHTS = {
     'Unique artisan design — no two pieces are identical',
     'Comes in a beautiful gift-ready box',
     'Free shipping to most countries',
-    'Easy 14-day returns',
+    'Easy 30-day returns',
   ],
   de: [
     'Handgefertigt in Griechenland von erfahrenen Kunsthandwerkern',
@@ -999,7 +999,7 @@ const PRODUCT_HIGHLIGHTS = {
     'Einzigartiges Kunsthandwerk — kein Stück gleicht dem anderen',
     'Wird in einer schönen Geschenkbox geliefert',
     'Kostenloser Versand in die meisten Länder',
-    'Einfache Rückgabe innerhalb von 14 Tagen',
+    'Einfache Rückgabe innerhalb von 30 Tagen',
   ],
   fr: [
     'Fabriqué à la main en Grèce par des artisans qualifiés',
@@ -1007,7 +1007,7 @@ const PRODUCT_HIGHLIGHTS = {
     'Design artisanal unique — aucune pièce n\'est identique',
     'Livré dans un bel écrin cadeau',
     'Livraison gratuite dans la plupart des pays',
-    'Retours faciles sous 14 jours',
+    'Retours faciles sous 30 jours',
   ],
   it: [
     'Realizzato a mano in Grecia da artigiani esperti',
@@ -1015,7 +1015,7 @@ const PRODUCT_HIGHLIGHTS = {
     'Design artigianale unico — nessun pezzo è identico',
     'Consegnato in un\'elegante confezione regalo',
     'Spedizione gratuita nella maggior parte dei paesi',
-    'Reso facile entro 14 giorni',
+    'Reso facile entro 30 giorni',
   ],
   es: [
     'Hecho a mano en Grecia por artesanos cualificados',
@@ -1023,7 +1023,7 @@ const PRODUCT_HIGHLIGHTS = {
     'Diseño artesanal único — no hay dos piezas iguales',
     'Se entrega en una hermosa caja de regalo',
     'Envío gratuito a la mayoría de los países',
-    'Devoluciones fáciles en 14 días',
+    'Devoluciones fáciles en 30 días',
   ],
   el: [
     'Χειροποίητο στην Ελλάδα από εξειδικευμένους τεχνίτες',
@@ -1031,7 +1031,7 @@ const PRODUCT_HIGHLIGHTS = {
     'Μοναδικός σχεδιασμός — κανένα κομμάτι δεν είναι ίδιο',
     'Παραδίδεται σε όμορφη συσκευασία δώρου',
     'Δωρεάν αποστολή στις περισσότερες χώρες',
-    'Εύκολες επιστροφές εντός 14 ημερών',
+    'Εύκολες επιστροφές εντός 30 ημερών',
   ],
   nl: [
     'Handgemaakt in Griekenland door ervaren ambachtslieden',
@@ -1039,7 +1039,7 @@ const PRODUCT_HIGHLIGHTS = {
     'Uniek ambachtelijk ontwerp — geen twee stuks zijn identiek',
     'Wordt geleverd in een prachtige geschenkdoos',
     'Gratis verzending naar de meeste landen',
-    'Eenvoudig retourneren binnen 14 dagen',
+    'Eenvoudig retourneren binnen 30 dagen',
   ],
   ja: [
     'ギリシャの熟練職人による手作り',
@@ -1047,7 +1047,7 @@ const PRODUCT_HIGHLIGHTS = {
     'ユニークな職人デザイン — 同じものは二つとない',
     '美しいギフトボックス入り',
     'ほとんどの国への送料無料',
-    '14日間の簡単返品',
+    '30日間の簡単返品',
   ],
 };
 

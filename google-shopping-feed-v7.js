@@ -1,5 +1,5 @@
 /**
- * Google Shopping Feed Generator v11.3 for EMMANUELA
+ * Google Shopping Feed Generator v11.4 for EMMANUELA
  *
  * v11.3 (2026-08-27 — ΖΩΝΕΣ ΜΕ CARRIER SERVICE · διόρθωση σιωπηλής παλινδρόμησης):
  *   - FIX: μια ζώνη με ΕΝΕΡΓΟ carrier service δεν δηλώνει πια τη φθηνότερη FLAT μέθοδο.
@@ -832,7 +832,8 @@ async function fetchShippingRates() {
           name
           default
           profileLocationGroups {
-            locationGroupZones(first: 50) {
+            locationGroupZones(first: 100) {
+              pageInfo { hasNextPage }
               nodes {
                 zone {
                   name
@@ -842,7 +843,8 @@ async function fetchShippingRates() {
                     }
                   }
                 }
-                methodDefinitions(first: 10, eligible: true) {
+                methodDefinitions(first: 50, eligible: true) {
+                  pageInfo { hasNextPage }
                   nodes {
                     name
                     active
@@ -883,12 +885,29 @@ async function fetchShippingRates() {
 
     for (const profile of profiles) {
       for (const group of profile.profileLocationGroups || []) {
+        // v11.4: ΦΡΟΥΡΟΣ ΚΟΠΗΣ. Ένα `first: N` χωρίς έλεγχο παράγει ΣΙΩΠΗΛΗ απώλεια ζωνών —
+        // και η ζώνη «Ελλάδα» κάθεται στο ΤΕΛΟΣ της λίστας (ελληνικό όνομα, μετά τα λατινικά),
+        // δηλαδή είναι Η ΠΡΩΤΗ που χάνεται. (Μετρημένο από τη λωρίδα [BestPrice] 27/08:
+        // `first: 12` γύρισε 12 ζώνες ΧΩΡΙΣ την Ελλάδα και τύπωσε «δεν βρέθηκε ζώνη GR».)
+        if (group.locationGroupZones?.pageInfo?.hasNextPage) {
+          console.error('   🔴 ΚΟΜΜΕΝΟ locationGroupZones — υπάρχουν ΠΕΡΙΣΣΟΤΕΡΕΣ ζώνες από όσες διάβασα.');
+          console.error('      Τα shipping rates ΕΙΝΑΙ ΕΛΛΙΠΗ. Αύξησε το `first:` και ξανατρέξε.');
+        }
+
         for (const zoneData of group.locationGroupZones?.nodes || []) {
           const zone = zoneData.zone;
           const countries = (zone?.countries || []).map(c => c.code?.countryCode).filter(Boolean);
 
           // v11.3: έχει η ζώνη ΕΝΕΡΓΟ carrier service; Αν ναι, οι flat τιμές της ΔΕΝ κρίνουν.
           if ((zoneData.methodDefinitions?.nodes || []).some(m => m.active && m.rateProvider?.carrierService)) {
+            for (const cc of countries) carrierBacked.add(cc);
+          }
+
+          // v11.4: αν οι μέθοδοι της ζώνης ΚΟΠΗΚΑΝ, ο carrier μπορεί να κρύβεται πέρα από το όριο
+          // ⇒ ΔΕΝ ΞΕΡΩ αν η ζώνη είναι carrier-backed. Την περνώ ως ΑΓΝΩΣΤΗ, ώστε να πιαστεί από
+          // τον fail-closed κλάδο παρακάτω — ΠΟΤΕ σιωπηλή αποδοχή της φθηνότερης flat.
+          if (zoneData.methodDefinitions?.pageInfo?.hasNextPage) {
+            console.error(`   🔴 ΚΟΜΜΕΝΟ methodDefinitions στη ζώνη «${zone?.name}» — ο carrier μπορεί να είναι εκτός ορίου.`);
             for (const cc of countries) carrierBacked.add(cc);
           }
 

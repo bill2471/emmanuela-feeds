@@ -1,5 +1,14 @@
 /**
- * Google Shopping Feed Generator v11.2 for EMMANUELA
+ * Google Shopping Feed Generator v11.3 for EMMANUELA
+ *
+ * v11.3 (2026-08-27 — ΖΩΝΕΣ ΜΕ CARRIER SERVICE · διόρθωση σιωπηλής παλινδρόμησης):
+ *   - FIX: μια ζώνη με ΕΝΕΡΓΟ carrier service δεν δηλώνει πια τη φθηνότερη FLAT μέθοδο.
+ *     Από 25/08 19:30Z (πρώτο run μετά το go-live BOX NOW) ο feed δήλωνε GR = 4,00 EUR
+ *     ενώ ο πελάτης πληρώνει 0,00 — σε 3.310 items, χωρίς κανένα σφάλμα.
+ *   - NEW: CARRIER_BACKED_DECLARED — ρητή, μετρημένη τιμή ανά carrier-backed χώρα, με τεκμήριο.
+ *   - NEW: fail-closed — carrier ζώνη χωρίς καταχώρηση αφαιρείται από τα rates (🔴 στο log)
+ *     αντί να δηλωθεί λάθος τιμή.
+ *   Λεπτομέρειες + τεκμήρια: δες το σχόλιο πάνω από το CARRIER_BACKED_DECLARED.
  *
  * v11.2 (Shipping consistency fixes):
  *   - FIX: max_handling_time 2→1 (always 1 business day)
@@ -777,6 +786,38 @@ async function graphqlRequest(query, maxRetries = 4) {
 // ============================================
 
 /**
+ * v11.3 (2026-08-27) — ΖΩΝΕΣ ΜΕ CARRIER SERVICE
+ *
+ * ΤΟ ΠΕΡΙΣΤΑΤΙΚΟ: στις 25/08 14:01Z, με το go-live του BOX NOW, απενεργοποιήθηκε η flat
+ * μέθοδος «Δωρεάν αποστολή ACS» (0,00 EUR) της ζώνης Ελλάδας και τη θέση της πήρε ένα
+ * carrier service. Η συνάρτηση αγνοεί τα carrier rates (`if (!price) continue`), οπότε
+ * άρχισε να παίρνει ως «φθηνότερη» την επόμενη flat: **4,00 EUR**.
+ * Αποτέλεσμα: από το run της 25/08 19:30Z, **και τα 3.310 ελληνικά items δήλωναν στη
+ * Google 4,00 EUR μεταφορικά ενώ ο πελάτης πληρώνει 0,00** — χωρίς κανένα σφάλμα.
+ * Τεκμήριο: feeds/emmanuela-gr.xml @ 9bc107f2 (21/08 13:36Z) = 0.00 EUR
+ *                                  @ 11737b6a (25/08 19:30Z) = 4.00 EUR.
+ *
+ * Ο ΚΑΝΟΝΑΣ: όταν μια ζώνη έχει ΕΝΕΡΓΟ carrier service, την τιμή την υπολογίζει το app
+ * τη στιγμή του checkout — ΔΕΝ ζει στο Admin API. Η φθηνότερη flat μέθοδος ΔΕΝ είναι
+ * αυτό που πληρώνει ο πελάτης, και ΑΠΑΓΟΡΕΥΕΤΑΙ να δηλωθεί ως τέτοια.
+ *
+ * ΤΙ ΚΑΝΟΥΜΕ: κάθε carrier-backed χώρα πρέπει να έχει ρητή, ΜΕΤΡΗΜΕΝΗ καταχώρηση εδώ.
+ * Αν δεν έχει → fail-closed: αφαιρείται από τα rates (η Google πέφτει στις ρυθμίσεις
+ * λογαριασμού GMC) και τυπώνεται 🔴. ΠΟΤΕ σιωπηλή επιστροφή στη flat τιμή.
+ */
+const CARRIER_BACKED_DECLARED = {
+  GR: {
+    price: 0, currency: 'EUR',
+    measuredAt: '2026-08-27T10:50Z',
+    evidence: 'emmanuela.gr/cart/shipping_rates.json με πραγματικό καλάθι, 5 ΤΚ ' +
+              '(54622 Θεσσαλονίκη · 41221 Λάρισα · 36100 Καρπενήσι · 84600 Μύκονος · 82101 Οινούσσες) ' +
+              '→ φθηνότερη 0,00 EUR σε 5/5. Όπου υπάρχει BOX NOW = δωρεάν θυρίδα· ' +
+              'όπου δεν υπάρχει, το app γυρίζει ACS στην πόρτα 0,00 EUR. ' +
+              'Επιβεβαιωμένο από τον ιδιοκτήτη 27/08.'
+  },
+};
+
+/**
  * Fetches shipping rates from Shopify Delivery Profiles API
  * Returns: { 'GR': { price: 0, currency: 'EUR' }, 'GB': { price: 9.90, currency: 'GBP' }, ... }
  */
@@ -812,6 +853,11 @@ async function fetchShippingRates() {
                           currencyCode
                         }
                       }
+                      ... on DeliveryParticipant {
+                        carrierService {
+                          formattedName
+                        }
+                      }
                     }
                   }
                 }
@@ -833,13 +879,19 @@ async function fetchShippingRates() {
     
     const profiles = data.data?.deliveryProfiles?.nodes || [];
     const countryRates = {};
-    
+    const carrierBacked = new Set();   // v11.3: χώρες όπου την τιμή τη λέει το app, όχι το Admin API
+
     for (const profile of profiles) {
       for (const group of profile.profileLocationGroups || []) {
         for (const zoneData of group.locationGroupZones?.nodes || []) {
           const zone = zoneData.zone;
           const countries = (zone?.countries || []).map(c => c.code?.countryCode).filter(Boolean);
-          
+
+          // v11.3: έχει η ζώνη ΕΝΕΡΓΟ carrier service; Αν ναι, οι flat τιμές της ΔΕΝ κρίνουν.
+          if ((zoneData.methodDefinitions?.nodes || []).some(m => m.active && m.rateProvider?.carrierService)) {
+            for (const cc of countries) carrierBacked.add(cc);
+          }
+
           for (const method of zoneData.methodDefinitions?.nodes || []) {
             if (!method.active) continue;
             
@@ -862,6 +914,30 @@ async function fetchShippingRates() {
       }
     }
     
+    // ── v11.3: CARRIER-BACKED ΖΩΝΕΣ — η flat τιμή ΔΕΝ είναι αυτό που πληρώνει ο πελάτης ──
+    if (carrierBacked.size) {
+      console.log(`   🚚 Carrier-backed χώρες: ${[...carrierBacked].join(', ')} (τιμή από το app στο checkout)`);
+    }
+    for (const cc of carrierBacked) {
+      const declared = CARRIER_BACKED_DECLARED[cc];
+      const flat = countryRates[cc];
+
+      if (!declared) {
+        // FAIL-CLOSED: καλύτερα ΚΑΜΙΑ δήλωση (η Google πέφτει στο GMC) παρά ΛΑΘΟΣ δήλωση.
+        console.error(`   🔴 ${cc}: ζώνη με ΕΝΕΡΓΟ carrier χωρίς καταχώρηση στο CARRIER_BACKED_DECLARED.`);
+        console.error(`      flat cheapest = ${flat ? flat.price + ' ' + flat.currency : '—'} — ΔΕΝ το δηλώνω, ΔΕΝ το ξέρω.`);
+        console.error(`      ΕΝΕΡΓΕΙΑ: μέτρα το ταμείο (/cart/shipping_rates.json) και πρόσθεσε τη χώρα με τεκμήριο.`);
+        delete countryRates[cc];
+        continue;
+      }
+
+      if (flat && Math.abs(flat.price - declared.price) > 0.005) {
+        console.log(`   ⚠️  ${cc}: flat cheapest ${flat.price} ${flat.currency} → ΔΗΛΩΝΩ ${declared.price} ${declared.currency}`);
+        console.log(`      τεκμήριο (${declared.measuredAt}): ${declared.evidence}`);
+      }
+      countryRates[cc] = { price: declared.price, currency: declared.currency };
+    }
+
     // v8: Puerto Rico fallback — PR is a US territory, shares US shipping rate
     // Shopify may not list PR as a separate country in shipping zones
     if (!countryRates['PR'] && countryRates['US']) {

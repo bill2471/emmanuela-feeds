@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-08-27 08:10</date>
+  <date>2026-08-31 13:35</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -131,6 +131,28 @@
       <shipping>0</shipping>
     </product>
     <product>
+      <productId>40479787778205</productId>
+      <title><![CDATA[Emmanuela Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Καφέ]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-bacchus-men</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-921290.jpg?v=1693475296</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-921290.jpg?v=1693475296</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225_-_SIZE_CHART_v2.png?v=1779870604</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-500912.jpg?v=1693475296</img3>
+      </imagesURL>
+      <price>84.00</price>
+      <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1KL225LBRBR8</MPN>
+      <color>καφέ</color>
+      <size>41</size>
+      <weight>1500</weight>
+      <EAN>5212033625197</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
       <productId>40479787974813</productId>
       <title><![CDATA[Emmanuela Ανδρικά σανδάλια με κορδόνια "Βάκχος" - Μπεζ φυσικό]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-black-bacchus-men</productURL>
@@ -138,9 +160,6 @@
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-133083.jpg?v=1660111839</img1>
         <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225LDBDB_1_65154b60-8f03-4fd6-bb54-6a9bf3740b90.jpg?v=1693475296</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-921290.jpg?v=1693475296</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL225_-_SIZE_CHART_v2.png?v=1779870604</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-me-kordonia-bakxos-emmanuela-handcrafted-for-you-andrika-sandalia-me-kordonia-bakxos-500912.jpg?v=1693475296</img5>
       </imagesURL>
       <price>84.00</price>
       <category_path>Μόδα-&gt;Ανδρικά Παπούτσια-&gt;Σανδάλια</category_path>
@@ -197,7 +216,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL213LBLBL7</MPN>
       <color>μαύρο</color>
-      <size>40,42,43,45</size>
+      <size>40,42,43,45,46</size>
       <weight>1500</weight>
       <EAN>5212033624688</EAN>
       <shipping>0</shipping>
@@ -1852,7 +1871,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1LI69TRLTBE5</MPN>
       <color>καφέ</color>
-      <size>36,37,39</size>
+      <size>36,37,38,39</size>
       <weight>1000</weight>
       <EAN>5212033632713</EAN>
       <shipping>0</shipping>
@@ -1874,7 +1893,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1LI69TRLBLBL5</MPN>
       <color>μαύρο</color>
-      <size>36,38,39,40,41,42</size>
+      <size>36,37,38,39,40,41,42</size>
       <weight>1000</weight>
       <EAN>5212033632645</EAN>
       <shipping>0</shipping>
@@ -4426,7 +4445,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1LI72MANLBRBR7</MPN>
       <color>καφέ</color>
-      <size>40,44,45,47</size>
+      <size>40,43,44,45,47</size>
       <weight>1500</weight>
       <EAN>5212033634267</EAN>
       <shipping>0</shipping>
@@ -4450,7 +4469,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1LI72MANLBLBL8</MPN>
       <color>μαύρο</color>
-      <size>41,44,45,47</size>
+      <size>41,43,44,45,47</size>
       <weight>1500</weight>
       <EAN>5212033634205</EAN>
       <shipping>0</shipping>
@@ -4576,7 +4595,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1LI58MLBLBL5</MPN>
       <color>μαύρο</color>
-      <size>36,38,39,41,42</size>
+      <size>36,37,38,39,41,42</size>
       <weight>1000</weight>
       <EAN>5212033629300</EAN>
       <shipping>0</shipping>
@@ -4859,7 +4878,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1LI47MANLBLBL7</MPN>
       <color>μαύρο</color>
-      <size>40,41,43,45,47</size>
+      <size>40,41,43,44,45,47</size>
       <weight>1500</weight>
       <EAN>5212033634632</EAN>
       <shipping>0</shipping>
@@ -6521,7 +6540,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL620LBLBL5</MPN>
       <color>μαύρο</color>
-      <size>36,37,38,39,41</size>
+      <size>36,37,38,39,40,41</size>
       <weight>1000</weight>
       <EAN>5212033693578</EAN>
       <shipping>0</shipping>
@@ -6591,7 +6610,7 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>1KL916LBR5</MPN>
       <color>καφέ</color>
-      <size>36,37,40,42</size>
+      <size>36,37,42</size>
       <weight>1500</weight>
       <EAN>5212033694193</EAN>
       <shipping>0</shipping>

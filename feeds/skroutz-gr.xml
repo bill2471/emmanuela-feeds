@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-09-01 21:00</created_at>
+  <created_at>2026-09-02 11:04</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1387,7 +1387,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -1412,7 +1412,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Μαύρο]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Μαύρο</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -5331,7 +5331,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1032-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>5</weight>
@@ -31193,18 +31193,21 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>59</size>
             <quantity>1</quantity>
+            <manufacturersku><![CDATA[LU0190ri]]></manufacturersku>
           </variation>
           <variation>
             <variationid>60236983009614</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>60</size>
             <quantity>1</quantity>
+            <manufacturersku><![CDATA[LU0190ri]]></manufacturersku>
           </variation>
           <variation>
             <variationid>60236983042382</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>61</size>
             <quantity>1</quantity>
+            <manufacturersku><![CDATA[LU0190ri]]></manufacturersku>
           </variation>
         </variations>
         <weight>3</weight>
@@ -35824,7 +35827,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4458600300579-Γκρι]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Γκρι</color>
         <size>One Size</size>
         <weight>1</weight>
@@ -49691,9 +49694,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL310LMUBE5]]></mpn>
         <ean>5212033621809</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>1</quantity>
+        <quantity>2</quantity>
         <color>Μουσταρδί</color>
-        <size>36</size>
+        <size>36,40</size>
         <variations>
           <variation>
             <variationid>40479899287709</variationid>
@@ -49704,8 +49707,17 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1KL310LMUBE5]]></mpn>
             <ean>5212033621809</ean>
           </variation>
+          <variation>
+            <variationid>40479900205213</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>40</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL310LMUBE9]]></manufacturersku>
+            <mpn><![CDATA[1KL310LMUBE9]]></mpn>
+            <ean>5212033621885</ean>
+          </variation>
         </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μουσταρδί. Διαθέσιμα νούμερα: 36.]]></description>
+        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μουσταρδί. Διαθέσιμα νούμερα: 36,40.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -56329,6 +56341,73 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
+        <id>46729228222799</id>
+        <name><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Καφέ]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-leander-men?variant=46729228222799]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222LDBDB_1.jpg?v=1693476562]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222LDBDB_1_1.jpg?v=1693476562]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222LDBDB_1_2.jpg?v=1693476562]]></additionalimage>
+        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>65.00</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1KL222LDBDB7]]></mpn>
+        <ean>5212033601818</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>14</quantity>
+        <color>Καφέ</color>
+        <size>40,41,45,46,47</size>
+        <variations>
+          <variation>
+            <variationid>46729228222799</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>40</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL222LDBDB7]]></manufacturersku>
+            <mpn><![CDATA[1KL222LDBDB7]]></mpn>
+            <ean>5212033601818</ean>
+          </variation>
+          <variation>
+            <variationid>46729228255567</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>41</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1KL222LDBDB8]]></manufacturersku>
+            <mpn><![CDATA[1KL222LDBDB8]]></mpn>
+            <ean>5212033601825</ean>
+          </variation>
+          <variation>
+            <variationid>46729228386639</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>45</size>
+            <quantity>5</quantity>
+            <manufacturersku><![CDATA[1KL222LDBDB12]]></manufacturersku>
+            <mpn><![CDATA[1KL222LDBDB12]]></mpn>
+            <ean>5212033601863</ean>
+          </variation>
+          <variation>
+            <variationid>46729228419407</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>46</size>
+            <quantity>5</quantity>
+            <manufacturersku><![CDATA[1KL222LDBDB13]]></manufacturersku>
+            <mpn><![CDATA[1KL222LDBDB13]]></mpn>
+            <ean>5212033601870</ean>
+          </variation>
+          <variation>
+            <variationid>46729228452175</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>47</size>
+            <quantity>2</quantity>
+            <manufacturersku><![CDATA[1KL222LDBDB14]]></manufacturersku>
+            <mpn><![CDATA[1KL222LDBDB14]]></mpn>
+            <ean>5212033601887</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 40,41,45,46,47.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
         <id>40480107069597</id>
         <name><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Μπεζ]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-leander-men?variant=40480107069597]]></link>
@@ -56394,64 +56473,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 41,42,44,45,46.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>46729228255567</id>
-        <name><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Καφέ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-leander-men?variant=46729228255567]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222LDBDB_1.jpg?v=1693476562]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222LDBDB_1_1.jpg?v=1693476562]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222LDBDB_1_2.jpg?v=1693476562]]></additionalimage>
-        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>65.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1KL222LDBDB8]]></mpn>
-        <ean>5212033601825</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>13</quantity>
-        <color>Καφέ</color>
-        <size>41,45,46,47</size>
-        <variations>
-          <variation>
-            <variationid>46729228255567</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL222LDBDB8]]></manufacturersku>
-            <mpn><![CDATA[1KL222LDBDB8]]></mpn>
-            <ean>5212033601825</ean>
-          </variation>
-          <variation>
-            <variationid>46729228386639</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>45</size>
-            <quantity>5</quantity>
-            <manufacturersku><![CDATA[1KL222LDBDB12]]></manufacturersku>
-            <mpn><![CDATA[1KL222LDBDB12]]></mpn>
-            <ean>5212033601863</ean>
-          </variation>
-          <variation>
-            <variationid>46729228419407</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>46</size>
-            <quantity>5</quantity>
-            <manufacturersku><![CDATA[1KL222LDBDB13]]></manufacturersku>
-            <mpn><![CDATA[1KL222LDBDB13]]></mpn>
-            <ean>5212033601870</ean>
-          </variation>
-          <variation>
-            <variationid>46729228452175</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>47</size>
-            <quantity>2</quantity>
-            <manufacturersku><![CDATA[1KL222LDBDB14]]></manufacturersku>
-            <mpn><![CDATA[1KL222LDBDB14]]></mpn>
-            <ean>5212033601887</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,45,46,47.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -56611,9 +56632,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
-        <id>40480141934749</id>
+        <id>40480142065821</id>
         <name><![CDATA[Ανδρικά σανδάλια παντόφλες "Θησέας" - Μπεζ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-brown-theseus-men?variant=40480141934749]]></link>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-brown-theseus-men?variant=40480142065821]]></link>
         <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-571802.jpg?v=1627293917]]></image>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-313319.jpg?v=1627293916]]></additionalimage>
         <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-788678.jpg?v=1627293916]]></additionalimage>
@@ -56621,22 +56642,13 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <price_with_vat>43.90</price_with_vat>
         <vat>24.00</vat>
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1LI47MANLNABE9]]></mpn>
-        <ean>5212033634793</ean>
+        <mpn><![CDATA[1LI47MANLNABE10]]></mpn>
+        <ean>5212033634809</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>10</quantity>
+        <quantity>9</quantity>
         <color>Μπεζ</color>
-        <size>42,43,44,45,46,47</size>
+        <size>43,44,45,46,47</size>
         <variations>
-          <variation>
-            <variationid>40480141934749</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>42</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI47MANLNABE9]]></manufacturersku>
-            <mpn><![CDATA[1LI47MANLNABE9]]></mpn>
-            <ean>5212033634793</ean>
-          </variation>
           <variation>
             <variationid>40480142065821</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
@@ -56683,7 +56695,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033600064</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Θησέας". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 42,43,44,45,46,47.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Θησέας". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 43,44,45,46,47.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -61168,9 +61180,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KLA1LWHBR5]]></mpn>
         <ean>5212033694988</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>18</quantity>
+        <quantity>15</quantity>
         <color>Λευκό</color>
-        <size>36,37,38,39,40,41,42</size>
+        <size>36,37,38,39,40,41</size>
         <variations>
           <variation>
             <variationid>47176980201807</variationid>
@@ -61226,17 +61238,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1KLA1LWHBR10]]></mpn>
             <ean>5212033695039</ean>
           </variation>
-          <variation>
-            <variationid>47176980595023</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>42</size>
-            <quantity>3</quantity>
-            <manufacturersku><![CDATA[1KLA1LWHBR11]]></manufacturersku>
-            <mpn><![CDATA[1KLA1LWHBR11]]></mpn>
-            <ean>5212033695329</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Ανατομικά πέδιλα παντόφλες "Μεγίστη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 36,37,38,39,40,41,42.]]></description>
+        <description><![CDATA[Ανατομικά πέδιλα παντόφλες "Μεγίστη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 36,37,38,39,40,41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

@@ -2981,7 +2981,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36</VAL>
+      <VAL>36, 40</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -7196,6 +7196,37 @@
     <GTIN>05212033624312</GTIN>
   </SHOPITEM>
   <SHOPITEM>
+    <ITEM_ID>46729228222799</ITEM_ID>
+    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Σκούρο Καφέ]]></PRODUCTNAME>
+    <URL>https://emmanuela.shoes/products/greek-leather-sandals-leander-men</URL>
+    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222LDBDB_1.jpg?v=1693476562</IMGURL>
+    <PRICE_VAT>65</PRICE_VAT>
+    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
+    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
+    <DESCRIPTION><![CDATA[Πήραν το όνομα του μυθικού κολυμβητή που διέσχιζε τον Ελλήσποντο κάθε νύχτα από έρωτα, κι αυτά τα ανδρικά δερμάτινα σανδάλια είναι φτιαγμένα για θερμοκαιρικές περιπέτειες. Ο ανοιχτός σχεδιασμός μονομάχου αφήνει τα πόδια να αναπνέουν, ενώ η γερή κατασκευή ανταπεξέρχεται σε παραλιακούς πεζόδρομους και δρόμους πόλης. Χειροποίητα στην Ελλάδα από γνήσιο δέρμα, κάθε ζευγάρι αποκτά πλούσια πατίνα με τη χρήση. Η σόλα EVA 1,8 εκ. πατά αξιόπιστα σε βρεγμένες επιφάνειες, κι ο δερμάτινος πάτος αποκτά σταδιακά τα ανάγλυφα του ποδιού σας. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,8 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 4 χρώματα: σκούρο καφέ, μπεζ φυσικό, μαύρο, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
+    <ITEMGROUP_ID>6856640495773</ITEMGROUP_ID>
+    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-974434.jpg?v=1693476562</IMGURL_ALTERNATIVE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-leander-men?variant=46729228222799</URL_SIZE>
+    <PARAM>
+      <PARAM_NAME>χρώμα</PARAM_NAME>
+      <VAL>καφέ</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>μέγεθος</PARAM_NAME>
+      <VAL>40, 41, 45, 46, 47</VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>υλικό</PARAM_NAME>
+      <VAL><![CDATA[δέρμα]]></VAL>
+    </PARAM>
+    <PARAM>
+      <PARAM_NAME>στιλ</PARAM_NAME>
+      <VAL>χειροποίητο</VAL>
+    </PARAM>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <GTIN>5212033601818</GTIN>
+  </SHOPITEM>
+  <SHOPITEM>
     <ITEM_ID>40480107069597</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Μπεζ φυσικό]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-leander-men</URL>
@@ -7228,37 +7259,6 @@
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <GTIN>05212033624213</GTIN>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>46729228255567</ITEM_ID>
-    <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια μονομάχου "Λέανδρος" - Σκούρο Καφέ]]></PRODUCTNAME>
-    <URL>https://emmanuela.shoes/products/greek-leather-sandals-leander-men</URL>
-    <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/1KL222LDBDB_1.jpg?v=1693476562</IMGURL>
-    <PRICE_VAT>65</PRICE_VAT>
-    <MANUFACTURER><![CDATA[Emmanuela - handcrafted for you]]></MANUFACTURER>
-    <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
-    <DESCRIPTION><![CDATA[Πήραν το όνομα του μυθικού κολυμβητή που διέσχιζε τον Ελλήσποντο κάθε νύχτα από έρωτα, κι αυτά τα ανδρικά δερμάτινα σανδάλια είναι φτιαγμένα για θερμοκαιρικές περιπέτειες. Ο ανοιχτός σχεδιασμός μονομάχου αφήνει τα πόδια να αναπνέουν, ενώ η γερή κατασκευή ανταπεξέρχεται σε παραλιακούς πεζόδρομους και δρόμους πόλης. Χειροποίητα στην Ελλάδα από γνήσιο δέρμα, κάθε ζευγάρι αποκτά πλούσια πατίνα με τη χρήση. Η σόλα EVA 1,8 εκ. πατά αξιόπιστα σε βρεγμένες επιφάνειες, κι ο δερμάτινος πάτος αποκτά σταδιακά τα ανάγλυφα του ποδιού σας. Λεπτομέρειες Επάνω μέρος: 100% γνήσιο δέρμα Πάτος: δερμάτινος Σόλα: αντιολισθητική EVA καουτσούκ, 1,8 cm Κούμπωμα: χωρίς κούμπωμα Διαθέσιμο σε 4 χρώματα: σκούρο καφέ, μπεζ φυσικό, μαύρο, καφέ Μεγέθη: EU 40–47 Χειροποίητα στην Ελλάδα]]></DESCRIPTION>
-    <ITEMGROUP_ID>6856640495773</ITEMGROUP_ID>
-    <IMGURL_ALTERNATIVE>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-monomaxoy-leandros-emmanuela-handcrafted-for-you-andrika-sandalia-monomaxoy-leandros-974434.jpg?v=1693476562</IMGURL_ALTERNATIVE>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-leander-men?variant=46729228255567</URL_SIZE>
-    <PARAM>
-      <PARAM_NAME>χρώμα</PARAM_NAME>
-      <VAL>καφέ</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>41, 45, 46, 47</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>υλικό</PARAM_NAME>
-      <VAL><![CDATA[δέρμα]]></VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>στιλ</PARAM_NAME>
-      <VAL>χειροποίητο</VAL>
-    </PARAM>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>5212033601825</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480124731549</ITEM_ID>
@@ -7399,7 +7399,7 @@
     <GTIN>05212033634632</GTIN>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>40480141934749</ITEM_ID>
+    <ITEM_ID>40480142065821</ITEM_ID>
     <PRODUCTNAME><![CDATA[Ανδρικά σανδάλια παντόφλες "Θησέας" - Μπεζ φυσικό]]></PRODUCTNAME>
     <URL>https://emmanuela.shoes/products/greek-leather-sandals-brown-theseus-men</URL>
     <IMGURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-thhseas-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-thhseas-571802.jpg?v=1627293917</IMGURL>
@@ -7408,14 +7408,14 @@
     <CATEGORYTEXT><![CDATA[Glami.gr | Ανδρικά ρούχα και παπούτσια | Ανδρικά παπούτσια | Ανδρικά σανδάλια]]></CATEGORYTEXT>
     <DESCRIPTION><![CDATA[🐐 100% γνήσιο δέρμα 🏎 Ισχυρή πρόσφυση σε βρεγμένες επιφάνειες χάρη στην εξωτερική σόλα από καουτσούκ EVA 👡 Η σόλα έχει ύψος περίπου 1.5cm 👌 Δερμάτινος πάτος ✔ Σχεδιασμένο για να προσφέρει στο πόδι ελάχιστη κάλυψη & μέγιστη στήριξη ☀ Αυθεντικό προϊόν Ελληνικής χειροτεχνίας - Δερμάτινα σανδάλια ποιότητας 👟 Εξαιρετικά εύκαμπτα & Ελαφρα Είτε ψάχνετε για ένα ζευγάρι κομψά παπούτσια για τις καλοκαιρινές σας διακοπές ή ένα άνετο υπόδημα που θα σας κάνει να ξεχωρίζετε κάθε μέρα, αυτά τα ανδρικά δερμάτινα σανδάλια αρχαίου Ελληνικού στιλ, είναι η ιδανική επιλογή! Οι μαλακές δερμάτινες φάσες και πάτοι τους προσαρμόζονται στο σχήμα των ποδιών σας και τα σανδάλια σας γίνονται όλο και πιο άνετα όσο περισσότερο τα φοράτε. Τα σανδάλια Emmanuela είναι χειροποίητα στην Ελλάδα από εξειδικευμένους τεχνίτες με παραδοσιακές τεχνικές που υπάρχουν εδώ και αιώνες. Το δέρμα χωρίς φυσικά χημικά, αλλάζει χρώμα ομοιόμορφα με το πέρασμα του χρόνου και τη φθορά χρήσης τους. Δεδομένου ότι οι μέθοδοι κατασκευής πληρούν τα υψηλότερα πρότυπα και είναι κατασκευασμένα από πραγματικό δέρμα, μπορείτε να είστε σίγουροι για τη μέγιστή τους άνεση και ανθεκτικότητα! Οι εξωτερικές σόλες τους από αντιολισθητικό καουτσούκ EVA προσφέρουν μέγιστη σταθερότητα σε βρεγμένες επιφάνειες.]]></DESCRIPTION>
     <ITEMGROUP_ID>6856642822301</ITEMGROUP_ID>
-    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-theseus-men?variant=40480141934749</URL_SIZE>
+    <URL_SIZE>https://emmanuela.shoes/products/greek-leather-sandals-brown-theseus-men?variant=40480142065821</URL_SIZE>
     <PARAM>
       <PARAM_NAME>χρώμα</PARAM_NAME>
       <VAL>μπεζ</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>42, 43, 44, 45, 46, 47</VAL>
+      <VAL>43, 44, 45, 46, 47</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>
@@ -7426,7 +7426,7 @@
       <VAL>χειροποίητο</VAL>
     </PARAM>
     <DELIVERY_DATE>0</DELIVERY_DATE>
-    <GTIN>05212033634793</GTIN>
+    <GTIN>05212033634809</GTIN>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>40480144785565</ITEM_ID>
@@ -9834,7 +9834,7 @@
     </PARAM>
     <PARAM>
       <PARAM_NAME>μέγεθος</PARAM_NAME>
-      <VAL>36, 37, 38, 39, 40, 41, 42</VAL>
+      <VAL>36, 37, 38, 39, 40, 41</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>υλικό</PARAM_NAME>

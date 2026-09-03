@@ -60244,7 +60244,7 @@
 
       <!-- PRICE & AVAILABILITY -->
       <g:price>62.00 EUR</g:price>
-      <g:availability>in stock</g:availability>
+      <g:availability>out of stock</g:availability>
       <g:condition>new</g:condition>
 
       <!-- BRAND & CATEGORY -->
@@ -110524,7 +110524,7 @@
 
       <!-- PRICE & AVAILABILITY -->
       <g:price>62.00 EUR</g:price>
-      <g:availability>in stock</g:availability>
+      <g:availability>out of stock</g:availability>
       <g:condition>new</g:condition>
 
       <!-- BRAND & CATEGORY -->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-09-03 11:07</created_at>
+  <created_at>2026-09-03 16:13</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -632,7 +632,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1219-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -1438,7 +1438,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Γκρι]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>2</quantity>
         <color>Γκρι</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -43232,7 +43232,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[2124M]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>32</quantity>
+        <quantity>31</quantity>
         <color>Γκρι</color>
         <size>58,59,61,62,63,65,66,67</size>
         <variations>
@@ -43268,7 +43268,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>49467138212174</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>63</size>
-            <quantity>4</quantity>
+            <quantity>3</quantity>
             <manufacturersku><![CDATA[2124M105]]></manufacturersku>
           </variation>
           <variation>

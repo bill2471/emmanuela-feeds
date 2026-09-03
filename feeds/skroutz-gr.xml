@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-09-02 20:56</created_at>
+  <created_at>2026-09-03 03:21</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -45818,9 +45818,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL213LBRBR8]]></mpn>
         <ean>5212033624824</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>2</quantity>
         <color>Καφέ</color>
-        <size>41,44</size>
+        <size>41</size>
         <variations>
           <variation>
             <variationid>40479792464029</variationid>
@@ -45831,17 +45831,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1KL213LBRBR8]]></mpn>
             <ean>5212033624824</ean>
           </variation>
-          <variation>
-            <variationid>40479793315997</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>44</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL213LBRBR11]]></manufacturersku>
-            <mpn><![CDATA[1KL213LBRBR11]]></mpn>
-            <ean>5212033624886</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41,44.]]></description>
+        <description><![CDATA[Ανδρικά ανατομικά σανδάλια "Μενέλαος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

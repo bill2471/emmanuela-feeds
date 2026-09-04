@@ -178,6 +178,43 @@ if (!ACCESS_TOKEN) {
 const API_VERSION = '2024-01';
 const BRAND = 'Emmanuela - handcrafted for you';
 const OUTPUT_DIR = path.join(__dirname, 'feeds');
+
+// ─────────────────────────────────────────────────────────────────────────────
+// FEED GATE v3 (04/09/2026) — ΑΝΘΡΩΠΙΝΕΣ ΕΤΙΚΕΤΕΣ ΦΩΤΟΓΡΑΦΙΩΝ
+// ⚠ Ο ΚΩΔΙΚΑΣ ΦΟΡΤΩΣΗΣ ΕΙΝΑΙ ΑΝΤΙΓΡΑΦΟ ΤΟΥ skroutz-feed-gr.js (~γρ. 644-676).
+//   ΤΟ ΑΡΧΕΙΟ ΔΕΔΟΜΕΝΩΝ ΕΙΝΑΙ ΕΝΑ ΚΑΙ ΚΟΙΝΟ (jewelry-photocolor.json) — αυτό είναι
+//   που μετράει. Αν ΠΟΤΕ αλλάξει η σημασιολογία των ετικετών, άλλαξέ την ΚΑΙ ΣΤΑ ΔΥΟ.
+//   (Καλύτερο: να βγει σε κοινό module — θέλει συντονισμό με τη λωρίδα Skroutz.)
+// ─────────────────────────────────────────────────────────────────────────────
+let JPHOTO_LABELS = new Map();
+let JPHOTO_NONE = new Set();
+if (process.env.BP_NO_JPHOTO !== '1') {
+  try {
+    const j = JSON.parse(fs.readFileSync(path.join(__dirname, 'jewelry-photocolor.json'), 'utf8'));
+    const obj = (j && typeof j === 'object' && j.labels && typeof j.labels === 'object') ? j.labels : j;
+    for (const [f, c] of Object.entries(obj || {})) {
+      if (typeof c !== 'string') continue;
+      if (c === '__NONE__') JPHOTO_NONE.add(f); else JPHOTO_LABELS.set(f, c);
+    }
+    console.log(`  [JPHOTO] ετικέτες: ${JPHOTO_LABELS.size} χρώμα + ${JPHOTO_NONE.size} μη-κόσμημα, generated ${(j && j.generated) || 'undated'}`);
+  } catch (e) {
+    console.error(`  [JPHOTO] WARNING: jewelry-photocolor.json δεν διαβάζεται (${e.message}) — το gate θα κόβει ΧΩΡΙΣ δεύτερη γνώμη.`);
+  }
+}
+function jphotoColourOf(imageUrl) {
+  if (!imageUrl) return null;
+  const b = (String(imageUrl).split('/').pop() || '').split('?')[0];
+  return JPHOTO_LABELS.get(b) || null;
+}
+// Χαρτογράφηση λεξιλογίου generator → λεξιλόγιο ετικέτας.
+// ΑΠΑΡΙΘΜΗΘΗΚΕ ζωντανά 04/09/2026 και στις δύο πλευρές (⛔ ΜΗ μαντέψεις τιμές):
+//   generator: ασημί 517 · χρυσό 352 · ροζ 148 · μαύρο 109 · γκρι 63 · πολύχρωμο 1
+//   ετικέτα  : Ασημί 62 · Χρυσό 37 · __NONE__ 4 · Μαύρο 3 · Πολύχρωμο 3 · Ροζ 1
+// «γκρι» → null ΕΠΙΤΗΔΕΣ: ετικέτα «Γκρι» ΔΕΝ ΥΠΑΡΧΕΙ ⇒ καμία δεύτερη γνώμη γι' αυτό.
+const GATE_COLOUR_TO_LABEL = {
+  'ασημί': 'Ασημί', 'χρυσό': 'Χρυσό', 'ροζ': 'Ροζ',
+  'μαύρο': 'Μαύρο', 'πολύχρωμο': 'Πολύχρωμο', 'γκρι': null,
+};
 const DOMAIN = 'emmanuela.gr';
 
 // ============================================
@@ -818,6 +855,35 @@ function generateBestPriceFeed(products) {
         variantImage = collected[0]?.src || mainImage;
         colorImages = collected.map(img => img.src).slice(0, 5);
       } else {
+        // ── FEED GATE v3 (04/09/2026, έγκριση Bill) ───────────────────────
+        // Καμία παραλλαγή αυτής της χρωματικής ομάδας δεν έχει ανατεθειμένη εικόνα,
+        // άρα θα εκπεμφθεί το images[0] του προϊόντος — που ανήκει σε ΑΛΛΗ απόχρωση
+        // όταν το προϊόν έχει >1 ΔΙΑΚΡΙΤΟ ΧΡΩΜΑ.
+        // Κανόνας Bill 14/05/2026 (πρότυπο Skroutz v3.5.1):
+        //   «better to not list than to mislead the customer with a wrong-color photo».
+        //
+        // ⚠ ΜΕΤΡΑΜΕ ΔΙΑΚΡΙΤΑ ΧΡΩΜΑΤΑ, ΟΧΙ ΟΜΑΔΕΣ. Μια ομάδα είναι (χρώμα × 2η επιλογή):
+        //   4 προϊόντα έχουν ΔΥΟ ομάδες «ασημί» (Μονό/Ζευγάρι) που μοιράζονται νόμιμα
+        //   την ίδια φωτό. Με «ομάδες» θα κόβαμε 8 καταχωρήσεις ΑΔΙΚΑ (μετρημένο 04/09).
+        //
+        // v3: αν η ΑΝΘΡΩΠΙΝΗ ετικέτα της Εμμανουέλας λέει ότι το images[0] δείχνει
+        //   ΑΥΤΟ ΑΚΡΙΒΩΣ το χρώμα, η φωτό είναι σωστή γι' αυτή την ομάδα ⇒ ΚΡΑΤΑ.
+        //   Σώζει 2 προϊόντα από ολική εξαφάνιση (μετρημένο 04/09).
+        //   ⛔ Χωρίς ετικέτα ΔΕΝ μαντεύουμε — τα ονόματα αρχείων και το altText
+        //      ψεύδονται και προς τις δύο κατευθύνσεις (μετρημένο 03/09).
+        //
+        // Kill-switch χωρίς deploy:  BP_NO_GATE=1
+        const _distinctColours = new Set(Object.values(entryGroups).map(g => g.color));
+        if (process.env.BP_NO_GATE !== '1' && _distinctColours.size > 1) {
+          const _lab = jphotoColourOf(mainImage);
+          const _want = GATE_COLOUR_TO_LABEL[color];
+          if (_lab && _want && _lab === _want) {
+            stats.gateSavedByLabel = (stats.gateSavedByLabel || 0) + 1;
+          } else {
+            stats.gateDropped = (stats.gateDropped || 0) + 1;
+            continue;
+          }
+        }
         variantImage = mainImage;
         colorImages = [mainImage];
       }
@@ -993,6 +1059,8 @@ async function generateFeed(options = {}) {
   console.log(`  In stock (included): ${stats.inStock}`);
   console.log(`  Out of stock (skip): ${stats.outOfStock}`);
   console.log(`  No image (skip):     ${stats.noImage}`);
+  console.log(`  GATE dropped:        ${stats.gateDropped || 0}  (λάθος απόχρωση — δεν εκπέμπεται)`);
+  console.log(`  GATE saved by label: ${stats.gateSavedByLabel || 0}  (ετικέτα Εμμανουέλας επιβεβαίωσε τη φωτό)`);
   console.log(`  Gift cards (skip):   ${stats.skippedGiftCards}`);
   console.log(`  With color:          ${stats.withColor}`);
   console.log(`  With MPN/SKU:        ${stats.withMPN}`);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-09-04 20:44</created_at>
+  <created_at>2026-09-05 03:22</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -51532,7 +51532,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS103LNABE6]]></mpn>
         <ean>5212033638456</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>67</quantity>
+        <quantity>66</quantity>
         <color>Μπεζ</color>
         <size>37,38,39,40,41,42</size>
         <variations>
@@ -51558,7 +51558,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40479972556957</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>39</size>
-            <quantity>13</quantity>
+            <quantity>12</quantity>
             <manufacturersku><![CDATA[1TS103LNABE8]]></manufacturersku>
             <mpn><![CDATA[1TS103LNABE8]]></mpn>
             <ean>5212033638470</ean>
@@ -57773,37 +57773,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Flat πέδιλα παντόφλες με μαλακό πάτο "Ελπίδα". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Λευκό. Διαθέσιμα νούμερα: 40.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>40480250298525</id>
-        <name><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής" - Καφέ]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-brown-hercules-men?variant=40480250298525]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-486281.jpg?v=1627375285]]></image>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-860739.jpg?v=1627293916]]></additionalimage>
-        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-andrika-sandalia-pantofles-hraklhs-emmanuela-handcrafted-for-you-andrika-sandalia-pantofles-hraklhs-829417.jpg?v=1627293916]]></additionalimage>
-        <category><![CDATA[Μόδα > Ανδρικά Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>59.00</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1LI98MANLBRBR9]]></mpn>
-        <ean>5212033634946</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>1</quantity>
-        <color>Καφέ</color>
-        <size>42</size>
-        <variations>
-          <variation>
-            <variationid>40480250298525</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>42</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI98MANLBRBR9]]></manufacturersku>
-            <mpn><![CDATA[1LI98MANLBRBR9]]></mpn>
-            <ean>5212033634946</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Ανδρικά σανδάλια παντόφλες "Ηρακλής". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 42.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

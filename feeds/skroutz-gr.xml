@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-09-05 20:23</created_at>
+  <created_at>2026-09-06 03:22</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -61191,7 +61191,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KLA1LGRBR5]]></mpn>
         <ean>5212033694988</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>18</quantity>
+        <quantity>17</quantity>
         <color>Γκρι</color>
         <size>36,37,38,39,40,41,42</size>
         <variations>
@@ -61217,7 +61217,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>47177335406927</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>38</size>
-            <quantity>4</quantity>
+            <quantity>3</quantity>
             <manufacturersku><![CDATA[1KLA1LGRBR7]]></manufacturersku>
             <mpn><![CDATA[1KLA1LGRBR7]]></mpn>
             <ean>5212033695008</ean>

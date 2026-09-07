@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-09-07 03:19</created_at>
+  <created_at>2026-09-07 12:01</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -632,7 +632,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1219-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -16630,7 +16630,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[8028M-Μαύρο]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Μαύρο</color>
         <size>One Size</size>
         <weight>1</weight>
@@ -46985,6 +46985,46 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <shipping>0</shipping>
       </product>
       <product>
+        <id>40479831392413</id>
+        <name><![CDATA[Σανδάλια μονομάχου "Νέμεσις" - Μπεζ]]></name>
+        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-nemesis?variant=40479831392413]]></link>
+        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-108691.jpg?v=1627294226]]></image>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-625818.jpg?v=1697536953]]></additionalimage>
+        <additionalimage><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-145177.jpg?v=1697536953]]></additionalimage>
+        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
+        <price_with_vat>42.90</price_with_vat>
+        <vat>24.00</vat>
+        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
+        <mpn><![CDATA[1LI177LNABE7]]></mpn>
+        <ean>5212033630788</ean>
+        <availability>Παράδοση 1 έως 3 ημέρες</availability>
+        <quantity>2</quantity>
+        <color>Μπεζ</color>
+        <size>38,41</size>
+        <variations>
+          <variation>
+            <variationid>40479831392413</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>38</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI177LNABE7]]></manufacturersku>
+            <mpn><![CDATA[1LI177LNABE7]]></mpn>
+            <ean>5212033630788</ean>
+          </variation>
+          <variation>
+            <variationid>40479832342685</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>41</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI177LNABE10]]></manufacturersku>
+            <mpn><![CDATA[1LI177LNABE10]]></mpn>
+            <ean>5212033630818</ean>
+          </variation>
+        </variations>
+        <description><![CDATA[Σανδάλια μονομάχου "Νέμεσις". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 38,41.]]></description>
+        <shipping>0</shipping>
+      </product>
+      <product>
         <id>40479832899741</id>
         <name><![CDATA[Σανδάλια μονομάχου "Ηχώ" - Μπεζ]]></name>
         <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-white-echo?variant=40479832899741]]></link>
@@ -51058,9 +51098,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI46MANLNABE8]]></mpn>
         <ean>5212033634564</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>7</quantity>
+        <quantity>8</quantity>
         <color>Μπεζ</color>
-        <size>41,43,44,46</size>
+        <size>41,42,43,44,46</size>
         <variations>
           <variation>
             <variationid>40479960039581</variationid>
@@ -51070,6 +51110,15 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <manufacturersku><![CDATA[1LI46MANLNABE8]]></manufacturersku>
             <mpn><![CDATA[1LI46MANLNABE8]]></mpn>
             <ean>5212033634564</ean>
+          </variation>
+          <variation>
+            <variationid>40479960236189</variationid>
+            <availability>Παράδοση 1 έως 3 ημέρες</availability>
+            <size>42</size>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI46MANLNABE9]]></manufacturersku>
+            <mpn><![CDATA[1LI46MANLNABE9]]></mpn>
+            <ean>5212033634571</ean>
           </variation>
           <variation>
             <variationid>40479960400029</variationid>
@@ -51099,7 +51148,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033626392</ean>
           </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 41,43,44,46.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Μπεζ. Διαθέσιμα νούμερα: 41,42,43,44,46.]]></description>
         <shipping>0</shipping>
       </product>
       <product>
@@ -54748,9 +54797,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1TS101LGOBL5]]></mpn>
         <ean>5212033638593</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>2</quantity>
         <color>Χρυσό</color>
-        <size>36,38</size>
+        <size>36</size>
         <variations>
           <variation>
             <variationid>40480041894045</variationid>
@@ -54761,17 +54810,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1TS101LGOBL5]]></mpn>
             <ean>5212033638593</ean>
           </variation>
-          <variation>
-            <variationid>40480042320029</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>38</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1TS101LGOBL7]]></manufacturersku>
-            <mpn><![CDATA[1TS101LGOBL7]]></mpn>
-            <ean>5212033638616</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Σανδάλια με λεπτά λουριά "Λέσβος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 36,38.]]></description>
+        <description><![CDATA[Σανδάλια με λεπτά λουριά "Λέσβος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 36.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

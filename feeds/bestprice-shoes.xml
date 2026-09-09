@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-09-07 12:28</date>
+  <date>2026-09-09 11:39</date>
   <products>
     <product>
       <productId>40479784239261</productId>
@@ -776,6 +776,27 @@
       <shipping>0</shipping>
     </product>
     <product>
+      <productId>40479831031965</productId>
+      <title><![CDATA[Emmanuela Σανδάλια μονομάχου "Νέμεσις" - Μπεζ φυσικό]]></title>
+      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-nemesis</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-314654.jpg?v=1697536940</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-314654.jpg?v=1697536940</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/4_ea76690f-61ea-43cb-9dd4-c9ef50bd26b7.jpg?v=1697536940</img2>
+      </imagesURL>
+      <price>64.00</price>
+      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>1LI177LNABE7</MPN>
+      <color>μπεζ</color>
+      <size>38,41</size>
+      <weight>1000</weight>
+      <EAN>5212033630788</EAN>
+      <shipping>0</shipping>
+    </product>
+    <product>
       <productId>40479831982237</productId>
       <title><![CDATA[Emmanuela Σανδάλια μονομάχου "Νέμεσις" - Λευκό]]></title>
       <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-nemesis</productURL>
@@ -797,51 +818,6 @@
       <size>41</size>
       <weight>1000</weight>
       <EAN>5212033630955</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40479832113309</productId>
-      <title><![CDATA[Emmanuela Σανδάλια μονομάχου "Νέμεσις" - Μπεζ φυσικό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-white-nemesis</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-314654.jpg?v=1697536940</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-314654.jpg?v=1697536940</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/4_ea76690f-61ea-43cb-9dd4-c9ef50bd26b7.jpg?v=1697536940</img2>
-      </imagesURL>
-      <price>64.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1LI177LNABE10</MPN>
-      <color>μπεζ</color>
-      <size>41</size>
-      <weight>1000</weight>
-      <EAN>5212033630818</EAN>
-      <shipping>0</shipping>
-    </product>
-    <product>
-      <productId>40479831392413</productId>
-      <title><![CDATA[Emmanuela Σανδάλια μονομάχου "Νέμεσις" - Μπεζ φυσικό]]></title>
-      <productURL>https://emmanuela.shoes/products/greek-leather-sandals-nemesis</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-108691.jpg?v=1627294226</imageURL>
-      <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-108691.jpg?v=1627294226</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/EM_Shoes_Karidi_197_AS_f6c3f1e1-fe93-4fee-8eca-96517db8888c.jpg?v=1697536953</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-625818.jpg?v=1697536953</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0579/9975/3373/files/EM_Shoes_Karidi_196_AS_9517c539-f88d-4de8-b7e1-36b968eed7d6.jpg?v=1697536953</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0579/9975/3373/products/dermatina-sandalia-monomaxoy-nemesis-emmanuela-handcrafted-for-you-sandalia-monomaxoy-nemesis-145177.jpg?v=1697536953</img5>
-      </imagesURL>
-      <price>64.00</price>
-      <category_path>Μόδα-&gt;Γυναικεία Παπούτσια-&gt;Σανδάλια</category_path>
-      <availability>Παράδοση σε 1-3 ημέρες</availability>
-      <stock>Y</stock>
-      <brand>Emmanuela - handcrafted for you</brand>
-      <MPN>1LI177LNABE7</MPN>
-      <color>μπεζ</color>
-      <size>38,41</size>
-      <weight>1000</weight>
-      <EAN>5212033630788</EAN>
       <shipping>0</shipping>
     </product>
     <product>

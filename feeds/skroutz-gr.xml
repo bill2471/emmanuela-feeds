@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-09-10 03:30</created_at>
+  <created_at>2026-09-10 11:03</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -51107,9 +51107,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI46MANLBRBR10]]></mpn>
         <ean>5212033634519</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>2</quantity>
         <color>Καφέ</color>
-        <size>43,44,46</size>
+        <size>43,44</size>
         <variations>
           <variation>
             <variationid>40479960334493</variationid>
@@ -51129,17 +51129,8 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <mpn><![CDATA[1LI46MANLBRBR11]]></mpn>
             <ean>5212033634526</ean>
           </variation>
-          <variation>
-            <variationid>40479960793245</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>46</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI46MANLBRBR13]]></manufacturersku>
-            <mpn><![CDATA[1LI46MANLBRBR13]]></mpn>
-            <ean>5212033626323</ean>
-          </variation>
         </variations>
-        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 43,44,46.]]></description>
+        <description><![CDATA[Ανδρικά σανδάλια με χιαστί λουριά "Ίκαρος". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 43,44.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

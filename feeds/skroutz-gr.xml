@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-09-14 03:47</created_at>
+  <created_at>2026-09-14 12:13</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1164,7 +1164,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[3044-Ασημί-M-19-cm]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>5</weight>
@@ -2089,7 +2089,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1271-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -12186,7 +12186,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[6054]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -28953,7 +28953,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU636br-Ασημί-21-cm]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>2</quantity>
+        <quantity>1</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>6</weight>
@@ -30844,7 +30844,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[3048-Ασημί-16cm]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>9</weight>
@@ -33684,7 +33684,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1325-Ροζ]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ροζ</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -56610,7 +56610,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL652ALSABE5]]></mpn>
         <ean>5212033646741</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>2</quantity>
         <color>Κεραμιδί</color>
         <size>36,39</size>
         <variations>
@@ -56618,7 +56618,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>40480155467933</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>36</size>
-            <quantity>2</quantity>
+            <quantity>1</quantity>
             <manufacturersku><![CDATA[1KL652ALSABE5]]></manufacturersku>
             <mpn><![CDATA[1KL652ALSABE5]]></mpn>
             <ean>5212033646741</ean>

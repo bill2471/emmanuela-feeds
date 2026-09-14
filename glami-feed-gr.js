@@ -61,6 +61,37 @@ if (!ACCESS_TOKEN) {
 const API_VERSION = '2024-01';
 const BRAND = 'Emmanuela - handcrafted for you';
 const OUTPUT_DIR = path.join(__dirname, 'feeds');
+
+// ─────────────────────────────────────────────────────────────────────────────
+// PKGFILTER (14/09/2026, έγκριση Bill) — ΚΑΜΙΑ ΦΩΤΟΓΡΑΦΙΑ ΣΥΣΚΕΥΑΣΙΑΣ ΣΤΙΣ ΕΠΙΠΛΕΟΝ ΕΙΚΟΝΕΣ
+// Το boundary heuristic παίρνει την εικόνα της παραλλαγής ΚΑΙ ό,τι ακολουθεί ως την επόμενη
+// ανατεθειμένη ⇒ το κουτί δώρου (συνήθως τελευταίο) έμπαινε ως επιπλέον εικόνα σε ~225 καταχωρήσεις.
+// Η προδιαγραφή BestPrice: «χωρίς λογότυπο κατασκευαστή ή καταστήματος, λευκό/ανοιχτόχρωμο φόντο».
+// Πηγή δεδομένων = ΤΟ ΚΟΙΝΟ skroutz-jewelry-packaging.json (λωρίδα Skroutz, dHash) + όνομα + 1 επιπλέον
+// αρχείο που λείπει από εκείνη τη λίστα (dHash d=0, ελεγμένο με το μάτι 14/09 — αφαίρεσέ το όταν μπει εκεί).
+// ΜΟΝΟ ΑΦΑΙΡΕΤΙΚΟ: βγάζει εικόνες από όσες ήδη επιλέχθηκαν, ΠΟΤΕ δεν γεμίζει τη θέση με άλλη.
+// Η ΚΥΡΙΑ εικόνα δεν αγγίζεται. Kill-switch χωρίς deploy: GLAMI_NO_PKGFILTER=1
+// ─────────────────────────────────────────────────────────────────────────────
+const PKG_NAME_RE = /(?:925[-_]sterling[-_]silver[-_]jewelry[-_]gift[-_]packaging|gift[-_]packaging|packaging[-_]emmanuela|packaging[-_]photo|emmanuela[-_]925[-_]sterling[-_]silver[-_]packaging)/i;
+const PKG_EXTRA = ['ashmenio-mple-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-856327.jpg'];
+let PKG_FILES = new Set(PKG_EXTRA);
+const PKG_ON = process.env.GLAMI_NO_PKGFILTER !== '1';
+if (PKG_ON) {
+  try {
+    const pj = JSON.parse(fs.readFileSync(path.join(__dirname, 'skroutz-jewelry-packaging.json'), 'utf8'));
+    for (const f of (pj && pj.files) || []) PKG_FILES.add(String(f).toLowerCase());
+    console.log(`  [PKGFILTER] λίστα συσκευασίας: ${PKG_FILES.size} αρχεία (generated ${(pj && pj.generated) || 'undated'}) + όνομα`);
+  } catch (e) {
+    console.error(`  [PKGFILTER] WARNING: skroutz-jewelry-packaging.json δεν διαβάζεται (${e.message}) — φίλτρο ΜΟΝΟ με όνομα + ${PKG_EXTRA.length} επιπλέον.`);
+  }
+} else {
+  console.log('  [PKGFILTER] ΑΝΕΝΕΡΓΟ (GLAMI_NO_PKGFILTER=1)');
+}
+function isPackagingImage(url) {
+  if (!PKG_ON || !url) return false;
+  const b = (String(url).split('/').pop() || '').split('?')[0].toLowerCase();
+  return PKG_FILES.has(b) || PKG_NAME_RE.test(b);
+}
 const DOMAIN = 'emmanuela.gr';
 
 // ============================================
@@ -718,6 +749,7 @@ function generateGlamiFeed(products) {
           .map(img => img.src)
           .filter(src => src !== variantImage)
           .slice(0, 14);
+        { const _n = altImages.length; altImages = altImages.filter(src => !isPackagingImage(src)); stats.pkgFiltered = (stats.pkgFiltered || 0) + (_n - altImages.length); }
       } else {
         variantImage = mainImage;
         altImages = [];
@@ -892,6 +924,7 @@ function generateGlamiFeed(products) {
   console.log(`      With description: ${stats.withDescription}`);
   console.log(`      With sale price: ${stats.withSalePrice}`);
   console.log(`      With barcode (GTIN): ${stats.withBarcode}`);
+  console.log(`      PKGFILTER removed: ${stats.pkgFiltered || 0} (φωτογραφίες συσκευασίας έξω από IMGURL_ALTERNATIVE)`);
   console.log('');
 
   if (Object.keys(stats.colorBreakdown).length > 0) {

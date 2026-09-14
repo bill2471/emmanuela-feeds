@@ -180,6 +180,37 @@ const BRAND = 'Emmanuela - handcrafted for you';
 const OUTPUT_DIR = path.join(__dirname, 'feeds');
 
 // ─────────────────────────────────────────────────────────────────────────────
+// PKGFILTER (14/09/2026, έγκριση Bill) — ΚΑΜΙΑ ΦΩΤΟΓΡΑΦΙΑ ΣΥΣΚΕΥΑΣΙΑΣ ΣΤΙΣ ΕΠΙΠΛΕΟΝ ΕΙΚΟΝΕΣ
+// Το boundary heuristic παίρνει την εικόνα της παραλλαγής ΚΑΙ ό,τι ακολουθεί ως την επόμενη
+// ανατεθειμένη ⇒ το κουτί δώρου (συνήθως τελευταίο) έμπαινε ως επιπλέον εικόνα σε ~225 καταχωρήσεις.
+// Η προδιαγραφή BestPrice: «χωρίς λογότυπο κατασκευαστή ή καταστήματος, λευκό/ανοιχτόχρωμο φόντο».
+// Πηγή δεδομένων = ΤΟ ΚΟΙΝΟ skroutz-jewelry-packaging.json (λωρίδα Skroutz, dHash) + όνομα + 1 επιπλέον
+// αρχείο που λείπει από εκείνη τη λίστα (dHash d=0, ελεγμένο με το μάτι 14/09 — αφαίρεσέ το όταν μπει εκεί).
+// ΜΟΝΟ ΑΦΑΙΡΕΤΙΚΟ: βγάζει εικόνες από όσες ήδη επιλέχθηκαν, ΠΟΤΕ δεν γεμίζει τη θέση με άλλη.
+// Η ΚΥΡΙΑ εικόνα δεν αγγίζεται. Kill-switch χωρίς deploy: BP_NO_PKGFILTER=1
+// ─────────────────────────────────────────────────────────────────────────────
+const PKG_NAME_RE = /(?:925[-_]sterling[-_]silver[-_]jewelry[-_]gift[-_]packaging|gift[-_]packaging|packaging[-_]emmanuela|packaging[-_]photo|emmanuela[-_]925[-_]sterling[-_]silver[-_]packaging)/i;
+const PKG_EXTRA = ['ashmenio-mple-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-856327.jpg'];
+let PKG_FILES = new Set(PKG_EXTRA);
+const PKG_ON = process.env.BP_NO_PKGFILTER !== '1';
+if (PKG_ON) {
+  try {
+    const pj = JSON.parse(fs.readFileSync(path.join(__dirname, 'skroutz-jewelry-packaging.json'), 'utf8'));
+    for (const f of (pj && pj.files) || []) PKG_FILES.add(String(f).toLowerCase());
+    console.log(`  [PKGFILTER] λίστα συσκευασίας: ${PKG_FILES.size} αρχεία (generated ${(pj && pj.generated) || 'undated'}) + όνομα`);
+  } catch (e) {
+    console.error(`  [PKGFILTER] WARNING: skroutz-jewelry-packaging.json δεν διαβάζεται (${e.message}) — φίλτρο ΜΟΝΟ με όνομα + ${PKG_EXTRA.length} επιπλέον.`);
+  }
+} else {
+  console.log('  [PKGFILTER] ΑΝΕΝΕΡΓΟ (BP_NO_PKGFILTER=1)');
+}
+function isPackagingImage(url) {
+  if (!PKG_ON || !url) return false;
+  const b = (String(url).split('/').pop() || '').split('?')[0].toLowerCase();
+  return PKG_FILES.has(b) || PKG_NAME_RE.test(b);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // FEED GATE v3 (04/09/2026) — ΑΝΘΡΩΠΙΝΕΣ ΕΤΙΚΕΤΕΣ ΦΩΤΟΓΡΑΦΙΩΝ
 // ⚠ Ο ΚΩΔΙΚΑΣ ΦΟΡΤΩΣΗΣ ΕΙΝΑΙ ΑΝΤΙΓΡΑΦΟ ΤΟΥ skroutz-feed-gr.js (~γρ. 644-676).
 //   ΤΟ ΑΡΧΕΙΟ ΔΕΔΟΜΕΝΩΝ ΕΙΝΑΙ ΕΝΑ ΚΑΙ ΚΟΙΝΟ (jewelry-photocolor.json) — αυτό είναι
@@ -854,6 +885,7 @@ function generateBestPriceFeed(products) {
         }
         variantImage = collected[0]?.src || mainImage;
         colorImages = collected.map(img => img.src).slice(0, 5);
+        { const _n = colorImages.length; colorImages = colorImages.filter((src, i) => i === 0 || !isPackagingImage(src)); stats.pkgFiltered = (stats.pkgFiltered || 0) + (_n - colorImages.length); }
       } else {
         // ── FEED GATE v3 (04/09/2026, έγκριση Bill) ───────────────────────
         // Καμία παραλλαγή αυτής της χρωματικής ομάδας δεν έχει ανατεθειμένη εικόνα,
@@ -1061,6 +1093,7 @@ async function generateFeed(options = {}) {
   console.log(`  No image (skip):     ${stats.noImage}`);
   console.log(`  GATE dropped:        ${stats.gateDropped || 0}  (λάθος απόχρωση — δεν εκπέμπεται)`);
   console.log(`  GATE saved by label: ${stats.gateSavedByLabel || 0}  (ετικέτα Εμμανουέλας επιβεβαίωσε τη φωτό)`);
+  console.log(`  PKGFILTER removed:   ${stats.pkgFiltered || 0}  (φωτογραφίες συσκευασίας έξω από τις επιπλέον εικόνες)`);
   console.log(`  Gift cards (skip):   ${stats.skippedGiftCards}`);
   console.log(`  With color:          ${stats.withColor}`);
   console.log(`  With MPN/SKU:        ${stats.withMPN}`);

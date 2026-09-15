@@ -211,6 +211,43 @@ function isPackagingImage(url) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// PHOTOEXCL (15/09/2026, έγκριση Bill «ναι σε όλα») — ΕΠΙΠΛΕΟΝ ΦΩΤΟΓΡΑΦΙΕΣ ΑΛΛΗΣ ΑΠΟΧΡΩΣΗΣ + 2 ΚΑΤΑΧΩΡΗΣΕΙΣ ΧΩΡΙΣ ΦΩΤΟ ΤΟΥ ΧΡΩΜΑΤΟΣ ΤΟΥΣ
+// Το boundary heuristic βάζει στις επιπλέον εικόνες ό,τι ακολουθεί την εικόνα της παραλλαγής ⇒ μετρήθηκαν 14/09
+// 612 επιπλέον φωτογραφίες ΑΛΛΗΣ απόχρωσης σε 357 καταχωρήσεις BP (2 γύροι agents + οπτικό δείγμα 25/25).
+// Δεδομένα: jewelry-photo-exclusions.json — κλειδί (handle, ΩΜΗ τιμή χρώματος Shopify, basename): ανεξάρτητο από
+// τις κανονικοποιήσεις χρώματος που διαφέρουν μεταξύ BP και GLAMI.
+// ΜΟΝΟ ΑΦΑΙΡΕΤΙΚΟ: βγάζει επιπλέον εικόνες (ποτέ την κύρια) και κόβει όσες καταχωρήσεις λέει το dropEntries.
+// Αφαίρεση ΜΟΝΟ αν το κλειδί ισχύει για ΟΛΕΣ τις ωμές τιμές χρώματος της ομάδας.
+// ⚠ ΠΑΓΩΜΕΝΟ: νέες/αναδιαταγμένες φωτογραφίες δεν καλύπτονται μέχρι νέα μέτρηση. Kill-switch: BP_NO_PHOTOEXCL=1
+// ─────────────────────────────────────────────────────────────────────────────
+let PHOTOEXCL = { extras: {}, dropEntries: {} };
+const PHOTOEXCL_ON = process.env.BP_NO_PHOTOEXCL !== '1';
+if (PHOTOEXCL_ON) {
+  try {
+    const pe = JSON.parse(fs.readFileSync(path.join(__dirname, 'jewelry-photo-exclusions.json'), 'utf8'));
+    PHOTOEXCL = { extras: (pe && pe.extras) || {}, dropEntries: (pe && pe.dropEntries) || {} };
+    console.log(`  [PHOTOEXCL] προϊόντα με αποκλεισμούς: ${Object.keys(PHOTOEXCL.extras).length} · καταχωρήσεις προς αποκοπή: ${Object.keys(PHOTOEXCL.dropEntries).length} (generated ${(pe && pe.generated) || 'undated'})`);
+  } catch (e) {
+    console.error(`  [PHOTOEXCL] WARNING: jewelry-photo-exclusions.json δεν διαβάζεται (${e.message}) — ΚΑΝΕΝΑΣ αποκλεισμός.`);
+  }
+} else {
+  console.log('  [PHOTOEXCL] ΑΝΕΝΕΡΓΟ (BP_NO_PHOTOEXCL=1)');
+}
+function photoExclRaws(variants) {
+  return [...new Set((variants || []).map(v => extractVariantColor(v.selectedOptions)).filter(Boolean))];
+}
+function isExcludedExtra(handle, raws, url) {
+  if (!PHOTOEXCL_ON || !raws.length || !url) return false;
+  const byRaw = PHOTOEXCL.extras[handle]; if (!byRaw) return false;
+  const b = (String(url).split('/').pop() || '').split('?')[0].toLowerCase();
+  return raws.every(r => Array.isArray(byRaw[r]) && byRaw[r].includes(b));
+}
+function isDroppedEntry(handle, raws) {
+  const d = PHOTOEXCL.dropEntries[handle];
+  return !!(PHOTOEXCL_ON && Array.isArray(d) && raws.length && raws.every(r => d.includes(r)));
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // FEED GATE v3 (04/09/2026) — ΑΝΘΡΩΠΙΝΕΣ ΕΤΙΚΕΤΕΣ ΦΩΤΟΓΡΑΦΙΩΝ
 // ⚠ Ο ΚΩΔΙΚΑΣ ΦΟΡΤΩΣΗΣ ΕΙΝΑΙ ΑΝΤΙΓΡΑΦΟ ΤΟΥ skroutz-feed-gr.js (~γρ. 644-676).
 //   ΤΟ ΑΡΧΕΙΟ ΔΕΔΟΜΕΝΩΝ ΕΙΝΑΙ ΕΝΑ ΚΑΙ ΚΟΙΝΟ (jewelry-photocolor.json) — αυτό είναι
@@ -862,6 +899,8 @@ function generateBestPriceFeed(products) {
     for (const [groupKey, group] of Object.entries(entryGroups)) {
       const { color, secondOption: secondOpt, variants: groupVariants } = group;
       const repVariant = groupVariants[0];
+      const _peRaws = photoExclRaws(groupVariants);
+      if (isDroppedEntry(product.handle, _peRaws)) { stats.photoExclDropped = (stats.photoExclDropped || 0) + 1; continue; }
 
       // Color-correct images (v2.0): use variant boundary heuristic
       const groupImageIds = new Set(
@@ -886,6 +925,7 @@ function generateBestPriceFeed(products) {
         variantImage = collected[0]?.src || mainImage;
         colorImages = collected.map(img => img.src).slice(0, 5);
         { const _n = colorImages.length; colorImages = colorImages.filter((src, i) => i === 0 || !isPackagingImage(src)); stats.pkgFiltered = (stats.pkgFiltered || 0) + (_n - colorImages.length); }
+        { const _n = colorImages.length; colorImages = colorImages.filter((src, i) => i === 0 || !isExcludedExtra(product.handle, _peRaws, src)); stats.photoExclRemoved = (stats.photoExclRemoved || 0) + (_n - colorImages.length); }
       } else {
         // ── FEED GATE v3 (04/09/2026, έγκριση Bill) ───────────────────────
         // Καμία παραλλαγή αυτής της χρωματικής ομάδας δεν έχει ανατεθειμένη εικόνα,
@@ -1094,6 +1134,8 @@ async function generateFeed(options = {}) {
   console.log(`  GATE dropped:        ${stats.gateDropped || 0}  (λάθος απόχρωση — δεν εκπέμπεται)`);
   console.log(`  GATE saved by label: ${stats.gateSavedByLabel || 0}  (ετικέτα Εμμανουέλας επιβεβαίωσε τη φωτό)`);
   console.log(`  PKGFILTER removed:   ${stats.pkgFiltered || 0}  (φωτογραφίες συσκευασίας έξω από τις επιπλέον εικόνες)`);
+  console.log(`  PHOTOEXCL removed:   ${stats.photoExclRemoved || 0}  (επιπλέον φωτογραφίες άλλης απόχρωσης)`);
+  console.log(`  PHOTOEXCL dropped:   ${stats.photoExclDropped || 0}  (καταχωρήσεις χωρίς φωτογραφία του χρώματός τους)`);
   console.log(`  Gift cards (skip):   ${stats.skippedGiftCards}`);
   console.log(`  With color:          ${stats.withColor}`);
   console.log(`  With MPN/SKU:        ${stats.withMPN}`);

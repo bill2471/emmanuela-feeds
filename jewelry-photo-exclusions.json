@@ -1,0 +1,1496 @@
+{
+ "generated": "2026-09-15",
+ "approvedBy": "Bill 15/09/2026 «ναι σε όλα»",
+ "source": "BP feed 14/09 (με PKGFILTER): 11 ταξινομητές + 3 σκεπτικιστές (workflow wf_ad2b7f97-06e) + οπτικό δείγμα 25/25",
+ "semantics": "extras[handle][ΩΜΗ τιμή χρώματος] = basenames που ΔΕΝ δείχνουν αυτή την απόχρωση ⇒ αφαιρούνται από τις ΕΠΙΠΛΕΟΝ εικόνες (ποτέ η κύρια). Αφαίρεση μόνο αν ισχύει για ΟΛΕΣ τις ωμές τιμές της ομάδας. dropEntries[handle] = ωμές τιμές που δεν εκπέμπονται.",
+ "note": "ΠΑΓΩΜΕΝΟ: νέες ή αναδιαταγμένες φωτογραφίες ΔΕΝ καλύπτονται μέχρι νέα μέτρηση.",
+ "counts": {
+  "findings": 612,
+  "mapped": 612,
+  "unmapped": 0,
+  "keys": 498,
+  "manual": 1
+ },
+ "extras": {
+  "andriko-skoulariki-ear-cuff-ruffled": {
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-andriko-skoylariki-cuff-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-203742.jpg",
+    "mayro-anthraki-andriko-skoylariki-cuff-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-740455.jpg",
+    "mayro-anthraki-andriko-skoylariki-cuff-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-742446.jpg",
+    "mayro-anthraki-andriko-skoylariki-cuff-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-828472.jpg"
+   ]
+  },
+  "andriko-plekto-skoulariki-krikos": {
+   "Επιχρυσωμένο": [
+    "r0b1068.jpg",
+    "r0b1075_11079025-7ee0-429a-99bc-125907a9c1da.jpg"
+   ]
+  },
+  "karfota-skoularikia-margarites": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-karfwta-skoylarikia-margarites-apo-ashmi-925-kosmhmata-emmanuela-709276.jpg"
+   ],
+   "Ασημένια": [
+    "ashmenia-karfwta-skoylarikia-margarites-apo-ashmi-925-kosmhmata-emmanuela-722274.jpg",
+    "ashmenia-karfwta-skoylarikia-margarites-apo-ashmi-925-kosmhmata-emmanuela-835359.jpg"
+   ]
+  },
+  "kremasta-skoularikia-margarites": {
+   "Επιχρυσωμένα": [
+    "ashmenia-kremasta-skoylarikia-loyloydia-margarites-apo-ashmi-925-kosmhmata-emmanuela-795364.jpg"
+   ]
+  },
+  "platia-skoularikia-krikoi": {
+   "Επιχρυσωμένα": [
+    "untitled-4.jpg",
+    "ashmenia-platia-skoylarikia-krikoi-apo-ashmi-925-kosmhmata-emmanuela-949413.jpg"
+   ]
+  },
+  "skoularikia-ear-pins-anemos": {
+   "Ασημένια": [
+    "epixryswmena-skoylarikia-pins-anemos-apo-ashmi-925-kosmhmata-emmanuela-639632.jpg"
+   ]
+  },
+  "minimal-skoularikia-pins": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-minimalistika-skoylarikia-pins-apo-ashmi-925-kosmhmata-emmanuela-369358.jpg"
+   ],
+   "Ασημένια": [
+    "ashmenia-minimalistika-skoylarikia-pins-apo-ashmi-925-kosmhmata-emmanuela-910986.jpg",
+    "roz-epixryswmena-minimalistika-skoylarikia-pins-apo-ashmi-925-kosmhmata-emmanuela-575722.jpg",
+    "roz-epixryswmena-minimalistika-skoylarikia-pins-apo-ashmi-925-kosmhmata-emmanuela-456736.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-elias-mikro": {
+   "Ροζ Επιχρυσωμένο": [
+    "roz-epixryswmeno-skoylariki-cuff-fylla-elias-mikro-apo-ashmi-925-kosmhmata-emmanuela-208446.jpg"
+   ],
+   "Ασημένιο": [
+    "ashmenio-skoylariki-cuff-fylla-elias-mikro-apo-ashmi-925-kosmhmata-emmanuela-482987.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "epixryswmeno-skoylariki-cuff-fylla-elias-mikro-apo-ashmi-925-kosmhmata-emmanuela-943292.jpg",
+    "epixryswmeno-skoylariki-cuff-fylla-elias-mikro-apo-ashmi-925-kosmhmata-emmanuela-101622.jpg"
+   ]
+  },
+  "braxioli-margaritari": {
+   "Επιχρυσωμένο": [
+    "epixryswmeno-braxioli-me-leyko-margaritari-apo-ashmi-925-kosmhmata-emmanuela-484051.jpg",
+    "epixryswmeno-braxioli-me-leyko-margaritari-apo-ashmi-925-kosmhmata-emmanuela-465912.jpg",
+    "epixryswmeno-braxioli-me-leyko-margaritari-apo-ashmi-925-kosmhmata-emmanuela-485067.jpg",
+    "epixryswmeno-braxioli-me-leyko-margaritari-apo-ashmi-925-kosmhmata-emmanuela-186227.jpg"
+   ]
+  },
+  "andrika-skoularikia-trigona": {
+   "Μαύρο ανθρακί": [
+    "ashmenia-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-282235.jpg"
+   ],
+   "Οξειδωμένα": [
+    "oxeidwmena-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-126341.jpg"
+   ],
+   "Επιχρυσωμένα": [
+    "epixryswmena-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-910610.jpg",
+    "mayro-anthraki-andrika-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-577541.jpg"
+   ]
+  },
+  "skoularikia-krikoi-margaritaria": {
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-345023.jpg"
+   ],
+   "Ασημένια": [
+    "ashmenia-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-326617.jpg",
+    "ashmenia-skoylarikia-krikoi-me-margaritaria-h-petres-apo-ashmi-925-kosmhmata-emmanuela-611984.jpg"
+   ]
+  },
+  "skoularikia-krikoi-kryfoi": {
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-skoylarikia-krikoi-kryfoi-apo-ashmi-925-kosmhmata-emmanuela-449660.jpg",
+    "roz-epixryswmena-skoylarikia-krikoi-kryfoi-apo-ashmi-925-kosmhmata-emmanuela-756668.jpg",
+    "roz-epixryswmena-skoylarikia-krikoi-kryfoi-apo-ashmi-925-kosmhmata-emmanuela-882118.jpg",
+    "roz-epixryswmena-skoylarikia-krikoi-kryfoi-apo-ashmi-925-kosmhmata-emmanuela-795679.jpg"
+   ]
+  },
+  "karfota-skoularikia-triploi-krikoi": {
+   "Ασημένια": [
+    "ashmenia-karfwta-skoylarikia-triploi-krikoi-apo-ashmi-925-kosmhmata-emmanuela-470402.jpg",
+    "ashmenia-karfwta-skoylarikia-triploi-krikoi-apo-ashmi-925-kosmhmata-emmanuela-868566.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-karfwta-skoylarikia-triploi-krikoi-apo-ashmi-925-kosmhmata-emmanuela-343926.jpg"
+   ]
+  },
+  "karfota-skoularikia-louloudia-paparounes": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-karfwta-skoylarikia-loyloydia-paparoynes-apo-ashmi-925-kosmhmata-emmanuela-531731.jpg"
+   ]
+  },
+  "skoularikia-krikoi-plektoi": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-krikoi-plektoi-apo-ashmi-925-kosmhmata-emmanuela-977749.jpg"
+   ]
+  },
+  "karfota-skoularikia-fylla-margaritaria": {
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-karfwta-skoylarikia-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-315979.jpg"
+   ],
+   "Ασημένια": [
+    "ashmenia-karfwta-skoylarikia-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-131617.jpg",
+    "ashmenia-karfwta-skoylarikia-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-649082.jpg"
+   ]
+  },
+  "karfota-skoularikia-suspenders-mpares": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-karfwta-skoylarikia-suspenders-mpares-apo-ashmi-925-kosmhmata-emmanuela-181075.jpg"
+   ],
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-karfwta-skoylarikia-suspenders-mpares-apo-ashmi-925-kosmhmata-emmanuela-718135.jpg"
+   ]
+  },
+  "karfota-skoularikia-aktines-krikoi": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-karfwta-skoylarikia-krikoi-me-aktines-apo-ashmi-925-kosmhmata-emmanuela-514504.jpg"
+   ],
+   "Ασημένια": [
+    "ashmenia-karfwta-skoylarikia-krikoi-me-aktines-apo-ashmi-925-kosmhmata-emmanuela-706997.jpg",
+    "ashmenia-karfwta-skoylarikia-krikoi-me-aktines-apo-ashmi-925-kosmhmata-emmanuela-721006.jpg",
+    "ashmenia-karfwta-skoylarikia-krikoi-me-aktines-apo-ashmi-925-kosmhmata-emmanuela-770293.jpg",
+    "ashmenia-karfwta-skoylarikia-krikoi-me-aktines-apo-ashmi-925-kosmhmata-emmanuela-818774.jpg"
+   ]
+  },
+  "4-daxtylidia-midi-aktines": {
+   "Ροζ Επιχρυσωμένο": [
+    "set-apo-4-midi-daxtylidia-aktines-apo-ashmi-925-kosmhmata-emmanuela-944334.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "set-apo-4-midi-daxtylidia-aktines-apo-ashmi-925-kosmhmata-emmanuela-185860.jpg",
+    "set-apo-4-midi-daxtylidia-aktines-apo-ashmi-925-kosmhmata-emmanuela-551949.jpg"
+   ]
+  },
+  "karfota-skoularikia-triantafylla": {
+   "Ροζ Επιχρυσωμένα": [
+    "ashmenia-karfwta-skoylarikia-triantafylla-apo-ashmi-925-kosmhmata-emmanuela-493011.jpg"
+   ]
+  },
+  "skoularikia-fourfouria": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-foyrfoyria-apo-ashmi-925-kosmhmata-emmanuela-100316.jpg"
+   ],
+   "Επιχρυσωμένα": [
+    "epixryswmena-skoylarikia-foyrfoyria-apo-ashmi-925-kosmhmata-emmanuela-128602.jpg"
+   ],
+   "Οξειδωμένα": [
+    "oxeidwmena-skoylarikia-foyrfoyria-apo-ashmi-925-kosmhmata-emmanuela-955776.jpg"
+   ]
+  },
+  "kremasta-skoularikia-diploi-stayroi": {
+   "Ασημένια": [
+    "ashmenia-kremasta-skoylarikia-diploi-stayroi-apo-ashmi-925-kosmhmata-emmanuela-745795.jpg",
+    "ashmenia-kremasta-skoylarikia-diploi-stayroi-apo-ashmi-925-kosmhmata-emmanuela-249940.jpg"
+   ]
+  },
+  "kremasta-skoularikia-tetragona": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-kremasta-skoylarikia-tetragwna-apo-ashmi-925-kosmhmata-emmanuela-320471.jpg",
+    "epixryswmena-kremasta-skoylarikia-tetragwna-apo-ashmi-925-kosmhmata-emmanuela-445854.jpg"
+   ]
+  },
+  "daxtylidi-midi-speires": {
+   "Επιχρυσωμένο": [
+    "epixryswmeno-daxtylidi-midi-speires-apo-ashmi-925-kosmhmata-emmanuela-674009.jpg"
+   ],
+   "Ροζ Επιχρυσωμένο": [
+    "roz-epixryswmeno-daxtylidi-midi-speires-apo-ashmi-925-kosmhmata-emmanuela-180222.jpg",
+    "roz-epixryswmeno-daxtylidi-midi-speires-apo-ashmi-925-kosmhmata-emmanuela-303913.jpg"
+   ]
+  },
+  "skoularikia-alysides-margaritaria": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-alysides-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-253796.jpg",
+    "ashmenia-skoylarikia-alysides-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-254217.jpg",
+    "ashmenia-skoylarikia-alysides-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-347398.jpg"
+   ]
+  },
+  "triplo-daxtylidi-bera": {
+   "Ασημένιο": [
+    "48-triplo-daxtylidi-apo-ashmi-925-kosmhmata-emmanuela-767257.jpg",
+    "48-triplo-daxtylidi-apo-ashmi-925-kosmhmata-emmanuela-310693.jpg",
+    "48-triplo-daxtylidi-apo-ashmi-925-kosmhmata-emmanuela-861661.jpg",
+    "48-triplo-daxtylidi-apo-ashmi-925-kosmhmata-emmanuela-435210.jpg"
+   ]
+  },
+  "daxtylidi-fylla-elias": {
+   "Επιχρυσωμένο": [
+    "48-daxtylidi-kladi-elias-apo-ashmi-925-kosmhmata-emmanuela-349279.jpg",
+    "48-daxtylidi-kladi-elias-apo-ashmi-925-kosmhmata-emmanuela-769341.jpg",
+    "48-daxtylidi-kladi-elias-apo-ashmi-925-kosmhmata-emmanuela-695814.jpg",
+    "48-daxtylidi-kladi-elias-apo-ashmi-925-kosmhmata-emmanuela-889658.jpg"
+   ]
+  },
+  "kremasta-skoularikia-louloudia-paparounes": {
+   "Επιχρυσωμένα": [
+    "ashmenia-kremasta-skoylarikia-loyloydia-paparoynes-apo-ashmi-925-kosmhmata-emmanuela-164284.jpg",
+    "ashmenia-kremasta-skoylarikia-loyloydia-paparoynes-apo-ashmi-925-kosmhmata-emmanuela-451150.jpg"
+   ]
+  },
+  "daxtylidi-leyka-margaritaria": {
+   "Ασημένιο": [
+    "48-daxtylidi-me-dyo-leyka-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-329925.jpg",
+    "48-daxtylidi-me-dyo-leyka-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-246263.jpg",
+    "48-daxtylidi-me-dyo-leyka-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-899248.jpg",
+    "48-daxtylidi-me-dyo-leyka-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-696302.jpg"
+   ]
+  },
+  "2-daxtylidia-speires": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-set-apo-dyo-daxtylida-speires-apo-ashmi-925-kosmhmata-emmanuela-728174.jpg",
+    "epixryswmena-set-apo-dyo-daxtylida-speires-apo-ashmi-925-kosmhmata-emmanuela-523446.jpg",
+    "epixryswmena-set-apo-dyo-daxtylida-speires-apo-ashmi-925-kosmhmata-emmanuela-237675.jpg",
+    "epixryswmena-set-apo-dyo-daxtylida-speires-apo-ashmi-925-kosmhmata-emmanuela-472961.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-set-apo-dyo-daxtylida-speires-apo-ashmi-925-kosmhmata-emmanuela-581542.jpg"
+   ]
+  },
+  "4-daxtylidia-midi-ruffled": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-set-apo-4-daxtylidia-midi-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-968572.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-set-apo-4-daxtylidia-midi-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-910474.jpg",
+    "roz-epixryswmena-set-apo-4-daxtylidia-midi-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-108830.jpg",
+    "roz-epixryswmena-set-apo-4-daxtylidia-midi-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-210305.jpg",
+    "roz-epixryswmena-set-apo-4-daxtylidia-midi-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-984340.jpg"
+   ]
+  },
+  "daxtylidi-stroggylo-ruffled": {
+   "Ασημένιο": [
+    "48-daxtylidi-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-844580.jpg",
+    "48-daxtylidi-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-735972.jpg",
+    "48-daxtylidi-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-808384.jpg"
+   ]
+  },
+  "daxtylidi-speira-strifto": {
+   "Ασημένιο": [
+    "48-tylixto-daxtylidi-speira-apo-ashmi-925-kosmhmata-emmanuela-238075.jpg",
+    "48-tylixto-daxtylidi-speira-apo-ashmi-925-kosmhmata-emmanuela-810914.jpg"
+   ]
+  },
+  "kremasta-skoularikia-pazl": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-kremasta-skoylarikia-pazl-apo-ashmi-925-kosmhmata-emmanuela-377810.jpg",
+    "epixryswmena-kremasta-skoylarikia-pazl-apo-ashmi-925-kosmhmata-emmanuela-175238.jpg"
+   ]
+  },
+  "daxtylidi-louloudi-megalo": {
+   "Επιχρυσωμένο": [
+    "48-daxtylidi-loyloydi-margarita-apo-ashmi-925-kosmhmata-emmanuela-971577.jpg"
+   ]
+  },
+  "daxtylidi-libeloula": {
+   "Ασημένιο": [
+    "48-daxtylidi-libeloyla-apo-ashmi-925-kosmhmata-emmanuela-228836.jpg"
+   ]
+  },
+  "daxtylidi-kypseles": {
+   "Επιχρυσωμένο": [
+    "48-daxtylidi-kypseles-apo-ashmi-925-kosmhmata-emmanuela-917062.jpg"
+   ]
+  },
+  "choker-sfyrilato": {
+   "Επιχρυσωμένο": [
+    "epixryswmeno-tsoker-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-227692.jpg"
+   ],
+   "Ροζ Επιχρυσωμένο": [
+    "roz-epixryswmeno-tsoker-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-707043.jpg"
+   ]
+  },
+  "choker-plekto": {
+   "Ασημένιο": [
+    "ashmenio-tsoker-apo-plegmenes-berges-apo-ashmi-925-kosmhmata-emmanuela-867424.jpg"
+   ],
+   "Ροζ Επιχρυσωμένο": [
+    "roz-epixryswmeno-tsoker-apo-plegmenes-berges-apo-ashmi-925-kosmhmata-emmanuela-914765.jpg"
+   ]
+  },
+  "choker-minimal": {
+   "Ασημένιο": [
+    "minimalistiko-tsoker-apo-ashmi-925-kosmhmata-emmanuela-774007.jpg"
+   ],
+   "Ροζ Επιχρυσωμένο": [
+    "minimalistiko-tsoker-apo-ashmi-925-kosmhmata-emmanuela-998035.jpg",
+    "minimalistiko-tsoker-apo-ashmi-925-kosmhmata-emmanuela-149067.jpg",
+    "minimalistiko-tsoker-apo-ashmi-925-kosmhmata-emmanuela-912943.jpg",
+    "minimalistiko-tsoker-apo-ashmi-925-kosmhmata-emmanuela-334920.jpg"
+   ]
+  },
+  "choker-margaritari": {
+   "Επιχρυσωμένο": [
+    "epixryswmeno-tsoker-me-leyko-margaritari-apo-ashmi-925-kosmhmata-emmanuela-435065.jpg",
+    "epixryswmeno-tsoker-me-leyko-margaritari-apo-ashmi-925-kosmhmata-emmanuela-220146.jpg",
+    "epixryswmeno-tsoker-me-leyko-margaritari-apo-ashmi-925-kosmhmata-emmanuela-940407.jpg"
+   ],
+   "Ροζ Επιχρυσωμένο": [
+    "roz-epixryswmeno-tsoker-me-leyko-margaritari-apo-ashmi-925-kosmhmata-emmanuela-546768.jpg",
+    "roz-epixryswmeno-tsoker-me-leyko-margaritari-apo-ashmi-925-kosmhmata-emmanuela-808561.jpg"
+   ]
+  },
+  "choker-amazoniti": {
+   "Επιχρυσωμένο": [
+    "epixryswmeno-tsoker-me-petra-amazonith-apo-ashmi-925-kosmhmata-emmanuela-305957.jpg",
+    "epixryswmeno-tsoker-me-petra-amazonith-apo-ashmi-925-kosmhmata-emmanuela-747624.jpg"
+   ],
+   "Ροζ Επιχρυσωμένο": [
+    "roz-epixryswmeno-tsoker-me-petra-amazonith-apo-ashmi-925-kosmhmata-emmanuela-315608.jpg"
+   ]
+  },
+  "choker-lamprantoriti": {
+   "Ασημένιο": [
+    "ashmenio-tsoker-me-petra-lamprantorith-apo-ashmi-925-kosmhmata-emmanuela-873323.jpg"
+   ],
+   "Ροζ Επιχρυσωμένο": [
+    "roz-epixryswmeno-tsoker-me-petra-lamprantorith-apo-ashmi-925-kosmhmata-emmanuela-839649.jpg"
+   ]
+  },
+  "skoularikia-ear-pins-pidakes": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-pins-pidakes-apo-ashmi-925-kosmhmata-emmanuela-349548.jpg"
+   ]
+  },
+  "skoularikia-ear-pins-tirkouaz-xaouliti": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-pins-apo-tirkoyaz-xaoylith-apo-ashmi-925-kosmhmata-emmanuela-477680.jpg"
+   ]
+  },
+  "skoularikia-ear-pins-petres-tirkouaz": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-pins-apo-petres-tirkoyaz-apo-ashmi-925-kosmhmata-emmanuela-452691.jpg",
+    "ashmenia-skoylarikia-pins-apo-petres-tirkoyaz-apo-ashmi-925-kosmhmata-emmanuela-128659.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-alysides": {
+   "Ασημένιο": [
+    "ashmenio-skoylariki-cuff-me-alysides-apo-ashmi-925-kosmhmata-emmanuela-552707.jpg",
+    "ashmenio-skoylariki-cuff-me-alysides-apo-ashmi-925-kosmhmata-emmanuela-924254.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "epixryswmeno-skoylariki-cuff-me-alysides-apo-ashmi-925-kosmhmata-emmanuela-783171.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-toxa": {
+   "Ασημένιο": [
+    "epixryswmeno-skoylariki-cuff-toxa-apo-ashmi-925-kosmhmata-emmanuela-273390.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "epixryswmeno-skoylariki-cuff-toxa-apo-ashmi-925-kosmhmata-emmanuela-956318.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-kladi-margaritari-megalo": {
+   "Ασημένιο": [
+    "ashmenio-skoylariki-cuff-kladi-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-516894.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "epixryswmeno-skoylariki-cuff-kladi-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-218065.jpg"
+   ],
+   "Ροζ Επιχρυσωμένο": [
+    "roz-epixryswmeno-skoylariki-cuff-kladi-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-880044.jpg",
+    "roz-epixryswmeno-skoylariki-cuff-kladi-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-809352.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-fylla-elias-megalo": {
+   "Ασημένιο": [
+    "ashmenio-skoylariki-cuff-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-867776.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "epixryswmeno-skoylariki-cuff-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-650719.jpg"
+   ],
+   "Ροζ Επιχρυσωμένο": [
+    "roz-epixryswmeno-skoylariki-cuff-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-914473.jpg",
+    "roz-epixryswmeno-skoylariki-cuff-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-661028.jpg"
+   ]
+  },
+  "skoularikia-ear-pins-kykloi": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-skoylarikia-pins-kykloi-apo-ashmi-925-kosmhmata-emmanuela-566523.jpg"
+   ],
+   "Ασημένια": [
+    "ashmenia-skoylarikia-pins-kykloi-apo-ashmi-925-kosmhmata-emmanuela-541965.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-toxoto": {
+   "Ροζ Χρυσό": [
+    "skoylariki-cuff-toxwto-apo-ashmi-925-kosmhmata-emmanuela-399875.jpg",
+    "skoylariki-cuff-toxwto-apo-ashmi-925-kosmhmata-emmanuela-723725.jpg",
+    "skoylariki-cuff-toxwto-apo-ashmi-925-kosmhmata-emmanuela-647583.jpg",
+    "skoylariki-cuff-toxwto-apo-ashmi-925-kosmhmata-emmanuela-425625.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "epixryswmeno-skoylariki-cuff-toxwto-apo-ashmi-925-kosmhmata-emmanuela-516557.jpg"
+   ]
+  },
+  "skoularikia-ear-pins-plekto-syrma": {
+   "Ασημένια": [
+    "epixryswmena-skoylarikia-pins-apo-plekto-syrma-apo-ashmi-925-kosmhmata-emmanuela-567058.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-ruffled-megalo": {
+   "Ροζ Επιχρυσωμένο": [
+    "roz-epixryswmeno-skoylariki-cuff-me-rabdwseis-megalo-apo-ashmi-925-kosmhmata-emmanuela-988681.jpg",
+    "roz-epixryswmeno-skoylariki-cuff-me-rabdwseis-megalo-apo-ashmi-925-kosmhmata-emmanuela-405768.jpg",
+    "roz-epixryswmeno-skoylariki-cuff-me-rabdwseis-megalo-apo-ashmi-925-kosmhmata-emmanuela-618606.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-4-krikoi": {
+   "Ασημένιο": [
+    "ashmenio-skoylariki-cuff-me-tesseris-krikoys-apo-ashmi-925-kosmhmata-emmanuela-658250.jpg",
+    "ashmenio-skoylariki-cuff-me-tesseris-krikoys-apo-ashmi-925-kosmhmata-emmanuela-166632.jpg"
+   ],
+   "Ροζ Επιχρυσωμένο": [
+    "roz-epixryswmeno-skoylariki-cuff-me-tesseris-krikoys-apo-ashmi-925-kosmhmata-emmanuela-127086.jpg",
+    "roz-epixryswmeno-skoylariki-cuff-me-tesseris-krikoys-apo-ashmi-925-kosmhmata-emmanuela-920664.jpg",
+    "roz-epixryswmeno-skoylariki-cuff-me-tesseris-krikoys-apo-ashmi-925-kosmhmata-emmanuela-917927.jpg",
+    "roz-epixryswmeno-skoylariki-cuff-me-tesseris-krikoys-apo-ashmi-925-kosmhmata-emmanuela-870677.jpg"
+   ]
+  },
+  "skoularikia-ear-pins-margaritaria": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-pins-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-591833.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-skoylarikia-pins-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-800955.jpg",
+    "roz-epixryswmena-skoylarikia-pins-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-680298.jpg"
+   ]
+  },
+  "skoularikia-ear-pins-komites": {
+   "Ασημένια": [
+    "epixryswmena-skoylarikia-pins-komhtes-apo-ashmi-925-kosmhmata-emmanuela-791600.jpg",
+    "epixryswmena-skoylarikia-pins-komhtes-apo-ashmi-925-kosmhmata-emmanuela-447358.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "epixryswmena-skoylarikia-pins-komhtes-apo-ashmi-925-kosmhmata-emmanuela-898048.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-speires": {
+   "Ροζ Επιχρυσωμένο": [
+    "roz-epixryswmeno-skoylariki-cuff-speires-apo-ashmi-925-kosmhmata-emmanuela-296982.jpg",
+    "roz-epixryswmeno-skoylariki-cuff-speires-apo-ashmi-925-kosmhmata-emmanuela-774106.jpg"
+   ],
+   "Ασημένιο": [
+    "ashmenio-skoylariki-cuff-speires-apo-ashmi-925-kosmhmata-emmanuela-742863.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "mayro-anthraki-skoylariki-cuff-speires-apo-ashmi-925-kosmhmata-emmanuela-393318.jpg"
+   ]
+  },
+  "skoularikia-ear-pins-kymata": {
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-skoylarikia-pins-kymata-apo-ashmi-925-kosmhmata-emmanuela-939045.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-toxo": {
+   "Επιχρυσωμένο": [
+    "epixryswmeno-skoylariki-cuff-toxo-apo-ashmi-925-kosmhmata-emmanuela-186094.jpg"
+   ],
+   "Ροζ Επιχρυσωμένο": [
+    "roz-epixryswmeno-skoylariki-cuff-toxo-apo-ashmi-925-kosmhmata-emmanuela-359868.jpg",
+    "roz-epixryswmeno-skoylariki-cuff-toxo-apo-ashmi-925-kosmhmata-emmanuela-600149.jpg",
+    "roz-epixryswmeno-skoylariki-cuff-toxo-apo-ashmi-925-kosmhmata-emmanuela-578996.jpg"
+   ]
+  },
+  "skoularikia-ear-pins-fidia": {
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-skoylarikia-pins-fidia-apo-ashmi-925-kosmhmata-emmanuela-331019.jpg",
+    "roz-epixryswmena-skoylarikia-pins-fidia-apo-ashmi-925-kosmhmata-emmanuela-461993.jpg"
+   ]
+  },
+  "skoularikia-ear-cuff-ruffled": {
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-skoylarikia-cuff-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-447721.jpg"
+   ],
+   "Επιχρυσωμένα": [
+    "roz-epixryswmena-skoylarikia-cuff-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-482074.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-fylla-elias-kryfo": {
+   "Επιχρυσωμένο": [
+    "epixryswmeno-skoylariki-cuff-fylla-elias-kryfo-apo-ashmi-925-kosmhmata-emmanuela-612433.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-pterygio-fylla-elias": {
+   "Ροζ Επιχρυσωμένο": [
+    "skoylariki-helix-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-132919.jpg",
+    "skoylariki-helix-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-879594.jpg",
+    "skoylariki-helix-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-218551.jpg",
+    "skoylariki-helix-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-458149.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-petalouda": {
+   "Ροζ Επιχρυσωμένο": [
+    "roz-epixryswmeno-skoylariki-cuff-petaloyda-apo-ashmi-925-kosmhmata-emmanuela-786593.jpg",
+    "roz-epixryswmeno-skoylariki-cuff-petaloyda-apo-ashmi-925-kosmhmata-emmanuela-492242.jpg",
+    "roz-epixryswmeno-skoylariki-cuff-petaloyda-apo-ashmi-925-kosmhmata-emmanuela-893332.jpg"
+   ],
+   "Ασημένιο": [
+    "ashmenio-skoylariki-cuff-petaloyda-apo-ashmi-925-kosmhmata-emmanuela-107247.jpg",
+    "ashmenio-skoylariki-cuff-petaloyda-apo-ashmi-925-kosmhmata-emmanuela-288103.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "epixryswmeno-skoylariki-cuff-petaloyda-apo-ashmi-925-kosmhmata-emmanuela-576898.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-margaritari": {
+   "Ασημένιο": [
+    "ashmenio-skoylariki-cuff-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-997178.jpg",
+    "skoylariki-cuff-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-258020.jpg",
+    "skoylariki-cuff-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-768488.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-pterygio-margaritari": {
+   "Ασημένιο": [
+    "skoylariki-cuff-pterygioy-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-796569.jpg"
+   ]
+  },
+  "kremasta-skoularikia-petres": {
+   "Ασημένιο": [
+    "ashmenio-kremasta-skoylarikia-jackets-me-petres-apo-ashmi-925-kosmhmata-emmanuela-311808.jpg",
+    "ashmenio-kremasta-skoylarikia-jackets-me-petres-apo-ashmi-925-kosmhmata-emmanuela-732389.jpg",
+    "ashmenio-kremasta-skoylarikia-jackets-me-petres-apo-ashmi-925-kosmhmata-emmanuela-391683.jpg",
+    "ashmenio-kremasta-skoylarikia-jackets-me-petres-apo-ashmi-925-kosmhmata-emmanuela-389499.jpg"
+   ]
+  },
+  "skoularikia-ear-jackets-leyka-margaritaria": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-skoylarikia-jackets-me-leyka-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-890347.jpg"
+   ]
+  },
+  "skoularikia-ear-jackets-minimal": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-jackets-minimalistika-apo-ashmi-925-kosmhmata-emmanuela-596003.jpg",
+    "roz-epixryswmena-skoylarikia-jackets-minimalistika-apo-ashmi-925-kosmhmata-emmanuela-945365.jpg"
+   ]
+  },
+  "skoularikia-ear-jackets-fylla-margaritaria": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-skoylarikia-jackets-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-744221.jpg"
+   ],
+   "Ασημένια": [
+    "ashmenia-skoylarikia-jackets-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-866916.jpg",
+    "roz-epixryswmena-skoylarikia-jackets-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-571702.jpg"
+   ]
+  },
+  "skoularikia-ear-jackets-louloudia": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-skoylarikia-jackets-fylla-apo-ashmi-925-kosmhmata-emmanuela-414717.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-skoylarikia-jackets-fylla-apo-ashmi-925-kosmhmata-emmanuela-906526.jpg",
+    "roz-epixryswmena-skoylarikia-jackets-fylla-apo-ashmi-925-kosmhmata-emmanuela-576864.jpg",
+    "roz-epixryswmena-skoylarikia-jackets-fylla-apo-ashmi-925-kosmhmata-emmanuela-301565.jpg"
+   ]
+  },
+  "karfitsa-saxofono": {
+   "Ασημένιο": [
+    "ashmenio-karfitsa-saxofwno-apo-ashmi-925-kosmhmata-emmanuela-575282.jpg"
+   ]
+  },
+  "kremasta-skoularikia-tirkouaz": {
+   "Ασημένια": [
+    "ashmenia-kremasta-skoylarikia-jackets-me-tirkoyaz-apo-ashmi-925-kosmhmata-emmanuela-866661.jpg",
+    "ashmenia-kremasta-skoylarikia-jackets-me-tirkoyaz-apo-ashmi-925-kosmhmata-emmanuela-769359.jpg"
+   ]
+  },
+  "skoularikia-ear-jacket-aktines-tirkouaz": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-jackets-aktines-me-tirkoyaz-apo-ashmi-925-kosmhmata-emmanuela-699255.jpg",
+    "ashmenia-skoylarikia-jackets-aktines-me-tirkoyaz-apo-ashmi-925-kosmhmata-emmanuela-326860.jpg",
+    "ashmenia-skoylarikia-jackets-aktines-me-tirkoyaz-apo-ashmi-925-kosmhmata-emmanuela-998482.jpg"
+   ]
+  },
+  "skoularikia-ear-jacket-aktines": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-jackets-aktines-apo-ashmi-925-kosmhmata-emmanuela-757955.jpg",
+    "ashmenia-skoylarikia-jackets-aktines-apo-ashmi-925-kosmhmata-emmanuela-776418.jpg"
+   ],
+   "Επιχρυσωμένα": [
+    "roz-epixryswmena-skoylarikia-jackets-aktines-apo-ashmi-925-kosmhmata-emmanuela-182294.jpg"
+   ]
+  },
+  "karfota-skoularikia-suspenders": {
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-karfwta-skoylarikia-suspenders-apo-ashmi-925-kosmhmata-emmanuela-574138.jpg"
+   ]
+  },
+  "karfota-skoularikia-stayroi": {
+   "Ασημένιο με χρυσό σύρμα": [
+    "ashmenio-me-ashmenio-syrma-karfwta-skoylarikia-stayroi-apo-ashmi-925-kosmhmata-emmanuela-335087.jpg"
+   ],
+   "Ασημένιο με ασημένιο σύρμα": [
+    "ashmenio-me-ashmenio-syrma-karfwta-skoylarikia-stayroi-apo-ashmi-925-kosmhmata-emmanuela-335087.jpg"
+   ],
+   "Ροζ χρυσό με ροζ χρυσό σύρμα": [
+    "roz-xryso-me-roz-xryso-syrma-karfwta-skoylarikia-stayroi-apo-ashmi-925-kosmhmata-emmanuela-757262.jpg",
+    "roz-xryso-me-roz-xryso-syrma-karfwta-skoylarikia-stayroi-apo-ashmi-925-kosmhmata-emmanuela-729418.jpg",
+    "roz-xryso-me-roz-xryso-syrma-karfwta-skoylarikia-stayroi-apo-ashmi-925-kosmhmata-emmanuela-591945.jpg"
+   ]
+  },
+  "karfota-skoularikia-huggies": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-karfwta-skoylarikia-mikra-huggies-apo-ashmi-925-kosmhmata-emmanuela-163605.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "oxeidwmena-karfwta-skoylarikia-mikra-huggies-apo-ashmi-925-kosmhmata-emmanuela-906553.jpg"
+   ]
+  },
+  "karfota-skoularikia-agkyres": {
+   "Επιχρυσωμένα": [
+    "mayro-anthraki-karfwta-skoylarikia-agkyres-apo-ashmi-925-kosmhmata-emmanuela-936356.jpg"
+   ]
+  },
+  "karfota-skoularikia-trigona-sfyrilata": {
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-sfyrhlata-karfwta-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-349523.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-sfyrhlata-karfwta-skoylarikia-trigwna-apo-ashmi-925-kosmhmata-emmanuela-259441.jpg"
+   ]
+  },
+  "karfota-skoularikia-huggies-parallilogramma": {
+   "Επιχρυσωμένα": [
+    "mayro-anthraki-karfwta-skoylarikia-huggies-parallhlogramma-apo-ashmi-925-kosmhmata-emmanuela-715614.jpg"
+   ],
+   "Οξειδωμένα": [
+    "mayro-anthraki-karfwta-skoylarikia-huggies-parallhlogramma-apo-ashmi-925-kosmhmata-emmanuela-262412.jpg"
+   ]
+  },
+  "skoularikia-ear-jackets-louloudia-smalto": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-jackets-loyloydia-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-378879.png"
+   ],
+   "Μαύρο ανθρακί": [
+    "ashmenia-skoylarikia-jackets-loyloydia-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-495008.png"
+   ]
+  },
+  "karfota-skoularikia-louloudia-smalto": {
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-karfwta-skoylarikia-loyloydia-me-misxo-apo-ashmi-925-kosmhmata-emmanuela-555385.png",
+    "mayro-anthraki-karfwta-skoylarikia-loyloydia-me-misxo-apo-ashmi-925-kosmhmata-emmanuela-399062.png"
+   ]
+  },
+  "skoularikia-ear-pins-louloudia-smalto": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-pins-loyloydia-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-397076.jpg",
+    "ashmenia-skoylarikia-pins-loyloydia-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-131299.jpg",
+    "ashmenia-skoylarikia-pins-loyloydia-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-477389.png"
+   ],
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-skoylarikia-pins-loyloydia-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-733518.jpg"
+   ],
+   "Επιχρυσωμένα": [
+    "epixryswmena-skoylarikia-pins-loyloydia-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-445284.png"
+   ]
+  },
+  "skoularikia-ear-pins-alysides": {
+   "Ροζ Επιχρυσωμένα": [
+    "ashmenia-skoylarikia-pins-me-alysides-apo-ashmi-925-kosmhmata-emmanuela-968827.png"
+   ]
+  },
+  "skoularikia-krikoi-kremasta-ftera": {
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-skoylarikia-krikoi-me-ftera-apo-ashmi-925-kosmhmata-emmanuela-531923.jpg",
+    "mayro-anthraki-skoylarikia-krikoi-me-ftera-apo-ashmi-925-kosmhmata-emmanuela-216611.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-skoylarikia-krikoi-me-ftera-apo-ashmi-925-kosmhmata-emmanuela-440960.jpg"
+   ]
+  },
+  "skoularikia-krikoi-mayroi": {
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-skoylarikia-krikoi-mayroi-apo-ashmi-925-kosmhmata-emmanuela-731562.jpg"
+   ],
+   "Επιχρυσωμένα": [
+    "epixryswmena-skoylarikia-krikoi-mayroi-apo-ashmi-925-kosmhmata-emmanuela-466957.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-skoylarikia-krikoi-mayroi-apo-ashmi-925-kosmhmata-emmanuela-135649.jpg",
+    "roz-epixryswmena-skoylarikia-krikoi-mayroi-apo-ashmi-925-kosmhmata-emmanuela-438338.jpg",
+    "roz-epixryswmena-skoylarikia-krikoi-mayroi-apo-ashmi-925-kosmhmata-emmanuela-262142.jpg",
+    "roz-epixryswmena-skoylarikia-krikoi-mayroi-apo-ashmi-925-kosmhmata-emmanuela-709893.jpg"
+   ]
+  },
+  "skoularikia-stayroi-krikous-mikra": {
+   "Επιχρυσωμένα με χρυσό σύρμα": [
+    "epixryswmena-me-xryso-syrma-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-952009.jpg",
+    "epixryswmena-me-xryso-syrma-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-742687.jpg"
+   ],
+   "Χρυσά με μαύρο σύρμα": [
+    "epixryswmena-me-xryso-syrma-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-952009.jpg",
+    "epixryswmena-me-xryso-syrma-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-742687.jpg"
+   ],
+   "Ροζ επιχρυσωμένα με ροζ σύρμα": [
+    "roz-epixryswmena-me-roz-syrma-skoylarikia-stayroi-se-krikoys-apo-ashmi-925-kosmhmata-emmanuela-182577.jpg"
+   ]
+  },
+  "andriko-skoulariki-ear-cuff": {
+   "Επιχρυσωμένο": [
+    "epixryswmeno-andriko-skoylariki-cuff-apo-ashmi-925-kosmhmata-emmanuela-542497.jpg"
+   ]
+  },
+  "andrika-skoularikia-ear-pins": {
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-andrika-skoylarikia-pins-apo-ashmi-925-kosmhmata-emmanuela-685511.jpg"
+   ],
+   "Επιχρυσωμένα": [
+    "epixryswmena-andrika-skoylarikia-pins-apo-ashmi-925-kosmhmata-emmanuela-979040.jpg"
+   ],
+   "Οξειδωμένα": [
+    "oxeidwmena-andrika-skoylarikia-pins-apo-ashmi-925-kosmhmata-emmanuela-192138.jpg"
+   ]
+  },
+  "andrika-skoularikia-toxota": {
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-andrika-toxwta-skoylarikia-apo-ashmi-925-kosmhmata-emmanuela-653149.jpg",
+    "mayro-anthraki-andrika-toxwta-skoylarikia-apo-ashmi-925-kosmhmata-emmanuela-363518.jpg"
+   ],
+   "Επιχρυσωμένα": [
+    "epixryswmena-andrika-toxwta-skoylarikia-apo-ashmi-925-kosmhmata-emmanuela-928303.jpg"
+   ]
+  },
+  "andriko-skoulariki-stayros": {
+   "Οξειδωμένο": [
+    "oxeidwmeno-me-oxeidwmeno-syrma-andriko-skoylariki-krikos-me-stayro-apo-ashmi-925-kosmhmata-emmanuela-269717.jpg",
+    "oxeidwmeno-me-oxeidwmeno-syrma-andriko-skoylariki-krikos-me-stayro-apo-ashmi-925-kosmhmata-emmanuela-669428.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "xryso-me-xryso-syrma-andriko-skoylariki-krikos-me-stayro-apo-ashmi-925-kosmhmata-emmanuela-902217.jpg",
+    "xryso-me-xryso-syrma-andriko-skoylariki-krikos-me-stayro-apo-ashmi-925-kosmhmata-emmanuela-403341.jpg",
+    "xryso-me-xryso-syrma-andriko-skoylariki-krikos-me-stayro-apo-ashmi-925-kosmhmata-emmanuela-978927.jpg"
+   ]
+  },
+  "andriko-skoulariki-ftero": {
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-andriko-skoylariki-me-ftero-apo-ashmi-925-kosmhmata-emmanuela-713360.jpg",
+    "mayro-anthraki-andriko-skoylariki-me-ftero-apo-ashmi-925-kosmhmata-emmanuela-466921.jpg"
+   ],
+   "Ασημένιο": [
+    "ashmenio-andriko-skoylariki-me-ftero-apo-ashmi-925-kosmhmata-emmanuela-559688.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "epixryswmeno-andriko-skoylariki-me-ftero-apo-ashmi-925-kosmhmata-emmanuela-846875.jpg"
+   ]
+  },
+  "andriko-skoulariki-plekto": {
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-andriko-plekto-skoylariki-apo-ashmi-925-kosmhmata-emmanuela-682533.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "mayro-anthraki-andriko-plekto-skoylariki-apo-ashmi-925-kosmhmata-emmanuela-638586.jpg"
+   ]
+  },
+  "andriko-skoulariki-suspender": {
+   "Οξειδωμένο": [
+    "epixryswmeno-andriko-skoylariki-suspender-apo-ashmi-925-kosmhmata-emmanuela-484962.jpg"
+   ]
+  },
+  "andriko-skoulariki-parallilogrammo": {
+   "Επιχρυσωμένο": [
+    "mayro-anthraki-andriko-skoylariki-parallhlogrammo-apo-ashmi-925-kosmhmata-emmanuela-877459.jpg",
+    "mayro-anthraki-andriko-skoylariki-parallhlogrammo-apo-ashmi-925-kosmhmata-emmanuela-598397.jpg",
+    "mayro-anthraki-andriko-skoylariki-parallhlogrammo-apo-ashmi-925-kosmhmata-emmanuela-678114.jpg"
+   ]
+  },
+  "andrika-skoularikia-x": {
+   "Επιχρυσωμένα": [
+    "epixryswmeno-andrika-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-604380.jpg"
+   ]
+  },
+  "andriko-trigoniko-skoulariki": {
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-andriko-skoylariki-trigwno-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-402282.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "epixryswmeno-andriko-skoylariki-trigwno-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-857746.jpg",
+    "epixryswmeno-andriko-skoylariki-trigwno-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-542304.jpg",
+    "epixryswmeno-andriko-skoylariki-trigwno-sfyrhlato-apo-ashmi-925-kosmhmata-emmanuela-572244.jpg"
+   ]
+  },
+  "andriko-skoulariki-krikos": {
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-andriko-skoylariki-krikos-apo-ashmi-925-kosmhmata-emmanuela-463088.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "epixryswmeno-andriko-skoylariki-krikos-apo-ashmi-925-kosmhmata-emmanuela-977071.jpg"
+   ]
+  },
+  "andriko-skoulariki-stayros-syrma": {
+   "Επιχρυσωμένο": [
+    "xryso-me-xryso-syrma-andriko-skoylariki-stayros-apo-ashmi-925-kosmhmata-emmanuela-496061.jpg"
+   ],
+   "Μαύρο ανθρακί": [
+    "mayro-me-mayro-syrma-andriko-skoylariki-stayros-apo-ashmi-925-kosmhmata-emmanuela-827592.jpg"
+   ],
+   "Ασημένιο": [
+    "ashmenio-me-ashmenio-syrma-andriko-skoylariki-stayros-apo-ashmi-925-kosmhmata-emmanuela-881699.jpg"
+   ],
+   "Οξειδωμένο": [
+    "oxeidwmeno-me-oxeidwmeno-syrma-andriko-skoylariki-stayros-apo-ashmi-925-kosmhmata-emmanuela-830152.jpg"
+   ]
+  },
+  "kremasta-skoularikia-alysides-kardies": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-kremasta-skoylarikia-alysides-me-kardies-apo-ashmi-925-kosmhmata-emmanuela-605367.jpg"
+   ]
+  },
+  "anomoia-kremasta-skoularikia-speires": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-anomoia-kremasta-skoylarikia-speires-apo-ashmi-925-kosmhmata-emmanuela-820775.jpg",
+    "epixryswmena-anomoia-kremasta-skoylarikia-speires-apo-ashmi-925-kosmhmata-emmanuela-700584.jpg",
+    "epixryswmena-anomoia-kremasta-skoylarikia-speires-apo-ashmi-925-kosmhmata-emmanuela-277827.jpg"
+   ]
+  },
+  "kremasta-skoularikia-diskoi": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-kremasta-skoylarikia-diskoi-apo-ashmi-925-kosmhmata-emmanuela-411813.jpg",
+    "epixryswmena-kremasta-skoylarikia-diskoi-apo-ashmi-925-kosmhmata-emmanuela-602406.jpg"
+   ]
+  },
+  "karfota-skoularikia-fylla-elias": {
+   "Επιχρυσωμένα": [
+    "ashmenia-karfwta-skoylarikia-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-975577.jpg",
+    "ashmenia-karfwta-skoylarikia-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-968889.jpg"
+   ]
+  },
+  "karfota-skoularikia-diskoi-ruffled": {
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-karfwta-skoylarikia-diskoi-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-260122.jpg",
+    "roz-epixryswmena-karfwta-skoylarikia-diskoi-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-888451.jpg",
+    "roz-epixryswmena-karfwta-skoylarikia-diskoi-me-rabdwseis-apo-ashmi-925-kosmhmata-emmanuela-711921.jpg"
+   ]
+  },
+  "karfota-skoularikia-mpares": {
+   "Ασημένια": [
+    "epixryswmena-karfwta-skoylarikia-mpares-apo-ashmi-925-kosmhmata-emmanuela-345103.jpg",
+    "epixryswmena-karfwta-skoylarikia-mpares-apo-ashmi-925-kosmhmata-emmanuela-784502.jpg",
+    "epixryswmena-karfwta-skoylarikia-mpares-apo-ashmi-925-kosmhmata-emmanuela-346749.jpg"
+   ]
+  },
+  "karfota-skoularikia-fidia": {
+   "Ασημένια": [
+    "ashmenia-karfwta-skoylarikia-fidia-apo-ashmi-925-kosmhmata-emmanuela-108293.jpg"
+   ]
+  },
+  "karfota-skoularikia-fiogkoi": {
+   "Ασημένια": [
+    "epixryswmena-karfwta-skoylarikia-fiogkoi-apo-ashmi-925-kosmhmata-emmanuela-536087.jpg",
+    "fiogos2.jpg",
+    "epixryswmena-karfwta-skoylarikia-fiogkoi-apo-ashmi-925-kosmhmata-emmanuela-636918.jpg"
+   ]
+  },
+  "skoularikia-ear-jacket-margaritaria": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-jackets-loyloydia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-861380.jpg",
+    "ashmenia-skoylarikia-jackets-loyloydia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-963102.jpg"
+   ]
+  },
+  "skoularikia-krikoi-huggies-sfyrilata": {
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-skoylarikia-krikoi-huggies-sfyrhlata-apo-ashmi-925-kosmhmata-emmanuela-204002.jpg",
+    "roz-epixryswmena-skoylarikia-krikoi-huggies-sfyrhlata-apo-ashmi-925-kosmhmata-emmanuela-721911.jpg"
+   ]
+  },
+  "skoularikia-krikoi-huggies": {
+   "Οξειδωμένα": [
+    "oxeidwmena-skoylarikia-krikoi-huggies-apo-ashmi-925-kosmhmata-emmanuela-727004.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-skoylarikia-krikoi-huggies-apo-ashmi-925-kosmhmata-emmanuela-652758.jpg"
+   ]
+  },
+  "karfota-skoularikia-huggies-1": {
+   "Ασημένια": [
+    "ashmenia-karfwta-skoylarikia-huggies-apo-ashmi-925-kosmhmata-emmanuela-984170.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-karfwta-skoylarikia-huggies-apo-ashmi-925-kosmhmata-emmanuela-189891.jpg"
+   ],
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-karfwta-skoylarikia-huggies-apo-ashmi-925-kosmhmata-emmanuela-297778.jpg",
+    "mayro-anthraki-karfwta-skoylarikia-huggies-apo-ashmi-925-kosmhmata-emmanuela-759350.jpg",
+    "mayro-anthraki-karfwta-skoylarikia-huggies-apo-ashmi-925-kosmhmata-emmanuela-102531.jpg",
+    "mayro-anthraki-karfwta-skoylarikia-huggies-apo-ashmi-925-kosmhmata-emmanuela-170043.jpg"
+   ]
+  },
+  "skoularikia-krikoi-strifta-syrmata": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-krikoi-apo-strifta-syrmata-apo-ashmi-925-kosmhmata-emmanuela-500055.jpg"
+   ]
+  },
+  "skoularikia-anomoia-ear-cuff-ear-pin": {
+   "Ασημένια": [
+    "epixryswmena-anomoia-skoylarikia-cuff-pin-apo-ashmi-925-kosmhmata-emmanuela-230436.jpg"
+   ]
+  },
+  "skoularikia-ear-pins-sfyrilatimena": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-pins-sfyrhlathmena-apo-ashmi-925-kosmhmata-emmanuela-471881.jpg"
+   ],
+   "Επιχρυσωμένα": [
+    "epixryswmena-skoylarikia-pins-sfyrhlathmena-apo-ashmi-925-kosmhmata-emmanuela-213590.jpg",
+    "epixryswmena-skoylarikia-pins-sfyrhlathmena-apo-ashmi-925-kosmhmata-emmanuela-607022.jpg"
+   ]
+  },
+  "skoularikia-ear-pins-stayroi": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-skoylarikia-pins-stayroi-apo-ashmi-925-kosmhmata-emmanuela-182694.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-skoylarikia-pins-stayroi-apo-ashmi-925-kosmhmata-emmanuela-115335.jpg",
+    "roz-epixryswmena-skoylarikia-pins-stayroi-apo-ashmi-925-kosmhmata-emmanuela-646934.jpg"
+   ]
+  },
+  "anomoia-skoularikia-ear-pins-speires": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-anomoia-skoylarikia-pins-speires-apo-ashmi-925-kosmhmata-emmanuela-952082.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "roz-epixryswmena-anomoia-skoylarikia-pins-speires-apo-ashmi-925-kosmhmata-emmanuela-116506.jpg",
+    "roz-epixryswmena-anomoia-skoylarikia-pins-speires-apo-ashmi-925-kosmhmata-emmanuela-501074.jpg",
+    "roz-epixryswmena-anomoia-skoylarikia-pins-speires-apo-ashmi-925-kosmhmata-emmanuela-643579.jpg",
+    "roz-epixryswmena-anomoia-skoylarikia-pins-speires-apo-ashmi-925-kosmhmata-emmanuela-174344.jpg"
+   ]
+  },
+  "skoularikia-anomoia-margaritaria": {
+   "Ασημένια": [
+    "epixryswmena-anomoia-skoylarikia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-495673.jpg",
+    "epixryswmena-anomoia-skoylarikia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-166235.jpg",
+    "epixryswmena-anomoia-skoylarikia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-188886.jpg",
+    "epixryswmena-anomoia-skoylarikia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-719542.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "epixryswmena-anomoia-skoylarikia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-470022.jpg",
+    "epixryswmena-anomoia-skoylarikia-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-552908.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-fylla-elias": {
+   "Επιχρυσωμένο": [
+    "epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-279371.jpg",
+    "epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-801039.jpg",
+    "epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-271070.jpg",
+    "epixryswmeno-skoylariki-cuff-fylla-elias-megalo-apo-ashmi-925-kosmhmata-emmanuela-898450.jpg"
+   ]
+  },
+  "karfota-skoylarikia-trigona-asimi": {
+   "Ασημένια": [
+    "ashmenia-karfwta-trigwnika-skoylarikia-huggies-apo-ashmi-925-kosmhmata-emmanuela-790586.jpg"
+   ]
+  },
+  "antriko-skoulariki-agkyra": {
+   "Επιχρυσωμένο": [
+    "mayro-anthraki-andriko-skoylariki-agkyra-apo-ashmi-925-kosmhmata-emmanuela-534692.jpg",
+    "mayro-anthraki-andriko-skoylariki-agkyra-apo-ashmi-925-kosmhmata-emmanuela-773817.jpg",
+    "mayro-anthraki-andriko-skoylariki-agkyra-apo-ashmi-925-kosmhmata-emmanuela-426783.jpg"
+   ]
+  },
+  "andriko-skoulariki-krikos-sfyrilatos": {
+   "Επιχρυσωμένο": [
+    "epixryswmeno-andriko-skoylariki-krikos-sfyrhlatos-apo-ashmi-925-kosmhmata-emmanuela-961077.jpg"
+   ],
+   "Μαύρο ανθρακί": [
+    "ashmenio-andriko-skoylariki-krikos-sfyrhlatos-apo-ashmi-925-kosmhmata-emmanuela-388595.jpg"
+   ]
+  },
+  "andriko-skoulariki-krikos-fyllo": {
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-andriko-skoylariki-krikos-fyllo-apo-ashmi-925-kosmhmata-emmanuela-827696.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "epixryswmeno-andriko-skoylariki-krikos-fyllo-apo-ashmi-925-kosmhmata-emmanuela-124857.jpg",
+    "epixryswmeno-andriko-skoylariki-krikos-fyllo-apo-ashmi-925-kosmhmata-emmanuela-868484.jpg"
+   ]
+  },
+  "karfota-skoularikia-x": {
+   "Ασημένια": [
+    "roz-epixryswmena-karfwta-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-838672.jpg",
+    "ashmenia-karfwta-skoylarikia-x-apo-ashmi-925-kosmhmata-emmanuela-226059.jpg"
+   ]
+  },
+  "choker-fylla-elias": {
+   "Επιχρυσωμένο": [
+    "epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-774643.jpg",
+    "epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-104371.jpg",
+    "epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-844329.jpg",
+    "epixryswmeno-tsoker-me-fylla-elias-apo-ashmi-925-kosmhmata-emmanuela-960371.jpg"
+   ]
+  },
+  "σκουλαρίκι-cuff-με-αλυσίδες": {
+   "Ροζ Επιχρυσωμένο": [
+    "ashmenio-skoylariki-cuff-me-alysides-apo-ashmi-925-kosmhmata-emmanuela-298243.jpg"
+   ],
+   "Ασημένιο": [
+    "ashmenio-skoylariki-cuff-me-alysides-apo-ashmi-925-kosmhmata-emmanuela-180599.jpg"
+   ]
+  },
+  "σετ-μενταγιόν-και-σκουλαρίκια-λιβελούλες": {
+   "Ασημένια": [
+    "ashmenia-set-mentagion-kai-skoylarikia-libeloyles-apo-ashmi-925-kosmhmata-emmanuela-978676.jpg"
+   ],
+   "Επιχρυσωμένα": [
+    "5062_3.jpg",
+    "epixryswmena-set-mentagion-kai-skoylarikia-libeloyles-apo-ashmi-925-kosmhmata-emmanuela-833943.jpg"
+   ]
+  },
+  "kremasta-skoularikia-mother-of-pearl": {
+   "Ασημένια": [
+    "epixryswmena-kremasta-skoylarikia-me-mother-of-pearl-apo-ashmi-925-kosmhmata-emmanuela-944790.jpg",
+    "ashmenia-kremasta-skoylarikia-me-mother-of-pearl-apo-ashmi-925-kosmhmata-emmanuela-190143.jpg",
+    "epixryswmena-kremasta-skoylarikia-me-mother-of-pearl-apo-ashmi-925-kosmhmata-emmanuela-511628.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-margarita": {
+   "Ασημένιο": [
+    "epixryswmeno-skoylariki-cuff-margarita-apo-ashmi-925-kosmhmata-emmanuela-229584.jpg"
+   ],
+   "Μαύρο ανθρακί": [
+    "ashmenio-skoylariki-cuff-margarita-apo-ashmi-925-kosmhmata-emmanuela-872258.jpg"
+   ]
+  },
+  "set-braxiolia-strifta": {
+   "Μαύρο ανθρακί": [
+    "epixryswmena-set-braxiolia-strifta-apo-ashmi-925-kosmhmata-emmanuela-709863.jpg"
+   ]
+  },
+  "skoularikia-ear-jackets-fidia": {
+   "Ασημένια": [
+    "epixryswmena-skoylarikia-jackets-fidia-apo-ashmi-925-kosmhmata-emmanuela-524572.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "epixryswmena-skoylarikia-jackets-fidia-apo-ashmi-925-kosmhmata-emmanuela-824581.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-fidi-mikro": {
+   "Μαύρο ανθρακί - Γαλάζιο": [
+    "ashmenio-mple-skoylariki-cuff-fidi-mikro-apo-ashmi-925-kosmhmata-emmanuela-334883.jpg"
+   ],
+   "Μαύρο ανθρακί - Πράσινο": [
+    "ashmenio-mple-skoylariki-cuff-fidi-mikro-apo-ashmi-925-kosmhmata-emmanuela-334883.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-fidi": {
+   "Μαύρο ανθρακί - Γαλάζιο": [
+    "epixryswmeno-roympini-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-846833.jpg",
+    "epixryswmeno-roympini-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-415581.jpg",
+    "mayro-anthraki-prasino-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-963519.jpg"
+   ],
+   "Μαύρο ανθρακί - Πράσινο": [
+    "epixryswmeno-roympini-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-846833.jpg",
+    "epixryswmeno-roympini-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-415581.jpg",
+    "mayro-anthraki-prasino-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-963519.jpg"
+   ]
+  },
+  "karfota-skoylarikia-oura-fidiou": {
+   "Ασημένια": [
+    "epixryswmena-karfwta-skoylarikia-oyra-fidioy-apo-ashmi-925-kosmhmata-emmanuela-461303.jpg"
+   ]
+  },
+  "karfota-skoularikia-trigona-plekta": {
+   "Ασημένια": [
+    "epixryswmena-karfwta-trigwnika-skoylarikia-huggies-plekta-apo-ashmi-925-kosmhmata-emmanuela-240508.jpg"
+   ],
+   "Ροζ Επιχρυσωμένα": [
+    "epixryswmena-karfwta-trigwnika-skoylarikia-huggies-plekta-apo-ashmi-925-kosmhmata-emmanuela-992492.jpg"
+   ],
+   "Μαύρο ανθρακί": [
+    "ashmenia-karfwta-trigwnika-skoylarikia-huggies-plekta-apo-ashmi-925-kosmhmata-emmanuela-610005.jpg"
+   ]
+  },
+  "andrika-skoularikia-mpares": {
+   "Μαύρο": [
+    "oxeidwmena-andrika-skoylarikia-mpares-apo-ashmi-925-kosmhmata-emmanuela-810231.jpg"
+   ]
+  },
+  "skoularikia-krikoi-kumatistoi": {
+   "Ροζ Επιχρυσωμένα": [
+    "epixryswmena-skoylarikia-krikoi-kymatistoi-apo-ashmi-925-kosmhmata-emmanuela-263276.jpg"
+   ],
+   "Ασημένια": [
+    "roz-epixryswmena-skoylarikia-krikoi-kymatistoi-apo-ashmi-925-kosmhmata-emmanuela-829777.jpg",
+    "ashmenia-skoylarikia-krikoi-kymatistoi-apo-ashmi-925-kosmhmata-emmanuela-659276.jpg",
+    "ashmenia-skoylarikia-krikoi-kymatistoi-apo-ashmi-925-kosmhmata-emmanuela-122246.jpg"
+   ]
+  },
+  "skoularikia-krikoi-striftoi-triploi": {
+   "Μαύρο ανθρακί": [
+    "epixryswmena-skoylarikia-striftoi-krikoi-triploi-apo-ashmi-925-kosmhmata-emmanuela-650666.jpg",
+    "epixryswmena-skoylarikia-striftoi-krikoi-triploi-apo-ashmi-925-kosmhmata-emmanuela-403405.jpg",
+    "mayro-anthraki-skoylarikia-striftoi-krikoi-triploi-apo-ashmi-925-kosmhmata-emmanuela-223519.jpg",
+    "mayro-anthraki-skoylarikia-striftoi-krikoi-triploi-apo-ashmi-925-kosmhmata-emmanuela-144111.jpg"
+   ]
+  },
+  "andriko-skoulariki-krikos-ravdotos": {
+   "Οξειδωμένο": [
+    "ashmenio-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-615174.jpg"
+   ]
+  },
+  "skoularikia-krikoi-mpilies": {
+   "Μαύρο ανθρακί": [
+    "epixryswmena-skoylarikia-krikoi-mpilies-apo-ashmi-925-kosmhmata-emmanuela-194997.jpg"
+   ],
+   "Ασημένια": [
+    "epixryswmena-skoylarikia-krikoi-mpilies-apo-ashmi-925-kosmhmata-emmanuela-530343.jpg",
+    "mayro-anthraki-skoylarikia-krikoi-mpilies-apo-ashmi-925-kosmhmata-emmanuela-843124.jpg"
+   ]
+  },
+  "skoularikia-krikoi-striftoi-mikroi": {
+   "Ασημένια": [
+    "epixryswmena-skoylarikia-krikoi-striftoi-mikroi-apo-ashmi-925-kosmhmata-emmanuela-778239.jpg"
+   ],
+   "Μαύρο ανθρακί": [
+    "epixryswmena-skoylarikia-krikoi-striftoi-mikroi-apo-ashmi-925-kosmhmata-emmanuela-648506.jpg",
+    "ashmenia-skoylarikia-krikoi-striftoi-mikroi-apo-ashmi-925-kosmhmata-emmanuela-859263.jpg",
+    "mayro-anthraki-skoylarikia-krikoi-striftoi-mikroi-apo-ashmi-925-kosmhmata-emmanuela-112153.jpg"
+   ]
+  },
+  "skoularikia-krikoi-diploi-zircon": {
+   "Ασημένια": [
+    "ashmenia-skoylarikia-krikoi-diploi-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-401127.jpg"
+   ]
+  },
+  "karfota-skoularikia-fylla": {
+   "Ασημένια": [
+    "ashmenia-karfwta-skoylarikia-fylla-apo-ashmi-925-kosmhmata-emmanuela-180275.jpg"
+   ]
+  },
+  "andrika-skoularikia-triaines": {
+   "Οξειδωμένα": [
+    "oxeidwmena-andrika-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-763900.jpg"
+   ],
+   "Μαύρο ανθρακί": [
+    "mayro-anthraki-andrika-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-163321.jpg"
+   ],
+   "Επιχρυσωμένα": [
+    "epixryswmena-andrika-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-349150.jpg",
+    "epixryswmena-andrika-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-373978.jpg"
+   ],
+   "Ασημένια": [
+    "ashmenia-andrika-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-556859.jpg",
+    "ashmenia-andrika-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-243251.jpg"
+   ]
+  },
+  "kremasta-skoularikia-anthismena-louloudia": {
+   "Ασημένια": [
+    "epixryswmena-kremasta-skoylarikia-anthismena-loyloyloydia-apo-ashmi-925-kosmhmata-emmanuela-591105.jpg",
+    "epixryswmena-kremasta-skoylarikia-anthismena-loyloyloydia-apo-ashmi-925-kosmhmata-emmanuela-719646.jpg",
+    "ashmenia-kremasta-skoylarikia-anthismena-loyloyloydia-apo-ashmi-925-kosmhmata-emmanuela-753238.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-anthismeno-louloudi": {
+   "Ασημένιο": [
+    "epixryswmeno-skoylariki-cuff-anthismeno-loyloydi-apo-ashmi-925-kosmhmata-emmanuela-223752.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-anthismeno-louloudi-mikro": {
+   "Ασημένια": [
+    "epixryswmena-skoylariki-cuff-anthismeno-loyloydi-mikro-apo-ashmi-925-kosmhmata-emmanuela-543934.jpg",
+    "epixryswmena-skoylariki-cuff-anthismeno-loyloydi-mikro-apo-ashmi-925-kosmhmata-emmanuela-317581.jpg",
+    "ashmenia-skoylariki-cuff-anthismeno-loyloydi-mikro-apo-ashmi-925-kosmhmata-emmanuela-477963.jpg"
+   ]
+  },
+  "kremasto-noufaro": {
+   "Επιχρυσωμένο - Τυρκουάζ": [
+    "roz-epixryswmeno-mple-kremasto-mentagion-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-577228.jpg"
+   ],
+   "Επιχρυσωμένο - Μαύρο": [
+    "roz-epixryswmeno-mple-kremasto-mentagion-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-577228.jpg"
+   ],
+   "Επιχρυσωμένο - Πράσινο": [
+    "roz-epixryswmeno-mple-kremasto-mentagion-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-577228.jpg"
+   ],
+   "Ροζ επιχρυσωμένο - Μπλε": [
+    "epixryswmeno-tyrkoyaz-kremasto-mentagion-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-834889.jpg"
+   ]
+  },
+  "karfota-skoularikia-margarites-mikres": {
+   "Ασημένια": [
+    "epixryswmena-karfwta-skoylarikia-margarites-mikres-apo-ashmi-925-kosmhmata-emmanuela-799695.jpg",
+    "ashmenia-karfwta-skoylarikia-margarites-mikres-apo-ashmi-925-kosmhmata-emmanuela-360830.jpg"
+   ]
+  },
+  "kremasto-fylla": {
+   "Ασημένιο": [
+    "epixryswmeno-kremasto-mentagion-fylla-apo-ashmi-925-kosmhmata-emmanuela-213961.jpg",
+    "ashmenio-kremasto-mentagion-fylla-apo-ashmi-925-kosmhmata-emmanuela-243011.jpg",
+    "ashmenio-kremasto-mentagion-fylla-apo-ashmi-925-kosmhmata-emmanuela-841433.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-krikoi": {
+   "Ασημένιο": [
+    "epixryswmeno-skoylariki-cuff-krikoi-apo-ashmi-925-kosmhmata-emmanuela-430839.jpg",
+    "ashmenio-skoylariki-cuff-krikoi-apo-ashmi-925-kosmhmata-emmanuela-216866.jpg",
+    "epixryswmeno-skoylariki-cuff-krikoi-apo-ashmi-925-kosmhmata-emmanuela-170803.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-romvos": {
+   "Μαύρο ανθρακί": [
+    "epixryswmeno-skoylariki-cuff-rombos-apo-ashmi-925-kosmhmata-emmanuela-700994.jpg",
+    "epixryswmeno-skoylariki-cuff-rombos-apo-ashmi-925-kosmhmata-emmanuela-340622.jpg",
+    "mayro-anthraki-skoylariki-cuff-rombos-apo-ashmi-925-kosmhmata-emmanuela-871253.jpg",
+    "il_fullxfull.5466146633_tqm5.jpg"
+   ]
+  },
+  "skoulariki-cuff-araxni-margaritari": {
+   "Ασημένιο": [
+    "epixryswmeno-skoylariki-cuff-araxnh-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-572425.jpg",
+    "epixryswmeno-skoylariki-cuff-araxnh-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-816560.jpg",
+    "epixryswmeno-skoylariki-cuff-araxnh-me-margaritari-apo-ashmi-925-kosmhmata-emmanuela-456274.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-plokami": {
+   "Επιχρυσωμένο": [
+    "asmenio-skoylariki-cuff-plokami-apo-ashmi-925-kosmhmata-emmanuela-569586.jpg",
+    "oxeidwmeno-skoylariki-cuff-plokami-apo-ashmi-925-kosmhmata-emmanuela-765573.jpg"
+   ]
+  },
+  "andriko-skoulariki-ear-cuff-plokami": {
+   "Επιχρυσωμένο": [
+    "ashmenio-andriko-skoylariki-cuff-plokami-apo-ashmi-925-kosmhmata-emmanuela-500595.jpg"
+   ]
+  },
+  "skoulariki-ear-cuff-triplo-strifto": {
+   "Ασημένιο": [
+    "ashmenio-skoylariki-triplo-cuff-strifto-apo-ashmi-925-kosmhmata-emmanuela-938309.jpg"
+   ],
+   "Μαύρο ανθρακί": [
+    "epixryswmeno-skoylariki-triplo-cuff-strifto-apo-ashmi-925-kosmhmata-emmanuela-436665.jpg",
+    "mayro-anthraki-skoylariki-triplo-cuff-strifto-apo-ashmi-925-kosmhmata-emmanuela-354041.jpg",
+    "epixryswmeno-skoylariki-triplo-cuff-strifto-apo-ashmi-925-kosmhmata-emmanuela-200977.jpg",
+    "mayro-anthraki-skoylariki-triplo-cuff-strifto-apo-ashmi-925-kosmhmata-emmanuela-999739.jpg"
+   ]
+  },
+  "skoularikia-krikoi-mikroi-ravdotoi": {
+   "Ασημένια": [
+    "epixryswmena-skoylarikia-krikoi-mikroi-rabdwtoi-apo-ashmi-925-kosmhmata-emmanuela-260067.jpg"
+   ]
+  },
+  "andriko-kremasto-dagkana-kavoura": {
+   "Επιχρυσωμένο": [
+    "oxeidwmeno-kremasto-mentagion-dagkana-kaboyra-apo-ashmi-925-kosmhmata-emmanuela-910653.jpg"
+   ],
+   "Ασημένιο": [
+    "oxeidwmeno-kremasto-mentagion-dagkana-kaboyra-apo-ashmi-925-kosmhmata-emmanuela-993294.jpg"
+   ]
+  },
+  "andrikos-kremastos-stauros-mpilies": {
+   "Επιχρυσωμένο": [
+    "ashmenio-kremastos-stayros-me-mpilies-gia-andres-apo-ashmi-925-kosmhmata-emmanuela-803835.jpg"
+   ]
+  },
+  "kremasto-monogramma": {
+   "Ροζ Επιχρυσωμένο": [
+    "ashmenio-kremasto-mentagion-monogramma-apo-ashmi-925-kosmhmata-emmanuela-519903.jpg"
+   ],
+   "Μαύρο ανθρακί": [
+    "ashmenio-kremasto-mentagion-monogramma-apo-ashmi-925-kosmhmata-emmanuela-756816.jpg",
+    "ashmenio-kremasto-mentagion-monogramma-apo-ashmi-925-kosmhmata-emmanuela-484480.jpg"
+   ]
+  },
+  "andriko-skoulariki-dagkana-kavoura": {
+   "Ασημένιο": [
+    "ashmenio-andriko-skoylariki-dagkana-kaboyra-apo-ashmi-925-kosmhmata-emmanuela-268837.jpg"
+   ],
+   "Επιχρυσωμένο": [
+    "epixryswmeno-andriko-skoylariki-dagkana-kaboyra-apo-ashmi-925-kosmhmata-emmanuela-356040.jpg"
+   ]
+  },
+  "karfota-skoularikia-huggies-zircon": {
+   "Ροζ επιχρυσωμένο - Μωβ": [
+    "roz-epixryswmeno-mayro-karfwta-skoylarikia-huggies-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-128162.jpg"
+   ],
+   "Ροζ επιχρυσωμένο - Μαύρο": [
+    "roz-epixryswmeno-mayro-karfwta-skoylarikia-huggies-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-128162.jpg"
+   ],
+   "Ασημένιο - Μαύρο": [
+    "roz-epixryswmeno-mwb-karfwta-skoylarikia-huggies-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-875331.jpg"
+   ],
+   "Ασημένιο - Τυρκουάζ": [
+    "roz-epixryswmeno-mwb-karfwta-skoylarikia-huggies-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-875331.jpg"
+   ]
+  },
+  "karfota-skoularikia-triaines": {
+   "Ροζ Επιχρυσωμένα": [
+    "epixryswmena-karfwta-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-941869.jpg"
+   ],
+   "Οξειδωμένα": [
+    "oxeidwmena-karfwta-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-296690.jpg",
+    "oxeidwmena-karfwta-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-151775.jpg",
+    "oxeidwmena-karfwta-skoylarikia-triaines-apo-ashmi-925-kosmhmata-emmanuela-490521.jpg"
+   ]
+  },
+  "kremasta-trigonika-skoularikia": {
+   "Ασημένια": [
+    "epixryswmena-kremasta-trigwnika-skoylarikia-apo-ashmi-925-kosmhmata-emmanuela-806712.jpg",
+    "ashmenia-kremasta-trigwnika-skoylarikia-apo-ashmi-925-kosmhmata-emmanuela-245093.jpg",
+    "epixryswmena-kremasta-trigwnika-skoylarikia-apo-ashmi-925-kosmhmata-emmanuela-153816.jpg"
+   ]
+  },
+  "karfota-skoularikia-matia": {
+   "Ασημένια": [
+    "ashmenia-karfwta-skoylarikia-matia-apo-ashmi-925-kosmhmata-emmanuela-887276.jpg"
+   ]
+  },
+  "karfota-skoularikia-kardies-smalto": {
+   "Επιχρυσωμένα": [
+    "epixryswmena-karfwta-skoylarikia-kardies-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-296674.jpg"
+   ]
+  },
+  "karfota-skoularikia-iliaxtides-zircon": {
+   "Μαύρο ανθρακί - Σαμπανί": [
+    "mayro-anthraki-sampani-karfwta-skoylarikia-hliaxtides-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-713493.jpg"
+   ]
+  },
+  "skoularikia-krikoi-romvoi": {
+   "Ασημένια": [
+    "epixryswmena-skoylarikia-krikoi-romboi-apo-ashmi-925-kosmhmata-emmanuela-317415.jpg"
+   ],
+   "Μαύρο ανθρακί": [
+    "epixryswmena-skoylarikia-krikoi-romboi-apo-ashmi-925-kosmhmata-emmanuela-244750.jpg",
+    "ashmenia-skoylarikia-krikoi-romboi-apo-ashmi-925-kosmhmata-emmanuela-619218.jpg",
+    "mayro-anthraki-skoylarikia-krikoi-romboi-apo-ashmi-925-kosmhmata-emmanuela-739432.jpg",
+    "mayro-anthraki-skoylarikia-krikoi-romboi-apo-ashmi-925-kosmhmata-emmanuela-506226.jpg"
+   ]
+  },
+  "andriko-skoulariki-vintage": {
+   "Επιχρυσωμένο - Μαύρο": [
+    "epixryswmeno-mayro-andriko-skoylariki-vintage-apo-ashmi-925-kosmhmata-emmanuela-554369.jpg"
+   ]
+  },
+  "kremasta-skoularikia-veli": {
+   "Ασημένιο - Τυρκουάζ": [
+    "epixryswmeno-tyrkoyaz-kremasta-skoylarikia-belh-me-smalto-apo-ashmi-925-kosmhmata-emmanuela-265161.jpg"
+   ]
+  },
+  "skoulariki-mytis-trigwno": {
+   "Επιχρυσωμένο": [
+    "epixryswmeno-skoylariki-myths-trigwno-apo-ashmi-925-kosmhmata-emmanuela-745031.jpg"
+   ]
+  },
+  "skoulariki-mytis-mpilia": {
+   "Ασημένιο": [
+    "ashmenio-skoylariki-myths-mpilia-apo-ashmi-925-kosmhmata-emmanuela-395495.jpg",
+    "ashmenio-skoylariki-myths-mpilia-apo-ashmi-925-kosmhmata-emmanuela-359559.jpg"
+   ]
+  },
+  "kremasta-skoularikia-mauros-onyxas": {
+   "Ασημένια": [
+    "epixryswmena-kremasta-skoylarikia-me-mayro-onyxa-apo-ashmi-925-kosmhmata-emmanuela-974387.jpg",
+    "ashmenia-kremasta-skoylarikia-me-mayro-onyxa-apo-ashmi-925-kosmhmata-emmanuela-446990.jpg",
+    "epixryswmena-kremasta-skoylarikia-me-mayro-onyxa-apo-ashmi-925-kosmhmata-emmanuela-272513.jpg"
+   ]
+  },
+  "kremasta-skoularikia-aktines": {
+   "Ασημένια": [
+    "epixryswmena-kremasta-skoylarikia-aktines-apo-ashmi-925-kosmhmata-emmanuela-606790.jpg",
+    "epixryswmena-kremasta-skoylarikia-aktines-apo-ashmi-925-kosmhmata-emmanuela-984933.jpg"
+   ]
+  },
+  "karfota-trigonika-skoularikia": {
+   "Ασημένια": [
+    "epixryswmena-trigwnika-skoylarikia-apo-ashmi-925-kosmhmata-emmanuela-476576.jpg",
+    "ashmenia-trigwnika-skoylarikia-apo-ashmi-925-kosmhmata-emmanuela-269021.jpg",
+    "ashmenia-trigwnika-skoylarikia-apo-ashmi-925-kosmhmata-emmanuela-881043.jpg"
+   ]
+  },
+  "kremasta-skoularikia-gewmetrika": {
+   "Ασημένια": [
+    "ashmenia-kremasta-gewmetrika-skoylarikia-apo-ashmi-925-kosmhmata-emmanuela-333518.jpg",
+    "epixryswmena-kremasta-gewmetrika-skoylarikia-apo-ashmi-925-kosmhmata-emmanuela-265976.jpg"
+   ]
+  },
+  "kremasta-skoularikia-lapis-lazuli": {
+   "Ασημένια": [
+    "il_fullxfull.5753066573_lcxq.jpg",
+    "il_fullxfull.5455776572_2f23.jpg"
+   ]
+  },
+  "skoularikia-ear-pins-staxya": {
+   "Μαύρο ανθρακί - Γαλάζιο": [
+    "mayro-anthraki-galazio-skoylarikia-pins-staxya-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-199017.jpg",
+    "ashmenio-mple-skoylarikia-pins-staxya-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-261207.jpg"
+   ]
+  },
+  "daxtylidi-noufaro-zircon": {
+   "Επιχρυσωμένο - Τυρκουάζ": [
+    "epixryswmeno-tyrkoyaz-daxtylidi-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-568061.jpg"
+   ],
+   "Επιχρυσωμένο - Μαύρο": [
+    "epixryswmeno-tyrkoyaz-daxtylidi-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-568061.jpg"
+   ],
+   "Επιχρυσωμένο - Πράσινο": [
+    "epixryswmeno-tyrkoyaz-daxtylidi-noyfaro-me-zirkon-apo-ashmi-925-kosmhmata-emmanuela-568061.jpg"
+   ]
+  },
+  "skoularikia-ear-pins-koxylia": {
+   "Ασημένια - Σομόν": [
+    "ashmenia-somon-skoylarikia-pins-koxylia-me-mother-of-pearl-apo-ashmi-925-kosmhmata-emmanuela-205064.jpg",
+    "epixryswmena-leyko-skoylarikia-pins-koxylia-me-mother-of-pearl-apo-ashmi-925-kosmhmata-emmanuela-926395.jpg"
+   ]
+  },
+  "daxtylidi-romvos": {
+   "Ασημένιο": [
+    "epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-225775.jpg"
+   ],
+   "Μαύρο ανθρακί": [
+    "epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-225775.jpg"
+   ]
+  },
+  "karfota-skoularikia-kladia-peukou": {
+   "Ροζ Επιχρυσωμένα": [
+    "epixryswmena-karfwta-skoylarikia-kladia-peykoy-apo-ashmi-925-kosmhmata-emmanuela-953592.jpg",
+    "epixryswmena-karfwta-skoylarikia-kladia-peykoy-apo-ashmi-925-kosmhmata-emmanuela-110893.jpg"
+   ]
+  },
+  "kremasto-romvoi": {
+   "Ασημένιο": [
+    "epixryswmeno-kremasto-mentagion-romboi-apo-ashmi-925-kosmhmata-emmanuela-789918.jpg"
+   ]
+  },
+  "daxtylidi-anthismeno-louloudi": {
+   "Ασημένιο": [
+    "ashmenio-daxtylidi-anthismeno-loyloydi-apo-ashmi-925-kosmhmata-emmanuela-757859.jpg"
+   ]
+  },
+  "karfitsa-fylla-margaritaria": {
+   "Ασημένιο": [
+    "ashmenio-karfitsa-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-384305.jpg",
+    "ashmenio-karfitsa-fylla-me-margaritaria-apo-ashmi-925-kosmhmata-emmanuela-757189.jpg"
+   ]
+  },
+  "ear-cuff-koxyli": {
+   "Ασημένιο με Σομόν": [
+    "ashmenio-me-somon-skoylariki-cuff-koxyli-apo-ashmi-925-kosmhmata-emmanuela-233212.jpg"
+   ]
+  },
+  "kremasto-kolie-alysida": {
+   "Χρυσό": [
+    "mayro-anthraki-kremasto-kolie-alysida-apo-ashmi-925-kosmhmata-emmanuela-425631.jpg"
+   ],
+   "Μαύρο": [
+    "epixryswmeno-kremasto-kolie-alysida-apo-ashmi-925-kosmhmata-emmanuela-150401.jpg",
+    "epixryswmeno-kremasto-kolie-alysida-apo-ashmi-925-kosmhmata-emmanuela-981320.jpg"
+   ]
+  }
+ },
+ "dropEntries": {
+  "karfota-skoularikia-louloudia-paparounes": [
+   "Επιχρυσωμένα"
+  ],
+  "karfitsa-saxofono": [
+   "Ασημένιο"
+  ]
+ },
+ "manualAdditions": [
+  {
+   "handle": "daxtylidi-romvos",
+   "raw": "Μαύρο ανθρακί",
+   "image": "epixryswmeno-daxtylidi-rombos-apo-ashmi-925-kosmhmata-emmanuela-225775.jpg",
+   "why": "Νέα καταχώρηση 2127X (μετά τη διόρθωση ανάθεσης 14/09) πήρε ως επιπλέον τη φωτογραφία μοντέλου με ΧΡΥΣΑ δαχτυλίδια· ίδια εικόνα κρίθηκε ήδη λάθος για το Ασημένιο (R649 p2). Οπτικά επαληθευμένο."
+  }
+ ]
+}

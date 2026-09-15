@@ -92,6 +92,43 @@ function isPackagingImage(url) {
   const b = (String(url).split('/').pop() || '').split('?')[0].toLowerCase();
   return PKG_FILES.has(b) || PKG_NAME_RE.test(b);
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// PHOTOEXCL (15/09/2026, έγκριση Bill «ναι σε όλα») — ΕΠΙΠΛΕΟΝ ΦΩΤΟΓΡΑΦΙΕΣ ΑΛΛΗΣ ΑΠΟΧΡΩΣΗΣ + 2 ΚΑΤΑΧΩΡΗΣΕΙΣ ΧΩΡΙΣ ΦΩΤΟ ΤΟΥ ΧΡΩΜΑΤΟΣ ΤΟΥΣ
+// Το boundary heuristic βάζει στις επιπλέον εικόνες ό,τι ακολουθεί την εικόνα της παραλλαγής ⇒ μετρήθηκαν 14/09
+// 612 επιπλέον φωτογραφίες ΑΛΛΗΣ απόχρωσης σε 357 καταχωρήσεις BP (2 γύροι agents + οπτικό δείγμα 25/25).
+// Δεδομένα: jewelry-photo-exclusions.json — κλειδί (handle, ΩΜΗ τιμή χρώματος Shopify, basename): ανεξάρτητο από
+// τις κανονικοποιήσεις χρώματος που διαφέρουν μεταξύ BP και GLAMI.
+// ΜΟΝΟ ΑΦΑΙΡΕΤΙΚΟ: βγάζει επιπλέον εικόνες (ποτέ την κύρια) και κόβει όσες καταχωρήσεις λέει το dropEntries.
+// Αφαίρεση ΜΟΝΟ αν το κλειδί ισχύει για ΟΛΕΣ τις ωμές τιμές χρώματος της ομάδας.
+// ⚠ ΠΑΓΩΜΕΝΟ: νέες/αναδιαταγμένες φωτογραφίες δεν καλύπτονται μέχρι νέα μέτρηση. Kill-switch: GLAMI_NO_PHOTOEXCL=1
+// ─────────────────────────────────────────────────────────────────────────────
+let PHOTOEXCL = { extras: {}, dropEntries: {} };
+const PHOTOEXCL_ON = process.env.GLAMI_NO_PHOTOEXCL !== '1';
+if (PHOTOEXCL_ON) {
+  try {
+    const pe = JSON.parse(fs.readFileSync(path.join(__dirname, 'jewelry-photo-exclusions.json'), 'utf8'));
+    PHOTOEXCL = { extras: (pe && pe.extras) || {}, dropEntries: (pe && pe.dropEntries) || {} };
+    console.log(`  [PHOTOEXCL] προϊόντα με αποκλεισμούς: ${Object.keys(PHOTOEXCL.extras).length} · καταχωρήσεις προς αποκοπή: ${Object.keys(PHOTOEXCL.dropEntries).length} (generated ${(pe && pe.generated) || 'undated'})`);
+  } catch (e) {
+    console.error(`  [PHOTOEXCL] WARNING: jewelry-photo-exclusions.json δεν διαβάζεται (${e.message}) — ΚΑΝΕΝΑΣ αποκλεισμός.`);
+  }
+} else {
+  console.log('  [PHOTOEXCL] ΑΝΕΝΕΡΓΟ (GLAMI_NO_PHOTOEXCL=1)');
+}
+function photoExclRaws(variants) {
+  return [...new Set((variants || []).map(v => extractVariantColor(v.selectedOptions)).filter(Boolean))];
+}
+function isExcludedExtra(handle, raws, url) {
+  if (!PHOTOEXCL_ON || !raws.length || !url) return false;
+  const byRaw = PHOTOEXCL.extras[handle]; if (!byRaw) return false;
+  const b = (String(url).split('/').pop() || '').split('?')[0].toLowerCase();
+  return raws.every(r => Array.isArray(byRaw[r]) && byRaw[r].includes(b));
+}
+function isDroppedEntry(handle, raws) {
+  const d = PHOTOEXCL.dropEntries[handle];
+  return !!(PHOTOEXCL_ON && Array.isArray(d) && raws.length && raws.every(r => d.includes(r)));
+}
 const DOMAIN = 'emmanuela.gr';
 
 // ============================================
@@ -713,6 +750,8 @@ function generateGlamiFeed(products) {
     groupKeys.forEach(groupKey => {
       const group = entryGroups[groupKey];
       const repVariant = group.representativeVariant;
+      const _peRaws = photoExclRaws(group.variants);
+      if (isDroppedEntry(product.handle, _peRaws)) { stats.photoExclDropped = (stats.photoExclDropped || 0) + 1; return; }
       stats.feedEntries++;
 
       // Stats
@@ -750,6 +789,7 @@ function generateGlamiFeed(products) {
           .filter(src => src !== variantImage)
           .slice(0, 14);
         { const _n = altImages.length; altImages = altImages.filter(src => !isPackagingImage(src)); stats.pkgFiltered = (stats.pkgFiltered || 0) + (_n - altImages.length); }
+        { const _n = altImages.length; altImages = altImages.filter(src => !isExcludedExtra(product.handle, _peRaws, src)); stats.photoExclRemoved = (stats.photoExclRemoved || 0) + (_n - altImages.length); }
       } else {
         variantImage = mainImage;
         altImages = [];
@@ -925,6 +965,8 @@ function generateGlamiFeed(products) {
   console.log(`      With sale price: ${stats.withSalePrice}`);
   console.log(`      With barcode (GTIN): ${stats.withBarcode}`);
   console.log(`      PKGFILTER removed: ${stats.pkgFiltered || 0} (φωτογραφίες συσκευασίας έξω από IMGURL_ALTERNATIVE)`);
+  console.log(`      PHOTOEXCL removed: ${stats.photoExclRemoved || 0} (επιπλέον φωτογραφίες άλλης απόχρωσης)`);
+  console.log(`      PHOTOEXCL dropped: ${stats.photoExclDropped || 0} (καταχωρήσεις χωρίς φωτογραφία του χρώματός τους)`);
   console.log('');
 
   if (Object.keys(stats.colorBreakdown).length > 0) {

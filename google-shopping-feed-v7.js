@@ -1,5 +1,51 @@
 /**
- * Google Shopping Feed Generator v11.4 for EMMANUELA
+ * Google Shopping Feed Generator v11.5 for EMMANUELA
+ *
+ * v11.5 (2026-09-21 — [SEO] lane · DEV build, deployed only after Bill's explicit ok):
+ *   B1  API_VERSION '2024-01' (silently served as 2025-10) → '2026-07'; one WARN if the served version differs.
+ *   B2  media(first: 50) + pageInfo; variants carry media(first: 1) instead of the deprecated image { id };
+ *       variantsCount + variants pageInfo.
+ *   B3  ALL variants are read (fetchRemainingVariants, first: 250 per follow-up page). What is EMITTED for a
+ *       product with > 100 variants is the owner decision E2: GS_BIGPRODUCT_MODE = colour-stone (DEFAULT, see
+ *       "Owner decisions" below) | legacy (the first 100, exactly as before v11.5) | all | colour.
+ *   B4  FAIL-CLOSED: GraphQL error, still-throttled after the retries, variants read ≠ variantsCount or media
+ *       with more pages ⇒ throw before the write loop ⇒ exit code 1, the previous XML files stay untouched.
+ *   B5  the variant's OWN photo is matched through ProductVariant.media (MediaImage id). The old match
+ *       (ProductImage id vs MediaImage.image.id = ImageSource id) matched 0 of 2,002 since ~21/02/2026.
+ *       Same-colour sibling borrow for variants without a photo of their own.
+ *   B6  PKGFILTER and B7 PHOTOEXCL — same shared JSONs and matchers as bestprice/glami. Cut to the cap FIRST,
+ *       then filter, never refill. image_link is never a packaging photo.
+ *   B8  fallback items in multi-colour products keep only the images that no variant owns.
+ *   B9  lifestyle_image_link only if not packaging / not listed / not another colour's / not the image_link.
+ *   B10 per-variant contextual prices (nodes(ids) × one alias per feed country) instead of one reference
+ *       ratio; on sale: g:price = compare-at + g:sale_price (the second g:price is gone).
+ *   B11 WARN when the Admin API shipping currency ≠ MARKETS currency (output unchanged).
+ *   Kill-switches (each restores today's behaviour for its fix): GS_LEGACY_CAPS=1, GS_NO_VARIANTMEDIA=1,
+ *   GS_NO_PKGFILTER=1, GS_NO_PHOTOEXCL=1, GS_NO_OTHERCOLOUR=1, GS_NO_LIFESTYLE_GUARD=1, GS_LEGACY_PRICING=1,
+ *   GS_BIGPRODUCT_MODE=legacy (E2). All 8 together = the v11.4 output, byte for byte (41 of 41 feeds, replay of 21/09).
+ *   Owner decisions (Bill, 2026-09-21 «Ok σε όλα») — built in as the DEFAULTS:
+ *   E1 = A   items without a photo of their own colour stay listed as before (fallback image_link = images[0]);
+ *            GS_APPLY_PHOTOGATE=1 (E1-B) and GS_APPLY_DROPENTRIES=1 stay OPT-IN. The photo-shoot list (E1-Γ) is a
+ *            separate deliverable, not produced by this file.
+ *   E2 = ii  GS_BIGPRODUCT_MODE default = colour-stone (was legacy): kremasto-monogramma-louloudi (product id
+ *            4448531972131, 702 variants) emits ONE item per Χρώμα × Χρώμα πέτρας — 27 items on 21/09, the in-stock
+ *            variant with the lowest variant id of each group — instead of its first 100 variants.
+ *            legacy | all | colour stay selectable; GS_LEGACY_CAPS=1 forces legacy; an invalid value → the default + 🔴.
+ *   E3 = A   GS_EXTRA_IMAGES_CAP default 9: up to 9 additional images, cut BEFORE the filters, never refilled.
+ *   Offline self-test (no token, no network): node google-shopping-feed-v7.js selftest
+ *   Review fixes (21/09, DEV round 2):
+ *   F1  TIERED sibling borrow (R3a) for a variant without a photo of its own: (1) the sibling with the same metal AND
+ *       every colour-like option (stone / pearl / zircon colour) equal; else (2) the round-1 sibling with the same
+ *       metal; else (3) the fallback path. GS_BORROW_METAL_ONLY=1 = tier 2 only (round 1).
+ *   F2  GS_PKG_EXTRA_LOCAL: Google-only packaging photos that the shared (frozen) list misses.
+ *   F3  a failed / truncated shipping fetch THROWS (was: all feeds without g:shipping). GS_SHIPPING_SOFTFAIL=1 = v11.4.
+ *   F4  fewer emitted in-stock variants than GS_MIN_ITEMS (default 1500), or 0 variants to price ⇒ throw.
+ *   F5  null contextual prices: at most 0.5% PER PRICING COUNTRY (was one global 0.5%).
+ *   F6  variant follow-up pages are bounded: the cursor must advance, pages ≤ ceil(variantsCount / 250) + 2.
+ *   F7  GS_BIGPRODUCT_MODE applies ONLY to the PRODUCT IDS in GS_BIGPRODUCT_IDS (R3b; default 4448531972131 =
+ *       kremasto-monogramma-louloudi, the handle is only logged); any other product with > 100 variants emits the
+ *       first 100 (legacy) and logs a 🔴 line naming it, so no product grows the feed silently.
+ *   F8  the two shared JSONs are fail-closed (missing / corrupt ⇒ throw before any request). GS_ALLOW_MISSING_SHARED=1 = v11.4.
  *
  * v11.3 (2026-08-27 — ΖΩΝΕΣ ΜΕ CARRIER SERVICE · διόρθωση σιωπηλής παλινδρόμησης):
  *   - FIX: μια ζώνη με ΕΝΕΡΓΟ carrier service δεν δηλώνει πια τη φθηνότερη FLAT μέθοδο.
@@ -174,14 +220,296 @@ const path = require('path');
 
 const SHOPIFY_STORE = 'emmanuela-gr.myshopify.com';
 const ACCESS_TOKEN = process.env.SHOPIFY_ACCESS_TOKEN;
-if (!ACCESS_TOKEN) {
+if (!ACCESS_TOKEN && process.argv[2] !== 'selftest') {   // v11.5: the offline self-test needs no token
   console.error('❌ ERROR: SHOPIFY_ACCESS_TOKEN environment variable not set!');
   console.error('   Set it with: set SHOPIFY_ACCESS_TOKEN=your_token_here');
   process.exit(1);
 }
-const API_VERSION = '2024-01';
+// v11.5 (B1): pin a SUPPORTED version. '2024-01' was silently served as 2025-10 (measured 21/09/2026);
+// every value this generator reads was identical in 2025-10, 2026-01, 2026-04 and 2026-07 (0 differences).
+const API_VERSION = '2026-07';
 const BRAND = 'Emmanuela - handcrafted for you';
 const OUTPUT_DIR = path.join(__dirname, 'feeds');
+
+// ============================================
+// v11.5 SWITCHES (environment). A KILL-SWITCH restores today's (v11.4) behaviour for its fix.
+// OWNER-DECISION switches default to Bill's decisions of 21/09/2026: E1 = A and E3 = A reproduce today's output
+// (GS_APPLY_PHOTOGATE / GS_APPLY_DROPENTRIES stay opt-in); E2 = ii does NOT — GS_BIGPRODUCT_MODE defaults to
+// colour-stone, and GS_BIGPRODUCT_MODE=legacy is its kill-switch.
+// ============================================
+const envOn = name => process.env[name] === '1';
+const LEGACY_CAPS = envOn('GS_LEGACY_CAPS');                // B2/B3 off: 20 media + first 100 variants (sliced in JS)
+const VARIANTMEDIA_ON = !envOn('GS_NO_VARIANTMEDIA');       // B5 off: every variant is treated as unmatched (= today)
+const OTHERCOLOUR_ON = !envOn('GS_NO_OTHERCOLOUR');         // B8 off
+const LIFESTYLE_GUARD_ON = !envOn('GS_NO_LIFESTYLE_GUARD'); // B9 off
+const LEGACY_PRICING = envOn('GS_LEGACY_PRICING');          // B10 off: v10 reference ratio (its fallbacks now THROW)
+const APPLY_PHOTOGATE = envOn('GS_APPLY_PHOTOGATE');        // E1-B, opt-in: BestPrice FEED GATE v3
+const APPLY_DROPENTRIES = envOn('GS_APPLY_DROPENTRIES');    // opt-in: PHOTOEXCL dropEntries (approved 15/09 for BP/GLAMI only)
+const LEGACY_VARIANT_CAP = 100;                             // the old variants(first: 100)
+const LEGACY_MEDIA_CAP = 20;                                // the old media(first: 20)
+const BIGPRODUCT_MODES = ['legacy', 'all', 'colour-stone', 'colour'];
+const BIGPRODUCT_MODE_DEFAULT = 'colour-stone';   // E2 = ii (Bill, 21/09/2026). 'legacy' = its kill-switch: the first 100, as before v11.5
+let BIGPRODUCT_MODE = String(process.env.GS_BIGPRODUCT_MODE || BIGPRODUCT_MODE_DEFAULT).trim().toLowerCase();
+if (!BIGPRODUCT_MODES.includes(BIGPRODUCT_MODE)) {
+  // a typo must not change the feed: fall back to the DEFAULT (= the variable not set), loudly
+  console.error(`🔴 GS_BIGPRODUCT_MODE="${process.env.GS_BIGPRODUCT_MODE}" is not one of ${BIGPRODUCT_MODES.join(' | ')} — using the default "${BIGPRODUCT_MODE_DEFAULT}".`);
+  BIGPRODUCT_MODE = BIGPRODUCT_MODE_DEFAULT;
+}
+let EXTRA_IMAGES_CAP = 9;   // E3 default (A): up to 9 additional images, cut BEFORE the filters and never refilled
+if (process.env.GS_EXTRA_IMAGES_CAP !== undefined && process.env.GS_EXTRA_IMAGES_CAP !== '') {
+  const n = Number(process.env.GS_EXTRA_IMAGES_CAP);
+  if (Number.isInteger(n) && n >= 0 && n <= 10) EXTRA_IMAGES_CAP = n;
+  else console.error(`🔴 GS_EXTRA_IMAGES_CAP="${process.env.GS_EXTRA_IMAGES_CAP}" must be an integer 0..10 — using 9.`);
+}
+const CTX_BATCH = 250;             // B10: variant ids per contextual-pricing query (cost 37-38 per query, measured)
+const CTX_MAX_NULL_SHARE = 0.005;  // B10/F5: more than 0.5% null prices IN ANY ONE pricing country ⇒ throw (0 of 118,692 on 21/09)
+const BORROW_METAL_ONLY = envOn('GS_BORROW_METAL_ONLY');       // F1 off: the sibling borrow matches the metal colour only (round 1)
+const SHIPPING_SOFTFAIL = envOn('GS_SHIPPING_SOFTFAIL');       // F3 off: a failed shipping fetch → feeds WITHOUT g:shipping (v11.4)
+const ALLOW_MISSING_SHARED = envOn('GS_ALLOW_MISSING_SHARED'); // F8 off: a missing / corrupt shared JSON only logs (v11.4 copy)
+let MIN_ITEMS = 1500;   // F4: fewer emitted in-stock variants than this ⇒ throw (3,297 on 21/09/2026)
+if (process.env.GS_MIN_ITEMS !== undefined && process.env.GS_MIN_ITEMS !== '') {
+  const n = Number(process.env.GS_MIN_ITEMS);
+  if (Number.isInteger(n) && n >= 0) MIN_ITEMS = n;
+  else console.error(`🔴 GS_MIN_ITEMS="${process.env.GS_MIN_ITEMS}" must be an integer ≥ 0 — using 1500.`);
+}
+// F7 / R3b: GS_BIGPRODUCT_MODE (E2) applies ONLY to these PRODUCT IDS (comma list of numeric ids or
+// gid://shopify/Product/<id>). Default 4448531972131 = kremasto-monogramma-louloudi (702 variants on 21/09/2026).
+// An id survives a handle rename. Any OTHER product with > 100 variants emits the first 100 (legacy) + a 🔴 line.
+// An entry that is not a product id is ignored LOUDLY: it can only shrink the list, i.e. fall back to legacy.
+const BIGPRODUCT_IDS = new Set();
+for (const entry of String(process.env.GS_BIGPRODUCT_IDS === undefined ? '4448531972131' : process.env.GS_BIGPRODUCT_IDS).split(',')) {
+  const id = entry.trim().replace(/^gid:\/\/shopify\/Product\//, '');
+  if (/^\d+$/.test(id)) BIGPRODUCT_IDS.add(id);
+  else if (id) console.error(`🔴 GS_BIGPRODUCT_IDS: "${entry.trim()}" is not a product id — ignored (an unlisted product with > 100 variants emits the first 100).`);
+}
+if (process.env.GS_BIGPRODUCT_HANDLES !== undefined) {
+  console.error('🔴 GS_BIGPRODUCT_HANDLES is no longer read (v11.5 R3b) — the E2 list is GS_BIGPRODUCT_IDS (product ids).');
+}
+{
+  const set = ['GS_LEGACY_CAPS', 'GS_NO_VARIANTMEDIA', 'GS_NO_PKGFILTER', 'GS_NO_PHOTOEXCL', 'GS_NO_OTHERCOLOUR',
+    'GS_NO_LIFESTYLE_GUARD', 'GS_LEGACY_PRICING', 'GS_APPLY_PHOTOGATE', 'GS_APPLY_DROPENTRIES',
+    'GS_BORROW_METAL_ONLY', 'GS_SHIPPING_SOFTFAIL', 'GS_ALLOW_MISSING_SHARED'].filter(envOn);
+  console.log(`⚙️  v11.5 · API ${API_VERSION} · switches: ${set.length ? set.join(', ') : 'none'} · ` +
+    `GS_BIGPRODUCT_MODE=${BIGPRODUCT_MODE} (product ids: ${[...BIGPRODUCT_IDS].join(',') || 'none'})` +
+    `${LEGACY_CAPS && BIGPRODUCT_MODE !== 'legacy' ? ' → legacy, forced by GS_LEGACY_CAPS' : ''} · ` +
+    `GS_EXTRA_IMAGES_CAP=${EXTRA_IMAGES_CAP} · GS_MIN_ITEMS=${MIN_ITEMS}`);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// v11.5 B6 — PKGFILTER. COPIED from bestprice-feed-gr.js L182-211 (approved there by Bill 14/09/2026);
+// only the kill-switch name differs. No gift-box / packaging photo among the ADDITIONAL images, and the
+// image_link guard in pickItemImages() keeps it out of image_link too.
+// Data = the SHARED skroutz-jewelry-packaging.json (Skroutz lane, dHash, FROZEN 04/08) + name + PKG_EXTRA.
+// ⚠ Since v11.5 an edit of that shared JSON also changes all 41 Google feeds.
+// SUBTRACTIVE ONLY: cut to the cap first, then filter, NEVER refill. Kill-switch: GS_NO_PKGFILTER=1
+// ─────────────────────────────────────────────────────────────────────────────
+const PKG_NAME_RE = /(?:925[-_]sterling[-_]silver[-_]jewelry[-_]gift[-_]packaging|gift[-_]packaging|packaging[-_]emmanuela|packaging[-_]photo|emmanuela[-_]925[-_]sterling[-_]silver[-_]packaging)/i;
+const PKG_EXTRA = ['ashmenio-mple-skoylariki-cuff-fidi-apo-ashmi-925-kosmhmata-emmanuela-856327.jpg'];
+let PKG_FILES = new Set(PKG_EXTRA);
+const PKG_ON = process.env.GS_NO_PKGFILTER !== '1';
+if (PKG_ON) {
+  try {
+    const pj = JSON.parse(fs.readFileSync(path.join(__dirname, 'skroutz-jewelry-packaging.json'), 'utf8'));
+    for (const f of (pj && pj.files) || []) PKG_FILES.add(String(f).toLowerCase());
+    console.log(`  [PKGFILTER] λίστα συσκευασίας: ${PKG_FILES.size} αρχεία (generated ${(pj && pj.generated) || 'undated'}) + όνομα`);
+  } catch (e) {
+    console.error(`  [PKGFILTER] WARNING: skroutz-jewelry-packaging.json δεν διαβάζεται (${e.message}) — φίλτρο ΜΟΝΟ με όνομα + ${PKG_EXTRA.length} επιπλέον.`);
+  }
+} else {
+  console.log('  [PKGFILTER] ΑΝΕΝΕΡΓΟ (GS_NO_PKGFILTER=1)');
+}
+function isPackagingImage(url) {
+  if (!PKG_ON || !url) return false;
+  const b = (String(url).split('/').pop() || '').split('?')[0].toLowerCase();
+  return PKG_FILES.has(b) || PKG_NAME_RE.test(b);
+}
+// ─────────────────────────────────────────────────────────────────────────────
+// v11.5 F2 — GOOGLE-LOCAL packaging additions (GS_PKG_EXTRA_LOCAL). They are NOT in the shared
+// skroutz-jewelry-packaging.json: that file belongs to the Skroutz lane and is FROZEN (04/08) — never edit it from
+// here. Each entry below was checked by eye AND by dHash on 21/09/2026:
+//   …-413823.jpg  kremasto-monogramma, the last of its 17 images: the EMMANUELA branded bag, box and pouch — the same
+//                 shot as the listed …gift-packaging… photos (dHash 0–1 bits). With B5 it had started to ship as an
+//                 additional image of the 24 Μαύρο ανθρακί items per feed (984 items in 41 feeds).
+// Same scope as PKG_EXTRA: additional images, lifestyle and the image_link guard. GS_NO_PKGFILTER=1 turns these off too.
+// ─────────────────────────────────────────────────────────────────────────────
+const GS_PKG_EXTRA_LOCAL = [
+  'ashmenio-kremasto-mentagion-monogramma-apo-ashmi-925-kosmhmata-emmanuela-413823.jpg',
+];
+for (const f of GS_PKG_EXTRA_LOCAL) PKG_FILES.add(f.toLowerCase());
+if (PKG_ON) console.log(`  [PKGFILTER] + ${GS_PKG_EXTRA_LOCAL.length} Google-local (GS_PKG_EXTRA_LOCAL) = ${PKG_FILES.size} αρχεία`);
+
+// ─────────────────────────────────────────────────────────────────────────────
+// v11.5 B7 — PHOTOEXCL. COPIED from bestprice-feed-gr.js L223-248 (approved there by Bill 15/09/2026);
+// only the kill-switch name differs. Data: the SHARED jewelry-photo-exclusions.json, key
+// (handle, RAW Shopify colour value, basename). Google keys EACH ITEM by its own raw colour:
+// raws = [extractVariantColor(variant.selectedOptions)]. Removes ADDITIONAL images only (never image_link).
+// dropEntries is applied ONLY with the opt-in GS_APPLY_DROPENTRIES=1 (the 15/09 approval covered BP/GLAMI).
+// ⚠ FROZEN: newer / re-ordered photos are not covered until a new measurement. Kill-switch: GS_NO_PHOTOEXCL=1
+// ─────────────────────────────────────────────────────────────────────────────
+let PHOTOEXCL = { extras: {}, dropEntries: {} };
+const PHOTOEXCL_ON = process.env.GS_NO_PHOTOEXCL !== '1';
+if (PHOTOEXCL_ON) {
+  try {
+    const pe = JSON.parse(fs.readFileSync(path.join(__dirname, 'jewelry-photo-exclusions.json'), 'utf8'));
+    PHOTOEXCL = { extras: (pe && pe.extras) || {}, dropEntries: (pe && pe.dropEntries) || {} };
+    console.log(`  [PHOTOEXCL] προϊόντα με αποκλεισμούς: ${Object.keys(PHOTOEXCL.extras).length} · καταχωρήσεις προς αποκοπή: ${Object.keys(PHOTOEXCL.dropEntries).length} (generated ${(pe && pe.generated) || 'undated'})`);
+  } catch (e) {
+    console.error(`  [PHOTOEXCL] WARNING: jewelry-photo-exclusions.json δεν διαβάζεται (${e.message}) — ΚΑΝΕΝΑΣ αποκλεισμός.`);
+  }
+} else {
+  console.log('  [PHOTOEXCL] ΑΝΕΝΕΡΓΟ (GS_NO_PHOTOEXCL=1)');
+}
+function isExcludedExtra(handle, raws, url) {
+  if (!PHOTOEXCL_ON || !raws.length || !url) return false;
+  const byRaw = PHOTOEXCL.extras[handle]; if (!byRaw) return false;
+  const b = (String(url).split('/').pop() || '').split('?')[0].toLowerCase();
+  return raws.every(r => Array.isArray(byRaw[r]) && byRaw[r].includes(b));
+}
+function isDroppedEntry(handle, raws) {
+  const d = PHOTOEXCL.dropEntries[handle];
+  return !!(PHOTOEXCL_ON && Array.isArray(d) && raws.length && raws.every(r => d.includes(r)));
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// v11.5 F8 — the two SHARED JSONs are FAIL-CLOSED for Google. The loaders above are verbatim BestPrice copies and only
+// log; without the files ~2,237 packaging and ~693 listed wrong-colour extras per feed would silently come back.
+// A missing, unparsable or wrongly shaped file is recorded here and assertSharedJson() — the FIRST step of both CLI
+// paths — stops the run before any request or write. Kill-switch GS_ALLOW_MISSING_SHARED=1 = log and continue (v11.4 copy).
+// ─────────────────────────────────────────────────────────────────────────────
+const _sharedJsonProblems = [];
+function _checkSharedJson(file, validate) {
+  let problem;
+  try { problem = validate(JSON.parse(fs.readFileSync(path.join(__dirname, file), 'utf8'))); }
+  catch (e) { problem = e.message; }
+  if (problem) _sharedJsonProblems.push(`${file}: ${problem}`);
+}
+if (PKG_ON) _checkSharedJson('skroutz-jewelry-packaging.json', j =>
+  (j && Array.isArray(j.files) && j.files.length > 0 && j.files.every(f => typeof f === 'string'))
+    ? null : '"files" is not a non-empty list of file names');
+if (PHOTOEXCL_ON) _checkSharedJson('jewelry-photo-exclusions.json', j =>
+  (j && j.extras && typeof j.extras === 'object' && !Array.isArray(j.extras) && Object.keys(j.extras).length > 0
+    && (j.dropEntries === undefined || (j.dropEntries && typeof j.dropEntries === 'object' && !Array.isArray(j.dropEntries))))
+    ? null : '"extras" is not a non-empty object (or "dropEntries" is not an object)');
+function assertSharedJson() {
+  if (!_sharedJsonProblems.length) return;
+  for (const p of _sharedJsonProblems) console.error(`   🔴 shared JSON: ${p}`);
+  if (ALLOW_MISSING_SHARED) {
+    console.error('   🔴 GS_ALLOW_MISSING_SHARED=1 — continuing WITHOUT it (v11.4 behaviour): packaging / listed photos may ship.');
+    return;
+  }
+  throw new Error(`${_sharedJsonProblems.length} shared JSON file(s) missing or corrupt — fail-closed, nothing fetched or written ` +
+    '(GS_ALLOW_MISSING_SHARED=1 overrides)');
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// v11.5 — RAW COLOUR of a variant. extractVariantColor + COLOR_MAP_GREEK COPIED from bestprice-feed-gr.js
+// (L477-502 and L377-406) so that the PHOTOEXCL key is IDENTICAL to BestPrice/GLAMI.
+// getGreekColor (L413-433) is used ONLY by the opt-in E1-B gate.
+// ─────────────────────────────────────────────────────────────────────────────
+const COLOR_MAP_GREEK = {
+  'ασημένιο': 'ασημί', 'ασημένια': 'ασημί', 'ασημένιος': 'ασημί', 'ασημί': 'ασημί',
+  'επιχρυσωμένο': 'χρυσό', 'επιχρυσωμένα': 'χρυσό', 'επιχρυσωμένος': 'χρυσό',
+  'επιχρυσωμένη': 'χρυσό', 'επιχυσωμένο': 'χρυσό',
+  'χρυσό': 'χρυσό', 'χρυσός': 'χρυσό', 'χρυσά': 'χρυσό', 'χρυσή': 'χρυσό',
+  'χρυσές': 'χρυσό', 'χρυσοί': 'χρυσό',
+  'μαύρη': 'μαύρο', 'μαύρες': 'μαύρο', 'μαύροι': 'μαύρο',
+  'ασημένιες': 'ασημί', 'ασημένιοι': 'ασημί',
+  'επιχρυσωμένες': 'χρυσό', 'επιχρυσωμένοι': 'χρυσό',
+  'οξειδωμένη': 'γκρι', 'οξειδωμένες': 'γκρι', 'οξειδωμένος': 'γκρι', 'οξειδωμένοι': 'γκρι',
+  'λευκή': 'λευκό', 'λευκές': 'λευκό', 'λευκός': 'λευκό', 'λευκοί': 'λευκό',
+  'μαύρο': 'μαύρο', 'μαύρα': 'μαύρο', 'μαύρος': 'μαύρο', 'μαύρο ανθρακί': 'μαύρο',
+  'οξειδωμένο': 'γκρι', 'οξειδωμένα': 'γκρι', 'ανθρακί': 'γκρι',
+  'μαύρα ανθρακί': 'μαύρο',
+  'ροζ': 'ροζ', 'ροζ επιχρυσωμένο': 'ροζ', 'ροζ επιχρυσωμένα': 'ροζ', 'ροζ χρυσό': 'ροζ',
+  'λευκό': 'λευκό', 'λευκά': 'λευκό',
+  'μπλε': 'μπλε', 'πράσινο': 'πράσινο', 'πράσινα': 'πράσινο',
+  'κόκκινο': 'κόκκινο', 'κόκκινα': 'κόκκινο', 'μπορντό': 'μπορντό',
+  'μωβ': 'μωβ', 'τιρκουάζ': 'τιρκουάζ', 'σομόν': 'σομόν',
+  'πολύχρωμο': 'πολύχρωμο', 'πολύχρωμα': 'πολύχρωμο', 'πολύχρωμο σετ': 'πολύχρωμο',
+  'silver': 'ασημί', 'gold': 'χρυσό', 'black': 'μαύρο',
+};
+function getGreekColor(variantColorRaw) {
+  if (!variantColorRaw) return null;
+  if (/\d/.test(variantColorRaw)) return null;
+  const rawHead = variantColorRaw.trim().split(/\s+με\s+/)[0].trim() || variantColorRaw.trim();
+  const normalized = rawHead.toLowerCase();
+  if (normalized.length > 25) return null;
+  if (COLOR_MAP_GREEK[normalized]) return COLOR_MAP_GREEK[normalized];
+  for (const key of Object.keys(COLOR_MAP_GREEK).sort((a, b) => b.length - a.length)) {
+    if (normalized.includes(key)) return COLOR_MAP_GREEK[key];
+  }
+  return rawHead;
+}
+function extractVariantColor(selectedOptions) {
+  if (!selectedOptions) return null;
+  // bestprice v3.2 (2026-08-24): the EXACT colour axis first, so a composite option name
+  // («Επίλεξε νούμερο και χρώμα») cannot shadow the genuine «Χρώμα» that follows it.
+  for (const opt of selectedOptions) {
+    const exact = (opt.name || '').toLowerCase().trim();
+    if (exact === 'χρώμα' || exact === 'χρώμα μετάλλου' || exact === 'color' || exact === 'colour') {
+      return opt.value;
+    }
+  }
+  for (const opt of selectedOptions) {
+    const name = (opt.name || '').toLowerCase();
+    if (name.includes('χρώμα') || name.includes('color') || name.includes('colour')
+        || name === 'χρώμα μετάλλου') {
+      return opt.value;
+    }
+  }
+  if (selectedOptions.length === 1) {
+    const val = selectedOptions[0].value.toLowerCase().trim();
+    if (COLOR_MAP_GREEK[val]) return selectedOptions[0].value;
+  }
+  return null;
+}
+// v11.5 F1 — the key of the same-colour sibling borrow: the raw colour (as above) PLUS every colour-like option
+// (name contains χρώμα / color / colour, accents and case ignored: Χρώμα, Χρώμα μετάλλου, Χρώμα πέτρας, Χρώμα
+// μαργαριταριού, Χρώμα ζιρκόν …). With the metal alone, a black-pearl item showed its white-pearl sibling's photo
+// and a purple-stone item the yellow one (11 of 20 borrow items per feed on 21/09).
+const _flatName = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+function isColourLikeOption(name) {
+  const n = _flatName(name);
+  return n.includes('χρωμα') || n.includes('color') || n.includes('colour');
+}
+function borrowKeyOf(selectedOptions) {
+  const raw = extractVariantColor(selectedOptions);
+  if (!raw || BORROW_METAL_ONLY) return raw;   // GS_BORROW_METAL_ONLY=1: the round-1 key (metal colour only)
+  return raw + '\u0001' + (selectedOptions || []).filter(o => isColourLikeOption(o.name))
+    .map(o => _flatName(o.name) + '=' + o.value).join('\u0001');
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// v11.5 E1-B (OPT-IN, GS_APPLY_PHOTOGATE=1) — BestPrice FEED GATE v3 (bestprice L930-958, Bill's rule of
+// 14/05/2026 «better to not list than to mislead»): an item with NO photo of its own colour (fallback path)
+// in a product with > 1 distinct colour is NOT listed, unless Emmanouela's label in the SHARED
+// jewelry-photocolor.json says its image_link shows exactly that colour. Loader COPIED from bestprice L257-285.
+// Default OFF = option (A): keep listing such items, as today.
+// ─────────────────────────────────────────────────────────────────────────────
+let JPHOTO_LABELS = new Map();
+let JPHOTO_NONE = new Set();
+if (APPLY_PHOTOGATE) {
+  try {
+    const j = JSON.parse(fs.readFileSync(path.join(__dirname, 'jewelry-photocolor.json'), 'utf8'));
+    const obj = (j && typeof j === 'object' && j.labels && typeof j.labels === 'object') ? j.labels : j;
+    for (const [f, c] of Object.entries(obj || {})) {
+      if (typeof c !== 'string') continue;
+      if (c === '__NONE__') JPHOTO_NONE.add(f); else JPHOTO_LABELS.set(f, c);
+    }
+    console.log(`  [JPHOTO] ετικέτες: ${JPHOTO_LABELS.size} χρώμα + ${JPHOTO_NONE.size} μη-κόσμημα, generated ${(j && j.generated) || 'undated'}`);
+  } catch (e) {
+    console.error(`  [JPHOTO] WARNING: jewelry-photocolor.json δεν διαβάζεται (${e.message}) — το gate θα κόβει ΧΩΡΙΣ δεύτερη γνώμη.`);
+  }
+}
+function jphotoColourOf(imageUrl) {
+  if (!imageUrl) return null;
+  const b = (String(imageUrl).split('/').pop() || '').split('?')[0];
+  return JPHOTO_LABELS.get(b) || null;
+}
+const GATE_COLOUR_TO_LABEL = {
+  'ασημί': 'Ασημί', 'χρυσό': 'Χρυσό', 'ροζ': 'Ροζ',
+  'μαύρο': 'Μαύρο', 'πολύχρωμο': 'Πολύχρωμο', 'γκρι': null,
+};
 
 // ============================================
 // v5: GOOGLE PRODUCT CATEGORY MAPPING
@@ -758,7 +1086,10 @@ function httpsRequest(options, postData = null) {
   });
 }
 
-async function graphqlRequest(query, maxRetries = 4) {
+let _servedVersionWarned = false;   // v11.5 (B1)
+
+// v11.5: optional GraphQL `variables` (a request without them sends exactly the same bytes as before).
+async function graphqlRequest(query, maxRetries = 4, variables = undefined) {
   const options = {
     hostname: SHOPIFY_STORE,
     path: `/admin/api/${API_VERSION}/graphql.json`,
@@ -766,7 +1097,13 @@ async function graphqlRequest(query, maxRetries = 4) {
     headers: { 'X-Shopify-Access-Token': ACCESS_TOKEN, 'Content-Type': 'application/json' }
   };
   for (let attempt = 0; attempt <= maxRetries; attempt++) {
-    const result = await httpsRequest(options, JSON.stringify({ query }));
+    const result = await httpsRequest(options, JSON.stringify(variables ? { query, variables } : { query }));
+    // v11.5 (B1): Shopify silently serves ANOTHER version when the requested one is unsupported — say so, once
+    const served = result.headers && result.headers['x-shopify-api-version'];
+    if (served && served !== API_VERSION && !_servedVersionWarned) {
+      _servedVersionWarned = true;
+      console.warn(`\n⚠️  WARN: requested Shopify API ${API_VERSION} but was SERVED ${served} — update API_VERSION to a supported version.`);
+    }
     // Check for Shopify throttling (THROTTLED error or 429 status)
     const isThrottled = result.statusCode === 429 ||
       (result.data?.errors && result.data.errors[0]?.extensions?.code === 'THROTTLED');
@@ -776,6 +1113,8 @@ async function graphqlRequest(query, maxRetries = 4) {
       await new Promise(r => setTimeout(r, wait));
       continue;
     }
+    // v11.5 (B4): still throttled after the last retry = a FAILURE, never data (it used to be returned as data)
+    if (isThrottled) throw new Error(`Shopify THROTTLED after ${maxRetries} retries — giving up (fail-closed)`);
     return result;
   }
 }
@@ -876,10 +1215,14 @@ async function fetchShippingRates() {
     
     if (data.errors) {
       console.error('⚠️ Shipping API errors:', data.errors);
-      return null;
+      // v11.5 F3: FAIL-CLOSED — a null here used to write all 41 feeds with NO g:shipping and exit 0
+      if (SHIPPING_SOFTFAIL) return null;
+      throw new Error('shipping rates: GraphQL errors — fail-closed, nothing written (GS_SHIPPING_SOFTFAIL=1 = feeds without g:shipping)');
     }
     
     const profiles = data.data?.deliveryProfiles?.nodes || [];
+    // v11.5 F3: no delivery profile at all = not a real answer (every g:shipping would silently disappear)
+    if (!profiles.length && !SHIPPING_SOFTFAIL) throw new Error('shipping rates: no delivery profiles in the response — fail-closed, nothing written');
     const countryRates = {};
     const carrierBacked = new Set();   // v11.3: χώρες όπου την τιμή τη λέει το app, όχι το Admin API
 
@@ -892,6 +1235,8 @@ async function fetchShippingRates() {
         if (group.locationGroupZones?.pageInfo?.hasNextPage) {
           console.error('   🔴 ΚΟΜΜΕΝΟ locationGroupZones — υπάρχουν ΠΕΡΙΣΣΟΤΕΡΕΣ ζώνες από όσες διάβασα.');
           console.error('      Τα shipping rates ΕΙΝΑΙ ΕΛΛΙΠΗ. Αύξησε το `first:` και ξανατρέξε.');
+          // v11.5 F3: an incomplete zone list is an incomplete fetch ⇒ stop (40 of 100 zones on 21/09, hasNextPage false)
+          if (!SHIPPING_SOFTFAIL) throw new Error('shipping rates: locationGroupZones truncated — fail-closed, nothing written');
         }
 
         for (const zoneData of group.locationGroupZones?.nodes || []) {
@@ -964,6 +1309,11 @@ async function fetchShippingRates() {
       console.log(`   📌 PR (Puerto Rico): inherited US shipping rate (${countryRates['US'].price} ${countryRates['US'].currency})`);
     }
 
+    // v11.5 F3: 0 countries with a rate = every item would lose g:shipping ⇒ stop (61 countries on 21/09)
+    if (!Object.keys(countryRates).length && !SHIPPING_SOFTFAIL) {
+      throw new Error('shipping rates: 0 countries with a rate — fail-closed, nothing written');
+    }
+
     // Log summary
     const freeCount = Object.values(countryRates).filter(r => r.price === 0).length;
     const paidCount = Object.values(countryRates).filter(r => r.price > 0).length;
@@ -975,7 +1325,8 @@ async function fetchShippingRates() {
     
   } catch (error) {
     console.error('⚠️ Error fetching shipping rates:', error.message);
-    return null;
+    if (SHIPPING_SOFTFAIL) return null;   // v11.4 behaviour: feeds without g:shipping
+    throw error;                          // v11.5 F3: THROTTLED after the retries / network / the checks above
   }
 }
 
@@ -985,6 +1336,8 @@ async function fetchShippingRates() {
  * @param {object} shippingRates - Rates from fetchShippingRates()
  * @returns {string} XML shipping tag or empty string
  */
+const _shipCurrencyWarned = new Set();   // v11.5 (B11)
+
 function formatShippingTag(countryCode, shippingRates) {
   if (!shippingRates || !shippingRates[countryCode]) {
     return '';  // No shipping data available
@@ -994,6 +1347,11 @@ function formatShippingTag(countryCode, shippingRates) {
   // v9: Use MARKETS currency (authoritative) instead of Shopify API currency
   // Fixes BG showing BGN instead of EUR (Shopify API hasn't updated post-Euro adoption)
   const currency = (MARKETS[countryCode] && MARKETS[countryCode].currency) || rate.currency;
+  // v11.5 (B11): the relabel above is deliberate (BG/BGN) but must be VISIBLE — once per country, output unchanged
+  if (rate.currency && rate.currency !== currency && !_shipCurrencyWarned.has(countryCode)) {
+    _shipCurrencyWarned.add(countryCode);
+    console.warn(`   ⚠️ WARN shipping ${countryCode}: Admin API rate is in ${rate.currency}, the feed labels it ${currency} (MARKETS) — the amount is NOT converted`);
+  }
   const priceStr = rate.price === 0 ? `0.00 ${currency}` : `${rate.price.toFixed(2)} ${currency}`;
 
   // v8: Get shipping service name for this country
@@ -1171,7 +1529,8 @@ async function fetchProductsWithOptions() {
         edges {
           node {
             id title handle descriptionHtml productType vendor
-            media(first: 20) {
+            media(first: 50) {
+              pageInfo { hasNextPage }
               edges {
                 node {
                   mediaContentType
@@ -1187,13 +1546,12 @@ async function fetchProductsWithOptions() {
               }
             }
             options { id name optionValues { id name } }
+            variantsCount { count precision }
             variants(first: 100) {
+              pageInfo { hasNextPage endCursor }
               edges {
                 node {
-                  id sku price compareAtPrice inventoryQuantity barcode
-                  image { id }
-                  selectedOptions { name value }
-                  inventoryItem { measurement { weight { value unit } } }
+                  ${VARIANT_NODE_FIELDS}
                 }
               }
             }
@@ -1209,12 +1567,19 @@ async function fetchProductsWithOptions() {
     
     try {
       const { data } = await graphqlRequest(query);
-      if (data.errors) { console.error('GraphQL errors:', data.errors); break; }
+      // v11.5 (B4): an error page used to `break` and the PARTIAL catalog was written to all feeds
+      if (data.errors) { console.error('GraphQL errors:', data.errors); throw new Error(`products page ${page}: GraphQL errors — fail-closed, nothing written`); }
       
       const products = data.data?.products?.edges || [];
-      products.forEach(({ node }) => {
+      // v11.5 (B3): for…of instead of forEach, so the loop can await the variant follow-up pages
+      for (const { node } of products) {
+        // v11.5 (B2): media must be COMPLETE (the old media(first: 20) cut 12 images in 3 products)
+        if (node.media?.pageInfo?.hasNextPage) {
+          throw new Error(`${node.handle}: more than 50 media — raise media(first:) (fail-closed, nothing written)`);
+        }
         // v7.5: Separate media into images and videos
-        const mediaEdges = node.media?.edges || [];
+        // v11.5: GS_LEGACY_CAPS=1 slices back to the old 20 media slots (YouTube items included, as before)
+        const mediaEdges = LEGACY_CAPS ? (node.media?.edges || []).slice(0, LEGACY_MEDIA_CAP) : (node.media?.edges || []);
         const images = [];
         const videos = [];
         for (const edge of mediaEdges) {
@@ -1240,6 +1605,25 @@ async function fetchProductsWithOptions() {
           }
         }
 
+        // v11.5 (B3): read ALL variants — the page carries the first 100, fetchRemainingVariants() the rest —
+        // and PROVE completeness against variantsCount (602 of 702 louloudi variants were never read).
+        const vc = node.variantsCount;
+        if (!vc || typeof vc.count !== 'number') {
+          throw new Error(`${node.handle}: variantsCount missing — cannot prove the variants are complete (fail-closed)`);
+        }
+        const allVariants = (node.variants?.edges || []).map(e => mapVariant(e.node));
+        if (node.variants?.pageInfo?.hasNextPage) {
+          // v11.5 F6: the follow-up pages are BOUNDED by variantsCount (a stuck cursor used to loop until the CI timeout)
+          allVariants.push(...await fetchRemainingVariants(node.id, node.variants.pageInfo.endCursor, vc.count));
+        }
+        if (vc.precision === 'EXACT' ? allVariants.length !== vc.count : allVariants.length < vc.count) {
+          throw new Error(`${node.handle}: read ${allVariants.length} variants but variantsCount = ${vc.count} (${vc.precision}) — fail-closed, nothing written`);
+        }
+        _fetchStats.variantsRead += allVariants.length;
+        // WHAT is emitted for a product with > 100 variants is owner decision E2 (default since 21/09: one item per
+        // colour × stone; GS_BIGPRODUCT_MODE=legacy = the old first 100), scoped by PRODUCT ID (R3b); the handle is only logged
+        const emittedVariants = selectEmittedVariants(node.id.replace('gid://shopify/Product/', ''), node.handle, allVariants);
+
         const product = {
           id: node.id.replace('gid://shopify/Product/', ''),
           gid: node.id,
@@ -1264,32 +1648,14 @@ async function fetchProductsWithOptions() {
               gid: v.id, name: v.name
             }))
           })),
-          variants: (node.variants?.edges || []).map(e => {
-            let weightInGrams = null;
-            const weightData = e.node.inventoryItem?.measurement?.weight;
-            if (weightData && weightData.value > 0) {
-              const unit = (weightData.unit || 'GRAMS').toUpperCase();
-              switch (unit) {
-                case 'KILOGRAMS': weightInGrams = Math.round(weightData.value * 1000); break;
-                case 'POUNDS': weightInGrams = Math.round(weightData.value * 453.592); break;
-                case 'OUNCES': weightInGrams = Math.round(weightData.value * 28.3495); break;
-                default: weightInGrams = Math.round(weightData.value);
-              }
-            }
-            return {
-              id: e.node.id.replace('gid://shopify/ProductVariant/', ''),
-              gid: e.node.id, sku: e.node.sku, price: e.node.price,
-              compare_at_price: e.node.compareAtPrice,
-              inventory_quantity: e.node.inventoryQuantity,
-              barcode: e.node.barcode, weight: weightInGrams,
-              image_id: e.node.image?.id?.replace('gid://shopify/ProductImage/', ''),
-              title: e.node.selectedOptions.map(o => o.value).join(' / '),
-              selectedOptions: e.node.selectedOptions
-            };
-          })
+          // v11.5: the variants that become feed items (E2) …
+          variants: emittedVariants,
+          // … and ALL variants in position order: image-range boundaries + same-colour borrow use these.
+          // GS_LEGACY_CAPS=1 → exactly the old first 100.
+          allVariants: LEGACY_CAPS ? emittedVariants : allVariants
         };
         allProducts.push(product);
-      });
+      }
       
       console.log(`   Page ${page}: ${products.length} products (Total: ${allProducts.length})`);
       const pageInfo = data.data?.products?.pageInfo;
@@ -1297,11 +1663,150 @@ async function fetchProductsWithOptions() {
       cursor = pageInfo.endCursor;
       page++;
       await new Promise(r => setTimeout(r, 300));
-    } catch (error) { console.error(`❌ Error: ${error.message}`); break; }
+    } catch (error) { console.error(`❌ Error: ${error.message}`); throw error; }   // v11.5 (B4): was `break` → partial catalog
   }
   
   console.log(`\n✅ Total products: ${allProducts.length}\n`);
+  console.log(`✅ Variants read: ${_fetchStats.variantsRead} (each product checked against variantsCount) · ` +
+    `follow-up variant pages: ${_fetchStats.followUpPages}\n`);
   return allProducts;
+}
+
+// ============================================
+// v11.5 (B2/B3): variant fields, shared by the products page and the follow-up pages
+// ============================================
+
+// ProductVariant.image is deprecated ("Use media instead") — the variant's own photo comes from media(first: 1)
+const VARIANT_NODE_FIELDS = `id sku price compareAtPrice inventoryQuantity barcode
+                  media(first: 1) { nodes { id } }
+                  selectedOptions { name value }
+                  inventoryItem { measurement { weight { value unit } } }`;
+
+const _fetchStats = { variantsRead: 0, followUpPages: 0 };
+
+// The MediaImage number of the variant's own photo (= images[].id), or null. Only a MediaImage gid counts.
+function variantMediaImageId(node) {
+  const id = (node && node.media && node.media.nodes && node.media.nodes[0] && node.media.nodes[0].id) || '';
+  return id.startsWith('gid://shopify/MediaImage/') ? id.slice('gid://shopify/MediaImage/'.length) : null;
+}
+
+// One mapping for every variant (was inline in the products loop; weight logic unchanged)
+function mapVariant(n) {
+  let weightInGrams = null;
+  const weightData = n.inventoryItem?.measurement?.weight;
+  if (weightData && weightData.value > 0) {
+    const unit = (weightData.unit || 'GRAMS').toUpperCase();
+    switch (unit) {
+      case 'KILOGRAMS': weightInGrams = Math.round(weightData.value * 1000); break;
+      case 'POUNDS': weightInGrams = Math.round(weightData.value * 453.592); break;
+      case 'OUNCES': weightInGrams = Math.round(weightData.value * 28.3495); break;
+      default: weightInGrams = Math.round(weightData.value);
+    }
+  }
+  return {
+    id: n.id.replace('gid://shopify/ProductVariant/', ''),
+    gid: n.id, sku: n.sku, price: n.price,
+    compare_at_price: n.compareAtPrice,
+    inventory_quantity: n.inventoryQuantity,
+    barcode: n.barcode, weight: weightInGrams,
+    media_id: variantMediaImageId(n),   // v11.5 (B5): replaces image_id (ProductImage id, never matched)
+    title: n.selectedOptions.map(o => o.value).join(' / '),
+    selectedOptions: n.selectedOptions
+  };
+}
+
+// The variants after the first page (first: 250 per page, cursor passed as a GraphQL variable). Any error throws.
+// v11.5 F6: BOUNDED — a cursor that does not advance, or more than ceil(variantsCount / 250) + 2 pages, throws.
+async function fetchRemainingVariants(productGid, after, expectedCount) {
+  const q = `query RemainingVariants($id: ID!, $after: String) {
+    product(id: $id) {
+      variants(first: 250, after: $after) {
+        pageInfo { hasNextPage endCursor }
+        edges {
+          node {
+            ${VARIANT_NODE_FIELDS}
+          }
+        }
+      }
+    }
+  }`;
+  const out = [];
+  let cursor = after;
+  const maxPages = Math.ceil((Number(expectedCount) || 0) / 250) + 2;
+  const usedCursors = new Set();
+  let pages = 0;
+  while (cursor) {
+    if (usedCursors.has(cursor)) throw new Error(`variants follow-up for ${productGid}: the cursor did not advance — fail-closed`);
+    usedCursors.add(cursor);
+    if (++pages > maxPages) {
+      throw new Error(`variants follow-up for ${productGid}: more than ${maxPages} pages for variantsCount ${expectedCount} — fail-closed`);
+    }
+    await new Promise(r => setTimeout(r, 300));
+    const { data } = await graphqlRequest(q, 4, { id: productGid, after: cursor });
+    if (data.errors) throw new Error(`variants follow-up for ${productGid}: GraphQL errors ${JSON.stringify(data.errors).slice(0, 300)}`);
+    const conn = data.data?.product?.variants;
+    if (!conn) throw new Error(`variants follow-up for ${productGid}: empty response`);
+    for (const e of conn.edges || []) out.push(mapVariant(e.node));
+    _fetchStats.followUpPages++;
+    if (conn.pageInfo?.hasNextPage && !conn.pageInfo.endCursor) throw new Error(`variants follow-up for ${productGid}: hasNextPage without a cursor`);
+    cursor = conn.pageInfo?.hasNextPage ? conn.pageInfo.endCursor : null;
+  }
+  return out;
+}
+
+// E2 — what a product with MORE than 100 variants emits (today only kremasto-monogramma-louloudi, 702).
+// ALL variants are always read and checked; only the emitted set differs:
+//   colour-stone     = DEFAULT (owner decision E2 = ii, Bill 21/09/2026): one item per (colour × stone), the in-stock
+//                      variant with the LOWEST variant id (louloudi: 27 items on 21/09)
+//   legacy           = KILL-SWITCH: the first 100 by position — byte-for-byte the item set before v11.5
+//   all              = every variant
+//   colour           = one item per colour: the in-stock variant with the lowest variant id
+// The chosen variants keep their position order. GS_LEGACY_CAPS=1 forces legacy.
+// v11.5 F7 / R3b: the mode applies ONLY to the PRODUCT IDS in GS_BIGPRODUCT_IDS (default 4448531972131 =
+// kremasto-monogramma-louloudi); the handle is only logged. Any OTHER product that grows past 100 variants (next
+// largest: kremasto-monogramma, 96) emits the FIRST 100 (legacy, as before v11.5) and logs a 🔴 line naming it:
+// no product grows the feed silently, and a renamed handle or an emptied list cannot turn 100 items into 702.
+function selectEmittedVariants(productId, handle, allVariants, mode = (LEGACY_CAPS ? 'legacy' : BIGPRODUCT_MODE),
+  quiet = false, productIds = BIGPRODUCT_IDS) {
+  if (allVariants.length <= LEGACY_VARIANT_CAP) return allVariants;
+  if (!productIds.has(String(productId))) {
+    const first = allVariants.slice(0, LEGACY_VARIANT_CAP);
+    if (!quiet) {
+      console.error(`   🔴 ${handle} (product ${productId}): ${allVariants.length} variants read (complete) · NOT in ` +
+        `GS_BIGPRODUCT_IDS → the FIRST ${first.length} emitted (legacy, ${first.filter(v => v.inventory_quantity > 0).length} in stock), ` +
+        `${allVariants.length - first.length} left out — add its id to GS_BIGPRODUCT_IDS to apply GS_BIGPRODUCT_MODE`);
+    }
+    return first;
+  }
+  let chosen;
+  if (mode === 'all') {
+    chosen = allVariants;
+  } else if (mode === 'colour-stone' || mode === 'colour') {
+    const stoneOf = v => {
+      const o = (v.selectedOptions || []).find(opt => {
+        const n = (opt.name || '').toLowerCase();
+        return n.includes('πέτρ') || n.includes('stone');
+      });
+      return o ? o.value : '';
+    };
+    const best = new Map();
+    for (const v of allVariants) {
+      if (!(v.inventory_quantity > 0)) continue;
+      const key = (extractVariantColor(v.selectedOptions) || '') + (mode === 'colour-stone' ? '\u0001' + stoneOf(v) : '');
+      const cur = best.get(key);
+      if (!cur || BigInt(v.id) < BigInt(cur.id)) best.set(key, v);
+    }
+    const keep = new Set([...best.values()].map(v => v.id));
+    chosen = allVariants.filter(v => keep.has(v.id));
+  } else {
+    chosen = allVariants.slice(0, LEGACY_VARIANT_CAP);
+  }
+  if (!quiet) {
+    console.log(`   📌 ${handle}: ${allVariants.length} variants read (complete) · GS_BIGPRODUCT_MODE=${mode}` +
+      `${LEGACY_CAPS ? ' (forced by GS_LEGACY_CAPS)' : ''} → ${chosen.length} emitted ` +
+      `(${chosen.filter(v => v.inventory_quantity > 0).length} in stock)`);
+  }
+  return chosen;
 }
 
 
@@ -1417,6 +1922,8 @@ async function fetchAllTranslations(products, locale) {
  * @param {Array} products - Products from fetchProductsWithOptions()
  * @returns {Object|null} { 'DE': { factor, currency }, 'GB': { factor, currency }, ... }
  */
+// v11.5: used ONLY with GS_LEGACY_PRICING=1 (kill-switch for B10, one cycle). Its factor-1.0 fallbacks
+// (EUR amounts labelled CHF/JPY/IDR) now THROW. Default path: fetchContextualPrices() below.
 async function fetchPriceAdjustments(products) {
   console.log('💰 Fetching contextual pricing for market-adjusted prices (v10)...\n');
 
@@ -1436,7 +1943,7 @@ async function fetchPriceAdjustments(products) {
 
   if (!refVariant) {
     console.error('❌ No in-stock variant found for price adjustment reference');
-    return null;
+    throw new Error('legacy pricing: no reference variant (fail-closed)');   // v11.5: was `return null` → factor 1.0
   }
 
   const refPrice = parseFloat(refVariant.price);
@@ -1469,13 +1976,13 @@ async function fetchPriceAdjustments(products) {
 
     if (data.errors) {
       console.error('⚠️ Contextual pricing API errors:', JSON.stringify(data.errors, null, 2));
-      return null;
+      throw new Error('legacy pricing: GraphQL errors (fail-closed)');   // v11.5: was `return null`
     }
 
     const variantData = data.data?.node;
     if (!variantData) {
       console.error('❌ No variant data returned from contextual pricing query');
-      return null;
+      throw new Error('legacy pricing: no variant data (fail-closed)');   // v11.5: was `return null`
     }
 
     const adjustments = {};
@@ -1499,9 +2006,8 @@ async function fetchPriceAdjustments(products) {
           unchangedCount++;
         }
       } else {
-        // Fallback: no contextual pricing — use catalog price as-is
-        adjustments[cc] = { factor: 1.0, currency: MARKETS[cc].currency };
-        console.log(`   ⚠️ ${cc}: No contextual pricing returned — using catalog price`);
+        // v11.5: NO fallback to the catalog price (it labelled EUR amounts in the local currency)
+        throw new Error(`legacy pricing: no contextual price returned for ${cc} (fail-closed)`);
       }
     }
 
@@ -1535,9 +2041,291 @@ async function fetchPriceAdjustments(products) {
 
   } catch (error) {
     console.error(`⚠️ Error fetching contextual pricing: ${error.message}`);
-    console.error('   ⚠️ Falling back to catalog prices (PRICES MAY NOT MATCH LANDING PAGES)\n');
-    return null;
+    throw error;   // v11.5: was a fallback to catalog prices (PRICES MAY NOT MATCH LANDING PAGES) — fail-closed now
   }
+}
+
+// ============================================
+// v11.5 (B10): PER-VARIANT CONTEXTUAL PRICES
+// ============================================
+
+/**
+ * The storefront's OWN price of every in-stock emitted variant, per feed country — Shopify's per-variant
+ * rounding included, which one reference ratio can never reproduce (non-EUR: 87,958 of 92,316 items differed
+ * from the storefront on 21/09; DE: 2,517 of 3,297 were 0.01-0.04 EUR too high).
+ * One query per 250 variants: nodes(ids) × one contextualPricing alias per UNIQUE market.country of the
+ * non-spoke MARKETS (36 countries; PR → US, CH_FR/CH_IT → CH, BE_FR → BE, CA_FR → CA).
+ * FAIL-CLOSED, all checked HERE, before any file is written:
+ *   - GraphQL errors, or still throttled after the retries           → throw
+ *   - a node missing / null / not the requested variant               → throw
+ *   - currencyCode ≠ the market currency of that country             → throw
+ *   - 0 in-stock variants to price (F4)                               → throw
+ *   - more than 0.5% of the variants null in ANY ONE country (F5)     → throw
+ *   - fewer null prices: that item is left out of THAT feed only, and every null pair is logged
+ * @returns {Map<string, Object>} variantId → { [countryCode]: { price: {amount, currencyCode}, compareAtPrice } }
+ */
+async function fetchContextualPrices(products) {
+  console.log('💰 Fetching per-variant contextual prices (v11.5)...\n');
+
+  const countryCurrency = {};
+  for (const [code, m] of Object.entries(MARKETS)) {
+    if (SPOKE_COUNTRIES.has(m.country)) continue;
+    if (countryCurrency[m.country] && countryCurrency[m.country] !== m.currency) {
+      throw new Error(`MARKETS: ${code} prices country ${m.country} in ${m.currency}, another market of it uses ${countryCurrency[m.country]}`);
+    }
+    countryCurrency[m.country] = m.currency;
+  }
+  const countries = Object.keys(countryCurrency);
+
+  const ids = [];
+  const seen = new Set();
+  for (const p of products) {
+    for (const v of p.variants) {
+      if (v.inventory_quantity > 0 && !seen.has(v.id)) { seen.add(v.id); ids.push(v.id); }
+    }
+  }
+  // v11.5 F4: nothing to price = nothing to list (e.g. every inventoryQuantity null after a lost read_inventory
+  // scope) — it used to print a green «0 variants» line and write 41 EMPTY feeds with exit 0
+  if (!ids.length) throw new Error('contextual prices: 0 in-stock variants to price — fail-closed, nothing written');
+
+  const aliases = countries.map(cc =>
+    `c${cc}: contextualPricing(context: { country: ${cc} }) { price { amount currencyCode } compareAtPrice { amount currencyCode } }`
+  ).join('\n          ');
+
+  const byVariant = new Map();
+  const nullPairs = [];
+  const nullByCountry = {};   // F5
+  const batches = Math.ceil(ids.length / CTX_BATCH);
+  for (let i = 0, b = 1; i < ids.length; i += CTX_BATCH, b++) {
+    const batch = ids.slice(i, i + CTX_BATCH);
+    const query = `{
+      nodes(ids: [${batch.map(id => `"gid://shopify/ProductVariant/${id}"`).join(', ')}]) {
+        ... on ProductVariant {
+          id
+          ${aliases}
+        }
+      }
+    }`;
+    const { data } = await graphqlRequest(query);   // throttled after the retries → throws (B4)
+    if (data.errors) throw new Error(`contextual prices batch ${b}/${batches}: GraphQL errors ${JSON.stringify(data.errors).slice(0, 300)}`);
+    const nodes = data.data?.nodes;
+    if (!Array.isArray(nodes) || nodes.length !== batch.length) {
+      throw new Error(`contextual prices batch ${b}/${batches}: asked ${batch.length} variants, got ${Array.isArray(nodes) ? nodes.length : 'no'} nodes`);
+    }
+    nodes.forEach((node, k) => {
+      const want = `gid://shopify/ProductVariant/${batch[k]}`;
+      if (!node || node.id !== want) throw new Error(`contextual prices batch ${b}/${batches}: node ${k} is ${node ? node.id : 'null'}, expected ${want}`);
+      const perCountry = {};
+      for (const cc of countries) {
+        const cp = node[`c${cc}`];
+        if (!cp || !cp.price) { nullPairs.push(`${batch[k]}/${cc}`); nullByCountry[cc] = (nullByCountry[cc] || 0) + 1; continue; }
+        if (cp.price.currencyCode !== countryCurrency[cc]) {
+          throw new Error(`contextual price of ${batch[k]} for ${cc} is in ${cp.price.currencyCode}, market currency is ${countryCurrency[cc]}`);
+        }
+        if (cp.compareAtPrice && cp.compareAtPrice.currencyCode !== countryCurrency[cc]) {
+          throw new Error(`contextual compare-at of ${batch[k]} for ${cc} is in ${cp.compareAtPrice.currencyCode}, market currency is ${countryCurrency[cc]}`);
+        }
+        perCountry[cc] = { price: cp.price, compareAtPrice: cp.compareAtPrice || null };
+      }
+      byVariant.set(batch[k], perCountry);
+    });
+    process.stdout.write(`\r   Contextual prices: ${Math.min(i + CTX_BATCH, ids.length)}/${ids.length} variants × ${countries.length} countries`);
+    await new Promise(r => setTimeout(r, 300));
+  }
+  console.log('');
+
+  const pairs = ids.length * countries.length;
+  if (nullPairs.length) {
+    console.error(`   ⚠️ ${nullPairs.length} of ${pairs} (variant/country) prices are NULL — those items are left out of that country's feeds:`);
+    for (const p of nullPairs) console.error(`      ${p}`);
+  }
+  // v11.5 F5: the limit is PER PRICING COUNTRY. One global 0.5% (593 of 118,692 pairs) let a single country's
+  // feed(s) silently lose up to 593 of 3,297 items (18%) with exit 0.
+  const maxNullPerCountry = ids.length * CTX_MAX_NULL_SHARE;
+  const overLimit = [];
+  for (const cc of countries) {
+    const n = nullByCountry[cc] || 0;
+    if (!n) continue;
+    const over = n > maxNullPerCountry;
+    if (over) overLimit.push(`${cc} ${n}`);
+    console.error(`      ${cc}: ${n} of ${ids.length} null (${(100 * n / ids.length).toFixed(2)}%)${over ? ` > ${CTX_MAX_NULL_SHARE * 100}%` : ''}`);
+  }
+  if (overLimit.length) {
+    throw new Error(`contextual prices: more than ${CTX_MAX_NULL_SHARE * 100}% of ${ids.length} variants null in ` +
+      `${overLimit.join(', ')} — fail-closed, nothing written`);
+  }
+  console.log(`   ✅ ${ids.length} variants × ${countries.length} countries = ${pairs} prices (${nullPairs.length} null) in ${batches} queries\n`);
+  return byVariant;
+}
+
+// v11.5 F4: a FLOOR on what is emitted. A collapsed catalog (lost scope, a filter gone wrong) must stop the run
+// instead of shipping near-empty feeds. Counted over the emitted variants (E2 applied), in stock. Called in both
+// CLI paths right after the products are read, before prices and before any write.
+function assertEmittedVolume(products) {
+  let inStock = 0;
+  for (const p of products) for (const v of p.variants) if (v.inventory_quantity > 0) inStock++;
+  console.log(`✅ Emitted in-stock variants: ${inStock} (floor GS_MIN_ITEMS=${MIN_ITEMS})\n`);
+  if (inStock < MIN_ITEMS) {
+    throw new Error(`only ${inStock} emitted in-stock variants (< GS_MIN_ITEMS=${MIN_ITEMS}) — fail-closed, nothing written`);
+  }
+}
+
+// B10 switch point, called BEFORE the write loop: { byVariant } (default) | { adjustments } (GS_LEGACY_PRICING=1)
+async function fetchPricing(products) {
+  if (LEGACY_PRICING) {
+    const adjustments = await fetchPriceAdjustments(products);
+    for (const [code, m] of Object.entries(MARKETS)) {
+      if (!SPOKE_COUNTRIES.has(m.country) && !adjustments[code]) throw new Error(`legacy pricing: no adjustment for market ${code} (fail-closed)`);
+    }
+    return { adjustments, byVariant: null };
+  }
+  return { adjustments: null, byVariant: await fetchContextualPrices(products) };
+}
+
+
+// ============================================
+// v11.5 (B5-B9): COLOUR-CORRECT IMAGES
+// ============================================
+
+/**
+ * Product-level image plan. A variant OWNS the image that its ProductVariant.media points at; the RANGE of an
+ * owned image runs up to the next owned image (the v11.2 boundary heuristic, now actually fed with matching ids).
+ * Boundaries come from ALL variants (out-of-stock and not-emitted included). GS_NO_VARIANTMEDIA=1 ⇒ no owned
+ * images at all ⇒ every item takes the fallback path = today's behaviour.
+ */
+function buildImagePlan(product) {
+  const images = product.images || [];
+  const rangeVariants = product.allVariants || product.variants || [];
+  const idxById = new Map();
+  images.forEach((img, idx) => { if (!idxById.has(img.id)) idxById.set(img.id, idx); });
+
+  const ownerRaws = new Map();   // owned image index → Set of the raw colours of the variants that own it
+  if (VARIANTMEDIA_ON) {
+    for (const v of rangeVariants) {
+      if (!v.media_id || !idxById.has(v.media_id)) continue;
+      const idx = idxById.get(v.media_id);
+      if (!ownerRaws.has(idx)) ownerRaws.set(idx, new Set());
+      ownerRaws.get(idx).add(extractVariantColor(v.selectedOptions) || '');
+    }
+  }
+  const starts = [...ownerRaws.keys()].sort((a, b) => a - b);
+  const rangeByMediaId = new Map();                   // owned image id → images[start, next owned)
+  const rangeRawsByIdx = new Array(images.length).fill(null);
+  for (let i = 0; i < starts.length; i++) {
+    const start = starts[i];
+    const end = i + 1 < starts.length ? starts[i + 1] : images.length;
+    rangeByMediaId.set(images[start].id, images.slice(start, end));
+    for (let k = start; k < end; k++) rangeRawsByIdx[k] = ownerRaws.get(start);
+  }
+
+  // Same-colour sibling borrow, TIERED (v11.5 R3a): a variant without a photo of its own takes the range of the
+  // FIRST variant (position order) that has one and
+  //   tier 1 (borrowByKey): the same raw colour AND every other colour-like option (stone, pearl, zircon …), F1;
+  //   tier 2 (borrowByRaw): else the same raw colour only = the round-1 sibling (right metal, the stone may differ);
+  //   tier 3: else no sibling ⇒ the fallback path (images[0], E1 option A).
+  // Measured 21/09: without tier 2, 11 items per feed fell back to images[0] and 6 of them showed ANOTHER metal.
+  const borrowByKey = new Map();
+  const borrowByRaw = new Map();
+  const raws = new Set();
+  for (const v of rangeVariants) {
+    const raw = extractVariantColor(v.selectedOptions);
+    if (!raw) continue;
+    raws.add(raw);
+    if (VARIANTMEDIA_ON && v.media_id && rangeByMediaId.has(v.media_id)) {
+      const range = rangeByMediaId.get(v.media_id);
+      if (!borrowByRaw.has(raw)) borrowByRaw.set(raw, range);
+      const key = borrowKeyOf(v.selectedOptions);
+      if (!borrowByKey.has(key)) borrowByKey.set(key, range);
+    }
+  }
+
+  // E1-B gate (opt-in): distinct colours among the IN-STOCK emitted variants, normalised as BestPrice does
+  const gateColours = new Set();
+  if (APPLY_PHOTOGATE) {
+    for (const v of product.variants || []) {
+      if (v.inventory_quantity > 0) gateColours.add(gateColourOf(extractVariantColor(v.selectedOptions), product));
+    }
+  }
+
+  return {
+    images, rangeByMediaId, rangeRawsByIdx, borrowByKey, borrowByRaw, gateColours,
+    ownedIdx: new Set(starts),
+    firstOwnedIdx: starts.length ? starts[0] : images.length,
+    multiColour: raws.size >= 2,
+  };
+}
+
+// BestPrice's colour of a group (bestprice L865) — used ONLY by the opt-in E1-B gate
+function gateColourOf(raw, product) {
+  return getGreekColor(raw) || getGreekColor(product.metafields?.color) || 'ασημί';
+}
+
+/**
+ * Item-level image choice. Returns { path, variantImage, additional, lifestyle, guardFired, pkgRemoved,
+ * exclRemoved, lifestyleBlocked }. path: own | borrow | fallback | fallback-trimmed.
+ *  - own / borrow: image_link = range[0]; additional = the rest of the range.
+ *  - fallback (no photo of this colour): image_link = images[0] (E1 option A, as today); additional = all other
+ *    images, EXCEPT in a product with ≥ 2 raw colours (B8): only the images before the first owned image.
+ *  - B6 guard: image_link is never a packaging photo (next non-packaging image in the range, else in the product).
+ *  - additional: cut to GS_EXTRA_IMAGES_CAP (9) FIRST, then drop packaging (B6) and listed photos (B7); never refilled.
+ *  - B9 lifestyle = images[1] only if not the image_link, not packaging, not listed for this colour and not
+ *    inside another colour's range.
+ */
+function pickItemImages(plan, handle, variant, raw) {
+  const images = plan.images;
+  const mainImage = images[0]?.src || '';
+  const own = (VARIANTMEDIA_ON && variant.media_id && plan.rangeByMediaId.get(variant.media_id)) || null;
+  // R3a tiered borrow: tier 1 = same metal + every colour-like option; tier 2 = same metal only (round 1);
+  // GS_BORROW_METAL_ONLY=1 = tier 2 only. No sibling of that metal ⇒ the fallback path (tier 3, borrowTier 0).
+  const tier1 = (!own && VARIANTMEDIA_ON && raw && !BORROW_METAL_ONLY && plan.borrowByKey.get(borrowKeyOf(variant.selectedOptions))) || null;
+  const tier2 = (!own && !tier1 && VARIANTMEDIA_ON && raw && plan.borrowByRaw.get(raw)) || null;
+  const borrowed = tier1 || tier2;
+  const borrowTier = tier1 ? 1 : tier2 ? 2 : 0;
+  const range = own || borrowed;
+
+  let path, variantImage, candidates;
+  if (range) {
+    path = own ? 'own' : 'borrow';
+    variantImage = range[0]?.src || mainImage;
+    candidates = range;
+  } else {
+    variantImage = mainImage;
+    const trim = OTHERCOLOUR_ON && plan.multiColour && plan.firstOwnedIdx < images.length;
+    path = trim ? 'fallback-trimmed' : 'fallback';
+    candidates = trim ? images.slice(0, plan.firstOwnedIdx) : images;
+  }
+
+  let guardFired = false;
+  if (isPackagingImage(variantImage)) {
+    const next = candidates.find(img => img.src !== variantImage && !isPackagingImage(img.src))
+      || images.find(img => img.src !== variantImage && !isPackagingImage(img.src));
+    if (next) { variantImage = next.src; guardFired = true; }
+  }
+
+  const raws = raw ? [raw] : [];
+  const cut = candidates.map(img => img.src).filter(src => src !== variantImage).slice(0, EXTRA_IMAGES_CAP);
+  const noPkg = cut.filter(src => !isPackagingImage(src));
+  const additional = noPkg.filter(src => !isExcludedExtra(handle, raws, src));
+
+  let lifestyle = images[1]?.src || null;
+  let lifestyleBlocked = null;
+  let lifestyleSame = false;   // F9: images[1] IS this item's image_link (counted separately from the guard's bans)
+  if (lifestyle && lifestyle === variantImage) {
+    lifestyle = null;
+    lifestyleSame = true;
+  } else if (lifestyle && LIFESTYLE_GUARD_ON) {
+    const owners = plan.rangeRawsByIdx[1];
+    if (isPackagingImage(lifestyle)) lifestyleBlocked = 'packaging';
+    else if (isExcludedExtra(handle, raws, lifestyle)) lifestyleBlocked = 'photoexcl';
+    // I6 = the I5 bans: another colour's OWN photo, or any photo inside another colour's RANGE
+    else if (owners && !owners.has(raw || '')) lifestyleBlocked = plan.ownedIdx.has(1) ? 'other-colour-own' : 'other-colour-range';
+    if (lifestyleBlocked) lifestyle = null;
+  }
+
+  return {
+    path, variantImage, additional, lifestyle, guardFired, lifestyleBlocked, lifestyleSame, borrowTier,
+    pkgRemoved: cut.length - noPkg.length, exclRemoved: noPkg.length - additional.length,
+  };
 }
 
 
@@ -1545,13 +2333,18 @@ async function fetchPriceAdjustments(products) {
 // XML FEED GENERATION (v6 with dynamic shipping)
 // ============================================
 
-function generateFeedForMarket(products, translations, market, shippingRates, priceAdj) {
-  // v10: Price adjustment factor and currency from contextualPricing
+function generateFeedForMarket(products, translations, market, shippingRates, priceAdj, ctxPrices) {
+  // v10 (GS_LEGACY_PRICING=1 only): price adjustment factor and currency from ONE reference variant.
+  // v11.5: the factor-1.0 fallback is gone — both price sources are validated before the write loop.
+  if (LEGACY_PRICING && !priceAdj) throw new Error(`legacy pricing: no price adjustment for ${market.name} (${market.country})`);
+  if (!LEGACY_PRICING && !ctxPrices) throw new Error(`no contextual prices for ${market.name} (${market.country})`);
   const priceFactor = priceAdj ? priceAdj.factor : 1.0;
   const priceCurrency = priceAdj ? priceAdj.currency : market.currency;
 
   console.log(`🔧 Generating XML feed for ${market.name} (${market.country})...`);
-  if (Math.abs(priceFactor - 1.0) > 0.001 || priceCurrency !== 'EUR') {
+  if (!LEGACY_PRICING) {
+    console.log(`   💰 Price: contextual, per variant (country ${market.country}, ${market.currency})`);
+  } else if (Math.abs(priceFactor - 1.0) > 0.001 || priceCurrency !== 'EUR') {
     console.log(`   💰 Price: ×${priceFactor.toFixed(6)} → ${priceCurrency}`);
   }
   console.log('');
@@ -1561,7 +2354,13 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
     inStock: 0, outOfStock: 0, noImage: 0, translatedVariants: 0,
     totalVariants: 0, withGender: 0, withColor: 0, withMaterial: 0,
     withWeight: 0, withSize: 0, withShipping: 0, withVideo: 0,
-    productsWithVideo: 0, categoryBreakdown: {}
+    productsWithVideo: 0, categoryBreakdown: {},
+    // v11.5
+    imgPath: { own: 0, borrow: 0, fallback: 0, 'fallback-trimmed': 0 }, pkgRemoved: 0, exclRemoved: 0,
+    imageLinkGuard: 0, droppedEntries: 0, gateDropped: 0, gateSavedByLabel: 0,
+    lifestyleBlocked: { packaging: 0, photoexcl: 0, 'other-colour-own': 0, 'other-colour-range': 0 },
+    priceOmitted: 0, onSale: 0,
+    borrowTier1: 0, borrowTier2: 0, lifestyleEmitted: 0, lifestyleNone: 0, lifestyleSame: 0   // R3a / F9
   };
 
   // v6: Check if we have shipping for this country
@@ -1581,25 +2380,10 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
     if (!mainImage) { stats.noImage++; return; }
 
     // v11.2: Pre-compute image ranges per variant for color-correct additional images
-    // Fix: match via productImageId (ProductImage GID) not MediaImage GID
-    const allVariantImageIds = new Set(
-      variants.map(v => v.image_id).filter(Boolean)
-    );
-    const variantImageIndices = [];
-    images.forEach((img, idx) => {
-      if (img.productImageId && allVariantImageIds.has(img.productImageId)) {
-        variantImageIndices.push({ id: img.productImageId, idx });
-      }
-    });
-    variantImageIndices.sort((a, b) => a.idx - b.idx);
-    const imageRangeByVariantImageId = {};
-    for (let i = 0; i < variantImageIndices.length; i++) {
-      const start = variantImageIndices[i].idx;
-      const end = i + 1 < variantImageIndices.length
-        ? variantImageIndices[i + 1].idx
-        : images.length;
-      imageRangeByVariantImageId[variantImageIndices[i].id] = images.slice(start, end);
-    }
+    // v11.5 (B5): the v11.2 match compared a ProductImage id with MediaImage.image.id — which is an
+    // ImageSource id — so it matched 0 of 2,002 variants and every item fell back to images[0] + all images.
+    // images[].productImageId is therefore NOT used; matching is variant.media_id ↔ images[].id (MediaImage).
+    const plan = buildImagePlan(product);
 
     const prodTrans = translations.products[product.id] || {};
     // v7.9: Fallback chain — target locale → English → Greek (original)
@@ -1619,6 +2403,26 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
     
     variants.forEach(variant => {
       if (variant.inventory_quantity <= 0) { stats.outOfStock++; return; }
+
+      // v11.5: every decision that can LEAVE THIS ITEM OUT is taken here, before any stat counts it
+      const rawColour = extractVariantColor(variant.selectedOptions);
+      const pick = pickItemImages(plan, product.handle, variant, rawColour);
+      if (APPLY_DROPENTRIES && isDroppedEntry(product.handle, rawColour ? [rawColour] : [])) {
+        stats.droppedEntries++;   // PHOTOEXCL dropEntries (opt-in)
+        return;
+      }
+      if (APPLY_PHOTOGATE && pick.path.startsWith('fallback') && plan.gateColours.size > 1) {
+        // E1-B (opt-in): no photo of this colour in a multi-colour product ⇒ not listed, unless labelled
+        const want = GATE_COLOUR_TO_LABEL[gateColourOf(rawColour, product)];
+        const lab = jphotoColourOf(pick.variantImage);
+        if (lab && want && lab === want) stats.gateSavedByLabel++;
+        else { stats.gateDropped++; return; }
+      }
+      const itemCp = LEGACY_PRICING ? null : (ctxPrices.get(variant.id) || {})[market.country];
+      if (!LEGACY_PRICING && !(itemCp && itemCp.price)) {
+        stats.priceOmitted++;     // null contextual price (≤ 0.5%, each pair logged at fetch time)
+        return;
+      }
       
       stats.inStock++;
       stats.totalVariants++;
@@ -1659,30 +2463,38 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
       if (variant.weight) stats.withWeight++;
       
       // v11.2: Color-correct images — use variant boundary heuristic
-      let variantImage;
-      let variantAdditionalImages;
-
-      if (variant.image_id && imageRangeByVariantImageId[variant.image_id]) {
-        const range = imageRangeByVariantImageId[variant.image_id];
-        variantImage = range[0]?.src || mainImage;
-        variantAdditionalImages = range
-          .map(img => img.src)
-          .filter(src => src !== variantImage)
-          .slice(0, 9);
-      } else {
-        // Fallback: use all product images (no color-correct grouping)
-        variantImage = mainImage;
-        variantAdditionalImages = images
-          .map(img => img.src)
-          .filter(src => src !== mainImage)
-          .slice(0, 9);
-      }
+      // v11.5 (B5-B9): decided by pickItemImages() above (own photo → same-colour sibling → fallback)
+      const variantImage = pick.variantImage;
+      const variantAdditionalImages = pick.additional;
+      stats.imgPath[pick.path]++;
+      stats.pkgRemoved += pick.pkgRemoved;
+      stats.exclRemoved += pick.exclRemoved;
+      if (pick.guardFired) stats.imageLinkGuard++;
+      if (pick.lifestyleBlocked) stats.lifestyleBlocked[pick.lifestyleBlocked]++;
+      if (pick.borrowTier === 1) stats.borrowTier1++;
+      else if (pick.borrowTier === 2) stats.borrowTier2++;
+      if (pick.lifestyle) stats.lifestyleEmitted++;
+      else if (pick.lifestyleSame) stats.lifestyleSame++;
+      else if (!pick.lifestyleBlocked) stats.lifestyleNone++;
 
       const translatedHandle = prodTrans.handle || enFallback.handle || product.handle;
       const productUrl = buildProductUrl(translatedHandle, variant.id, market);
-      // v10: Apply market-specific price adjustment (VAT + currency conversion)
-      const adjustedVariantPrice = Math.round(parseFloat(variant.price) * priceFactor * 100) / 100;
-      const price = formatPrice(adjustedVariantPrice, priceCurrency);
+      // v11.5 (B10): the storefront's OWN contextual price for this variant in this country (its rounding
+      // included); on sale, g:price = the regular (compare-at) price and g:sale_price = what the customer pays.
+      // GS_LEGACY_PRICING=1 → v10: catalog price × one reference ratio per market (today's behaviour).
+      let adjustedVariantPrice, price, hasSale, salePrice = null;
+      if (LEGACY_PRICING) {
+        // v10: Apply market-specific price adjustment (VAT + currency conversion)
+        adjustedVariantPrice = Math.round(parseFloat(variant.price) * priceFactor * 100) / 100;
+        price = formatPrice(adjustedVariantPrice, priceCurrency);
+        hasSale = variant.compare_at_price && parseFloat(variant.compare_at_price) > parseFloat(variant.price);
+      } else {
+        adjustedVariantPrice = parseFloat(itemCp.price.amount);
+        hasSale = !!(itemCp.compareAtPrice && parseFloat(itemCp.compareAtPrice.amount) > adjustedVariantPrice);
+        price = formatPrice(hasSale ? itemCp.compareAtPrice.amount : itemCp.price.amount, itemCp.price.currencyCode);
+        if (hasSale) salePrice = formatPrice(itemCp.price.amount, itemCp.price.currencyCode);
+      }
+      if (hasSale) stats.onSale++;
 
       // Build XML item
       let item = `    <item>
@@ -1696,8 +2508,10 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
       variantAdditionalImages.forEach(img => { item += `\n      <g:additional_image_link>${img}</g:additional_image_link>`; });
 
       // Lifestyle image (always 2nd image in Shopify)
-      const lifestyleImage = images[1]?.src;
-      if (lifestyleImage && lifestyleImage !== variantImage) {
+      // v11.5 (B9): pick.lifestyle = images[1] unless it is the image_link, packaging, listed for this colour
+      // or inside another colour's range (GS_NO_LIFESTYLE_GUARD=1 → only the image_link check, as before)
+      const lifestyleImage = pick.lifestyle;
+      if (lifestyleImage) {
         item += `\n      <g:lifestyle_image_link>${lifestyleImage}</g:lifestyle_image_link>`;
       }
 
@@ -1776,15 +2590,20 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
       item += `\n      <g:custom_label_2>${gender}</g:custom_label_2>`;
       // label_3: has video
       item += `\n      <g:custom_label_3>${product.videos?.length > 0 ? 'has-video' : 'no-video'}</g:custom_label_3>`;
-      // label_4: has sale
-      const hasSale = variant.compare_at_price && parseFloat(variant.compare_at_price) > parseFloat(variant.price);
+      // label_4: has sale (v11.5: hasSale comes from the same price source as g:price, see B10 above)
       item += `\n      <g:custom_label_4>${hasSale ? 'on-sale' : 'regular-price'}</g:custom_label_4>`;
 
-      // Sale price handling (v10: both prices adjusted with same market factor)
-      if (variant.compare_at_price && parseFloat(variant.compare_at_price) > parseFloat(variant.price)) {
-        item += `\n      <g:sale_price>${price}</g:sale_price>`;
-        const adjustedCompareAt = Math.round(parseFloat(variant.compare_at_price) * priceFactor * 100) / 100;
-        item += `\n      <g:price>${formatPrice(adjustedCompareAt, priceCurrency)}</g:price>`;
+      if (LEGACY_PRICING) {
+        // Sale price handling (v10: both prices adjusted with same market factor) — kept verbatim for
+        // GS_LEGACY_PRICING=1; note that it emits a SECOND <g:price>
+        if (variant.compare_at_price && parseFloat(variant.compare_at_price) > parseFloat(variant.price)) {
+          item += `\n      <g:sale_price>${price}</g:sale_price>`;
+          const adjustedCompareAt = Math.round(parseFloat(variant.compare_at_price) * priceFactor * 100) / 100;
+          item += `\n      <g:price>${formatPrice(adjustedCompareAt, priceCurrency)}</g:price>`;
+        }
+      } else if (hasSale) {
+        // v11.5 (B10): exactly ONE <g:price> (the regular price, emitted above) + <g:sale_price>
+        item += `\n      <g:sale_price>${salePrice}</g:sale_price>`;
       }
 
       // v6 NEW: Add shipping tag
@@ -1826,6 +2645,24 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
   console.log(`      With size: ${stats.withSize} variants`);
   console.log(`      Translated variants: ${stats.translatedVariants}/${stats.totalVariants}`);
   console.log(`      Out-of-stock (skipped): ${stats.outOfStock}`);
+  // v11.5
+  const ip = stats.imgPath;
+  console.log(`      Image path: own ${ip.own} · same-colour sibling ${ip.borrow} · fallback ${ip.fallback} · fallback trimmed (B8) ${ip['fallback-trimmed']}`);
+  // R3a: every sibling borrow is tier 1 or tier 2, so the two must add up to the borrow count above
+  const tierSum = stats.borrowTier1 + stats.borrowTier2;
+  console.log(`      Sibling borrow tiers (R3a): 1 same metal + same stone / pearl / zircon colour ${stats.borrowTier1} · ` +
+    `2 same metal only (${BORROW_METAL_ONLY ? 'GS_BORROW_METAL_ONLY=1: every borrow' : 'another stone / pearl / zircon colour'}) ` +
+    `${stats.borrowTier2} · 3 no sibling of that metal → fallback ` +
+    `${ip.fallback + ip['fallback-trimmed']}${tierSum === ip.borrow ? '' : ' 🔴 MISMATCH'}`);
+  const lb = stats.lifestyleBlocked;
+  console.log(`      Additional images removed: packaging ${stats.pkgRemoved} · listed other colour ${stats.exclRemoved} · image_link guard fired ${stats.imageLinkGuard}`);
+  console.log(`      Lifestyle blocked: packaging ${lb.packaging} · listed ${lb.photoexcl} · another colour's own photo ${lb['other-colour-own']} · inside another colour's range ${lb['other-colour-range']}`);
+  // F9: every listed item falls in exactly ONE lifestyle outcome — the parts must add up to the in-stock items
+  const lbSum = lb.packaging + lb.photoexcl + lb['other-colour-own'] + lb['other-colour-range'];
+  const lifeSum = stats.lifestyleEmitted + stats.lifestyleNone + stats.lifestyleSame + lbSum;
+  console.log(`      Lifestyle outcome: emitted ${stats.lifestyleEmitted} · no 2nd image ${stats.lifestyleNone} · 2nd image = its image_link ${stats.lifestyleSame} · ` +
+    `blocked ${lbSum} (reasons above) · total ${lifeSum} of ${stats.inStock} items${lifeSum === stats.inStock ? '' : ' 🔴 MISMATCH'}`);
+  console.log(`      Left out: dropEntries ${stats.droppedEntries} · E1 gate ${stats.gateDropped} (saved by label ${stats.gateSavedByLabel}) · null price ${stats.priceOmitted} · on sale ${stats.onSale}`);
   console.log('');
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -1867,16 +2704,19 @@ async function generateFeed(marketCode) {
   console.log(`   Currency: ${market.currency}`);
   console.log(`${'='.repeat(60)}\n`);
 
+  assertSharedJson();   // v11.5 F8: before any request
+
   // v6: Fetch shipping rates first
   const shippingRates = await fetchShippingRates();
 
   // Fetch products
   const products = await fetchProductsWithOptions();
-  if (products.length === 0) { console.error('❌ No products found'); return; }
+  if (products.length === 0) { console.error('❌ No products found'); throw new Error('no products — nothing written (fail-closed)'); }
+  assertEmittedVolume(products);   // v11.5 F4
 
-  // v10: Fetch contextual pricing for market-adjusted prices
-  const priceAdjustments = await fetchPriceAdjustments(products);
-  const priceAdj = priceAdjustments ? priceAdjustments[marketCode.toUpperCase()] : null;
+  // v11.5 (B10): per-variant contextual prices (default) | v10 reference ratio (GS_LEGACY_PRICING=1)
+  const pricing = await fetchPricing(products);
+  const priceAdj = pricing.adjustments ? pricing.adjustments[marketCode.toUpperCase()] : null;
 
   // Fetch translations
   let translations = { products: {}, optionValues: {} };
@@ -1887,7 +2727,7 @@ async function generateFeed(marketCode) {
   }
 
   // v6+v10: Generate XML with shipping and market-adjusted prices
-  const { xml, stats } = generateFeedForMarket(products, translations, market, shippingRates, priceAdj);
+  const { xml, stats } = generateFeedForMarket(products, translations, market, shippingRates, priceAdj, pricing.byVariant);
 
   // Ensure output directory exists
   if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
@@ -1898,11 +2738,13 @@ async function generateFeed(marketCode) {
   const filename = `emmanuela-${feedKey}.xml`;
   const filepath = path.join(OUTPUT_DIR, filename);
   fs.writeFileSync(filepath, xml, 'utf8');
+  _filesWritten++;
 
   const date = new Date().toISOString().split('T')[0];
   const datedFilename = `emmanuela-${feedKey}-${date}.xml`;
   const datedFilepath = path.join(OUTPUT_DIR, datedFilename);
   fs.writeFileSync(datedFilepath, xml, 'utf8');
+  _filesWritten++;
 
   console.log(`\n✅ Feed saved:`);
   console.log(`   ${filepath}`);
@@ -1916,15 +2758,19 @@ async function generateAllFeeds() {
   const feedCount = Object.keys(MARKETS).length - SPOKE_COUNTRIES.size;
   console.log(`\n🌍 GENERATING FEEDS FOR ${feedCount} MARKETS (v9 hub-and-spoke: ${SPOKE_COUNTRIES.size} spoke countries via hub shipping)\n`);
   
+  assertSharedJson();   // v11.5 F8: before any request
+
   // v6: Fetch shipping rates ONCE for all markets
   const shippingRates = await fetchShippingRates();
   
   // Fetch products once
   const products = await fetchProductsWithOptions();
-  if (products.length === 0) { console.error('❌ No products found'); return; }
+  if (products.length === 0) { console.error('❌ No products found'); throw new Error('no products — nothing written (fail-closed)'); }
+  assertEmittedVolume(products);   // v11.5 F4
 
-  // v10: Fetch contextual pricing for market-adjusted prices (ONE API call for all markets)
-  const priceAdjustments = await fetchPriceAdjustments(products);
+  // v11.5 (B10): ALL prices are fetched and validated HERE, before the write loop — a failure writes nothing.
+  // Default: per-variant contextual prices · GS_LEGACY_PRICING=1: v10 reference ratio (ONE API call)
+  const pricing = await fetchPricing(products);
 
   // Group markets by locale
   const marketsByLocale = {};
@@ -1979,15 +2825,16 @@ async function generateAllFeeds() {
         console.log(`   🔗 Hub feed — includes shipping for: ${HUB_SPOKES[market.code].join(', ')}`);
       }
 
-      // v6+v10: Pass shipping rates and price adjustments to generator
-      const priceAdj = priceAdjustments ? priceAdjustments[market.code] : null;
-      const { xml, stats } = generateFeedForMarket(products, translations, market, shippingRates, priceAdj);
+      // v6+v10: Pass shipping rates and price adjustments to generator (v11.5: or the contextual prices)
+      const priceAdj = pricing.adjustments ? pricing.adjustments[market.code] : null;
+      const { xml, stats } = generateFeedForMarket(products, translations, market, shippingRates, priceAdj, pricing.byVariant);
 
       // v11: Use feedSuffix for multi-language country feeds (e.g., ch-fr, be-fr)
       const feedKey = market.feedSuffix || market.country.toLowerCase();
       const filename = `emmanuela-${feedKey}.xml`;
       const filepath = path.join(OUTPUT_DIR, filename);
       fs.writeFileSync(filepath, xml, 'utf8');
+      _filesWritten++;
 
       const hasShipping = shippingRates && shippingRates[market.country] ? '✓' : '✗';
       results.push({ market: market.code, items: stats.inStock, file: filename, shipping: hasShipping });
@@ -2057,6 +2904,190 @@ function listMarkets() {
   console.log('   node google-shopping-feed-v7.js list   # This list\n');
 }
 
+// ============================================
+// v11.5: OFFLINE SELF-TEST — node google-shopping-feed-v7.js selftest   (no token, no network, writes nothing)
+// Known positives AND negatives for every matcher this version adds; exit code 1 on any failure.
+// ============================================
+function runSelftest() {
+  let pass = 0, fail = 0;
+  const skipped = [];
+  const t = (name, cond) => { if (cond) pass++; else { fail++; console.error(`   ✗ FAIL: ${name}`); } };
+  const cdn = f => `https://cdn.shopify.com/s/files/1/0277/0183/7859/files/${f}?v=1767371094`;
+  console.log('\n🧪 v11.5 self-test (offline)\n');
+
+  // 1. PKGFILTER (B6)
+  if (PKG_ON) {
+    const fromShared = [...PKG_FILES].filter(f => !PKG_EXTRA.includes(f) && !GS_PKG_EXTRA_LOCAL.includes(f));
+    const listed = fromShared.find(f => !PKG_NAME_RE.test(f));
+    t('PKGFILTER: the shared list is loaded', fromShared.length > 0);
+    t('PKGFILTER: a file of the shared list, as a CDN URL with ?v=', !!listed && isPackagingImage(cdn(listed)));
+    t('PKGFILTER: name regex', isPackagingImage(cdn('925-sterling-silver-jewelry-gift-packaging-emmanuela-handcrafted.jpg')));
+    t('PKGFILTER: name regex, other case / separator', isPackagingImage(cdn('NEW_Gift_Packaging_2027.JPG')));
+    t('PKGFILTER: PKG_EXTRA', isPackagingImage(cdn(PKG_EXTRA[0])));
+    t('PKGFILTER: GS_PKG_EXTRA_LOCAL (F2), any case', GS_PKG_EXTRA_LOCAL.length > 0
+      && isPackagingImage(cdn('ashmenio-kremasto-mentagion-monogramma-apo-ashmi-925-kosmhmata-emmanuela-413823.jpg'))
+      && GS_PKG_EXTRA_LOCAL.every(f => isPackagingImage(cdn(f)) && isPackagingImage(cdn(f.toUpperCase()))));
+    t('PKGFILTER: the neighbour of a local entry is NOT packaging',
+      !isPackagingImage(cdn('ashmenio-kremasto-mentagion-monogramma-apo-ashmi-925-kosmhmata-emmanuela-413824.jpg')));
+    t('PKGFILTER: an ordinary product photo is NOT packaging',
+      !isPackagingImage(cdn('ashmenia-karfwta-skoylarikia-mikra-huggies-apo-ashmi-925-kosmhmata-emmanuela-731970.jpg')));
+    t('PKGFILTER: the bare word "packaging" is NOT enough', !isPackagingImage(cdn('packaging.jpg')));
+    t('PKGFILTER: empty URL', !isPackagingImage(''));
+  } else skipped.push('PKGFILTER (GS_NO_PKGFILTER=1)');
+
+  // 2. PHOTOEXCL (B7) — the positive case is taken from the shared JSON itself
+  if (PHOTOEXCL_ON) {
+    const h = Object.keys(PHOTOEXCL.extras).find(k => Object.keys(PHOTOEXCL.extras[k] || {}).length);
+    const raw = h && Object.keys(PHOTOEXCL.extras[h])[0];
+    const f = raw && (PHOTOEXCL.extras[h][raw] || [])[0];
+    t('PHOTOEXCL: the shared JSON is loaded', !!f);
+    if (f) {
+      t('PHOTOEXCL: listed (handle, raw colour, file) → removed', isExcludedExtra(h, [raw], cdn(f)));
+      t('PHOTOEXCL: same file, another colour → kept', !isExcludedExtra(h, ['__another colour__'], cdn(f)));
+      t('PHOTOEXCL: same file, another product → kept', !isExcludedExtra('__another-handle__', [raw], cdn(f)));
+      t('PHOTOEXCL: item without a raw colour → kept', !isExcludedExtra(h, [], cdn(f)));
+      t('PHOTOEXCL: unlisted file → kept', !isExcludedExtra(h, [raw], cdn('unlisted-' + f)));
+    }
+    const dh = Object.keys(PHOTOEXCL.dropEntries)[0];
+    if (dh) {
+      t('dropEntries: listed (handle, raw colour) → dropped', isDroppedEntry(dh, [PHOTOEXCL.dropEntries[dh][0]]));
+      t('dropEntries: another colour → kept', !isDroppedEntry(dh, ['__another colour__']));
+    }
+  } else skipped.push('PHOTOEXCL (GS_NO_PHOTOEXCL=1)');
+  t('F8: the enabled shared JSONs are present and well formed', _sharedJsonProblems.length === 0);
+
+  // 3. raw colour (the PHOTOEXCL key) and the variant's own media id (B5)
+  t('colour: «Χρώμα» wins over «Χρώμα πέτρας»',
+    extractVariantColor([{ name: 'Χρώμα', value: 'Ασημένιο' }, { name: 'Χρώμα πέτρας', value: 'Σιτρίν' }]) === 'Ασημένιο');
+  t('colour: the exact axis wins over an earlier composite name',
+    extractVariantColor([{ name: 'Επίλεξε νούμερο και χρώμα', value: '52' }, { name: 'Χρώμα', value: 'Επιχρυσωμένο' }]) === 'Επιχρυσωμένο');
+  t('colour: no colour option → null', extractVariantColor([{ name: 'Μέγεθος', value: '52' }]) === null);
+  t('media id: MediaImage gid → its number', variantMediaImageId({ media: { nodes: [{ id: 'gid://shopify/MediaImage/123' }] } }) === '123');
+  t('media id: ImageSource gid → null', variantMediaImageId({ media: { nodes: [{ id: 'gid://shopify/ImageSource/123' }] } }) === null);
+  t('media id: no media → null', variantMediaImageId({ media: { nodes: [] } }) === null && variantMediaImageId({}) === null);
+
+  // 4. price strings (B10): Shopify returns "49.0"; the v10 path produced 49 → both must print "49.00 EUR"
+  t('price: contextual "49.0" EUR = the v10 string', formatPrice('49.0', 'EUR') === '49.00 EUR' && formatPrice(Math.round(49 * 1 * 100) / 100, 'EUR') === '49.00 EUR');
+  t('price: "1018000.0" IDR', formatPrice('1018000.0', 'IDR') === '1018000.00 IDR');
+
+  // 5. image choice on a synthetic 3-colour product (B5, B6, B8, B9)
+  if (VARIANTMEDIA_ON && PKG_ON && OTHERCOLOUR_ON && LIFESTYLE_GUARD_ON && EXTRA_IMAGES_CAP >= 3) {
+    const im = (id, f) => ({ id: String(id), src: cdn(f) });
+    const V = (id, colour, media) => ({ id: String(id), inventory_quantity: 1, media_id: media, selectedOptions: [{ name: 'Χρώμα', value: colour }] });
+    const imgs = [im(1, 'st-silver-a.jpg'), im(2, 'st-silver-b.jpg'), im(3, 'st-gift-packaging.jpg'), im(4, 'st-gold-a.jpg'), im(5, 'st-gold-b.jpg')];
+    const vS = V(11, 'Ασημένιο', '1'), vS2 = V(12, 'Ασημένιο', null), vG = V(13, 'Επιχρυσωμένο', '4'), vR = V(14, 'Ροζ επιχρυσωμένο', null);
+    const prod = { handle: '__selftest__', images: imgs, variants: [vS, vS2, vG, vR], allVariants: [vS, vS2, vG, vR], metafields: {} };
+    const plan = buildImagePlan(prod);
+    const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+    const pS = pickItemImages(plan, prod.handle, vS, 'Ασημένιο');
+    t('images: own photo → image_link = that photo', pS.path === 'own' && pS.variantImage === imgs[0].src);
+    t('images: own range, packaging cut out of the extras (B6)', same(pS.additional, [imgs[1].src]) && pS.pkgRemoved === 1);
+    t("images: lifestyle kept when images[1] is this colour's", pS.lifestyle === imgs[1].src);
+    const pS2 = pickItemImages(plan, prod.handle, vS2, 'Ασημένιο');
+    t('images: no own photo → same-colour sibling borrow', pS2.path === 'borrow' && pS2.variantImage === imgs[0].src && same(pS2.additional, [imgs[1].src]));
+    const pG = pickItemImages(plan, prod.handle, vG, 'Επιχρυσωμένο');
+    t('images: another colour → its own photo and its own range only', pG.path === 'own' && pG.variantImage === imgs[3].src && same(pG.additional, [imgs[4].src]));
+    t("images: lifestyle inside another colour's range is blocked (B9/I6)", pG.lifestyle === null && pG.lifestyleBlocked === 'other-colour-range');
+    const pG2 = pickItemImages(buildImagePlan({ ...prod, images: [imgs[0], imgs[3], imgs[1]] }), prod.handle, vS, 'Ασημένιο');
+    t("images: lifestyle = another colour's OWN photo is blocked (B9)", pG2.lifestyle === null && pG2.lifestyleBlocked === 'other-colour-own');
+    const pR = pickItemImages(plan, prod.handle, vR, 'Ροζ επιχρυσωμένο');
+    t('images: a colour with no photo → fallback image_link = images[0] (E1 option A)', pR.path === 'fallback-trimmed' && pR.variantImage === imgs[0].src);
+    t("images: …and no other colour's photos as extras (B8)", pR.additional.length === 0);
+    const imgs2 = [im(21, 'st2-gift-packaging.jpg'), im(22, 'st2-a.jpg'), im(23, 'st2-b.jpg')];
+    const v2 = V(31, 'Ασημένιο', null);
+    const p2 = pickItemImages(buildImagePlan({ handle: '__st2__', images: imgs2, variants: [v2], allVariants: [v2], metafields: {} }), '__st2__', v2, 'Ασημένιο');
+    t('images: image_link is never a packaging photo (guard)', p2.guardFired && p2.variantImage === imgs2[1].src);
+    t('images: …the extras hold neither the new image_link nor packaging', same(p2.additional, [imgs2[2].src]));
+    t('images: lifestyle equal to the image_link is dropped', p2.lifestyle === null && p2.lifestyleSame === true);
+    // R3a tiered borrow. images[0] is the SILVER photo, so a gold item that falls back shows another metal (the
+    // 21/09 regression). Gold owns 2 ranges: white pearl [1, 2] (first by position) and black pearl [3, 4].
+    const VP = (id, metal, pearl, size, media) => ({ id: String(id), inventory_quantity: 1, media_id: media, selectedOptions: [
+      { name: 'Χρώμα', value: metal }, { name: 'Χρώμα μαργαριταριού', value: pearl }, { name: 'Μέγεθος', value: size }] });
+    const G = 'Επιχρυσωμένα';
+    const vS3 = VP(40, 'Ασημένια', 'Λευκό', 'Μικρά', '51'), vW = VP(41, G, 'Λευκό', 'Μικρά', '52'), vB = VP(42, G, 'Μαύρο', 'Μικρά', '54');
+    const vB2 = VP(43, G, 'Μαύρο', 'Μεγάλα', null), vP = VP(44, G, 'Ροζ', 'Μικρά', null), vW2 = VP(45, G, 'Λευκό', 'Μεγάλα', null);
+    const vR3 = VP(46, 'Ροζ επιχρυσωμένα', 'Λευκό', 'Μικρά', null);
+    const imgs3 = [im(51, 'st3-silver-white.jpg'), im(52, 'st3-gold-white-a.jpg'), im(53, 'st3-gold-white-b.jpg'),
+      im(54, 'st3-gold-black-a.jpg'), im(55, 'st3-gold-black-b.jpg')];
+    const all3 = [vS3, vW, vB, vB2, vP, vW2, vR3];
+    const plan3 = buildImagePlan({ handle: '__st3__', images: imgs3, variants: all3, allVariants: all3, metafields: {} });
+    const pB2 = pickItemImages(plan3, '__st3__', vB2, G);
+    if (!BORROW_METAL_ONLY) {
+      t("R3a tier 1: same metal + same pearl colour → THAT sibling's photo, not the first same-metal sibling's",
+        pB2.path === 'borrow' && pB2.borrowTier === 1 && pB2.variantImage === imgs3[3].src && same(pB2.additional, [imgs3[4].src]));
+    } else {
+      t('R3a with GS_BORROW_METAL_ONLY=1: tier 2 only → the first same-metal sibling, as in round 1',
+        pB2.path === 'borrow' && pB2.borrowTier === 2 && pB2.variantImage === imgs3[1].src && same(pB2.additional, [imgs3[2].src]));
+    }
+    const pP = pickItemImages(plan3, '__st3__', vP, G);
+    t('R3a tier 2: same metal, no sibling with this pearl colour → the round-1 same-metal sibling, NOT images[0] (another metal)',
+      pP.path === 'borrow' && pP.borrowTier === 2 && pP.variantImage === imgs3[1].src && same(pP.additional, [imgs3[2].src]));
+    const pW2 = pickItemImages(plan3, '__st3__', vW2, G);
+    t('R3a: same metal and pearl colour, another size → borrow',
+      pW2.path === 'borrow' && pW2.variantImage === imgs3[1].src && pW2.borrowTier === (BORROW_METAL_ONLY ? 2 : 1));
+    const pR3 = pickItemImages(plan3, '__st3__', vR3, 'Ροζ επιχρυσωμένα');
+    t('R3a tier 3: no sibling of that metal → fallback, image_link = images[0] (E1 option A)',
+      pR3.path.startsWith('fallback') && pR3.borrowTier === 0 && pR3.variantImage === imgs3[0].src);
+    t('F1: colour-like option names, accents / case ignored',
+      isColourLikeOption('ΧΡΩΜΑ ΠΕΤΡΑΣ') && isColourLikeOption('Χρώμα ζιρκόν') && isColourLikeOption('Colour') && !isColourLikeOption('Μέγεθος'));
+    t('F1: the key keeps the raw colour of a single unnamed option (any switch)',
+      borrowKeyOf([{ name: 'Επιλογή', value: 'Ασημένιο' }]) !== borrowKeyOf([{ name: 'Επιλογή', value: 'Χρυσό' }]));
+  } else skipped.push('image choice (an image switch is set)');
+
+  // 6. E2 selector on 3 colours × 3 stones × 12 letters = 108 variants, ids DEScending with position
+  const big = [];
+  let n = 0;
+  for (const c of ['Ασημένιο', 'Επιχρυσωμένο', 'Ροζ Επιχρυσωμένο']) {
+    for (const s of ['Σιτρίν', 'Ζιρκόν', 'Αμέθυστος']) {
+      for (let l = 0; l < 12; l++) {
+        big.push({ id: String(900000 - n++), inventory_quantity: 1,
+          selectedOptions: [{ name: 'Χρώμα', value: c }, { name: 'Χρώμα πέτρας', value: s }, { name: 'Γράμμα', value: 'L' + l }] });
+      }
+    }
+  }
+  big[11].inventory_quantity = 0;   // the lowest id of the first (colour × stone) group is out of stock
+  const ids = a => a.map(v => v.id).join(',');
+  const P = new Set(['777']);   // R3b: the E2 mode applies only to listed PRODUCT IDS
+  t('E2 legacy: the first 100 by position', ids(selectEmittedVariants('777', 't', big, 'legacy', true, P)) === ids(big.slice(0, 100)));
+  t('E2 all: every variant', selectEmittedVariants('777', 't', big, 'all', true, P).length === 108);
+  const cs = selectEmittedVariants('777', 't', big, 'colour-stone', true, P);
+  t('E2 colour-stone: one per colour × stone', cs.length === 9);
+  t('E2 colour-stone: the in-stock variant with the LOWEST id, position order kept',
+    cs[0].id === big[10].id && cs[1].id === big[23].id && cs.every((v, i) => i === 0 || big.indexOf(v) > big.indexOf(cs[i - 1])));
+  t('E2 colour: one per colour', selectEmittedVariants('777', 't', big, 'colour', true, P).length === 3);
+  t('E2: a product with ≤ 100 variants is never touched', selectEmittedVariants('777', 't', big.slice(0, 100), 'colour', true, P).length === 100);
+  t('R3b: a product id NOT in GS_BIGPRODUCT_IDS with > 100 variants emits the FIRST 100 (legacy), whatever the mode',
+    ['legacy', 'all', 'colour', 'colour-stone'].every(m => ids(selectEmittedVariants('778', 't', big, m, true, P)) === ids(big.slice(0, 100))));
+  t('R3b: the scope is the product id, not the handle (renamed handle keeps the mode; an empty list → legacy)',
+    selectEmittedVariants('777', 'renamed-handle', big, 'all', true, P).length === 108
+    && selectEmittedVariants('777', 't', big, 'all', true, new Set()).length === 100);
+  t('R3b: the default id list is exactly 4448531972131 = kremasto-monogramma-louloudi (unless GS_BIGPRODUCT_IDS is set)',
+    process.env.GS_BIGPRODUCT_IDS !== undefined || [...BIGPRODUCT_IDS].join(',') === '4448531972131');
+  // E2 = ii (Bill, 21/09/2026): colour-stone is the DEFAULT; GS_BIGPRODUCT_MODE=legacy (or GS_LEGACY_CAPS=1) is the kill-switch
+  const envMode = String(process.env.GS_BIGPRODUCT_MODE || '').trim().toLowerCase();
+  t('E2 default: the built-in default is colour-stone (owner decision ii)', BIGPRODUCT_MODE_DEFAULT === 'colour-stone');
+  t('E2 default: GS_BIGPRODUCT_MODE unset / invalid → colour-stone; a valid value is honoured',
+    BIGPRODUCT_MODE === (BIGPRODUCT_MODES.includes(envMode) ? envMode : 'colour-stone'));
+  const effMode = LEGACY_CAPS ? 'legacy' : BIGPRODUCT_MODE;
+  const dflt = selectEmittedVariants('777', 't', big, undefined, true, P);   // no mode passed = what a real run does
+  t(`E2 effective mode "${effMode}": a run (no mode passed) emits exactly that mode's set`,
+    ids(dflt) === ids(selectEmittedVariants('777', 't', big, effMode, true, P)));
+  t('E2: default run → one per colour × stone (9 here); kill-switch (GS_BIGPRODUCT_MODE=legacy / GS_LEGACY_CAPS=1) → the first 100',
+    effMode === 'colour-stone' ? dflt.length === 9 && ids(dflt) === ids(cs)
+      : effMode === 'legacy' ? ids(dflt) === ids(big.slice(0, 100)) : ['all', 'colour'].includes(effMode));
+
+  console.log(`🧪 self-test: ${pass} passed, ${fail} failed` + (skipped.length ? ` · skipped: ${skipped.join('; ')}` : '') + '\n');
+  return fail === 0;
+}
+
+// v11.5 (B4): how many feed files THIS run wrote — reported on failure (0 ⇒ every previous XML is intact)
+let _filesWritten = 0;
+function failRun(e) {
+  console.error(`\n🔴 GENERATOR FAILED — ${_filesWritten} feed file(s) written by this run before the failure; every other file keeps its previous XML.`);
+  console.error(e);
+  process.exitCode = 1;   // v11.5: the old .catch(console.error) exited 0, so the workflow never saw a failure
+}
+
 // CLI
 const arg = process.argv[2];
 if (!arg) {
@@ -2066,5 +3097,6 @@ if (!arg) {
 }
 
 if (arg.toLowerCase() === 'list') listMarkets();
-else if (arg.toLowerCase() === 'all') generateAllFeeds().catch(console.error);
-else generateFeed(arg).catch(console.error);
+else if (arg.toLowerCase() === 'selftest') process.exitCode = runSelftest() ? 0 : 1;
+else if (arg.toLowerCase() === 'all') generateAllFeeds().catch(failRun);
+else generateFeed(arg).catch(failRun);

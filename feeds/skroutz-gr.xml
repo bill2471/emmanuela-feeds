@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-09-25 11:35</created_at>
+  <created_at>2026-09-25 16:40</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1416,7 +1416,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Μαύρο]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Μαύρο</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -17166,7 +17166,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[8043M-Γκρι]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Γκρι</color>
         <size>One Size</size>
         <weight>1</weight>
@@ -39587,7 +39587,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1340M-Μαύρο]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Μαύρο</color>
         <size>One Size</size>
         <description><![CDATA[Χαρακτηριστικά Προϊόντος
@@ -59731,7 +59731,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1LI264LGOBL5]]></mpn>
         <ean>5212033696883</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>15</quantity>
+        <quantity>12</quantity>
         <color>Χρυσό</color>
         <size>36,37,38,39,40,41,42</size>
         <variations>
@@ -59766,9 +59766,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <variationid>46638123778383</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>39</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[1LI264LGOBL7]]></manufacturersku>
-            <mpn><![CDATA[1LI264LGOBL7]]></mpn>
+            <quantity>1</quantity>
+            <manufacturersku><![CDATA[1LI264LGOBL8]]></manufacturersku>
+            <mpn><![CDATA[1LI264LGOBL8]]></mpn>
             <ean>5212033696913</ean>
           </variation>
           <variation>
@@ -59829,89 +59829,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
           </variation>
         </variations>
         <description><![CDATA[Σανδάλια μονομάχου με μαλακό πάτο "Καλυψώ". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Καφέ. Διαθέσιμα νούμερα: 36.]]></description>
-        <shipping>0</shipping>
-      </product>
-      <product>
-        <id>46638130954575</id>
-        <name><![CDATA[Σανδάλια μονομάχου με μαλακό πάτο "Καλυψώ" - Χρυσό]]></name>
-        <link><![CDATA[https://emmanuela.shoes/products/greek-leather-sandals-brown-calypso?variant=46638130954575]]></link>
-        <image><![CDATA[https://cdn.shopify.com/s/files/1/0579/9975/3373/files/264_1_fee28b23-a4d2-4f10-a4b8-252650ba22e5.png?v=1754995890]]></image>
-        <category><![CDATA[Μόδα > Γυναικεία Παπούτσια > Σανδάλια]]></category>
-        <price_with_vat>42.90</price_with_vat>
-        <vat>24.00</vat>
-        <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
-        <mpn><![CDATA[1LI264LGOBL5]]></mpn>
-        <ean>5212033696883</ean>
-        <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>12</quantity>
-        <color>Χρυσό</color>
-        <size>36,37,38,39,40,41,42</size>
-        <variations>
-          <variation>
-            <variationid>46638130954575</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>36</size>
-            <quantity>2</quantity>
-            <manufacturersku><![CDATA[1LI264LGOBL5]]></manufacturersku>
-            <mpn><![CDATA[1LI264LGOBL5]]></mpn>
-            <ean>5212033696883</ean>
-          </variation>
-          <variation>
-            <variationid>46638131052879</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>37</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI264LGOBL6]]></manufacturersku>
-            <mpn><![CDATA[1LI264LGOBL6]]></mpn>
-            <ean>5212033696890</ean>
-          </variation>
-          <variation>
-            <variationid>46638131151183</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>38</size>
-            <quantity>4</quantity>
-            <manufacturersku><![CDATA[1LI264LGOBL7]]></manufacturersku>
-            <mpn><![CDATA[1LI264LGOBL7]]></mpn>
-            <ean>5212033696906</ean>
-          </variation>
-          <variation>
-            <variationid>46638131249487</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>39</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI264LGOBL8]]></manufacturersku>
-            <mpn><![CDATA[1LI264LGOBL8]]></mpn>
-            <ean>5212033696913</ean>
-          </variation>
-          <variation>
-            <variationid>46638131347791</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI264LGOBL9]]></manufacturersku>
-            <mpn><![CDATA[1LI264LGOBL9]]></mpn>
-            <ean>5212033696920</ean>
-          </variation>
-          <variation>
-            <variationid>46638131446095</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>41</size>
-            <quantity>2</quantity>
-            <manufacturersku><![CDATA[1LI264LGOBL10]]></manufacturersku>
-            <mpn><![CDATA[1LI264LGOBL10]]></mpn>
-            <ean>5212033696937</ean>
-          </variation>
-          <variation>
-            <variationid>46638131544399</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>42</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1LI264LGOBL11]]></manufacturersku>
-            <mpn><![CDATA[1LI264LGOBL11]]></mpn>
-            <ean>5212033696944</ean>
-          </variation>
-        </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με μαλακό πάτο "Καλυψώ". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Χρυσό. Διαθέσιμα νούμερα: 36,37,38,39,40,41,42.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

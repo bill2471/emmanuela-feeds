@@ -247,12 +247,22 @@ const COLOR_MAP_GREEK = {
   'πολύχρωμο': 'Πολύχρωμο', 'πολύχρωμα': 'Πολύχρωμο', 'πολύχρωμο σετ': 'Πολύχρωμο',
   'silver': 'Ασημί', 'gold': 'Χρυσό', 'black': 'Μαύρο',
 };
+// v4.5 (2026-09-25): πληθυντικός/θηλυκό του «χρυσό» — χωρίς αυτά το «Χρυσά με μαύρο σύρμα» έπαιρνε το
+// χρώμα του ΣΥΡΜΑΤΟΣ (Μαύρο). Μπαίνουν στο ΤΕΛΟΣ ώστε η σειρά του partial match να μην αλλάζει.
+// Kill-switch: SKROUTZ_NO_LONGCOLOUR=1 ⇒ byte-identical με πριν.
+if (process.env.SKROUTZ_NO_LONGCOLOUR !== '1') {
+  Object.assign(COLOR_MAP_GREEK, { 'χρυσά': 'Χρυσό', 'χρυσή': 'Χρυσό', 'χρυσές': 'Χρυσό' });
+}
 
 function getGreekColor(variantColorRaw) {
   if (!variantColorRaw) return null;
   const normalized = variantColorRaw.toLowerCase().trim();
   if (/\d/.test(normalized)) return null;        // skip numeric values (sizes)
-  if (normalized.length > 25) return null;        // skip corrupted strings
+  // v4.5 (2026-09-25): ο φρουρός μήκους έτρεχε ΠΡΙΝ το σπάσιμο « με » και έστελνε στο 'Ασημί' κάθε
+  // σύνθετη τιμή >25 χαρ. (1321/1312: επίχρυσα, ροζ, οξειδωμένα). Τώρα τρέχει ΜΕΤΑ το σπάσιμο, πριν το
+  // partial match. Kill-switch: SKROUTZ_NO_LONGCOLOUR=1 ⇒ παλιά θέση, byte-identical με πριν.
+  const _noLongColour = process.env.SKROUTZ_NO_LONGCOLOUR === '1';
+  if (_noLongColour && normalized.length > 25) return null;        // skip corrupted strings (pre-v4.5)
   if (COLOR_MAP_GREEK[normalized]) return COLOR_MAP_GREEK[normalized];
   // ── v4.0 (2026-08-12): ΣΥΝΘΕΤΕΣ ΤΙΜΕΣ ΧΡΩΜΑΤΟΣ ────────────────────────────
   // Το partial-match παρακάτω επιστρέφει το πρώτο κλειδί ΤΟΥ ΛΕΞΙΚΟΥ που
@@ -281,6 +291,7 @@ function getGreekColor(variantColorRaw) {
       for (const _k of _keys) if (normalized.includes(_k)) return COLOR_MAP_GREEK[_k];
     }
   }
+  if (!_noLongColour && normalized.length > 25) return null;       // v4.5: guard AFTER the compound split
   // Partial match
   for (const [key, val] of Object.entries(COLOR_MAP_GREEK)) {
     if (normalized.includes(key)) return val;

@@ -1189,6 +1189,44 @@ function generateSkroutzFeed(products) {
     // would yield the same SKU-derived root (falls back to EMM-{product.id}).
     const productMpnBase = baseByProduct.get(product.id) || `EMM-${product.id}`;
 
+    // v4.7 (2026-09-28) «ownval»: ο τίτλος του προϊόντος ονομάζει ΜΙΑ τιμή άξονα που ο generator δεν χωρίζει
+    // (π.χ. «Επιλογή πέτρας» → «…με Λάπις λάζουλι»). Όταν αυτή η τιμή έχει εξαντληθεί, ο αντιπρόσωπος της καταχώρησης
+    // είναι ΑΛΛΗ πέτρα ⇒ τίτλος λέει λάπις, φωτό/παραγγελία = Mother of Pearl, ίδιο SKU διαφημίζεται δύο φορές (28/09).
+    // Οπλίζεται ΜΟΝΟ με ένα άξονα και ΜΙΑ ονομαζόμενη τιμή· αλλιώς τίποτα (fail-closed). Kill-switch SKROUTZ_NO_OWNVAL=1.
+    let _ownAxis = null, _ownVal = null;
+    if (process.env.SKROUTZ_NO_OWNVAL !== '1') {
+      const _ovFlat = x => String(x || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/ς/g, 'σ')
+        .replace(/[^a-z0-9α-ω]+/g, ' ').trim();
+      const _ovTitle = ' ' + _ovFlat(product.title) + ' ';
+      const _ovNames = [...new Set(variants.flatMap(v => (v.selectedOptions || []).map(o => o.name)))];
+      const _ovArmed = [];
+      for (const _nm of _ovNames) {
+        const _n = String(_nm || '').toLowerCase();
+        if (_n.includes('χρώμα') || _n.includes('color') || _n.includes('colour')) continue;
+        if (_n.includes('μέγεθος') || _n.includes('size') || _n.includes('νούμερο')) continue;
+        if (isLengthAxisName(_nm) || _nm === _sideAxis) continue;
+        const _vals = [...new Set(variants.map(v => ((v.selectedOptions || []).find(o => o.name === _nm) || {}).value).filter(Boolean))];
+        if (_vals.length < 2) continue;
+        if (_vals.some(x => SINGLE_VALUES.includes(x.toLowerCase().trim()) || PAIR_VALUES.includes(x.toLowerCase().trim()))) continue;
+        const _hits = _vals.filter(x => { const f = _ovFlat(x); return f.length >= 4 && /[a-zα-ω]/.test(f) && _ovTitle.includes(' ' + f + ' '); });
+        if (_hits.length === 1) _ovArmed.push([_nm, _hits[0]]);
+      }
+      // Ρητή αντιστοίχιση όπου ο τίτλος κλίνει την τιμή (τίτλος «μαύρο όνυχα» ≠ τιμή «Μαύρος όνυχας»). Ισχύει ΜΟΝΟ αν ο
+      // άξονας και η τιμή υπάρχουν αυτούσια στο προϊόν· αλλιώς αγνοείται φωναχτά (fail-closed).
+      const _OWNVAL_OVERRIDE = { 'kremasta-skoularikia-mauros-onyxas': ['Επιλογή πέτρας', 'Μαύρος όνυχας'] };
+      const _ovo = _OWNVAL_OVERRIDE[product.handle];
+      if (_ovo) {
+        const _ok = variants.some(v => (v.selectedOptions || []).some(o => o.name === _ovo[0] && o.value === _ovo[1]));
+        if (_ok) { _ovArmed.length = 0; _ovArmed.push(_ovo); }
+        else console.error(`  [OWNVAL] WARNING: override για ${product.handle} δεν ταιριάζει (${_ovo.join(' = ')}) — αγνοείται`);
+      }
+      if (_ovArmed.length === 1) {
+        [_ownAxis, _ownVal] = _ovArmed[0];
+        stats.ownvalArmed = (stats.ownvalArmed || 0) + 1;
+        console.log(`  [OWNVAL-ARMED] ${product.handle}: «${_ownAxis}» = «${_ownVal}»`);
+      }
+    }
+
     const entryGroups = {};
     // v4.4 (2026-08-26): οι ομάδες που αποτελούνται ΑΠΟΚΛΕΙΣΤΙΚΑ από εξαντλημένα variants
     // μαζεύονται χωριστά και προωθούνται ΜΟΝΟ αν δεν υπάρχει ζωντανή ομάδα με το ίδιο κλειδί.
@@ -1533,6 +1571,20 @@ function generateSkroutzFeed(products) {
       const totalQuantity = (_emitsVariations || process.env.SKROUTZ_NO_REPQTY === '1')
         ? groupVariants.reduce((sum, v) => sum + Math.max(0, v.inventory_quantity), 0)
         : Math.max(0, repVariant.inventory_quantity);
+      // v4.7 «ownval»: μόνο ζωντανή καταχώρηση ΧΩΡΙΣ <variations> (παραγγέλνεται μόνο ως ο αντιπρόσωπος).
+      let _qtyOut = totalQuantity;
+      if (_ownAxis && !group.ghost && !_varBlockWillEmit) {
+        const _ovVal = v => ((v.selectedOptions || []).find(o => o.name === _ownAxis) || {}).value;
+        const _repVal = _ovVal(repVariant);
+        const _ownInStock = groupVariants.some(v => _ovVal(v) === _ownVal);
+        if (_repVal && _repVal !== _ownVal && !_ownInStock) {
+          _qtyOut = 0;
+          stats.ownvalZeroed = (stats.ownvalZeroed || 0) + 1;
+          console.log(`  [OWNVAL] ${product.handle} ${color}: τίτλος «${_ownVal}» εξαντλημένο, αντιπρόσωπος «${_repVal}» (${repVariant.id}) ⇒ quantity ${totalQuantity} → 0`);
+        } else if (_repVal && _repVal !== _ownVal) {
+          console.log(`  [OWNVAL-ORDER] ${product.handle} ${color}: «${_ownVal}» σε απόθεμα αλλά αντιπρόσωπος «${_repVal}» (${repVariant.id}) — καμία αλλαγή`);
+        }
+      }
 
       // Weight from representative variant
       const weightGrams = getWeightGrams(repVariant);
@@ -1668,7 +1720,7 @@ function generateSkroutzFeed(products) {
       item += `        <availability>Παράδοση 1 έως 3 ημέρες</availability>\n`;
 
       // Quantity
-      item += `        <quantity>${totalQuantity}</quantity>\n`;
+      item += `        <quantity>${_qtyOut}</quantity>\n`;
 
       // Color (fashion: mandatory)
       // v4.2 (2026-08-12): η πύλη entryCount===1 ΑΦΑΙΡΕΘΗΚΕ. Ιχνηλατήθηκε ότι το mpn

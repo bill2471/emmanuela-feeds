@@ -1499,6 +1499,20 @@ function generateSkroutzFeed(products) {
       // the variants in the group typically share a price, so "min" equals the
       // actual price. Only multi-variant groups (e.g., rings) actually need min.
       const lowestPrice = Math.min(...groupVariants.map(v => parseFloat(v.price)));
+      // v4.6 (2026-09-28) «repprice»: χωρίς μπλοκ <variations> η καταχώρηση παραγγέλνεται ΜΟΝΟ ως ο αντιπρόσωπος
+      // (<id> και link ?variant = repVariant) ⇒ η τιμή πρέπει να είναι η ΔΙΚΗ ΤΟΥ, όχι το min του κάδου χρώματος.
+      // Ο κάδος κρατά και παραλλαγές σε άξονα που δεν χωρίζεται (π.χ. «Επιλογή πέτρας»): 28/09 τα κρεμαστά
+      // mother-of-pearl / lapis-lazuli έδειχναν 89 € (όνυχας 1375) ενώ η παραγγελία = Mother of Pearl 1386 στα 119 €.
+      // Η συνθήκη είναι ΑΚΡΙΒΩΣ αυτή που εκπέμπει το μπλοκ <variations> πιο κάτω. Kill-switch: SKROUTZ_NO_REPPRICE=1.
+      const _varBlockWillEmit = !(hasLengthAxis && lengthParsed && (lengthParsed.length || lengthParsed.type))
+        && hasSizeOption && groupVariants.length > 1
+        && new Set(groupVariants.map(v => extractVariantSize(v.selectedOptions)).filter(Boolean)).size > 1;
+      const _headPrice = (process.env.SKROUTZ_NO_REPPRICE === '1' || _varBlockWillEmit)
+        ? lowestPrice : parseFloat(repVariant.price);
+      if (!group.ghost && Math.abs(_headPrice - lowestPrice) > 0.001) {
+        stats.repPriceFixed = (stats.repPriceFixed || 0) + 1;
+        console.log(`  [REPPRICE] ${product.handle} ${color}: ${lowestPrice.toFixed(2)} → ${_headPrice.toFixed(2)} (rep ${repVariant.id})`);
+      }
 
       // Quantity for this entry.
       // v3.6 (2026-08-06): the number must describe THE ENTRY, not the bucket.
@@ -1634,7 +1648,7 @@ function generateSkroutzFeed(products) {
       item += `        <category><![CDATA[${categoryPath}]]></category>\n`;
 
       // Price with VAT (already VAT-inclusive in Shopify for .gr)
-      item += `        <price_with_vat>${_emitPrice !== null ? _emitPrice : lowestPrice.toFixed(2)}</price_with_vat>\n`;
+      item += `        <price_with_vat>${_emitPrice !== null ? _emitPrice : _headPrice.toFixed(2)}</price_with_vat>\n`;
       item += `        <vat>${VAT_RATE}.00</vat>\n`;
 
       // Manufacturer

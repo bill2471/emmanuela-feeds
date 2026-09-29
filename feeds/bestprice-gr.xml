@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-09-28 13:23</date>
+  <date>2026-09-29 12:34</date>
   <products>
     <product>
       <productId>31372692389923</productId>
@@ -10058,13 +10058,13 @@
       <productId>31374407237667</productId>
       <title><![CDATA[Βραχιόλι ανδρικό χειροποίητο από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-braxioli-xeiropoiito</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-287727.jpg?v=1767365413</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-419685.jpg?v=1767365440</imageURL>
       <imagesURL>
-        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-287727.jpg?v=1767365413</img1>
-        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-114014.jpg?v=1767365420</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-920863.jpg?v=1767365426</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-551734.jpg?v=1767365431</img4>
-        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-603922.jpg?v=1767365435</img5>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-419685.jpg?v=1767365440</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-241346.jpg?v=1767365380</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-643161.jpg?v=1767365387</img3>
+        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-547588.jpg?v=1767365393</img4>
+        <img5>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-754477.jpg?v=1767365399</img5>
       </imagesURL>
       <price>109.00</price>
       <category_path>Κοσμήματα-&gt;Βραχιόλια-&gt;Ανδρικά βραχιόλια</category_path>
@@ -10073,6 +10073,26 @@
       <brand>Emmanuela - handcrafted for you</brand>
       <MPN>3048</MPN>
       <color>ασημί</color>
+      <weight>9</weight>
+      <shipping>0</shipping>
+    </product>
+    <product>
+      <productId>54512572531022</productId>
+      <title><![CDATA[Βραχιόλι ανδρικό χειροποίητο μαύρο από ασήμι 925]]></title>
+      <productURL>https://emmanuela.gr/products/andriko-braxioli-xeiropoiito</productURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-800634.jpg?v=1767365446</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-800634.jpg?v=1767365446</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-158747.jpg?v=1767365449</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/16cm-xeiropoihto-andriko-braxioli-apo-ashmi-925-kosmhmata-emmanuela-633678.jpg?v=1767365455</img3>
+      </imagesURL>
+      <price>109.00</price>
+      <category_path>Κοσμήματα-&gt;Βραχιόλια-&gt;Ανδρικά βραχιόλια</category_path>
+      <availability>Παράδοση σε 1-3 ημέρες</availability>
+      <stock>Y</stock>
+      <brand>Emmanuela - handcrafted for you</brand>
+      <MPN>EMM-54512572531022</MPN>
+      <color>μαύρο</color>
       <weight>9</weight>
       <shipping>0</shipping>
     </product>

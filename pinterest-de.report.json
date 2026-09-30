@@ -1,0 +1,463 @@
+{
+ "generator": "pinterest-feed-de.js v0.2",
+ "builtAt": "2026-09-30T05:58:30.146Z",
+ "apiVersionRequested": "2026-07",
+ "apiVersionServed": "2026-07",
+ "settings": {
+  "itemId": "product",
+  "variant": "fixed",
+  "images": 0,
+  "imagesFmt": "comma",
+  "imageSrc": "featured",
+  "overrides": "pinterest-de-overrides.json",
+  "out": "out/pinterest-de.xml",
+  "dry": false,
+  "report": "out/pinterest-de.report.json"
+ },
+ "listed": 54,
+ "items": 54,
+ "inStock": 54,
+ "excluded": [],
+ "notes": [
+  {
+   "pid": "4444724297763",
+   "note": "pinned variant image ≠ featured image"
+  },
+  {
+   "pid": "9757942186318",
+   "note": "pinned variant image ≠ featured image"
+  },
+  {
+   "pid": "9763861233998",
+   "note": "pinned variant image ≠ featured image"
+  },
+  {
+   "pid": "4451901145123",
+   "note": "pinned variant image ≠ featured image"
+  },
+  {
+   "pid": "9756203811150",
+   "note": "pinned variant image ≠ featured image"
+  },
+  {
+   "pid": "9763728392526",
+   "note": "pinned variant image ≠ featured image"
+  },
+  {
+   "pid": "9783495950670",
+   "note": "pinned variant image ≠ featured image"
+  },
+  {
+   "pid": "4376444436515",
+   "note": "pinned variant image ≠ featured image"
+  },
+  {
+   "pid": "4442798882851",
+   "note": "pinned variant image ≠ featured image"
+  },
+  {
+   "pid": "9769770320206",
+   "note": "pinned variant image ≠ featured image"
+  },
+  {
+   "pid": "4376292392995",
+   "note": "pinned variant image ≠ featured image"
+  },
+  {
+   "pid": "4444940173347",
+   "note": "pinned variant image ≠ featured image"
+  },
+  {
+   "pid": "9756205875534",
+   "note": "pinned variant image ≠ featured image"
+  },
+  {
+   "pid": "9763860414798",
+   "note": "pinned variant image ≠ featured image"
+  },
+  {
+   "pid": "9767859159374",
+   "note": "pinned variant image ≠ featured image"
+  }
+ ],
+ "perItem": [
+  {
+   "id": "4376258117667",
+   "variant": "31372750848035",
+   "position": 1,
+   "price": "42.22 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376269160483",
+   "variant": "31372836700195",
+   "position": 1,
+   "price": "42.22 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376273682467",
+   "variant": "31372865798179",
+   "position": 1,
+   "price": "49.91 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376291278883",
+   "variant": "31373013123107",
+   "position": 1,
+   "price": "85.41 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376292392995",
+   "variant": "31373022789667",
+   "position": 1,
+   "price": "59.50 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376294752291",
+   "variant": "31373048479779",
+   "position": 1,
+   "price": "75.81 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376299438115",
+   "variant": "31373088948259",
+   "position": 1,
+   "price": "51.82 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376317689891",
+   "variant": "31373259571235",
+   "position": 1,
+   "price": "56.62 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376330371107",
+   "variant": "31373358497827",
+   "position": 1,
+   "price": "56.62 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376332173347",
+   "variant": "31373381140515",
+   "position": 1,
+   "price": "47.03 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376333418531",
+   "variant": "31373403881507",
+   "position": 1,
+   "price": "47.03 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376333549603",
+   "variant": "31373407092771",
+   "position": 1,
+   "price": "47.03 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376342102051",
+   "variant": "31373498843171",
+   "position": 1,
+   "price": "75.81 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376342528035",
+   "variant": "31373500842019",
+   "position": 1,
+   "price": "56.62 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376368807971",
+   "variant": "31373736050723",
+   "position": 1,
+   "price": "56.62 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376371560483",
+   "variant": "31373759414307",
+   "position": 1,
+   "price": "40.31 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376373428259",
+   "variant": "31373777567779",
+   "position": 1,
+   "price": "40.31 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376374476835",
+   "variant": "54860564758862",
+   "position": 1,
+   "price": "56.62 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376391680035",
+   "variant": "54932891238734",
+   "position": 1,
+   "price": "42.22 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376396300323",
+   "variant": "31374061010979",
+   "position": 1,
+   "price": "51.82 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376444436515",
+   "variant": "31374348189731",
+   "position": 1,
+   "price": "37.43 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376448499747",
+   "variant": "31374369128483",
+   "position": 1,
+   "price": "56.62 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4376467636259",
+   "variant": "31374517829667",
+   "position": 1,
+   "price": "95.01 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4439349657635",
+   "variant": "31674495991843",
+   "position": 1,
+   "price": "152.59 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4442798882851",
+   "variant": "31688408072227",
+   "position": 1,
+   "price": "61.42 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4444724297763",
+   "variant": "31696410574883",
+   "position": 1,
+   "price": "51.82 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4444752347171",
+   "variant": "31702150938659",
+   "position": 1,
+   "price": "66.22 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4444940173347",
+   "variant": "31697035362339",
+   "position": 1,
+   "price": "47.03 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4451901145123",
+   "variant": "31720326725667",
+   "position": 1,
+   "price": "75.81 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4451904159779",
+   "variant": "31720344354851",
+   "position": 1,
+   "price": "47.03 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4451923132451",
+   "variant": "31720448557091",
+   "position": 1,
+   "price": "51.82 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4451968253987",
+   "variant": "31720637825059",
+   "position": 1,
+   "price": "85.41 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4458600300579",
+   "variant": "31745492156451",
+   "position": 1,
+   "price": "42.22 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4460776456227",
+   "variant": "31751880540195",
+   "position": 1,
+   "price": "56.62 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "4460831113251",
+   "variant": "31752056832035",
+   "position": 1,
+   "price": "42.22 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "6647885463587",
+   "variant": "39582591844387",
+   "position": 1,
+   "price": "51.82 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9756027846990",
+   "variant": "49348466377038",
+   "position": 1,
+   "price": "66.22 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9756119433550",
+   "variant": "49348554522958",
+   "position": 1,
+   "price": "142.99 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9756203811150",
+   "variant": "49348977525070",
+   "position": 1,
+   "price": "56.62 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9756205875534",
+   "variant": "49349479530830",
+   "position": 1,
+   "price": "66.22 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9757942186318",
+   "variant": "49357112082766",
+   "position": 1,
+   "price": "95.01 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9758046880078",
+   "variant": "49357939016014",
+   "position": 1,
+   "price": "66.22 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9763727573326",
+   "variant": "49383176798542",
+   "position": 1,
+   "price": "66.22 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9763728392526",
+   "variant": "49383179190606",
+   "position": 1,
+   "price": "56.62 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9763729310030",
+   "variant": "49383181975886",
+   "position": 1,
+   "price": "56.62 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9763860414798",
+   "variant": "49384306540878",
+   "position": 1,
+   "price": "66.22 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9763861233998",
+   "variant": "49384313127246",
+   "position": 1,
+   "price": "66.22 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9767859159374",
+   "variant": "49401159319886",
+   "position": 1,
+   "price": "47.03 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9767863124302",
+   "variant": "49401167642958",
+   "position": 1,
+   "price": "66.22 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9769768255822",
+   "variant": "49409685979470",
+   "position": 1,
+   "price": "75.81 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9769770320206",
+   "variant": "55260224225614",
+   "position": 1,
+   "price": "56.62 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9783495950670",
+   "variant": "54996325400910",
+   "position": 1,
+   "price": "66.22 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "9793542029646",
+   "variant": "51758871707982",
+   "position": 1,
+   "price": "123.80 EUR",
+   "availability": "in stock"
+  },
+  {
+   "id": "10253345816910",
+   "variant": "51758741619022",
+   "position": 1,
+   "price": "95.01 EUR",
+   "availability": "in stock"
+  }
+ ]
+}

@@ -8,10 +8,10 @@ name: Pinterest DE catalog (daily)
 # together with pinterest-feed/pinterest-feed-de.js and the approved pinterest-feed/pinterest-de-overrides.json.
 
 on:
-  # [golive-check 29/09] FIX 3: owner decision = first run via workflow_dispatch, NOT cron.
-  # Commit 1 ships with the schedule commented out; commit 2 (after the first dispatch run is verified) uncomments it.
-  # schedule:
-  #   - cron: '17 2 * * *'   # daily ~02:17 UTC (GitHub may start it hours late); not on the hour (GitHub drops top-of-hour jobs under load)
+  # [golive-check 29/09] FIX 3: first run via workflow_dispatch (30/09 05:58Z, run 36675789150, verified: CDN = raw, 54/54).
+  # Commit 2 (30/09, Bill «ναι») enables the daily schedule.
+  schedule:
+    - cron: '17 2 * * *'   # daily ~02:17 UTC (GitHub may start it hours late); not on the hour (GitHub drops top-of-hour jobs under load)
   workflow_dispatch:
 
 permissions:

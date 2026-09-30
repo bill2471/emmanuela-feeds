@@ -1,0 +1,1 @@
+Pinterest DE catalog output (generated daily by .github/workflows/pinterest-de.yml on main).

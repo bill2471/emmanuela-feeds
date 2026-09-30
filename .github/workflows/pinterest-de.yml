@@ -1,0 +1,142 @@
+name: Pinterest DE catalog (daily)
+
+# [SEO] 28/09/2026 — decisions Bill (bulletin 12533): separate job, NEVER touches feeds/emmanuela-de.xml or any GMC feed.
+# Output lives on its OWN branch `pinterest-feed` (never main) ⇒ no push race with update-feeds.yml.
+# Public URL for Pinterest (jsDelivr = application/xml; raw.githubusercontent = text/plain and untested with Pinterest):
+#   https://cdn.jsdelivr.net/gh/bill2471/emmanuela-feeds@pinterest-feed/pinterest-de.xml
+# The schedule file must live on the DEFAULT branch (GitHub rule) — that is the only thing this adds to main,
+# together with pinterest-feed/pinterest-feed-de.js and the approved pinterest-feed/pinterest-de-overrides.json.
+
+on:
+  # [golive-check 29/09] FIX 3: owner decision = first run via workflow_dispatch, NOT cron.
+  # Commit 1 ships with the schedule commented out; commit 2 (after the first dispatch run is verified) uncomments it.
+  # schedule:
+  #   - cron: '17 2 * * *'   # daily ~02:17 UTC (GitHub may start it hours late); not on the hour (GitHub drops top-of-hour jobs under load)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pinterest-feed
+  cancel-in-progress: false
+
+env:
+  REPO: bill2471/emmanuela-feeds
+  BRANCH: pinterest-feed
+  FILE: pinterest-de.xml
+  # generator settings (see header of pinterest-feed-de.js) — change here, not in code
+  PIN_ITEM_ID: product
+  PIN_VARIANT: fixed
+  PIN_IMAGES: '0'
+  PIN_IMAGES_FMT: comma
+  PIN_IMAGE_SRC: featured
+
+jobs:
+  pinterest-de:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      # Sparse + blobless: only the pinterest-feed/ folder is downloaded (the repo tip is ~2 GB of feeds).
+      - name: Checkout (pinterest-feed/ only)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: pinterest-feed
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # [golive-check 29/09] FIX 2: the generator's "≥80% of the previous build" guard reads out/pinterest-de.report.json,
+      # which never exists on a fresh runner (the previous report lives on the output branch) ⇒ the guard was inert in CI.
+      - name: Fetch previous report (arms the shrink guard)
+        run: |
+          mkdir -p out
+          if curl -sSf --compressed --max-time 60 "https://raw.githubusercontent.com/$REPO/$BRANCH/pinterest-de.report.json" -o out/pinterest-de.report.json; then
+            echo "previous report: $(grep -o '"items": *[0-9]*' out/pinterest-de.report.json | head -1)"
+          else
+            rm -f out/pinterest-de.report.json; echo "no previous report (first build)"
+          fi
+
+      - name: Build feed (fail-closed — on any problem nothing is written)
+        id: build
+        continue-on-error: true
+        env:
+          SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
+        run: |
+          node pinterest-feed/pinterest-feed-de.js \
+            --overrides pinterest-feed/pinterest-de-overrides.json \
+            --out out/pinterest-de.xml --report out/pinterest-de.report.json
+
+      - name: Ensure output branch exists (orphan, created once)
+        if: steps.build.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh api "repos/$REPO/branches/$BRANCH" >/dev/null 2>&1; then echo "branch exists"; exit 0; fi
+          jq -n '{tree:[{path:"README.md",mode:"100644",type:"blob",content:"Pinterest DE catalog output (generated daily by .github/workflows/pinterest-de.yml on main)."}]}' > tree.json
+          tree=$(gh api -X POST "repos/$REPO/git/trees" --input tree.json --jq .sha)
+          jq -n --arg t "$tree" '{message:"pinterest-feed: init orphan branch", tree:$t, parents:[]}' > commit.json
+          commit=$(gh api -X POST "repos/$REPO/git/commits" --input commit.json --jq .sha)
+          jq -n --arg s "$commit" --arg r "refs/heads/$BRANCH" '{ref:$r, sha:$s}' > ref.json
+          gh api -X POST "repos/$REPO/git/refs" --input ref.json >/dev/null
+          echo "created $BRANCH at $commit"
+
+      # Contents API with the current blob sha = drift guard; one commit per file per day
+      # (the daily <lastBuildDate> keeps the file "fresh" for Pinterest and keeps the repo active).
+      - name: Publish to branch
+        if: steps.build.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # payload via --input FILE: a single CLI argument is capped at 128 KB on Linux (the base64 XML is ~170 KB)
+          put () {
+            local src="$1" dst="$2"
+            # [golive-check 29/09] FIX 1: on a 404 `gh api` prints the ERROR JSON to stdout even with --jq (measured, gh 2.83.2),
+            # so the old `$(gh api … --jq .sha 2>/dev/null || true)` captured {"message":"Not Found",…} as the sha on the FIRST
+            # publish of each file. Decide by the exit code instead.
+            local sha=""
+            if gh api "repos/$REPO/contents/$dst?ref=$BRANCH" --jq .sha > sha.txt 2>/dev/null; then sha=$(cat sha.txt); fi
+            rm -f sha.txt
+            base64 -w0 "$src" > content.b64
+            jq -n --arg m "pinterest-de: $(date -u +%FT%TZ)" --arg b "$BRANCH" --rawfile c content.b64 --arg s "$sha" \
+              '{message:$m, branch:$b, content:$c} + (if $s == "" then {} else {sha:$s} end)' > put.json
+            gh api -X PUT "repos/$REPO/contents/$dst" --input put.json --jq .commit.sha
+          }
+          put out/pinterest-de.xml "$FILE"
+          put out/pinterest-de.report.json pinterest-de.report.json
+
+      # Same two-phase logic as the BestPrice purge in update-feeds.yml: purge ONLY once the GitHub origin serves the new
+      # bytes (a purge before that re-caches the OLD file for 12 h — measured 31/07).
+      - name: Purge jsDelivr
+        if: steps.build.outcome == 'success'
+        continue-on-error: true
+        run: |
+          RAW="https://raw.githubusercontent.com/$REPO/$BRANCH/$FILE"
+          CDN="https://cdn.jsdelivr.net/gh/$REPO@$BRANCH/$FILE"
+          PURGE="https://purge.jsdelivr.net/gh/$REPO@$BRANCH/$FILE"
+          sha () { curl -sS --compressed --max-time 60 "$1" | sha256sum | cut -d' ' -f1; }
+          want=$(sha256sum out/pinterest-de.xml | cut -d' ' -f1)
+          ok=0; for i in 1 2 3 4 5 6; do [ "$(sha "$RAW")" = "$want" ] && { ok=1; break; }; sleep 15; done
+          [ "$ok" = 1 ] || { echo "::warning::origin not ready in 90s — purge skipped (would re-cache the old file)"; exit 0; }
+          for i in 1 2 3; do curl -sS --max-time 60 "$PURGE" >/dev/null || true; sleep $((5*i)); [ "$(sha "$CDN")" = "$want" ] && { echo "✅ CDN = repo"; exit 0; }; done
+          echo "::warning::jsDelivr still stale after 3 purges"
+
+      # QUIET like update-feeds.yml (a transient throttle self-heals next day; the previous file keeps serving)
+      # BUT fail RED if the published file is older than 4 days — Pinterest wants updates at least every 7 days.
+      - name: Report / staleness guard
+        if: always()
+        run: |
+          if [ "${{ steps.build.outcome }}" != "success" ]; then echo "::warning::Pinterest DE generator failed — previous file kept"; fi
+          last=$(curl -sS --compressed --max-time 60 "https://raw.githubusercontent.com/$REPO/$BRANCH/$FILE" | grep -o -m1 '<lastBuildDate>[^<]*' | sed 's/<lastBuildDate>//')
+          [ -z "$last" ] && { echo "::warning::no published file yet"; exit 0; }
+          age=$(( ( $(date -u +%s) - $(date -u -d "$last" +%s) ) / 86400 ))
+          echo "published file lastBuildDate: $last (age ${age} d)"
+          # [golive-check 29/09] FIX 4 (optional, non-fatal): Pinterest reads jsDelivr, not GitHub — say so when they differ.
+          cdn=$(curl -sS --compressed --max-time 60 "https://cdn.jsdelivr.net/gh/$REPO@$BRANCH/$FILE" | grep -o -m1 '<lastBuildDate>[^<]*' | sed 's/<lastBuildDate>//' || true)
+          echo "jsDelivr lastBuildDate: ${cdn:-none}"
+          [ "$cdn" = "$last" ] || echo "::warning::jsDelivr serves a different build than GitHub (${cdn:-none} vs $last)"
+          if [ "$age" -gt 4 ]; then echo "::error::Pinterest DE feed is ${age} days old"; exit 1; fi

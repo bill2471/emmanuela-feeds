@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:g="http://base.google.com/ns/1.0">
   <title>EMMANUELA Local Inventory Feed — Greece</title>
   <link href="https://emmanuela.gr"/>
-  <updated>2026-10-05T06:36:56.842Z</updated>
+  <updated>2026-10-05T07:58:36.611Z</updated>
     <entry>
       <g:id>31372692389923</g:id>
       <g:store_code>emmanuela</g:store_code>
@@ -9072,14 +9072,14 @@
       <g:id>31373732446243</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>84.00 EUR</g:price>
+      <g:price>80.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373732511779</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>84.00 EUR</g:price>
+      <g:price>82.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -9093,14 +9093,14 @@
       <g:id>31373732642851</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>94.00 EUR</g:price>
+      <g:price>88.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373732708387</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>94.00 EUR</g:price>
+      <g:price>91.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -9240,42 +9240,42 @@
       <g:id>31373744996387</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>3</g:quantity>
-      <g:price>69.00 EUR</g:price>
+      <g:price>65.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373745029155</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>69.00 EUR</g:price>
+      <g:price>65.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373745061923</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>75.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373745094691</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>69.00 EUR</g:price>
+      <g:price>67.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373745127459</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>69.00 EUR</g:price>
+      <g:price>67.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373745160227</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>77.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -9303,42 +9303,42 @@
       <g:id>31373745291299</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>73.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373745356835</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>73.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373745389603</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>89.00 EUR</g:price>
+      <g:price>83.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373745422371</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>76.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373745455139</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>76.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373745487907</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>89.00 EUR</g:price>
+      <g:price>86.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -9688,14 +9688,14 @@
       <g:id>31373764624419</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>6</g:quantity>
-      <g:price>69.00 EUR</g:price>
+      <g:price>65.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373764821027</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>6</g:quantity>
-      <g:price>69.00 EUR</g:price>
+      <g:price>67.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -9709,14 +9709,14 @@
       <g:id>31373765181475</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>6</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>73.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373765279779</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>6</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>76.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -10395,14 +10395,14 @@
       <g:id>31373813579811</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>64.00 EUR</g:price>
+      <g:price>60.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373813612579</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>64.00 EUR</g:price>
+      <g:price>62.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -10416,14 +10416,14 @@
       <g:id>31373813678115</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>74.00 EUR</g:price>
+      <g:price>68.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373813710883</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>74.00 EUR</g:price>
+      <g:price>71.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -10675,14 +10675,14 @@
       <g:id>31373838811171</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>74.00 EUR</g:price>
+      <g:price>70.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373838843939</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>3</g:quantity>
-      <g:price>74.00 EUR</g:price>
+      <g:price>72.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -10696,14 +10696,14 @@
       <g:id>31373838909475</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>84.00 EUR</g:price>
+      <g:price>78.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31373838942243</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>84.00 EUR</g:price>
+      <g:price>81.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -10843,14 +10843,14 @@
       <g:id>31374000881699</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>1</g:quantity>
-      <g:price>99.00 EUR</g:price>
+      <g:price>95.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374000914467</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>1</g:quantity>
-      <g:price>99.00 EUR</g:price>
+      <g:price>97.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -10864,14 +10864,14 @@
       <g:id>31374000980003</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>1</g:quantity>
-      <g:price>109.00 EUR</g:price>
+      <g:price>103.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374001012771</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>1</g:quantity>
-      <g:price>109.00 EUR</g:price>
+      <g:price>106.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -11319,14 +11319,14 @@
       <g:id>31374062157859</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>3</g:quantity>
-      <g:price>69.00 EUR</g:price>
+      <g:price>65.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374062190627</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>69.00 EUR</g:price>
+      <g:price>67.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -11340,14 +11340,14 @@
       <g:id>31374062256163</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>73.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374062288931</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>76.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -11508,14 +11508,14 @@
       <g:id>31374070251555</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>69.00 EUR</g:price>
+      <g:price>65.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374070284323</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>69.00 EUR</g:price>
+      <g:price>67.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -11529,14 +11529,14 @@
       <g:id>31374070349859</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>73.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374070382627</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>76.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -11571,14 +11571,14 @@
       <g:id>31374071463971</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>2</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>75.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374071496739</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>2</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>77.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -11592,14 +11592,14 @@
       <g:id>31374071562275</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>2</g:quantity>
-      <g:price>89.00 EUR</g:price>
+      <g:price>83.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374071595043</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>2</g:quantity>
-      <g:price>89.00 EUR</g:price>
+      <g:price>86.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -11634,14 +11634,14 @@
       <g:id>31374073036835</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>75.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374073069603</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>77.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -11655,14 +11655,14 @@
       <g:id>31374073135139</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>89.00 EUR</g:price>
+      <g:price>83.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374073167907</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>89.00 EUR</g:price>
+      <g:price>86.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -11809,14 +11809,14 @@
       <g:id>31374089486371</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>74.00 EUR</g:price>
+      <g:price>70.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374089519139</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>74.00 EUR</g:price>
+      <g:price>72.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -11830,14 +11830,14 @@
       <g:id>31374089584675</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>84.00 EUR</g:price>
+      <g:price>78.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374089617443</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>84.00 EUR</g:price>
+      <g:price>81.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -11970,14 +11970,14 @@
       <g:id>31374109999139</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>75.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374110031907</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>77.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -11991,14 +11991,14 @@
       <g:id>31374110097443</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>89.00 EUR</g:price>
+      <g:price>83.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374110130211</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>89.00 EUR</g:price>
+      <g:price>86.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -12201,14 +12201,14 @@
       <g:id>31374140145699</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>75.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374140178467</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>77.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -12222,14 +12222,14 @@
       <g:id>31374140244003</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>89.00 EUR</g:price>
+      <g:price>83.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374140276771</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>89.00 EUR</g:price>
+      <g:price>86.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -13804,14 +13804,14 @@
       <g:id>31374420934691</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>74.00 EUR</g:price>
+      <g:price>70.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374420967459</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>74.00 EUR</g:price>
+      <g:price>72.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -13825,14 +13825,14 @@
       <g:id>31374421032995</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>84.00 EUR</g:price>
+      <g:price>78.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31374421065763</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>84.00 EUR</g:price>
+      <g:price>81.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -18494,14 +18494,14 @@
       <g:id>39612190195747</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>124.00 EUR</g:price>
+      <g:price>118.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>39612200321059</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>124.00 EUR</g:price>
+      <g:price>120.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -18515,14 +18515,14 @@
       <g:id>39612190228515</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>124.00 EUR</g:price>
+      <g:price>118.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>39612200386595</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>124.00 EUR</g:price>
+      <g:price>120.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -19663,7 +19663,7 @@
       <g:id>49357942948174</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>3</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>73.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -19677,7 +19677,7 @@
       <g:id>49357943013710</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
-      <g:price>79.00 EUR</g:price>
+      <g:price>73.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>

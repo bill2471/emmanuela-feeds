@@ -677,6 +677,30 @@ if (process.env.SKROUTZ_NO_JPHOTO !== '1') {
   console.error('  [JPHOTO] kill-switch SKROUTZ_NO_JPHOTO=1 — label routing disabled.');
 }
 
+// v4.8 (2026-10-05) «defcolour»: ΧΡΩΜΑ ΓΙΑ ΠΡΟΪΟΝΤΑ ΧΩΡΙΣ ΑΞΟΝΑ «Χρώμα». Όταν ένα κόσμημα δεν έχει option χρώματος ούτε metafield,
+// το χρώμα είναι η προεπιλογή 'Ασημί' — μετρημένο 05/10: 543 καταχωρήσεις έστελναν «Ασημί» για οξειδωμένα (109 προϊόντα),
+// πολύχρωμα, χρυσά, μαύρα (τυφλοί οπτικοί κριτές, 8/8 controls). Οι περιγραφές Shopify ΔΕΝ αρκούν (21 οξειδωμένα γράφουν
+// σκέτο «ασήμι 925») ⇒ παγωμένος χάρτης handle → χρώμα. Χρησιμοποιείται ΜΟΝΟ στην εκπομπή του <color> (ποτέ σε κάδους/MPN/τίτλους).
+// ⚠ Ο ΧΑΡΤΗΣ ΕΙΝΑΙ ΠΑΓΩΜΕΝΟΣ: νέο προϊόν χωρίς άξονα χρώματος ⇒ μένει «Ασημί» και γράφεται [DEFCOLOUR-UNMAPPED] στο log.
+// Λείπει / χαλασμένος / άδειος χάρτης ⇒ ΑΔΡΑΝΕΣ (byte-ίδιο). Kill-switch: SKROUTZ_NO_DEFCOLOUR=1.
+let DEFCOLOUR_MAP = new Map();
+let DEFCOLOUR_STAMP = 'not loaded';
+if (process.env.SKROUTZ_NO_DEFCOLOUR !== '1') {
+  try {
+    const j = JSON.parse(fs.readFileSync(path.join(__dirname, 'skroutz-jewelry-defaultcolour.json'), 'utf8'));
+    const obj = (j && typeof j === 'object' && j.labels && typeof j.labels === 'object') ? j.labels : {};
+    for (const [h, c] of Object.entries(obj)) if (typeof c === 'string' && c.trim()) DEFCOLOUR_MAP.set(h, c.trim());
+    DEFCOLOUR_STAMP = (j && j.generated) ? j.generated : 'undated';
+    if (DEFCOLOUR_MAP.size === 0) console.error('  [DEFCOLOUR] WARNING: default-colour map is EMPTY — INERT.');
+    else console.log(`  [DEFCOLOUR] Default-colour labels: ${DEFCOLOUR_MAP.size} products, generated ${DEFCOLOUR_STAMP}`);
+  } catch (e) {
+    console.error(`  [DEFCOLOUR] WARNING: skroutz-jewelry-defaultcolour.json missing or unreadable (${e.message}) — INERT.`);
+  }
+} else {
+  console.error('  [DEFCOLOUR] kill-switch SKROUTZ_NO_DEFCOLOUR=1 — default-colour labels disabled.');
+}
+const _defColourUnmappedSeen = new Set();
+
 // Colour label of a photo, or null. __NONE__ files are NOT returned here — they are
 // handled by isPackagingImage below (never main, never additional).
 function jphotoColourOf(imageUrl) {
@@ -1728,9 +1752,19 @@ function generateSkroutzFeed(products) {
       // <color> ΔΕΝ αγγίζει το mpn σε καμία περίπτωση ⇒ κανένα soft reset, ούτε με
       // entryCount > 1. Μετρημένος αντίκτυπος: 4 καταχωρήσεις / 2 προϊόντα (5036G επιχρυσωμένο
       // ως «Ασημί», 7031MO οξειδωμένο ως «Ασημί»). Τα 1101 και 2124M τα κάλυψε ήδη η v4.1.
+      // v4.8 «defcolour»: τίτλος πρώτα (v4.1, αμετάβλητο), μετά ο παγωμένος χάρτης, μετά η προεπιλογή.
+      const _tfColor = group.colorDefaulted ? finishFromProductTitle(product.title) : null;
+      const _dcColor = (group.colorDefaulted && !_tfColor) ? (DEFCOLOUR_MAP.get(product.handle) || null) : null;
       const _emitColor = group.colorDefaulted
-        ? (finishFromProductTitle(product.title) || color)
+        ? (_tfColor || _dcColor || color)
         : color;
+      if (_dcColor && _dcColor !== color) {
+        stats.defColourFixed = (stats.defColourFixed || 0) + 1;
+        console.log(`  [DEFCOLOUR] ${product.handle}: ${color} → ${_dcColor}`);
+      } else if (group.colorDefaulted && !_tfColor && !_dcColor && DEFCOLOUR_MAP.size && !_defColourUnmappedSeen.has(product.handle)) {
+        _defColourUnmappedSeen.add(product.handle);
+        console.log(`  [DEFCOLOUR-UNMAPPED] ${product.handle}: χωρίς άξονα χρώματος και χωρίς ετικέτα — μένει «${color}»`);
+      }
       item += `        <color>${escapeXml(_emitColor)}</color>\n`;
       stats.withColor++;
 

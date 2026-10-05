@@ -1,0 +1,29 @@
+{
+ "generated": "2026-10-05-pilot",
+ "source": "blind visual judges on the main product photo (8/8 hidden controls) + human review of 4 contact sheets; Skroutz ticket #34278465 follow-up",
+ "scope": "ONLY jewelry products with NO colour option and NO shopify.color-pattern metafield (generator default «Ασημί»). Used at the <color> emission point only — never in grouping/MPN/title.",
+ "held_out_pending_emmanouela": [
+  "kremasto-kexrimpari",
+  "kremasta-skoularikia-psifides-kexrimpari",
+  "kremasta-skoularikia-pazl-kexrimpari",
+  "karfitsa-kardia",
+  "karfota-skoularikia-syrmatoplegma"
+ ],
+ "notes": {
+  "andrikos-kremastos-stayros-karfia": "οξειδωμένα καρφιά, μόνο λεπτό χάλκινο τύλιγμα — κυρίαρχο το οξειδωμένο (κριτής: ΠΟΛΥΧΡΩΜΟ/μέτρια)"
+ },
+ "labels": {
+  "andriko-kremasto-anoixtiri": "Γκρι",
+  "andriko-braxioli-alysida-granazia": "Γκρι",
+  "andriko-braxioli-galliko-kleidi": "Γκρι",
+  "andriko-braxioli-kamaki": "Γκρι",
+  "andriko-braxioli-kompos": "Γκρι",
+  "andriko-daxtylidi-aerostato": "Γκρι",
+  "daxtylidi-petalouda": "Πολύχρωμο",
+  "karfitsa-pagkaki-feggari": "Πολύχρωμο",
+  "andriko-skoulariki-stroggylo": "Πολύχρωμο",
+  "karfitsa-rodi": "Χρυσό",
+  "andriko-daxtylidi": "Μαύρο"
+ },
+ "pilot": true
+}

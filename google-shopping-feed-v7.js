@@ -1,5 +1,12 @@
 /**
- * Google Shopping Feed Generator v11.5 for EMMANUELA
+ * Google Shopping Feed Generator v11.6 for EMMANUELA
+ *
+ * v11.6 (2026-10-05 — [SEO] lane · Bill 30/09 «κρίνε εσύ» → option B; deployed only after his explicit ok):
+ *   G1  only products PUBLISHED to the Online Store are emitted (onlineStoreUrl ≠ null), as bestprice-feed-gr.js
+ *       already does. An ACTIVE product that is not published has no live page: the storefront answers 404, and
+ *       with ?country= a 301 to the identical URL (Shopify support ticket, 05/10/2026) ⇒ a dead g:link.
+ *       Measured 05/10/2026: 0 of 459 ACTIVE products unpublished ⇒ 0 items change today.
+ *       Kill-switch: GS_NO_ONLINESTORE_GUARD=1 = v11.5 behaviour.
  *
  * v11.5 (2026-09-21 — [SEO] lane · DEV build, deployed only after Bill's explicit ok):
  *   B1  API_VERSION '2024-01' (silently served as 2025-10) → '2026-07'; one WARN if the served version differs.
@@ -285,11 +292,13 @@ for (const entry of String(process.env.GS_BIGPRODUCT_IDS === undefined ? '444853
 if (process.env.GS_BIGPRODUCT_HANDLES !== undefined) {
   console.error('🔴 GS_BIGPRODUCT_HANDLES is no longer read (v11.5 R3b) — the E2 list is GS_BIGPRODUCT_IDS (product ids).');
 }
+// v11.6 (G1): emit only products published to the Online Store. GS_NO_ONLINESTORE_GUARD=1 = v11.5.
+const ONLINESTORE_GUARD = !envOn('GS_NO_ONLINESTORE_GUARD');
 {
   const set = ['GS_LEGACY_CAPS', 'GS_NO_VARIANTMEDIA', 'GS_NO_PKGFILTER', 'GS_NO_PHOTOEXCL', 'GS_NO_OTHERCOLOUR',
     'GS_NO_LIFESTYLE_GUARD', 'GS_LEGACY_PRICING', 'GS_APPLY_PHOTOGATE', 'GS_APPLY_DROPENTRIES',
-    'GS_BORROW_METAL_ONLY', 'GS_SHIPPING_SOFTFAIL', 'GS_ALLOW_MISSING_SHARED'].filter(envOn);
-  console.log(`⚙️  v11.5 · API ${API_VERSION} · switches: ${set.length ? set.join(', ') : 'none'} · ` +
+    'GS_BORROW_METAL_ONLY', 'GS_SHIPPING_SOFTFAIL', 'GS_ALLOW_MISSING_SHARED', 'GS_NO_ONLINESTORE_GUARD'].filter(envOn);
+  console.log(`⚙️  v11.6 · API ${API_VERSION} · switches: ${set.length ? set.join(', ') : 'none'} · ` +
     `GS_BIGPRODUCT_MODE=${BIGPRODUCT_MODE} (product ids: ${[...BIGPRODUCT_IDS].join(',') || 'none'})` +
     `${LEGACY_CAPS && BIGPRODUCT_MODE !== 'legacy' ? ' → legacy, forced by GS_LEGACY_CAPS' : ''} · ` +
     `GS_EXTRA_IMAGES_CAP=${EXTRA_IMAGES_CAP} · GS_MIN_ITEMS=${MIN_ITEMS}`);
@@ -1528,7 +1537,7 @@ async function fetchProductsWithOptions() {
         pageInfo { hasNextPage endCursor }
         edges {
           node {
-            id title handle descriptionHtml productType vendor
+            id title handle descriptionHtml productType vendor onlineStoreUrl
             media(first: 50) {
               pageInfo { hasNextPage }
               edges {
@@ -1573,6 +1582,9 @@ async function fetchProductsWithOptions() {
       const products = data.data?.products?.edges || [];
       // v11.5 (B3): for…of instead of forEach, so the loop can await the variant follow-up pages
       for (const { node } of products) {
+        // v11.6 (G1): ACTIVE but NOT published to the Online Store ⇒ no live page (404; with ?country= a self-301
+        // loop) ⇒ not emitted. GS_NO_ONLINESTORE_GUARD=1 = v11.5.
+        if (!isEmittableOnlineStore(node)) { _fetchStats.notPublished.push(node.handle); continue; }
         // v11.5 (B2): media must be COMPLETE (the old media(first: 20) cut 12 images in 3 products)
         if (node.media?.pageInfo?.hasNextPage) {
           throw new Error(`${node.handle}: more than 50 media — raise media(first:) (fail-closed, nothing written)`);
@@ -1667,6 +1679,9 @@ async function fetchProductsWithOptions() {
   }
   
   console.log(`\n✅ Total products: ${allProducts.length}\n`);
+  if (_fetchStats.notPublished.length) console.log(`⏭️  Not published to the Online Store — skipped (v11.6 G1): ${_fetchStats.notPublished.length} · ` +
+    `${_fetchStats.notPublished.slice(0, 20).join(', ')}${_fetchStats.notPublished.length > 20 ? ' …' : ''}\n`);
+  else console.log(`✅ Online Store guard (v11.6 G1): ${ONLINESTORE_GUARD ? 'on · 0 unpublished ACTIVE products skipped' : 'OFF (GS_NO_ONLINESTORE_GUARD=1)'}\n`);
   console.log(`✅ Variants read: ${_fetchStats.variantsRead} (each product checked against variantsCount) · ` +
     `follow-up variant pages: ${_fetchStats.followUpPages}\n`);
   return allProducts;
@@ -1682,7 +1697,12 @@ const VARIANT_NODE_FIELDS = `id sku price compareAtPrice inventoryQuantity barco
                   selectedOptions { name value }
                   inventoryItem { measurement { weight { value unit } } }`;
 
-const _fetchStats = { variantsRead: 0, followUpPages: 0 };
+const _fetchStats = { variantsRead: 0, followUpPages: 0, notPublished: [] };
+
+// v11.6 (G1): a product is emitted only if it is published to the Online Store (or the guard is switched off)
+function isEmittableOnlineStore(node, guardOn = ONLINESTORE_GUARD) {
+  return !guardOn || (typeof (node && node.onlineStoreUrl) === 'string' && node.onlineStoreUrl.length > 0);
+}
 
 // The MediaImage number of the variant's own photo (= images[].id), or null. Only a MediaImage gid counts.
 function variantMediaImageId(node) {
@@ -2913,7 +2933,7 @@ function runSelftest() {
   const skipped = [];
   const t = (name, cond) => { if (cond) pass++; else { fail++; console.error(`   ✗ FAIL: ${name}`); } };
   const cdn = f => `https://cdn.shopify.com/s/files/1/0277/0183/7859/files/${f}?v=1767371094`;
-  console.log('\n🧪 v11.5 self-test (offline)\n');
+  console.log('\n🧪 v11.6 self-test (offline)\n');
 
   // 1. PKGFILTER (B6)
   if (PKG_ON) {
@@ -3075,6 +3095,21 @@ function runSelftest() {
   t('E2: default run → one per colour × stone (9 here); kill-switch (GS_BIGPRODUCT_MODE=legacy / GS_LEGACY_CAPS=1) → the first 100',
     effMode === 'colour-stone' ? dflt.length === 9 && ids(dflt) === ids(cs)
       : effMode === 'legacy' ? ids(dflt) === ids(big.slice(0, 100)) : ['all', 'colour'].includes(effMode));
+
+  // v11.6 G1 — Online Store guard (unit + wiring)
+  t('G1: published (onlineStoreUrl set) → emitted', isEmittableOnlineStore({ onlineStoreUrl: 'https://emmanuela.jewelry/el/products/x' }, true));
+  t('G1: onlineStoreUrl null → NOT emitted', !isEmittableOnlineStore({ onlineStoreUrl: null }, true));
+  t('G1: onlineStoreUrl missing / empty / not a string → NOT emitted', !isEmittableOnlineStore({}, true)
+    && !isEmittableOnlineStore({ onlineStoreUrl: '' }, true) && !isEmittableOnlineStore({ onlineStoreUrl: true }, true) && !isEmittableOnlineStore(null, true));
+  t('G1: guard OFF (GS_NO_ONLINESTORE_GUARD=1) → emitted exactly as v11.5', isEmittableOnlineStore({ onlineStoreUrl: null }, false));
+  t(`G1: this run's guard = ${ONLINESTORE_GUARD ? 'on' : 'OFF'}, consistent with GS_NO_ONLINESTORE_GUARD`, ONLINESTORE_GUARD === !envOn('GS_NO_ONLINESTORE_GUARD'));
+  {
+    const src = fetchProductsWithOptions.toString();
+    t('G1 wiring: the products query asks for onlineStoreUrl', /descriptionHtml productType vendor onlineStoreUrl/.test(src));
+    t('G1 wiring: the products loop skips a non-emittable product before it is pushed',
+      /if \(!isEmittableOnlineStore\(node\)\) \{ _fetchStats\.notPublished\.push\(node\.handle\); continue; \}/.test(src)
+      && src.indexOf('isEmittableOnlineStore(node)') < src.indexOf('allProducts.push(product)'));
+  }
 
   console.log(`🧪 self-test: ${pass} passed, ${fail} failed` + (skipped.length ? ` · skipped: ${skipped.join('; ')}` : '') + '\n');
   return fail === 0;

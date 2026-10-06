@@ -1,0 +1,122 @@
+{
+ "generated": "2026-10-06",
+ "owner": "[SEO] lane (google-shopping-feed-v7.js). Read by the Google generator ONLY.",
+ "source": "two independent blind visual judges per product (photos + description, workflow wf_4716cb80-d03, 21/22 identical order, 22/22 identical colours) over the products the shared skroutz-jewelry-defaultcolour.json marks «Πολύχρωμο» / disagrees with",
+ "scope": "products WITHOUT a colour option. multi = Google «color» value as 1 primary + up to 2 secondary store colour words (Merchant Center: primary/secondary separated by «/»); overrides the Skroutz word for that handle. material = per-handle key of MATERIAL_TRANSLATIONS.",
+ "words": [
+  "Ασημένιο",
+  "Επιχρυσωμένο",
+  "Ροζ Επιχρυσωμένο",
+  "Οξειδωμένο",
+  "Μαύρο ανθρακί",
+  "Χάλκινο"
+ ],
+ "multi": {
+  "karfota-skoularikia-axladia": [
+   "Ασημένιο",
+   "Επιχρυσωμένο"
+  ],
+  "stefana-gamou-elia-dixroma": [
+   "Επιχρυσωμένο",
+   "Ασημένιο"
+  ],
+  "daxtylidi-petalouda": [
+   "Ασημένιο",
+   "Επιχρυσωμένο"
+  ],
+  "daxtylidi-spiti": [
+   "Ασημένιο",
+   "Επιχρυσωμένο",
+   "Οξειδωμένο"
+  ],
+  "kremasto-axladi": [
+   "Ασημένιο",
+   "Επιχρυσωμένο"
+  ],
+  "choker-3-xromata": [
+   "Ασημένιο",
+   "Επιχρυσωμένο",
+   "Ροζ Επιχρυσωμένο"
+  ],
+  "kremasto-kadro": [
+   "Ασημένιο",
+   "Επιχρυσωμένο",
+   "Οξειδωμένο"
+  ],
+  "3-skoularikia-ear-cuffs": [
+   "Ασημένιο",
+   "Επιχρυσωμένο",
+   "Ροζ Επιχρυσωμένο"
+  ],
+  "karfitsa-pagkaki-feggari": [
+   "Επιχρυσωμένο",
+   "Οξειδωμένο",
+   "Ασημένιο"
+  ],
+  "karfitsa-libeloula-dixromi": [
+   "Ασημένιο",
+   "Επιχρυσωμένο"
+  ],
+  "karfitsa-pagkaki-dentro": [
+   "Ασημένιο",
+   "Οξειδωμένο"
+  ],
+  "karfota-skoularikia-stroggyla": [
+   "Οξειδωμένο",
+   "Ασημένιο"
+  ],
+  "andriko-skoulariki-tetragono": [
+   "Οξειδωμένο",
+   "Ασημένιο"
+  ],
+  "daxtylidi-libeloula-dixromi": [
+   "Ασημένιο",
+   "Επιχρυσωμένο"
+  ],
+  "skoularikia-krikoi-asteri-feggari": [
+   "Επιχρυσωμένο",
+   "Ασημένιο"
+  ],
+  "skoularikia-ear-pins-pidakes-dixromoi": [
+   "Ασημένιο",
+   "Επιχρυσωμένο"
+  ],
+  "andriko-skoulariki-stroggylo": [
+   "Οξειδωμένο",
+   "Ασημένιο"
+  ],
+  "kremasta-skoularikia-fthinoporina-fylla": [
+   "Επιχρυσωμένο",
+   "Ασημένιο",
+   "Ροζ Επιχρυσωμένο"
+  ],
+  "kremasta-skoularikia-petaloudes-xryses": [
+   "Επιχρυσωμένο",
+   "Μαύρο ανθρακί"
+  ]
+ },
+ "material": {
+  "karfitsa-kardia": "copper"
+ },
+ "notes": {
+  "karfota-skoularikia-axladia": "Skroutz «Πολύχρωμο» · κριτές A=B (high/high)",
+  "stefana-gamou-elia-dixroma": "Skroutz «Πολύχρωμο» · κριτές A=B (medium/high)",
+  "daxtylidi-petalouda": "Skroutz «Πολύχρωμο» · κριτές A=B (high/high)",
+  "daxtylidi-spiti": "Skroutz «Πολύχρωμο» · κριτές A=B (high/high)",
+  "kremasto-axladi": "Skroutz «Πολύχρωμο» · κριτές A=B (high/high)",
+  "choker-3-xromata": "Skroutz «Πολύχρωμο» · κριτές A=B (high/high)",
+  "kremasto-kadro": "Skroutz «Πολύχρωμο» · κριτές A=B (medium/high)",
+  "3-skoularikia-ear-cuffs": "Skroutz «Πολύχρωμο» · κριτές A=B (high/medium)",
+  "karfitsa-pagkaki-feggari": "Skroutz «Πολύχρωμο» · κριτές A=B (high/high)",
+  "karfitsa-libeloula-dixromi": "Skroutz «Πολύχρωμο» · κριτές A=B (high/high)",
+  "karfitsa-pagkaki-dentro": "Skroutz «Πολύχρωμο» · κριτές A=B (medium/high)",
+  "karfota-skoularikia-stroggyla": "Skroutz «Πολύχρωμο» · κριτές A=B (high/high)",
+  "andriko-skoulariki-tetragono": "Skroutz «Πολύχρωμο» · κριτές A=B (medium/high)",
+  "daxtylidi-libeloula-dixromi": "Skroutz «Πολύχρωμο» · κριτές A=B (high/high)",
+  "skoularikia-krikoi-asteri-feggari": "Skroutz «Πολύχρωμο» · κριτές A=B (high/high)",
+  "skoularikia-ear-pins-pidakes-dixromoi": "Skroutz «Πολύχρωμο» · κριτές A=B (high/high)",
+  "andriko-skoulariki-stroggylo": "Skroutz «Πολύχρωμο» · κριτές A=B (high/high)",
+  "kremasta-skoularikia-fthinoporina-fylla": "Skroutz «Πολύχρωμο» · κριτές ίδιο σύνολο, άλλη σειρά → high (medium/high)",
+  "kremasta-skoularikia-petaloudes-xryses": "Skroutz «Πολύχρωμο» · κριτές A=B (medium/medium)"
+ }
+}

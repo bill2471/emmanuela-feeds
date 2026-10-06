@@ -1858,7 +1858,28 @@ function generateSkroutzFeed(products) {
       const structuredBlock = buildStructuredAttributes({
         product, variant: repVariant, skroutzCategory,
       });
-      let fullDescription = description ? `${structuredBlock}\n\n${description}` : structuredBlock;
+      // v4.9 «defmaterial» (2026-10-06, Bill «α»): the defcolour map fixed only <color>; the block/name still claimed
+      // «Ασήμι 925 · Επιμετάλλωση: Καμία» for gold-plated / copper pieces. Same rule as the <color> emission point.
+      let _sbOut = structuredBlock;
+      if (process.env.SKROUTZ_NO_DEFMATERIAL !== '1' && group.colorDefaulted && !finishFromProductTitle(product.title)) {
+        const _dmVal = DEFCOLOUR_MAP.get(product.handle) || null;
+        const _PLAT_NONE = 'Επιμετάλλωση: Καμία (Ασήμι 925 χωρίς επιμετάλλωση)';
+        const _MAT_SILVER = 'Υλικό: Ασήμι 925 (Sterling Silver 925)';
+        if (_dmVal === 'Χρυσό' && _sbOut.split(_PLAT_NONE).length === 2) {
+          _sbOut = _sbOut.replace(_PLAT_NONE, 'Επιμετάλλωση: Επιχρύσωση (Yellow Gold)');
+          stats.defMaterialFixed = (stats.defMaterialFixed || 0) + 1;
+          console.log(`  [DEFMATERIAL] ${product.handle} (${_emitId}): Επιμετάλλωση → Επιχρύσωση`);
+        } else if (_dmVal === 'Χάλκινο' && _sbOut.split(_MAT_SILVER).length === 2 && _sbOut.split(_PLAT_NONE).length === 2) {
+          _sbOut = _sbOut.replace(_MAT_SILVER, 'Υλικό: Χαλκός').replace(_PLAT_NONE, 'Επιμετάλλωση: Καμία (χωρίς επιμετάλλωση)');
+          const _nmOld = `<name><![CDATA[${name}]]></name>`;
+          if (name.includes('από ασήμι 925') && item.split(_nmOld).length === 2) {
+            item = item.replace(_nmOld, `<name><![CDATA[${name.replace('από ασήμι 925', 'από χαλκό')}]]></name>`);
+          }
+          stats.defMaterialFixed = (stats.defMaterialFixed || 0) + 1;
+          console.log(`  [DEFMATERIAL] ${product.handle} (${_emitId}): Υλικό → Χαλκός · όνομα «από χαλκό»`);
+        }
+      }
+      let fullDescription = description ? `${_sbOut}\n\n${description}` : _sbOut;
       // Hard cap at 10,000 chars per feedspec (truncate the long-tail of the body, not the structured top)
       if (fullDescription.length > 10000) fullDescription = fullDescription.substring(0, 9997) + '...';
       item += `        <description><![CDATA[${fullDescription}]]></description>\n`;

@@ -1,5 +1,15 @@
 /**
- * Google Shopping Feed Generator v11.6 for EMMANUELA
+ * Google Shopping Feed Generator v11.7 for EMMANUELA
+ *
+ * v11.7 (2026-10-06 — [SEO] lane · DEV, deployed only after Bill's explicit ok):
+ *   D1  DEFCOLOUR — a product WITHOUT a colour option no longer says «Silver» by default. Its colour comes from
+ *       the SHARED skroutz-jewelry-defaultcolour.json (Skroutz lane: blind visual judges, 155 handles), turned into
+ *       the store's OWN colour word so that the 20 existing translations of that word are used (Γκρι → «Οξειδωμένο»,
+ *       Ασημί → «Ασημένιο», Χρυσό → «Επιχρυσωμένο», Μαύρο → «Μαύρο ανθρακί», Χάλκινο → «Χάλκινο» = Copper), and
+ *       from jewelry-defcolour-google.json ([SEO] lane) where Google needs 1-3 colours with «/» («Πολύχρωμο»)
+ *       or where the photos disagree with the shared map. Same file: per-handle material (karfitsa-kardia = copper).
+ *       Measured 06/10/2026: 170 ACTIVE products without a colour option, 954 in-stock variants per feed, all «Silver».
+ *       Kill-switch: GS_NO_DEFCOLOUR=1 = v11.6 behaviour.
  *
  * v11.6 (2026-10-05 — [SEO] lane · Bill 30/09 «κρίνε εσύ» → option B; deployed only after his explicit ok):
  *   G1  only products PUBLISHED to the Online Store are emitted (onlineStoreUrl ≠ null), as bestprice-feed-gr.js
@@ -297,8 +307,8 @@ const ONLINESTORE_GUARD = !envOn('GS_NO_ONLINESTORE_GUARD');
 {
   const set = ['GS_LEGACY_CAPS', 'GS_NO_VARIANTMEDIA', 'GS_NO_PKGFILTER', 'GS_NO_PHOTOEXCL', 'GS_NO_OTHERCOLOUR',
     'GS_NO_LIFESTYLE_GUARD', 'GS_LEGACY_PRICING', 'GS_APPLY_PHOTOGATE', 'GS_APPLY_DROPENTRIES',
-    'GS_BORROW_METAL_ONLY', 'GS_SHIPPING_SOFTFAIL', 'GS_ALLOW_MISSING_SHARED', 'GS_NO_ONLINESTORE_GUARD'].filter(envOn);
-  console.log(`⚙️  v11.6 · API ${API_VERSION} · switches: ${set.length ? set.join(', ') : 'none'} · ` +
+    'GS_BORROW_METAL_ONLY', 'GS_SHIPPING_SOFTFAIL', 'GS_ALLOW_MISSING_SHARED', 'GS_NO_ONLINESTORE_GUARD', 'GS_NO_DEFCOLOUR'].filter(envOn);
+  console.log(`⚙️  v11.7 · API ${API_VERSION} · switches: ${set.length ? set.join(', ') : 'none'} · ` +
     `GS_BIGPRODUCT_MODE=${BIGPRODUCT_MODE} (product ids: ${[...BIGPRODUCT_IDS].join(',') || 'none'})` +
     `${LEGACY_CAPS && BIGPRODUCT_MODE !== 'legacy' ? ' → legacy, forced by GS_LEGACY_CAPS' : ''} · ` +
     `GS_EXTRA_IMAGES_CAP=${EXTRA_IMAGES_CAP} · GS_MIN_ITEMS=${MIN_ITEMS}`);
@@ -399,6 +409,55 @@ if (PHOTOEXCL_ON) _checkSharedJson('jewelry-photo-exclusions.json', j =>
   (j && j.extras && typeof j.extras === 'object' && !Array.isArray(j.extras) && Object.keys(j.extras).length > 0
     && (j.dropEntries === undefined || (j.dropEntries && typeof j.dropEntries === 'object' && !Array.isArray(j.dropEntries))))
     ? null : '"extras" is not a non-empty object (or "dropEntries" is not an object)');
+// ────────────────────────────────────────────────────────────────────────
+// v11.7 D1 — DEFCOLOUR: colour (and, per handle, material) for products WITHOUT a colour option.
+// Until v11.6 every such item said «Silver»: shopify.color-pattern is a list of metaobject gids, which normalizeColor()
+// rejects (digits), so the chain always fell through to the default. ONE copy of each fact:
+//   skroutz-jewelry-defaultcolour.json — Skroutz lane, SHARED: an edit there now ALSO changes the Google feeds.
+//   jewelry-defcolour-google.json      — [SEO] lane: «multi» overrides the Skroutz word per handle; «material» per handle.
+// FAIL-OPEN on purpose (unlike F8): a missing/corrupt file = a loud WARNING + v11.6 behaviour («Silver»), never a stopped
+// run — a broken colour map must not freeze all 41 Google feeds. Kill-switch GS_NO_DEFCOLOUR=1 = v11.6.
+// ────────────────────────────────────────────────────────────────────────
+const DEFCOLOUR_ON = !envOn('GS_NO_DEFCOLOUR');
+const DEFCOLOUR_SKROUTZ_TO_STORE = { 'Γκρι': ['Οξειδωμένο'], 'Ασημί': ['Ασημένιο'], 'Χρυσό': ['Επιχρυσωμένο'], 'Μαύρο': ['Μαύρο ανθρακί'], 'Χάλκινο': ['Χάλκινο'] };
+const DEFCOLOUR_STORE_WORDS = ['Ασημένιο', 'Επιχρυσωμένο', 'Ροζ Επιχρυσωμένο', 'Οξειδωμένο', 'Μαύρο ανθρακί', 'Χάλκινο'];
+// Pure: (shared Skroutz map, Google overlay) → { map: handle → [store words], material: handle → key, info }
+function buildDefcolour(sj, gj) {
+  const map = new Map(), material = new Map(), info = { skroutz: 0, multi: 0, noWord: [], badMulti: [], materialNoColour: [] };
+  const own = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
+  for (const [h, w] of Object.entries((sj && sj.labels) || {})) {
+    const words = own(DEFCOLOUR_SKROUTZ_TO_STORE, w) ? DEFCOLOUR_SKROUTZ_TO_STORE[w] : null;
+    if (words) { map.set(h, words); info.skroutz++; } else info.noWord.push(`${h}=${w}`);   // «Πολύχρωμο» needs a multi entry
+  }
+  for (const [h, arr] of Object.entries((gj && gj.multi) || {})) {
+    if (Array.isArray(arr) && arr.length >= 1 && arr.length <= 3 && arr.every(x => DEFCOLOUR_STORE_WORDS.includes(x))) { map.set(h, arr.slice()); info.multi++; }
+    else info.badMulti.push(`${h}=${JSON.stringify(arr)}`);
+  }
+  for (const [h, k] of Object.entries((gj && gj.material) || {})) if (typeof k === 'string' && k) material.set(h, k);
+  info.noWord = info.noWord.filter(x => !map.has(x.split('=')[0]));
+  info.materialNoColour = [...material.keys()].filter(h => !map.has(h));   // material override without a colour ⇒ colour stays Silver
+  return { map, material, info };
+}
+// A warning that must be SEEN: in GitHub Actions also as an annotation (run summary), not only in the log.
+const _defcolourWarn = msg => { console.error(`  [DEFCOLOUR] 🔴 WARNING: ${msg}`); if (process.env.GITHUB_ACTIONS === 'true') console.log(`::warning title=DEFCOLOUR::${msg}`); };
+let DEFCOLOUR = new Map(), DEFCOLOUR_MATERIAL = new Map();
+if (DEFCOLOUR_ON) {
+  // Each file on its own: a broken Skroutz map must not also discard the Google overlay, and vice versa.
+  let sj = null, gj = null;
+  try { sj = JSON.parse(fs.readFileSync(path.join(__dirname, 'skroutz-jewelry-defaultcolour.json'), 'utf8')); }
+  catch (e) { _defcolourWarn(`skroutz-jewelry-defaultcolour.json δεν διαβάζεται (${e.message}) — όσα δεν έχουν γραμμή στο Google αρχείο μένουν «Silver» (fail-open).`); }
+  try { gj = JSON.parse(fs.readFileSync(path.join(__dirname, 'jewelry-defcolour-google.json'), 'utf8')); }
+  catch (e) { _defcolourWarn(`jewelry-defcolour-google.json δεν διαβάζεται (${e.message}) — «Πολύχρωμο» μένει «Silver», κανένα υλικό ανά προϊόν (fail-open).`); }
+  const b = buildDefcolour(sj, gj);
+  DEFCOLOUR = b.map; DEFCOLOUR_MATERIAL = b.material;
+  console.log(`  [DEFCOLOUR] handles με χρώμα από χάρτη: ${DEFCOLOUR.size} (Skroutz ${b.info.skroutz} · Google multi ${b.info.multi}, generated ${(sj && sj.generated) || '—'} / ${(gj && gj.generated) || '—'}) · υλικό ανά προϊόν: ${DEFCOLOUR_MATERIAL.size}` +
+    (b.info.noWord.length ? ` · λέξη χάρτη χωρίς αντιστοίχιση (ισχύει μόνο αν το προϊόν δεν έχει option χρώματος): ${b.info.noWord.join(', ')}` : ''));
+  if (b.info.badMulti.length) _defcolourWarn(`jewelry-defcolour-google.json: αγνοήθηκαν γραμμές multi (όχι 1-3 λέξεις του καταστήματος): ${b.info.badMulti.join(', ')}`);
+  if (b.info.materialNoColour.length) _defcolourWarn(`υλικό ανά προϊόν ΧΩΡΙΣ χρώμα από χάρτη (χρώμα «Silver» + άλλο υλικό): ${b.info.materialNoColour.join(', ')}`);
+} else {
+  console.log('  [DEFCOLOUR] ΑΝΕΝΕΡΓΟ (GS_NO_DEFCOLOUR=1) — όλα «Silver» όπως v11.6');
+}
+
 function assertSharedJson() {
   if (!_sharedJsonProblems.length) return;
   for (const p of _sharedJsonProblems) console.error(`   🔴 shared JSON: ${p}`);
@@ -567,6 +626,7 @@ const COLOR_MAP = {
   'επιχυσωμένο': 'Gold',  // typo fix - missing ρ
   'πολύχρωμο': 'Multicolor', 'πολύχρωμα': 'Multicolor', 'πολύχρωμο σετ': 'Multicolor',
   'black': 'Black',
+  'χάλκινο': 'Copper',   // v11.7 D1 (karfitsa-kardia: copper, Emmanouela 05/10/2026)
 };
 
 // ============================================
@@ -577,32 +637,32 @@ const MATERIAL_TRANSLATIONS = {
   en: {
     'sterling-silver': 'Sterling Silver', 'silver': 'Silver', 'silver-1': 'Silver',
     'gold-1': 'Gold', 'gold': 'Gold', 'synthetic': 'Synthetic', 'pearl': 'Pearl',
-    'zircon': 'Zircon', 'ασήμι': 'Sterling Silver', 'ασήμι 925': 'Sterling Silver',
+    'zircon': 'Zircon', 'ασήμι': 'Sterling Silver', 'ασήμι 925': 'Sterling Silver', 'copper': 'Copper',
   },
   de: {
     'sterling-silver': '925er Silber', 'silver': 'Silber', 'silver-1': 'Silber',
     'gold-1': 'Gold', 'gold': 'Gold', 'synthetic': 'Synthetik', 'pearl': 'Perle',
-    'zircon': 'Zirkon', 'ασήμι': '925er Silber', 'ασήμι 925': '925er Silber',
+    'zircon': 'Zirkon', 'ασήμι': '925er Silber', 'ασήμι 925': '925er Silber', 'copper': 'Kupfer',
   },
   fr: {
     'sterling-silver': 'Argent Sterling', 'silver': 'Argent', 'silver-1': 'Argent',
     'gold-1': 'Or', 'gold': 'Or', 'synthetic': 'Synthétique', 'pearl': 'Perle',
-    'zircon': 'Zircon', 'ασήμι': 'Argent Sterling', 'ασήμι 925': 'Argent Sterling',
+    'zircon': 'Zircon', 'ασήμι': 'Argent Sterling', 'ασήμι 925': 'Argent Sterling', 'copper': 'Cuivre',
   },
   it: {
     'sterling-silver': 'Argento 925', 'silver': 'Argento', 'silver-1': 'Argento',
     'gold-1': 'Oro', 'gold': 'Oro', 'synthetic': 'Sintetico', 'pearl': 'Perla',
-    'zircon': 'Zircone', 'ασήμι': 'Argento 925', 'ασήμι 925': 'Argento 925',
+    'zircon': 'Zircone', 'ασήμι': 'Argento 925', 'ασήμι 925': 'Argento 925', 'copper': 'Rame',
   },
   es: {
     'sterling-silver': 'Plata de Ley', 'silver': 'Plata', 'silver-1': 'Plata',
     'gold-1': 'Oro', 'gold': 'Oro', 'synthetic': 'Sintético', 'pearl': 'Perla',
-    'zircon': 'Circón', 'ασήμι': 'Plata de Ley', 'ασήμι 925': 'Plata de Ley',
+    'zircon': 'Circón', 'ασήμι': 'Plata de Ley', 'ασήμι 925': 'Plata de Ley', 'copper': 'Cobre',
   },
   el: {
     'sterling-silver': 'Ασήμι 925', 'silver': 'Ασήμι', 'silver-1': 'Ασήμι',
     'gold-1': 'Χρυσός', 'gold': 'Χρυσός', 'synthetic': 'Συνθετικό', 'pearl': 'Μαργαριτάρι',
-    'zircon': 'Ζιρκόν', 'ασήμι': 'Ασήμι 925', 'ασήμι 925': 'Ασήμι 925',
+    'zircon': 'Ζιρκόν', 'ασήμι': 'Ασήμι 925', 'ασήμι 925': 'Ασήμι 925', 'copper': 'Χαλκός',
   },
 };
 
@@ -2380,7 +2440,8 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
     imageLinkGuard: 0, droppedEntries: 0, gateDropped: 0, gateSavedByLabel: 0,
     lifestyleBlocked: { packaging: 0, photoexcl: 0, 'other-colour-own': 0, 'other-colour-range': 0 },
     priceOmitted: 0, onSale: 0,
-    borrowTier1: 0, borrowTier2: 0, lifestyleEmitted: 0, lifestyleNone: 0, lifestyleSame: 0   // R3a / F9
+    borrowTier1: 0, borrowTier2: 0, lifestyleEmitted: 0, lifestyleNone: 0, lifestyleSame: 0,   // R3a / F9
+    defColour: 0, defColourUnmapped: 0, defColourUnmappedHandles: new Set()   // v11.7 D1
   };
 
   // v6: Check if we have shipping for this country
@@ -2411,7 +2472,8 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
     const translatedTitle = prodTrans.title || enFallback.title || product.title;
     const translatedDesc = stripHtml(prodTrans.body_html || enFallback.body_html || product.body_html);
     const gender = getGender(product.product_type, product.title);
-    const material = translateMaterial(product.metafields?.material, market.language);
+    // v11.7 D1: per-handle material key (jewelry-defcolour-google.json «material», e.g. copper) before the metafield
+    const material = translateMaterial((DEFCOLOUR_ON && DEFCOLOUR_MATERIAL.get(product.handle)) || product.metafields?.material, market.language);
     const googleCategory = getGoogleCategory(product.product_type);
     stats.categoryBreakdown[googleCategory] = (stats.categoryBreakdown[googleCategory] || 0) + 1;
     const productIsRing = isRing(product.product_type);
@@ -2475,11 +2537,19 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
       // v7.9: color fallback — target locale → English → normalize Greek
       const enOptFallbackForColor = translations.englishFallback?.optionValues || {};
       const translatedColor = translations.optionValues[variantColorOriginal] || enOptFallbackForColor[variantColorOriginal] || null;
+      // v11.7 D1: no colour option ⇒ the DEFCOLOUR store word(s), each through the SAME chain as an option value
+      // (this locale → English fallback → COLOR_MAP), joined with «/» (Merchant Center: primary/secondary colours)
+      const defWords = (!variantColorOriginal && DEFCOLOUR_ON) ? DEFCOLOUR.get(product.handle) : undefined;
+      const colourOfWord = w => translations.optionValues[w] || enOptFallbackForColor[w] || normalizeColor(w);
+      const defColour = defWords ? defWords.map(colourOfWord).join('/') : null;
       const colorNormalized = translatedColor
         || normalizeColor(variantColorOriginal)
+        || defColour
         || normalizeColor(product.metafields?.color)
         || 'Silver';
       if (colorNormalized) stats.withColor++;
+      if (defColour) stats.defColour++;
+      else if (!variantColorOriginal) { stats.defColourUnmapped++; stats.defColourUnmappedHandles.add(product.handle); }
       if (variant.weight) stats.withWeight++;
       
       // v11.2: Color-correct images — use variant boundary heuristic
@@ -2682,6 +2752,8 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
   const lifeSum = stats.lifestyleEmitted + stats.lifestyleNone + stats.lifestyleSame + lbSum;
   console.log(`      Lifestyle outcome: emitted ${stats.lifestyleEmitted} · no 2nd image ${stats.lifestyleNone} · 2nd image = its image_link ${stats.lifestyleSame} · ` +
     `blocked ${lbSum} (reasons above) · total ${lifeSum} of ${stats.inStock} items${lifeSum === stats.inStock ? '' : ' 🔴 MISMATCH'}`);
+  console.log(`      [DEFCOLOUR] χωρίς option χρώματος: από χάρτη ${stats.defColour} · χωρίς χάρτη (Silver) ${stats.defColourUnmapped}` +
+    (stats.defColourUnmappedHandles.size ? ` (${[...stats.defColourUnmappedHandles].join(', ')})` : '') + (DEFCOLOUR_ON ? '' : ' · ΑΝΕΝΕΡΓΟ'));
   console.log(`      Left out: dropEntries ${stats.droppedEntries} · E1 gate ${stats.gateDropped} (saved by label ${stats.gateSavedByLabel}) · null price ${stats.priceOmitted} · on sale ${stats.onSale}`);
   console.log('');
 
@@ -2933,7 +3005,7 @@ function runSelftest() {
   const skipped = [];
   const t = (name, cond) => { if (cond) pass++; else { fail++; console.error(`   ✗ FAIL: ${name}`); } };
   const cdn = f => `https://cdn.shopify.com/s/files/1/0277/0183/7859/files/${f}?v=1767371094`;
-  console.log('\n🧪 v11.6 self-test (offline)\n');
+  console.log('\n🧪 v11.7 self-test (offline)\n');
 
   // 1. PKGFILTER (B6)
   if (PKG_ON) {
@@ -3109,6 +3181,41 @@ function runSelftest() {
     t('G1 wiring: the products loop skips a non-emittable product before it is pushed',
       /if \(!isEmittableOnlineStore\(node\)\) \{ _fetchStats\.notPublished\.push\(node\.handle\); continue; \}/.test(src)
       && src.indexOf('isEmittableOnlineStore(node)') < src.indexOf('allProducts.push(product)'));
+  }
+
+  // v11.7 D1 — DEFCOLOUR (unit on synthetic data + the loaded files + wiring)
+  {
+    const b = buildDefcolour({ labels: { a: 'Γκρι', b: 'Ασημί', c: 'Πολύχρωμο', d: 'Μαύρο', e: 'Άγνωστο' } },
+      { multi: { c: ['Ασημένιο', 'Επιχρυσωμένο'], d: ['Οξειδωμένο'], x: ['Μωβ'] }, material: { k: 'copper' } });
+    t('D1: Skroutz word → store word (Γκρι → Οξειδωμένο, Ασημί → Ασημένιο)', JSON.stringify(b.map.get('a')) === '["Οξειδωμένο"]' && JSON.stringify(b.map.get('b')) === '["Ασημένιο"]');
+    t('D1: «Πολύχρωμο» only through multi; multi overrides the Skroutz word', JSON.stringify(b.map.get('c')) === '["Ασημένιο","Επιχρυσωμένο"]' && JSON.stringify(b.map.get('d')) === '["Οξειδωμένο"]');
+    t('D1: unknown Skroutz word and non-store multi word are NOT mapped (stay Silver)', !b.map.has('e') && !b.map.has('x') && b.info.noWord.join() === 'e=Άγνωστο');
+    t('D1: material per handle', b.material.get('k') === 'copper' && translateMaterial('copper', 'de') === 'Kupfer' && translateMaterial('copper', 'nl') === 'Copper');
+    t('D1: COLOR_MAP path (Greek feed): Οξειδωμένο → Gray, Επιχρυσωμένο → Gold, Μαύρο ανθρακί → Black, Χάλκινο → Copper',
+      normalizeColor('Οξειδωμένο') === 'Gray' && normalizeColor('Επιχρυσωμένο') === 'Gold' && normalizeColor('Μαύρο ανθρακί') === 'Black' && normalizeColor('Χάλκινο') === 'Copper');
+    {   // the new key must change NONE of the store's real copper-related option values (06/10: these 3) — measured with vs without it
+      const real = ['Οξειδωμένο με σύρμα από χαλκό', 'Οξειδωμένα με σύρμα από χαλκό', 'Ασημένιο με δέσιμο από χαλκό', 'Ασημένιο με χαλκό', 'Οξειδωμένο με χαλκό'];
+      const withKey = real.map(normalizeColor); const saved = COLOR_MAP['χάλκινο']; delete COLOR_MAP['χάλκινο'];
+      const without = real.map(normalizeColor); COLOR_MAP['χάλκινο'] = saved;
+      t('D1: the new «χάλκινο» key changes none of the real copper-related option values', saved === 'Copper' && JSON.stringify(withKey) === JSON.stringify(without));
+    }
+    {
+      const p = buildDefcolour({ labels: { a: 'Γκρι', constructor: 'Γκρι', z: 'constructor', y: 'toString' } }, null);
+      t('D1: Skroutz map alone (overlay missing) still maps; a label equal to an Object.prototype name is NOT a word',
+        JSON.stringify(p.map.get('a')) === '["Οξειδωμένο"]' && !p.map.has('z') && !p.map.has('y') && p.material.size === 0);
+      const q = buildDefcolour(null, { multi: { c: ['Ασημένιο', 'Επιχρυσωμένο'], bad: ['Silver'], big: ['Ασημένιο', 'Ασημένιο', 'Ασημένιο', 'Ασημένιο'] }, material: { c: 'copper', m: 'copper' } });
+      t('D1: overlay alone (Skroutz map missing) still maps; bad multi lines are REPORTED; material without colour is REPORTED',
+        JSON.stringify(q.map.get('c')) === '["Ασημένιο","Επιχρυσωμένο"]' && q.info.badMulti.length === 2 && q.info.materialNoColour.join() === 'm');
+    }
+    if (DEFCOLOUR_ON) {
+      t('D1: the shared + Google files are loaded (≥ 150 handles, karfitsa-kardia material copper)', DEFCOLOUR.size >= 150 && DEFCOLOUR_MATERIAL.get('karfitsa-kardia') === 'copper');
+      t('D1: every per-handle material has a colour from the map (no «Silver» + other material)', [...DEFCOLOUR_MATERIAL.keys()].every(h => DEFCOLOUR.has(h)));
+      t('D1: every mapped word is a store word', [...DEFCOLOUR.values()].every(a => a.length >= 1 && a.length <= 3 && a.every(w => DEFCOLOUR_STORE_WORDS.includes(w))));
+    } else skipped.push('D1 files (GS_NO_DEFCOLOUR=1)');
+    const src = generateFeedForMarket.toString();
+    t('D1 wiring: the default applies only WITHOUT a colour option, after the option chain and before the metafield',
+      /\(!variantColorOriginal && DEFCOLOUR_ON\) \? DEFCOLOUR\.get\(product\.handle\)/.test(src)
+      && src.indexOf('|| defColour') > src.indexOf('|| normalizeColor(variantColorOriginal)') && src.indexOf('|| defColour') < src.indexOf('|| normalizeColor(product.metafields?.color)'));
   }
 
   console.log(`🧪 self-test: ${pass} passed, ${fail} failed` + (skipped.length ? ` · skipped: ${skipped.join('; ')}` : '') + '\n');

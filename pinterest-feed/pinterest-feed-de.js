@@ -13,6 +13,13 @@
  *   stock  : "in stock" / "out of stock" (with a space, Pinterest spec); out-of-stock items STAY; unpublished/non-ACTIVE/deleted LEAVE
  *   brand  : "EMMANUELA handcrafted for you®" (this file only — emmanuela-de.xml / GMC are NOT touched)
  *   no sale_price, ever (compareAtPrice is ignored).
+ *   category (v0.3, 06/10/2026 — [PINTEREST] bulletin 06/10 11:26Z, Emmanouela «Ναι, ζήτα το», Bill «ναι»):
+ *            g:google_product_category = the SAME numeric id the Google feed gives the product. ONE copy of the rule:
+ *            GOOGLE_CATEGORY_MAP + the matching loop are READ from ../google-shopping-feed-v7.js at run time (root file;
+ *            present in the sparse cone checkout). Generic fallback (DEFAULT_GOOGLE_CATEGORY, 188 = 2 levels) ⇒ field
+ *            OMITTED (Pinterest flags «insufficient category levels»). FAIL-OPEN for this optional field: if the rule
+ *            cannot be read/self-tested, the feed is built WITHOUT categories (as v0.2) + warning + report.categorySource.
+ *            Kill-switch: PIN_NO_CATEGORY=1.
  *
  * SETTINGS (CLI flag or env):
  *   --item-id product|variant      PIN_ITEM_ID      default product  (item_id = product id; stable when the variant changes)
@@ -112,12 +119,32 @@ const plain = s => String(s || '').replace(/^﻿/, '').replace(/\r\n?/g, '\n').r
   .replace(/&euro;/g, '€').replace(/&amp;/g, '&')
   .replace(/[ \t ]+/g, ' ').replace(/ *\n */g, '\n').replace(/\n{3,}/g, '\n\n').trim();
 const oneLine = s => plain(s).replace(/\s*\n\s*/g, ' '); // titles: single line
+
+// ---------- category (v0.3): the Google feed's rule, read from its own file — never a second copy here ----------
+const CATEGORY = (() => {
+  const src = path.join(__dirname, '..', 'google-shopping-feed-v7.js');
+  const off = why => { console.warn(`⚠ categories OFF: ${why} — feed built without g:google_product_category`); return { ok: false, why, of: () => null }; };
+  if (process.env.PIN_NO_CATEGORY) return off('PIN_NO_CATEGORY set');
+  let text; try { text = fs.readFileSync(src, 'utf8'); } catch (e) { return off(`cannot read ${path.basename(src)} (${e.code || e.message})`); }
+  const mMap = text.match(/const GOOGLE_CATEGORY_MAP = (\{[\s\S]*?\r?\n\});/), mDef = text.match(/const DEFAULT_GOOGLE_CATEGORY = (\d+);/);
+  if (!mMap || !mDef) return off('GOOGLE_CATEGORY_MAP / DEFAULT_GOOGLE_CATEGORY not found in the Google generator');
+  let map; try { map = new Function('return ' + mMap[1])(); } catch (e) { return off('map does not evaluate: ' + e.message); }
+  const def = Number(mDef[1]);
+  // same algorithm as getGoogleCategory() in the Google generator: lowercase base product_type, first keyword contained wins
+  const of = productType => { if (!productType) return null; const t = String(productType).toLowerCase(); for (const [k, id] of Object.entries(map)) if (t.includes(k)) return id === def ? null : id; return null; };
+  // self-test with known types — if the Google rule changed shape, categories go OFF instead of guessing
+  const ctl = [['Γυναικεία σκουλαρίκια', 194], ['Ανδρικά μενταγιόν', 192], ['Καρφίτσες', 197], ['Ανδρικά δαχτυλίδια', 200], ['Γυναικεία βραχιόλια', 191], ['Κολιέ', 196], ['Άγνωστος τύπος', null]];
+  const bad = ctl.filter(([t, want]) => of(t) !== want);
+  if (bad.length) return off('self-test failed: ' + JSON.stringify(bad.map(([t, w]) => [t, w, of(t)])));
+  const sha = require('crypto').createHash('sha256').update(text).digest('hex').slice(0, 12);
+  return { ok: true, why: `${path.basename(src)} sha256 ${sha} · ${Object.keys(map).length} keywords · default ${def} omitted`, of };
+})();
 const money = amount => { const n = Number(amount); if (!Number.isFinite(n) || n <= 0) return null; return n.toFixed(2) + ' EUR'; };
 const rfc822 = d => d.toUTCString().replace('GMT', '+0000');
 
 // ---------- data ----------
 const PRODUCT_FIELDS = `
-  id legacyResourceId status handle onlineStoreUrl
+  id legacyResourceId status handle onlineStoreUrl productType
   publishedInContext(context: { country: ${COUNTRY} })
   translations(locale: "${LOCALE}") { key value }
   featuredMedia { preview { image { url width height } } }
@@ -217,7 +244,8 @@ function validate(it) {
       link: `${DOMAIN}/products/${handle}`,
       image_link: main, additional: extra,
       price: money(cp.amount), availability: v.availableForSale ? 'in stock' : 'out of stock',
-      _variant: String(v.legacyResourceId), _position: v.position,
+      category: CATEGORY.of(p.productType),
+      _variant: String(v.legacyResourceId), _position: v.position, _type: p.productType || null,
     };
     const err = validate(it);
     if (err.length) return problems.push({ pid, problem: 'invalid ' + err.join(',') });
@@ -247,7 +275,7 @@ function validate(it) {
       <g:price>${xml(it.price)}</g:price>
       <g:availability>${it.availability}</g:availability>
       <g:condition>new</g:condition>
-      <g:brand>${xml(BRAND)}</g:brand>
+      <g:brand>${xml(BRAND)}</g:brand>${it.category ? `\n      <g:google_product_category>${it.category}</g:google_product_category>` : ''}
     </item>`).join('\n');
   const doc = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
@@ -260,10 +288,11 @@ ${body}
   </channel>
 </rss>
 `;
-  const report = { generator: 'pinterest-feed-de.js v0.2', builtAt: started.toISOString(), apiVersionRequested: API_VERSION, apiVersionServed: SERVED_API, settings: { ...S, overrides: path.basename(S.overrides) },
+  const report = { generator: 'pinterest-feed-de.js v0.3', builtAt: started.toISOString(), apiVersionRequested: API_VERSION, apiVersionServed: SERVED_API, settings: { ...S, overrides: path.basename(S.overrides) },
     listed: ids.length, items: items.length, inStock: items.filter(i => i.availability === 'in stock').length, excluded, notes,
-    perItem: items.map(i => ({ id: i.id, variant: i._variant, position: i._position, price: i.price, availability: i.availability })) };
-  console.log(`listed ${ids.length} · items ${items.length} (in stock ${report.inStock}) · excluded ${excluded.length} · notes ${notes.length} · ${S.dry ? 'DRY' : 'write ' + S.out}`);
+    categorySource: { ok: CATEGORY.ok, why: CATEGORY.why }, withCategory: items.filter(i => i.category).length,
+    perItem: items.map(i => ({ id: i.id, variant: i._variant, position: i._position, price: i.price, availability: i.availability, type: i._type, category: i.category })) };
+  console.log(`listed ${ids.length} · items ${items.length} (in stock ${report.inStock}) · category ${report.withCategory}/${items.length} [${CATEGORY.ok ? 'on' : 'OFF'}: ${CATEGORY.why}] · excluded ${excluded.length} · notes ${notes.length} · ${S.dry ? 'DRY' : 'write ' + S.out}`);
   if (S.dry) return;
   // v0.2: write BOTH temp files first, then rename both (a failing report write can no longer leave a new XML + exit 2)
   fs.mkdirSync(path.dirname(S.out), { recursive: true }); fs.mkdirSync(path.dirname(S.report), { recursive: true });

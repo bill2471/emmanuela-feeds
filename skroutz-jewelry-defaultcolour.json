@@ -1,16 +1,16 @@
 {
- "generated": "2026-10-05",
- "source": "blind visual judges on the main product photo (8/8 hidden controls) + human review of 4 contact sheets; Skroutz ticket #34278465 follow-up",
+ "generated": "2026-10-06-v2b",
+ "source": "blind visual judges on the main product photo (8/8 hidden controls) + human review of 4 contact sheets; Skroutz ticket #34278465 follow-up · v2: +5 handles from Emmanouela's answer (email 05/10/2026 07:17Z), copper value «Χάλκινο» = Bill 05/10",
  "scope": "ONLY jewelry products with NO colour option and NO shopify.color-pattern metafield (generator default «Ασημί»). Used at the <color> emission point only — never in grouping/MPN/title.",
- "held_out_pending_emmanouela": [
-  "kremasto-kexrimpari",
-  "kremasta-skoularikia-psifides-kexrimpari",
-  "kremasta-skoularikia-pazl-kexrimpari",
-  "karfitsa-kardia",
-  "karfota-skoularikia-syrmatoplegma"
- ],
+ "held_out_pending_emmanouela": [],
  "notes": {
-  "andrikos-kremastos-stayros-karfia": "οξειδωμένα καρφιά, μόνο λεπτό χάλκινο τύλιγμα — κυρίαρχο το οξειδωμένο (κριτής: ΠΟΛΥΧΡΩΜΟ/μέτρια)"
+  "andrikos-kremastos-stayros-karfia": "οξειδωμένα καρφιά, μόνο λεπτό χάλκινο τύλιγμα — κυρίαρχο το οξειδωμένο (κριτής: ΠΟΛΥΧΡΩΜΟ/μέτρια)",
+  "kremasto-kexrimpari": "Εμμανουέλα 05/10: επίχρυσο",
+  "kremasta-skoularikia-psifides-kexrimpari": "Εμμανουέλα 05/10: επίχρυσα",
+  "kremasta-skoularikia-pazl-kexrimpari": "Εμμανουέλα 05/10: επίχρυσα",
+  "karfitsa-kardia": "Εμμανουέλα 05/10: χαλκός χωρίς επιμετάλλωση · τιμή «Χάλκινο» = Bill (α)",
+  "karfota-skoularikia-syrmatoplegma": "Εμμανουέλα 05/10: οξειδωμένα, όχι επιροδιωμένα",
+  "andriko-daxtylidi": "06/10: Μαύρο→Γκρι — περιγραφή «οξειδωμένο» + 2 τυφλοί κριτές [SEO] + έλεγχος με φωτό αναφοράς ίδιου πλεκτού σχεδίου· κριτής 05/10 είχε «ΜΑΥΡΟ» (μέτρια)"
  },
  "labels": {
   "3-andrika-skoularikia-krikoi": "Πολύχρωμο",
@@ -146,7 +146,7 @@
   "anriko-daxtylidi-korona-stayroi": "Γκρι",
   "andriko-daxtylidi-plokamia": "Γκρι",
   "andriko-daxtylidi-nekrokefali": "Γκρι",
-  "andriko-daxtylidi": "Μαύρο",
+  "andriko-daxtylidi": "Γκρι",
   "kremasta-skoularikia-omprela-synnefo": "Ασημί",
   "daxtylidi-libeloula-dixromi": "Πολύχρωμο",
   "skoularikia-krikoi-asteri-feggari": "Πολύχρωμο",
@@ -162,6 +162,11 @@
   "kremasta-skoularikia-fthinoporina-fylla": "Πολύχρωμο",
   "kremasta-skoularikia-petaloudes-xryses": "Πολύχρωμο",
   "kremasto-libeloula-smalto": "Χρυσό",
-  "andriko-daxtylidi-alysida-oxeidomeno": "Γκρι"
+  "andriko-daxtylidi-alysida-oxeidomeno": "Γκρι",
+  "kremasto-kexrimpari": "Χρυσό",
+  "kremasta-skoularikia-psifides-kexrimpari": "Χρυσό",
+  "kremasta-skoularikia-pazl-kexrimpari": "Χρυσό",
+  "karfitsa-kardia": "Χάλκινο",
+  "karfota-skoularikia-syrmatoplegma": "Γκρι"
  }
 }

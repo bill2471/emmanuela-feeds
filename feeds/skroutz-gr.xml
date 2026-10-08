@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-10-07 23:09</created_at>
+  <created_at>2026-10-08 04:56</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -49587,9 +49587,9 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
         <mpn><![CDATA[1KL310LRBE5]]></mpn>
         <ean>5212033621670</ean>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>2</quantity>
         <color>Κόκκινο</color>
-        <size>36,40,41</size>
+        <size>36,41</size>
         <variations>
           <variation>
             <variationid>40479899254941</variationid>
@@ -49601,15 +49601,6 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033621670</ean>
           </variation>
           <variation>
-            <variationid>40479900172445</variationid>
-            <availability>Παράδοση 1 έως 3 ημέρες</availability>
-            <size>40</size>
-            <quantity>1</quantity>
-            <manufacturersku><![CDATA[1KL310LRBE9]]></manufacturersku>
-            <mpn><![CDATA[1KL310LRBE9]]></mpn>
-            <ean>5212033621755</ean>
-          </variation>
-          <variation>
             <variationid>40479900434589</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>41</size>
@@ -49619,7 +49610,7 @@ Minimal σκουλαρίκια jackets φίδια που συνδυάζουν π
             <ean>5212033621779</ean>
           </variation>
         </variations>
-        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Κόκκινο. Διαθέσιμα νούμερα: 36,40,41.]]></description>
+        <description><![CDATA[Σανδάλια μονομάχου με φερμουάρ "Κίρκη". Χειροποίητα δερμάτινα σανδάλια EMMANUELA. Χρώμα: Κόκκινο. Διαθέσιμα νούμερα: 36,41.]]></description>
         <shipping>0</shipping>
       </product>
       <product>

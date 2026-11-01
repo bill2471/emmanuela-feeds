@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mywebstore>
-  <created_at>2026-11-01 13:07</created_at>
+  <created_at>2026-11-01 22:08</created_at>
   <products>
       <product>
         <id>31372692389923</id>
@@ -1416,7 +1416,7 @@
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[EMM-4376269160483-Μαύρο]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>2</quantity>
         <color>Μαύρο</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -10428,7 +10428,7 @@ Minimal κομψότητα με τριπλή διάσταση. Τα καρφωτ
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[8027-Ασημί]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ασημί</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -10692,7 +10692,7 @@ Minimal κομψότητα που αγκαλιάζει τα αυτιά σου! �
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1193-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>3</quantity>
+        <quantity>4</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -32169,7 +32169,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[LU076ri]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>70</quantity>
+        <quantity>56</quantity>
         <color>Γκρι</color>
         <size>57,58,59,60,61,62,63,64,65,66,67,68,69,70</size>
         <variations>
@@ -32177,98 +32177,98 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
             <variationid>31374494335011</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>57</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[LU076ri]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31374494367779</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>58</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[LU076ri]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31374494400547</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>59</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[LU076ri]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31374494433315</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>60</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[LU076ri]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31374494466083</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>61</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[LU076ri]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31374494498851</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>62</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[LU076ri]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31374494531619</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>63</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[LU076ri]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31374494564387</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>64</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[LU076ri]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31374494597155</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>65</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[LU076ri]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31374494629923</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>66</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[LU076ri]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31374494662691</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>67</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[LU076ri]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31374494695459</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>68</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[LU076ri]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31374494728227</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>69</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[LU076ri]]></manufacturersku>
           </variation>
           <variation>
             <variationid>31374494760995</variationid>
             <availability>Παράδοση 1 έως 3 ημέρες</availability>
             <size>70</size>
-            <quantity>5</quantity>
+            <quantity>4</quantity>
             <manufacturersku><![CDATA[LU076ri]]></manufacturersku>
           </variation>
         </variations>
@@ -33861,7 +33861,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1325-Χρυσό]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Χρυσό</color>
         <size>One Size</size>
         <weight>2</weight>
@@ -35308,7 +35308,7 @@ Boho chic ear jackets από ροζάριο-αλυσίδα με πέτρες τ�
         <manufacturer><![CDATA[Emmanuela - handcrafted for you]]></manufacturer>
         <mpn><![CDATA[1261-Ροζ]]></mpn>
         <availability>Παράδοση 1 έως 3 ημέρες</availability>
-        <quantity>4</quantity>
+        <quantity>3</quantity>
         <color>Ροζ</color>
         <size>One Size</size>
         <weight>2</weight>

@@ -1,6 +1,6 @@
 {
  "generator": "pinterest-feed-de.js v0.3",
- "builtAt": "2026-11-08T08:58:06.928Z",
+ "builtAt": "2026-11-09T09:45:02.703Z",
  "apiVersionRequested": "2026-07",
  "apiVersionServed": "2026-07",
  "settings": {
@@ -82,7 +82,7 @@
  ],
  "categorySource": {
   "ok": true,
-  "why": "google-shopping-feed-v7.js sha256 061695b23e9d · 31 keywords · default 188 omitted"
+  "why": "google-shopping-feed-v7.js sha256 32775382fa5a · 31 keywords · default 188 omitted"
  },
  "withCategory": 54,
  "perItem": [

@@ -1,5 +1,18 @@
 /**
- * Google Shopping Feed Generator v11.7 for EMMANUELA
+ * Google Shopping Feed Generator v11.8 for EMMANUELA
+ *
+ * v11.8 (2026-11-03 — [SEO] lane · DRY, deployed only after Bill's explicit ok):
+ *   S1  TRANSIT_TIMES = the CHECKOUT (Shopify delivery estimates: P1D processing + minTransitTime/maxTransitTime per
+ *       method, read live 02/11/2026 15:16Z and 09/11/2026 06:55Z, API unstable): EU · DE · GB · CH · NO standard 4–6 ·
+ *       every express-only destination 3–5 (US/PR · CA · AU · NZ · MX · AE · IL · SA · ASIA — checkout since 03/11/2026) ·
+ *       GR 2–4 from dispatch (Bill 25/09).
+ *       Emmanouela 03/11: «στανταρτ 10 ημερες και/η express 2 ημερες, + 1 ημερα για την προετοιμασια».
+ *   S2  <g:service> carries NO carrier name (Emmanouela 03/11: «αν θα στειλουμε με box, ups, dhl ειναι δικο μας θεμα»):
+ *       'Standard' where the cheapest checkout option is standard/free, 'Express' where only express exists,
+ *       US/PR 'Express (DDP)'.
+ *   A3  PRODUCT_HIGHLIGHTS: the «free shipping» and «30-day returns» bullets are removed in all 8 languages and all
+ *       feeds (Bill 23/09, «A3 μετά τις 29/09»): Google's product_highlight minimum requirements exclude shipping
+ *       and business policies; «most countries» was also untrue (29 of 60 checkout countries are free). 4 remain.
  *
  * v11.7 (2026-10-06 — [SEO] lane · DEV, deployed only after Bill's explicit ok):
  *   D1  DEFCOLOUR — a product WITHOUT a colour option no longer says «Silver» by default. Its colour comes from
@@ -308,7 +321,7 @@ const ONLINESTORE_GUARD = !envOn('GS_NO_ONLINESTORE_GUARD');
   const set = ['GS_LEGACY_CAPS', 'GS_NO_VARIANTMEDIA', 'GS_NO_PKGFILTER', 'GS_NO_PHOTOEXCL', 'GS_NO_OTHERCOLOUR',
     'GS_NO_LIFESTYLE_GUARD', 'GS_LEGACY_PRICING', 'GS_APPLY_PHOTOGATE', 'GS_APPLY_DROPENTRIES',
     'GS_BORROW_METAL_ONLY', 'GS_SHIPPING_SOFTFAIL', 'GS_ALLOW_MISSING_SHARED', 'GS_NO_ONLINESTORE_GUARD', 'GS_NO_DEFCOLOUR'].filter(envOn);
-  console.log(`⚙️  v11.7 · API ${API_VERSION} · switches: ${set.length ? set.join(', ') : 'none'} · ` +
+  console.log(`⚙️  v11.8 · API ${API_VERSION} · switches: ${set.length ? set.join(', ') : 'none'} · ` +
     `GS_BIGPRODUCT_MODE=${BIGPRODUCT_MODE} (product ids: ${[...BIGPRODUCT_IDS].join(',') || 'none'})` +
     `${LEGACY_CAPS && BIGPRODUCT_MODE !== 'legacy' ? ' → legacy, forced by GS_LEGACY_CAPS' : ''} · ` +
     `GS_EXTRA_IMAGES_CAP=${EXTRA_IMAGES_CAP} · GS_MIN_ITEMS=${MIN_ITEMS}`);
@@ -940,30 +953,26 @@ const MARKETS = {
 const HANDLING_TIME = { min: 1, max: 1 };
 
 // Transit times by region (in business days)
-// Source: shipping pages (total delivery = handling 1 day + transit)
-// GR page: 2-4 days total → transit 1-3
-// DE page: 2-4 days total → transit 1-3
-// EU page: 3-5 days total → transit 2-4
-// GB page: 3-6 days total → transit 2-5
-// US page: 3-7 days total → transit 2-6
-// Other page: 3-8 days total → transit 2-7
+// v11.8: source = the Shopify CHECKOUT (minTransitTime/maxTransitTime per method, read 02/11/2026 15:16Z;
+//        processing P1D = HANDLING_TIME). GR = Bill 25/09 (2-4 business days from dispatch).
+//        Every express-only destination (US/PR · CA · AU · NZ · MX · AE · IL · SA · ASIA): 3–5 (checkout since 03/11/2026, re-read 09/11).
 const TRANSIT_TIMES = {
-  GR: { min: 1, max: 3 },      // Greece - domestic (page: 2-4 total)
-  DE: { min: 1, max: 3 },      // Germany - fast EU (page: 2-4 total)
-  EU: { min: 2, max: 4 },      // Rest of EU (page: 3-5 total)
-  GB: { min: 2, max: 5 },      // UK (page: 3-6 total)
-  CH: { min: 2, max: 4 },      // Switzerland (EU-like)
-  NO: { min: 2, max: 4 },      // Norway (EU-like)
+  GR: { min: 2, max: 4 },      // v11.8 S1: Greece — 2-4 business days FROM DISPATCH (Bill 25/09)
+  DE: { min: 4, max: 6 },      // v11.8 S1: checkout «Δωρεάν αποστολή» transit 4–6 («έως 10 ημέρες από την αποστολή»)
+  EU: { min: 4, max: 6 },      // v11.8 S1: checkout «Δωρεάν αποστολή» transit 4–6
+  GB: { min: 4, max: 6 },      // v11.8 S1: checkout «Απλή αποστολή» transit 4–6
+  CH: { min: 4, max: 6 },      // v11.8 S1: checkout «Απλή αποστολή» transit 4–6
+  NO: { min: 4, max: 6 },      // v11.8 S1: checkout «Απλή αποστολή» transit 4–6
   // IS removed (microstate)
-  US: { min: 2, max: 6 },      // USA (page: 3-7 total)
-  CA: { min: 2, max: 4 },      // Canada (EU-like)
-  AU: { min: 2, max: 7 },      // Australia (page: 3-8 "other")
-  NZ: { min: 2, max: 7 },      // New Zealand (page: 3-8 "other")
-  MX: { min: 2, max: 7 },      // Mexico (page: 3-8 "other")
-  AE: { min: 2, max: 7 },      // UAE (page: 3-8 "other")
-  IL: { min: 2, max: 7 },      // Israel (page: 3-8 "other")
-  SA: { min: 2, max: 7 },      // Saudi Arabia (page: 3-8 "other")
-  ASIA: { min: 2, max: 7 },    // Japan, Korea, Singapore, etc. (page: 3-8 "other")
+  US: { min: 3, max: 5 },      // v11.8 S1: checkout «Prepaid Duties & Taxes — Ταχεία αποστολή» transit 3–5 (PR → US)
+  CA: { min: 3, max: 5 },      // v11.8 S1: checkout «Ταχεία αποστολή» transit 3–5
+  AU: { min: 3, max: 5 },      // v11.8 S1: checkout «Ταχεία αποστολή» transit 3–5
+  NZ: { min: 3, max: 5 },      // v11.8 S1: checkout «Ταχεία αποστολή» transit 3–5
+  MX: { min: 3, max: 5 },      // v11.8 S1: checkout «Ταχεία αποστολή» transit 3–5
+  AE: { min: 3, max: 5 },      // v11.8 S1: checkout «Ταχεία αποστολή» transit 3–5
+  IL: { min: 3, max: 5 },      // v11.8 S1: checkout «Ταχεία αποστολή» transit 3–5
+  SA: { min: 3, max: 5 },      // v11.8 S1: checkout «Ταχεία αποστολή» transit 3–5
+  ASIA: { min: 3, max: 5 },    // v11.8 S1: JP KR SG TW TH MY HK ID — checkout «Ταχεία αποστολή» transit 3–5
 };
 
 // Map country codes to transit time groups
@@ -1031,14 +1040,18 @@ const RETURN_POLICY_LABELS = {
 // Maps country codes to shipping service names for <g:service>.
 // Google requires a descriptive name matching what the customer sees.
 
+// v11.8 S2: NO carrier name (the carrier of each parcel is an internal choice — Emmanouela 03/11).
+// 'Standard' = the cheapest checkout option is standard/free · 'Express' = only express exists in the checkout.
 const SHIPPING_SERVICE_MAP = {
-  GR: 'ACS Courier',
-  US: 'DHL DDP Express',
-  PR: 'DHL DDP Express',
-  // All others default to DHL Express
+  GR: 'Standard',
+  US: 'Express (DDP)',
+  PR: 'Express (DDP)',
+  CA: 'Express', AU: 'Express', NZ: 'Express', MX: 'Express', AE: 'Express', IL: 'Express', SA: 'Express',
+  JP: 'Express', KR: 'Express', SG: 'Express', TW: 'Express', TH: 'Express', MY: 'Express', HK: 'Express', ID: 'Express',
+  // All others (EU · DE · GB · CH · NO): 'Standard'
 };
 
-const DEFAULT_SHIPPING_SERVICE = 'DHL Express';
+const DEFAULT_SHIPPING_SERVICE = 'Standard';
 
 
 // ============================================
@@ -1512,64 +1525,48 @@ const PRODUCT_HIGHLIGHTS = {
     'Made with premium quality materials',
     'Unique artisan design — no two pieces are identical',
     'Comes in a beautiful gift-ready box',
-    'Free shipping to most countries',
-    'Easy 30-day returns',
   ],
   de: [
     'Handgefertigt in Griechenland von erfahrenen Kunsthandwerkern',
     'Hergestellt aus hochwertigen Materialien',
     'Einzigartiges Kunsthandwerk — kein Stück gleicht dem anderen',
     'Wird in einer schönen Geschenkbox geliefert',
-    'Kostenloser Versand in die meisten Länder',
-    'Einfache Rückgabe innerhalb von 30 Tagen',
   ],
   fr: [
     'Fabriqué à la main en Grèce par des artisans qualifiés',
     'Fabriqué avec des matériaux de qualité supérieure',
     'Design artisanal unique — aucune pièce n\'est identique',
     'Livré dans un bel écrin cadeau',
-    'Livraison gratuite dans la plupart des pays',
-    'Retours faciles sous 30 jours',
   ],
   it: [
     'Realizzato a mano in Grecia da artigiani esperti',
     'Realizzato con materiali di prima qualità',
     'Design artigianale unico — nessun pezzo è identico',
     'Consegnato in un\'elegante confezione regalo',
-    'Spedizione gratuita nella maggior parte dei paesi',
-    'Reso facile entro 30 giorni',
   ],
   es: [
     'Hecho a mano en Grecia por artesanos cualificados',
     'Fabricado con materiales de primera calidad',
     'Diseño artesanal único — no hay dos piezas iguales',
     'Se entrega en una hermosa caja de regalo',
-    'Envío gratuito a la mayoría de los países',
-    'Devoluciones fáciles en 30 días',
   ],
   el: [
     'Χειροποίητο στην Ελλάδα από εξειδικευμένους τεχνίτες',
     'Κατασκευασμένο από υλικά υψηλής ποιότητας',
     'Μοναδικός σχεδιασμός — κανένα κομμάτι δεν είναι ίδιο',
     'Παραδίδεται σε όμορφη συσκευασία δώρου',
-    'Δωρεάν αποστολή στις περισσότερες χώρες',
-    'Εύκολες επιστροφές εντός 30 ημερών',
   ],
   nl: [
     'Handgemaakt in Griekenland door ervaren ambachtslieden',
     'Gemaakt van hoogwaardige materialen',
     'Uniek ambachtelijk ontwerp — geen twee stuks zijn identiek',
     'Wordt geleverd in een prachtige geschenkdoos',
-    'Gratis verzending naar de meeste landen',
-    'Eenvoudig retourneren binnen 30 dagen',
   ],
   ja: [
     'ギリシャの熟練職人による手作り',
     '高品質な素材を使用',
     'ユニークな職人デザイン — 同じものは二つとない',
     '美しいギフトボックス入り',
-    'ほとんどの国への送料無料',
-    '30日間の簡単返品',
   ],
 };
 
@@ -3005,7 +3002,20 @@ function runSelftest() {
   const skipped = [];
   const t = (name, cond) => { if (cond) pass++; else { fail++; console.error(`   ✗ FAIL: ${name}`); } };
   const cdn = f => `https://cdn.shopify.com/s/files/1/0277/0183/7859/files/${f}?v=1767371094`;
-  console.log('\n🧪 v11.7 self-test (offline)\n');
+  console.log('\n🧪 v11.8 self-test (offline)\n');
+
+  // 0. v11.8 — S1 (checkout transit) · S2 (no carrier names) · A3 (no shipping/returns highlight) — each with a control
+  const CARRIER_RX = /DHL|ACS|UPS|BOX ?NOW|FedEx|ELTA/i;
+  t('v11.8 S2: no carrier name in <g:service>', ![...Object.values(SHIPPING_SERVICE_MAP), DEFAULT_SHIPPING_SERVICE].some(s => CARRIER_RX.test(s)));
+  t('v11.8 S2: control — the detector catches a carrier name', CARRIER_RX.test('DHL Express') && CARRIER_RX.test('ACS Courier'));
+  const A3_RX = /shipping|Versand|Livraison|Spedizione|Envío|αποστολή|verzending|送料|return|Rückgabe|Retour|Reso|Devoluc|επιστροφ|retourn|返品/i;
+  t('v11.8 A3: every language has 4 highlights', Object.values(PRODUCT_HIGHLIGHTS).every(l => l.length === 4));
+  t('v11.8 A3: no shipping/returns highlight in any language', !Object.values(PRODUCT_HIGHLIGHTS).some(l => l.some(h => A3_RX.test(h))));
+  t('v11.8 A3: control — the detector catches the old bullets', A3_RX.test('Free shipping to most countries') && A3_RX.test('Εύκολες επιστροφές εντός 30 ημερών') && A3_RX.test('30日間の簡単返品'));
+  t('v11.8 S1: EU/DE/GB/CH/NO transit 4–6 · every express-only group 3–5 · GR 2–4', ['EU', 'DE', 'GB', 'CH', 'NO'].every(g => TRANSIT_TIMES[g].min === 4 && TRANSIT_TIMES[g].max === 6) && ['US', 'CA', 'AU', 'NZ', 'MX', 'AE', 'IL', 'SA', 'ASIA'].every(g => TRANSIT_TIMES[g].min === 3 && TRANSIT_TIMES[g].max === 5) && TRANSIT_TIMES.GR.min === 2 && TRANSIT_TIMES.GR.max === 4);
+  const hasGroup = c => !!(TRANSIT_GROUP[c] && TRANSIT_TIMES[TRANSIT_GROUP[c]]);
+  t('v11.8 S1: every market country has its own transit group (no silent EU fallback)', Object.values(MARKETS).every(m => hasGroup(m.country)));
+  t('v11.8 S1: control — a country without a group is caught', !hasGroup('ZZ') && hasGroup('JP'));
 
   // 1. PKGFILTER (B6)
   if (PKG_ON) {

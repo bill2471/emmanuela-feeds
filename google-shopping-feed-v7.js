@@ -1,5 +1,16 @@
 /**
- * Google Shopping Feed Generator v11.8 for EMMANUELA
+ * Google Shopping Feed Generator v11.9 for EMMANUELA
+ *
+ * v11.9 (2026-11-09 — [SEO] lane · DRY, deployed only after Bill's explicit ok):
+ *   C1  every <g:shipping> carries <g:handling_cutoff_time>2359</g:handling_cutoff_time> and
+ *       <g:handling_cutoff_timezone>Europe/Athens</g:handling_cutoff_timezone> = the OWNER'S RULE (Emmanouela 04/11/2026,
+ *       bulletin 25951: every order ships the next business day, whatever the time — «η αποκοπη θα πρπει να ειναι στις
+ *       12,00 τα μεσανυχτα»). Google: «enter 23:59 in the local timezone to indicate no cutoff time» (answer/16543665).
+ *       The Shopify checkout cannot follow (its cutoff is fixed at 12 pm, Shopify help «Setting up manual delivery
+ *       dates») ⇒ for orders 12:00–24:00 Athens the checkout shows up to 1 business day LATER than Google.
+ *       Up to v11.8 the feed sent NO cutoff ⇒ Google's documented default «8AM PST» (= 18:00 Athens) applied to every
+ *       item that has its own <g:shipping> (Merchant API products_v1 Shipping.handling_cutoff_time; Help answer/16543665).
+ *       Bill 09/11/2026: «Ναι, ετοίμασέ το» (dry). Kill-switch: GS_NO_CUTOFF=1 = v11.8 output.
  *
  * v11.8 (2026-11-03 — [SEO] lane · DRY, deployed only after Bill's explicit ok):
  *   S1  TRANSIT_TIMES = the CHECKOUT (Shopify delivery estimates: P1D processing + minTransitTime/maxTransitTime per
@@ -320,8 +331,8 @@ const ONLINESTORE_GUARD = !envOn('GS_NO_ONLINESTORE_GUARD');
 {
   const set = ['GS_LEGACY_CAPS', 'GS_NO_VARIANTMEDIA', 'GS_NO_PKGFILTER', 'GS_NO_PHOTOEXCL', 'GS_NO_OTHERCOLOUR',
     'GS_NO_LIFESTYLE_GUARD', 'GS_LEGACY_PRICING', 'GS_APPLY_PHOTOGATE', 'GS_APPLY_DROPENTRIES',
-    'GS_BORROW_METAL_ONLY', 'GS_SHIPPING_SOFTFAIL', 'GS_ALLOW_MISSING_SHARED', 'GS_NO_ONLINESTORE_GUARD', 'GS_NO_DEFCOLOUR'].filter(envOn);
-  console.log(`⚙️  v11.8 · API ${API_VERSION} · switches: ${set.length ? set.join(', ') : 'none'} · ` +
+    'GS_BORROW_METAL_ONLY', 'GS_SHIPPING_SOFTFAIL', 'GS_ALLOW_MISSING_SHARED', 'GS_NO_ONLINESTORE_GUARD', 'GS_NO_DEFCOLOUR', 'GS_NO_CUTOFF'].filter(envOn);
+  console.log(`⚙️  v11.9 · API ${API_VERSION} · switches: ${set.length ? set.join(', ') : 'none'} · ` +
     `GS_BIGPRODUCT_MODE=${BIGPRODUCT_MODE} (product ids: ${[...BIGPRODUCT_IDS].join(',') || 'none'})` +
     `${LEGACY_CAPS && BIGPRODUCT_MODE !== 'legacy' ? ' → legacy, forced by GS_LEGACY_CAPS' : ''} · ` +
     `GS_EXTRA_IMAGES_CAP=${EXTRA_IMAGES_CAP} · GS_MIN_ITEMS=${MIN_ITEMS}`);
@@ -951,6 +962,9 @@ const MARKETS = {
 
 // Handling time (same for all countries) - 1 business day always
 const HANDLING_TIME = { min: 1, max: 1 };
+// v11.9 C1: business-day cutoff 23:59 Europe/Athens — HHMM + IANA zone, as Google asks for the <g:shipping>
+// sub-attributes handling_cutoff_time / handling_cutoff_timezone. GS_NO_CUTOFF=1 = v11.8 (none).
+const HANDLING_CUTOFF = envOn('GS_NO_CUTOFF') ? null : { time: '2359', timezone: 'Europe/Athens' };
 
 // Transit times by region (in business days)
 // v11.8: source = the Shopify CHECKOUT (minTransitTime/maxTransitTime per method, read 02/11/2026 15:16Z;
@@ -1451,7 +1465,9 @@ function formatShippingTag(countryCode, shippingRates) {
         <g:min_handling_time>${HANDLING_TIME.min}</g:min_handling_time>
         <g:max_handling_time>${HANDLING_TIME.max}</g:max_handling_time>
         <g:min_transit_time>${transit.min}</g:min_transit_time>
-        <g:max_transit_time>${transit.max}</g:max_transit_time>
+        <g:max_transit_time>${transit.max}</g:max_transit_time>${HANDLING_CUTOFF ? `
+        <g:handling_cutoff_time>${HANDLING_CUTOFF.time}</g:handling_cutoff_time>
+        <g:handling_cutoff_timezone>${HANDLING_CUTOFF.timezone}</g:handling_cutoff_timezone>` : ''}
       </g:shipping>`;
 }
 
@@ -3002,7 +3018,7 @@ function runSelftest() {
   const skipped = [];
   const t = (name, cond) => { if (cond) pass++; else { fail++; console.error(`   ✗ FAIL: ${name}`); } };
   const cdn = f => `https://cdn.shopify.com/s/files/1/0277/0183/7859/files/${f}?v=1767371094`;
-  console.log('\n🧪 v11.8 self-test (offline)\n');
+  console.log('\n🧪 v11.9 self-test (offline)\n');
 
   // 0. v11.8 — S1 (checkout transit) · S2 (no carrier names) · A3 (no shipping/returns highlight) — each with a control
   const CARRIER_RX = /DHL|ACS|UPS|BOX ?NOW|FedEx|ELTA/i;
@@ -3016,6 +3032,27 @@ function runSelftest() {
   const hasGroup = c => !!(TRANSIT_GROUP[c] && TRANSIT_TIMES[TRANSIT_GROUP[c]]);
   t('v11.8 S1: every market country has its own transit group (no silent EU fallback)', Object.values(MARKETS).every(m => hasGroup(m.country)));
   t('v11.8 S1: control — a country without a group is caught', !hasGroup('ZZ') && hasGroup('JP'));
+
+  // 0b. v11.9 — C1 (handling cutoff 2359 Europe/Athens) — each with a control · + the kill-switch test
+  const C1_RATES = { DE: { price: 0, currency: 'EUR' }, US: { price: 29.9, currency: 'USD' }, GR: { price: 0, currency: 'EUR' }, IT: { price: 0, currency: 'EUR' }, HR: { price: 0, currency: 'EUR' } };
+  const C1_CC = ['DE', 'US', 'GR', 'IT', 'HR'];
+  if (!envOn('GS_NO_CUTOFF')) {
+    const HC = HANDLING_CUTOFF || {};
+    const CUT_RX = /<g:shipping>(?:(?!<\/g:shipping>)[\s\S])*<g:handling_cutoff_time>2359<\/g:handling_cutoff_time>\s*<g:handling_cutoff_timezone>Europe\/Athens<\/g:handling_cutoff_timezone>\s*<\/g:shipping>/;
+    const blocks = C1_CC.map(c => formatShippingTag(c, C1_RATES));
+    t('v11.9 C1: HANDLING_CUTOFF = 2359 Europe/Athens', HC.time === '2359' && HC.timezone === 'Europe/Athens');
+    t('v11.9 C1: HHMM format', /^([01]\d|2[0-3])[0-5]\d$/.test(HC.time || ''));
+    t('v11.9 C1: valid IANA timezone', (() => { try { if (!HC.timezone) return false; new Intl.DateTimeFormat('en', { timeZone: HC.timezone }); return true; } catch (e) { return false; } })());
+    t('v11.9 C1: the cutoff pair sits INSIDE each <g:shipping> (DE, US, GR, IT, HR)', blocks.every(b => CUT_RX.test(b)));
+    t('v11.9 C1: exactly one cutoff pair per <g:shipping>', blocks.every(b => (b.match(/<g:handling_cutoff_time>/g) || []).length === 1 && (b.match(/<g:handling_cutoff_timezone>/g) || []).length === 1 && (b.match(/<g:shipping>/g) || []).length === 1));
+    t('v11.9 C1: the v11.8 sub-attributes are unchanged', blocks.every(b => /<g:min_handling_time>1<\/g:min_handling_time>/.test(b) && /<g:max_handling_time>1<\/g:max_handling_time>/.test(b)) && /<g:min_transit_time>4<\/g:min_transit_time>/.test(blocks[0]) && /<g:max_transit_time>5<\/g:max_transit_time>/.test(blocks[1]) && /<g:min_transit_time>2<\/g:min_transit_time>/.test(blocks[2]));
+    t('v11.9 C1: control — a v11.8 block (no cutoff) is caught', !CUT_RX.test('<g:shipping><g:country>DE</g:country><g:max_transit_time>6</g:max_transit_time></g:shipping>'));
+    t('v11.9 C1: control — a cutoff OUTSIDE <g:shipping> is caught', !CUT_RX.test('<g:shipping><g:country>DE</g:country></g:shipping><g:handling_cutoff_time>2359</g:handling_cutoff_time><g:handling_cutoff_timezone>Europe/Athens</g:handling_cutoff_timezone>'));
+    t('v11.9 C1: control — no rate for a country ⇒ no <g:shipping> at all (unchanged)', formatShippingTag('ZZ', C1_RATES) === '');
+  } else {
+    t('v11.9 C1: kill-switch GS_NO_CUTOFF=1 — HANDLING_CUTOFF is null and every <g:shipping> has no handling_cutoff (DE, US, GR, IT, HR)', HANDLING_CUTOFF === null && C1_CC.every(c => { const b = formatShippingTag(c, C1_RATES); return b.includes('<g:shipping>') && !b.includes('handling_cutoff'); }));
+    skipped.push('v11.9 C1 value tests (GS_NO_CUTOFF=1 — the kill-switch test ran instead)');
+  }
 
   // 1. PKGFILTER (B6)
   if (PKG_ON) {

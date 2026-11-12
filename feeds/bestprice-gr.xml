@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <store>
-  <date>2026-11-10 14:47</date>
+  <date>2026-11-12 15:04</date>
   <products>
     <product>
       <productId>31372692389923</productId>
@@ -14031,7 +14031,12 @@
       <productId>49357103432014</productId>
       <title><![CDATA[Σκουλαρίκι ανδρικό κρίκος μικρός ραβδωτός χειροποίητο από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-skoulariki-krikos-ravdotos</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/hoopwide2.jpg?v=1786019997</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-615174.jpg?v=1767361219</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/ashmenio-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-615174.jpg?v=1767361219</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-390685.jpg?v=1767361225</img2>
+        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-552421.jpg?v=1767361229</img3>
+      </imagesURL>
       <price>59.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>
@@ -14063,8 +14068,6 @@
       <imagesURL>
         <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-485357.jpg?v=1767361209</img1>
         <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-995184.jpg?v=1767361215</img2>
-        <img3>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-390685.jpg?v=1767361225</img3>
-        <img4>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/mayro-anthraki-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-552421.jpg?v=1767361229</img4>
       </imagesURL>
       <price>59.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
@@ -14093,7 +14096,11 @@
       <productId>49357103530318</productId>
       <title><![CDATA[Σκουλαρίκι ανδρικό κρίκος μικρός ραβδωτός χειροποίητο μαύρο από ασήμι 925]]></title>
       <productURL>https://emmanuela.gr/products/andriko-skoulariki-krikos-ravdotos</productURL>
-      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/hoopwide3.jpg?v=1786019997</imageURL>
+      <imageURL>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-485357.jpg?v=1767361209</imageURL>
+      <imagesURL>
+        <img1>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-485357.jpg?v=1767361209</img1>
+        <img2>https://cdn.shopify.com/s/files/1/0277/0183/7859/files/oxeidwmeno-andriko-skoylariki-krikos-mikros-rabdwtos-apo-ashmi-925-kosmhmata-emmanuela-995184.jpg?v=1767361215</img2>
+      </imagesURL>
       <price>59.00</price>
       <category_path>Κοσμήματα-&gt;Σκουλαρίκια-&gt;Ανδρικά σκουλαρίκια</category_path>
       <availability>Παράδοση σε 1-3 ημέρες</availability>

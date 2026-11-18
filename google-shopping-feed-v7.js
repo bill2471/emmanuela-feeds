@@ -1,5 +1,23 @@
 /**
- * Google Shopping Feed Generator v11.9 for EMMANUELA
+ * Google Shopping Feed Generator v11.10 for EMMANUELA
+ *
+ * v11.10 (2026-11-12 — [SEO] lane · DRY, deployed only after Bill's explicit ok) — BLACK FRIDAY 23–30/11/2026:
+ *   BF1 in the 12 BF markets (GR AT BE DE ES FI FR IE IT NL PT SK — Bill 02/11/2026, bulletin 22845) an item carries
+ *       <g:sale_price> + the effective date 2026-11-23T00:00+0200/2026-11-30T23:59+0200 (Google fetches once a day at
+ *       noon: without the date the sale would start ~12 h late and END ~12 h late, i.e. a lower price on Google than on
+ *       the page).
+ *       a) ANNOUNCED (from GS_BF_ANNOUNCE_FROM, default 2026-11-20T00:00Z, until the start): the storefront still
+ *          charges the regular price, which stays in <g:price>; the sale price is READ from the Shopify price list
+ *          «BF 2026 EUR (−20%)» (its catalog is DRAFT and is lit by the Rollout of 23/11 00:00 Athens) — it is never
+ *          computed here. Only when the list's reference price == the price the storefront charges today and the
+ *          currencies match; anything else is NOT announced (counted in the log).
+ *       b) LIVE (start → end): the storefront's own contextual price already is the BF pair ⇒ the v11.5 logic emits
+ *          price + sale_price as before, and v11.10 only adds the effective date (when the pair == the list row).
+ *       After the START nothing is emitted that the storefront does not charge (a Rollout that did not light ⇒ no sale
+ *       in the feed, red line in the log). After the END the block is inert. The price-list read is FAIL-OPEN: an error
+ *       ⇒ no BF tag in that run, the feeds are written exactly as in v11.9, and the log says so in red.
+ *       custom_label_4 and the «on sale» count keep meaning «what the storefront charges NOW» (unchanged).
+ *       Kill-switch GS_NO_BF=1 = v11.9 output. GS_BF_NOW / GS_BF_ANNOUNCE_FROM exist for tests only.
  *
  * v11.9 (2026-11-09 — [SEO] lane · DRY, deployed only after Bill's explicit ok):
  *   C1  every <g:shipping> carries <g:handling_cutoff_time>2359</g:handling_cutoff_time> and
@@ -328,11 +346,32 @@ if (process.env.GS_BIGPRODUCT_HANDLES !== undefined) {
 }
 // v11.6 (G1): emit only products published to the Online Store. GS_NO_ONLINESTORE_GUARD=1 = v11.5.
 const ONLINESTORE_GUARD = !envOn('GS_NO_ONLINESTORE_GUARD');
+// v11.10 (BF1): BLACK FRIDAY 2026 — sale price + effective date in the 12 BF markets. GS_NO_BF=1 = v11.9 output.
+// The prices are NOT computed here: they are the fixed prices of the Shopify price list that the Rollout lights.
+const BF_ON = !envOn('GS_NO_BF');
+const bfInstant = (name, fallbackMs) => {
+  const raw = process.env[name];
+  if (raw === undefined || raw === '') return fallbackMs;
+  const ms = Date.parse(raw);
+  if (Number.isNaN(ms)) { console.error(`🔴 ${name}="${raw}" is not a date — ignored.`); return fallbackMs; }
+  console.error(`🟠 ${name}=${raw} is set — the Black Friday timing is OVERRIDDEN for this run (tests only).`);
+  return ms;
+};
+const BF_CONFIG = Object.freeze({
+  priceListId: 'gid://shopify/PriceList/32322257230',                        // «BF 2026 EUR (−20%)» — bulletin 23586
+  countries: new Set(['GR', 'AT', 'BE', 'DE', 'ES', 'FI', 'FR', 'IE', 'IT', 'NL', 'PT', 'SK']),   // Bill 02/11/2026 — bulletin 22845
+  effective: '2026-11-23T00:00+0200/2026-11-30T23:59+0200',                  // Google: YYYY-MM-DDThh:mm±hhmm/… (Help answer/6324460)
+  startMs: Date.UTC(2026, 10, 22, 22, 0),                                    // 23/11 00:00 Europe/Athens = the Rollout start (bulletin 23641)
+  endMs: Date.UTC(2026, 10, 30, 21, 59),                                     // 30/11 23:59 Europe/Athens
+  announceFromMs: bfInstant('GS_BF_ANNOUNCE_FROM', Date.UTC(2026, 10, 20, 0, 0)),
+});
+const BF_NOW_MS = bfInstant('GS_BF_NOW', Date.now());   // ONE clock per run: a run that straddles the start stays consistent
+let BF_PRICES = null;                                   // Map variantId → { price, compareAt, currency } · null = no BF tag in this run
 {
   const set = ['GS_LEGACY_CAPS', 'GS_NO_VARIANTMEDIA', 'GS_NO_PKGFILTER', 'GS_NO_PHOTOEXCL', 'GS_NO_OTHERCOLOUR',
     'GS_NO_LIFESTYLE_GUARD', 'GS_LEGACY_PRICING', 'GS_APPLY_PHOTOGATE', 'GS_APPLY_DROPENTRIES',
-    'GS_BORROW_METAL_ONLY', 'GS_SHIPPING_SOFTFAIL', 'GS_ALLOW_MISSING_SHARED', 'GS_NO_ONLINESTORE_GUARD', 'GS_NO_DEFCOLOUR', 'GS_NO_CUTOFF'].filter(envOn);
-  console.log(`⚙️  v11.9 · API ${API_VERSION} · switches: ${set.length ? set.join(', ') : 'none'} · ` +
+    'GS_BORROW_METAL_ONLY', 'GS_SHIPPING_SOFTFAIL', 'GS_ALLOW_MISSING_SHARED', 'GS_NO_ONLINESTORE_GUARD', 'GS_NO_DEFCOLOUR', 'GS_NO_CUTOFF', 'GS_NO_BF'].filter(envOn);
+  console.log(`⚙️  v11.10 · API ${API_VERSION} · switches: ${set.length ? set.join(', ') : 'none'} · ` +
     `GS_BIGPRODUCT_MODE=${BIGPRODUCT_MODE} (product ids: ${[...BIGPRODUCT_IDS].join(',') || 'none'})` +
     `${LEGACY_CAPS && BIGPRODUCT_MODE !== 'legacy' ? ' → legacy, forced by GS_LEGACY_CAPS' : ''} · ` +
     `GS_EXTRA_IMAGES_CAP=${EXTRA_IMAGES_CAP} · GS_MIN_ITEMS=${MIN_ITEMS}`);
@@ -2263,6 +2302,71 @@ function assertEmittedVolume(products) {
   }
 }
 
+// v11.10 (BF1): what ONE item says about Black Friday. PURE — every branch is in the self-test.
+//   cp = the storefront's contextual price of the variant in this country NOW { price: {amount, currencyCode}, compareAtPrice | null }
+//   bf = the variant's row in the BF price list { price, compareAt, currency }, or undefined
+// → { state, salePrice (an amount) | null, effective | null }
+//   off         not a BF country · before the announce date · after the end · no config
+//   announced   before the start: <g:sale_price> = the list price, with the effective date; <g:price> stays today's price
+//   live        the storefront already charges the BF pair: the effective date is added to the v11.5 sale
+//   no-entry | mismatch | not-live | other-sale   → NO Black Friday tag (counted per feed)
+function bfDecision(cp, bf, country, nowMs, cfg) {
+  const none = state => ({ state, salePrice: null, effective: null });
+  if (!cfg || !cfg.countries.has(country) || !(nowMs >= cfg.announceFromMs) || !(nowMs <= cfg.endMs)) return none('off');
+  if (!bf) return none('no-entry');
+  const cents = a => Math.round(parseFloat(a) * 100);
+  const now = cents(cp.price.amount);
+  const nowCmp = cp.compareAtPrice ? cents(cp.compareAtPrice.amount) : null;
+  const bfP = cents(bf.price), bfC = cents(bf.compareAt);
+  if (bf.currency !== cp.price.currencyCode || !(bfP > 0) || !(bfC > bfP)) return none('mismatch');
+  if (nowCmp !== null && nowCmp > now) {
+    // the storefront already shows a sale: it is Black Friday only if it IS the list's pair (the Rollout is lit)
+    return (now === bfP && nowCmp === bfC) ? { state: 'live', salePrice: null, effective: cfg.effective } : none('other-sale');
+  }
+  if (nowMs >= cfg.startMs) return none('not-live');   // after the start the storefront must already charge it
+  if (bfC !== now) return none('mismatch');            // the list's reference price is not the price charged today
+  return { state: 'announced', salePrice: bf.price, effective: cfg.effective };
+}
+
+/**
+ * v11.10 (BF1): the fixed prices of the BF price list, read FRESH on every run (the list is re-synced on 20/11, 22/11
+ * and daily 23–30/11). Read from the first run after the deploy, also before the announce date, so that a token that
+ * cannot read price lists shows in the log days before it matters.
+ * FAIL-OPEN: any error ⇒ null ⇒ this run emits no Black Friday tag (= v11.9 output) and says so in red.
+ * @returns {Map<string, {price: string, compareAt: string, currency: string}> | null}
+ */
+async function fetchBfPrices() {
+  if (!BF_ON) { console.log('🖤 BF: GS_NO_BF=1 — no Black Friday tags (= v11.9)\n'); return null; }
+  if (BF_NOW_MS > BF_CONFIG.endMs) { console.log('🖤 BF: the window ended — no Black Friday tags\n'); return null; }
+  try {
+    const map = new Map();
+    const query = `query($id: ID!, $c: String) { priceList(id: $id) { fixedPricesCount prices(first: 250, after: $c, originType: FIXED) {
+      pageInfo { hasNextPage endCursor } nodes { variant { id } price { amount currencyCode } compareAtPrice { amount currencyCode } } } } }`;
+    let cursor = null, pages = 0, expected = null;
+    do {
+      const { data } = await graphqlRequest(query, 4, { id: BF_CONFIG.priceListId, c: cursor });
+      if (data.errors) throw new Error(`GraphQL errors ${JSON.stringify(data.errors).slice(0, 300)}`);
+      const pl = data.data?.priceList;
+      if (!pl || !pl.prices || !Array.isArray(pl.prices.nodes)) throw new Error('the price list was not returned');
+      expected = pl.fixedPricesCount;
+      for (const n of pl.prices.nodes) {
+        if (!n.variant || !n.price || !n.compareAtPrice || n.price.currencyCode !== n.compareAtPrice.currencyCode) continue;
+        map.set(n.variant.id.replace('gid://shopify/ProductVariant/', ''), { price: n.price.amount, compareAt: n.compareAtPrice.amount, currency: n.price.currencyCode });
+      }
+      cursor = pl.prices.pageInfo.hasNextPage ? pl.prices.pageInfo.endCursor : null;
+      if (++pages > 200) throw new Error('more than 200 pages');
+      await new Promise(r => setTimeout(r, 300));
+    } while (cursor);
+    if (!map.size) throw new Error('0 usable rows');
+    const phase = BF_NOW_MS < BF_CONFIG.announceFromMs ? `read OK — nothing is announced before ${new Date(BF_CONFIG.announceFromMs).toISOString()}`
+      : BF_NOW_MS < BF_CONFIG.startMs ? 'ANNOUNCING (before the start)' : 'LIVE window';
+    console.log(`🖤 BF: price list ${BF_CONFIG.priceListId.split('/').pop()} — ${map.size} of ${expected} fixed prices usable in ${pages} queries · ${phase}\n`);
+    return map;
+  } catch (e) {
+    console.error(`🔴 BF: the price list could not be read (${e.message}) — this run emits NO Black Friday tag; the feeds are written as in v11.9.\n`);
+    return null;
+  }
+}
 // B10 switch point, called BEFORE the write loop: { byVariant } (default) | { adjustments } (GS_LEGACY_PRICING=1)
 async function fetchPricing(products) {
   if (LEGACY_PRICING) {
@@ -2452,7 +2556,7 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
     imgPath: { own: 0, borrow: 0, fallback: 0, 'fallback-trimmed': 0 }, pkgRemoved: 0, exclRemoved: 0,
     imageLinkGuard: 0, droppedEntries: 0, gateDropped: 0, gateSavedByLabel: 0,
     lifestyleBlocked: { packaging: 0, photoexcl: 0, 'other-colour-own': 0, 'other-colour-range': 0 },
-    priceOmitted: 0, onSale: 0,
+    priceOmitted: 0, onSale: 0, bf: {},
     borrowTier1: 0, borrowTier2: 0, lifestyleEmitted: 0, lifestyleNone: 0, lifestyleSame: 0,   // R3a / F9
     defColour: 0, defColourUnmapped: 0, defColourUnmappedHandles: new Set()   // v11.7 D1
   };
@@ -2585,7 +2689,7 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
       // v11.5 (B10): the storefront's OWN contextual price for this variant in this country (its rounding
       // included); on sale, g:price = the regular (compare-at) price and g:sale_price = what the customer pays.
       // GS_LEGACY_PRICING=1 → v10: catalog price × one reference ratio per market (today's behaviour).
-      let adjustedVariantPrice, price, hasSale, salePrice = null;
+      let adjustedVariantPrice, price, hasSale, salePrice = null, bfEffective = null;
       if (LEGACY_PRICING) {
         // v10: Apply market-specific price adjustment (VAT + currency conversion)
         adjustedVariantPrice = Math.round(parseFloat(variant.price) * priceFactor * 100) / 100;
@@ -2596,6 +2700,13 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
         hasSale = !!(itemCp.compareAtPrice && parseFloat(itemCp.compareAtPrice.amount) > adjustedVariantPrice);
         price = formatPrice(hasSale ? itemCp.compareAtPrice.amount : itemCp.price.amount, itemCp.price.currencyCode);
         if (hasSale) salePrice = formatPrice(itemCp.price.amount, itemCp.price.currencyCode);
+        // v11.10 (BF1): Black Friday — announce the list price before the start / date the live sale (bfDecision)
+        if (BF_PRICES) {
+          const bf = bfDecision(itemCp, BF_PRICES.get(String(variant.id)), market.country, BF_NOW_MS, BF_CONFIG);
+          stats.bf[bf.state] = (stats.bf[bf.state] || 0) + 1;
+          if (bf.state === 'announced') salePrice = formatPrice(bf.salePrice, itemCp.price.currencyCode);
+          bfEffective = bf.effective;
+        }
       }
       if (hasSale) stats.onSale++;
 
@@ -2704,9 +2815,11 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
           const adjustedCompareAt = Math.round(parseFloat(variant.compare_at_price) * priceFactor * 100) / 100;
           item += `\n      <g:price>${formatPrice(adjustedCompareAt, priceCurrency)}</g:price>`;
         }
-      } else if (hasSale) {
+      } else if (salePrice) {
         // v11.5 (B10): exactly ONE <g:price> (the regular price, emitted above) + <g:sale_price>
+        // v11.10 (BF1): salePrice is also set for an ANNOUNCED Black Friday price (hasSale stays false until it is live)
         item += `\n      <g:sale_price>${salePrice}</g:sale_price>`;
+        if (bfEffective) item += `\n      <g:sale_price_effective_date>${bfEffective}</g:sale_price_effective_date>`;
       }
 
       // v6 NEW: Add shipping tag
@@ -2768,6 +2881,11 @@ function generateFeedForMarket(products, translations, market, shippingRates, pr
   console.log(`      [DEFCOLOUR] χωρίς option χρώματος: από χάρτη ${stats.defColour} · χωρίς χάρτη (Silver) ${stats.defColourUnmapped}` +
     (stats.defColourUnmappedHandles.size ? ` (${[...stats.defColourUnmappedHandles].join(', ')})` : '') + (DEFCOLOUR_ON ? '' : ' · ΑΝΕΝΕΡΓΟ'));
   console.log(`      Left out: dropEntries ${stats.droppedEntries} · E1 gate ${stats.gateDropped} (saved by label ${stats.gateSavedByLabel}) · null price ${stats.priceOmitted} · on sale ${stats.onSale}`);
+  if (BF_PRICES && BF_CONFIG.countries.has(market.country) && BF_NOW_MS >= BF_CONFIG.announceFromMs) {
+    const b = stats.bf, n = k => b[k] || 0;
+    console.log(`      ${n('not-live') ? '🔴' : '🖤'} [BF] announced ${n('announced')} · live ${n('live')} · without a BF tag ${n('no-entry') + n('mismatch') + n('not-live') + n('other-sale')}` +
+      ` (no list row ${n('no-entry')} · list ≠ today's price ${n('mismatch')} · storefront NOT on BF after the start ${n('not-live')} · another sale ${n('other-sale')})`);
+  }
   console.log('');
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -2821,6 +2939,7 @@ async function generateFeed(marketCode) {
 
   // v11.5 (B10): per-variant contextual prices (default) | v10 reference ratio (GS_LEGACY_PRICING=1)
   const pricing = await fetchPricing(products);
+  BF_PRICES = LEGACY_PRICING ? null : await fetchBfPrices();   // v11.10 (BF1): fail-open — null = no Black Friday tag in this run
   const priceAdj = pricing.adjustments ? pricing.adjustments[marketCode.toUpperCase()] : null;
 
   // Fetch translations
@@ -2876,6 +2995,7 @@ async function generateAllFeeds() {
   // v11.5 (B10): ALL prices are fetched and validated HERE, before the write loop — a failure writes nothing.
   // Default: per-variant contextual prices · GS_LEGACY_PRICING=1: v10 reference ratio (ONE API call)
   const pricing = await fetchPricing(products);
+  BF_PRICES = LEGACY_PRICING ? null : await fetchBfPrices();   // v11.10 (BF1): fail-open — null = no Black Friday tag in this run
 
   // Group markets by locale
   const marketsByLocale = {};
@@ -3018,7 +3138,39 @@ function runSelftest() {
   const skipped = [];
   const t = (name, cond) => { if (cond) pass++; else { fail++; console.error(`   ✗ FAIL: ${name}`); } };
   const cdn = f => `https://cdn.shopify.com/s/files/1/0277/0183/7859/files/${f}?v=1767371094`;
-  console.log('\n🧪 v11.9 self-test (offline)\n');
+  console.log('\n🧪 v11.10 self-test (offline)\n');
+
+  // 0a. v11.10 — BF1 (Black Friday 2026: announced / live / never a price the storefront does not charge) — each with a control
+  {
+    const C = BF_CONFIG, mid = C.startMs - 3600e3, live = C.startMs + 3600e3;
+    const reg = (a, cur = 'EUR') => ({ price: { amount: a, currencyCode: cur }, compareAtPrice: null });
+    const sale = (a, c, cur = 'EUR') => ({ price: { amount: a, currencyCode: cur }, compareAtPrice: { amount: c, currencyCode: cur } });
+    const row = (p, c, cur = 'EUR') => ({ price: p, compareAt: c, currency: cur });
+    const d = (cp, bf, cc, now) => bfDecision(cp, bf, cc, now, C);
+    const inst = s => Date.parse(s.replace(/([+-]\d{2})(\d{2})$/, '$1:$2'));
+    t('v11.10 BF1: the effective date is in Google\'s format (YYYY-MM-DDThh:mm±hhmm/…, at most 51 characters)', /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}[+-]\d{4}\/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}[+-]\d{4}$/.test(C.effective) && C.effective.length <= 51);
+    t('v11.10 BF1: control — the format check catches +02:00 and a missing offset', !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}[+-]\d{4}\//.test('2026-11-23T00:00+02:00/') && !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}[+-]\d{4}\//.test('2026-11-23T00:00/'));
+    t('v11.10 BF1: the effective date IS the Rollout window (23/11 00:00 → 30/11 23:59 Europe/Athens)', inst(C.effective.split('/')[0]) === C.startMs && inst(C.effective.split('/')[1]) === C.endMs && C.startMs === Date.parse('2026-11-22T22:00:00Z') && C.endMs === Date.parse('2026-11-30T21:59:00Z'));
+    t('v11.10 BF1: 12 BF countries, each one a EUR market of this feed', C.countries.size === 12 && [...C.countries].every(cc => Object.values(MARKETS).some(m => m.country === cc && m.currency === 'EUR')));
+    t('v11.10 BF1: control — CY, CH, GB, US, CZ are NOT BF countries', !['CY', 'CH', 'GB', 'US', 'CZ'].some(cc => C.countries.has(cc)));
+    const a = d(reg('59.0'), row('47.2', '59.0'), 'GR', mid);
+    t('v11.10 BF1: before the start, regular 59 + list 47.20/59 → ANNOUNCED 47.20 EUR with the effective date', a.state === 'announced' && formatPrice(a.salePrice, 'EUR') === '47.20 EUR' && a.effective === C.effective);
+    t('v11.10 BF1: the same item in a non-BF country · before the announce date · after the end → off', d(reg('59.0'), row('47.2', '59.0'), 'US', mid).state === 'off' && d(reg('59.0'), row('47.2', '59.0'), 'GR', C.announceFromMs - 1).state === 'off' && d(reg('59.0'), row('47.2', '59.0'), 'GR', C.endMs + 1).state === 'off');
+    t('v11.10 BF1: no list row → no BF tag', d(reg('59.0'), undefined, 'GR', mid).state === 'no-entry' && d(reg('59.0'), undefined, 'GR', mid).effective === null);
+    t('v11.10 BF1: list reference 69 ≠ today\'s price 79 (the 4 × 1365M) → NOT announced', d(reg('79.0'), row('55.2', '69.0'), 'DE', mid).state === 'mismatch' && d(reg('79.0'), row('55.2', '69.0'), 'DE', mid).salePrice === null);
+    t('v11.10 BF1: list in another currency, or list price not below its reference → NOT announced', d(reg('59.0'), row('47.2', '59.0', 'USD'), 'GR', mid).state === 'mismatch' && d(reg('59.0'), row('59.0', '59.0'), 'GR', mid).state === 'mismatch');
+    const l = d(sale('55.2', '69.0'), row('55.2', '69.0'), 'GR', live);
+    t('v11.10 BF1: after the start, storefront 55.20/69 = the list row → LIVE: effective date, the sale price stays the v11.5 one', l.state === 'live' && l.effective === C.effective && l.salePrice === null);
+    const nl = d(reg('59.0'), row('47.2', '59.0'), 'GR', live);
+    t('v11.10 BF1: after the start, storefront still regular (Rollout not lit) → NO sale and NO date in the feed', nl.state === 'not-live' && nl.salePrice === null && nl.effective === null);
+    t('v11.10 BF1: a storefront sale that is not the list\'s pair → no effective date (before and after the start)', d(sale('50.0', '59.0'), row('47.2', '59.0'), 'GR', live).state === 'other-sale' && d(sale('50.0', '59.0'), row('47.2', '59.0'), 'GR', mid).effective === null);
+    t('v11.10 BF1: no config → off', bfDecision(reg('59.0'), row('47.2', '59.0'), 'GR', mid, null).state === 'off');
+    const src = generateFeedForMarket.toString();
+    t('v11.10 BF1 wiring: the effective date is emitted only right after <g:sale_price>, and BF never sets hasSale',
+      /<g:sale_price>\$\{salePrice\}<\/g:sale_price>`;\s*if \(bfEffective\) item \+= `\\n      <g:sale_price_effective_date>\$\{bfEffective\}<\/g:sale_price_effective_date>`;/.test(src)
+      && (src.match(/sale_price_effective_date/g) || []).length === 2 && !/hasSale\s*=[^;]*\bbf/.test(src));
+    if (!BF_ON) skipped.push('v11.10 BF1 is switched off (GS_NO_BF=1): its decision tests ran, the generator emits no BF tag');
+  }
 
   // 0. v11.8 — S1 (checkout transit) · S2 (no carrier names) · A3 (no shipping/returns highlight) — each with a control
   const CARRIER_RX = /DHL|ACS|UPS|BOX ?NOW|FedEx|ELTA/i;

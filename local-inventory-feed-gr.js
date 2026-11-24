@@ -1,5 +1,9 @@
 /**
- * Local Inventory Feed Generator v1.1 for EMMANUELA
+ * Local Inventory Feed Generator v1.1.1 for EMMANUELA
+ *
+ * v1.1.1 (2026-11-24 — [SEO] lane · DRY, deployed only after Bill's explicit ok) — the BF effective date in UTC:
+ *   <g:sale_price_effective_date> is written as 2026-11-22T22:00Z/2026-11-30T21:59Z (the same instants, Google's
+ *   documented «Z» form) — same reason and same change as google-shopping-feed-v7.js v11.10.1. Nothing else changes.
  *
  * v1.1 (2026-11-12 — [SEO] lane · DRY, deployed only after Bill's explicit ok) — BLACK FRIDAY 23–30/11/2026:
  *   BF1 the workshop (store code «emmanuela») sells at −20% during Black Friday too (Bill 12/11/2026: «Ναι, −20% κι εκεί»).
@@ -66,7 +70,7 @@ const STORE_CODE = 'emmanuela';
 const OUTPUT_DIR = path.join(__dirname, 'feeds');
 
 // v1.1 (BF1): BLACK FRIDAY 2026 — the workshop sells at the BF price too. GS_NO_BF=1 = v1.0 output.
-// ⚠ Keep identical to BF_CONFIG in google-shopping-feed-v7.js (v11.10): price list, effective date, start, end, announce date.
+// ⚠ Keep identical to BF_CONFIG in google-shopping-feed-v7.js (v11.10.1): price list, effective date, start, end, announce date.
 const BF_ON = process.env.GS_NO_BF !== '1';
 const bfInstant = (name, fallbackMs) => {
   const raw = process.env[name];
@@ -78,7 +82,7 @@ const bfInstant = (name, fallbackMs) => {
 };
 const BF_CONFIG = Object.freeze({
   priceListId: 'gid://shopify/PriceList/32322257230',                        // «BF 2026 EUR (−20%)» — bulletin 23586
-  effective: '2026-11-23T00:00+0200/2026-11-30T23:59+0200',                  // Google: YYYY-MM-DDThh:mm±hhmm/… (Help answer/6324460, answer/3061342)
+  effective: '2026-11-22T22:00Z/2026-11-30T21:59Z',                          // v1.1.1: UTC «Z», the same instants (Help answer/6324460, answer/3061342)
   startMs: Date.UTC(2026, 10, 22, 22, 0),                                    // 23/11 00:00 Europe/Athens
   endMs: Date.UTC(2026, 10, 30, 21, 59),                                     // 30/11 23:59 Europe/Athens
   announceFromMs: bfInstant('GS_BF_ANNOUNCE_FROM', Date.UTC(2026, 10, 20, 0, 0)),
@@ -246,8 +250,9 @@ function runSelftest() {
   const C = BF_CONFIG, mid = C.startMs - 3600e3, live = C.startMs + 3600e3;
   const row = (p, c, cur = 'EUR') => ({ price: p, compareAt: c, currency: cur });
   const inst = s => Date.parse(s.replace(/([+-]\d{2})(\d{2})$/, '$1:$2'));
-  console.log('\n🧪 local inventory v1.1 self-test (offline)\n');
-  t('BF1: the effective date is in Google\'s format, at most 51 characters', /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}[+-]\d{4}\/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}[+-]\d{4}$/.test(C.effective) && C.effective.length <= 51);
+  console.log('\n🧪 local inventory v1.1.1 self-test (offline)\n');
+  t('BF1a: the effective date is in Google\'s UTC format (YYYY-MM-DDThh:mmZ/…), at most 51 characters', /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}Z\/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}Z$/.test(C.effective) && C.effective.length <= 51);
+  t('BF1a: control — the UTC format check rejects ±hhmm, ±hh:mm and a missing zone, and accepts …Z', ['2026-11-23T00:00+0200/', '2026-11-23T00:00+02:00/', '2026-11-23T00:00/'].every(s => !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}Z\//.test(s)) && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}Z\//.test('2026-11-22T22:00Z/'));
   t('BF1: the effective date IS 23/11 00:00 → 30/11 23:59 Europe/Athens', inst(C.effective.split('/')[0]) === C.startMs && inst(C.effective.split('/')[1]) === C.endMs && C.startMs === Date.parse('2026-11-22T22:00:00Z') && C.endMs === Date.parse('2026-11-30T21:59:00Z'));
   const a = bfLocalDecision('59.00', row('47.2', '59.0'), mid, C);
   t('BF1: before the start, 59 + list 47.20/59 → sale 47.20', a.state === 'sale' && `${parseFloat(a.salePrice).toFixed(2)} EUR` === '47.20 EUR');
@@ -337,7 +342,7 @@ ${entries.join('\n')}
 
 async function main() {
   console.log('═══════════════════════════════════════════════════════════');
-  console.log('  EMMANUELA Local Inventory Feed Generator v1.1');
+  console.log('  EMMANUELA Local Inventory Feed Generator v1.1.1');
   console.log('  Based on google-shopping-feed-v7.js (same IDs)');
   console.log('═══════════════════════════════════════════════════════════\n');
   console.log(`Store Code: ${STORE_CODE}`);

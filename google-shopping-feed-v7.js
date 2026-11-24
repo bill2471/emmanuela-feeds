@@ -1,5 +1,14 @@
 /**
- * Google Shopping Feed Generator v11.10 for EMMANUELA
+ * Google Shopping Feed Generator v11.10.1 for EMMANUELA
+ *
+ * v11.10.1 (2026-11-24 — [SEO] lane · DRY, deployed only after Bill's explicit ok) — the BF effective date in UTC:
+ *   BF1a <g:sale_price_effective_date> is written in UTC with «Z»: 2026-11-22T22:00Z/2026-11-30T21:59Z — the SAME
+ *        instants as v11.10 (23/11 00:00 → 30/11 23:59 Europe/Athens) in Google's other documented form
+ *        (Help answer/6324460: YYYY-MM-DDThh:mmZ). Why: after the fetch of 23/11 22:00Z the Merchant API (Products v1)
+ *        holds the window of the BF items as 2026-11-23T00:00:00Z → 2026-11-30T23:59:00Z, i.e. 2 h late, for the
+ *        ±hhmm form; whether Google ignored the offset or only displays it so is unknown — the UTC form is right in
+ *        both cases. Only BF_CONFIG.effective and its two format self-tests change (local-inventory-feed-gr.js v1.1.1
+ *        the same). The 1st fetch after the push tells the two cases apart: 22:00Z = it was needed, 00:00Z = display.
  *
  * v11.10 (2026-11-12 — [SEO] lane · DRY, deployed only after Bill's explicit ok) — BLACK FRIDAY 23–30/11/2026:
  *   BF1 in the 12 BF markets (GR AT BE DE ES FI FR IE IT NL PT SK — Bill 02/11/2026, bulletin 22845) an item carries
@@ -360,7 +369,7 @@ const bfInstant = (name, fallbackMs) => {
 const BF_CONFIG = Object.freeze({
   priceListId: 'gid://shopify/PriceList/32322257230',                        // «BF 2026 EUR (−20%)» — bulletin 23586
   countries: new Set(['GR', 'AT', 'BE', 'DE', 'ES', 'FI', 'FR', 'IE', 'IT', 'NL', 'PT', 'SK']),   // Bill 02/11/2026 — bulletin 22845
-  effective: '2026-11-23T00:00+0200/2026-11-30T23:59+0200',                  // Google: YYYY-MM-DDThh:mm±hhmm/… (Help answer/6324460)
+  effective: '2026-11-22T22:00Z/2026-11-30T21:59Z',                          // v11.10.1: UTC «Z», the same instants (Help answer/6324460: YYYY-MM-DDThh:mmZ)
   startMs: Date.UTC(2026, 10, 22, 22, 0),                                    // 23/11 00:00 Europe/Athens = the Rollout start (bulletin 23641)
   endMs: Date.UTC(2026, 10, 30, 21, 59),                                     // 30/11 23:59 Europe/Athens
   announceFromMs: bfInstant('GS_BF_ANNOUNCE_FROM', Date.UTC(2026, 10, 20, 0, 0)),
@@ -371,7 +380,7 @@ let BF_PRICES = null;                                   // Map variantId → { p
   const set = ['GS_LEGACY_CAPS', 'GS_NO_VARIANTMEDIA', 'GS_NO_PKGFILTER', 'GS_NO_PHOTOEXCL', 'GS_NO_OTHERCOLOUR',
     'GS_NO_LIFESTYLE_GUARD', 'GS_LEGACY_PRICING', 'GS_APPLY_PHOTOGATE', 'GS_APPLY_DROPENTRIES',
     'GS_BORROW_METAL_ONLY', 'GS_SHIPPING_SOFTFAIL', 'GS_ALLOW_MISSING_SHARED', 'GS_NO_ONLINESTORE_GUARD', 'GS_NO_DEFCOLOUR', 'GS_NO_CUTOFF', 'GS_NO_BF'].filter(envOn);
-  console.log(`⚙️  v11.10 · API ${API_VERSION} · switches: ${set.length ? set.join(', ') : 'none'} · ` +
+  console.log(`⚙️  v11.10.1 · API ${API_VERSION} · switches: ${set.length ? set.join(', ') : 'none'} · ` +
     `GS_BIGPRODUCT_MODE=${BIGPRODUCT_MODE} (product ids: ${[...BIGPRODUCT_IDS].join(',') || 'none'})` +
     `${LEGACY_CAPS && BIGPRODUCT_MODE !== 'legacy' ? ' → legacy, forced by GS_LEGACY_CAPS' : ''} · ` +
     `GS_EXTRA_IMAGES_CAP=${EXTRA_IMAGES_CAP} · GS_MIN_ITEMS=${MIN_ITEMS}`);
@@ -3138,7 +3147,7 @@ function runSelftest() {
   const skipped = [];
   const t = (name, cond) => { if (cond) pass++; else { fail++; console.error(`   ✗ FAIL: ${name}`); } };
   const cdn = f => `https://cdn.shopify.com/s/files/1/0277/0183/7859/files/${f}?v=1767371094`;
-  console.log('\n🧪 v11.10 self-test (offline)\n');
+  console.log('\n🧪 v11.10.1 self-test (offline)\n');
 
   // 0a. v11.10 — BF1 (Black Friday 2026: announced / live / never a price the storefront does not charge) — each with a control
   {
@@ -3148,8 +3157,8 @@ function runSelftest() {
     const row = (p, c, cur = 'EUR') => ({ price: p, compareAt: c, currency: cur });
     const d = (cp, bf, cc, now) => bfDecision(cp, bf, cc, now, C);
     const inst = s => Date.parse(s.replace(/([+-]\d{2})(\d{2})$/, '$1:$2'));
-    t('v11.10 BF1: the effective date is in Google\'s format (YYYY-MM-DDThh:mm±hhmm/…, at most 51 characters)', /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}[+-]\d{4}\/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}[+-]\d{4}$/.test(C.effective) && C.effective.length <= 51);
-    t('v11.10 BF1: control — the format check catches +02:00 and a missing offset', !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}[+-]\d{4}\//.test('2026-11-23T00:00+02:00/') && !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}[+-]\d{4}\//.test('2026-11-23T00:00/'));
+    t('v11.10.1 BF1a: the effective date is in Google\'s UTC format (YYYY-MM-DDThh:mmZ/…, at most 51 characters)', /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}Z\/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}Z$/.test(C.effective) && C.effective.length <= 51);
+    t('v11.10.1 BF1a: control — the UTC format check rejects ±hhmm, ±hh:mm and a missing zone, and accepts …Z', ['2026-11-23T00:00+0200/', '2026-11-23T00:00+02:00/', '2026-11-23T00:00/'].every(s => !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}Z\//.test(s)) && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}Z\//.test('2026-11-22T22:00Z/'));
     t('v11.10 BF1: the effective date IS the Rollout window (23/11 00:00 → 30/11 23:59 Europe/Athens)', inst(C.effective.split('/')[0]) === C.startMs && inst(C.effective.split('/')[1]) === C.endMs && C.startMs === Date.parse('2026-11-22T22:00:00Z') && C.endMs === Date.parse('2026-11-30T21:59:00Z'));
     t('v11.10 BF1: 12 BF countries, each one a EUR market of this feed', C.countries.size === 12 && [...C.countries].every(cc => Object.values(MARKETS).some(m => m.country === cc && m.currency === 'EUR')));
     t('v11.10 BF1: control — CY, CH, GB, US, CZ are NOT BF countries', !['CY', 'CH', 'GB', 'US', 'CZ'].some(cc => C.countries.has(cc)));

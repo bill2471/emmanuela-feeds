@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:g="http://base.google.com/ns/1.0">
   <title>EMMANUELA Local Inventory Feed — Greece</title>
   <link href="https://emmanuela.gr"/>
-  <updated>2026-11-26T02:02:14.520Z</updated>
+  <updated>2026-11-26T16:51:26.116Z</updated>
     <entry>
       <g:id>31372692389923</g:id>
       <g:store_code>emmanuela</g:store_code>
@@ -1086,7 +1086,7 @@
     <entry>
       <g:id>31372836700195</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>4</g:quantity>
+      <g:quantity>3</g:quantity>
       <g:price>44.00 EUR</g:price>
       <g:sale_price>35.20 EUR</g:sale_price>
       <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
@@ -1392,7 +1392,7 @@
     <entry>
       <g:id>31747811311651</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>3</g:quantity>
+      <g:quantity>4</g:quantity>
       <g:price>49.00 EUR</g:price>
       <g:sale_price>39.20 EUR</g:sale_price>
       <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
@@ -1419,7 +1419,7 @@
     <entry>
       <g:id>31372876480547</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>3</g:quantity>
+      <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
       <g:sale_price>55.20 EUR</g:sale_price>
       <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
@@ -7863,7 +7863,7 @@
     <entry>
       <g:id>31373349388323</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>4</g:quantity>
+      <g:quantity>3</g:quantity>
       <g:price>79.00 EUR</g:price>
       <g:sale_price>63.20 EUR</g:sale_price>
       <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
@@ -15727,6 +15727,87 @@
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
+      <g:id>31374154334243</g:id>
+      <g:store_code>emmanuela</g:store_code>
+      <g:quantity>4</g:quantity>
+      <g:price>79.00 EUR</g:price>
+      <g:sale_price>63.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
+      <g:availability>in_stock</g:availability>
+    </entry>
+    <entry>
+      <g:id>31374154367011</g:id>
+      <g:store_code>emmanuela</g:store_code>
+      <g:quantity>4</g:quantity>
+      <g:price>79.00 EUR</g:price>
+      <g:sale_price>63.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
+      <g:availability>in_stock</g:availability>
+    </entry>
+    <entry>
+      <g:id>31374154399779</g:id>
+      <g:store_code>emmanuela</g:store_code>
+      <g:quantity>4</g:quantity>
+      <g:price>79.00 EUR</g:price>
+      <g:sale_price>63.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
+      <g:availability>in_stock</g:availability>
+    </entry>
+    <entry>
+      <g:id>31374154432547</g:id>
+      <g:store_code>emmanuela</g:store_code>
+      <g:quantity>4</g:quantity>
+      <g:price>89.00 EUR</g:price>
+      <g:sale_price>71.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
+      <g:availability>in_stock</g:availability>
+    </entry>
+    <entry>
+      <g:id>31374154465315</g:id>
+      <g:store_code>emmanuela</g:store_code>
+      <g:quantity>4</g:quantity>
+      <g:price>89.00 EUR</g:price>
+      <g:sale_price>71.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
+      <g:availability>in_stock</g:availability>
+    </entry>
+    <entry>
+      <g:id>31374154498083</g:id>
+      <g:store_code>emmanuela</g:store_code>
+      <g:quantity>4</g:quantity>
+      <g:price>89.00 EUR</g:price>
+      <g:sale_price>71.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
+      <g:availability>in_stock</g:availability>
+    </entry>
+    <entry>
+      <g:id>31374154530851</g:id>
+      <g:store_code>emmanuela</g:store_code>
+      <g:quantity>4</g:quantity>
+      <g:price>99.00 EUR</g:price>
+      <g:sale_price>79.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
+      <g:availability>in_stock</g:availability>
+    </entry>
+    <entry>
+      <g:id>31374154563619</g:id>
+      <g:store_code>emmanuela</g:store_code>
+      <g:quantity>4</g:quantity>
+      <g:price>99.00 EUR</g:price>
+      <g:sale_price>79.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
+      <g:availability>in_stock</g:availability>
+    </entry>
+    <entry>
+      <g:id>31374154596387</g:id>
+      <g:store_code>emmanuela</g:store_code>
+      <g:quantity>4</g:quantity>
+      <g:price>99.00 EUR</g:price>
+      <g:sale_price>79.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
+      <g:availability>in_stock</g:availability>
+    </entry>
+    <entry>
       <g:id>31374176714787</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
@@ -15828,7 +15909,7 @@
     <entry>
       <g:id>31374183333923</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>4</g:quantity>
+      <g:quantity>3</g:quantity>
       <g:price>99.00 EUR</g:price>
       <g:sale_price>79.20 EUR</g:sale_price>
       <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
@@ -16495,18 +16576,14 @@
       <g:id>31829972320291</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>1</g:quantity>
-      <g:price>69.00 EUR</g:price>
-      <g:sale_price>55.20 EUR</g:sale_price>
-      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
+      <g:price>64.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
       <g:id>31829972385827</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>2</g:quantity>
-      <g:price>69.00 EUR</g:price>
-      <g:sale_price>55.20 EUR</g:sale_price>
-      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
+      <g:price>64.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -16522,9 +16599,7 @@
       <g:id>31829972516899</g:id>
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>1</g:quantity>
-      <g:price>69.00 EUR</g:price>
-      <g:sale_price>55.20 EUR</g:sale_price>
-      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
+      <g:price>64.00 EUR</g:price>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -18132,7 +18207,7 @@
     <entry>
       <g:id>31374518026275</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>4</g:quantity>
+      <g:quantity>3</g:quantity>
       <g:price>99.00 EUR</g:price>
       <g:sale_price>79.20 EUR</g:sale_price>
       <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
@@ -18141,7 +18216,7 @@
     <entry>
       <g:id>31374518059043</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>3</g:quantity>
+      <g:quantity>4</g:quantity>
       <g:price>99.00 EUR</g:price>
       <g:sale_price>79.20 EUR</g:sale_price>
       <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
@@ -21480,7 +21555,7 @@
     <entry>
       <g:id>31720637825059</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>3</g:quantity>
+      <g:quantity>4</g:quantity>
       <g:price>89.00 EUR</g:price>
       <g:sale_price>71.20 EUR</g:sale_price>
       <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
@@ -22164,7 +22239,7 @@
     <entry>
       <g:id>31745492189219</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>3</g:quantity>
+      <g:quantity>4</g:quantity>
       <g:price>44.00 EUR</g:price>
       <g:sale_price>35.20 EUR</g:sale_price>
       <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
@@ -24360,7 +24435,7 @@
     <entry>
       <g:id>49357932888398</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>3</g:quantity>
+      <g:quantity>4</g:quantity>
       <g:price>49.00 EUR</g:price>
       <g:sale_price>39.20 EUR</g:sale_price>
       <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
@@ -28773,6 +28848,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28780,6 +28857,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28787,6 +28866,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28794,6 +28875,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28801,6 +28884,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28808,6 +28893,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28815,6 +28902,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28822,6 +28911,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28829,6 +28920,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28836,6 +28929,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28843,6 +28938,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28850,6 +28947,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28857,6 +28956,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28864,6 +28965,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28871,6 +28974,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28878,6 +28983,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28885,6 +28992,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28892,6 +29001,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28899,6 +29010,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28906,6 +29019,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28913,6 +29028,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28920,6 +29037,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28927,6 +29046,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28934,6 +29055,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28941,6 +29064,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28948,6 +29073,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28955,6 +29082,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28962,6 +29091,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28969,6 +29100,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28976,6 +29109,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28983,6 +29118,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28990,6 +29127,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -28997,6 +29136,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -29004,6 +29145,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -29011,6 +29154,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -29018,6 +29163,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -29025,6 +29172,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -29032,6 +29181,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -29039,6 +29190,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -29046,6 +29199,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -29053,6 +29208,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -29060,6 +29217,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -29067,6 +29226,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -29074,6 +29235,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -29081,6 +29244,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -29088,6 +29253,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -29095,6 +29262,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
     <entry>
@@ -29102,6 +29271,8 @@
       <g:store_code>emmanuela</g:store_code>
       <g:quantity>4</g:quantity>
       <g:price>69.00 EUR</g:price>
+      <g:sale_price>55.20 EUR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
       <g:availability>in_stock</g:availability>
     </entry>
 </feed>

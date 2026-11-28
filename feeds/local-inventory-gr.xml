@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:g="http://base.google.com/ns/1.0">
   <title>EMMANUELA Local Inventory Feed — Greece</title>
   <link href="https://emmanuela.gr"/>
-  <updated>2026-11-27T16:36:20.227Z</updated>
+  <updated>2026-11-28T01:33:18.305Z</updated>
     <entry>
       <g:id>31372692389923</g:id>
       <g:store_code>emmanuela</g:store_code>
@@ -1086,7 +1086,7 @@
     <entry>
       <g:id>31372836700195</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>3</g:quantity>
+      <g:quantity>4</g:quantity>
       <g:price>44.00 EUR</g:price>
       <g:sale_price>35.20 EUR</g:sale_price>
       <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
@@ -1095,7 +1095,7 @@
     <entry>
       <g:id>31372836667427</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>2</g:quantity>
+      <g:quantity>4</g:quantity>
       <g:price>44.00 EUR</g:price>
       <g:sale_price>35.20 EUR</g:sale_price>
       <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
@@ -1104,7 +1104,7 @@
     <entry>
       <g:id>31372836634659</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>4</g:quantity>
+      <g:quantity>3</g:quantity>
       <g:price>44.00 EUR</g:price>
       <g:sale_price>35.20 EUR</g:sale_price>
       <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
@@ -9033,7 +9033,7 @@
     <entry>
       <g:id>31373477642275</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>4</g:quantity>
+      <g:quantity>3</g:quantity>
       <g:price>62.00 EUR</g:price>
       <g:sale_price>49.60 EUR</g:sale_price>
       <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
@@ -10698,7 +10698,7 @@
     <entry>
       <g:id>31373708034083</g:id>
       <g:store_code>emmanuela</g:store_code>
-      <g:quantity>4</g:quantity>
+      <g:quantity>3</g:quantity>
       <g:price>59.00 EUR</g:price>
       <g:sale_price>47.20 EUR</g:sale_price>
       <g:sale_price_effective_date>2026-11-22T22:00Z/2026-11-30T21:59Z</g:sale_price_effective_date>
